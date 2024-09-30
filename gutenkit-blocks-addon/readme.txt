@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 2.0.3
+Stable tag: 2.1.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -352,6 +352,34 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.1.0 (2024-09-30) =
+* Added: RTL support
+* Added: Compatibility with GeneratePress and Bricks themes
+* Added: Text stroke control for focused titles in the heading block
+* Added: New controls for video popups in the video block
+* Fixed: Block settings now exclude video and image options
+* Fixed: Updated gradient function in the color component
+* Fixed: Refactored post component to use the `useEntityProp` hook for fetching excerpt content
+* Fixed: Gap issue in the Countdown Timer block’s time items container
+* Fixed: Alignment control issue in the advanced tab block
+* Fixed: Price tag width issue in the pricing table block
+* Fixed: Stroke and text color issues in the heading block
+* Fixed: Wide line conflict in the separator block with the container block
+* Fixed: Parallax scrolling effect issue in the container block
+* Fixed: Alignment issue with social icons
+* Fixed: "None" style issue in heading blocks
+* Fixed: Validation for empty google map API input
+* Fixed: Visibility module issue
+* Fixed: Label issue in the Image comparison block
+* Fixed: Subtitle typography issue in the advanced tab block
+* Fixed: Block error when changing video types in the video block
+* Fixed: Popup button animation issue in the video block
+* Fixed: Title heading tag and carousel dot alignment issues in the testimonial block
+* Fixed: CSS variables not recognized when GutenKit and WPForms are active in classic themes
+* Improved: File paths for the editor template library assets
+* Improved: Date/time picker control
+* Improved: Default border style type
+
 = GutenKit Blocks Addon: 2.0.3 (2024-09-12) =
 * Fixed: Color not working in image comparison block
 * Fixed: Wrong color selector in business hours block

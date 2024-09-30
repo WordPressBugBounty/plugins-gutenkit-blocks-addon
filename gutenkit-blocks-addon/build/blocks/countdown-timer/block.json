@@ -240,7 +240,8 @@
       "type": "object"
     },
     "daysBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "daysBorder": {
       "type": "object"
@@ -351,7 +352,8 @@
       "type": "object"
     },
     "weeksBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "weeksBorder": {
       "type": "object"
@@ -462,7 +464,8 @@
       "type": "object"
     },
     "hoursBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "hoursBorder": {
       "type": "object"
@@ -573,7 +576,8 @@
       "type": "object"
     },
     "minutesBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "minutesBorder": {
       "type": "object"
@@ -684,7 +688,8 @@
       "type": "object"
     },
     "secondsBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "secondsBorder": {
       "type": "object"
@@ -714,13 +719,15 @@
       "type": "object"
     },
     "outerBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "outerEdgeColor": {
       "type": "string"
     },
     "innerBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "expireLabel": {
       "type": "string",

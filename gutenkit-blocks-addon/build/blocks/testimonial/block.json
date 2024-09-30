@@ -1082,7 +1082,8 @@
     "align": [
       "wide",
       "full"
-    ]
+    ],
+    "anchor": true
   },
   "textdomain": "gutenkit-blocks-addon",
   "editorScript": [

@@ -45,7 +45,8 @@
     "align": [
       "wide",
       "full"
-    ]
+    ],
+    "anchor": true
   },
   "textdomain": "gutenkit-blocks-addon-pro",
   "editorScript": "file:./index.js",

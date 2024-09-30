@@ -345,7 +345,8 @@
     ],
     "filter": {
       "duotone": true
-    }
+    },
+    "anchor": true
   },
   "textdomain": "gutenkit-blocks-addon",
   "editorScript": "file:./index.js",

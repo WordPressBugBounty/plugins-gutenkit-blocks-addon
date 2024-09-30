@@ -292,7 +292,8 @@
       "default": false
     },
     "focusedTitleBackgroundColor": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "focusedTitleBorderRadius": {
       "type": "object"
@@ -302,7 +303,18 @@
       "default": false
     },
     "focusedTitleTextFillBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "focusedTitleUseStroke": {
+      "type": "boolean",
+      "default": false
+    },
+    "focusedTitleStrokeWidth": {
       "type": "object"
+    },
+    "focusedTitleStrokeColor": {
+      "type": "string"
     },
     "subtitleColor": {
       "type": "string"
@@ -363,7 +375,8 @@
       "default": false
     },
     "subtitleTextFillBackground": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "subtitleBorderLeftBackground": {
       "type": "object"
@@ -671,7 +684,8 @@
     "align": [
       "wide",
       "full"
-    ]
+    ],
+    "anchor": true
   },
   "textdomain": "gutenkit-blocks-addon",
   "editorScript": "file:./index.js",

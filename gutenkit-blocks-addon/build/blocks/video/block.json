@@ -657,9 +657,292 @@
         "backgroundColor": "#0a0a0a99"
       }
     },
+    "gkitVideoCloseButtonIcon": {
+      "type": "object",
+      "default": {
+        "title": "cross",
+        "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><path d=\"M17.131 16.8l9.034-9.034c0.312-0.312 0.312-0.819 0-1.131s-0.819-0.312-1.131 0l-9.034 9.034-9.034-9.034c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l9.034 9.034-9.034 9.034c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l9.034-9.034 9.034 9.034c0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234c0.312-0.312 0.312-0.819 0-1.131l-9.034-9.034z\"></path></svg>"
+      },
+      "excludeCopy": true
+    },
+    "gkitVideoCloseButtonWidthDesktop": {
+      "type": "object",
+      "default": {
+        "size": 30,
+        "unit": "px"
+      }
+    },
+    "gkitVideoCloseButtonWidthTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonWidthMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonWidthLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonHeightDesktop": {
+      "type": "object",
+      "default": {
+        "size": 30,
+        "unit": "px"
+      }
+    },
+    "gkitVideoCloseButtonHeightTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonHeightMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonHeightWideScreen": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonHeightLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonHeightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonHeightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonIconSizeDesktop": {
+      "type": "object",
+      "default": {
+        "size": 20,
+        "unit": "px"
+      }
+    },
+    "gkitVideoCloseButtonIconSizeTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonIconSizeMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonIconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonIconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonIconSizeLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonIconSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "size": 8,
+        "unit": "px"
+      }
+    },
+    "gkitVideoCloseButtonPaddingTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPaddingMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderNormal": {
+      "type": "object",
+      "default": {
+        "color": "#B7B7B7",
+        "style": "solid",
+        "width": "1px"
+      }
+    },
+    "gkitVideoCloseButtonBorderHover": {
+      "type": "object",
+      "default": {
+        "color": "#B7B7B7",
+        "style": "solid",
+        "width": "1px"
+      }
+    },
+    "gkitVideoCloseButtonIconColorNormal": {
+      "type": "string",
+      "default": "#DBDBDB"
+    },
+    "gkitVideoCloseButtonIconColorHover": {
+      "type": "string",
+      "default": "#DBDBDB"
+    },
+    "gkitVideoCloseButtonIconColorBgNormal": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonIconColorBgHover": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusNormalDesktop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusNormalTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusNormalMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusNormalMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusNormalTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusNormalLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusNormalWideScreen": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusHoverDesktop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusHoverTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusHoverMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusHoverMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusHoverTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusHoverLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonBorderRadiusHoverWideScreen": {
+      "type": "object"
+    },
+    "isGkitVideoCloseButtonCustomPosition": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitVideoCloseButtonPositionHorizontalDesktop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionHorizontalTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionHorizontalMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionHorizontalMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionHorizontalTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionHorizontalLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionHorizontalWideScreen": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionVerticalDesktop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionVerticalTablet": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionVerticalMobile": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionVerticalMobileLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionVerticalTabletLandscape": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionVerticalLaptop": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonPositionVerticalWideScreen": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonShadowNormal": {
+      "type": "object"
+    },
+    "gkitVideoCloseButtonShadowHover": {
+      "type": "object"
+    },
     "gkitVideoCloseButtonPosition": {
       "type": "string",
       "default": "right"
+    },
+    "gkitPopupWrapBoxShadow": {
+      "type": "object"
+    },
+    "gkitPopupWrapBackground": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorder": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitPopupWrapBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitPopupWrapPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitPopupWrapPaddingTablet": {
+      "type": "object"
+    },
+    "gkitPopupWrapPaddingMobile": {
+      "type": "object"
+    },
+    "gkitPopupWrapPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPopupWrapPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPopupWrapPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitPopupWrapPaddingWideScreen": {
+      "type": "object"
     }
   },
   "supports": {

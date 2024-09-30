@@ -149,22 +149,28 @@
       "default": "row"
     },
     "gkitSocialmediaListDisplayTablet": {
-      "type": "string"
+      "type": "string",
+      "default": "row"
     },
     "gkitSocialmediaListDisplayMobile": {
-      "type": "string"
+      "type": "string",
+      "default": "row"
     },
     "gkitSocialmediaListDisplayTabletLandscape": {
-      "type": "string"
+      "type": "string",
+      "default": "row"
     },
     "gkitSocialmediaListDisplayMobileLandscape": {
-      "type": "string"
+      "type": "string",
+      "default": "row"
     },
     "gkitSocialmediaListDisplayLaptop": {
-      "type": "string"
+      "type": "string",
+      "default": "row"
     },
     "gkitSocialmediaListDisplayWideScreen": {
-      "type": "string"
+      "type": "string",
+      "default": "row"
     },
     "gkitSocialmediaBorder": {
       "type": "object"
@@ -370,7 +376,8 @@
     "align": [
       "wide",
       "full"
-    ]
+    ],
+    "anchor": true
   },
   "textdomain": "gutenkit-blocks-addon",
   "editorScript": "file:./index.js",

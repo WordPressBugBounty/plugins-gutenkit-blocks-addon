@@ -334,6 +334,8 @@
     },
     "containerBackgroundOverlay": {
       "type": "object",
+      "selector": "{{WRAPPER}}",
+      "isHover": true,
       "default": {
         "opacity": {
           "size": "0.5"

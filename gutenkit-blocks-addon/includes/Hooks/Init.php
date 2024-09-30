@@ -21,6 +21,10 @@ class Init {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
+		// Third Party Compatibility
+		\Gutenkit\Hooks\ThirdPartyCompatibility::instance();
+
+		// Module Hooks
 		\Gutenkit\Hooks\PageSettings::instance();
 		\Gutenkit\Hooks\EntranceAnimation::instance();
 		\Gutenkit\Hooks\Visibility::instance();

@@ -166,7 +166,8 @@
     }
   },
   "supports": {
-    "html": false
+    "html": false,
+    "anchor": true
   },
   "textdomain": "gutenkit-blocks-addon",
   "editorScript": "file:./index.js",

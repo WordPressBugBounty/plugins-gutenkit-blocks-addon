@@ -22,8 +22,6 @@ class Blocks {
 		add_action( 'block_categories_all', array( $this, 'register_block_categories' ), 10, 2 );
 		add_filter( 'render_block', array( $this, 'save_element' ), 10, 3 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'blocks_compatibility' ) );
-		add_action('enqueue_block_editor_assets', array( $this, 'blocks_editor_compatibility' ) );
 	}
 
 	// register blocks
@@ -98,23 +96,34 @@ class Blocks {
 
 	// admin scripts
 	public function admin_scripts( $screen ) {
-		$editor_template_library = include_once GUTENKIT_PLUGIN_DIR . 'build/gutenkit/editor-template-library.asset.php';
+		$editor_template_library = include_once GUTENKIT_PLUGIN_DIR . 'build/template-library/template-library.asset.php';
 
 		if ( $screen === 'post.php' || $screen === 'post-new.php' || $screen === 'site-editor.php' ) {
 			wp_enqueue_script(
 				'gutenkit-editor-template-library',
-				GUTENKIT_PLUGIN_URL . 'build/gutenkit/editor-template-library.js',
+				GUTENKIT_PLUGIN_URL . 'build/template-library/template-library.js',
 				$editor_template_library['dependencies'],
 				$editor_template_library['version'],
 				true
 			);
 
-			wp_enqueue_style(
-				'gutenkit-editor-template-library',
-				GUTENKIT_PLUGIN_URL . 'build/gutenkit/editor-template-library.css',
-				array(),
-				$editor_template_library['version']
-			);
+			// Conditionally enqueue the RTL stylesheet
+			if ( is_rtl() ) {
+				wp_enqueue_style(
+					'gutenkit-editor-template-library-rtl',
+					GUTENKIT_PLUGIN_URL . 'build/template-library/template-library-rtl.css',
+					array(),
+					$editor_template_library['version']
+				);
+			}else{
+				wp_enqueue_style(
+					'gutenkit-editor-template-library',
+					GUTENKIT_PLUGIN_URL . 'build/template-library/template-library.css',
+					array(),
+					$editor_template_library['version']
+				);
+			}
+
 			// Google Roboto Font
 			wp_enqueue_style(
 				'gutenkit-google-fonts', 
@@ -147,38 +156,5 @@ class Blocks {
 		}
 
 		return $block_content;
-	}
-
-	// blocks compatibility
-	// TODO: This should be removed in future
-	public function blocks_compatibility() {
-		// Get the current theme
-		$current_theme = wp_get_theme();
-
-		// check specific theme is active or not
-		if ($current_theme->get('TextDomain') == 'kadence') {
-			$compatibility_assets = include_once GUTENKIT_PLUGIN_DIR . 'build/compatibility/frontend.asset.php';
-			wp_enqueue_style(
-				'gutenkit-third-party-compatibility',
-				GUTENKIT_PLUGIN_URL . 'build/compatibility/frontend.css',
-				$compatibility_assets['dependencies'],
-				$compatibility_assets['version']
-			);
-		}
-	}
-
-	public function blocks_editor_compatibility() {
-		$current_theme = wp_get_theme();
-
-		// check specific theme is active or not
-		if ($current_theme->get('TextDomain') == 'kadence') {
-			$compatibility_editor_assets = include_once GUTENKIT_PLUGIN_DIR . 'build/compatibility/editor.asset.php';
-			wp_enqueue_style(
-				'gutenkit-third-party-editor-compatibility',
-				GUTENKIT_PLUGIN_URL . 'build/compatibility/editor.css',
-				$compatibility_editor_assets['dependencies'],
-				$compatibility_editor_assets['version']
-			);
-		}
 	}
 }

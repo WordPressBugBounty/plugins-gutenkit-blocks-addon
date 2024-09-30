@@ -326,7 +326,8 @@
       "type": "object"
     },
     "gkitOffCanvasBg": {
-      "type": "object"
+      "type": "object",
+      "selector": "{{WRAPPER}}"
     },
     "offCanvasPosition": {
       "type": "string",
