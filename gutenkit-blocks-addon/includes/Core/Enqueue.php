@@ -44,6 +44,7 @@ class Enqueue {
 				'plugin_url'    => GUTENKIT_PLUGIN_URL,
 				'screen'        => $hook,
 				'api_url'       => GUTENKIT_API_URL,
+				'root_url'		=> esc_url( home_url( '/' ) ),
 				'use_only_global_styles_fonts' => Utils::get_settings('use_only_global_styles_fonts'),
 				'version'     => GUTENKIT_PLUGIN_VERSION,
 				'modules'     => \Gutenkit\Config\Modules::get_active_modules_list(),
@@ -68,23 +69,23 @@ class Enqueue {
 		// Register the global styles and scripts
 		wp_register_style( 'animate', GUTENKIT_PLUGIN_URL . 'assets/css/animate.min.css', array(), GUTENKIT_PLUGIN_VERSION );
 		wp_register_style( 'gkit-animate', GUTENKIT_PLUGIN_URL . 'assets/css/gkit-animate.css', array(), GUTENKIT_PLUGIN_VERSION );
-		wp_register_script( 'fancybox', GUTENKIT_PLUGIN_URL . 'assets/js/fancybox.js', array(), GUTENKIT_PLUGIN_VERSION, true );
+		wp_register_script( 'fancybox', GUTENKIT_PLUGIN_URL . 'assets/js/fancybox.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ] );
 		wp_register_style( 'fancybox', GUTENKIT_PLUGIN_URL . 'assets/css/fancybox.css', array(), GUTENKIT_PLUGIN_VERSION );
 		wp_register_style( 'hover-animations', GUTENKIT_PLUGIN_URL . 'assets/css/hover-animations.min.css', array(), GUTENKIT_PLUGIN_VERSION );
-		wp_register_script( 'goodshare', GUTENKIT_PLUGIN_URL . 'assets/js/goodshare.js', array(), GUTENKIT_PLUGIN_VERSION, true );
-		wp_register_script( 'easy-piechart', GUTENKIT_PLUGIN_URL . 'assets/js/easy-piechart.js', array(), GUTENKIT_PLUGIN_VERSION, true );
-		wp_register_script( 'odometer', GUTENKIT_PLUGIN_URL . 'assets/js/odometer.min.js', array(), GUTENKIT_PLUGIN_VERSION, true );
+		wp_register_script( 'goodshare', GUTENKIT_PLUGIN_URL . 'assets/js/goodshare.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ] );
+		wp_register_script( 'easy-piechart', GUTENKIT_PLUGIN_URL . 'assets/js/easy-piechart.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ] );
+		wp_register_script( 'odometer', GUTENKIT_PLUGIN_URL . 'assets/js/odometer.min.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ] );
 		wp_register_style( 'odometer', GUTENKIT_PLUGIN_URL . 'assets/css/odometer-theme-default.css', array(), GUTENKIT_PLUGIN_VERSION );
-		wp_register_script('swiper', GUTENKIT_PLUGIN_URL . 'assets/js/swiper.js', array(), GUTENKIT_PLUGIN_VERSION, true);
+		wp_register_script('swiper', GUTENKIT_PLUGIN_URL . 'assets/js/swiper.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
 		wp_register_style('swiper', GUTENKIT_PLUGIN_URL . 'assets/css/swiper.css', array(), GUTENKIT_PLUGIN_VERSION, 'all');
-		wp_register_script('img-comparison', GUTENKIT_PLUGIN_URL . 'assets/js/img-comparison.js', array(), GUTENKIT_PLUGIN_VERSION, true);
+		wp_register_script('img-comparison', GUTENKIT_PLUGIN_URL . 'assets/js/img-comparison.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
 		wp_register_style('img-comparison', GUTENKIT_PLUGIN_URL . 'assets/css/img-comparison.css', array(), GUTENKIT_PLUGIN_VERSION, 'all');
-		wp_register_script('gsap', GUTENKIT_PLUGIN_URL . 'assets/js/gsap.js', array(), GUTENKIT_PLUGIN_VERSION, true);
-		wp_register_script('gsap-scroll-trigger', GUTENKIT_PLUGIN_URL . 'assets/js/gsap-scroll-trigger.js', array(), GUTENKIT_PLUGIN_VERSION, true);
-		wp_register_script('gsap-observer', GUTENKIT_PLUGIN_URL . 'assets/js/gsap-observer.js', array(), GUTENKIT_PLUGIN_VERSION, true);
-		wp_register_script('gsap-scroll-to', GUTENKIT_PLUGIN_URL . 'assets/js/gsap-scroll-to.js', array(), GUTENKIT_PLUGIN_VERSION, true);
-		wp_register_script('vanilla-tilt', GUTENKIT_PLUGIN_URL . 'assets/js/vanilla-tilt.js', array(), GUTENKIT_PLUGIN_VERSION, true);
-		wp_register_script('lenis', GUTENKIT_PLUGIN_URL . 'assets/js/lenis.js', array(), GUTENKIT_PLUGIN_VERSION, true);
+		wp_register_script('gsap', GUTENKIT_PLUGIN_URL . 'assets/js/gsap.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
+		wp_register_script('gsap-scroll-trigger', GUTENKIT_PLUGIN_URL . 'assets/js/gsap-scroll-trigger.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
+		wp_register_script('gsap-observer', GUTENKIT_PLUGIN_URL . 'assets/js/gsap-observer.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
+		wp_register_script('gsap-scroll-to', GUTENKIT_PLUGIN_URL . 'assets/js/gsap-scroll-to.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
+		wp_register_script('vanilla-tilt', GUTENKIT_PLUGIN_URL . 'assets/js/vanilla-tilt.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
+		wp_register_script('lenis', GUTENKIT_PLUGIN_URL . 'assets/js/lenis.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
 
 		// frontend common css
 		$common_styles_dir = GUTENKIT_PLUGIN_DIR . 'build/gutenkit/frontend-common.asset.php';
@@ -117,30 +118,59 @@ class Enqueue {
 	 * @return void
 	 * @since 1.0.0
 	 */
-	public function blocks_editor_scripts() {
+	public function blocks_editor_scripts()
+	{
 		global $pagenow;
-		$global_asset_file = GUTENKIT_PLUGIN_DIR . 'build/gutenkit/global.asset.php';
-		if ( file_exists( $global_asset_file ) ) {
-			$global_asset = include_once $global_asset_file;
-			if ( isset( $global_asset['version'] ) ) {
-				wp_enqueue_script(
-					'gutenkit-blocks-editor-global',
-					GUTENKIT_PLUGIN_URL . 'build/gutenkit/global.js',
-					$global_asset['dependencies'],
-					$global_asset['version'],
-					false
-				);
-			}
-		}
+
+		// Define paths to asset files
+		$asset_files = [
+			'components' => GUTENKIT_PLUGIN_DIR . 'build/gutenkit/components.asset.php',
+			'helpers' => GUTENKIT_PLUGIN_DIR . 'build/gutenkit/helpers.asset.php',
+			'global' => GUTENKIT_PLUGIN_DIR . 'build/gutenkit/global.asset.php',
+		];
 		
-		$is_support_meta = post_type_supports(get_post_type(), 'custom-fields');
-		if( $is_support_meta && isset( $pagenow ) && $pagenow !== 'site-editor.php' && ($pagenow === 'post.php' || $pagenow === 'post-new.php') ) {
-			wp_enqueue_script("gutenkit-page-settings-editor-scripts");
+		// Enqueue components script
+		$this->enqueue_assets($asset_files['components'], 'gutenkit-blocks-editor-components', 'components.js');
+
+		// Enqueue helpers script
+		$this->enqueue_assets($asset_files['helpers'], 'gutenkit-blocks-editor-helpers', 'helpers.js');
+
+		// Enqueue global script
+		$this->enqueue_assets($asset_files['global'], 'gutenkit-blocks-editor-global', 'global.js');
+
+		// Conditional enqueue for page settings
+		if ($this->should_enqueue_page_settings($pagenow)) {
+			wp_enqueue_script('gutenkit-page-settings-editor-scripts');
 		}
 
-		wp_enqueue_script("gutenkit-breakpoints-editor-scripts");
-		wp_enqueue_style("gutenkit-breakpoints-editor-styles");
+		// Enqueue breakpoint scripts and styles
+		wp_enqueue_script('gutenkit-breakpoints-editor-scripts');
+		wp_enqueue_style('gutenkit-breakpoints-editor-styles');
 	}
+
+	private function enqueue_assets($asset_file, $handle, $script_file)
+	{
+		if (file_exists($asset_file)) {
+			$asset_data = include_once $asset_file;
+			if (isset($asset_data['version'])) {
+				wp_enqueue_script(
+					$handle,
+					GUTENKIT_PLUGIN_URL . "build/gutenkit/{$script_file}",
+					$asset_data['dependencies'],
+					$asset_data['version'],
+					false
+				);
+				return true; // Successfully enqueued
+			}
+		}
+		return false; // Failed to enqueue
+	}
+
+	private function should_enqueue_page_settings($pagenow) {
+		$is_support_meta = post_type_supports(get_post_type(), 'custom-fields');
+		return $is_support_meta && $pagenow !== 'site-editor.php' && ($pagenow === 'post.php' || $pagenow === 'post-new.php');
+	}
+	
 
 	/**
 	 * Converts custom properties to CSS rules for global presets.

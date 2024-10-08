@@ -74,9 +74,15 @@ class ActivePluginData {
 	}
 
 	public function install_and_activate_plugin_from_external($request) {
+		// Check if the user has the required capability
+		if (!current_user_can('install_plugins')) {
+			wp_send_json_error('You do not have permission to install plugins.');
+			return;
+		}
+	
 		// The external plugin URL
-		$plugin_url = $request->get_param('plugin');
-		$slug = $request->get_param('slug');
+		$plugin_url = esc_url_raw($request->get_param('plugin'));
+		$slug = sanitize_text_field($request->get_param('slug'));
 		$plugin_slug = "$slug/$slug.php";
 		$plugin_dir = WP_PLUGIN_DIR;  // This points to wp-content/plugins
 
@@ -92,10 +98,7 @@ class ActivePluginData {
 			wp_send_json_error('Failed to download plugin. Error: ' . $temp_file->get_error_message());
 			return;
 		}
-	
-		$command = "unzip $temp_file -d $plugin_dir";
-		exec($command);
-	
+
 		// Unzip the plugin into the wp-content/plugins directory
 		$unzip_result = unzip_file($temp_file, $plugin_dir);
 	

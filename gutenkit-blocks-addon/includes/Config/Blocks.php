@@ -31,13 +31,14 @@ class Blocks {
 		$is_editor = $pagenow === 'post.php' || $pagenow === 'post-new.php' || $pagenow === 'site-editor.php' || $pagenow === 'widgets.php';
 		$args = array(
 			'handle' => 'gutenkit-blocks-editor-global',
-			'src'    => GUTENKIT_PLUGIN_URL . 'build/gutenkit/global.css',
+			'src'    => GUTENKIT_PLUGIN_URL . 'build/gutenkit/components.css',
 			'deps'   => array(),
 			'ver'    => GUTENKIT_PLUGIN_VERSION,
 			'media'  => 'all',
 		);
 
 		$blocks_list = \Gutenkit\Config\BlockList::instance()->get_list( 'active' );
+		$is_register = Utils::is_local() ? Utils::is_local() : Utils::status() === 'valid';
 
 		if ( ! empty( $blocks_list ) ) {
 			foreach ( $blocks_list as $key => $block ) {
@@ -51,8 +52,8 @@ class Blocks {
 					$blocks_dir = GUTENKIT_BLOCKS_DIR . $key;
 					$plugin_slug = 'gutenkit-blocks-addon';
 				}
-
-				if ( !empty( $package ) &&  $package === 'pro' && defined( 'GUTENKIT_PRO_BLOCKS_DIR' ) ) {
+				
+				if ( !empty( $package ) &&  $package === 'pro' && defined( 'GUTENKIT_PRO_BLOCKS_DIR' ) && $is_register ) {
 					$plugin_dir = rtrim( GUTENKIT_PLUGIN_DIR, '/' ) . '-pro';
 					$blocks_dir = $plugin_dir . '/build/blocks/' . $key;
 					$plugin_slug = 'gutenkit-blocks-addon-pro';

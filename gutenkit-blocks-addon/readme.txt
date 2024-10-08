@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -352,6 +352,16 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.1.1 (2024-10-08) =
+* Added: Vertical menu option in the nav menu block
+* Fixed: Responsive issues with spacing, `slides to show,` and `slides to scroll` controls in the testimonial block
+* Fixed: Focused text typography, text decoration color, and padding control issues in the advanced paragraph block
+* Fixed: Variable color issue in the blog post block's button
+* Fixed: Border control single-value issue
+* Improved: Faster editor loading time
+* Improved: Enhanced editor control experience
+* Improved: Security for external plugin installations
+
 = GutenKit Blocks Addon: 2.1.0 (2024-09-30) =
 * Added: RTL support
 * Added: Compatibility with GeneratePress and Bricks themes
@@ -360,7 +370,7 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 * Fixed: Block settings now exclude video and image options
 * Fixed: Updated gradient function in the color component
 * Fixed: Refactored post component to use the `useEntityProp` hook for fetching excerpt content
-* Fixed: Gap issue in the Countdown Timer block’s time items container
+* Fixed: Gap issue in the countdown timer block’s time items container
 * Fixed: Alignment control issue in the advanced tab block
 * Fixed: Price tag width issue in the pricing table block
 * Fixed: Stroke and text color issues in the heading block
@@ -370,7 +380,7 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 * Fixed: "None" style issue in heading blocks
 * Fixed: Validation for empty google map API input
 * Fixed: Visibility module issue
-* Fixed: Label issue in the Image comparison block
+* Fixed: Label issue in the image comparison block
 * Fixed: Subtitle typography issue in the advanced tab block
 * Fixed: Block error when changing video types in the video block
 * Fixed: Popup button animation issue in the video block

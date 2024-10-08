@@ -35,6 +35,10 @@
       "type": "string",
       "default": "1024"
     },
+    "verticalMenu": {
+      "type": "boolean",
+      "default": false
+    },
     "gkitMenuCustomMenuBreakPoint": {
       "type": "number",
       "default": 1024

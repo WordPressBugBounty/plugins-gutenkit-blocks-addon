@@ -37,7 +37,7 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'fields'            => array(
 						'api_key' => array('label' => 'API Key', 'value' => '')
 					),
-					'status'          => 'inactive',
+					'status'          => 'active',
 					'category' => 'api-integration',
 				),
 				'facebook_feed'   => array(
@@ -194,6 +194,13 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					),
 					'status'  => 'inactive',
 					'category' => 'global-custom-properties',
+				),
+				'image_lazy_loading' => array(
+					'slug'    => 'image_lazy_loading',
+					'title'   => 'Image Lazy Loading',
+					'package' => 'free',
+					'status'  => 'active',
+					'category' => 'performance',
 				),
 			)
 		);

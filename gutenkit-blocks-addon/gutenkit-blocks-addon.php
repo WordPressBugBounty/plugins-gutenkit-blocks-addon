@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpmet.com/plugin/gutenkit/
  * Author: Wpmet
- * Version: 2.1.0
+ * Version: 2.1.1
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.1.0';
+	const VERSION = '2.1.1';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -283,6 +283,16 @@ final class Gutenkit {
 		 * and initializes it, allowing users to configure the Gutenkit plugin's global settings.
 		 */
 		Gutenkit\Routes\GlobalSettings::instance();
+
+		/**
+		 * Initializes the MailChimp route.
+		 * 
+		 * This function creates an instance of the Gutenkit\Routes\MailChimp class
+		 * and initializes it, allowing users to register the MailChimp route.
+		 * 
+		 * @since 1.5.1
+		 */
+		Gutenkit\Routes\MailChimp::instance();
 
 		/**
 		 * Instantiate the UtilityPackage class.

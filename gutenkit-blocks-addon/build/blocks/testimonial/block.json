@@ -1029,6 +1029,18 @@
         "spaceBetweenMobile": {
           "size": 10
         },
+        "spaceBetweenTabletLandscape": {
+          "size": 10
+        },
+        "spaceBetweenMobileLandscape": {
+          "size": 10
+        },
+        "spaceBetweenLaptop": {
+          "size": 10
+        },
+        "spaceBetweenWideScreen": {
+          "size": 10
+        },
         "slidesPerGroupDesktop": {
           "size": 1
         },
@@ -1038,6 +1050,18 @@
         "slidesPerGroupMobile": {
           "size": 1
         },
+        "slidesPerGroupTabletLandscape": {
+          "size": 1
+        },
+        "slidesPerGroupMobileLandscape": {
+          "size": 1
+        },
+        "slidesPerGroupLaptop": {
+          "size": 1
+        },
+        "slidesPerGroupWideScreen": {
+          "size": 1
+        },
         "slidesPerViewDesktop": {
           "size": 1
         },
@@ -1045,6 +1069,18 @@
           "size": 1
         },
         "slidesPerViewMobile": {
+          "size": 1
+        },
+        "slidesPerViewTabletLandscape": {
+          "size": 1
+        },
+        "slidesPerViewMobileLandscape": {
+          "size": 1
+        },
+        "slidesPerViewLaptop": {
+          "size": 1
+        },
+        "slidesPerViewWideScreen": {
           "size": 1
         },
         "speed": 1000,

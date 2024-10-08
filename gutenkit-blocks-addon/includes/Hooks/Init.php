@@ -28,5 +28,6 @@ class Init {
 		\Gutenkit\Hooks\PageSettings::instance();
 		\Gutenkit\Hooks\EntranceAnimation::instance();
 		\Gutenkit\Hooks\Visibility::instance();
+		\Gutenkit\Hooks\ImageOptimizer::instance();
 	}
 }

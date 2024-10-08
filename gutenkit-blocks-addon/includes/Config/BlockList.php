@@ -557,12 +557,34 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'package'  => 'free',
 					'category' => 'general',
 					'status'   => 'inactive',
-					'badge'			=> ['freemium', 'new', 'beta'],
-					'dependency'	=> array(
-						'slug'		=> 'table-builder-block',
-						'url'		=> 'https://demo.wpmet.com/gutenberg/wp-content/uploads/gutenkit/table-builder-block.zip',
+					'badge'    => ['freemium', 'new', 'beta'],
+					'dependency' => array(
+						'slug' => 'table-builder-block',
+						'url' => 'https://demo.wpmet.com/gutenberg/wp-content/uploads/gutenkit/table-builder-block.zip',
 					),
 				),
+				// 'advanced-slider' => array(
+				// 	'slug'     => 'advanced-slider',
+				// 	'title'    => 'Advanced Slider',
+				// 	'package'  => 'pro',
+				// 	'category' => 'general',
+				// 	'status'   => 'active',
+				// ),
+				// 'advanced-slider-item' => array(
+				// 	'slug'     => 'advanced-slider-item',
+				// 	'title'    => 'Advanced Slider Item',
+				// 	'package'  => 'pro',
+				// 	'category' => 'general',
+				// 	'parent'   => 'advanced-slider',
+				// 	'status'   => 'active',
+				// ),
+				'mail-chimp' => array(
+					'slug'     => 'mail-chimp',
+					'title'    => 'Mailchimp',
+					'package'  => 'free',
+					'category' => 'general',
+					'status'   => 'active',
+				)
 			)
 		);
 	}
