@@ -289,6 +289,42 @@ class Utils {
 		);
 	}
 
+	public static function gdc_allowed_html()
+	{
+		return array(
+			'gdc' => array(
+				'selectedpath' => true,
+				'class' => true,
+				'id' => true,
+				'fallback' => true,
+				'postcustomfield' => true,
+				'postcustomfieldkey' => true,
+				'postdatetype' => true,
+				'dateformat' => true,
+				'customdateformat' => true,
+				'excerptlength' => true,
+				'tagindex' => true,
+				'timetype' => true,
+				'timeformat' => true,
+				'customtimeformat' => true,
+				'categoryindex' => true,
+				'nocomment' => true,
+				'singlecomment' => true,
+				'multicomments' => true,
+				'currentdateformat' => true,
+				'customcurrentdateformat' => true,
+				'currenttimeformat' => true,
+				'customcurrenttimeformat' => true,
+				'authorinfo' => true,
+				'currentuserinfo' => true,
+				'acfgroup' => true,
+				'acffield' => true,
+			),
+		);
+	}
+
+	
+
 	/**
 	 * Returns the allowed HTML tags and attributes for the img element.
 	 *
@@ -303,6 +339,20 @@ class Utils {
 				'class' => true,
 				'height' => true,
 				'width' => true,
+			)
+		);
+	}
+
+	/**
+	 * Returns the allowed HTML tags and attributes for the style element.
+	 *
+	 * @return array The allowed HTML tags and attributes.
+	 */
+	public static function style_allowed_html() {
+		return array(
+			'style' => array(
+				'class' => true,
+				'id' => true,
 			)
 		);
 	}
@@ -409,7 +459,7 @@ class Utils {
 	public static function post_kses_extend_allowed_html() {
 		$default_post_allowed_html = wp_kses_allowed_html( 'post' );
 
-		$post_allowed_html = array_merge( $default_post_allowed_html, self::svg_allowed_html(), self::iframe_allowed_html() );
+		$post_allowed_html = array_merge( $default_post_allowed_html, self::svg_allowed_html(), self::iframe_allowed_html(), self::gdc_allowed_html(), self::style_allowed_html() );
 
 		return $post_allowed_html;
 	}

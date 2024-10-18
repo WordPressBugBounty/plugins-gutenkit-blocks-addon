@@ -22,6 +22,7 @@ class Blocks {
 		add_action( 'block_categories_all', array( $this, 'register_block_categories' ), 10, 2 );
 		add_filter( 'render_block', array( $this, 'save_element' ), 10, 3 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
+		add_filter( 'block_type_metadata', array( $this, 'block_metadata' ), 10 );
 	}
 
 	// register blocks
@@ -127,8 +128,8 @@ class Blocks {
 
 			// Google Roboto Font
 			wp_enqueue_style(
-				'gutenkit-google-fonts', 
-				'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'
+				'gutenkit-google-fonts',
+				'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'
 			);
 		}
 	}
@@ -140,6 +141,14 @@ class Blocks {
 
 			if(empty($block_content->get_attribute('id'))) {
 				$block_content->set_attribute('id', "block-" . $parsed_block['attrs']['blockID']);
+			}
+
+			if(empty($block_content->get_attribute('data-block'))) {
+				$block_content->set_attribute('data-block', $parsed_block['blockName']);
+			}
+
+			if(empty($block_content->get_attribute('data-post-id')) && !empty($instance->context['postId'])) {
+				$block_content->set_attribute('data-post-id', $instance->context['postId']);
 			}
 			
 			$block_content->add_class($parsed_block['attrs']['blockClass']);
@@ -158,4 +167,22 @@ class Blocks {
 
 		return $block_content;
 	}
+
+	/**
+	 * block_metadata
+	 * 
+	 * @since 1.0.0
+	 */
+	public function block_metadata( $metadata ) {
+		if (strstr($metadata['name'], 'gutenkit')) {
+			// Ensure 'usesContext' is set and is an array
+			if (!isset($metadata['usesContext'])) {
+				$metadata['usesContext'] = array();
+			}
+	
+			// Merge 'postType' and 'postId' into 'usesContext'
+			$metadata['usesContext'] = array_merge($metadata['usesContext'], array('postType', 'postId'));
+		}
+		return $metadata;
+	}	
 }

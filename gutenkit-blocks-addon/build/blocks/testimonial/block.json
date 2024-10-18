@@ -1015,7 +1015,16 @@
       "type": "object"
     },
     "swiperDots": {
-      "type": "object"
+      "type": "object",
+      "default": {
+        "alignmentDesktop": "center",
+        "alignmentTablet": "center",
+        "alignmentMobile": "center",
+        "alignmentTabletLandscape": "center",
+        "alignmentMobileLandscape": "center",
+        "alignmentLaptop": "center",
+        "alignmentWideScreen": "center"
+      }
     },
     "swiperSettings": {
       "type": "object",

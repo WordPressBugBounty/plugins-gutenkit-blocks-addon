@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -352,6 +352,17 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.1.2 (2024-10-17) =
+* Added: Predefined template picker for the navigation menu block
+* Added: Template library templates filtering by template category
+* Fixed: Hover border color on navigation icons issue in testimonial block
+* Fixed: Spacing and alignment of dots issue in testimonial block
+* Fixed: Wrapper vertical alignment, and border color issue in testimonial block
+* Fixed: Thumbnail issues in the post grid block
+* Fixed: Slide animation effects in the choose control
+* Fixed: Non-functional controls in the CSS transform module
+* Improved: Controls for the advanced paragraph block
+
 = GutenKit Blocks Addon: 2.1.1 (2024-10-08) =
 * Added: Vertical menu option in the nav menu block
 * Fixed: Responsive issues with spacing, `slides to show,` and `slides to scroll` controls in the testimonial block

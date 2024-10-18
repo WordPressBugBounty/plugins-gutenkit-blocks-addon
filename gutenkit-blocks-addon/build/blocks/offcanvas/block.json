@@ -39,6 +39,10 @@
       "type": "string",
       "default": "icon"
     },
+    "offCanvasCloseMenuType": {
+      "type": "string",
+      "default": "icon"
+    },
     "closeIcon": {
       "type": "object",
       "default": {
@@ -89,29 +93,136 @@
         "size": 0.3
       }
     },
+    "htmlTag": {
+      "type": "string",
+      "default": "div"
+    },
     "gkitCloseIconSizeDesktop": {
       "type": "object",
       "default": {
-        "size": 14,
+        "size": 16,
         "unit": "px"
       }
     },
     "gkitCloseIconSizeTablet": {
-      "type": "object"
+      "type": "object",
+      "default": {
+        "size": 16,
+        "unit": "px"
+      }
     },
     "gkitCloseIconSizeMobile": {
-      "type": "object"
+      "type": "object",
+      "default": {
+        "size": 16,
+        "unit": "px"
+      }
     },
     "gkitCloseIconSizeTabletLandscape": {
-      "type": "object"
+      "type": "object",
+      "default": {
+        "size": 16,
+        "unit": "px"
+      }
     },
     "gkitCloseIconSizeMobileLandscape": {
-      "type": "object"
+      "type": "object",
+      "default": {
+        "size": 16,
+        "unit": "px"
+      }
     },
     "gkitCloseIconSizeLaptop": {
-      "type": "object"
+      "type": "object",
+      "default": {
+        "size": 16,
+        "unit": "px"
+      }
     },
     "gkitCloseIconSizeWideScreen": {
+      "type": "object",
+      "default": {
+        "size": 16,
+        "unit": "px"
+      }
+    },
+    "offCanvasCloseText": {
+      "type": "string",
+      "default": "Close"
+    },
+    "closeIconPosition": {
+      "type": "string",
+      "default": "before"
+    },
+    "closeIconSpacingDesktop": {
+      "type": "object",
+      "default": {
+        "size": 5,
+        "unit": "px"
+      }
+    },
+    "closeIconSpacingTablet": {
+      "type": "object"
+    },
+    "closeIconSpacingMobile": {
+      "type": "object"
+    },
+    "closeIconSpacingTabletLandscape": {
+      "type": "object"
+    },
+    "closeIconSpacingMobileLandscape": {
+      "type": "object"
+    },
+    "closeIconSpacingLaptop": {
+      "type": "object"
+    },
+    "closeIconSpacingWideScreen": {
+      "type": "object"
+    },
+    "closeIconCustomHeightWidth": {
+      "type": "boolean",
+      "default": false
+    },
+    "closeIconWidthDesktop": {
+      "type": "object"
+    },
+    "closeIconWidthTablet": {
+      "type": "object"
+    },
+    "closeIconWidthMobile": {
+      "type": "object"
+    },
+    "closeIconWidthTabletLandscape": {
+      "type": "object"
+    },
+    "closeIconWidthMobileLandscape": {
+      "type": "object"
+    },
+    "closeIconWidthLaptop": {
+      "type": "object"
+    },
+    "closeIconWidthWideScreen": {
+      "type": "object"
+    },
+    "closeIconHeightDesktop": {
+      "type": "object"
+    },
+    "closeIconHeightTablet": {
+      "type": "object"
+    },
+    "closeIconHeightMobile": {
+      "type": "object"
+    },
+    "closeIconHeightTabletLandscape": {
+      "type": "object"
+    },
+    "closeIconHeightMobileLandscape": {
+      "type": "object"
+    },
+    "closeIconHeightLaptop": {
+      "type": "object"
+    },
+    "closeIconHeightWideScreen": {
       "type": "object"
     },
     "gkitHamburgIconSizeDesktop": {
@@ -161,6 +272,9 @@
       "type": "object"
     },
     "gkitHamburgTypography": {
+      "type": "object"
+    },
+    "closeIconTypography": {
       "type": "object"
     },
     "gkitHamburgColor": {

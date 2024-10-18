@@ -204,19 +204,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'status'		=> 'active',
 					'badge'			=> ['new', 'beta'],
 				),
-				'popup-builder' => array(
-					'slug'			=> 'popup-builder',
-					'title'			=> 'Popup Builder',
-					'package'		=> 'free',
-					'auto_enqueue'	=> false,
-					'attributes'	=> array( 'new' ),
-					'status'		=> 'inactive',
-					'badge'			=> ['freemium', 'new', 'beta'],
-					'dependency'	=> array(
-						'slug'		=> 'popup-builder-block',
-						'url'		=> 'https://demo.wpmet.com/gutenberg/wp-content/uploads/gutenkit/popup-builder-block.zip',
-					),
-				),
 			)
 		);
 	}

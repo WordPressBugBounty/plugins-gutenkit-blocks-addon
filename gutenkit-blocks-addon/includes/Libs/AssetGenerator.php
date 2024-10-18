@@ -233,7 +233,17 @@ class AssetGenerator {
 
 		if( isset($parsed_block['blockName']) && strpos($parsed_block['blockName'], 'gutenkit') !== false ) {
 			// block css
-			if ( isset( $parsed_block['attrs']['blocksCSS'] ) ) {
+			$active_modules = \Gutenkit\Config\Modules::get_active_modules_list();
+			$has_dynamic_background = false;
+			foreach ($parsed_block['attrs']['backgroundTracker'] as $background) {
+				if (empty($background['isDynamicContent']) || empty($background['dynamicContentType'])) {
+					continue;
+				}
+
+				$has_dynamic_background = true;
+				break; // Stop loop once a match is found
+			}
+			if ( isset( $parsed_block['attrs']['blocksCSS'] ) && (empty( $active_modules['dynamic-content'] ) || !$has_dynamic_background ) ) {
 				foreach ( $parsed_block['attrs']['blocksCSS'] as $device => $css ) {
 					if (!isset($blocks_css[$device])) {
 						$blocks_css[$device] = '';
@@ -262,7 +272,7 @@ class AssetGenerator {
 			}
 
 			// block common style
-			if ( isset( $parsed_block['attrs']['commonStyle'] ) ) {
+			if ( isset( $parsed_block['attrs']['commonStyle'] ) && (empty( $active_modules['dynamic-content'] ) || !$has_dynamic_background) ) {
 				foreach ( $parsed_block['attrs']['commonStyle'] as $device => $css ) {
 					if (!isset($blocks_css[$device])) {
 						$blocks_css[$device] = '';

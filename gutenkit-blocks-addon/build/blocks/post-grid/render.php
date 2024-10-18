@@ -5,6 +5,8 @@ $block_id = $attributes['blockID'];
 $align_class = isset($attributes['align']) ? 'align' . $attributes['align'] : '';
 $categories = $attributes['selectedCategories'] ?? [];
 $post_count = $attributes['postCount'];
+$enableCropTitle = $attributes['enableCropTitle'];
+$numberOfWordsTitle = $attributes['numberOfWordsTitle'];
 $post_cat=[];
 
 foreach($categories as $key => $category) {
@@ -17,7 +19,15 @@ $query = array(
     'posts_per_page'    => $post_count,
 );
 if(!empty($categories)) {
-    $query['cat'] = $post_cat;
+	$query['cat'] = $post_cat;
+}
+
+function truncate_title($title, $numberOfWordsTitle) {
+	$words = explode(' ', $title);
+	if (count($words) > $numberOfWordsTitle) {
+		return implode(' ', array_slice($words, 0, $numberOfWordsTitle)) . ' ' . '...';
+	}
+	return $title;
 }
 ?>
 
@@ -27,8 +37,11 @@ if(!empty($categories)) {
 	if ($xs_query->have_posts()) :
 		while ($xs_query->have_posts()) :
 			$xs_query->the_post();
-			if (has_post_thumbnail()) :
-				$img_url = get_the_post_thumbnail_url(get_the_ID());
+			$img_url = has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID()) : ''; // Check if thumbnail exists
+			$title = get_the_title();
+			if ($enableCropTitle) {
+				$title = truncate_title($title, $numberOfWordsTitle);
+			}
 			?>
 				<div class="gkit-post-grid-item">
 					<a href="<?php echo esc_url(get_the_permalink()); ?>" class="gkit-post-grid-item__header" aria-label="url">
@@ -37,9 +50,9 @@ if(!empty($categories)) {
 							<div class="tab__post--icon"><span class="fa fa-play-circle-o"></span></div>
 						<?php endif; ?>
 					</a>
-					<h3 class="gkit-post-grid-item__title"><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php the_title(); ?></a></h3>
+					<h3 class="gkit-post-grid-item__title"><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php echo esc_html($title); ?></a></h3>
 				</div>
-			<?php endif;
+			<?php
 		endwhile;
 	endif;
 	wp_reset_postdata(); ?>
