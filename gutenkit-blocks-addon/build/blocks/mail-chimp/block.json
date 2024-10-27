@@ -41,7 +41,10 @@
           "nameId": "FNAME",
           "childNameId": "addr1",
           "required": false,
-          "fieldSize": "50",
+          "fieldSize": {
+            "unit": "%",
+            "size": 50
+          },
           "textAreaRows": 4,
           "showIcon": false
         },
@@ -53,7 +56,10 @@
           "nameId": "LNAME",
           "childNameId": "addr1",
           "required": false,
-          "fieldSize": "50",
+          "fieldSize": {
+            "unit": "%",
+            "size": 50
+          },
           "textAreaRows": 4,
           "showIcon": false
         },
@@ -65,7 +71,10 @@
           "nameId": "EMAIL",
           "childNameId": "addr1",
           "required": true,
-          "fieldSize": "default",
+          "fieldSize": {
+            "unit": "%",
+            "size": 100
+          },
           "textAreaRows": 4,
           "showIcon": false
         }
@@ -79,9 +88,38 @@
       "type": "boolean",
       "default": false
     },
-    "buttonFieldSize": {
-      "type": "string",
-      "default": "25"
+    "buttonFieldSizeDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 20
+      }
+    },
+    "buttonFieldSizeWideScreen": {
+      "type": "object"
+    },
+    "buttonFieldSizeLaptop": {
+      "type": "object"
+    },
+    "buttonFieldSizeTablet": {
+      "type": "object"
+    },
+    "buttonFieldSizeTabletLandscape": {
+      "type": "object"
+    },
+    "buttonFieldSizeMobile": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 30
+      }
+    },
+    "buttonFieldSizeMobileLandscape": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 30
+      }
     },
     "doubleOptin": {
       "type": "boolean",
@@ -105,7 +143,7 @@
     },
     "iconPosition": {
       "type": "string",
-      "default": "bottom"
+      "default": "before"
     },
     "betweenSpace": {
       "type": "object"
@@ -194,11 +232,47 @@
     "labelTypography": {
       "type": "object"
     },
+    "formBgColor": {
+      "type": "string"
+    },
     "fieldColor": {
+      "type": "string"
+    },
+    "fieldColorHover": {
+      "type": "string"
+    },
+    "fieldColorFocus": {
       "type": "string"
     },
     "fieldBgColor": {
       "type": "string"
+    },
+    "fieldBgColorHover": {
+      "type": "string"
+    },
+    "fieldBgColorFocus": {
+      "type": "string"
+    },
+    "fieldPlaceholderColor": {
+      "type": "string"
+    },
+    "fieldPlaceholderColorHover": {
+      "type": "string"
+    },
+    "fieldPlaceholderColorFocus": {
+      "type": "string"
+    },
+    "fieldBoxShadowNormal": {
+      "type": "string",
+      "default": "none"
+    },
+    "fieldBoxShadowHover": {
+      "type": "string",
+      "default": "none"
+    },
+    "fieldBoxShadowFocus": {
+      "type": "string",
+      "default": "none"
     },
     "fieldTypography": {
       "type": "object"
@@ -224,28 +298,76 @@
     "fieldPaddingMobileLandscape": {
       "type": "object"
     },
-    "fieldBorderDesktop": {
+    "fieldBorderRadiusDesktop": {
       "type": "object"
     },
-    "fieldBorderWideScreen": {
+    "fieldBorderRadiusWideScreen": {
       "type": "object"
     },
-    "fieldBorderLaptop": {
+    "fieldBorderRadiusLaptop": {
       "type": "object"
     },
-    "fieldBorderMobile": {
+    "fieldBorderRadiusMobile": {
       "type": "object"
     },
-    "fieldBorderMobileLandscape": {
+    "fieldBorderRadiusMobileLandscape": {
       "type": "object"
     },
-    "fieldBorderTablet": {
+    "fieldBorderRadiusTablet": {
       "type": "object"
     },
-    "fieldBorderTabletLandscape": {
+    "fieldBorderRadiusTabletLandscape": {
       "type": "object"
     },
-    "fieldBorderRadius": {
+    "fieldBorderRadiusHoverDesktop": {
+      "type": "object"
+    },
+    "fieldBorderRadiusHoverWideScreen": {
+      "type": "object"
+    },
+    "fieldBorderRadiusHoverLaptop": {
+      "type": "object"
+    },
+    "fieldBorderRadiusHoverMobile": {
+      "type": "object"
+    },
+    "fieldBorderRadiusHoverMobileLandscape": {
+      "type": "object"
+    },
+    "fieldBorderRadiusHoverTablet": {
+      "type": "object"
+    },
+    "fieldBorderRadiusHoverTabletLandscape": {
+      "type": "object"
+    },
+    "fieldBorderRadiusFocusDesktop": {
+      "type": "object"
+    },
+    "fieldBorderRadiusFocusWideScreen": {
+      "type": "object"
+    },
+    "fieldBorderRadiusFocusLaptop": {
+      "type": "object"
+    },
+    "fieldBorderRadiusFocusMobile": {
+      "type": "object"
+    },
+    "fieldBorderRadiusFocusMobileLandscape": {
+      "type": "object"
+    },
+    "fieldBorderRadiusFocusTablet": {
+      "type": "object"
+    },
+    "fieldBorderRadiusFocusTabletLandscape": {
+      "type": "object"
+    },
+    "fieldBorder": {
+      "type": "object"
+    },
+    "fieldBorderHover": {
+      "type": "object"
+    },
+    "fieldBorderFocus": {
       "type": "object"
     },
     "fieldIconColor": {
@@ -293,9 +415,82 @@
     "fieldIconPaddingMobile": {
       "type": "object"
     },
+    "isButtonPosition": {
+      "type": "boolean",
+      "default": false
+    },
     "buttonPosition": {
       "type": "string",
-      "default": "bottom"
+      "default": ""
+    },
+    "buttonVerticalOrientation": {
+      "type": "string"
+    },
+    "buttonVerticalOffsetDesktop": {
+      "type": "object"
+    },
+    "buttonVerticalOffsetWideScreen": {
+      "type": "object"
+    },
+    "buttonVerticalOffsetLaptop": {
+      "type": "object"
+    },
+    "buttonVerticalOffsetTablet": {
+      "type": "object"
+    },
+    "buttonVerticalOffsetTabletLandscape": {
+      "type": "object"
+    },
+    "buttonVerticalOffsetMobile": {
+      "type": "object"
+    },
+    "buttonVerticalOffsetMobileLandscape": {
+      "type": "object"
+    },
+    "buttonHorizontalOrientation": {
+      "type": "string"
+    },
+    "buttonHorizontalOffsetDesktop": {
+      "type": "object"
+    },
+    "buttonHorizontalOffsetWideScreen": {
+      "type": "object"
+    },
+    "buttonHorizontalOffsetLaptop": {
+      "type": "object"
+    },
+    "buttonHorizontalOffsetTablet": {
+      "type": "object"
+    },
+    "buttonHorizontalOffsetTabletLandscape": {
+      "type": "object"
+    },
+    "buttonHorizontalOffsetMobile": {
+      "type": "object"
+    },
+    "buttonHorizontalOffsetMobileLandscape": {
+      "type": "object"
+    },
+    "buttonPositionDesktop": {
+      "type": "string"
+    },
+    "buttonPositionWideScreen": {
+      "type": "string"
+    },
+    "buttonPositionLaptop": {
+      "type": "string"
+    },
+    "buttonPositionTablet": {
+      "type": "string"
+    },
+    "buttonPositionTabletLandscape": {
+      "type": "string"
+    },
+    "buttonPositionMobileLandscape": {
+      "type": "string"
+    },
+    "buttonPositionMobile": {
+      "type": "string"
     },
     "buttonTypography": {
       "type": "object"
@@ -344,6 +539,14 @@
     },
     "buttonHoverBorder": {
       "type": "object"
+    },
+    "buttonBoxShadowNormal": {
+      "type": "string",
+      "default": "none"
+    },
+    "buttonBoxShadowHover": {
+      "type": "string",
+      "default": "none"
     },
     "buttonBorderRadiusDesktop": {
       "type": "object"
@@ -414,8 +617,108 @@
     "successMessageColor": {
       "type": "string"
     },
+    "successMessageBg": {
+      "type": "string"
+    },
     "errorMessageColor": {
       "type": "string"
+    },
+    "errorMessageBg": {
+      "type": "string"
+    },
+    "submissionMessageWidthDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 400
+      }
+    },
+    "submissionMessageWidthWideScreen": {
+      "type": "object"
+    },
+    "submissionMessageWidthLaptop": {
+      "type": "object"
+    },
+    "submissionMessageWidthTabletLandscape": {
+      "type": "object"
+    },
+    "submissionMessageWidthTablet": {
+      "type": "object"
+    },
+    "submissionMessageWidthMobileLandscape": {
+      "type": "object"
+    },
+    "submissionMessageWidthMobile": {
+      "type": "object"
+    },
+    "submissionMessagePaddingDesktop": {
+      "type": "object"
+    },
+    "submissionMessagePaddingWideScreen": {
+      "type": "object"
+    },
+    "submissionMessagePaddingLaptop": {
+      "type": "object"
+    },
+    "submissionMessagePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "submissionMessagePaddingTablet": {
+      "type": "object"
+    },
+    "submissionMessagePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "submissionMessagePaddingMobile": {
+      "type": "object"
+    },
+    "submissionMessageMarginDesktop": {
+      "type": "object"
+    },
+    "submissionMessageMarginWideScreen": {
+      "type": "object"
+    },
+    "submissionMessageMarginLaptop": {
+      "type": "object"
+    },
+    "submissionMessageMarginTabletLandscape": {
+      "type": "object"
+    },
+    "submissionMessageMarginTablet": {
+      "type": "object"
+    },
+    "submissionMessageMarginMobileLandscape": {
+      "type": "object"
+    },
+    "submissionMessageMarginMobile": {
+      "type": "object"
+    },
+    "submissionSuccessMessageBorder": {
+      "type": "object"
+    },
+    "submissionErrorMessageBorder": {
+      "type": "object"
+    },
+    "submissionMessageBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "submissionMessageBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "submissionMessageBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "submissionMessageBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "submissionMessageBorderRadiusTablet": {
+      "type": "object"
+    },
+    "submissionMessageBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "submissionMessageBorderRadiusMobile": {
+      "type": "object"
     }
   },
   "supports": {

@@ -2,9 +2,9 @@
 Contributors: xpeedstudio, Ataurr, emranio
 Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.1.2
+Stable tag: 2.1.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -352,6 +352,12 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.1.3 (2024-10-27) =
+* Added: Style control for mailchimp form submission notification message
+* Fixed: Background tracker issue in assets generator
+* Improved: Site editor experience
+* Improved: Template library UI
+
 = GutenKit Blocks Addon: 2.1.2 (2024-10-17) =
 * Added: Predefined template picker for the navigation menu block
 * Added: Template library templates filtering by template category

@@ -21,14 +21,6 @@ $query = array(
 if(!empty($categories)) {
 	$query['cat'] = $post_cat;
 }
-
-function truncate_title($title, $numberOfWordsTitle) {
-	$words = explode(' ', $title);
-	if (count($words) > $numberOfWordsTitle) {
-		return implode(' ', array_slice($words, 0, $numberOfWordsTitle)) . ' ' . '...';
-	}
-	return $title;
-}
 ?>
 
 <div <?php echo wp_kses_post(Gutenkit\Helpers\Utils::get_dynamic_block_wrapper_attributes($block)) ?>>
@@ -40,7 +32,7 @@ function truncate_title($title, $numberOfWordsTitle) {
 			$img_url = has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID()) : ''; // Check if thumbnail exists
 			$title = get_the_title();
 			if ($enableCropTitle) {
-				$title = truncate_title($title, $numberOfWordsTitle);
+				$title = wp_trim_words($title, $numberOfWordsTitle);
 			}
 			?>
 				<div class="gkit-post-grid-item">

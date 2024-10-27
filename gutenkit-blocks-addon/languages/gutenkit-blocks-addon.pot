@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.1.2\n"
+"Project-Id-Version: GutenKit Blocks 2.1.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-17T11:42:08+00:00\n"
+"POT-Creation-Date: 2024-10-27T12:33:24+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.1\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -222,95 +222,95 @@ msgstr ""
 msgid "Sorry, you are not allowed to upload JSON files."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:137
+#: includes/Libs/UtilityPackages.php:138
 msgid "Our Plugins"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:140
+#: includes/Libs/UtilityPackages.php:141
 msgid "Take Your WordPress Website To Next Level!"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:143
+#: includes/Libs/UtilityPackages.php:144
 msgid "Our diverse range of plugins has every solution for WordPress, Gutenberg, Elementor, and WooCommerce."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:149
+#: includes/Libs/UtilityPackages.php:150
 msgid "ElementsKit"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:152
+#: includes/Libs/UtilityPackages.php:153
 msgid "All-in-one Elementor addon trusted by 1 Million+ users, makes your website builder process easier with ultimate freedom."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:156
+#: includes/Libs/UtilityPackages.php:157
 msgid "GetGenie AI"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:159
+#: includes/Libs/UtilityPackages.php:160
 msgid "Your personal AI assistant for content and SEO. Write content that ranks on Google with NLP keywords and SERP analysis data."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:163
+#: includes/Libs/UtilityPackages.php:164
 msgid "ShopEngine"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:166
+#: includes/Libs/UtilityPackages.php:167
 msgid "Complete WooCommerce solution for Elementor to fully customize any pages including cart, checkout, shop page, and so on."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:170
+#: includes/Libs/UtilityPackages.php:171
 msgid "MetForm"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:173
+#: includes/Libs/UtilityPackages.php:174
 msgid "Drag & drop form builder for Elementor to create contact forms, multi-step forms, and more — smoother, faster, and better!"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:177
+#: includes/Libs/UtilityPackages.php:178
 msgid "EmailKit"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:180
+#: includes/Libs/UtilityPackages.php:181
 msgid "Advanced email customizer for WooCommerce and WordPress. Build, customize, and send emails from WordPress to boost your sales!"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:184
+#: includes/Libs/UtilityPackages.php:185
 msgid "WP Social"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:187
+#: includes/Libs/UtilityPackages.php:188
 msgid "Add social share, login, and engagement counter — unified solution for all social media with tons of different styles for your website."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:191
+#: includes/Libs/UtilityPackages.php:192
 msgid "WP Ultimate Review"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:194
+#: includes/Libs/UtilityPackages.php:195
 msgid "Collect and showcase reviews on your website to build brand credibility and social proof with the easiest solution."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:198
+#: includes/Libs/UtilityPackages.php:199
 msgid "FundEngine"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:201
+#: includes/Libs/UtilityPackages.php:202
 msgid "Create fundraising, crowdfunding, and donation websites with PayPal and Stripe payment gateway integration."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:205
+#: includes/Libs/UtilityPackages.php:206
 msgid "Blocks for ShopEngine"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:208
+#: includes/Libs/UtilityPackages.php:209
 msgid "All in one WooCommerce solution for Gutenberg! Build your WooCommerce pages in a block editor with full customization."
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:212
+#: includes/Libs/UtilityPackages.php:213
 msgid "Genie Image"
 msgstr ""
 
-#: includes/Libs/UtilityPackages.php:215
+#: includes/Libs/UtilityPackages.php:216
 msgid "AI-powered text-to-image generator for WordPress with OpenAI’s DALL-E 2 technology to generate high-quality images in one click."
 msgstr ""
 
@@ -415,7 +415,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:277
 #: src/blocks/image-box/settings.js:46
 #: src/blocks/image-comparison/settings.js:40
-#: src/blocks/mail-chimp/settings.js:66
+#: src/blocks/mail-chimp/settings.js:63
 #: src/blocks/nav-menu-item/settings.js:42
 #: src/blocks/nav-menu/settings.js:70
 #: src/blocks/offcanvas/settings.js:59
@@ -497,7 +497,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:134
 #: src/blocks/image-box/settings.js:50
 #: src/blocks/image-comparison/settings.js:44
-#: src/blocks/mail-chimp/settings.js:70
+#: src/blocks/mail-chimp/settings.js:67
 #: src/blocks/nav-menu-submenu/settings.js:65
 #: src/blocks/nav-menu/settings.js:74
 #: src/blocks/offcanvas/settings.js:63
@@ -577,7 +577,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:51
 #: src/blocks/image-box/settings.js:54
 #: src/blocks/image-comparison/settings.js:48
-#: src/blocks/mail-chimp/settings.js:74
+#: src/blocks/mail-chimp/settings.js:71
 #: src/blocks/nav-menu-submenu/settings.js:69
 #: src/blocks/nav-menu/settings.js:78
 #: src/blocks/offcanvas/settings.js:67
@@ -640,9 +640,9 @@ msgstr ""
 #: src/blocks/icon/settings.js:61
 #: src/blocks/icon/settings.js:105
 #: src/blocks/image-box/settings.js:252
-#: src/blocks/mail-chimp/settings.js:221
-#: src/blocks/mail-chimp/settings.js:296
-#: src/blocks/mail-chimp/settings.js:424
+#: src/blocks/mail-chimp/settings.js:211
+#: src/blocks/mail-chimp/settings.js:281
+#: src/blocks/mail-chimp/settings.js:531
 #: src/blocks/offcanvas/settings.js:104
 #: src/blocks/offcanvas/settings.js:171
 #: src/blocks/page-list/settings.js:207
@@ -693,8 +693,8 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:314
 #: src/blocks/image-box/settings.js:221
 #: src/blocks/image-box/settings.js:1152
-#: src/blocks/mail-chimp/settings.js:267
-#: src/blocks/mail-chimp/settings.js:452
+#: src/blocks/mail-chimp/settings.js:257
+#: src/blocks/mail-chimp/settings.js:559
 #: src/blocks/pricing-table/settings.js:315
 #: src/blocks/pricing-table/settings.js:2156
 #: src/blocks/video/settings.js:542
@@ -738,8 +738,8 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:91
 #: src/blocks/image-comparison/settings.js:109
 #: src/blocks/image-comparison/settings.js:184
-#: src/blocks/mail-chimp/settings.js:126
-#: src/blocks/mail-chimp/settings.js:355
+#: src/blocks/mail-chimp/settings.js:122
+#: src/blocks/mail-chimp/settings.js:345
 #: src/blocks/pricing-table/settings.js:319
 #: src/blocks/social-icons/settings.js:173
 #: src/blocks/social-share/settings.js:221
@@ -750,7 +750,7 @@ msgstr ""
 #: build/84.js:1
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/icon-box/settings.js:128
-#: src/blocks/mail-chimp/settings.js:216
+#: src/blocks/mail-chimp/settings.js:206
 msgid "Show Icon"
 msgstr ""
 
@@ -996,7 +996,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:282
 #: src/blocks/image-box/settings.js:200
 #: src/blocks/image-box/settings.js:635
-#: src/blocks/mail-chimp/settings.js:474
+#: src/blocks/mail-chimp/settings.js:588
 #: src/blocks/nav-menu-submenu/settings.js:130
 #: src/blocks/nav-menu/settings.js:693
 #: src/blocks/offcanvas/settings.js:326
@@ -1084,7 +1084,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:284
 #: src/blocks/image-box/settings.js:202
 #: src/blocks/image-box/settings.js:637
-#: src/blocks/mail-chimp/settings.js:476
+#: src/blocks/mail-chimp/settings.js:590
 #: src/blocks/nav-menu-submenu/settings.js:140
 #: src/blocks/nav-menu/settings.js:703
 #: src/blocks/offcanvas/settings.js:342
@@ -1271,7 +1271,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:304
 #: src/blocks/image-box/settings.js:201
 #: src/blocks/image-box/settings.js:636
-#: src/blocks/mail-chimp/settings.js:475
+#: src/blocks/mail-chimp/settings.js:589
 #: src/blocks/nav-menu-submenu/settings.js:135
 #: src/blocks/nav-menu/settings.js:218
 #: src/blocks/nav-menu/settings.js:270
@@ -1490,6 +1490,7 @@ msgstr ""
 #: build/9242.js:1
 #: build/9807.js:1
 #: build/blocks/advanced-paragraph/index.js:1
+#: build/blocks/mail-chimp/index.js:1
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:91
@@ -1509,6 +1510,7 @@ msgstr ""
 #: src/blocks/icon/settings.js:78
 #: src/blocks/image-accordion/settings.js:280
 #: src/blocks/image-box/settings.js:198
+#: src/blocks/mail-chimp/settings.js:569
 #: src/blocks/nav-menu-submenu/settings.js:127
 #: src/blocks/offcanvas/settings.js:408
 #: src/blocks/page-list/settings.js:339
@@ -1597,7 +1599,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:554
 #: src/blocks/image-box/settings.js:1015
 #: src/blocks/image-box/settings.js:1085
-#: src/blocks/mail-chimp/settings.js:565
+#: src/blocks/mail-chimp/settings.js:797
+#: src/blocks/mail-chimp/settings.js:885
 #: src/blocks/nav-menu/settings.js:669
 #: src/blocks/nav-menu/settings.js:941
 #: src/blocks/nav-menu/settings.js:1204
@@ -1739,7 +1742,9 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1139
 #: src/blocks/image-comparison/settings.js:212
 #: src/blocks/image-comparison/settings.js:276
-#: src/blocks/mail-chimp/settings.js:427
+#: src/blocks/mail-chimp/settings.js:534
+#: src/blocks/mail-chimp/settings.js:827
+#: src/blocks/mail-chimp/settings.js:844
 #: src/blocks/offcanvas/settings.js:691
 #: src/blocks/offcanvas/settings.js:752
 #: src/blocks/offcanvas/settings.js:923
@@ -1915,10 +1920,10 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1105
 #: src/blocks/image-box/settings.js:1175
 #: src/blocks/image-comparison/settings.js:186
-#: src/blocks/mail-chimp/settings.js:380
-#: src/blocks/mail-chimp/settings.js:397
-#: src/blocks/mail-chimp/settings.js:481
-#: src/blocks/mail-chimp/settings.js:593
+#: src/blocks/mail-chimp/settings.js:370
+#: src/blocks/mail-chimp/settings.js:378
+#: src/blocks/mail-chimp/settings.js:702
+#: src/blocks/mail-chimp/settings.js:860
 #: src/blocks/nav-menu-submenu/settings.js:193
 #: src/blocks/nav-menu/settings.js:494
 #: src/blocks/offcanvas/settings.js:469
@@ -1993,7 +1998,7 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:335
 #: src/blocks/icon-box/settings.js:628
 #: src/blocks/icon/settings.js:108
-#: src/blocks/mail-chimp/settings.js:433
+#: src/blocks/mail-chimp/settings.js:540
 #: src/blocks/page-list/settings.js:923
 #: src/blocks/pricing-table/settings.js:735
 #: src/blocks/team/settings.js:450
@@ -2055,6 +2060,7 @@ msgstr ""
 #: build/9242.js:1
 #: build/9634.js:1
 #: build/9807.js:1
+#: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: src/blocks/advanced-image/settings.js:285
@@ -2080,6 +2086,7 @@ msgstr ""
 #: src/blocks/image-box/settings.js:713
 #: src/blocks/image-box/settings.js:752
 #: src/blocks/image-box/settings.js:817
+#: src/blocks/mail-chimp/settings.js:867
 #: src/blocks/nav-menu/settings.js:750
 #: src/blocks/nav-menu/settings.js:959
 #: src/blocks/nav-menu/settings.js:1128
@@ -2227,7 +2234,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1115
 #: src/blocks/image-box/settings.js:1246
 #: src/blocks/image-comparison/settings.js:462
-#: src/blocks/mail-chimp/settings.js:490
+#: src/blocks/mail-chimp/settings.js:388
+#: src/blocks/mail-chimp/settings.js:711
 #: src/blocks/nav-menu-submenu/settings.js:202
 #: src/blocks/nav-menu/settings.js:502
 #: src/blocks/nav-menu/settings.js:839
@@ -2331,7 +2339,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1250
 #: src/blocks/image-comparison/settings.js:143
 #: src/blocks/image-comparison/settings.js:466
-#: src/blocks/mail-chimp/settings.js:494
+#: src/blocks/mail-chimp/settings.js:392
+#: src/blocks/mail-chimp/settings.js:715
 #: src/blocks/nav-menu-submenu/settings.js:206
 #: src/blocks/nav-menu/settings.js:506
 #: src/blocks/nav-menu/settings.js:843
@@ -2391,6 +2400,7 @@ msgstr ""
 #: build/9634.js:1
 #: build/9807.js:1
 #: build/blocks/advanced-paragraph/index.js:1
+#: build/blocks/mail-chimp/index.js:1
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
@@ -2443,6 +2453,8 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:282
 #: src/blocks/image-comparison/settings.js:476
 #: src/blocks/image-comparison/settings.js:499
+#: src/blocks/mail-chimp/settings.js:832
+#: src/blocks/mail-chimp/settings.js:849
 #: src/blocks/nav-menu-submenu/settings.js:221
 #: src/blocks/nav-menu-submenu/settings.js:247
 #: src/blocks/nav-menu-submenu/settings.js:271
@@ -2585,8 +2597,11 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1329
 #: src/blocks/image-comparison/settings.js:233
 #: src/blocks/image-comparison/settings.js:297
-#: src/blocks/mail-chimp/settings.js:409
-#: src/blocks/mail-chimp/settings.js:558
+#: src/blocks/mail-chimp/settings.js:427
+#: src/blocks/mail-chimp/settings.js:465
+#: src/blocks/mail-chimp/settings.js:503
+#: src/blocks/mail-chimp/settings.js:790
+#: src/blocks/mail-chimp/settings.js:894
 #: src/blocks/nav-menu-item/settings.js:209
 #: src/blocks/nav-menu/settings.js:441
 #: src/blocks/nav-menu/settings.js:808
@@ -2650,6 +2665,7 @@ msgstr ""
 #: build/9242.js:1
 #: build/9634.js:1
 #: build/9807.js:1
+#: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: src/blocks/advanced-image/settings.js:710
@@ -2699,6 +2715,11 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1350
 #: src/blocks/image-comparison/settings.js:489
 #: src/blocks/image-comparison/settings.js:512
+#: src/blocks/mail-chimp/settings.js:433
+#: src/blocks/mail-chimp/settings.js:471
+#: src/blocks/mail-chimp/settings.js:509
+#: src/blocks/mail-chimp/settings.js:745
+#: src/blocks/mail-chimp/settings.js:776
 #: src/blocks/offcanvas/settings.js:887
 #: src/blocks/offcanvas/settings.js:1121
 #: src/blocks/social-icons/settings.js:392
@@ -2800,9 +2821,10 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:252
 #: src/blocks/image-comparison/settings.js:316
 #: src/blocks/image-comparison/settings.js:525
-#: src/blocks/mail-chimp/settings.js:416
-#: src/blocks/mail-chimp/settings.js:445
-#: src/blocks/mail-chimp/settings.js:572
+#: src/blocks/mail-chimp/settings.js:523
+#: src/blocks/mail-chimp/settings.js:552
+#: src/blocks/mail-chimp/settings.js:804
+#: src/blocks/mail-chimp/settings.js:878
 #: src/blocks/nav-menu-item/settings.js:198
 #: src/blocks/nav-menu-submenu/settings.js:298
 #: src/blocks/nav-menu/settings.js:423
@@ -2866,7 +2888,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:411
 #: src/blocks/image-box/settings.js:1184
 #: src/blocks/image-comparison/settings.js:348
-#: src/blocks/mail-chimp/settings.js:579
+#: src/blocks/mail-chimp/settings.js:811
 #: src/blocks/nav-menu/settings.js:716
 #: src/blocks/nav-menu/settings.js:907
 #: src/blocks/offcanvas/settings.js:479
@@ -2929,9 +2951,11 @@ msgstr ""
 #: src/blocks/icon-box/settings.js:1032
 #: src/blocks/image-box/settings.js:1260
 #: src/blocks/image-box/settings.js:1310
-#: src/blocks/mail-chimp/settings.js:387
-#: src/blocks/mail-chimp/settings.js:504
-#: src/blocks/mail-chimp/settings.js:530
+#: src/blocks/mail-chimp/settings.js:406
+#: src/blocks/mail-chimp/settings.js:444
+#: src/blocks/mail-chimp/settings.js:482
+#: src/blocks/mail-chimp/settings.js:725
+#: src/blocks/mail-chimp/settings.js:756
 #: src/blocks/nav-menu-submenu/settings.js:230
 #: src/blocks/nav-menu-submenu/settings.js:256
 #: src/blocks/nav-menu-submenu/settings.js:280
@@ -3091,9 +3115,13 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1322
 #: src/blocks/image-comparison/settings.js:225
 #: src/blocks/image-comparison/settings.js:289
-#: src/blocks/mail-chimp/settings.js:403
-#: src/blocks/mail-chimp/settings.js:519
-#: src/blocks/mail-chimp/settings.js:545
+#: src/blocks/mail-chimp/settings.js:421
+#: src/blocks/mail-chimp/settings.js:459
+#: src/blocks/mail-chimp/settings.js:497
+#: src/blocks/mail-chimp/settings.js:740
+#: src/blocks/mail-chimp/settings.js:771
+#: src/blocks/mail-chimp/settings.js:837
+#: src/blocks/mail-chimp/settings.js:854
 #: src/blocks/nav-menu-item/settings.js:186
 #: src/blocks/nav-menu-submenu/settings.js:235
 #: src/blocks/nav-menu/settings.js:530
@@ -3599,6 +3627,8 @@ msgid "Image Position"
 msgstr ""
 
 #: build/384.js:1
+#: build/blocks/mail-chimp/index.js:1
+#: src/blocks/mail-chimp/settings.js:561
 #: src/blocks/testimonial/settings.js:1442
 msgid "Use Position"
 msgstr ""
@@ -3816,9 +3846,12 @@ msgstr ""
 #: src/blocks/icon/settings.js:224
 #: src/blocks/image-accordion/settings.js:491
 #: src/blocks/image-accordion/settings.js:517
-#: src/blocks/mail-chimp/settings.js:392
-#: src/blocks/mail-chimp/settings.js:509
-#: src/blocks/mail-chimp/settings.js:535
+#: src/blocks/mail-chimp/settings.js:313
+#: src/blocks/mail-chimp/settings.js:411
+#: src/blocks/mail-chimp/settings.js:449
+#: src/blocks/mail-chimp/settings.js:487
+#: src/blocks/mail-chimp/settings.js:730
+#: src/blocks/mail-chimp/settings.js:761
 #: src/blocks/pricing-table/settings.js:601
 #: src/blocks/pricing-table/settings.js:677
 #: src/blocks/progress-bar/settings.js:315
@@ -4008,9 +4041,12 @@ msgstr ""
 
 #: build/1715.js:1
 #: build/4986.js:1
+#: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/global.js:1
 #: src/blocks/blog-posts/settings.js:409
 #: src/blocks/image-comparison/settings.js:124
+#: src/blocks/mail-chimp/settings.js:631
+#: src/blocks/mail-chimp/settings.js:675
 #: src/global/components/advanced-control.js:159
 #: src/global/components/advanced-control.js:202
 msgid "Offset"
@@ -4141,7 +4177,7 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:79
 #: src/blocks/social-share/settings.js:83
 #: src/blocks/video/settings.js:203
-#: src/components/text/index.js:12
+#: src/components/text/index.js:15
 msgid "Text"
 msgstr ""
 
@@ -4719,7 +4755,7 @@ msgstr ""
 #: build/gutenkit/global.js:1
 #: src/blocks/advanced-tab/settings.js:557
 #: src/blocks/heading/settings.js:948
-#: src/blocks/mail-chimp/settings.js:455
+#: src/blocks/mail-chimp/settings.js:597
 #: src/blocks/pricing-table/settings.js:1602
 #: src/components/background-overlay/index.js:241
 #: src/components/background/index.js:233
@@ -5346,7 +5382,7 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:998
 #: src/blocks/advanced-tab/settings.js:962
 #: src/blocks/blog-posts/settings.js:1377
-#: src/blocks/mail-chimp/settings.js:359
+#: src/blocks/mail-chimp/settings.js:349
 #: src/blocks/pricing-table/settings.js:2125
 #: src/components/swiper/setting.js:70
 msgid "Spacing"
@@ -5946,8 +5982,8 @@ msgstr ""
 #: src/blocks/header-info/settings.js:292
 #: src/blocks/image-box/settings.js:331
 #: src/blocks/image-box/settings.js:375
-#: src/blocks/mail-chimp/settings.js:514
-#: src/blocks/mail-chimp/settings.js:540
+#: src/blocks/mail-chimp/settings.js:735
+#: src/blocks/mail-chimp/settings.js:766
 #: src/blocks/nav-menu/settings.js:863
 #: src/blocks/nav-menu/settings.js:888
 #: src/blocks/nav-menu/settings.js:1082
@@ -6903,7 +6939,7 @@ msgstr ""
 #: build/8789.js:1
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/button/settings.js:128
-#: src/blocks/mail-chimp/settings.js:194
+#: src/blocks/mail-chimp/settings.js:190
 #: src/blocks/pricing-table/settings.js:426
 msgid "ID"
 msgstr ""
@@ -8223,176 +8259,194 @@ msgid "Enter Your Description..."
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:84
+#: src/blocks/mail-chimp/settings.js:81
 msgid "Form Fields"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:92
-#: src/blocks/mail-chimp/settings.js:260
+#: src/blocks/mail-chimp/settings.js:89
+#: src/blocks/mail-chimp/settings.js:250
 msgid "Note:"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:92
-msgid "lease set API Key in Gutenkit -> Settings -> API Intregration -> MailChimp and Create Campaign"
+#: src/blocks/mail-chimp/settings.js:89
+msgid "Please set API Key in Gutenkit -> Settings -> API Intregration -> MailChimp and Create Campaign"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:98
+#: src/blocks/mail-chimp/settings.js:95
 msgid "Select Form"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
 #: build/template-library/template-library.js:1
-#: src/blocks/mail-chimp/settings.js:110
+#: src/blocks/mail-chimp/settings.js:107
 #: src/template-library/components/template/Templates.js:43
 msgid "Type"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:130
+#: src/blocks/mail-chimp/settings.js:127
 msgid "Placeholder"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:134
+#: src/blocks/mail-chimp/settings.js:132
 msgid "Rows"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:157
+#: src/blocks/mail-chimp/settings.js:155
 msgid "Note: "
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:159
+#: src/blocks/mail-chimp/settings.js:157
 msgid "If you are using the \"Address\" type, you must have four mandatory form fields: "
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:160
+#: src/blocks/mail-chimp/settings.js:158
 msgid "addr1, city, state, and zip. "
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:161
+#: src/blocks/mail-chimp/settings.js:159
 msgid "MailChimp requires these fields to be present when creating or updating contacts with address information."
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:167
+#: src/blocks/mail-chimp/settings.js:165
 msgid "Name ID *"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:174
+#: src/blocks/mail-chimp/settings.js:171
 msgid "Child Name ID*"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:198
+#: src/blocks/mail-chimp/settings.js:195
 msgid "Required"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:202
-msgid "Field Size"
+#: src/blocks/mail-chimp/settings.js:199
+msgid "Field Width"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:232
+#: src/blocks/mail-chimp/settings.js:222
 msgid "Show Label"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:238
+#: src/blocks/mail-chimp/settings.js:228
 msgid "Required Mark"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:243
+#: src/blocks/mail-chimp/settings.js:233
 msgid "Double Opt-in"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:250
+#: src/blocks/mail-chimp/settings.js:240
+#: src/blocks/mail-chimp/settings.js:275
+#: src/blocks/mail-chimp/settings.js:825
 msgid "Success Message"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:261
+#: src/blocks/mail-chimp/settings.js:251
 msgid "If you enable this feature, then you must need to enable it inside Mailchimp campaign settings. Otherwise please disable it."
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:269
+#: src/blocks/mail-chimp/settings.js:259
 msgid "Submit"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:274
+#: src/blocks/mail-chimp/settings.js:265
 msgid "Button Field Size"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:290
-msgid "Success Massage"
-msgstr ""
-
-#: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:301
+#: src/blocks/mail-chimp/settings.js:286
 msgid "Button Position"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:312
+#: src/blocks/mail-chimp/settings.js:296
 msgid "Between Space"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:327
+#: src/blocks/mail-chimp/settings.js:311
 msgid "Form"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:330
+#: src/blocks/mail-chimp/settings.js:320
 msgid "Columns Gap"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:342
+#: src/blocks/mail-chimp/settings.js:332
 msgid "Rows Gap"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:370
+#: src/blocks/mail-chimp/settings.js:360
 msgid "label Color"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:375
+#: src/blocks/mail-chimp/settings.js:365
 msgid "Mark Color"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:385
+#: src/blocks/mail-chimp/settings.js:375
 msgid "Field"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:591
+#: src/blocks/mail-chimp/settings.js:396
+msgid "Focus"
+msgstr ""
+
+#: build/blocks/mail-chimp/index.js:1
+#: src/blocks/mail-chimp/settings.js:416
+#: src/blocks/mail-chimp/settings.js:454
+#: src/blocks/mail-chimp/settings.js:492
+msgid "Placeholder Color"
+msgstr ""
+
+#: build/blocks/mail-chimp/index.js:1
+#: build/gutenkit/global.js:1
+#: src/blocks/mail-chimp/settings.js:611
+#: src/global/components/advanced-control.js:139
+msgid "Horizontal Orientation"
+msgstr ""
+
+#: build/blocks/mail-chimp/index.js:1
+#: build/gutenkit/global.js:1
+#: src/blocks/mail-chimp/settings.js:655
+#: src/global/components/advanced-control.js:182
+msgid "Vertical Orientation"
+msgstr ""
+
+#: build/blocks/mail-chimp/index.js:1
+#: src/blocks/mail-chimp/settings.js:823
 msgid "Messages"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:598
-msgid "Success Message Color"
-msgstr ""
-
-#: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:603
-msgid "Error Message Color"
+#: src/blocks/mail-chimp/settings.js:842
+msgid "Error Message"
 msgstr ""
 
 #. translators: %s: search term.
@@ -8856,7 +8910,7 @@ msgid "Add Item"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/components/text/index.js:22
+#: src/components/text/index.js:27
 msgid "Text Area"
 msgstr ""
 
@@ -8980,16 +9034,6 @@ msgstr ""
 #: build/gutenkit/global.js:1
 #: src/global/components/advanced-control.js:111
 msgid "Z-Index"
-msgstr ""
-
-#: build/gutenkit/global.js:1
-#: src/global/components/advanced-control.js:139
-msgid "Horizontal Orientation"
-msgstr ""
-
-#: build/gutenkit/global.js:1
-#: src/global/components/advanced-control.js:182
-msgid "Vertical Orientation"
 msgstr ""
 
 #: build/gutenkit/global.js:1

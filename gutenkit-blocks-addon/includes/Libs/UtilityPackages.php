@@ -126,6 +126,7 @@ class UtilityPackages {
 		->set_priority(30)                                                          # @priority
 		->set_first_appear_day(7)                                                   # @time_interval_days
 		->set_condition(true)                                                       # @check_conditions
+		->set_support_url('https://wpmet.com/support-ticket-form/')                 # @support_url
 		->call();
 
 		/**

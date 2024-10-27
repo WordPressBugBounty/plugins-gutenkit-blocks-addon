@@ -235,21 +235,26 @@ class AssetGenerator {
 			// block css
 			$active_modules = \Gutenkit\Config\Modules::get_active_modules_list();
 			$has_dynamic_background = false;
-			foreach ($parsed_block['attrs']['backgroundTracker'] as $background) {
-				if (empty($background['isDynamicContent']) || empty($background['dynamicContentType'])) {
-					continue;
-				}
+			// Check if 'backgroundTracker' exists before using it
+			if (isset($parsed_block['attrs']['backgroundTracker'])) {
+				foreach ($parsed_block['attrs']['backgroundTracker'] as $background) {
+					if (empty($background['isDynamicContent']) || empty($background['dynamicContentType'])) {
+						continue;
+					}
 
-				$has_dynamic_background = true;
-				break; // Stop loop once a match is found
+					$has_dynamic_background = true;
+					break; // Stop loop once a match is found
+				}
 			}
 			if ( isset( $parsed_block['attrs']['blocksCSS'] ) && (empty( $active_modules['dynamic-content'] ) || !$has_dynamic_background ) ) {
 				foreach ( $parsed_block['attrs']['blocksCSS'] as $device => $css ) {
 					if (!isset($blocks_css[$device])) {
 						$blocks_css[$device] = '';
 					}
-					
-					$blocks_css[$device] .= $css;
+
+					if (is_string($css)) {
+						$blocks_css[$device] .= $css;
+					}
 				}
 			}
 

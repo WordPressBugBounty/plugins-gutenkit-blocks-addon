@@ -115,7 +115,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
-					'status'		=> 'active',
+					'status'		=> 'inactive',
 					'badge'			=> ['new', 'beta'],
 				),
 				'sticky' => array(
@@ -201,7 +201,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'package'		=> 'free',
 					'auto_enqueue'	=> false,
 					'attributes'	=> array( 'new' ),
-					'status'		=> 'active',
+					'status'		=> 'inactive',
 					'badge'			=> ['new', 'beta'],
 				),
 			)

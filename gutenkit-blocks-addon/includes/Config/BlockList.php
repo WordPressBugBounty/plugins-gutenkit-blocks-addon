@@ -563,12 +563,19 @@ class BlockList extends \Gutenkit\Core\ConfigList
 						'url' => 'https://demo.wpmet.com/gutenberg/wp-content/uploads/gutenkit/table-builder-block.zip',
 					),
 				),
+				'mail-chimp' => array(
+					'slug'     => 'mail-chimp',
+					'title'    => 'Mailchimp',
+					'package'  => 'free',
+					'category' => 'general',
+					'status'   => 'active',
+				),
 				// 'advanced-slider' => array(
 				// 	'slug'     => 'advanced-slider',
 				// 	'title'    => 'Advanced Slider',
 				// 	'package'  => 'pro',
 				// 	'category' => 'general',
-				// 	'status'   => 'active',
+				// 	'status'   => 'inactive',
 				// ),
 				// 'advanced-slider-item' => array(
 				// 	'slug'     => 'advanced-slider-item',
@@ -576,15 +583,15 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				// 	'package'  => 'pro',
 				// 	'category' => 'general',
 				// 	'parent'   => 'advanced-slider',
-				// 	'status'   => 'active',
+				// 	'status'   => 'inactive',
 				// ),
-				'mail-chimp' => array(
-					'slug'     => 'mail-chimp',
-					'title'    => 'Mailchimp',
-					'package'  => 'free',
-					'category' => 'general',
-					'status'   => 'active',
-				)
+				// 'advanced-search' => array(
+				// 	'slug'     => 'advanced-search',
+				// 	'title'    => 'Advanced Search',
+				// 	'package'  => 'pro',
+				// 	'category' => 'general',
+				// 	'status'   => 'inactive',
+				// ),
 			)
 		);
 	}
