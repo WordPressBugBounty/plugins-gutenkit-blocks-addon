@@ -17,52 +17,40 @@ class Visibility {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-		add_filter("gutenkit/collected_css", function($block) {
-			$block = $this->add_gutenkit_block_visibility($block, 'visibilityModuleStyles');
-			return $block;
-		}, 10);
+		if(!is_admin()) {
+			add_filter("gutenkit/collected_css", function($block) {
+				$block = $this->add_gutenkit_block_visibility( $block );
+				return $block;
+			}, 10);
+		}
 	}
 
-	public function add_gutenkit_block_visibility($block, $module_key) {
+	public function add_gutenkit_block_visibility($block) {
 		if (!isset($block['blockName']) || !strstr($block['blockName'], 'gutenkit')) {
 			return $block;
 		}
 		
 		$attributes = $block['attrs'];
-		$module_css = $attributes[$module_key] ?? [];
-		$isVisibility =  $attributes['visibilityModuleStyles'] ?? [];
+		$module_css = [];
 
-		//Checking is visibility is set in block attributes
-		if(isset($isVisibility)){
-			$filteredArray = array_filter($isVisibility, function($value) {
-				return !empty($value);
-			});
-			//If visibility array is empty then return the block
-			if(empty($filteredArray)){
-				return $block;
+		$hide_devices = [
+			'desktop' => 'commonBlockHideDesktop',
+			'tablet' => 'commonBlockHideTablet',
+			'mobile' => 'commonBlockHideMobile',
+			'tabletlandscape' => 'commonBlockHideTabletLandscape',
+			'mobilelandscape' => 'commonBlockHideMobileLandscape',
+			'laptop' => 'commonBlockHideLaptop',
+			'widescreen' => 'commonBlockHideWideScreen',
+		];
+		foreach ($hide_devices as $device => $key) {
+			if (!empty($attributes[$key])) {
+				$module_css[$device] = ".gutenkit-frontend :where(.{$block['attrs']['blockClass']}) { display: none; }";
 			}
-			
-		} else {
-			return $block;
 		}
 
-		//TODO: Remove this backward compatibility in future version
-		if(empty($module_css['desktop']) && !empty($attributes['commonBlockHideDesktop'])) {
-			$module_css['desktop'] = ".gutenkit-frontend :where(.{$block['attrs']['blockClass']}) { display: none; }";
-		}
-
-		if(empty($module_css['tablet']) && !empty($attributes['commonBlockHideTablet'])) {
-			$module_css['tablet'] = ".gutenkit-frontend :where(.{$block['attrs']['blockClass']}) { display: none; }";
-		}
-
-		if(empty($module_css['mobile']) && !empty($attributes['commonBlockHideMobile'])) {
-			$module_css['mobile'] = ".gutenkit-frontend :where(.{$block['attrs']['blockClass']}) { display: none; }";
-		}
-
-		
 		$device_list = Utils::get_device_list() ?? [];
 		$mediaQueries = $this->make_media_query_string($device_list) ?? [];
-		$common_css = $attributes['customStyles'] ?? [];
+
 		$css_content = [];
 		foreach ($device_list as $device) {
 			$device = strtolower($device['slug']);
@@ -74,6 +62,7 @@ class Visibility {
 				$css_content[$device] .= $module_css[$device];
 			}
 		}
+
 		// Initialize the result CSS string
 		$cssString = '';
 
@@ -85,10 +74,13 @@ class Visibility {
 			}
 		}
 
-		if (isset($block['attrs']['blocksCSS']['customStyles'])) {
+		if (!isset($block['attrs']['blocksCSS']['customStyles'])) {
+			$block['attrs']['blocksCSS']['customStyles'] = '';
+		}
+
+		if(!empty($cssString)){
 			$block['attrs']['blocksCSS']['customStyles'] .= $cssString;
 		}
-		
 		
 		return $block;
 	}

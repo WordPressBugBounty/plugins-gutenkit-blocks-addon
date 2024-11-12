@@ -41,9 +41,13 @@
           "nameId": "FNAME",
           "childNameId": "addr1",
           "required": false,
-          "fieldSize": {
-            "unit": "%",
-            "size": 50
+          "inputFieldSettings": {
+            "fieldSize": {
+              "Desktop": {
+                "unit": "%",
+                "size": 50
+              }
+            }
           },
           "textAreaRows": 4,
           "showIcon": false
@@ -56,9 +60,13 @@
           "nameId": "LNAME",
           "childNameId": "addr1",
           "required": false,
-          "fieldSize": {
-            "unit": "%",
-            "size": 50
+          "inputFieldSettings": {
+            "fieldSize": {
+              "Desktop": {
+                "unit": "%",
+                "size": 50
+              }
+            }
           },
           "textAreaRows": 4,
           "showIcon": false
@@ -71,10 +79,7 @@
           "nameId": "EMAIL",
           "childNameId": "addr1",
           "required": true,
-          "fieldSize": {
-            "unit": "%",
-            "size": 100
-          },
+          "inputFieldSettings": {},
           "textAreaRows": 4,
           "showIcon": false
         }
@@ -263,16 +268,13 @@
       "type": "string"
     },
     "fieldBoxShadowNormal": {
-      "type": "string",
-      "default": "none"
+      "type": "object"
     },
     "fieldBoxShadowHover": {
-      "type": "string",
-      "default": "none"
+      "type": "object"
     },
     "fieldBoxShadowFocus": {
-      "type": "string",
-      "default": "none"
+      "type": "object"
     },
     "fieldTypography": {
       "type": "object"
@@ -541,12 +543,10 @@
       "type": "object"
     },
     "buttonBoxShadowNormal": {
-      "type": "string",
-      "default": "none"
+      "type": "object"
     },
     "buttonBoxShadowHover": {
-      "type": "string",
-      "default": "none"
+      "type": "object"
     },
     "buttonBorderRadiusDesktop": {
       "type": "object"

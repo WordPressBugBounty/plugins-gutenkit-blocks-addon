@@ -43,6 +43,13 @@
       "default": "Jane Doe",
       "excludeCopy": true
     },
+    "profileLink": {
+      "type": "object",
+      "default": {
+        "url": ""
+      },
+      "excludeCopy": true
+    },
     "designation": {
       "type": "string",
       "default": "Designer",

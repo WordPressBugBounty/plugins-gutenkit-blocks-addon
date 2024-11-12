@@ -308,9 +308,11 @@ class Modules {
 		$modules_list = get_option('gutenkit_modules_list');
 		$active_modules = array();
 
-		foreach ($modules_list as $key => $module) {
-			if( $module['status'] === 'active' ) {
-				$active_modules[$key] = $module;
+		if (is_array($modules_list) || is_object($modules_list)) {
+			foreach ($modules_list as $key => $module) {
+				if ($module['status'] === 'active') {
+					$active_modules[$key] = $module;
+				}
 			}
 		}
 

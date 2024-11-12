@@ -45,12 +45,12 @@ class AssetGenerator {
 			if (isset($block['blockName']) && strpos($block['blockName'], 'gutenkit') !== false) {
 				$filtered_blocks[] = $block;
 			}
-	
+
 			if (!empty($block['innerBlocks'])) {
 				$filtered_blocks = array_merge($filtered_blocks, $this->filter_blocks($block['innerBlocks']));
 			}
 		}
-	
+
 		return $filtered_blocks;
 	}
 
@@ -195,7 +195,7 @@ class AssetGenerator {
 					},
 					ARRAY_FILTER_USE_KEY
 				);
-	
+
 				if ( ! empty( $typographies ) ) {
 					foreach ( $typographies as $typography ) {
 						$font_weight = ! empty( $typography['fontWeight']['value'] ) ? $typography['fontWeight']['value'] : 400;
@@ -282,7 +282,7 @@ class AssetGenerator {
 					if (!isset($blocks_css[$device])) {
 						$blocks_css[$device] = '';
 					}
-					
+
 					$blocks_css[$device] .= $css;
 				}
 			}
@@ -315,7 +315,7 @@ class AssetGenerator {
 				}
 			}
 		}
-		
+
 		return $css_content;
 	}
 
@@ -332,7 +332,7 @@ class AssetGenerator {
 
 			// Remove duplicate values and sort the arrays
 			$all_fonts = array_map(function($arr) {
-				$arr = array_unique($arr);																																	
+				$arr = array_unique($arr);
 				sort($arr);
 				return $arr;
 			}, $this->fonts);
@@ -388,7 +388,7 @@ class AssetGenerator {
 				'crossorigin',
 			);
 		}
-	
+
 		return $urls;
 	}
 

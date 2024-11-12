@@ -133,7 +133,30 @@ class PostMetaList
                                     "type" => "string"
                                 ],
                                 "backgroundImageSize" => [
-                                    "type" => "string",
+                                    "type" => "object",
+                                    "properties" => [
+                                        "Desktop" => [
+                                            "type" => "string"
+                                        ],
+                                        "Tablet" => [
+                                            "type" => "string"
+                                        ],
+                                        "Mobile" => [
+                                            "type" => "string"
+                                        ],
+                                        "TabletLandscape" => [
+                                            "type" => "string"
+                                        ],
+                                        "MobileLandscape" => [
+                                            "type" => "string"
+                                        ],
+                                        "Laptop" => [
+                                            "type" => "string"
+                                        ],
+                                        "WideScreen" => [
+                                            "type" => "string"
+                                        ],
+                                    ]
                                 ],
                                 "backgroundVideo" => [
                                     "type" => "string"
