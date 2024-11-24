@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpmet.com/plugin/gutenkit/
  * Author: Wpmet
- * Version: 2.1.5
+ * Version: 2.1.6
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.1.5';
+	const VERSION = '2.1.6';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -57,6 +57,9 @@ final class Gutenkit {
 
 		// Plugin actions
 		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
+
+		// Load the plugin text domain
+		add_action( 'init', array( $this, 'load_textdomain' ) );
 
 		/**
 		 * Fires while initialization of the GutenKit plugin.
@@ -185,21 +188,6 @@ final class Gutenkit {
 		 * @since 1.0.0
 		 */
 		do_action( 'gutenkit/before_init' );
-
-		/**
-		 * Loads the plugin text domain for the Gutenkit Blocks Addon.
-		 *
-		 * This function is responsible for loading the translation files for the plugin.
-		 * It sets the text domain to 'gutenkit-blocks-addon' and specifies the directory
-		 * where the translation files are located.
-		 *
-		 * @param string $domain   The text domain for the plugin.
-		 * @param bool   $network  Whether the plugin is network activated.
-		 * @param string $directory The directory where the translation files are located.
-		 * @return bool True on success, false on failure.
-		 * @since 1.0.0
-		 */
-		load_plugin_textdomain( 'gutenkit-blocks-addon', false, GUTENKIT_PLUGIN_DIR . 'languages/' );
 
 		/**
 		 * Action & Filter hooks.
@@ -342,6 +330,23 @@ final class Gutenkit {
 		 */
 		do_action( 'gutenkit/after_init' );
 	}
+
+	/**
+	 * Loads the plugin text domain for the Gutenkit Blocks Addon.
+	 *
+	 * This function is responsible for loading the translation files for the plugin.
+	 * It sets the text domain to 'gutenkit-blocks-addon' and specifies the directory
+	 * where the translation files are located.
+	 *
+	 * @param string $domain   The text domain for the plugin.
+	 * @param bool   $network  Whether the plugin is network activated.
+	 * @param string $directory The directory where the translation files are located.
+	 * @return bool True on success, false on failure.
+	 * @since 2.1.5
+	 */
+	public function load_textdomain() {
+		load_plugin_textdomain( 'gutenkit-blocks-addon', false, GUTENKIT_PLUGIN_DIR . 'languages/' );
+	}
 }
 
 /**
@@ -358,5 +363,3 @@ final class Gutenkit {
  *  for more info see: https://github.com/wpmetcom/utility-pacakge
  */
 new Gutenkit();
-
-

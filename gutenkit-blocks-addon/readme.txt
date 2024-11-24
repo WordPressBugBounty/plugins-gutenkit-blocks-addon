@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -352,7 +352,13 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
-= GutenKit Blocks Addon: 2.1.5 (2024-11-17) =
+= GutenKit Blocks Addon: 2.1.6 (2024-11-24) =
+* Fixed: Mailchimp block border radius issue
+* Fixed: Initialized breakpoints button and cleaned up styles in the template library
+* Fixed: Overlay control and sidebar transition issues on the frontend in the offcanvas block
+* Improved: Responsiveness by updating the default height of the navigation menu to 100vh
+
+= GutenKit Blocks Addon: 2.1.5 (2024-11-13) =
 * Fixed: Editor topbar visual compatibility issue with WP 6.7
 * Fixed: Breakpoints button initialization and cleanup styles in template library
 
