@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.1.6
+Stable tag: 2.1.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -352,6 +352,15 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.1.7 (2024-12-09) =
+* Fixed: Updated the icon box block button selector to support left-aligned icons
+* Fixed: Adjusted the Icon Box button font size to accommodate left-aligned icons
+* Fixed: Added left icon group styles to the advanced accordion item
+* Fixed: Removed the bounce animation from `gkit-animate.css`
+* Fixed: Improved icon color handling in `Header Info` styles
+* Fixed: Resolved the image height issue in the image comparison block on the frontend
+* Improved: Enhanced responsive compatibility across multiple blocks
+
 = GutenKit Blocks Addon: 2.1.6 (2024-11-24) =
 * Fixed: Mailchimp block border radius issue
 * Fixed: Initialized breakpoints button and cleaned up styles in the template library

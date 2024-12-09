@@ -10,10 +10,6 @@
 	animation-fill-mode: both;
 }
 
-.animate__bounce {
-	-webkit-animation-name: bounce;
-	animation-name: bounce;
-}
 .animate__zoom {
 	-webkit-animation-name: zoom;
 	animation-name: zoom;
@@ -63,36 +59,6 @@
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-	}
-}
-
-@-webkit-keyframes bounce {
-	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	40% {
-		-webkit-transform: translate3d(0, 150%, 0);
-		transform: translate3d(0, 150%, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-@keyframes bounce {
-	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	40% {
-		-webkit-transform: translate3d(0, 50%, 0);
-		transform: translate3d(0, 50%, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
 	}
 }
 

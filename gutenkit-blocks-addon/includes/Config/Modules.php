@@ -232,14 +232,14 @@ class Modules {
 	 */
 	protected function enqueue_assets($settings, $key, $metadata, $package, $type) {
 		$settings["script_handles"] = !empty($settings["script_handles"]) ? $settings["script_handles"] : array();
-		$settings["script_handles"] = apply_filters("gutenkit-{$key}-{$type}-3rd-party-scripts", $settings["script_handles"], $key, $metadata);
+		$settings["script_handles"] = array_unique(apply_filters("gutenkit-{$key}-{$type}-3rd-party-scripts", $settings["script_handles"], $key, $metadata));
 
 		if( file_exists( self::get_asset($key, $package, "{$type}.js", 'path') ) ) {
 			$settings["script_handles"][] = "gutenkit-{$key}-{$type}-scripts";
 		}
 
 		$settings["style_handles"] = !empty($settings["style_handles"]) ? $settings["style_handles"] : array();
-		$settings["style_handles"] =  apply_filters("gutenkit-{$key}-{$type}-3rd-party-styles", $settings["style_handles"], $key, $metadata);
+		$settings["style_handles"] =  array_unique(apply_filters("gutenkit-{$key}-{$type}-3rd-party-styles", $settings["style_handles"], $key, $metadata));
 
 		if( file_exists( self::get_asset($key, $package, "{$type}.css", 'path') ) ) {
 			$settings["style_handles"][] = "gutenkit-{$key}-{$type}-styles";
