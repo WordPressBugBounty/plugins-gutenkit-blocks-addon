@@ -10,8 +10,6 @@ namespace Gutenkit\Traits;
  */
 trait Auth{
     public static function validate($request){
-        error_log(print_r($request ,true));
-        
         self::nonce_check($request);
         self::permission_check($request);
     }

@@ -974,7 +974,7 @@ class Utils {
 			".world", ".wtf", ".xn--3ds443g", ".xn--6frz82g", ".xxx", ".xyz", ".yoga", ".yokohama", ".zone"
 		];
 
-		$host = $_SERVER['HTTP_HOST'];
+		$host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST'])) : '';
 
 		// get the domain
 		$domain = explode('.', $host);

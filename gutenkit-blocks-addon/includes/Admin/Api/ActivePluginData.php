@@ -103,7 +103,7 @@ class ActivePluginData {
 		$unzip_result = unzip_file($temp_file, $plugin_dir);
 	
 		// Delete the temporary file after unzipping
-		unlink($temp_file);
+		wp_delete_file($temp_file);
 	
 		if (is_wp_error($unzip_result)) {
 			wp_send_json_error('Failed to unzip plugin. Error: ' . $unzip_result->get_error_message());

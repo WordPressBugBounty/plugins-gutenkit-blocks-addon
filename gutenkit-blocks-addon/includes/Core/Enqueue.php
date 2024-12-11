@@ -217,6 +217,8 @@ class Enqueue {
 			}
 
 			$script = "var breakpoints = " . wp_json_encode($devices) . ';';
+
+			/* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */
 			echo "<script type='text/javascript'>" . $script . "</script>";
 		}
 	}

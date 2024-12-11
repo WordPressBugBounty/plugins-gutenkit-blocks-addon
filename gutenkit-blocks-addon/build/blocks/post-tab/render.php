@@ -62,7 +62,8 @@ if (empty($post_cat)) {
                             <div class="tab__post__single--item">
                                 <div class="tab__post__single--inner">
                                     <a href="<?php echo esc_url(get_the_permalink()); ?>" class="tab__post--header" aria-label="url">
-                                        <img src="<?php echo esc_url($thumbnail_url); ?>" alt="placeholder">
+										<?php // phpcs:ignore PluginCheck.CodeAnalysis.ImageFunctions.NonEnqueuedImage ?>
+										<img src="<?php echo esc_url($thumbnail_url); ?>" alt="placeholder">
                                     </a>
                                     <h3 class="tab__post--title">
                                         <a href="<?php echo esc_url(get_the_permalink()); ?>">

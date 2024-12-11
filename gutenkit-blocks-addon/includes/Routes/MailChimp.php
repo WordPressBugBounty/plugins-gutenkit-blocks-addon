@@ -188,7 +188,8 @@ class MailChimp
 		// Handle the response
 		if (is_wp_error($response)) {
 			$error_message = $response->get_error_message();
-			$return['error'] = esc_html__("Something went wrong: $error_message", 'gutenkit-blocks-addon');
+			/* translators: %s: error message */
+			$return['error'] = sprintf(esc_html__('Something went wrong: %s', 'gutenkit-blocks-addon'), $error_message);
 		} else {
 			$response_body = wp_remote_retrieve_body($response);
 			$response_data = json_decode($response_body, true);

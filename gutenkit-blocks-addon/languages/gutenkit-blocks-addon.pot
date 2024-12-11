@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.1.7\n"
+"Project-Id-Version: GutenKit Blocks 2.1.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-09T03:15:38+00:00\n"
+"POT-Creation-Date: 2024-12-11T06:53:36+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.1\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -110,8 +110,13 @@ msgstr ""
 msgid "Modules"
 msgstr ""
 
-#: includes/Admin/Admin.php:211
+#: includes/Admin/Admin.php:115
+#: includes/Admin/Admin.php:116
+msgid "Popups"
+msgstr ""
+
 #: includes/Admin/Admin.php:212
+#: includes/Admin/Admin.php:213
 msgid "License"
 msgstr ""
 
@@ -326,19 +331,24 @@ msgstr ""
 msgid "Invalid API key format."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:203
+#. translators: %s: error message
+#: includes/Routes/MailChimp.php:192
+msgid "Something went wrong: %s"
+msgstr ""
+
+#: includes/Routes/MailChimp.php:204
 msgid "Please check your email to confirm your subscription."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:205
+#: includes/Routes/MailChimp.php:206
 msgid "Successfully subscribed to the mailing list."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:229
+#: includes/Routes/MailChimp.php:230
 msgid "Select Field Name ID"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:229
+#: includes/Routes/MailChimp.php:230
 msgid "EMAIL"
 msgstr ""
 
@@ -1750,7 +1760,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1363
 #: src/blocks/video/settings.js:724
 #: src/blocks/video/settings.js:741
-#: src/gkit-components/components/background/index.js:188
+#: src/gkit-components/components/background/index.js:190
 #: src/gkit-components/components/blend-mode/index.js:46
 #: src/gkit-components/components/color/index.js:17
 #: src/gkit-components/components/swiper/arrow.js:331
@@ -3743,7 +3753,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/testimonial/settings.js:1499
 #: src/gkit-components/components/background-overlay/index.js:234
-#: src/gkit-components/components/background/index.js:223
+#: src/gkit-components/components/background/index.js:225
 #: src/gkit-components/components/media/index.js:114
 msgid "Image Size"
 msgstr ""
@@ -4427,8 +4437,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:103
 #: src/gkit-components/components/background-overlay/index.js:257
 #: src/gkit-components/components/background-overlay/index.js:352
-#: src/gkit-components/components/background/index.js:247
-#: src/gkit-components/components/background/index.js:344
+#: src/gkit-components/components/background/index.js:249
+#: src/gkit-components/components/background/index.js:346
 #: src/gkit-components/components/border-control/index.js:49
 msgid "Custom"
 msgstr ""
@@ -4574,7 +4584,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:585
 #: src/blocks/pricing-table/settings.js:1524
 #: src/gkit-components/components/background-overlay/index.js:244
-#: src/gkit-components/components/background/index.js:234
+#: src/gkit-components/components/background/index.js:236
 #: src/global/components/advanced-control.js:122
 #: src/global/components/advanced-control.js:124
 msgid "Position"
@@ -4996,8 +5006,8 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:158
 #: src/blocks/team/settings.js:416
 #: src/gkit-components/components/background-overlay/index.js:218
-#: src/gkit-components/components/background/index.js:168
-#: src/gkit-components/components/background/index.js:211
+#: src/gkit-components/components/background/index.js:170
+#: src/gkit-components/components/background/index.js:213
 msgid "Image"
 msgstr ""
 
@@ -5039,7 +5049,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:235
 #: src/gkit-components/components/background-overlay/index.js:316
-#: src/gkit-components/components/background/index.js:308
+#: src/gkit-components/components/background/index.js:310
 msgid "Yes"
 msgstr ""
 
@@ -5047,7 +5057,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:242
 #: src/gkit-components/components/background-overlay/index.js:328
-#: src/gkit-components/components/background/index.js:320
+#: src/gkit-components/components/background/index.js:322
 msgid "No"
 msgstr ""
 
@@ -5078,7 +5088,7 @@ msgstr ""
 #: src/blocks/progress-bar/settings.js:62
 #: src/blocks/team/settings.js:74
 #: src/gkit-components/components/background-overlay/index.js:247
-#: src/gkit-components/components/background/index.js:237
+#: src/gkit-components/components/background/index.js:239
 #: src/gkit-components/components/border-control/index.js:48
 #: src/gkit-components/components/font-family/index.js:102
 #: src/gkit-components/components/typography/font-weights.js:4
@@ -5095,7 +5105,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:455
 #: src/gkit-components/components/background-overlay/index.js:340
-#: src/gkit-components/components/background/index.js:332
+#: src/gkit-components/components/background/index.js:334
 msgid "Cover"
 msgstr ""
 
@@ -5108,7 +5118,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:469
 #: src/gkit-components/components/background-overlay/index.js:344
-#: src/gkit-components/components/background/index.js:336
+#: src/gkit-components/components/background/index.js:338
 msgid "Contain"
 msgstr ""
 
@@ -5121,7 +5131,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:501
 #: src/gkit-components/components/background-overlay/index.js:248
-#: src/gkit-components/components/background/index.js:238
+#: src/gkit-components/components/background/index.js:240
 msgid "Center Center"
 msgstr ""
 
@@ -5129,7 +5139,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:508
 #: src/gkit-components/components/background-overlay/index.js:249
-#: src/gkit-components/components/background/index.js:239
+#: src/gkit-components/components/background/index.js:241
 msgid "Center Left"
 msgstr ""
 
@@ -5137,7 +5147,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:515
 #: src/gkit-components/components/background-overlay/index.js:250
-#: src/gkit-components/components/background/index.js:240
+#: src/gkit-components/components/background/index.js:242
 msgid "Center Right"
 msgstr ""
 
@@ -5145,7 +5155,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:522
 #: src/gkit-components/components/background-overlay/index.js:252
-#: src/gkit-components/components/background/index.js:242
+#: src/gkit-components/components/background/index.js:244
 msgid "Top Left"
 msgstr ""
 
@@ -5153,7 +5163,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:529
 #: src/gkit-components/components/background-overlay/index.js:251
-#: src/gkit-components/components/background/index.js:241
+#: src/gkit-components/components/background/index.js:243
 msgid "Top Center"
 msgstr ""
 
@@ -5161,7 +5171,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:536
 #: src/gkit-components/components/background-overlay/index.js:253
-#: src/gkit-components/components/background/index.js:243
+#: src/gkit-components/components/background/index.js:245
 msgid "Top Right"
 msgstr ""
 
@@ -5169,7 +5179,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:543
 #: src/gkit-components/components/background-overlay/index.js:255
-#: src/gkit-components/components/background/index.js:245
+#: src/gkit-components/components/background/index.js:247
 msgid "Bottom Left"
 msgstr ""
 
@@ -5177,7 +5187,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:550
 #: src/gkit-components/components/background-overlay/index.js:254
-#: src/gkit-components/components/background/index.js:244
+#: src/gkit-components/components/background/index.js:246
 msgid "Bottom Center"
 msgstr ""
 
@@ -5185,7 +5195,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:557
 #: src/gkit-components/components/background-overlay/index.js:256
-#: src/gkit-components/components/background/index.js:246
+#: src/gkit-components/components/background/index.js:248
 msgid "Bottom Right"
 msgstr ""
 
@@ -5448,7 +5458,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:1031
 #: src/blocks/video/settings.js:356
 #: src/gkit-components/components/background-overlay/index.js:348
-#: src/gkit-components/components/background/index.js:340
+#: src/gkit-components/components/background/index.js:342
 msgid "Auto"
 msgstr ""
 
@@ -7302,8 +7312,8 @@ msgstr ""
 #: build/9807.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/video/settings.js:68
-#: src/gkit-components/components/background/index.js:177
-#: src/gkit-components/components/background/index.js:388
+#: src/gkit-components/components/background/index.js:179
+#: src/gkit-components/components/background/index.js:390
 msgid "Video"
 msgstr ""
 
@@ -8593,87 +8603,87 @@ msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:195
-#: src/gkit-components/components/background/index.js:150
+#: src/gkit-components/components/background/index.js:152
 msgid "Classic"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:202
 #: src/gkit-components/components/background-overlay/index.js:387
-#: src/gkit-components/components/background/index.js:159
-#: src/gkit-components/components/background/index.js:199
+#: src/gkit-components/components/background/index.js:161
+#: src/gkit-components/components/background/index.js:201
 msgid "Gradient"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:269
-#: src/gkit-components/components/background/index.js:259
+#: src/gkit-components/components/background/index.js:261
 msgid "Position X"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:282
-#: src/gkit-components/components/background/index.js:273
+#: src/gkit-components/components/background/index.js:275
 msgid "Position Y"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:297
-#: src/gkit-components/components/background/index.js:289
+#: src/gkit-components/components/background/index.js:291
 msgid "Attachment"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:300
-#: src/gkit-components/components/background/index.js:292
+#: src/gkit-components/components/background/index.js:294
 msgid "Scroll"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:304
-#: src/gkit-components/components/background/index.js:296
+#: src/gkit-components/components/background/index.js:298
 msgid "Fixed"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:313
-#: src/gkit-components/components/background/index.js:305
+#: src/gkit-components/components/background/index.js:307
 msgid "Repeat"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:320
-#: src/gkit-components/components/background/index.js:312
+#: src/gkit-components/components/background/index.js:314
 msgid "X"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:324
-#: src/gkit-components/components/background/index.js:316
+#: src/gkit-components/components/background/index.js:318
 msgid "Y"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:337
-#: src/gkit-components/components/background/index.js:329
+#: src/gkit-components/components/background/index.js:331
 msgid "Display Size"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:364
-#: src/gkit-components/components/background/index.js:356
+#: src/gkit-components/components/background/index.js:358
 msgid "Custom Size"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
-#: src/gkit-components/components/background/index.js:373
+#: src/gkit-components/components/background/index.js:375
 #: src/global/components/advanced-control.js:381
 msgid "Scrolling Effects"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background/index.js:374
+#: src/gkit-components/components/background/index.js:376
 msgid "Add exclusive Scrolling Effects for Background Image with Gutenkit Pro."
 msgstr ""
 
