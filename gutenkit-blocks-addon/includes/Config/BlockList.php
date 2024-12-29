@@ -570,28 +570,14 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'category' => 'general',
 					'status'   => 'active',
 				),
-				// 'advanced-slider' => array(
-				// 	'slug'     => 'advanced-slider',
-				// 	'title'    => 'Advanced Slider',
-				// 	'package'  => 'pro',
-				// 	'category' => 'general',
-				// 	'status'   => 'inactive',
-				// ),
-				// 'advanced-slider-item' => array(
-				// 	'slug'     => 'advanced-slider-item',
-				// 	'title'    => 'Advanced Slider Item',
-				// 	'package'  => 'pro',
-				// 	'category' => 'general',
-				// 	'parent'   => 'advanced-slider',
-				// 	'status'   => 'inactive',
-				// ),
-				// 'advanced-search' => array(
-				// 	'slug'     => 'advanced-search',
-				// 	'title'    => 'Advanced Search',
-				// 	'package'  => 'pro',
-				// 	'category' => 'general',
-				// 	'status'   => 'inactive',
-				// ),
+				'advanced-search' => array(
+					'slug'     => 'advanced-search',
+					'title'    => 'Advanced Search',
+					'package'  => 'pro',
+					'category' => 'general',
+					'status'   => 'inactive',
+					'badge'    => ['new', 'beta'],
+				),
 			)
 		);
 	}

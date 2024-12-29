@@ -417,6 +417,62 @@
     "fieldIconPaddingMobile": {
       "type": "object"
     },
+    "isFieldIconPosition": {
+      "type": "boolean",
+      "default": false
+    },
+    "fieldIconPosition": {
+      "type": "string",
+      "default": ""
+    },
+    "fieldIconVerticalOrientation": {
+      "type": "string"
+    },
+    "fieldIconVerticalOffsetDesktop": {
+      "type": "object"
+    },
+    "fieldIconVerticalOffsetWideScreen": {
+      "type": "object"
+    },
+    "fieldIconVerticalOffsetLaptop": {
+      "type": "object"
+    },
+    "fieldIconVerticalOffsetTablet": {
+      "type": "object"
+    },
+    "fieldIconVerticalOffsetTabletLandscape": {
+      "type": "object"
+    },
+    "fieldIconVerticalOffsetMobile": {
+      "type": "object"
+    },
+    "fieldIconVerticalOffsetMobileLandscape": {
+      "type": "object"
+    },
+    "fieldIconHorizontalOrientation": {
+      "type": "string"
+    },
+    "fieldIconHorizontalOffsetDesktop": {
+      "type": "object"
+    },
+    "fieldIconHorizontalOffsetWideScreen": {
+      "type": "object"
+    },
+    "fieldIconHorizontalOffsetLaptop": {
+      "type": "object"
+    },
+    "fieldIconHorizontalOffsetTablet": {
+      "type": "object"
+    },
+    "fieldIconHorizontalOffsetTabletLandscape": {
+      "type": "object"
+    },
+    "fieldIconHorizontalOffsetMobile": {
+      "type": "object"
+    },
+    "fieldIconHorizontalOffsetMobileLandscape": {
+      "type": "object"
+    },
     "isButtonPosition": {
       "type": "boolean",
       "default": false

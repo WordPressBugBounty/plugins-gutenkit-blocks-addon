@@ -204,6 +204,15 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'status'		=> 'inactive',
 					'badge'			=> ['new', 'beta'],
 				),
+				'particle' => array(
+					'slug'			=> 'particle',
+					'title'			=> 'Particle',
+					'package'		=> 'pro',
+					'auto_enqueue'	=> false,
+					'attributes'	=> array( 'new' ),
+					'status'		=> 'inactive',
+					'badge'			=> ['new'],
+				),
 			)
 		);
 	}

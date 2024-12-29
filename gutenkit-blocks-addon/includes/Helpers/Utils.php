@@ -261,6 +261,30 @@ class Utils {
 			'assets' => true,
 			'layers' => true,
 			'markers' => true,
+			// Particle Module specific keys
+			'autoPlay' => true,
+			'background' => true,
+			'backgroundMask' => true,
+			'clear' => true,
+			'defaultThemes' => true,
+			'delay' => true,
+			'fullScreen' => true,
+			'detectRetina' => true,
+			'duration' => true,
+			'fpsLimit' => true,
+			'interactivity' => true,
+			'manualParticles' => true,
+			'particles' => true,
+			'pauseOnBlur' => true,
+			'pauseOnOutsideViewport' => true,
+			'responsive' => true,
+			'smooth' => true,
+			'style' => true,
+			'themes' => true,
+			'zLayers' => true,
+			'name' => true,
+			'emitters' => true,
+			'motion' => true
 		];
 	
 		return apply_filters('gutenkit_allowed_json_attrs_tags', $allowed_json_tags);

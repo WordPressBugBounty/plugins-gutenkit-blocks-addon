@@ -389,6 +389,34 @@
     "gkitBoxShadow": {
       "type": "object"
     },
+    "offCanvasSidebarContentAlignmentsDesktop": {
+      "type": "string",
+      "default": "center"
+    },
+    "offCanvasSidebarContentAlignmentsTablet": {
+      "type": "string",
+      "default": "center"
+    },
+    "offCanvasSidebarContentAlignmentsMobile": {
+      "type": "string",
+      "default": "center"
+    },
+    "offCanvasSidebarContentAlignmentsTabletLandscape": {
+      "type": "string",
+      "default": "center"
+    },
+    "offCanvasSidebarContentAlignmentsMobileLandscape": {
+      "type": "string",
+      "default": "center"
+    },
+    "offCanvasSidebarContentAlignmentsLaptop": {
+      "type": "string",
+      "default": "center"
+    },
+    "offCanvasSidebarContentAlignmentsWideScreen": {
+      "type": "string",
+      "default": "center"
+    },
     "gkitOffCanvasSizeDesktop": {
       "type": "object",
       "default": {
@@ -443,9 +471,34 @@
       "type": "object",
       "selector": "{{WRAPPER}}"
     },
+    "offCanvasSidebarBoxShadow": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
     "offCanvasPosition": {
       "type": "string",
       "default": "right"
+    },
+    "offCanvasPositionOffsetDesktop": {
+      "type": "object"
+    },
+    "offCanvasPositionOffsetTablet": {
+      "type": "object"
+    },
+    "offCanvasPositionOffsetMobile": {
+      "type": "object"
+    },
+    "offCanvasPositionOffsetTabletLandscape": {
+      "type": "object"
+    },
+    "offCanvasPositionOffsetMobileLandscape": {
+      "type": "object"
+    },
+    "offCanvasPositionOffsetLaptop": {
+      "type": "object"
+    },
+    "offCanvasPositionOffsetWideScreen": {
+      "type": "object"
     },
     "gkitOffCanvasPaddingDesktop": {
       "type": "object"
@@ -466,6 +519,51 @@
       "type": "object"
     },
     "gkitOffCanvasPaddingWideScreen": {
+      "type": "object"
+    },
+    "offCanvasCloseIconPositionSwitcher": {
+      "type": "boolean"
+    },
+    "offCanvasCloseIconXPositionDesktop": {
+      "type": "object"
+    },
+    "offCanvasCloseIconXPositionTablet": {
+      "type": "object"
+    },
+    "offCanvasCloseIconXPositionMobile": {
+      "type": "object"
+    },
+    "offCanvasCloseIconXPositionTabletLandscape": {
+      "type": "object"
+    },
+    "offCanvasCloseIconXPositionMobileLandscape": {
+      "type": "object"
+    },
+    "offCanvasCloseIconXPositionLaptop": {
+      "type": "object"
+    },
+    "offCanvasCloseIconXPositionWideScreen": {
+      "type": "object"
+    },
+    "offCanvasCloseIconYPositionDesktop": {
+      "type": "object"
+    },
+    "offCanvasCloseIconYPositionTablet": {
+      "type": "object"
+    },
+    "offCanvasCloseIconYPositionMobile": {
+      "type": "object"
+    },
+    "offCanvasCloseIconYPositionTabletLandscape": {
+      "type": "object"
+    },
+    "offCanvasCloseIconYPositionMobileLandscape": {
+      "type": "object"
+    },
+    "offCanvasCloseIconYPositionLaptop": {
+      "type": "object"
+    },
+    "offCanvasCloseIconYPositionWideScreen": {
       "type": "object"
     },
     "gkitCloseColor": {

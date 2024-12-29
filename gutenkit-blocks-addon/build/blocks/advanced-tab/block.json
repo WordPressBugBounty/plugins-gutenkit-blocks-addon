@@ -528,46 +528,46 @@
       "type": "object"
     },
     "contentAlignDesktop": {
-      "type": "object"
+      "type": "string"
     },
     "contentAlignTablet": {
-      "type": "object"
+      "type": "string"
     },
     "contentAlignMobile": {
-      "type": "object"
+      "type": "string"
     },
     "contentAlignTabletLandscape": {
-      "type": "object"
+      "type": "string"
     },
     "contentAlignMobileLandscape": {
-      "type": "object"
+      "type": "string"
     },
     "contentAlignLaptop": {
-      "type": "object"
+      "type": "string"
     },
     "contentAlignWideScreen": {
-      "type": "object"
+      "type": "string"
     },
     "contentJustifyDesktop": {
-      "type": "object"
+      "type": "string"
     },
     "contentJustifyTablet": {
-      "type": "object"
+      "type": "string"
     },
     "contentJustifyMobile": {
-      "type": "object"
+      "type": "string"
     },
     "contentJustifyTabletLandscape": {
-      "type": "object"
+      "type": "string"
     },
     "contentJustifyMobileLandscape": {
-      "type": "object"
+      "type": "string"
     },
     "contentJustifyLaptop": {
-      "type": "object"
+      "type": "string"
     },
     "contentJustifyWideScreen": {
-      "type": "object"
+      "type": "string"
     },
     "bodyBorder": {
       "type": "object"
@@ -668,25 +668,25 @@
       "type": "string"
     },
     "navItemAlignDesktop": {
-      "type": "object"
+      "type": "string"
     },
     "navItemAlignTablet": {
-      "type": "object"
+      "type": "string"
     },
     "navItemAlignMobile": {
-      "type": "object"
+      "type": "string"
     },
     "navItemAlignTabletLandscape": {
-      "type": "object"
+      "type": "string"
     },
     "navItemAlignMobileLandscape": {
-      "type": "object"
+      "type": "string"
     },
     "navItemAlignLaptop": {
-      "type": "object"
+      "type": "string"
     },
     "navItemAlignWideScreen": {
-      "type": "object"
+      "type": "string"
     },
     "subTitleAlignDesktop": {
       "type": "string"

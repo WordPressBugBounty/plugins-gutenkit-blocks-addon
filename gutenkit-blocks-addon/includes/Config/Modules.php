@@ -37,7 +37,7 @@ class Modules {
 	 * @since 1.0.0
 	 */
 	protected function module_keys() {
-		return ['entranceAnimation', 'mouseTiltEffects', 'mouseTrackEffects', 'isScrollingEffect', 'enableTooltip', 'isOnePageScrollSection', 'stickyPosition', 'interactions'];
+		return ['entranceAnimation', 'mouseTiltEffects', 'mouseTrackEffects', 'isScrollingEffect', 'enableTooltip', 'isOnePageScrollSection', 'stickyPosition', 'interactions', 'enableParticleEffect'];
 	}
 
 	/**
@@ -106,6 +106,13 @@ class Modules {
 				if( $key == 'interactions' && isset($attrs[$key]) && !empty($attrs[$key]) ) {
 					$this->used_modules[] = $key; // to check only add the module if it's used
 					$this->used_modules_settings['interactions'] = $modules_list['interactions'] ?? array();
+				}
+
+				// check if interactions is enabled
+				if( $key == 'enableParticleEffect' && isset($attrs[$key]) && !empty($attrs[$key]) ) {
+					$this->used_modules[] = $key; // to check only add the module if it's used
+					$this->used_modules_settings['particle'] = $modules_list['particle'] ?? array();
+
 				}
 			}
 		}
