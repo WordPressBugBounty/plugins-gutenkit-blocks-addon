@@ -206,6 +206,15 @@
       "type": "string",
       "default": "#000000"
     },
+    "gkitMenuItemMobileTextColor": {
+      "type": "string"
+    },
+    "gkitMenuItemMobileHoverTextColor": {
+      "type": "string"
+    },
+    "gkitMenuItemMobileActiveTextColor": {
+      "type": "string"
+    },
     "gkitMenuItemBorder": {
       "type": "object"
     },

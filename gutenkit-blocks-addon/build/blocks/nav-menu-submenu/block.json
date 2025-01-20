@@ -101,6 +101,15 @@
     "gkitSubMenuItemTextColorNormal": {
       "type": "string"
     },
+    "gkitSubMenuItemMobileTextColorNormal": {
+      "type": "string"
+    },
+    "gkitSubMenuItemMobileTextColorHover": {
+      "type": "string"
+    },
+    "gkitSubMenuItemMobileTextColorActive": {
+      "type": "string"
+    },
     "gkitSubMenuItemBorderNormal": {
       "type": "object"
     },
@@ -172,6 +181,14 @@
     },
     "gkitSubMenuItemBorderRadiusWideScreen": {
       "type": "object"
+    },
+    "gkitSubMenuBreakPoint": {
+      "type": "string",
+      "default": "1024"
+    },
+    "gkitSubMenuCustomMenuBreakPoint": {
+      "type": "number",
+      "default": 1024
     }
   },
   "supports": {

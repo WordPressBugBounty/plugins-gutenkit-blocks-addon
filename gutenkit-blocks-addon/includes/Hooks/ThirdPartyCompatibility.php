@@ -20,6 +20,10 @@ class ThirdPartyCompatibility {
 	private $css_vars = array();
 
 	public function __construct() {
+		// Otter blocks plugin compatibility
+		add_action( 'wp_head', array( $this, 'otter_blocks_compatibility' ) );
+		add_action( 'admin_head', array( $this, 'otter_blocks_compatibility' ) );
+
 		// Return if block theme
 		if( wp_is_block_theme() ) {
 			return;
@@ -37,7 +41,33 @@ class ThirdPartyCompatibility {
 		add_action( 'wp_enqueue_scripts', array( $this, 'wpforms_frontend_css' ), 11 );
 	}
 
-	function custom_body_classes( $classes ) {
+	/**
+	 * Adds compatibility for Otter Blocks plugin.
+	 *
+	 * This function checks if the Otter Blocks plugin is active. If it is active,
+	 * it adds custom CSS to ensure compatibility with the GutenKit blocks.
+	 *
+	 * @return void
+	 */
+	public function otter_blocks_compatibility() {
+		// check if otter blocks plugin is active
+		$is_plugin_active = in_array('otter-blocks/otter-blocks.php', apply_filters('active_plugins', get_option('active_plugins')));
+		if ($is_plugin_active) {
+			$custom_css = '.gkit-block__inner [class^="wp-block-themeisle-blocks-"]{flex-basis: 100%;}';
+			echo '<style>' . $custom_css . '</style>';
+		}
+	}
+
+	/**
+	 * Adds custom body classes based on the active theme.
+	 *
+	 * This function checks the currently active theme and adds a corresponding
+	 * class to the body classes array if the theme is recognized.
+	 *
+	 * @param array $classes An array of body class names.
+	 * @return array Modified array of body class names.
+	 */
+	public function custom_body_classes( $classes ) {
 		// Get the current theme
 		$current_theme = wp_get_theme();
 
@@ -111,7 +141,7 @@ class ThirdPartyCompatibility {
 	 * @param array $vars The CSS variables to be initialized.
 	 * @return array The initialized CSS variables.
 	 */
-	function wpforms_frontend_css_vars_init_vars( $vars ) {
+	public function wpforms_frontend_css_vars_init_vars( $vars ) {
 		$this->css_vars = $vars;
 		return $vars;
 	}

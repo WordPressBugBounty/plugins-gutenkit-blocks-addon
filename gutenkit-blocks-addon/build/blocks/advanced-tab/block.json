@@ -833,6 +833,9 @@
     },
     "caretColor": {
       "type": "string"
+    },
+    "caretFillColor": {
+      "type": "string"
     }
   },
   "providesContext": {

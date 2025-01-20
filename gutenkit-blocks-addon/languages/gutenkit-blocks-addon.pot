@@ -1,38 +1,43 @@
-# Copyright (C) 2024 Wpmet
+# Copyright (C) 2025 Wpmet
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.1.9\n"
+"Project-Id-Version: GutenKit Blocks 2.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-29T10:29:59+00:00\n"
+"POT-Creation-Date: 2025-01-20T06:41:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
 
 #. Plugin Name of the plugin
+#: gutenkit-blocks-addon.php
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/pages/Blocks.js:31
 msgid "GutenKit Blocks"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: gutenkit-blocks-addon.php
 msgid "https://wpmet.com/plugin/gutenkit/"
 msgstr ""
 
 #. Description of the plugin
+#: gutenkit-blocks-addon.php
 msgid "Faster loading blocks, patterns, and templates for Gutenberg, bringing the page builder experience to block editor."
 msgstr ""
 
 #. Author of the plugin
+#: gutenkit-blocks-addon.php
 msgid "Wpmet"
 msgstr ""
 
 #. Author URI of the plugin
+#: gutenkit-blocks-addon.php
 msgid "https://wpmet.com/"
 msgstr ""
 
@@ -419,7 +424,7 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:40
 #: src/blocks/mail-chimp/settings.js:63
 #: src/blocks/nav-menu-item/settings.js:40
-#: src/blocks/nav-menu/settings.js:70
+#: src/blocks/nav-menu/settings.js:71
 #: src/blocks/offcanvas/settings.js:64
 #: src/blocks/page-list/settings.js:112
 #: src/blocks/post-grid/settings.js:55
@@ -501,7 +506,7 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:44
 #: src/blocks/mail-chimp/settings.js:67
 #: src/blocks/nav-menu-submenu/settings.js:59
-#: src/blocks/nav-menu/settings.js:74
+#: src/blocks/nav-menu/settings.js:75
 #: src/blocks/offcanvas/settings.js:68
 #: src/blocks/page-list/settings.js:116
 #: src/blocks/post-grid/settings.js:59
@@ -581,7 +586,7 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:48
 #: src/blocks/mail-chimp/settings.js:71
 #: src/blocks/nav-menu-submenu/settings.js:63
-#: src/blocks/nav-menu/settings.js:78
+#: src/blocks/nav-menu/settings.js:79
 #: src/blocks/offcanvas/settings.js:72
 #: src/blocks/page-list/settings.js:120
 #: src/blocks/post-grid/settings.js:63
@@ -757,7 +762,7 @@ msgstr ""
 #: src/blocks/header-info/settings.js:71
 #: src/blocks/icon-box/settings.js:134
 #: src/blocks/image-box/settings.js:235
-#: src/blocks/nav-menu/settings.js:690
+#: src/blocks/nav-menu/settings.js:706
 #: src/blocks/offcanvas/settings.js:151
 #: src/blocks/offcanvas/settings.js:221
 #: src/blocks/offcanvas/settings.js:608
@@ -923,7 +928,7 @@ msgstr ""
 #: src/blocks/image-box/settings.js:612
 #: src/blocks/mail-chimp/settings.js:688
 #: src/blocks/nav-menu-submenu/settings.js:124
-#: src/blocks/nav-menu/settings.js:693
+#: src/blocks/nav-menu/settings.js:709
 #: src/blocks/offcanvas/settings.js:332
 #: src/blocks/offcanvas/settings.js:365
 #: src/blocks/offcanvas/settings.js:440
@@ -1011,7 +1016,7 @@ msgstr ""
 #: src/blocks/image-box/settings.js:614
 #: src/blocks/mail-chimp/settings.js:690
 #: src/blocks/nav-menu-submenu/settings.js:134
-#: src/blocks/nav-menu/settings.js:703
+#: src/blocks/nav-menu/settings.js:719
 #: src/blocks/offcanvas/settings.js:348
 #: src/blocks/offcanvas/settings.js:370
 #: src/blocks/offcanvas/settings.js:450
@@ -1202,10 +1207,10 @@ msgstr ""
 #: src/blocks/image-box/settings.js:613
 #: src/blocks/mail-chimp/settings.js:689
 #: src/blocks/nav-menu-submenu/settings.js:129
-#: src/blocks/nav-menu/settings.js:218
-#: src/blocks/nav-menu/settings.js:270
-#: src/blocks/nav-menu/settings.js:396
-#: src/blocks/nav-menu/settings.js:698
+#: src/blocks/nav-menu/settings.js:219
+#: src/blocks/nav-menu/settings.js:271
+#: src/blocks/nav-menu/settings.js:397
+#: src/blocks/nav-menu/settings.js:714
 #: src/blocks/offcanvas/settings.js:445
 #: src/blocks/offcanvas/settings.js:1210
 #: src/blocks/page-list/settings.js:628
@@ -1569,9 +1574,9 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1062
 #: src/blocks/mail-chimp/settings.js:897
 #: src/blocks/mail-chimp/settings.js:985
-#: src/blocks/nav-menu/settings.js:669
-#: src/blocks/nav-menu/settings.js:941
-#: src/blocks/nav-menu/settings.js:1204
+#: src/blocks/nav-menu/settings.js:685
+#: src/blocks/nav-menu/settings.js:957
+#: src/blocks/nav-menu/settings.js:1220
 #: src/blocks/offcanvas/settings.js:920
 #: src/blocks/offcanvas/settings.js:1154
 #: src/blocks/page-list/settings.js:898
@@ -1612,7 +1617,6 @@ msgstr ""
 #: build/3834.js:1
 #: build/3891.js:1
 #: build/4200.js:1
-#: build/4672.js:1
 #: build/4986.js:1
 #: build/5771.js:1
 #: build/6036.js:1
@@ -1646,7 +1650,6 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:251
 #: src/blocks/advanced-paragraph/settings.js:304
 #: src/blocks/advanced-paragraph/settings.js:405
-#: src/blocks/advanced-tab/settings.js:1112
 #: src/blocks/back-to-top/settings.js:282
 #: src/blocks/back-to-top/settings.js:349
 #: src/blocks/blog-posts/settings.js:1241
@@ -1893,7 +1896,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:802
 #: src/blocks/mail-chimp/settings.js:960
 #: src/blocks/nav-menu-submenu/settings.js:187
-#: src/blocks/nav-menu/settings.js:494
+#: src/blocks/nav-menu/settings.js:495
 #: src/blocks/offcanvas/settings.js:498
 #: src/blocks/offcanvas/settings.js:670
 #: src/blocks/page-list/settings.js:1029
@@ -2055,9 +2058,9 @@ msgstr ""
 #: src/blocks/image-box/settings.js:794
 #: src/blocks/mail-chimp/settings.js:252
 #: src/blocks/mail-chimp/settings.js:967
-#: src/blocks/nav-menu/settings.js:750
-#: src/blocks/nav-menu/settings.js:959
-#: src/blocks/nav-menu/settings.js:1128
+#: src/blocks/nav-menu/settings.js:766
+#: src/blocks/nav-menu/settings.js:975
+#: src/blocks/nav-menu/settings.js:1144
 #: src/blocks/offcanvas/settings.js:562
 #: src/blocks/offcanvas/settings.js:1233
 #: src/blocks/page-list/settings.js:405
@@ -2118,9 +2121,9 @@ msgstr ""
 #: src/blocks/icon-box/settings.js:675
 #: src/blocks/image-box/settings.js:275
 #: src/blocks/image-box/settings.js:831
-#: src/blocks/nav-menu/settings.js:784
-#: src/blocks/nav-menu/settings.js:993
-#: src/blocks/nav-menu/settings.js:1162
+#: src/blocks/nav-menu/settings.js:800
+#: src/blocks/nav-menu/settings.js:1009
+#: src/blocks/nav-menu/settings.js:1178
 #: src/blocks/offcanvas/settings.js:585
 #: src/blocks/offcanvas/settings.js:1246
 #: src/blocks/post-grid/settings.js:125
@@ -2207,9 +2210,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:376
 #: src/blocks/mail-chimp/settings.js:811
 #: src/blocks/nav-menu-submenu/settings.js:196
-#: src/blocks/nav-menu/settings.js:502
-#: src/blocks/nav-menu/settings.js:839
-#: src/blocks/nav-menu/settings.js:1058
+#: src/blocks/nav-menu/settings.js:503
+#: src/blocks/nav-menu/settings.js:855
+#: src/blocks/nav-menu/settings.js:1074
 #: src/blocks/offcanvas/settings.js:734
 #: src/blocks/offcanvas/settings.js:966
 #: src/blocks/page-list/settings.js:547
@@ -2312,9 +2315,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:380
 #: src/blocks/mail-chimp/settings.js:815
 #: src/blocks/nav-menu-submenu/settings.js:200
-#: src/blocks/nav-menu/settings.js:506
-#: src/blocks/nav-menu/settings.js:843
-#: src/blocks/nav-menu/settings.js:1062
+#: src/blocks/nav-menu/settings.js:507
+#: src/blocks/nav-menu/settings.js:859
+#: src/blocks/nav-menu/settings.js:1078
 #: src/blocks/offcanvas/settings.js:738
 #: src/blocks/offcanvas/settings.js:970
 #: src/blocks/page-list/settings.js:554
@@ -2427,12 +2430,12 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:932
 #: src/blocks/mail-chimp/settings.js:949
 #: src/blocks/nav-menu-submenu/settings.js:215
-#: src/blocks/nav-menu-submenu/settings.js:241
-#: src/blocks/nav-menu-submenu/settings.js:265
-#: src/blocks/nav-menu/settings.js:854
-#: src/blocks/nav-menu/settings.js:879
-#: src/blocks/nav-menu/settings.js:1073
-#: src/blocks/nav-menu/settings.js:1098
+#: src/blocks/nav-menu-submenu/settings.js:246
+#: src/blocks/nav-menu-submenu/settings.js:275
+#: src/blocks/nav-menu/settings.js:870
+#: src/blocks/nav-menu/settings.js:895
+#: src/blocks/nav-menu/settings.js:1089
+#: src/blocks/nav-menu/settings.js:1114
 #: src/blocks/offcanvas/settings.js:763
 #: src/blocks/offcanvas/settings.js:827
 #: src/blocks/offcanvas/settings.js:998
@@ -2575,9 +2578,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:890
 #: src/blocks/mail-chimp/settings.js:994
 #: src/blocks/nav-menu-item/settings.js:194
-#: src/blocks/nav-menu/settings.js:441
-#: src/blocks/nav-menu/settings.js:808
-#: src/blocks/nav-menu/settings.js:1027
+#: src/blocks/nav-menu/settings.js:442
+#: src/blocks/nav-menu/settings.js:824
+#: src/blocks/nav-menu/settings.js:1043
 #: src/blocks/offcanvas/settings.js:874
 #: src/blocks/offcanvas/settings.js:1108
 #: src/blocks/page-list/settings.js:513
@@ -2800,10 +2803,10 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:904
 #: src/blocks/mail-chimp/settings.js:978
 #: src/blocks/nav-menu-item/settings.js:183
-#: src/blocks/nav-menu-submenu/settings.js:292
-#: src/blocks/nav-menu/settings.js:423
-#: src/blocks/nav-menu/settings.js:649
-#: src/blocks/nav-menu/settings.js:1186
+#: src/blocks/nav-menu-submenu/settings.js:307
+#: src/blocks/nav-menu/settings.js:424
+#: src/blocks/nav-menu/settings.js:665
+#: src/blocks/nav-menu/settings.js:1202
 #: src/blocks/offcanvas/settings.js:897
 #: src/blocks/offcanvas/settings.js:1131
 #: src/blocks/offcanvas/settings.js:1290
@@ -2863,8 +2866,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1161
 #: src/blocks/image-comparison/settings.js:348
 #: src/blocks/mail-chimp/settings.js:911
-#: src/blocks/nav-menu/settings.js:716
-#: src/blocks/nav-menu/settings.js:907
+#: src/blocks/nav-menu/settings.js:732
+#: src/blocks/nav-menu/settings.js:923
 #: src/blocks/offcanvas/settings.js:508
 #: src/blocks/offcanvas/settings.js:680
 #: src/blocks/pricing-table/settings.js:2020
@@ -2931,11 +2934,11 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:825
 #: src/blocks/mail-chimp/settings.js:856
 #: src/blocks/nav-menu-submenu/settings.js:224
-#: src/blocks/nav-menu-submenu/settings.js:250
-#: src/blocks/nav-menu-submenu/settings.js:274
-#: src/blocks/nav-menu/settings.js:525
-#: src/blocks/nav-menu/settings.js:566
-#: src/blocks/nav-menu/settings.js:608
+#: src/blocks/nav-menu-submenu/settings.js:255
+#: src/blocks/nav-menu-submenu/settings.js:284
+#: src/blocks/nav-menu/settings.js:526
+#: src/blocks/nav-menu/settings.js:572
+#: src/blocks/nav-menu/settings.js:619
 #: src/blocks/page-list/settings.js:297
 #: src/blocks/post-tab/settings.js:330
 #: src/blocks/post-tab/settings.js:372
@@ -3087,10 +3090,10 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:937
 #: src/blocks/mail-chimp/settings.js:954
 #: src/blocks/nav-menu-item/settings.js:171
-#: src/blocks/nav-menu-submenu/settings.js:229
-#: src/blocks/nav-menu/settings.js:530
-#: src/blocks/nav-menu/settings.js:868
-#: src/blocks/nav-menu/settings.js:1087
+#: src/blocks/nav-menu-submenu/settings.js:234
+#: src/blocks/nav-menu/settings.js:536
+#: src/blocks/nav-menu/settings.js:884
+#: src/blocks/nav-menu/settings.js:1103
 #: src/blocks/offcanvas/settings.js:784
 #: src/blocks/offcanvas/settings.js:848
 #: src/blocks/offcanvas/settings.js:1018
@@ -3418,7 +3421,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:637
 #: src/blocks/image-comparison/settings.js:139
 #: src/blocks/nav-menu-submenu/settings.js:204
-#: src/blocks/nav-menu/settings.js:510
+#: src/blocks/nav-menu/settings.js:511
 #: src/blocks/post-tab/settings.js:35
 #: src/blocks/post-tab/settings.js:52
 #: src/blocks/testimonial/settings.js:640
@@ -3447,12 +3450,12 @@ msgstr ""
 #: src/blocks/dual-button/settings.js:674
 #: src/blocks/fun-fact/settings.js:598
 #: src/blocks/heading/settings.js:408
-#: src/blocks/nav-menu-submenu/settings.js:255
-#: src/blocks/nav-menu-submenu/settings.js:279
-#: src/blocks/nav-menu/settings.js:571
-#: src/blocks/nav-menu/settings.js:613
-#: src/blocks/nav-menu/settings.js:893
-#: src/blocks/nav-menu/settings.js:1112
+#: src/blocks/nav-menu-submenu/settings.js:265
+#: src/blocks/nav-menu-submenu/settings.js:294
+#: src/blocks/nav-menu/settings.js:582
+#: src/blocks/nav-menu/settings.js:629
+#: src/blocks/nav-menu/settings.js:909
+#: src/blocks/nav-menu/settings.js:1128
 #: src/blocks/social-icons/settings.js:187
 #: src/blocks/social-icons/settings.js:201
 #: src/blocks/social-share/settings.js:238
@@ -3734,7 +3737,7 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:138
 #: src/blocks/advanced-image/settings.js:195
 #: src/blocks/image-comparison/settings.js:147
-#: src/blocks/nav-menu/settings.js:299
+#: src/blocks/nav-menu/settings.js:300
 #: src/blocks/offcanvas/settings.js:276
 #: src/blocks/pricing-table/settings.js:113
 #: src/blocks/video/settings.js:357
@@ -3788,10 +3791,10 @@ msgstr ""
 #: src/blocks/image-box/settings.js:876
 #: src/blocks/image-box/settings.js:934
 #: src/blocks/image-comparison/settings.js:545
-#: src/blocks/nav-menu-submenu/settings.js:310
-#: src/blocks/nav-menu/settings.js:536
-#: src/blocks/nav-menu/settings.js:578
-#: src/blocks/nav-menu/settings.js:620
+#: src/blocks/nav-menu-submenu/settings.js:325
+#: src/blocks/nav-menu/settings.js:542
+#: src/blocks/nav-menu/settings.js:589
+#: src/blocks/nav-menu/settings.js:636
 msgid "Border radius"
 msgstr ""
 
@@ -3884,9 +3887,9 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:285
 #: src/blocks/container/settings.js:270
 #: src/blocks/container/settings.js:328
-#: src/blocks/nav-menu/settings.js:213
-#: src/blocks/nav-menu/settings.js:265
-#: src/blocks/nav-menu/settings.js:391
+#: src/blocks/nav-menu/settings.js:214
+#: src/blocks/nav-menu/settings.js:266
+#: src/blocks/nav-menu/settings.js:392
 #: src/blocks/offcanvas/settings.js:1205
 #: src/blocks/social-icons/settings.js:145
 #: src/blocks/social-share/settings.js:158
@@ -3903,9 +3906,9 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:295
 #: src/blocks/container/settings.js:280
 #: src/blocks/container/settings.js:338
-#: src/blocks/nav-menu/settings.js:223
-#: src/blocks/nav-menu/settings.js:275
-#: src/blocks/nav-menu/settings.js:401
+#: src/blocks/nav-menu/settings.js:224
+#: src/blocks/nav-menu/settings.js:276
+#: src/blocks/nav-menu/settings.js:402
 #: src/blocks/offcanvas/settings.js:1215
 #: src/blocks/social-icons/settings.js:147
 #: src/blocks/social-share/settings.js:160
@@ -4314,7 +4317,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/container/settings.js:78
 #: src/blocks/heading/settings.js:245
-#: src/blocks/nav-menu/settings.js:103
+#: src/blocks/nav-menu/settings.js:104
 #: src/gkit-components/components/background-overlay/index.js:257
 #: src/gkit-components/components/background-overlay/index.js:352
 #: src/gkit-components/components/background/index.js:249
@@ -4416,6 +4419,8 @@ msgid "Stroke Width"
 msgstr ""
 
 #: build/2311.js:1
+#: build/4672.js:1
+#: src/blocks/advanced-tab/settings.js:1113
 #: src/blocks/heading/settings.js:547
 #: src/blocks/heading/settings.js:973
 msgid "Stroke Color"
@@ -4558,7 +4563,7 @@ msgstr ""
 #: build/6543.js:1
 #: src/blocks/advanced-tab/settings.js:282
 #: src/blocks/container/settings.js:255
-#: src/blocks/nav-menu/settings.js:204
+#: src/blocks/nav-menu/settings.js:205
 msgid "Justify Content"
 msgstr ""
 
@@ -4575,8 +4580,8 @@ msgstr ""
 #: src/blocks/container/settings.js:285
 #: src/blocks/image-accordion/settings.js:422
 #: src/blocks/nav-menu-submenu/settings.js:139
-#: src/blocks/nav-menu/settings.js:228
-#: src/blocks/nav-menu/settings.js:406
+#: src/blocks/nav-menu/settings.js:229
+#: src/blocks/nav-menu/settings.js:407
 #: src/blocks/social-icons/settings.js:98
 #: src/gkit-components/components/swiper/dot.js:181
 msgid "Space Between"
@@ -4585,7 +4590,7 @@ msgstr ""
 #: build/2701.js:1
 #: build/6543.js:1
 #: src/blocks/container/settings.js:290
-#: src/blocks/nav-menu/settings.js:233
+#: src/blocks/nav-menu/settings.js:234
 msgid "Space Around"
 msgstr ""
 
@@ -4599,7 +4604,7 @@ msgstr ""
 #: build/6543.js:1
 #: src/blocks/advanced-tab/settings.js:431
 #: src/blocks/container/settings.js:313
-#: src/blocks/nav-menu/settings.js:256
+#: src/blocks/nav-menu/settings.js:257
 msgid "Align Items"
 msgstr ""
 
@@ -4608,7 +4613,7 @@ msgstr ""
 #: build/6543.js:1
 #: src/blocks/advanced-tab/settings.js:143
 #: src/blocks/container/settings.js:343
-#: src/blocks/nav-menu/settings.js:280
+#: src/blocks/nav-menu/settings.js:281
 msgid "Stretch"
 msgstr ""
 
@@ -5371,12 +5376,17 @@ msgid "Caret"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:1120
+#: src/blocks/advanced-tab/settings.js:1118
+msgid "Fill Color"
+msgstr ""
+
+#: build/4672.js:1
+#: src/blocks/advanced-tab/settings.js:1127
 msgid "Bottom Position"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:1152
+#: src/blocks/advanced-tab/settings.js:1159
 msgid "Left Position"
 msgstr ""
 
@@ -5746,10 +5756,10 @@ msgstr ""
 #: src/blocks/image-box/settings.js:352
 #: src/blocks/mail-chimp/settings.js:835
 #: src/blocks/mail-chimp/settings.js:866
-#: src/blocks/nav-menu/settings.js:863
-#: src/blocks/nav-menu/settings.js:888
-#: src/blocks/nav-menu/settings.js:1082
-#: src/blocks/nav-menu/settings.js:1107
+#: src/blocks/nav-menu/settings.js:879
+#: src/blocks/nav-menu/settings.js:904
+#: src/blocks/nav-menu/settings.js:1098
+#: src/blocks/nav-menu/settings.js:1123
 #: src/blocks/page-list/settings.js:213
 #: src/blocks/page-list/settings.js:810
 #: src/blocks/page-list/settings.js:852
@@ -5998,164 +6008,171 @@ msgid "Display Style"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:88
+#: src/blocks/nav-menu/settings.js:89
 msgid "Menu"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:90
+#: src/blocks/nav-menu/settings.js:91
 msgid "Menu Breakpoint"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:93
-#: src/blocks/nav-menu/settings.js:170
+#: src/blocks/nav-menu/settings.js:94
+#: src/blocks/nav-menu/settings.js:171
 msgid "Tablet"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:98
-#: src/blocks/nav-menu/settings.js:166
+#: src/blocks/nav-menu/settings.js:99
+#: src/blocks/nav-menu/settings.js:167
 msgid "Mobile"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:117
+#: src/blocks/nav-menu/settings.js:118
 msgid "Custom Breakpoint(Max Width)"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:174
+#: src/blocks/nav-menu/settings.js:175
 msgid "Desktop"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:197
+#: src/blocks/nav-menu/settings.js:198
 msgid "Scroll lock for offcanvas"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:200
+#: src/blocks/nav-menu/settings.js:201
 msgid "It will lock the scrolling of the offcanvas when you are in the frontend"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:238
+#: src/blocks/nav-menu/settings.js:239
 msgid "Space Evenly"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:251
-#: src/blocks/nav-menu/settings.js:293
+#: src/blocks/nav-menu/settings.js:252
+#: src/blocks/nav-menu/settings.js:294
 msgid "It will not applied in the sidebar menu"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:297
+#: src/blocks/nav-menu/settings.js:298
 msgid "Menu Animation"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:300
+#: src/blocks/nav-menu/settings.js:301
 msgid "Fade In Up"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:301
+#: src/blocks/nav-menu/settings.js:302
 msgid "Transfrom"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:302
+#: src/blocks/nav-menu/settings.js:303
 msgid "Transfrom Perspective"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:303
+#: src/blocks/nav-menu/settings.js:304
 msgid "Rotate Y"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:309
+#: src/blocks/nav-menu/settings.js:310
 msgid "Vertical Menu"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:312
+#: src/blocks/nav-menu/settings.js:313
 msgid "It will make the menu vertical"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:315
+#: src/blocks/nav-menu/settings.js:316
 msgid "Mobile Menu Settings"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:317
-#: src/blocks/nav-menu/settings.js:1125
+#: src/blocks/nav-menu/settings.js:318
+#: src/blocks/nav-menu/settings.js:1141
 msgid "Mobile Menu Logo"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:325
+#: src/blocks/nav-menu/settings.js:326
 msgid "Menu link"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:328
+#: src/blocks/nav-menu/settings.js:329
 msgid "Default(Home)"
 msgstr ""
 
 #: build/6543.js:1
 #: build/8389.js:1
-#: src/blocks/nav-menu/settings.js:332
-#: src/blocks/nav-menu/settings.js:345
+#: src/blocks/nav-menu/settings.js:333
+#: src/blocks/nav-menu/settings.js:346
 #: src/blocks/page-list/settings.js:263
 msgid "Custom Link"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:357
+#: src/blocks/nav-menu/settings.js:358
 msgid "Hamburger Icon (Optional)"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:367
+#: src/blocks/nav-menu/settings.js:368
 msgid "Menu Wrapper"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:369
+#: src/blocks/nav-menu/settings.js:370
 msgid "Menu Background"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:375
+#: src/blocks/nav-menu/settings.js:376
 msgid "Sidebar Background"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:382
+#: src/blocks/nav-menu/settings.js:383
 msgid "Sidebar Menu Content Align"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:458
+#: src/blocks/nav-menu/settings.js:459
 msgid "Menu Items"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:461
+#: src/blocks/nav-menu/settings.js:462
 msgid "Menu Item Spacing"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:688
+#: src/blocks/nav-menu/settings.js:531
+#: src/blocks/nav-menu/settings.js:577
+#: src/blocks/nav-menu/settings.js:624
+msgid "Mobile Menu Color"
+msgstr ""
+
+#: build/6543.js:1
+#: src/blocks/nav-menu/settings.js:704
 msgid "Hamburger Style"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:904
+#: src/blocks/nav-menu/settings.js:920
 msgid "Close Button"
 msgstr ""
 
@@ -7666,7 +7683,7 @@ msgid "Live Demo"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/ApiList.js:106
+#: src/dashboard/components/ApiList.js:101
 #: src/dashboard/components/List.js:172
 msgid "PRO"
 msgstr ""
@@ -7697,36 +7714,36 @@ msgid "GutenKit Modules"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/ApiList.js:114
+#: src/dashboard/components/ApiList.js:109
 msgid "Add Key"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/ApiList.js:133
+#: src/dashboard/components/ApiList.js:128
 msgid "API Documentation"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
 #: build/admin/onboard/index.js:1
-#: src/dashboard/components/ApiList.js:157
+#: src/dashboard/components/ApiList.js:152
 #: src/dashboard/components/settings.js:171
 #: src/onboard/pages/Finalize.js:43
 msgid "Save Changes"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/ApiList.js:160
+#: src/dashboard/components/ApiList.js:155
 msgid "Generate Access Token"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/ApiList.js:163
+#: src/dashboard/components/ApiList.js:158
 msgid "Clear Cache"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/assets/js/setting-list.js:7
-msgid "API Intregration"
+msgid "API Integration"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
@@ -7943,12 +7960,12 @@ msgid "Please enter valid email."
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/Drawer.js:38
+#: src/dashboard/components/Drawer.js:34
 msgid "What's New?"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/Drawer.js:40
+#: src/dashboard/components/Drawer.js:36
 msgid "Full Changelog"
 msgstr ""
 
@@ -8463,6 +8480,13 @@ msgid "Submenu Item"
 msgstr ""
 
 #: build/blocks/nav-menu-submenu/index.js:1
+#: src/blocks/nav-menu-submenu/settings.js:229
+#: src/blocks/nav-menu-submenu/settings.js:260
+#: src/blocks/nav-menu-submenu/settings.js:289
+msgid "Mobile Menu Text Color"
+msgstr ""
+
+#: build/blocks/nav-menu-submenu/index.js:1
 #: build/blocks/nav-menu/index.js:1
 #: src/blocks/nav-menu-submenu/edit.js:60
 #: src/blocks/nav-menu/appender-button.js:12
@@ -8948,27 +8972,27 @@ msgid "Go to Parent"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/advanced-url/index.js:114
+#: src/gkit-components/components/advanced-url/index.js:125
 msgid "URL"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/advanced-url/index.js:165
+#: src/gkit-components/components/advanced-url/index.js:176
 msgid "Open in new tab"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/advanced-url/index.js:172
+#: src/gkit-components/components/advanced-url/index.js:183
 msgid "No follow"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/advanced-url/index.js:179
+#: src/gkit-components/components/advanced-url/index.js:190
 msgid "Custom Attributes"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/advanced-url/index.js:183
+#: src/gkit-components/components/advanced-url/index.js:194
 msgid "Set custom attributes for the link element. Separate attribute keys from values using the | (pipe) character like ( link|text ). Separate key-value pairs with a comma."
 msgstr ""
 
@@ -9033,37 +9057,37 @@ msgid "Enable Loop"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/pro-upgrade-notice/index.js:28
+#: src/gkit-components/components/pro-upgrade-notice/index.js:38
 msgid "Your Design Deserves More!"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/pro-upgrade-notice/index.js:31
+#: src/gkit-components/components/pro-upgrade-notice/index.js:46
 msgid "To enjoy advanced blocks and features activate your license"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/pro-upgrade-notice/index.js:31
+#: src/gkit-components/components/pro-upgrade-notice/index.js:47
 msgid "Get GutenKit Pro for advanced blocks and features."
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/pro-upgrade-notice/index.js:34
+#: src/gkit-components/components/pro-upgrade-notice/index.js:55
 msgid "Activate License"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/pro-upgrade-notice/index.js:34
+#: src/gkit-components/components/pro-upgrade-notice/index.js:55
 msgid "Go Premium"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/container-placeholder/index.js:27
+#: src/gkit-components/components/container-placeholder/index.js:29
 msgid "Choose Container Layout"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/container-placeholder/index.js:28
+#: src/gkit-components/components/container-placeholder/index.js:30
 msgid "Select a container layout to start with."
 msgstr ""
 

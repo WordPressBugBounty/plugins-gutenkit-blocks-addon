@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.1.9
+Stable tag: 2.2.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -284,6 +284,13 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.2.0 (2025-01-20) =
+* Added: Fill style to heartbeat animation in advanced tab block
+* Fixed: API integration dashboard popup close on outside click
+* Fixed: Mailchimp block text area styling issue
+* Improved: Nav submenu controls for mobile menu
+* Improved: Third-party compatibility
+
 = GutenKit Blocks Addon: 2.1.9 (2024-12-29) =
 * Added: Hamburger menu style option for the offcanvas block
 * Added: Close icon position control for the offcanvas block

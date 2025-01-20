@@ -99,7 +99,7 @@ class Modules {
 				// check if sticky is enabled
 				if( $key == 'stickyPosition' && isset($attrs[$key]) && $attrs[$key] !== 'none') {
 					$this->used_modules[] = $key; // to check only add the module if it's used
-					$this->used_modules_settings['sticky'] = $modules_list['sticky'];
+					$this->used_modules_settings['sticky'] = $modules_list['sticky'] ?? array();
 				}
 
 				// check if interactions is enabled
