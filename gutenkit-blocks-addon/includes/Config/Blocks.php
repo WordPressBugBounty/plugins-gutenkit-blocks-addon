@@ -23,6 +23,11 @@ class Blocks {
 		add_filter( 'render_block', array( $this, 'save_element' ), 10, 3 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
 		add_filter( 'block_type_metadata', array( $this, 'block_metadata' ), 10 );
+
+		// Load separate core block assets
+		if( ! wp_is_block_theme() ) {
+			add_filter( 'should_load_separate_core_block_assets', '__return_true' );
+		}
 	}
 
 	// register blocks
@@ -185,5 +190,5 @@ class Blocks {
 			$metadata['usesContext'] = array_merge($metadata['usesContext'], array('postType', 'postId'));
 		}
 		return $metadata;
-	}	
+	}
 }

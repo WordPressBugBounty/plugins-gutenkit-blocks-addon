@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.2.0\n"
+"Project-Id-Version: GutenKit Blocks 2.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-20T06:41:11+00:00\n"
+"POT-Creation-Date: 2025-02-16T11:01:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Onboard data saved successfully."
 msgstr ""
 
-#: includes/Config/Blocks.php:91
+#: includes/Config/Blocks.php:96
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/Footer.js:7
 msgid "GutenKit"
@@ -1768,8 +1768,8 @@ msgstr ""
 #: src/gkit-components/components/background/index.js:190
 #: src/gkit-components/components/blend-mode/index.js:46
 #: src/gkit-components/components/color/index.js:17
-#: src/gkit-components/components/swiper/arrow.js:331
-#: src/gkit-components/components/swiper/arrow.js:358
+#: src/gkit-components/components/swiper/arrow.js:333
+#: src/gkit-components/components/swiper/arrow.js:360
 msgid "Color"
 msgstr ""
 
@@ -1981,7 +1981,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/fun-fact/settings.js:414
 #: src/blocks/icon-box/settings.js:622
-#: src/gkit-components/components/swiper/arrow.js:381
+#: src/gkit-components/components/swiper/arrow.js:383
 msgid "Rotate"
 msgstr ""
 
@@ -2075,7 +2075,7 @@ msgstr ""
 #: src/blocks/video/settings.js:450
 #: src/blocks/video/settings.js:611
 #: src/blocks/video/settings.js:981
-#: src/gkit-components/components/swiper/arrow.js:280
+#: src/gkit-components/components/swiper/arrow.js:281
 #: src/gkit-components/components/swiper/dot.js:241
 #: src/gkit-components/components/swiper/dot.js:377
 #: src/global/components/advanced-control.js:63
@@ -2138,7 +2138,7 @@ msgstr ""
 #: src/blocks/video/settings.js:479
 #: src/blocks/video/settings.js:639
 #: src/blocks/video/settings.js:996
-#: src/gkit-components/components/swiper/arrow.js:261
+#: src/gkit-components/components/swiper/arrow.js:263
 #: src/gkit-components/components/swiper/dot.js:262
 #: src/gkit-components/components/swiper/dot.js:398
 msgid "Height"
@@ -2237,7 +2237,7 @@ msgstr ""
 #: src/blocks/video/settings.js:775
 #: src/blocks/video/settings.js:1143
 #: src/gkit-components/components/blend-mode/index.js:14
-#: src/gkit-components/components/swiper/arrow.js:319
+#: src/gkit-components/components/swiper/arrow.js:321
 #: src/gkit-components/components/swiper/dot.js:216
 #: src/global/components/advanced-control.js:235
 #: src/global/components/advanced-control.js:300
@@ -2341,7 +2341,7 @@ msgstr ""
 #: src/blocks/video/settings.js:714
 #: src/blocks/video/settings.js:779
 #: src/blocks/video/settings.js:1147
-#: src/gkit-components/components/swiper/arrow.js:323
+#: src/gkit-components/components/swiper/arrow.js:325
 #: src/gkit-components/components/swiper/dot.js:220
 #: src/global/components/advanced-control.js:239
 #: src/global/components/advanced-control.js:304
@@ -2457,8 +2457,8 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1575
 #: src/blocks/video/settings.js:1157
 #: src/blocks/video/settings.js:1207
-#: src/gkit-components/components/swiper/arrow.js:336
-#: src/gkit-components/components/swiper/arrow.js:363
+#: src/gkit-components/components/swiper/arrow.js:338
+#: src/gkit-components/components/swiper/arrow.js:365
 #: src/gkit-components/components/swiper/dot.js:234
 #: src/gkit-components/components/swiper/dot.js:321
 #: src/gkit-components/components/swiper/dot.js:370
@@ -2616,7 +2616,7 @@ msgstr ""
 #: src/blocks/video/settings.js:951
 #: src/blocks/video/settings.js:1176
 #: src/blocks/video/settings.js:1226
-#: src/gkit-components/components/swiper/arrow.js:305
+#: src/gkit-components/components/swiper/arrow.js:307
 #: src/gkit-components/components/swiper/dot.js:288
 #: src/global/components/advanced-control.js:320
 #: src/global/components/advanced-control.js:344
@@ -2715,8 +2715,8 @@ msgstr ""
 #: src/blocks/video/settings.js:1197
 #: src/blocks/video/settings.js:1247
 #: src/gkit-components/components/box-shadow/index.js:36
-#: src/gkit-components/components/swiper/arrow.js:349
-#: src/gkit-components/components/swiper/arrow.js:374
+#: src/gkit-components/components/swiper/arrow.js:351
+#: src/gkit-components/components/swiper/arrow.js:376
 #: src/global/components/advanced-control.js:326
 #: src/global/components/advanced-control.js:350
 msgid "Box Shadow"
@@ -3135,7 +3135,7 @@ msgstr ""
 #: src/blocks/video/settings.js:1169
 #: src/blocks/video/settings.js:1219
 #: src/gkit-components/components/border-control/index.js:65
-#: src/gkit-components/components/swiper/arrow.js:344
+#: src/gkit-components/components/swiper/arrow.js:346
 #: src/gkit-components/components/swiper/dot.js:282
 #: src/gkit-components/components/swiper/dot.js:327
 #: src/gkit-components/components/swiper/dot.js:418
@@ -3463,7 +3463,7 @@ msgstr ""
 #: src/blocks/team/settings.js:230
 #: src/blocks/testimonial/settings.js:692
 #: src/blocks/testimonial/settings.js:716
-#: src/gkit-components/components/swiper/arrow.js:369
+#: src/gkit-components/components/swiper/arrow.js:371
 msgid "Border Color"
 msgstr ""
 
@@ -4231,7 +4231,7 @@ msgstr ""
 
 #: build/2311.js:1
 #: src/blocks/heading/settings.js:140
-msgid "subtitlePosition"
+msgid "subtitle Position"
 msgstr ""
 
 #: build/2311.js:1
@@ -4653,7 +4653,7 @@ msgstr ""
 #: src/blocks/container/settings.js:596
 #: src/blocks/container/settings.js:719
 #: src/dashboard/components/settings.js:182
-#: src/gkit-components/components/swiper/arrow.js:388
+#: src/gkit-components/components/swiper/arrow.js:390
 #: src/global/components/advanced-control.js:273
 #: src/global/components/advanced-control.js:355
 msgid "Transition Duration"
@@ -8199,19 +8199,18 @@ msgid "Write your title here.."
 msgstr ""
 
 #: build/blocks/heading/index.js:1
-#: src/blocks/heading/parts/bottom.js:40
-#: src/blocks/heading/parts/top.js:46
+#: src/blocks/heading/parts/deprecated-markup.js:25
 msgid "Write subtitle here..."
 msgstr ""
 
 #: build/blocks/heading/index.js:1
-#: src/blocks/heading/parts/bottom.js:63
+#: src/blocks/heading/parts/bottom.js:44
 msgid "Write description here..."
 msgstr ""
 
 #: build/blocks/heading/index.js:1
-#: src/blocks/heading/edit.js:67
-#: src/blocks/heading/edit.js:82
+#: src/blocks/heading/edit.js:66
+#: src/blocks/heading/edit.js:81
 msgid "Enter your heading here..."
 msgstr ""
 
@@ -9012,7 +9011,7 @@ msgid "Right Arrow position"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/swiper/arrow.js:298
+#: src/gkit-components/components/swiper/arrow.js:300
 msgid "Arrow position"
 msgstr ""
 

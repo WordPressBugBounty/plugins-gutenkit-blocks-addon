@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.2.0
+Stable tag: 2.2.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,11 +18,14 @@ No more struggling with complicated page builders or the need for coding experti
 
 With GutenKit, design your next WordPress website in Gutenberg as you do in page builders. With Gutenberg's native drag-and-drop interface, **65+ WordPress blocks, 20+ versatile modules, and 900+ pre-designed templates** you can create professional, responsive web content in minutes.
 
+**⚓**Explore **GutenKit capabilities** in action: [**Check Live Demo**](https://wordpress.org/plugins/gutenkit-blocks-addon/?preview=1)
+
 Let’s experience the future of web design with **GutenKit for Gutenberg Blocks** – design without limits, effortlessly.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mCIO63p1wQM?si=bDObj-pY4_j4AukL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 | [GutenKit Home Page](https://wpmet.com/plugin/gutenkit/?utm_source=org&utm_medium=readme) | [GutenKit Templates](https://wpmet.com/plugin/gutenkit/templates/?utm_source=org&utm_medium=readme) | [Blog](https://wpmet.com/blog/?utm_source=org&utm_medium=readme) | [Documentation](https://wpmet.com/doc/gutenkit/?utm_source=org&utm_medium=readme) | [Need Support?](https://wpmet.com/support-ticket-form/?utm_source=org&utm_medium=readme) | [How to get started with GutenKit Pro](https://wpmet.com/doc/purchase-activate-gutenkit-pro/?utm_source=org&utm_medium=readme) |
+
 
 ##  Key Features
 
@@ -52,32 +55,32 @@ Let’s experience the future of web design with **GutenKit for Gutenberg Blocks
 
 ## Design Responsive Pages with Custom Breakpoints
 
-GutenKit's **Breakpoints module** empowers you to design responsive websites with precision and flexibility. By defining custom breakpoints, you can tailor website design, control content layout, and do other necessary customization to fit various screen sizes, ensuring a seamless user experience across all devices. 
+GutenKit's **[Breakpoints module](https://wpmet.com/plugin/gutenkit/modules/breakpoints/?utm_source=org&utm_medium=readme)** empowers you to design responsive websites with precision and flexibility. By defining custom breakpoints, you can tailor website design, control content layout, and do other necessary customization to fit various screen sizes, ensuring a seamless user experience across all devices. 
 
 ## The Easiest Gutenberg Mega Menu Builder
 
 GutenKit comes with the easiest way to build the mega menu in Gutenberg. Mega menu is a WordPress menu with a multi-dimensional dropdown submenus.
 
-Using GutenKit you can create an entire mega menu inside the block editor. You just need to add submenu items and link them to existing website pages. But with GutenKit, you can even add new pages in the menu that will be automatically saved as drafts on your WordPress site.
+Using GutenKit you can create an entire mega menu inside the block editor. You just need to add submenu items and link them to existing website pages. But with this Gutenberg plugin for WordPress, you can even add new pages in the menu that will be automatically saved as drafts on your WordPress site.
 
-GutenKit’s Mega Menu Builder lets you add any blocks as menu items including containers, carousels, tabs & more. So provide a smoother browsing experience with better navigation using GutenKit.
+GutenKit’s Mega Menu Builder lets you add any blocks as menu items including containers, carousels, tabs & more. So provide a smoother browsing experience with better navigation using GutenKit addons for Gutenberg.
 
 ## Build No-code Dynamic Websites in Gutenberg
 
 ⭐ **Query Loop Builder**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EztR8huF1oA?si=AGRAYQPuuVP9OOGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Query Builder Loop block is a versatile block that helps to organize a website's content. From blog posts to product listings, you can refine the content presentation. Experience unparalleled control over your website's design with its unmatched flexibility.
+[GutenKit Query Loop Builder](https://wpmet.com/plugin/gutenkit/blocks/query-builder/?utm_source=org&utm_medium=readme) block is a versatile block that helps to organize a website’s content. From blog posts to product listings, you can refine the content presentation. Experience unparalleled control over your website’s design with the unmatched flexibility of this advanced Gutenberg blocks plugin.
 
 ⭐ **Dynamic Content**
 
-GutenKit's Dynamic Content feature is a powerful feature for maintaining consistency across your website. By linking elements to specific data sources, you can ensure that changes made in one place are reflected throughout your content.
+[GutenKit's Dynamic Content](https://wpmet.com/plugin/gutenkit/modules/dynamic-content/?utm_source=org&utm_medium=readme) feature is a powerful feature for maintaining consistency across your website. By linking elements to specific data sources, you can ensure that changes made in one place are reflected throughout your content.
 
 ⭐ **Display Conditions**
 
-GutenKit's Display Condition module provides a versatile way to control the visibility of your content based on various conditions. By setting specific criteria, you can ensure that only relevant content is displayed to your visitors, enhancing the user experience and improving your website's overall effectiveness.
+[GutenKit's Display Condition](https://wpmet.com/plugin/gutenkit/modules/display-conditions/?utm_source=org&utm_medium=readme) module provides a versatile way to control the visibility of your content based on various conditions. Through the easy-to-use interface of this WordPress Gutenberg block conditions plugin, you can set specific criteria. This ensures that only relevant content is displayed to your visitors, enhancing their experience and improving your website's overall effectiveness.
 
-##  **Build Faster Loading, SEO-Friendly Website in Gutenberg Block Editor**
+##  Build Faster Loading, SEO-Friendly Website in Gutenberg Block Editor
 
 GutenKit blocks comes with-
 
@@ -91,7 +94,7 @@ GutenKit blocks comes with-
 
 ## Full Site Editing with GutenKit Page Builder
 
-Create everything from page layouts, and header footers, to WordPress block patterns for an entire website with GutenKit.
+GutenKit is a comprehensive WordPress builder plugin. Create everything from page layouts, and header footers, to WordPress block patterns for an entire website with GutenKit.
 
 All GutenKit blocks, patterns, and templates seamlessly work in WordPress's full site editor to help you make a unique design for your website.
 
@@ -99,7 +102,7 @@ Overall, this WordPress **Full Site Editor (FSE) feature** strengthens Gutenberg
 
 ## Create Eye-catchy Web Pages With Vibrant Animations
 
-GutenKit empowers you to create visually stunning and engaging web pages with its dynamic animation features. By seamlessly integrating animation into your content, you can captivate your audience and leave a lasting impression.
+GutenKit empowers you to create visually stunning and engaging web pages with its dynamic animation features. Seamlessly integrating animation into your content with this WordPress Gutenberg Block Animation plugin lets you captivate your audience and leave a lasting impression.
 
 ## Design Stunning Websites (NO CODE) with GutenKit’s Templates Library and Icons
 
@@ -107,9 +110,11 @@ GutenKit empowers you to create visually stunning and engaging web pages with it
 
 GutenKit is packed with over **900 ready patterns** and templates. These exclusive patterns and templates simplify the design process and provide a quick start for building beautiful and functional layouts within the WordPress Gutenberg editor.
 
+**➡️**Get access to this WordPress Gutenberg page builder's library of  [**professionally designed pre-made templates & Patterns**](https://wpmet.com/plugin/gutenkit/templates/).
+
 🔥 **900+ Inline SVG Font Icons**
 
-This amazing icon library offers an efficient loading mechanism, allowing users to access and utilize individual icons without loading the entire library. It leads to a swift user experience.
+This amazing [GutenKit icon library](https://wpmet.com/plugin/gutenkit/modules/icon-pack/?utm_source=org&utm_medium=readme) offers an efficient loading mechanism, allowing users to access and utilize individual icons without loading the entire library. It leads to a swift user experience.
 
 ## Create Complex Layouts in WordPress Block Editor
 
@@ -117,50 +122,48 @@ Let GutenKit’s Dynamic Blocks help you bring your website to life hassle-free.
 
 🔷 **Use Containers with page-builder-like controls**
 
-The Container block in the GutenKit allows you to create custom sections and group content within the Gutenberg editor. You can adjust container width simply by dragging the mouse cursor to right or left, much like the inline editing experience in popular page builders.
+The [Container block in the GutenKit](https://wpmet.com/plugin/gutenkit/modules/container/?utm_source=org&utm_medium=readme) allows you to create custom sections and group content within the Gutenberg editor. You can adjust container width simply by dragging the mouse cursor to right or left, much like the inline editing experience in popular page builders.
 
 Besides, it offers a range of layout options, enabling effortless customization including full-width and boxed containers with background, padding, and endless customizations.
 
 🔷 **Copy Paste Styles**
 
-The copy and paste styles across blocks let you apply a stunning design you’ve crafted to other elements in seconds. So, it ensures a consistent and professional look for your website without repetitive adjustments.
+The [GutenKit copy and paste styles](https://wpmet.com/plugin/gutenkit/modules/copy-paste-styles/?utm_source=org&utm_medium=readme) across blocks let you apply a stunning design you’ve crafted to other elements in seconds. So, it ensures a consistent and professional look for your website without repetitive adjustments.
 
 🔷 **Organize Content in Advanced Tab**
 
-With the advanced tab block, you can organize information into tabbed sections for a convenient browsing experience. You’ll get pre-designed templates for the tabs, global styles, advanced customization settings, and so on.
+With the [GutenKit Advanced Tab](https://wpmet.com/plugin/gutenkit/blocks/advanced-tab/?utm_source=org&utm_medium=readme) block, you can organize information into tabbed sections for a convenient browsing experience. You’ll get pre-designed templates for the tabs, global styles, advanced customization settings, and so on.
 
 🔷 **Present Content Smartly with Advanced Accordions**
 
-The Accordion block in GutenKit is your key to creating sleek and interactive content. This drag-and-drop feature allows you to create collapsible sections effortlessly. You can organize any content in a structured and tidy way with it.
+The [Accordion block in GutenKit](https://wpmet.com/plugin/gutenkit/blocks/advanced-accordion/?utm_source=org&utm_medium=readme) is your key to creating sleek and interactive content. This drag-and-drop feature allows you to create collapsible sections effortlessly. Best of all, Gutenkit makes it possible to organize any content in a well-structured and tidy way through a free Gutenberg block plugin.
+
 
 🔷 **Craft Catchy Headings**
 
-Create eye-catching headers effortlessly with the GutenKit Header block in the WordPress block editor. You can craft stunning H1, H2, and H3 headers with a wide range of customization options. One great convenience is the ability to add URLs to your headings which makes it easier for users to navigate.
+Create eye-catching headers effortlessly with the [GutenKit Header](https://wpmet.com/plugin/gutenkit/blocks/heading/?utm_source=org&utm_medium=readme) block in the WordPress block editor. You can craft stunning H1, H2, and H3 headers with a wide range of customization options. One great convenience is the ability to add URLs to your headings which makes it easier for users to navigate.
 
 🔷 **Off-canvas menu**
 
-Now you can design and integrate space-saving off-canvas menus with our Offcanvas block. The handy tool allows you to make menus that slide smoothly into view and ensures easy access to all your important website sections.  
+Now you can design and integrate space-saving off-canvas menus with our [Offcanvas block](https://wpmet.com/plugin/gutenkit/blocks/offcanvas/?utm_source=org&utm_medium=readme). The handy tool allows you to make menus that slide smoothly into view and ensures easy access to all your important website sections.  
 
 🔷 **Global Color Scheme**
 
-Take control of your website’s color palette with our seamless Gutenberg block editor integration. Effortlessly design cohesive layouts by leveraging the Global Color Scheme feature.
+Take control of your website’s color palette with our seamless Gutenberg block editor integration. GutenKit page builder blocks let you effortlessly design cohesive layouts by leveraging the [Global color scheme feature](https://wpmet.com/doc/gutenkit-global-color-palette-compatibility/?utm_source=org&utm_medium=readme).
 
 ## Create User-Friendly WordPress Menus
 
-Besides the mega menu, GutenKit helps you create menus in the WordPress block editor in the easiest way. You can effortlessly design different types of menus including Nav Menu, Mega Menu, or Offcanvas menu that perfectly complement your website’s aesthetic, ensuring a smooth user experience.
+Besides the [mega menu](https://wpmet.com/plugin/gutenkit/blocks/mega-menu-builder/?utm_source=org&utm_medium=readme), GutenKit helps you create menus in the WordPress block editor in the easiest way. You can effortlessly design different types of menus including Nav Menu, Mega Menu, or Offcanvas menu that perfectly complement your website’s aesthetic, ensuring a smooth user experience.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E5m6RK6sjBQ?si=atwyu7n5vJ6d67C-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 🔷 Make Beautiful Nav Menu
 
-With GutenKit, making stunning navigation menus becomes a breeze. You can effortlessly design WordPress navigation menus that perfectly ensure a site-wide smooth user experience and complement your website’s aesthetic.
+With [GutenKit Nav Menu](https://wpmet.com/plugin/gutenkit/blocks/nav-menu/?utm_source=org&utm_medium=readme) block, making stunning navigation menus becomes a breeze. You can effortlessly design WordPress navigation menus that perfectly ensure a site-wide smooth user experience and complement your website’s aesthetic.
 
 ### 🔷 Modernize Design with Offcanvas Menu
 
-In terms of modernizing and space optimization, the Offcanvas block is the perfect solution in the WordPress block editor. You can design and integrate space-saving off-canvas menus with our Offcanvas block. The handy tool allows you to make menus that slide smoothly into view and ensures easy access to all your important website sections.
-
-## Interactive Response to Visitor’s Actions
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aEjs_UtSRlE?si=Yhm45T1ZseXEnfHh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Give an exceptional interactive experience to every part of your website that visitors touch. The Gutenkit interaction module allows the implementation of various interaction effects such as transformation, scrolling, rotation, changing opacity, and showing, hiding, or toggling elements in a "zero-code" way.
+In terms of modernizing and space optimization, the [Offcanvas block](https://wpmet.com/plugin/gutenkit/blocks/offcanvas/?utm_source=org&utm_medium=readme) is the perfect solution in the WordPress block editor. You can design and integrate space-saving off-canvas menus with our Offcanvas block. The handy tool allows you to make menus that slide smoothly into view and ensures easy access to all your important website sections.
 
 ## Start Your Blogging Site With Various Post Blocks
 
@@ -168,51 +171,60 @@ Ready to begin blogging journey with different GutenKit Post Blocks? From captiv
 
 ☑️ **Post Grid**
 
-It lets you visualize your latest content elegantly  in the WordPress block editor. You can arrange the posts in a grid layout, providing a modern and engaging way for users to discover your latest articles or products.
+[GutenKit Post Grid](https://wpmet.com/plugin/gutenkit/blocks/post-grid/?utm_source=org&utm_medium=readme) lets you visualize your latest content elegantly  in the WordPress block editor. You can arrange the posts in a grid layout, providing a modern and engaging way for users to discover your latest articles or products.
 
 ☑️ **Blog Posts**
 
-This is another flexible block. You can use it to show posts by category, date, or popularity, and choose from a range of eye-catching styles to make a memorable impression. Also, you can add text, images, videos, and other media to bring your content to life.
+This is another flexible block. You can use [GutenKit Blog Posts](https://wpmet.com/plugin/gutenkit/blocks/blog-posts/?utm_source=org&utm_medium=readme) to show posts by category, date, or popularity, and choose from a range of eye-catching styles to make a memorable impression. Also, you can add text, images, videos, and other media to bring your content to life.
 
 ☑️ **Post Tab**
 
-It helps to organize the blog posts into different categories or topics. For your WordPress site, you can create post tabs for each category, allowing readers to easily navigate and find the content they're interested in.
+[GutenKit Post Tab](https://wpmet.com/plugin/gutenkit/blocks/post-tab/?utm_source=org&utm_medium=readme) block helps to organize the blog posts into different categories or topics. For your WordPress site, you can create post tabs for each category, allowing readers to easily navigate and find the content they're interested in.
 
 ☑️ **Reading Progress Bar**
 
-The Reading Progress Bar block in WordPress Block editor serves as a visual representation of progress or completion. Our block functionality includes a diverse range of templates and styles, allowing customization of percentages, progress, and duration indicators.
+The [Reading Progress Bar](https://wpmet.com/plugin/gutenkit/blocks/progress-bar/?utm_source=org&utm_medium=readme) in WordPress Block editor serves as a visual representation of progress or completion. Our block functionality includes a diverse range of templates and styles, allowing customization of percentages, progress, and duration indicators.
+
+## Interactive Response to Visitor’s Actions
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aEjs_UtSRlE?si=Yhm45T1ZseXEnfHh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Give an exceptional interactive experience to every part of your website that visitors touch. The [Gutenkit interaction module](https://wpmet.com/plugin/gutenkit/modules/interactions/?utm_source=org&utm_medium=readme) allows the implementation of various interaction effects such as transformation, scrolling, rotation, changing opacity, and showing, hiding, or toggling elements in a "zero-code" way.
+
 
 ## More Advanced Blocks for Your WordPress Site
 
-Beyond the essentials, GutenKit offers a suite of advanced blocks to enhance your website's functionality and visual appeal.
+In addition to the core features of a Gutenberg page builder, GutenKit offers a suite of advanced blocks to enhance your website’s functionality and visual appeal.
 
 ### 🔷 **Showcase with Icon Boxes**
 
-With the Icon Box block in GutenKit, you can add icons from our vast library without slowing down your site. It’s super quick because it only loads the specific icons you choose.
+With the [Icon Box block in GutenKit](https://wpmet.com/plugin/gutenkit/blocks/icon-box/?utm_source=org&utm_medium=readme), you can add icons from our vast library without slowing down your site. It’s super quick because it only loads the specific icons you choose.
 
 ### 🔷 Highlight with Image Boxes
 
-GutenKit’s Image Box is an awesome feature that effortlessly displays images in a beautifully designed box. Don’t worry about your images—crop, resize, adjust them on the fly, and style them accordingly to fit seamlessly within your design.
+[GutenKit’s Image Box](https://wpmet.com/plugin/gutenkit/blocks/image-box/?utm_source=org&utm_medium=readme) is an awesome feature that effortlessly displays images in a beautifully designed box. Don’t worry about your images—crop, resize, adjust them on the fly, and style them accordingly to fit seamlessly within your design.
 
 ### 🔷 Dual Buttons for Versatility
 
-The Dual Button block of the GutenKit WordPress Block editor Plugin offers an intuitive way to integrate paired buttons with personalized styles into your content. With this block, you can create and customize two buttons, while also inserting text in the middle to provide context or information.
+The [Dual Button](https://wpmet.com/plugin/gutenkit/blocks/dual-button/?utm_source=org&utm_medium=readme) block of the GutenKit WordPress Block editor Plugin offers an intuitive way to integrate paired buttons with personalized styles into your content. With this block, you can create and customize two buttons, while also inserting text in the middle to provide context or information.
 
 ### 🔷 Pricing Table
 
-Showcase your product/service prices in style with our Pricing Table block. It lets you create crystal-clear pricing tables that convert, and highlight key features, pricing structures, calls to action, and many more.
+Showcase your product/service prices in style with our [Pricing Table block](https://wpmet.com/plugin/gutenkit/blocks/pricing-table/?utm_source=org&utm_medium=readme). It lets you create crystal-clear pricing tables that convert, and highlight key features, pricing structures, calls to action, and many more.
 
 ### 🔷 Showcase Before/After Image Comparison
 
-This image comparison block of GutenKit is ideal for highlighting transformations, renovations, or any scenario where visual impact matters. With this drag-and-drop WordPress block, you can slide smoothly between the before and after comparison of an image.
+The [image comparison block](https://wpmet.com/plugin/gutenkit/blocks/image-comparison/?utm_source=org&utm_medium=readme) of GutenKit is ideal for highlighting transformations, renovations, or any scenario where visual impact matters. With this drag-and-drop WordPress block, you can slide smoothly between the before and after comparison of an image.
 
 ### 🔷 Create Urgency with Countdown Timers
 
-The countdown timer block can empower users to create visually appealing and highly customizable Countdown Timers within the WordPress Gutenberg editor. At the same time, it can effectively add a sense of urgency to promotions and prompt swift, time-sensitive actions from their audience.
+The [GutenKit Countdown Timer](https://wpmet.com/plugin/gutenkit/blocks/countdown-timer/?utm_source=org&utm_medium=readme) block can empower users to create visually appealing and highly customizable Countdown Timers within the WordPress Gutenberg editor. At the same time, it can effectively add a sense of urgency to promotions and prompt swift, time-sensitive actions from their audience.
+
+### 🔷 Attractive Gallery Style
+Increase the visual appeal of your website using this Gutenberg Gallery plugin, which includes an intuitive grid and masonry-style image and video galleries. GutenKit displays your visual content in versatile and dynamic layouts for optimal visitor engagement.
 
 ##  Who will benefit from GutenKit?
 
-Here are the highlights of the diverse audience segments and professionals who can utilize GutenKit's potential to achieve their goals and enhance their digital experiences.
+No matter your purpose, GutenKit stands out as one of the best Gutenberg addons. Here are the highlights of the diverse audience segments and professionals who can utilize GutenKit's potential to achieve their goals and enhance their digital experiences.
 
 ###  ➡️ Website Owners and Bloggers
 
@@ -274,7 +286,7 @@ Check out our other plugins:
 
 **[Wp Ultimate Review](https://wpmet.com/plugin/wp-ultimate-review/)** – Manage customer reviews with Wp Ultimate Review plugin.
 
-[**PopupKit**](https://wordpress.org/plugins/popup-builder-block/) – Build exceptional popup for diverse needs within the WordPress block editor.
+[**PopupKit**](https://wordpress.org/plugins/popup-builder-block/) – WordPress Gutenberg popup plugin to build exceptional popup for diverse needs within the WordPress block editor.
 
 [**TableKit**](https://wordpress.org/plugins/table-builder-block/) – Make fully-customizable multipurpose table & generate data table within Gutenberg block editor.
 
@@ -284,6 +296,19 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.2.1 (2025-02-16) =
+* Added: Filter to load separate core block assets for non-block themes
+* Fixed: Page settings not working when no GutenKit blocks
+* Fixed: Sticky module warning issue
+* Fixed: Heading block deprecated issue
+* Fixed: Settings pannel tabs erros
+* Fixed: Template library button not working
+* Fixed: Container block z-index conflict with sticky
+* Fixed: Title hover color in advanced accordion block
+* Fixed: Update post type condition in page settings sidebar
+* Improved: Swiper arrow controls across the blocks
+* Improved: Entrance animation editor component for improved readability and performance
+
 = GutenKit Blocks Addon: 2.2.0 (2025-01-20) =
 * Added: Fill style to heartbeat animation in advanced tab block
 * Fixed: API integration dashboard popup close on outside click
@@ -349,10 +374,19 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 == Frequently Asked Questions ==
 
 = Why do you need to use a page builder along with Gutenberg? =
-A page builder like GutenKit offer more rich features and flexibility, which you can't enjoy only using Gutenberg. [Read the article](https://wpmet.com/gutenberg-vs-page-builders/).
+A page builder like GutenKit offers more rich features and flexibility, which you can't enjoy only using Gutenberg. [Read the article](https://wpmet.com/gutenberg-vs-page-builders/).
 
 = Is GutenKit responsive for all screens? =
 Yes, it is fully responsive for all devices and tested for cross-browser compatibility.
 
 = Who can benefit from GutenKit? =
 WordPress users who like to use Gutenberg will love all the advanced and cool blocks of the plugin.
+
+= Is GutenKit a Page Builder? =
+GutenKit is a free WordPress page builder extending Gutenberg’s editing capabilities. This addon for Gutenberg also has a premium version with exceptional design elements and Gutenberg-based pre-designed templates.
+
+= Can I build a landing page with GutenKit? =
+Yes, GutenKit offers everything you need to design stunning and content-rich landing pages for your Gutenberg websites.
+
+= Who can benefit from GutenKit? =
+To learn and use the GutenKit page builder follow [these resources](https://wpmet.com/doc/gutenkit/).
