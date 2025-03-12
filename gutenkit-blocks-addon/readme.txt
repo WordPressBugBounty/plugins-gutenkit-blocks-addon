@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -296,6 +296,14 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.2.2 (2025-03-10) =
+* Fixed: Fix advanced tab navigation logic and improve background slide initialization
+* Fixed: Refactor SCSS styles for template library buttons and editor layout
+* Fixed: Rephrase some label in the heading block
+* Fixed: Dual button background, color not working issue
+* Fixed: Block error issue in pricing table block
+* Fixed: Input field issue in mailchimp block
+
 = GutenKit Blocks Addon: 2.2.1 (2025-02-16) =
 * Added: Filter to load separate core block assets for non-block themes
 * Fixed: Page settings not working when no GutenKit blocks
