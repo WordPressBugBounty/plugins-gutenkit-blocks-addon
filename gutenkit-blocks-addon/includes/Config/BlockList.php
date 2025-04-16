@@ -578,6 +578,14 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'status'   => 'inactive',
 					'badge'    => ['new', 'beta'],
 				),
+				'facebook-feed' => array(
+					'slug'     => 'facebook-feed',
+					'title'    => 'Facebook Feed',
+					'package'  => 'pro',
+					'category' => 'feed',
+					'status'   => 'inactive',
+					'badge'    => ['new', 'beta'],
+				),
 			)
 		);
 	}

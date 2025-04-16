@@ -39,7 +39,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 			array(
 				'icon-pack' => array(
 					'slug'			=> 'icon-pack',
-					'title'			=> esc_html__('Icon Pack', 'gutenkit-blocks-addon'),
+					'title'			=> 'Icon Pack',
 					'package'		=> 'free',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -48,21 +48,21 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'copy-paste-style' => array(
 					'slug'			=> 'copy-paste-style',
-					'title'			=> esc_html__('Copy Paste Style', 'gutenkit-blocks-addon'),
+					'title'			=> 'Copy Paste Style',
 					'package'		=> 'free',
 					'auto_enqueue'	=> true,
 					'status'		=> 'active',
 				),
 				'visibility' => array(
 					'slug'			=> 'visibility',
-					'title'			=> esc_html__('Visibility', 'gutenkit-blocks-addon'),
+					'title'			=> 'Visibility',
 					'package'		=> 'free',
 					'auto_enqueue'	=> true,
 					'status'		=> 'active',
 				),
 				'page-settings' => array(
 					'slug'			=> 'page-settings',
-					'title'			=> esc_html__('Page Settings', 'gutenkit-blocks-addon'),
+					'title'			=> 'Page Settings',
 					'package'		=> 'free',
 					'auto_enqueue'	=> false,
 					'attributes'	=> array( 'new' ),
@@ -71,7 +71,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'scrolling-effects' => array(
 					'slug'          => 'scrolling-effects',
-					'title'         => esc_html__('Scrolling Effects (Parallax)', 'gutenkit-blocks-addon'),
+					'title'         => 'Scrolling Effects (Parallax)',
 					'package'       => 'pro',
 					'auto_enqueue'  => true,
 					'attributes'    => array( 'new' ),
@@ -79,7 +79,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'glass-morphism' => array(
 					'slug'			=> 'glass-morphism',
-					'title'			=> esc_html__('Glass Morphism', 'gutenkit-blocks-addon'),
+					'title'			=> 'Glass Morphism',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -87,7 +87,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'css-transform' => array(
 					'slug'			=> 'css-transform',
-					'title'			=> esc_html__('CSS Transform', 'gutenkit-blocks-addon'),
+					'title'			=> 'CSS Transform',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -95,7 +95,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'advanced-tooltip' => array(
 					'slug'			=> 'advanced-tooltip',
-					'title'			=> esc_html__('Advanced Tooltip', 'gutenkit-blocks-addon'),
+					'title'			=> 'Advanced Tooltip',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -103,7 +103,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'one-page-scroll' => array(
 					'slug'			=> 'one-page-scroll',
-					'title'			=> esc_html__('One Page Scroll', 'gutenkit-blocks-addon'),
+					'title'			=> 'One Page Scroll',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -111,7 +111,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'dynamic-content' => array(
 					'slug'			=> 'dynamic-content',
-					'title'			=> esc_html__('Dynamic Content', 'gutenkit-blocks-addon'),
+					'title'			=> 'Dynamic Content',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -120,7 +120,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'sticky' => array(
 					'slug'			=> 'sticky',
-					'title'			=> esc_html__('Sticky', 'gutenkit-blocks-addon'),
+					'title'			=> 'Sticky',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -128,7 +128,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'entrance-animation' => array(
 					'slug'			=> 'entrance-animation',
-					'title'			=> esc_html__('Entrance Animation', 'gutenkit-blocks-addon'),
+					'title'			=> 'Entrance Animation',
 					'package'		=> 'free',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -136,7 +136,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'mouse-tilt' => array(
 					'slug'			=> 'mouse-tilt',
-					'title'			=> esc_html__('Mouse Tilt', 'gutenkit-blocks-addon'),
+					'title'			=> 'Mouse Tilt',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -144,7 +144,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'mouse-track' => array(
 					'slug'			=> 'mouse-track',
-					'title'			=> esc_html__('Mouse Track', 'gutenkit-blocks-addon'),
+					'title'			=> 'Mouse Track',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -152,7 +152,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'masking' => array(
 					'slug'			=> 'masking',
-					'title'			=> esc_html__('Masking', 'gutenkit-blocks-addon'),
+					'title'			=> 'Masking',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -161,7 +161,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'custom-css' => array(
 					'slug'			=> 'custom-css',
-					'title'			=> esc_html__('Custom CSS', 'gutenkit-blocks-addon'),
+					'title'			=> 'Custom CSS',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -179,7 +179,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'smooth-scroll' => array(
 					'slug'			=> 'smooth-scroll',
-					'title'			=> esc_html__('Smooth Scroll', 'gutenkit-blocks-addon'),
+					'title'			=> 'Smooth Scroll',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
@@ -188,7 +188,7 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				),
 				'interactions' => array(
 					'slug'			=> 'interactions',
-					'title'			=> esc_html__('Interactions', 'gutenkit-blocks-addon'),
+					'title'			=> 'Interactions',
 					'package'		=> 'pro',
 					'auto_enqueue'	=> false,
 					'attributes'	=> array( 'new' ),

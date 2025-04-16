@@ -667,6 +667,17 @@
     "buttonMarginMobile": {
       "type": "object"
     },
+    "showLoader": {
+      "type": "boolean",
+      "default": false
+    },
+    "loaderPosition": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 1
+      }
+    },
     "messageTypography": {
       "type": "object"
     },

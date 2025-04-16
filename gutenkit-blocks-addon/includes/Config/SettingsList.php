@@ -47,11 +47,13 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'package' => 'pro',
 					'fields'   => array(
 						'page_id' => array('label' => 'Page ID', 'value' => ''),
-						'aceess_token' => array('label' => 'Page Access Token', 'value' => '')
+						'aceess_token' => array('label' => 'Page Access Token', 'value' => ''),
+						'expiration_time' => array('label' => 'Expiration Time In Hours', 'value' => '', 'type' => 'number')
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
-					'status'          => 'inactive',
+					'status'          => 'active',
+					'transient_key' => 'gutenkit_facebook_feed',
 					'category' => 'api-integration',
 					'token_link' => 'https://token.wpmet.com/social_token.php?provider=facebook&_for=page&app=2577123062406162&sec=a4656a1cae5e33ff0c18ee38efaa47ac&scope=pages_show_list,pages_read_engagement,pages_manage_engagement,pages_read_user_content'
 				),

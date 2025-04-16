@@ -370,6 +370,9 @@
     "enableBackgroundImageScroll": {
       "type": "boolean",
       "default": false
+    },
+    "containerLink": {
+      "type": "object"
     }
   },
   "supports": {

@@ -31,6 +31,15 @@ class SettingsData {
 				);
 			}
 		);
+
+		// Register the clear_cache endpoint.
+		add_action('rest_api_init', function() {
+			register_rest_route('gutenkit/v1', 'clear-cache', array(
+				'methods'             => \WP_REST_Server::EDITABLE,
+				'callback'            => array($this, 'action_clear_cache'),
+				'permission_callback' => '__return_true',
+			));
+		});
 	}
 
 	public function action_get_settings( $request ) {
@@ -99,4 +108,34 @@ class SettingsData {
 			);
 		}
 	}
+
+	public function action_clear_cache($request) {
+		if (!wp_verify_nonce($request->get_header('X-WP-Nonce'), 'wp_rest')) {
+			return array(
+				'status'  => 'fail',
+				'message' => array('Nonce mismatch.'),
+			);
+		}
+	
+		if (!is_user_logged_in() || !current_user_can('manage_options')) {
+			return array(
+				'status'  => 'fail',
+				'message' => array('Access denied.'),
+			);
+		}
+	
+		$req_data = $request->get_params();
+
+		if (!empty($req_data['clearCache'])) {
+			if(isset($req_data['transientKey'])) {
+				delete_transient($req_data['transientKey']);
+
+                return array(
+                    'status'  => 'success',
+                    'message' => array('Cache cleared for transient key '. $req_data['transientKey']. '.'),
+                );
+			}
+		}
+	}
+	
 }

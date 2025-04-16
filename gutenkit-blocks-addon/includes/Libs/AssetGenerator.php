@@ -3,6 +3,8 @@ namespace Gutenkit\Libs;
 
 defined('ABSPATH') || exit;
 
+use \Gutenkit\Helpers\Utils;
+
 class AssetGenerator {
 
 	use \Gutenkit\Traits\Singleton;
@@ -291,7 +293,7 @@ class AssetGenerator {
 		// concate css/js content into a single file
 		$css_content = '';
 		$is_custom_styles_added = false;
-		$device_list = \Gutenkit\Helpers\Utils::get_device_list();
+		$device_list = Utils::get_device_list();
 
 		if (!empty($blocks_css)) {
 			foreach ($device_list as $device) {
