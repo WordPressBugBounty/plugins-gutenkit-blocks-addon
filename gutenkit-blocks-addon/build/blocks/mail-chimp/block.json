@@ -30,6 +30,18 @@
       "type": "string",
       "default": ""
     },
+    "formOptions": {
+      "type": "array",
+      "default": []
+    },
+    "formFieldList": {
+      "type": "array",
+      "default": []
+    },
+    "checkboxFieldList": {
+      "type": "array",
+      "default": []
+    },
     "formFields": {
       "type": "array",
       "default": [
@@ -364,7 +376,12 @@
       "type": "object"
     },
     "fieldBorder": {
-      "type": "object"
+      "type": "object",
+      "default": {
+        "width": "1px",
+        "style": "solid",
+        "color": "#ccc"
+      }
     },
     "fieldBorderHover": {
       "type": "object"
@@ -785,6 +802,94 @@
       "type": "object"
     },
     "submissionMessageBorderRadiusMobile": {
+      "type": "object"
+    },
+    "checkboxDirection": {
+      "type": "string",
+      "default": "row"
+    },
+    "checkboxItemGapDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 10
+      }
+    },
+    "checkboxItemGapWideScreen": {
+      "type": "object"
+    },
+    "checkboxItemGapLaptop": {
+      "type": "object"
+    },
+    "checkboxItemGapTabletLandscape": {
+      "type": "object"
+    },
+    "checkboxItemGapTablet": {
+      "type": "object"
+    },
+    "checkboxItemGapMobileLandscape": {
+      "type": "object"
+    },
+    "checkboxItemGapMobile": {
+      "type": "object"
+    },
+    "checkboxItemLabelColor": {
+      "type": "string"
+    },
+    "checkboxItemLabelTypography": {
+      "type": "object"
+    },
+    "checkboxItemBorder": {
+      "type": "object"
+    },
+    "checkboxBorderRadius": {
+      "type": "object"
+    },
+    "radioDirection": {
+      "type": "string",
+      "default": "row"
+    },
+    "radioItemGapDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 10
+      }
+    },
+    "radioItemGapWideScreen": {
+      "type": "object"
+    },
+    "radioItemGapLaptop": {
+      "type": "object"
+    },
+    "radioItemGapTabletLandscape": {
+      "type": "object"
+    },
+    "radioItemGapTablet": {
+      "type": "object"
+    },
+    "radioItemGapMobileLandscape": {
+      "type": "object"
+    },
+    "radioItemGapMobile": {
+      "type": "object"
+    },
+    "radioItemLabelColor": {
+      "type": "string"
+    },
+    "radioItemLabelTypography": {
+      "type": "object"
+    },
+    "agreeTermsLabelColor": {
+      "type": "string"
+    },
+    "agreeTermsTypography": {
+      "type": "object"
+    },
+    "agreeTermsLinkColor": {
+      "type": "string"
+    },
+    "agreeTermsLinkTypography": {
       "type": "object"
     }
   },

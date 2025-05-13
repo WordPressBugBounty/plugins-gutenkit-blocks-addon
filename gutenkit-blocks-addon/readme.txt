@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.2.3
+Stable tag: 2.3.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -307,6 +307,15 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.3.0 (2025-05-13) =
+* Added: Shape divider in container block
+* Added: Beta version of the class manager module
+* Added: Checkbox, select, radio and agree terms support in mailchimp block
+* Fixed: Hover scale effect on inline button wasn't working in the video block
+* Fixed: Transition is not working in icon block
+* Fixed: Mailchimp input field border issue
+* Improved: Controls compatibility with WP 6.8
+
 = GutenKit Blocks Addon: 2.2.3 (2025-04-15) =
 * Added: Link tag support in container block
 * Fixed: Dual button background color is not changing with classic themes

@@ -12,6 +12,7 @@ class MailChimp
 	{
 		add_action('rest_api_init', array($this, 'gutenkit_mailchimp_get_list_id'));
 		add_action('rest_api_init', array($this, 'gutenkit_mailchimp_post_data'));
+		add_action('rest_api_init', array($this, 'gutenkit_mailchimp_get_interest_data'));
 		// add_action('rest_api_init', array($this, 'gutenkit_mailchimp_form_field_list'));
 	}
 
@@ -41,6 +42,110 @@ class MailChimp
 		);
 	}
 
+	public function gutenkit_mailchimp_get_interest_data(){
+		register_rest_route(
+			'gutenkit/v1',
+			'/mailchimp/get/interests',
+			array(
+				'methods' => 'GET',
+				'callback' => array($this, 'gutenkit_mailchimp_get_interests_callback'),
+				'permission_callback' => '__return_true',
+				'args' => array(
+					'list_id' => array(
+						'required' => true,
+						'type' => 'string',
+						'description' => __('The Mailchimp list ID', 'gutenkit-blocks-addon'),
+					),
+				),
+			)
+		);
+	}
+
+	public function gutenkit_mailchimp_get_interests_callback($param){
+		// error_log(print_r($param['list_id'], true));
+
+		// Retrieve form list id
+		$list_id = $param['list_id'];
+		if(empty($list_id)) {
+			return;
+		}
+		
+		$api_key = get_option('gutenkit_settings_list');
+		// error_log(print_r($api_key, true));
+		
+		$api_value = !empty($api_key) ? $api_key['mailchimp']['fields']['api_key']['value'] : '';
+		$server_parts = explode('-', $api_value);
+		// error_log(print_r($server_parts, true));
+
+		if(!isset($server_parts[1])) {
+			return;
+		}
+
+		$body = $param->get_body();
+		// error_log(print_r($body, true));
+		
+		$request = json_decode($body, true);
+		// error_log(print_r($request, true));
+		
+		$server_prefix = $server_parts[1];
+		//construct the API URL
+		$url = 'https://' . $server_prefix . '.api.mailchimp.com/3.0/lists/'.$list_id.'/interest-categories';
+		$response = wp_remote_get($url, [
+			'headers' => [
+				'Authorization' => 'apikey ' . $api_value,
+				'Content-Type' => 'application/json; charset=utf-8',
+			],
+		]);
+		$resBody = json_decode($response['body'], true);
+		$categories = isset($resBody['categories']) ? $resBody['categories'] : [];
+		// error_log(print_r($categories, true));
+		if (!empty($categories)) {
+			foreach ($categories as $category) {
+				// error_log(print_r($category, true));
+
+				$categoryId = $category['id'];
+
+				//call the API to get the interests list of this category
+				$interestUrl = 'https://' . $server_prefix . '.api.mailchimp.com/3.0/lists/'.$list_id.'/interest-categories/'.$categoryId.'/interests';
+				$response = wp_remote_get($interestUrl, [
+					'headers' => [
+						'Authorization' => 'apikey ' . $api_value,
+						'Content-Type' => 'application/json; charset=utf-8',
+					],
+				]);
+				// error_log(print_r($response, true));
+				$interestResBody = json_decode($response['body'], true);
+				$interests = isset($interestResBody['interests']) ? $interestResBody['interests'] : [];
+				// error_log(print_r($interests, true));
+				
+
+
+				// Build trimmed category info with interests
+				$results[] = [
+					'list_id'       => $category['list_id'],
+					'id'            => $categoryId,
+					'title'         => $category['title'],
+					'display_order' => $category['display_order'],
+					'type'          => $category['type'],
+					'interests'     => !empty($interests) ? array_map(function ($i) {
+						return [
+							'id'    => $i['id'],
+							'name'  => $i['name'],
+							'subscriber_count' => $i['subscriber_count']
+						];
+					}, $interests) : []
+				];
+				
+				
+				
+				
+			}
+		}
+
+		return $results;
+		
+		
+	}
 
 
 	public function gutenkit_mailchimp_callback()
@@ -65,6 +170,7 @@ class MailChimp
 
 		if (is_array($response) && !is_wp_error($response)) {
 			$body = json_decode($response['body'], true);
+			
 			$listed = isset($body['lists']) ? $body['lists'] : [];
 
 			$list_id = $listed[0]['id'];
@@ -93,6 +199,7 @@ class MailChimp
 
 	public function gutenkit_mailchimp_post_callback($param)
 	{
+		// error_log(print_r($param, true));
 		$body = $param->get_body();
 		$request = json_decode($body, true);
 
@@ -107,9 +214,14 @@ class MailChimp
 			'merge_fields' => [],
 			'status' => 'subscribed'
 		];
+		// error_log(print_r($request, true));
+		
 
 		//prepare the data array
 		foreach ($request as $key => $value) {
+			// error_log(print_r($key, true));
+			
+
 			if ($key == 'EMAIL') {
 				$formData['email_address'] = !empty($request['EMAIL']) ? sanitize_email($request['EMAIL']) : '';
 			} else {
@@ -149,8 +261,20 @@ class MailChimp
 						$formData['merge_fields'][$key] = !empty($request[$key]) ? sanitize_text_field($request[$key]) : '';
 					}
 				}
+
+				$interestResult = [];
+				if (strpos(strtolower($key), 'interest') !== false) {
+					// error_log(print_r($value, true));
+					$parts = explode('-', $value, 2);
+					if (count($parts) === 2) {
+						$formData['interests'][$parts[0]] = filter_var($parts[1], FILTER_VALIDATE_BOOLEAN) ;
+					}
+				}
 			}
+			
 		}
+		error_log(print_r($formData, true));
+		
 
 		// Validate API key and server prefix
 		if (empty($token)) {
@@ -223,6 +347,8 @@ class MailChimp
 		]);
 		$fieldListBody = isset($response['body']) ? json_decode($response['body'], true) : [];
 		$fieldListItems = isset($fieldListBody['merge_fields']) ? $fieldListBody['merge_fields'] : [];
+		// error_log(print_r($fieldListBody, true));
+		
 
 
 
@@ -230,10 +356,19 @@ class MailChimp
 		$tagsAndNames = [['value' => '', 'label' => __('Select Field Name ID', 'gutenkit-blocks-addon')], ['value' => 'EMAIL', 'label' => __('EMAIL', 'gutenkit-blocks-addon')]];
 
 		foreach ($fieldListItems as $key => $item) {
-			$tagsAndNames[] = [
-				"value" => $item['tag'],
-				"label" => $item['tag'],
-			];
+			if($item['type'] == 'dropdown' || $item['type'] == 'radio'){
+				$tagsAndNames[] = [
+					"value" => $item['tag'],
+					"label" => $item['name'],
+					"type" => $item['type'],
+					"options" => $item['options']['choices'],
+				];
+			} else {
+				$tagsAndNames[] = [
+					"value" => $item['tag'],
+					"label" => $item['tag'],
+				];
+			}
 		}
 
 		return $tagsAndNames;

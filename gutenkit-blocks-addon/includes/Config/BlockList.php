@@ -557,10 +557,10 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'package'  => 'free',
 					'category' => 'general',
 					'status'   => 'inactive',
-					'badge'    => ['freemium', 'new', 'beta'],
+					'badge'    => ['new'],
 					'dependency' => array(
 						'slug' => 'table-builder-block',
-						'url' => 'https://demo.wpmet.com/gutenberg/wp-content/uploads/gutenkit/table-builder-block.zip',
+						'url' => 'https://downloads.wordpress.org/plugin/table-builder-block.zip',
 					),
 				),
 				'mail-chimp' => array(
@@ -568,7 +568,8 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'title'    => 'Mailchimp',
 					'package'  => 'free',
 					'category' => 'general',
-					'status'   => 'active',
+					'status'   => 'inactive',
+					'badge'    => ['new'],
 				),
 				'advanced-search' => array(
 					'slug'     => 'advanced-search',
@@ -576,7 +577,7 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'package'  => 'pro',
 					'category' => 'general',
 					'status'   => 'inactive',
-					'badge'    => ['new', 'beta'],
+					'badge'    => ['new'],
 				),
 				'facebook-feed' => array(
 					'slug'     => 'facebook-feed',
@@ -584,7 +585,15 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'package'  => 'pro',
 					'category' => 'feed',
 					'status'   => 'inactive',
-					'badge'    => ['new', 'beta'],
+					'badge'    => ['new'],
+				),
+				'hotspot' => array(
+					'slug'     => 'hotspot',
+					'title'    => 'Hotspot',
+					'package'  => 'pro',
+					'category' => 'general',
+					'status'   => 'inactive',
+					'badge'    => ['new'],
 				),
 			)
 		);

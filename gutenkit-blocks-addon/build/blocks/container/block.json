@@ -371,6 +371,11 @@
       "type": "boolean",
       "default": false
     },
+    "gkitContainerShapeDivider": {
+      "type": "array",
+      "default": [],
+      "excludeCopy": true
+    },
     "containerLink": {
       "type": "object"
     }

@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpmet.com/plugin/gutenkit/
  * Author: Wpmet
- * Version: 2.2.3
+ * Version: 2.3.0
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.2.3';
+	const VERSION = '2.3.0';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -201,6 +201,14 @@ final class Gutenkit {
 		 * @since 1.0.0
 		 */
 		Gutenkit\Core\Enqueue::instance();
+
+		/**
+		 * Global Classes Post Type.
+		 * 
+		 * @return void
+		 * @since 2.0.0
+		 */
+		Gutenkit\Core\ClassManager::instance();
 
 		/**
 		 * Register Modules.

@@ -161,7 +161,7 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'slug'    => 'remote_image',
 					'title'   => 'Remote Image',
 					'package' => 'free',
-					'status'  => 'active',
+					'status'  => 'inactive',
 					'category' => 'advanced',
 				),
 				'use_only_global_styles_fonts' => array(

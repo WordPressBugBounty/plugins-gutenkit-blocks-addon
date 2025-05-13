@@ -213,6 +213,33 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'status'		=> 'inactive',
 					'badge'			=> ['new'],
 				),
+				'scroll-spy' => array(
+					'slug'			=> 'scroll-spy',
+					'title'			=> 'Scroll Spy',
+					'package'		=> 'pro',
+					'auto_enqueue'	=> false,
+					'attributes'	=> array( 'new' ),
+					'status'		=> 'inactive',
+					'badge'			=> ['new']
+				),
+				'video-scroller' => array(
+					'slug'			=> 'video-scroller',
+					'title'			=> 'Video Scroller',
+					'package'		=> 'pro',
+					'auto_enqueue'	=> false,
+					'attributes'	=> array( 'new' ),
+					'status'		=> 'inactive',
+					'badge'			=> ['new']
+				),
+				'class-manager' => array(
+					'slug'			=> 'class-manager',
+					'title'			=> 'Class Manager',
+					'package'		=> 'free',
+					'auto_enqueue'	=> true,
+					'attributes'	=> array( 'new' ),
+					'status'		=> 'inactive',
+					'badge'			=> ['new', 'beta']
+				),
 			)
 		);
 	}

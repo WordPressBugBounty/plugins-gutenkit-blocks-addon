@@ -29,5 +29,6 @@ class Init {
 		\Gutenkit\Hooks\EntranceAnimation::instance();
 		\Gutenkit\Hooks\Visibility::instance();
 		\Gutenkit\Hooks\ImageOptimizer::instance();
+		\Gutenkit\Hooks\ClassManager::instance();
 	}
 }
