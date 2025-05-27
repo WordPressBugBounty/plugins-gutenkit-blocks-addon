@@ -76,13 +76,24 @@ class ClassManager {
         return $clauses;
     }
 
-    /**
-     * Indents child posts in the admin panel.
-     */
-    public function indent_child_posts($title, $post_id) {
-        $post = get_post($post_id);
-        return ($post->post_parent) ? '— ' . $title : $title;
-    }
+	/**
+	 * Indents child posts in the admin panel.
+	 */
+	public function indent_child_posts($title, $post_id) {
+		$post = get_post($post_id);
+
+		// Check if the post exists
+		if (!$post) {
+			return $title;
+		}
+
+		// Check if the post is of type 'class-manager'
+		if( $post->post_type !== 'class-manager' ) {
+			return $title; // Only apply to class-manager post type
+		}
+
+		return ($post->post_parent) ? '— ' . $title : $title;
+	}
 
     /**
      * Adds a Parent Class column to the admin panel.

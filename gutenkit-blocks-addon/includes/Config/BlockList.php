@@ -595,6 +595,14 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'status'   => 'inactive',
 					'badge'    => ['new'],
 				),
+				'modal-popup' => array(
+					'slug'     => 'modal-popup',
+					'title'    => 'Modal Popup',
+					'package'  => 'pro',
+					'category' => 'general',
+					'status'   => 'inactive',
+					'badge'    => ['new'],
+				)
 			)
 		);
 	}

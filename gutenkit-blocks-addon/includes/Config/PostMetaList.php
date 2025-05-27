@@ -102,16 +102,22 @@ class PostMetaList
     public static function set_list()
     {
         $device_properties = self::generate_device_properties();
-        $slider_device_properties = self::generate_device_properties('forSliders');
-        $box_values_device_properties = self::generate_device_properties('forBoxValues');
 
         $lists = [
-            "postBodyMargin" => [ 
-                "post_type" => "", 
-                "args" => [ 
+            "postBodyCss" => [ // post meta key
+                "post_type" => "", // post type name, empty for all
+                "args" => [ // pass arguments
+                    "type"         => "string", // specify the type as string
+                    "show_in_rest" => true, // enable REST API support
+                    "single"       => true, // single meta value
+                ]
+            ],
+            "postBodyMargin" => [ // post meta key
+                "post_type" => "", // post type name put empty for all
+                "args" => [ // pass arguments or an empty array
                     "type"         => "object",
-                    "show_in_rest" => [
-                        "schema" => [ 
+                    "show_in_rest" => [ // show in REST API
+                        "schema" => [ // schema
                             "type" => "object",
                             "properties" => [
                                 "Desktop" => $device_properties,

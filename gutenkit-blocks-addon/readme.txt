@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.3.0
+Stable tag: 2.3.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,9 +25,9 @@ GutenKit with features like Gutenberg mega menu builder, query loop builder, dyn
 
 Let’s experience the future of web design with **GutenKit for Gutenberg Blocks** – design without limits, effortlessly.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mCIO63p1wQM?si=bDObj-pY4_j4AukL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=mCIO63p1wQM
 
-| [GutenKit Home Page](https://wpmet.com/plugin/gutenkit/?utm_source=org&utm_medium=readme) | [GutenKit Templates](https://wpmet.com/plugin/gutenkit/templates/?utm_source=org&utm_medium=readme) | [Blog](https://wpmet.com/blog/?utm_source=org&utm_medium=readme) | [Documentation](https://wpmet.com/doc/gutenkit/?utm_source=org&utm_medium=readme) | [Need Support?](https://wpmet.com/support-ticket-form/?utm_source=org&utm_medium=readme) | [How to get started with GutenKit Pro](https://wpmet.com/doc/purchase-activate-gutenkit-pro/?utm_source=org&utm_medium=readme) |
+[GutenKit Home Page](https://wpmet.com/plugin/gutenkit/?utm_source=org&utm_medium=readme) | [GutenKit Templates](https://wpmet.com/plugin/gutenkit/templates/?utm_source=org&utm_medium=readme) | [Blog](https://wpmet.com/blog/?utm_source=org&utm_medium=readme) | [Documentation](https://wpmet.com/doc/gutenkit/?utm_source=org&utm_medium=readme) | [Need Support?](https://wpmet.com/support-ticket-form/?utm_source=org&utm_medium=readme) | [How to get started with GutenKit Pro](https://wpmet.com/doc/purchase-activate-gutenkit-pro/?utm_source=org&utm_medium=readme) |
 
 
 ##  Key Features
@@ -77,7 +77,7 @@ GutenKit’s Gutenberg Mega Menu Builder lets you add any blocks as menu items i
 ## Build No-code Dynamic Websites in Gutenberg
 
 ⭐ **Query Loop Builder**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EztR8huF1oA?si=AGRAYQPuuVP9OOGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=EztR8huF1oA
 
 [Query Loop Builder](https://wpmet.com/plugin/gutenkit/blocks/query-builder/?utm_source=org&utm_medium=readme) block is a dynamic Gutenberg block that helps to show your website post dynamically. You can filter the content based on the **post type**, **taxonomy**, **meta query**, **date query**, **author**, **post status**, and more.
 
@@ -170,7 +170,7 @@ Take control of your website’s color palette with our seamless Gutenberg block
 
 Besides the mega menu, GutenKit helps you create menus in the WordPress block editor in the easiest way. You can effortlessly design different types of menus including Nav Menu, or Offcanvas menu that perfectly complements your website’s aesthetic, ensuring a smooth user experience.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E5m6RK6sjBQ?si=atwyu7n5vJ6d67C-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=E5m6RK6sjBQ
 
 ### 🔷 Make Beautiful Nav Menu
 
@@ -201,7 +201,7 @@ GutenKit [Blog Posts for Gutenberg](https://wpmet.com/plugin/gutenkit/blocks/blo
 The [Reading Progress Bar block](https://wpmet.com/plugin/gutenkit/blocks/progress-bar/?utm_source=org&utm_medium=readme) in WordPress Block editor serves as a visual representation of progress or completion. Our block functionality includes a diverse range of templates and styles, allowing customization of percentages, progress, and duration indicators.
 
 ## Interactive Response to Visitor’s Actions
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aEjs_UtSRlE?si=Yhm45T1ZseXEnfHh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=aEjs_UtSRlE
 
 Give an exceptional interactive experience to every part of your website that visitors touch. The [Gutenkit interaction module](https://wpmet.com/plugin/gutenkit/modules/interactions/?utm_source=org&utm_medium=readme) allows the implementation of various interaction effects such as transformation, scrolling, rotation, changing opacity, and showing, hiding, or toggling elements in a "zero-code" way.
 
@@ -307,6 +307,11 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.3.1 (2025-05-27) =
+* Fixed: Showing warning for title filter in class manager
+* Fixed: Responsive breakpoints not updating correctly when switching devices
+* Improved: Page settings css generation method
+
 = GutenKit Blocks Addon: 2.3.0 (2025-05-13) =
 * Added: Shape divider in container block
 * Added: Beta version of the class manager module
@@ -355,35 +360,6 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 * Fixed: Mailchimp block text area styling issue
 * Improved: Nav submenu controls for mobile menu
 * Improved: Third-party compatibility
-
-= GutenKit Blocks Addon: 2.1.9 (2024-12-29) =
-* Added: Hamburger menu style option for the offcanvas block
-* Added: Close icon position control for the offcanvas block
-* Added: Icon position control for the mailchimp input field
-* Fixed: Fraction input issue in the fun fact block
-
-= GutenKit Blocks Addon: 2.1.8 (2024-12-11) =
-* Fixed: Background image issue with container block
-* Fixed: WPCS issues check by plugin check plugin
-
-= GutenKit Blocks Addon: 2.1.7 (2024-12-09) =
-* Fixed: Updated the icon box block button selector to support left-aligned icons
-* Fixed: Adjusted the Icon Box button font size to accommodate left-aligned icons
-* Fixed: Added left icon group styles to the advanced accordion item
-* Fixed: Removed the bounce animation from `gkit-animate.css`
-* Fixed: Improved icon color handling in `Header Info` styles
-* Fixed: Resolved the image height issue in the image comparison block on the frontend
-* Improved: Enhanced responsive compatibility across multiple blocks
-
-= GutenKit Blocks Addon: 2.1.6 (2024-11-24) =
-* Fixed: Mailchimp block border radius issue
-* Fixed: Initialized breakpoints button and cleaned up styles in the template library
-* Fixed: Overlay control and sidebar transition issues on the frontend in the offcanvas block
-* Improved: Responsiveness by updating the default height of the navigation menu to 100vh
-
-= GutenKit Blocks Addon: 2.1.5 (2024-11-13) =
-* Fixed: Editor topbar visual compatibility issue with WP 6.7
-* Fixed: Breakpoints button initialization and cleanup styles in template library
 
 [View changelog for all versions.](https://wpmet.com/plugin/gutenkit/changelog/)
 

@@ -120,7 +120,7 @@ class UtilityPackages {
 		 * @subpackage Libs
 		 */
 		UtilityPackage\Rating\Rating::instance('gutenkit-blocks-addon')                    # @plugin_slug
-		->set_plugin_logo('https://ps.w.org/gutenkit-blocks-addon/assets/icon-128x128.png')       # @plugin_logo_url
+		->set_plugin_logo('https://ps.w.org/gutenkit-blocks-addon/assets/icon-128x128.gif')       # @plugin_logo_url
 		->set_plugin('Gutenkit', 'https://wpmet.com/wordpress.org/rating/gutenkit-blocks-addon')   # @plugin_name  @plugin_url
 		->set_allowed_screens('toplevel_page_gutenkit')                      # @set_allowed_screen
 		->set_priority(30)                                                          # @priority

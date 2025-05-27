@@ -110,15 +110,17 @@ class Admin {
 			3
 		);
 
-		add_submenu_page(
-            $this->menu_slug,
-            esc_html__('Popups', 'gutenkit-blocks-addon'),
-            esc_html__('Popups', 'gutenkit-blocks-addon'),
-            'manage_options',
-            $this->is_popup_active ? 'edit.php?post_type=gutenkit-popup' : 'popup-builder-block',
-            $this->is_popup_active ? '' : [$this, 'popup_callback'],
-			4
-        );
+		if(!$this->is_popup_active) {
+			add_submenu_page(
+				$this->menu_slug,
+				esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
+				esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
+				'manage_options',
+				'popup-builder-block',
+				[$this, 'popup_callback'],
+				4
+			);
+		}
 
 		add_submenu_page(
 			$this->menu_slug,
