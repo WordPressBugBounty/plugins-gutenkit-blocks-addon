@@ -602,7 +602,15 @@ class BlockList extends \Gutenkit\Core\ConfigList
 					'category' => 'general',
 					'status'   => 'inactive',
 					'badge'    => ['new'],
-				)
+				),
+				// 'instagram-feed' => array(
+				// 	'slug'     => 'instagram-feed',
+				// 	'title'    => 'Instagram Feed',
+				// 	'package'  => 'pro',
+				// 	'category' => 'feed',
+				// 	'status'   => 'inactive',
+				// 	'badge'    => ['new', 'beta'],
+				// ),
 			)
 		);
 	}

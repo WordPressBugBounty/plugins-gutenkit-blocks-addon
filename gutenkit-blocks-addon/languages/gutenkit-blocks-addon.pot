@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.3.1\n"
+"Project-Id-Version: GutenKit Blocks 2.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-27T06:18:05+00:00\n"
+"POT-Creation-Date: 2025-07-14T08:26:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Blog Post Thumbnail Read More"
 msgstr ""
 
-#: gutenkit-blocks-addon.php:133
+#: gutenkit-blocks-addon.php:139
 #: includes/Admin/Admin.php:127
 #: includes/Admin/Admin.php:128
 #: build/84.js:1
@@ -75,23 +75,23 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: gutenkit-blocks-addon.php:138
+#: gutenkit-blocks-addon.php:144
 msgid "Get GutenKit Pro"
 msgstr ""
 
-#: gutenkit-blocks-addon.php:163
+#: gutenkit-blocks-addon.php:169
 msgid "View Gutenkit Documentation"
 msgstr ""
 
-#: gutenkit-blocks-addon.php:163
+#: gutenkit-blocks-addon.php:169
 msgid "Docs & FAQs"
 msgstr ""
 
-#: gutenkit-blocks-addon.php:164
+#: gutenkit-blocks-addon.php:170
 msgid "View Gutenkit Video Tutorials"
 msgstr ""
 
-#: gutenkit-blocks-addon.php:164
+#: gutenkit-blocks-addon.php:170
 msgid "Video Tutorials"
 msgstr ""
 
@@ -115,8 +115,8 @@ msgstr ""
 msgid "Modules"
 msgstr ""
 
-#: includes/Admin/Admin.php:214
-#: includes/Admin/Admin.php:215
+#: includes/Admin/Admin.php:207
+#: includes/Admin/Admin.php:208
 msgid "License"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Something went wrong."
 msgstr ""
 
-#: includes/Admin/Onboard/Onboard.php:41
+#: includes/Admin/Onboard/Onboard.php:34
 msgid "Onboard data saved successfully."
 msgstr ""
 
@@ -389,7 +389,7 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:365
 #: src/blocks/advanced-image/settings.js:53
 #: src/blocks/advanced-paragraph/settings.js:42
-#: src/blocks/advanced-tab/settings.js:44
+#: src/blocks/advanced-tab/settings.js:45
 #: src/blocks/back-to-top/settings.js:41
 #: src/blocks/blog-posts/settings.js:110
 #: src/blocks/blog-posts/settings.js:738
@@ -479,7 +479,7 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:38
 #: src/blocks/advanced-image/settings.js:57
 #: src/blocks/advanced-paragraph/settings.js:46
-#: src/blocks/advanced-tab/settings.js:48
+#: src/blocks/advanced-tab/settings.js:49
 #: src/blocks/back-to-top/settings.js:45
 #: src/blocks/blog-posts/settings.js:114
 #: src/blocks/business-hours/settings.js:39
@@ -563,7 +563,7 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:42
 #: src/blocks/advanced-image/settings.js:61
 #: src/blocks/advanced-paragraph/settings.js:50
-#: src/blocks/advanced-tab/settings.js:52
+#: src/blocks/advanced-tab/settings.js:53
 #: src/blocks/back-to-top/settings.js:49
 #: src/blocks/blog-posts/settings.js:118
 #: src/blocks/business-hours/settings.js:43
@@ -628,7 +628,7 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/advanced-accordion/settings.js:95
 #: src/blocks/advanced-accordion/settings.js:476
-#: src/blocks/advanced-tab/settings.js:889
+#: src/blocks/advanced-tab/settings.js:906
 #: src/blocks/back-to-top/settings.js:72
 #: src/blocks/blog-posts/settings.js:320
 #: src/blocks/button/settings.js:78
@@ -648,9 +648,9 @@ msgstr ""
 #: src/blocks/icon/settings.js:61
 #: src/blocks/icon/settings.js:105
 #: src/blocks/image-box/settings.js:229
-#: src/blocks/mail-chimp/settings.js:250
-#: src/blocks/mail-chimp/settings.js:317
-#: src/blocks/mail-chimp/settings.js:591
+#: src/blocks/mail-chimp/settings.js:238
+#: src/blocks/mail-chimp/settings.js:305
+#: src/blocks/mail-chimp/settings.js:579
 #: src/blocks/offcanvas/settings.js:109
 #: src/blocks/offcanvas/settings.js:176
 #: src/blocks/page-list/settings.js:201
@@ -673,7 +673,7 @@ msgstr ""
 
 #: build/84.js:1
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:68
+#: src/blocks/advanced-tab/settings.js:85
 #: src/blocks/icon-box/settings.js:77
 msgid "Add Icon?"
 msgstr ""
@@ -701,8 +701,8 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:298
 #: src/blocks/image-box/settings.js:205
 #: src/blocks/image-box/settings.js:1129
-#: src/blocks/mail-chimp/settings.js:296
-#: src/blocks/mail-chimp/settings.js:732
+#: src/blocks/mail-chimp/settings.js:284
+#: src/blocks/mail-chimp/settings.js:720
 #: src/blocks/pricing-table/settings.js:237
 #: src/blocks/pricing-table/settings.js:2078
 #: src/blocks/video/settings.js:543
@@ -726,7 +726,7 @@ msgstr ""
 #: build/84.js:1
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/icon-box/settings.js:117
-#: src/blocks/mail-chimp/settings.js:227
+#: src/blocks/mail-chimp/settings.js:217
 msgid "Show Icon"
 msgstr ""
 
@@ -735,7 +735,7 @@ msgstr ""
 #: build/3834.js:1
 #: build/4672.js:1
 #: build/8606.js:1
-#: src/blocks/advanced-tab/settings.js:73
+#: src/blocks/advanced-tab/settings.js:90
 #: src/blocks/icon-box/settings.js:127
 #: src/blocks/offcanvas/settings.js:129
 #: src/blocks/offcanvas/settings.js:201
@@ -894,11 +894,11 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:97
 #: src/blocks/advanced-image/settings.js:904
 #: src/blocks/advanced-paragraph/settings.js:105
-#: src/blocks/advanced-tab/settings.js:93
-#: src/blocks/advanced-tab/settings.js:189
-#: src/blocks/advanced-tab/settings.js:223
-#: src/blocks/advanced-tab/settings.js:257
-#: src/blocks/advanced-tab/settings.js:544
+#: src/blocks/advanced-tab/settings.js:110
+#: src/blocks/advanced-tab/settings.js:206
+#: src/blocks/advanced-tab/settings.js:240
+#: src/blocks/advanced-tab/settings.js:274
+#: src/blocks/advanced-tab/settings.js:561
 #: src/blocks/back-to-top/settings.js:94
 #: src/blocks/blog-posts/settings.js:91
 #: src/blocks/blog-posts/settings.js:99
@@ -928,7 +928,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:266
 #: src/blocks/image-box/settings.js:184
 #: src/blocks/image-box/settings.js:612
-#: src/blocks/mail-chimp/settings.js:761
+#: src/blocks/mail-chimp/settings.js:749
 #: src/blocks/nav-menu-submenu/settings.js:124
 #: src/blocks/nav-menu/settings.js:711
 #: src/blocks/offcanvas/settings.js:332
@@ -989,11 +989,11 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:107
 #: src/blocks/advanced-image/settings.js:914
 #: src/blocks/advanced-paragraph/settings.js:107
-#: src/blocks/advanced-tab/settings.js:103
-#: src/blocks/advanced-tab/settings.js:199
-#: src/blocks/advanced-tab/settings.js:233
-#: src/blocks/advanced-tab/settings.js:267
-#: src/blocks/advanced-tab/settings.js:554
+#: src/blocks/advanced-tab/settings.js:120
+#: src/blocks/advanced-tab/settings.js:216
+#: src/blocks/advanced-tab/settings.js:250
+#: src/blocks/advanced-tab/settings.js:284
+#: src/blocks/advanced-tab/settings.js:571
 #: src/blocks/back-to-top/settings.js:96
 #: src/blocks/blog-posts/settings.js:92
 #: src/blocks/blog-posts/settings.js:1146
@@ -1019,7 +1019,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:268
 #: src/blocks/image-box/settings.js:186
 #: src/blocks/image-box/settings.js:614
-#: src/blocks/mail-chimp/settings.js:763
+#: src/blocks/mail-chimp/settings.js:751
 #: src/blocks/nav-menu-submenu/settings.js:134
 #: src/blocks/nav-menu/settings.js:721
 #: src/blocks/offcanvas/settings.js:348
@@ -1067,8 +1067,8 @@ msgstr ""
 #: build/8606.js:1
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:98
-#: src/blocks/advanced-tab/settings.js:549
+#: src/blocks/advanced-tab/settings.js:115
+#: src/blocks/advanced-tab/settings.js:566
 #: src/blocks/blog-posts/settings.js:98
 #: src/blocks/blog-posts/settings.js:677
 #: src/blocks/blog-posts/settings.js:1474
@@ -1111,8 +1111,8 @@ msgstr ""
 #: build/8606.js:1
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:108
-#: src/blocks/advanced-tab/settings.js:559
+#: src/blocks/advanced-tab/settings.js:125
+#: src/blocks/advanced-tab/settings.js:576
 #: src/blocks/blog-posts/settings.js:687
 #: src/blocks/blog-posts/settings.js:1510
 #: src/blocks/fun-fact/settings.js:323
@@ -1189,11 +1189,11 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:102
 #: src/blocks/advanced-image/settings.js:909
 #: src/blocks/advanced-paragraph/settings.js:106
-#: src/blocks/advanced-tab/settings.js:133
-#: src/blocks/advanced-tab/settings.js:194
-#: src/blocks/advanced-tab/settings.js:228
-#: src/blocks/advanced-tab/settings.js:262
-#: src/blocks/advanced-tab/settings.js:290
+#: src/blocks/advanced-tab/settings.js:150
+#: src/blocks/advanced-tab/settings.js:211
+#: src/blocks/advanced-tab/settings.js:245
+#: src/blocks/advanced-tab/settings.js:279
+#: src/blocks/advanced-tab/settings.js:307
 #: src/blocks/back-to-top/settings.js:95
 #: src/blocks/blog-posts/settings.js:1141
 #: src/blocks/blog-posts/settings.js:1973
@@ -1219,7 +1219,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:288
 #: src/blocks/image-box/settings.js:185
 #: src/blocks/image-box/settings.js:613
-#: src/blocks/mail-chimp/settings.js:762
+#: src/blocks/mail-chimp/settings.js:750
 #: src/blocks/nav-menu-submenu/settings.js:129
 #: src/blocks/nav-menu/settings.js:221
 #: src/blocks/nav-menu/settings.js:273
@@ -1462,7 +1462,7 @@ msgstr ""
 #: src/blocks/icon/settings.js:78
 #: src/blocks/image-accordion/settings.js:264
 #: src/blocks/image-box/settings.js:182
-#: src/blocks/mail-chimp/settings.js:742
+#: src/blocks/mail-chimp/settings.js:730
 #: src/blocks/nav-menu-submenu/settings.js:121
 #: src/blocks/offcanvas/settings.js:437
 #: src/blocks/page-list/settings.js:333
@@ -1492,6 +1492,7 @@ msgstr ""
 #: build/2311.js:1
 #: build/3060.js:1
 #: build/3576.js:1
+#: build/4672.js:1
 #: build/4986.js:1
 #: build/6036.js:1
 #: build/6949.js:1
@@ -1503,7 +1504,8 @@ msgstr ""
 #: build/blocks/advanced-tab/index.js:1
 #: build/blocks/faq-item/index.js:1
 #: src/blocks/advanced-accordion/settings.js:154
-#: src/blocks/advanced-tab/edit.js:196
+#: src/blocks/advanced-tab/edit.js:190
+#: src/blocks/advanced-tab/settings.js:64
 #: src/blocks/blog-posts/settings.js:412
 #: src/blocks/blog-posts/settings.js:1901
 #: src/blocks/donut-progress-bar/settings.js:226
@@ -1554,7 +1556,7 @@ msgstr ""
 #: build/modules/page-settings/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:681
 #: src/blocks/advanced-paragraph/settings.js:474
-#: src/blocks/advanced-tab/settings.js:516
+#: src/blocks/advanced-tab/settings.js:533
 #: src/blocks/blog-posts/settings.js:719
 #: src/blocks/blog-posts/settings.js:1047
 #: src/blocks/blog-posts/settings.js:2005
@@ -1590,8 +1592,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:531
 #: src/blocks/image-box/settings.js:992
 #: src/blocks/image-box/settings.js:1062
-#: src/blocks/mail-chimp/settings.js:970
-#: src/blocks/mail-chimp/settings.js:1058
+#: src/blocks/mail-chimp/settings.js:958
+#: src/blocks/mail-chimp/settings.js:1046
 #: src/blocks/nav-menu/settings.js:687
 #: src/blocks/nav-menu/settings.js:959
 #: src/blocks/nav-menu/settings.js:1222
@@ -1735,9 +1737,9 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1116
 #: src/blocks/image-comparison/settings.js:212
 #: src/blocks/image-comparison/settings.js:276
-#: src/blocks/mail-chimp/settings.js:706
-#: src/blocks/mail-chimp/settings.js:1000
-#: src/blocks/mail-chimp/settings.js:1017
+#: src/blocks/mail-chimp/settings.js:694
+#: src/blocks/mail-chimp/settings.js:988
+#: src/blocks/mail-chimp/settings.js:1005
 #: src/blocks/offcanvas/settings.js:747
 #: src/blocks/offcanvas/settings.js:808
 #: src/blocks/offcanvas/settings.js:979
@@ -1866,7 +1868,7 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:213
 #: src/blocks/advanced-paragraph/settings.js:318
 #: src/blocks/advanced-paragraph/settings.js:400
-#: src/blocks/advanced-tab/settings.js:568
+#: src/blocks/advanced-tab/settings.js:585
 #: src/blocks/back-to-top/settings.js:214
 #: src/blocks/blog-posts/settings.js:1127
 #: src/blocks/blog-posts/settings.js:1574
@@ -1916,12 +1918,12 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1082
 #: src/blocks/image-box/settings.js:1152
 #: src/blocks/image-comparison/settings.js:186
-#: src/blocks/mail-chimp/settings.js:430
-#: src/blocks/mail-chimp/settings.js:438
-#: src/blocks/mail-chimp/settings.js:875
-#: src/blocks/mail-chimp/settings.js:1033
-#: src/blocks/mail-chimp/settings.js:1115
-#: src/blocks/mail-chimp/settings.js:1179
+#: src/blocks/mail-chimp/settings.js:418
+#: src/blocks/mail-chimp/settings.js:426
+#: src/blocks/mail-chimp/settings.js:863
+#: src/blocks/mail-chimp/settings.js:1021
+#: src/blocks/mail-chimp/settings.js:1103
+#: src/blocks/mail-chimp/settings.js:1167
 #: src/blocks/nav-menu-submenu/settings.js:171
 #: src/blocks/nav-menu/settings.js:497
 #: src/blocks/offcanvas/settings.js:498
@@ -1992,11 +1994,11 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:500
 #: src/blocks/advanced-accordion/settings.js:550
 #: src/blocks/advanced-accordion/settings.js:607
-#: src/blocks/advanced-tab/settings.js:920
+#: src/blocks/advanced-tab/settings.js:937
 #: src/blocks/fun-fact/settings.js:336
 #: src/blocks/icon-box/settings.js:608
 #: src/blocks/icon/settings.js:108
-#: src/blocks/mail-chimp/settings.js:712
+#: src/blocks/mail-chimp/settings.js:700
 #: src/blocks/page-list/settings.js:917
 #: src/blocks/pricing-table/settings.js:657
 #: src/blocks/team/settings.js:419
@@ -2068,8 +2070,8 @@ msgstr ""
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-image/settings.js:285
-#: src/blocks/advanced-tab/settings.js:161
-#: src/blocks/advanced-tab/settings.js:1044
+#: src/blocks/advanced-tab/settings.js:178
+#: src/blocks/advanced-tab/settings.js:1061
 #: src/blocks/back-to-top/settings.js:151
 #: src/blocks/blog-posts/settings.js:939
 #: src/blocks/blog-posts/settings.js:1352
@@ -2091,8 +2093,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:690
 #: src/blocks/image-box/settings.js:729
 #: src/blocks/image-box/settings.js:794
-#: src/blocks/mail-chimp/settings.js:300
-#: src/blocks/mail-chimp/settings.js:1040
+#: src/blocks/mail-chimp/settings.js:288
+#: src/blocks/mail-chimp/settings.js:1028
 #: src/blocks/nav-menu/settings.js:768
 #: src/blocks/nav-menu/settings.js:977
 #: src/blocks/nav-menu/settings.js:1146
@@ -2144,7 +2146,7 @@ msgstr ""
 #: build/9807.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:382
-#: src/blocks/advanced-tab/settings.js:1075
+#: src/blocks/advanced-tab/settings.js:1092
 #: src/blocks/back-to-top/settings.js:183
 #: src/blocks/blog-posts/settings.js:969
 #: src/blocks/blog-posts/settings.js:1340
@@ -2218,7 +2220,7 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:1053
 #: src/blocks/advanced-paragraph/settings.js:157
 #: src/blocks/advanced-paragraph/settings.js:221
-#: src/blocks/advanced-tab/settings.js:629
+#: src/blocks/advanced-tab/settings.js:646
 #: src/blocks/back-to-top/settings.js:268
 #: src/blocks/blog-posts/settings.js:580
 #: src/blocks/blog-posts/settings.js:744
@@ -2248,8 +2250,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1092
 #: src/blocks/image-box/settings.js:1223
 #: src/blocks/image-comparison/settings.js:462
-#: src/blocks/mail-chimp/settings.js:448
-#: src/blocks/mail-chimp/settings.js:884
+#: src/blocks/mail-chimp/settings.js:436
+#: src/blocks/mail-chimp/settings.js:872
 #: src/blocks/nav-menu-submenu/settings.js:180
 #: src/blocks/nav-menu/settings.js:505
 #: src/blocks/nav-menu/settings.js:857
@@ -2321,8 +2323,8 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:1057
 #: src/blocks/advanced-paragraph/settings.js:161
 #: src/blocks/advanced-paragraph/settings.js:225
-#: src/blocks/advanced-tab/settings.js:417
-#: src/blocks/advanced-tab/settings.js:633
+#: src/blocks/advanced-tab/settings.js:434
+#: src/blocks/advanced-tab/settings.js:650
 #: src/blocks/back-to-top/settings.js:272
 #: src/blocks/blog-posts/settings.js:584
 #: src/blocks/blog-posts/settings.js:748
@@ -2354,8 +2356,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1227
 #: src/blocks/image-comparison/settings.js:143
 #: src/blocks/image-comparison/settings.js:466
-#: src/blocks/mail-chimp/settings.js:452
-#: src/blocks/mail-chimp/settings.js:888
+#: src/blocks/mail-chimp/settings.js:440
+#: src/blocks/mail-chimp/settings.js:876
 #: src/blocks/nav-menu-submenu/settings.js:184
 #: src/blocks/nav-menu/settings.js:509
 #: src/blocks/nav-menu/settings.js:861
@@ -2429,7 +2431,7 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:367
 #: src/blocks/advanced-paragraph/settings.js:389
 #: src/blocks/advanced-paragraph/settings.js:419
-#: src/blocks/advanced-tab/settings.js:467
+#: src/blocks/advanced-tab/settings.js:484
 #: src/blocks/back-to-top/settings.js:288
 #: src/blocks/back-to-top/settings.js:355
 #: src/blocks/blog-posts/settings.js:595
@@ -2470,8 +2472,8 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:282
 #: src/blocks/image-comparison/settings.js:476
 #: src/blocks/image-comparison/settings.js:499
-#: src/blocks/mail-chimp/settings.js:1005
-#: src/blocks/mail-chimp/settings.js:1022
+#: src/blocks/mail-chimp/settings.js:993
+#: src/blocks/mail-chimp/settings.js:1010
 #: src/blocks/nav-menu-submenu/settings.js:199
 #: src/blocks/nav-menu-submenu/settings.js:230
 #: src/blocks/nav-menu-submenu/settings.js:259
@@ -2561,11 +2563,11 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:270
 #: src/blocks/advanced-paragraph/settings.js:373
 #: src/blocks/advanced-paragraph/settings.js:442
-#: src/blocks/advanced-tab/settings.js:480
-#: src/blocks/advanced-tab/settings.js:674
-#: src/blocks/advanced-tab/settings.js:731
-#: src/blocks/advanced-tab/settings.js:787
-#: src/blocks/advanced-tab/settings.js:997
+#: src/blocks/advanced-tab/settings.js:497
+#: src/blocks/advanced-tab/settings.js:691
+#: src/blocks/advanced-tab/settings.js:748
+#: src/blocks/advanced-tab/settings.js:804
+#: src/blocks/advanced-tab/settings.js:1014
 #: src/blocks/back-to-top/settings.js:324
 #: src/blocks/back-to-top/settings.js:391
 #: src/blocks/blog-posts/settings.js:1012
@@ -2617,11 +2619,11 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1306
 #: src/blocks/image-comparison/settings.js:233
 #: src/blocks/image-comparison/settings.js:297
-#: src/blocks/mail-chimp/settings.js:487
-#: src/blocks/mail-chimp/settings.js:525
-#: src/blocks/mail-chimp/settings.js:563
-#: src/blocks/mail-chimp/settings.js:963
-#: src/blocks/mail-chimp/settings.js:1067
+#: src/blocks/mail-chimp/settings.js:475
+#: src/blocks/mail-chimp/settings.js:513
+#: src/blocks/mail-chimp/settings.js:551
+#: src/blocks/mail-chimp/settings.js:951
+#: src/blocks/mail-chimp/settings.js:1055
 #: src/blocks/nav-menu-item/settings.js:213
 #: src/blocks/nav-menu/settings.js:444
 #: src/blocks/nav-menu/settings.js:826
@@ -2692,11 +2694,11 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-image/settings.js:710
 #: src/blocks/advanced-image/settings.js:866
-#: src/blocks/advanced-tab/settings.js:533
-#: src/blocks/advanced-tab/settings.js:691
-#: src/blocks/advanced-tab/settings.js:748
-#: src/blocks/advanced-tab/settings.js:804
-#: src/blocks/advanced-tab/settings.js:1014
+#: src/blocks/advanced-tab/settings.js:550
+#: src/blocks/advanced-tab/settings.js:708
+#: src/blocks/advanced-tab/settings.js:765
+#: src/blocks/advanced-tab/settings.js:821
+#: src/blocks/advanced-tab/settings.js:1031
 #: src/blocks/back-to-top/settings.js:295
 #: src/blocks/back-to-top/settings.js:362
 #: src/blocks/blog-posts/settings.js:622
@@ -2737,11 +2739,11 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1327
 #: src/blocks/image-comparison/settings.js:489
 #: src/blocks/image-comparison/settings.js:512
-#: src/blocks/mail-chimp/settings.js:493
-#: src/blocks/mail-chimp/settings.js:531
-#: src/blocks/mail-chimp/settings.js:569
-#: src/blocks/mail-chimp/settings.js:918
-#: src/blocks/mail-chimp/settings.js:949
+#: src/blocks/mail-chimp/settings.js:481
+#: src/blocks/mail-chimp/settings.js:519
+#: src/blocks/mail-chimp/settings.js:557
+#: src/blocks/mail-chimp/settings.js:906
+#: src/blocks/mail-chimp/settings.js:937
 #: src/blocks/offcanvas/settings.js:943
 #: src/blocks/offcanvas/settings.js:1177
 #: src/blocks/offcanvas/settings.js:1310
@@ -2811,9 +2813,9 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:286
 #: src/blocks/advanced-paragraph/settings.js:342
 #: src/blocks/advanced-paragraph/settings.js:458
-#: src/blocks/advanced-tab/settings.js:498
-#: src/blocks/advanced-tab/settings.js:583
-#: src/blocks/advanced-tab/settings.js:973
+#: src/blocks/advanced-tab/settings.js:515
+#: src/blocks/advanced-tab/settings.js:600
+#: src/blocks/advanced-tab/settings.js:990
 #: src/blocks/blog-posts/settings.js:701
 #: src/blocks/blog-posts/settings.js:842
 #: src/blocks/blog-posts/settings.js:1030
@@ -2847,10 +2849,10 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:252
 #: src/blocks/image-comparison/settings.js:316
 #: src/blocks/image-comparison/settings.js:525
-#: src/blocks/mail-chimp/settings.js:583
-#: src/blocks/mail-chimp/settings.js:724
-#: src/blocks/mail-chimp/settings.js:977
-#: src/blocks/mail-chimp/settings.js:1051
+#: src/blocks/mail-chimp/settings.js:571
+#: src/blocks/mail-chimp/settings.js:712
+#: src/blocks/mail-chimp/settings.js:965
+#: src/blocks/mail-chimp/settings.js:1039
 #: src/blocks/nav-menu-item/settings.js:202
 #: src/blocks/nav-menu-submenu/settings.js:291
 #: src/blocks/nav-menu/settings.js:426
@@ -2915,7 +2917,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:395
 #: src/blocks/image-box/settings.js:1161
 #: src/blocks/image-comparison/settings.js:348
-#: src/blocks/mail-chimp/settings.js:984
+#: src/blocks/mail-chimp/settings.js:972
 #: src/blocks/nav-menu/settings.js:734
 #: src/blocks/nav-menu/settings.js:925
 #: src/blocks/offcanvas/settings.js:508
@@ -2979,11 +2981,11 @@ msgstr ""
 #: src/blocks/icon-box/settings.js:1012
 #: src/blocks/image-box/settings.js:1237
 #: src/blocks/image-box/settings.js:1287
-#: src/blocks/mail-chimp/settings.js:466
-#: src/blocks/mail-chimp/settings.js:504
-#: src/blocks/mail-chimp/settings.js:542
-#: src/blocks/mail-chimp/settings.js:898
-#: src/blocks/mail-chimp/settings.js:929
+#: src/blocks/mail-chimp/settings.js:454
+#: src/blocks/mail-chimp/settings.js:492
+#: src/blocks/mail-chimp/settings.js:530
+#: src/blocks/mail-chimp/settings.js:886
+#: src/blocks/mail-chimp/settings.js:917
 #: src/blocks/nav-menu-submenu/settings.js:208
 #: src/blocks/nav-menu-submenu/settings.js:239
 #: src/blocks/nav-menu-submenu/settings.js:268
@@ -3090,7 +3092,7 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:669
 #: src/blocks/advanced-image/settings.js:825
 #: src/blocks/advanced-paragraph/settings.js:426
-#: src/blocks/advanced-tab/settings.js:990
+#: src/blocks/advanced-tab/settings.js:1007
 #: src/blocks/back-to-top/settings.js:306
 #: src/blocks/back-to-top/settings.js:373
 #: src/blocks/blog-posts/settings.js:601
@@ -3135,13 +3137,13 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1299
 #: src/blocks/image-comparison/settings.js:225
 #: src/blocks/image-comparison/settings.js:289
-#: src/blocks/mail-chimp/settings.js:481
-#: src/blocks/mail-chimp/settings.js:519
-#: src/blocks/mail-chimp/settings.js:557
-#: src/blocks/mail-chimp/settings.js:913
-#: src/blocks/mail-chimp/settings.js:944
-#: src/blocks/mail-chimp/settings.js:1010
-#: src/blocks/mail-chimp/settings.js:1027
+#: src/blocks/mail-chimp/settings.js:469
+#: src/blocks/mail-chimp/settings.js:507
+#: src/blocks/mail-chimp/settings.js:545
+#: src/blocks/mail-chimp/settings.js:901
+#: src/blocks/mail-chimp/settings.js:932
+#: src/blocks/mail-chimp/settings.js:998
+#: src/blocks/mail-chimp/settings.js:1015
 #: src/blocks/nav-menu-item/settings.js:190
 #: src/blocks/nav-menu-submenu/settings.js:218
 #: src/blocks/nav-menu/settings.js:538
@@ -3227,7 +3229,7 @@ msgstr ""
 #: build/9250.js:1
 #: build/9634.js:1
 #: src/blocks/advanced-accordion/settings.js:52
-#: src/blocks/advanced-tab/settings.js:320
+#: src/blocks/advanced-tab/settings.js:337
 #: src/blocks/blog-posts/settings.js:130
 #: src/blocks/blog-posts/settings.js:441
 #: src/blocks/countdown-timer/settings.js:63
@@ -3478,7 +3480,7 @@ msgstr ""
 #: build/7787.js:1
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-tab/settings.js:637
+#: src/blocks/advanced-tab/settings.js:654
 #: src/blocks/image-comparison/settings.js:139
 #: src/blocks/nav-menu-submenu/settings.js:188
 #: src/blocks/nav-menu/settings.js:513
@@ -3645,8 +3647,8 @@ msgstr ""
 
 #: build/384.js:1
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:594
-#: src/blocks/mail-chimp/settings.js:734
+#: src/blocks/mail-chimp/settings.js:582
+#: src/blocks/mail-chimp/settings.js:722
 #: src/blocks/testimonial/settings.js:1418
 msgid "Use Position"
 msgstr ""
@@ -3756,7 +3758,7 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:91
 #: src/blocks/image-comparison/settings.js:109
 #: src/blocks/image-comparison/settings.js:184
-#: src/blocks/mail-chimp/settings.js:405
+#: src/blocks/mail-chimp/settings.js:393
 #: src/blocks/team/settings.js:213
 msgid "Label"
 msgstr ""
@@ -3777,10 +3779,10 @@ msgstr ""
 #: src/blocks/container/ShapeDividerSetting.js:73
 #: src/blocks/container/ShapeDividerSetting.js:114
 #: src/blocks/image-comparison/settings.js:124
-#: src/blocks/mail-chimp/settings.js:635
-#: src/blocks/mail-chimp/settings.js:679
-#: src/blocks/mail-chimp/settings.js:804
-#: src/blocks/mail-chimp/settings.js:848
+#: src/blocks/mail-chimp/settings.js:623
+#: src/blocks/mail-chimp/settings.js:667
+#: src/blocks/mail-chimp/settings.js:792
+#: src/blocks/mail-chimp/settings.js:836
 #: src/blocks/offcanvas/settings.js:385
 #: src/global/components/advanced-control.js:160
 #: src/global/components/advanced-control.js:203
@@ -3933,8 +3935,8 @@ msgstr ""
 #: build/4783.js:1
 #: build/6543.js:1
 #: build/8606.js:1
-#: src/blocks/advanced-tab/settings.js:128
-#: src/blocks/advanced-tab/settings.js:285
+#: src/blocks/advanced-tab/settings.js:145
+#: src/blocks/advanced-tab/settings.js:302
 #: src/blocks/container/settings.js:281
 #: src/blocks/container/settings.js:339
 #: src/blocks/container/settings.js:817
@@ -3954,8 +3956,8 @@ msgstr ""
 #: build/4783.js:1
 #: build/6543.js:1
 #: build/8606.js:1
-#: src/blocks/advanced-tab/settings.js:138
-#: src/blocks/advanced-tab/settings.js:295
+#: src/blocks/advanced-tab/settings.js:155
+#: src/blocks/advanced-tab/settings.js:312
 #: src/blocks/container/settings.js:291
 #: src/blocks/container/settings.js:349
 #: src/blocks/container/settings.js:827
@@ -4148,12 +4150,12 @@ msgstr ""
 #: src/blocks/icon/settings.js:224
 #: src/blocks/image-accordion/settings.js:475
 #: src/blocks/image-accordion/settings.js:501
-#: src/blocks/mail-chimp/settings.js:373
-#: src/blocks/mail-chimp/settings.js:471
-#: src/blocks/mail-chimp/settings.js:509
-#: src/blocks/mail-chimp/settings.js:547
-#: src/blocks/mail-chimp/settings.js:903
-#: src/blocks/mail-chimp/settings.js:934
+#: src/blocks/mail-chimp/settings.js:361
+#: src/blocks/mail-chimp/settings.js:459
+#: src/blocks/mail-chimp/settings.js:497
+#: src/blocks/mail-chimp/settings.js:535
+#: src/blocks/mail-chimp/settings.js:891
+#: src/blocks/mail-chimp/settings.js:922
 #: src/blocks/pricing-table/settings.js:523
 #: src/blocks/pricing-table/settings.js:599
 #: src/blocks/progress-bar/settings.js:307
@@ -4491,7 +4493,7 @@ msgstr ""
 
 #: build/2311.js:1
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:1113
+#: src/blocks/advanced-tab/settings.js:1130
 #: src/blocks/heading/settings.js:547
 #: src/blocks/heading/settings.js:973
 msgid "Stroke Color"
@@ -4529,10 +4531,10 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:540
+#: src/blocks/advanced-tab/settings.js:557
 #: src/blocks/heading/settings.js:931
-#: src/blocks/mail-chimp/settings.js:601
-#: src/blocks/mail-chimp/settings.js:770
+#: src/blocks/mail-chimp/settings.js:589
+#: src/blocks/mail-chimp/settings.js:758
 #: src/blocks/pricing-table/settings.js:1524
 #: src/gkit-components/components/background-overlay/index.js:247
 #: src/gkit-components/components/background/index.js:240
@@ -4684,7 +4686,7 @@ msgstr ""
 #: build/3576.js:1
 #: build/4672.js:1
 #: build/7787.js:1
-#: src/blocks/advanced-tab/settings.js:413
+#: src/blocks/advanced-tab/settings.js:430
 #: src/blocks/image-accordion/settings.js:139
 #: src/blocks/post-tab/settings.js:162
 msgid "Click"
@@ -4748,8 +4750,8 @@ msgstr ""
 #: src/blocks/button/settings.js:458
 #: src/blocks/container/settings.js:296
 #: src/blocks/image-accordion/settings.js:422
-#: src/blocks/mail-chimp/settings.js:1097
-#: src/blocks/mail-chimp/settings.js:1161
+#: src/blocks/mail-chimp/settings.js:1085
+#: src/blocks/mail-chimp/settings.js:1149
 #: src/blocks/nav-menu-submenu/settings.js:139
 #: src/blocks/nav-menu/settings.js:231
 #: src/blocks/nav-menu/settings.js:409
@@ -4862,7 +4864,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: build/modules/entrance-animation/editor.js:1
 #: src/blocks/advanced-image/settings.js:441
-#: src/blocks/advanced-tab/settings.js:1023
+#: src/blocks/advanced-tab/settings.js:1040
 #: src/blocks/donut-progress-bar/settings.js:168
 #: src/blocks/page-list/settings.js:336
 #: src/blocks/progress-bar/settings.js:62
@@ -4870,7 +4872,7 @@ msgstr ""
 #: src/gkit-components/components/background-overlay/index.js:250
 #: src/gkit-components/components/background/index.js:243
 #: src/gkit-components/components/border-control/index.js:49
-#: src/gkit-components/components/font-family/index.js:100
+#: src/gkit-components/components/font-family/index.js:52
 #: src/gkit-components/components/typography/font-weights.js:4
 #: src/modules/class-manager/components/class-style-manager.js:456
 #: src/modules/class-manager/components/class-style-manager.js:818
@@ -5020,9 +5022,9 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:998
-#: src/blocks/advanced-tab/settings.js:945
+#: src/blocks/advanced-tab/settings.js:962
 #: src/blocks/blog-posts/settings.js:1369
-#: src/blocks/mail-chimp/settings.js:409
+#: src/blocks/mail-chimp/settings.js:397
 #: src/blocks/pricing-table/settings.js:2047
 #: src/gkit-components/components/swiper/setting.js:71
 msgid "Spacing"
@@ -5085,27 +5087,34 @@ msgid "Roate"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:60
+#: src/blocks/advanced-tab/settings.js:61
 msgid "Tab Contents"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:63
+#: src/blocks/advanced-tab/settings.js:70
 msgid "Enable Sub Title?"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:87
+#: build/8389.js:1
+#: src/blocks/advanced-tab/settings.js:75
+#: src/blocks/page-list/settings.js:143
+msgid "Sub Title"
+msgstr ""
+
+#: build/4672.js:1
+#: src/blocks/advanced-tab/settings.js:104
 msgid "Tab Settings"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:90
+#: src/blocks/advanced-tab/settings.js:107
 msgid "Nav Direction"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:125
+#: src/blocks/advanced-tab/settings.js:142
 msgid "Nav Justify"
 msgstr ""
 
@@ -5113,7 +5122,7 @@ msgstr ""
 #: build/4783.js:1
 #: build/6543.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:143
+#: src/blocks/advanced-tab/settings.js:160
 #: src/blocks/container/settings.js:354
 #: src/blocks/nav-menu/settings.js:283
 #: src/modules/class-manager/components/class-style-manager.js:712
@@ -5121,19 +5130,19 @@ msgid "Stretch"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:181
+#: src/blocks/advanced-tab/settings.js:198
 msgid "Nav Title Alignment"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:215
+#: src/blocks/advanced-tab/settings.js:232
 msgid "Sub Title Alignment"
 msgstr ""
 
 #: build/4672.js:1
 #: build/6949.js:1
 #: build/8606.js:1
-#: src/blocks/advanced-tab/settings.js:249
+#: src/blocks/advanced-tab/settings.js:266
 #: src/blocks/donut-progress-bar/settings.js:191
 #: src/blocks/offcanvas/settings.js:1197
 msgid "Content Alignment"
@@ -5142,44 +5151,44 @@ msgstr ""
 #: build/4672.js:1
 #: build/4783.js:1
 #: build/6543.js:1
-#: src/blocks/advanced-tab/settings.js:282
+#: src/blocks/advanced-tab/settings.js:299
 #: src/blocks/container/settings.js:266
 #: src/blocks/nav-menu/settings.js:207
 msgid "Justify Content"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:312
+#: src/blocks/advanced-tab/settings.js:329
 msgid "Show Caret"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:324
+#: src/blocks/advanced-tab/settings.js:341
 msgid "Border Bottom"
 msgstr ""
 
 #: build/4672.js:1
 #: build/9250.js:1
-#: src/blocks/advanced-tab/settings.js:331
+#: src/blocks/advanced-tab/settings.js:348
 #: src/blocks/progress-bar/settings.js:83
 msgid "Tooltip"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:338
+#: src/blocks/advanced-tab/settings.js:355
 msgid "HeartBeat"
 msgstr ""
 
 #: build/4672.js:1
 #: build/9250.js:1
-#: src/blocks/advanced-tab/settings.js:345
+#: src/blocks/advanced-tab/settings.js:362
 #: src/blocks/progress-bar/settings.js:154
 msgid "Progress"
 msgstr ""
 
 #: build/4672.js:1
 #: build/9250.js:1
-#: src/blocks/advanced-tab/settings.js:352
+#: src/blocks/advanced-tab/settings.js:369
 #: src/blocks/progress-bar/settings.js:118
 msgid "Ribbon"
 msgstr ""
@@ -5187,124 +5196,124 @@ msgstr ""
 #: build/4672.js:1
 #: build/6949.js:1
 #: build/8606.js:1
-#: src/blocks/advanced-tab/settings.js:359
+#: src/blocks/advanced-tab/settings.js:376
 #: src/blocks/donut-progress-bar/settings.js:172
 #: src/blocks/offcanvas/settings.js:246
 msgid "Slide"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:360
+#: src/blocks/advanced-tab/settings.js:377
 msgid "Background Slide"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:372
+#: src/blocks/advanced-tab/settings.js:389
 msgid "Slide Transitions"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:398
+#: src/blocks/advanced-tab/settings.js:415
 msgid "Full Width Nav"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:404
+#: src/blocks/advanced-tab/settings.js:421
 msgid "Enable URL Hash"
 msgstr ""
 
 #: build/4672.js:1
 #: build/7787.js:1
-#: src/blocks/advanced-tab/settings.js:409
+#: src/blocks/advanced-tab/settings.js:426
 #: src/blocks/post-tab/settings.js:154
 msgid "Mouse Event"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:428
+#: src/blocks/advanced-tab/settings.js:445
 msgid "Nav Wrapper"
 msgstr ""
 
 #: build/4672.js:1
 #: build/4783.js:1
 #: build/6543.js:1
-#: src/blocks/advanced-tab/settings.js:431
+#: src/blocks/advanced-tab/settings.js:448
 #: src/blocks/container/settings.js:324
 #: src/blocks/nav-menu/settings.js:259
 msgid "Align Items"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:462
+#: src/blocks/advanced-tab/settings.js:479
 msgid "Use this control to make the navigation wrapper fluid."
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:538
+#: src/blocks/advanced-tab/settings.js:555
 msgid "Nav Items"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:575
+#: src/blocks/advanced-tab/settings.js:592
 msgid "Sub Title Typography"
 msgstr ""
 
 #: build/4672.js:1
 #: build/6392.js:1
-#: src/blocks/advanced-tab/settings.js:601
+#: src/blocks/advanced-tab/settings.js:618
 #: src/blocks/header-info/settings.js:195
 msgid "Gap Between"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:647
-#: src/blocks/advanced-tab/settings.js:703
-#: src/blocks/advanced-tab/settings.js:759
+#: src/blocks/advanced-tab/settings.js:664
+#: src/blocks/advanced-tab/settings.js:720
+#: src/blocks/advanced-tab/settings.js:776
 msgid "Title color"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:652
-#: src/blocks/advanced-tab/settings.js:708
-#: src/blocks/advanced-tab/settings.js:764
+#: src/blocks/advanced-tab/settings.js:669
+#: src/blocks/advanced-tab/settings.js:725
+#: src/blocks/advanced-tab/settings.js:781
 msgid "Sub Title color"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:657
-#: src/blocks/advanced-tab/settings.js:713
-#: src/blocks/advanced-tab/settings.js:769
+#: src/blocks/advanced-tab/settings.js:674
+#: src/blocks/advanced-tab/settings.js:730
+#: src/blocks/advanced-tab/settings.js:786
 msgid "Icon color"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:815
+#: src/blocks/advanced-tab/settings.js:832
 msgid "First and Last Child Border Radius"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:818
+#: src/blocks/advanced-tab/settings.js:835
 msgid "First Child Border Radius"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:836
+#: src/blocks/advanced-tab/settings.js:853
 msgid "First Child Border Width"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:854
+#: src/blocks/advanced-tab/settings.js:871
 msgid "Last Child Border Radius"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:872
+#: src/blocks/advanced-tab/settings.js:889
 msgid "Last Child Border Width"
 msgstr ""
 
 #: build/4672.js:1
 #: build/9242.js:1
-#: src/blocks/advanced-tab/settings.js:964
+#: src/blocks/advanced-tab/settings.js:981
 #: src/blocks/image-box/settings.js:135
 #: src/blocks/image-box/settings.js:924
 msgid "Body"
@@ -5313,7 +5322,7 @@ msgstr ""
 #: build/4672.js:1
 #: build/4783.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:1019
+#: src/blocks/advanced-tab/settings.js:1036
 #: src/blocks/container/settings.js:809
 #: src/modules/class-manager/components/class-style-manager.js:354
 msgid "Overflow"
@@ -5321,7 +5330,7 @@ msgstr ""
 
 #: build/4672.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:1027
+#: src/blocks/advanced-tab/settings.js:1044
 #: src/modules/class-manager/components/class-style-manager.js:360
 #: src/modules/class-manager/components/class-style-manager.js:374
 msgid "Hidden"
@@ -5331,7 +5340,7 @@ msgstr ""
 #: build/9807.js:1
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:1031
+#: src/blocks/advanced-tab/settings.js:1048
 #: src/blocks/video/settings.js:357
 #: src/gkit-components/components/background-overlay/index.js:351
 #: src/gkit-components/components/background/index.js:346
@@ -5342,24 +5351,24 @@ msgid "Auto"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:1041
+#: src/blocks/advanced-tab/settings.js:1058
 msgid "Caret"
 msgstr ""
 
 #: build/4672.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-tab/settings.js:1118
+#: src/blocks/advanced-tab/settings.js:1135
 #: src/modules/class-manager/components/class-style-manager.js:262
 msgid "Fill Color"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:1127
+#: src/blocks/advanced-tab/settings.js:1144
 msgid "Bottom Position"
 msgstr ""
 
 #: build/4672.js:1
-#: src/blocks/advanced-tab/settings.js:1159
+#: src/blocks/advanced-tab/settings.js:1176
 msgid "Left Position"
 msgstr ""
 
@@ -5367,8 +5376,8 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/global.js:1
 #: src/blocks/container/ShapeDividerSetting.js:50
-#: src/blocks/mail-chimp/settings.js:615
-#: src/blocks/mail-chimp/settings.js:784
+#: src/blocks/mail-chimp/settings.js:603
+#: src/blocks/mail-chimp/settings.js:772
 #: src/global/components/advanced-control.js:140
 msgid "Horizontal Orientation"
 msgstr ""
@@ -5377,8 +5386,8 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/global.js:1
 #: src/blocks/container/ShapeDividerSetting.js:92
-#: src/blocks/mail-chimp/settings.js:659
-#: src/blocks/mail-chimp/settings.js:828
+#: src/blocks/mail-chimp/settings.js:647
+#: src/blocks/mail-chimp/settings.js:816
 #: src/global/components/advanced-control.js:183
 msgid "Vertical Orientation"
 msgstr ""
@@ -5439,8 +5448,8 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:301
 #: src/blocks/fun-fact/settings.js:932
 #: src/blocks/fun-fact/settings.js:998
-#: src/blocks/mail-chimp/settings.js:1078
-#: src/blocks/mail-chimp/settings.js:1142
+#: src/blocks/mail-chimp/settings.js:1066
+#: src/blocks/mail-chimp/settings.js:1130
 #: src/modules/class-manager/components/class-style-manager.js:663
 msgid "Direction"
 msgstr ""
@@ -5923,8 +5932,8 @@ msgstr ""
 #: src/blocks/header-info/settings.js:284
 #: src/blocks/image-box/settings.js:308
 #: src/blocks/image-box/settings.js:352
-#: src/blocks/mail-chimp/settings.js:908
-#: src/blocks/mail-chimp/settings.js:939
+#: src/blocks/mail-chimp/settings.js:896
+#: src/blocks/mail-chimp/settings.js:927
 #: src/blocks/nav-menu/settings.js:881
 #: src/blocks/nav-menu/settings.js:906
 #: src/blocks/nav-menu/settings.js:1100
@@ -6927,7 +6936,7 @@ msgstr ""
 #: build/8789.js:1
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/button/settings.js:128
-#: src/blocks/mail-chimp/settings.js:207
+#: src/blocks/mail-chimp/settings.js:201
 #: src/blocks/pricing-table/settings.js:348
 msgid "ID"
 msgstr ""
@@ -7061,11 +7070,6 @@ msgstr ""
 #: build/8026.js:1
 #: src/blocks/advanced-accordion-item/settings.js:28
 msgid "Enable Default Open"
-msgstr ""
-
-#: build/8389.js:1
-#: src/blocks/page-list/settings.js:143
-msgid "Sub Title"
 msgstr ""
 
 #: build/8389.js:1
@@ -7836,7 +7840,7 @@ msgstr ""
 
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/List.js:20
-#: src/dashboard/components/List.js:82
+#: src/dashboard/components/List.js:75
 msgid "Install"
 msgstr ""
 
@@ -7844,7 +7848,7 @@ msgstr ""
 #: build/admin/onboard/index.js:1
 #: build/admin/popup-builder/index.js:1
 #: src/dashboard/components/List.js:32
-#: src/dashboard/components/List.js:74
+#: src/dashboard/components/List.js:69
 #: src/onboard/pages/PowerUp.js:27
 #: src/onboard/pages/PowerUp.js:45
 #: src/popup-builder/Popup.js:20
@@ -7866,20 +7870,20 @@ msgstr ""
 #: build/admin/dashboard/index.js:1
 #: build/admin/onboard/index.js:1
 #: build/admin/popup-builder/index.js:1
-#: src/dashboard/components/List.js:63
+#: src/dashboard/components/List.js:58
 #: src/onboard/pages/PowerUp.js:36
 #: src/popup-builder/Popup.js:39
 msgid "Activating..."
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/List.js:138
+#: src/dashboard/components/List.js:129
 msgid "Live Demo"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/ApiList.js:97
-#: src/dashboard/components/List.js:172
+#: src/dashboard/components/List.js:163
 msgid "PRO"
 msgstr ""
 
@@ -8469,8 +8473,8 @@ msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/mail-chimp/settings.js:88
-#: src/blocks/mail-chimp/settings.js:289
-#: src/blocks/mail-chimp/settings.js:353
+#: src/blocks/mail-chimp/settings.js:277
+#: src/blocks/mail-chimp/settings.js:341
 msgid "Note:"
 msgstr ""
 
@@ -8492,192 +8496,192 @@ msgid "Type"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:128
+#: src/blocks/mail-chimp/settings.js:125
 msgid "Placeholder"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/mail-chimp/settings.js:133
+#: src/blocks/mail-chimp/settings.js:130
 #: src/modules/class-manager/components/class-style-manager.js:617
 msgid "Rows"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:157
+#: src/blocks/mail-chimp/settings.js:154
 msgid "Note: "
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:159
+#: src/blocks/mail-chimp/settings.js:156
 msgid "If you are using the \"Address\" type, you must have four mandatory form fields: "
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:160
+#: src/blocks/mail-chimp/settings.js:157
 msgid "addr1, city, state, and zip. "
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:161
+#: src/blocks/mail-chimp/settings.js:158
 msgid "MailChimp requires these fields to be present when creating or updating contacts with address information."
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:167
+#: src/blocks/mail-chimp/settings.js:164
 msgid "Name ID *"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:184
+#: src/blocks/mail-chimp/settings.js:181
 msgid "Child Name ID*"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:212
+#: src/blocks/mail-chimp/settings.js:206
 msgid "Required"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:261
+#: src/blocks/mail-chimp/settings.js:249
 msgid "Show Label"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:267
+#: src/blocks/mail-chimp/settings.js:255
 msgid "Required Mark"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:272
+#: src/blocks/mail-chimp/settings.js:260
 msgid "Double Opt-in"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:279
-#: src/blocks/mail-chimp/settings.js:311
-#: src/blocks/mail-chimp/settings.js:998
+#: src/blocks/mail-chimp/settings.js:267
+#: src/blocks/mail-chimp/settings.js:299
+#: src/blocks/mail-chimp/settings.js:986
 msgid "Success Message"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:290
+#: src/blocks/mail-chimp/settings.js:278
 msgid "If you enable this feature, then you must need to enable it inside Mailchimp campaign settings. Otherwise please disable it."
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:322
+#: src/blocks/mail-chimp/settings.js:310
 msgid "Button Position"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:332
+#: src/blocks/mail-chimp/settings.js:320
 msgid "Between Space"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:343
+#: src/blocks/mail-chimp/settings.js:331
 msgid "Show Loader"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:353
+#: src/blocks/mail-chimp/settings.js:341
 msgid "You can toggle the loader in the Editor to adjust design."
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:358
+#: src/blocks/mail-chimp/settings.js:346
 msgid "Loader Position"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:371
+#: src/blocks/mail-chimp/settings.js:359
 msgid "Form"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:380
+#: src/blocks/mail-chimp/settings.js:368
 msgid "Columns Gap"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:392
+#: src/blocks/mail-chimp/settings.js:380
 msgid "Rows Gap"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:420
+#: src/blocks/mail-chimp/settings.js:408
 msgid "label Color"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:425
+#: src/blocks/mail-chimp/settings.js:413
 msgid "Mark Color"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:435
+#: src/blocks/mail-chimp/settings.js:423
 msgid "Field"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:456
+#: src/blocks/mail-chimp/settings.js:444
 msgid "Focus"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:476
-#: src/blocks/mail-chimp/settings.js:514
-#: src/blocks/mail-chimp/settings.js:552
+#: src/blocks/mail-chimp/settings.js:464
+#: src/blocks/mail-chimp/settings.js:502
+#: src/blocks/mail-chimp/settings.js:540
 msgid "Placeholder Color"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:996
+#: src/blocks/mail-chimp/settings.js:984
 msgid "Messages"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:1015
+#: src/blocks/mail-chimp/settings.js:1003
 msgid "Error Message"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:1076
+#: src/blocks/mail-chimp/settings.js:1064
 msgid "Checkbox"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:1120
+#: src/blocks/mail-chimp/settings.js:1108
+#: src/blocks/mail-chimp/settings.js:1172
 #: src/blocks/mail-chimp/settings.js:1184
-#: src/blocks/mail-chimp/settings.js:1196
 msgid "Label Color"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:1140
+#: src/blocks/mail-chimp/settings.js:1128
 msgid "Radio"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:1194
+#: src/blocks/mail-chimp/settings.js:1182
 msgid "Agree Terms"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:1201
+#: src/blocks/mail-chimp/settings.js:1189
 msgid "Label Typography"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/mail-chimp/settings.js:1207
+#: src/blocks/mail-chimp/settings.js:1195
 #: src/modules/class-manager/components/class-style-manager.js:236
 msgid "Link Color"
 msgstr ""
 
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/mail-chimp/settings.js:1212
+#: src/blocks/mail-chimp/settings.js:1200
 msgid "Link Typography"
 msgstr ""
 
@@ -9157,7 +9161,7 @@ msgid "Enable"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/repeater/index.js:146
+#: src/gkit-components/components/repeater/index.js:131
 msgid "Add Item"
 msgstr ""
 
@@ -9216,20 +9220,20 @@ msgid "900"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/font-family/index.js:105
+#: src/gkit-components/components/font-family/index.js:54
 #: src/gkit-components/components/typography/font-weights.js:44
 msgid "Initial"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/font-family/index.js:109
+#: src/gkit-components/components/font-family/index.js:55
 #: src/gkit-components/components/typography/font-weights.js:48
 msgid "Inherit"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/gkit-components/components/font-family/index.js:179
+#: src/gkit-components/components/font-family/index.js:181
 #: src/modules/class-manager/components/typography-settings.js:79
 msgid "Font Family"
 msgstr ""

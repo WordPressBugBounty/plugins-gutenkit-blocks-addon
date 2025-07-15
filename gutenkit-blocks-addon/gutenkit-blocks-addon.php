@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpmet.com/plugin/gutenkit/
  * Author: Wpmet
- * Version: 2.3.1
+ * Version: 2.4.0
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.3.1';
+	const VERSION = '2.4.0';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -99,6 +99,12 @@ final class Gutenkit {
 		// added installed time after checking time exist or not
 		if ( ! get_option( 'gutenkit_installed_time' ) ) {
 			add_option( 'gutenkit_installed_time', time() );
+		}
+
+		// Check if the plugin is activated via bulk action
+		$action = isset($_REQUEST['action']) ? sanitize_text_field($_REQUEST['action']) : '';
+		if ($action === 'activate-selected') {
+			return;
 		}
 
 		// redirect to the settings page after activation
@@ -241,7 +247,7 @@ final class Gutenkit {
 		 * @since 1.0.0
 		 */
 		Gutenkit\Libs\AssetGenerator::instance();
-
+		
 		/**
 		 * Initializes the SvgSupport class instance.
 		 *

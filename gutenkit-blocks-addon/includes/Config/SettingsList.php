@@ -57,6 +57,22 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'category' => 'api-integration',
 					'token_link' => 'https://token.wpmet.com/social_token.php?provider=facebook&_for=page&app=2577123062406162&sec=a4656a1cae5e33ff0c18ee38efaa47ac&scope=pages_show_list,pages_read_engagement,pages_manage_engagement,pages_read_user_content'
 				),
+				'instagram'   => array(
+					'slug'    => 'instagram',
+					'title'   => 'Instagram',
+					'description'   => "To Showcase Instagram Feed on your website, enter User ID, Access Token, Expiry Date, & Generation Date of the access token.",
+					'package' => 'pro',
+					'fields'   => array(
+						'user_id' => array('label' => 'User ID', 'value' => ''),
+						'token' => array('label' => 'Access Token', 'value' => ''),
+						'token_expiry_time' => array('label' => 'Token Expiry Time', 'value' => '', 'type' => 'number' ),
+					),
+					'clear_cache' => true,
+					'access_token_generator' => true,
+					'status'          => 'active',
+					'category' => 'api-integration',
+					'token_link' => 'https://token.wpmet.com/social_token.php?provider=instagram'
+				),
 				'facebook_review'   => array(
 					'slug'    => 'facebook_review',
 					'title'   => 'Facebook Page Review',
@@ -112,23 +128,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'category' => 'api-integration',
 					'token_link' => 'https://token.wpmet.com/index.php?provider=twitter'
 				),
-				'instagram'   => array(
-					'slug'    => 'instagram',
-					'title'   => 'Instagram',
-					'description'   => "To Showcase Instagram Feed on your website, enter User ID, Access Token, Expiry Date, & Generation Date of the access token.",
-					'package' => 'pro',
-					'fields'   => array(
-						'user_id' => array('label' => 'User ID', 'value' => ''),
-						'token' => array('label' => 'Access Token', 'value' => ''),
-						'token_expiry_time' => array('label' => 'Token Expiry Time', 'value' => ''),
-						'token_generation_date' => array('label' => 'Token generation date', 'value' => ''),
-					),
-					'clear_cache' => true,
-					'access_token_generator' => true,
-					'status'          => 'inactive',
-					'category' => 'api-integration',
-					'token_link' => 'https://token.wpmet.com/social_token.php?provider=instagram'
-				),
 				'zoom'   => array(
 					'slug'    => 'zoom',
 					'title'   => 'Zoom',
@@ -164,9 +163,9 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'status'  => 'inactive',
 					'category' => 'advanced',
 				),
-				'use_only_global_styles_fonts' => array(
-					'slug'    => 'use_only_global_styles_fonts',
-					'title'   => 'Use Only Global Styles Fonts',
+				'load_google_fonts' => array(
+					'slug'    => 'load_google_fonts',
+					'title'   => 'Load Google Fonts locally',
 					'package' => 'free',
 					'status'  => 'inactive',
 					'category' => 'advanced',

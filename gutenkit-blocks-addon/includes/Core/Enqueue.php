@@ -45,7 +45,7 @@ class Enqueue {
 				'screen'        => $hook,
 				'api_url'       => GUTENKIT_API_URL,
 				'root_url'		=> esc_url( home_url( '/' ) ),
-				'use_only_global_styles_fonts' => Utils::get_settings('use_only_global_styles_fonts'),
+				'load_google_fonts' => Utils::get_settings('load_google_fonts'),
 				'version'     => GUTENKIT_PLUGIN_VERSION,
 				'modules'     => \Gutenkit\Config\Modules::get_active_modules_list(),
 				'has_pro'     => defined( 'GUTENKIT_PRO_PLUGIN_VERSION'),

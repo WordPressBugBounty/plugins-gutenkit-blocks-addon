@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.3.1
+Stable tag: 2.4.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -307,6 +307,16 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.4.0 (2025-07-14) =
+* Added: Load Google fonts locally
+* Added: Modal popup block
+* Fixed: Font not working in site editor
+* Fixed: Advanced tab sorting not working
+* Fixed: Description link not set in editor for heading block
+* Fixed: Title is not changing after adding item in advanced tab block
+* Improved: Font loading in editor and frontend
+* Improved: Mailchimp block icon and direction
+
 = GutenKit Blocks Addon: 2.3.1 (2025-05-27) =
 * Fixed: Showing warning for title filter in class manager
 * Fixed: Responsive breakpoints not updating correctly when switching devices
