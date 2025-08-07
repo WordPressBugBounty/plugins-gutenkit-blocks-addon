@@ -174,7 +174,7 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'slug'    => 'gutenkit_user_consent',
 					'title'   => 'User Consent',
 					'package' => 'free',
-					'status'  => 'inactive',
+					'status'  => 'active',
 					'category' => 'advanced',
 				),
 				'version_control' => array(

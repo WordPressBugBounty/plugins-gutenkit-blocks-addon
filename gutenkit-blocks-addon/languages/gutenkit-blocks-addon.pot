@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.0\n"
+"Project-Id-Version: GutenKit Blocks 2.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-14T08:26:51+00:00\n"
+"POT-Creation-Date: 2025-08-07T09:09:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: gutenkit-blocks-addon.php
-msgid "https://wpmet.com/plugin/gutenkit/"
+msgid "https://wpgutenkit.com/"
 msgstr ""
 
 #. Description of the plugin
@@ -763,7 +763,7 @@ msgstr ""
 #: src/blocks/header-info/settings.js:71
 #: src/blocks/icon-box/settings.js:134
 #: src/blocks/image-box/settings.js:235
-#: src/blocks/nav-menu/settings.js:708
+#: src/blocks/nav-menu/settings.js:715
 #: src/blocks/offcanvas/settings.js:151
 #: src/blocks/offcanvas/settings.js:221
 #: src/blocks/offcanvas/settings.js:608
@@ -930,7 +930,7 @@ msgstr ""
 #: src/blocks/image-box/settings.js:612
 #: src/blocks/mail-chimp/settings.js:749
 #: src/blocks/nav-menu-submenu/settings.js:124
-#: src/blocks/nav-menu/settings.js:711
+#: src/blocks/nav-menu/settings.js:718
 #: src/blocks/offcanvas/settings.js:332
 #: src/blocks/offcanvas/settings.js:365
 #: src/blocks/offcanvas/settings.js:440
@@ -1021,7 +1021,7 @@ msgstr ""
 #: src/blocks/image-box/settings.js:614
 #: src/blocks/mail-chimp/settings.js:751
 #: src/blocks/nav-menu-submenu/settings.js:134
-#: src/blocks/nav-menu/settings.js:721
+#: src/blocks/nav-menu/settings.js:728
 #: src/blocks/offcanvas/settings.js:348
 #: src/blocks/offcanvas/settings.js:370
 #: src/blocks/offcanvas/settings.js:450
@@ -1223,8 +1223,8 @@ msgstr ""
 #: src/blocks/nav-menu-submenu/settings.js:129
 #: src/blocks/nav-menu/settings.js:221
 #: src/blocks/nav-menu/settings.js:273
-#: src/blocks/nav-menu/settings.js:399
-#: src/blocks/nav-menu/settings.js:716
+#: src/blocks/nav-menu/settings.js:406
+#: src/blocks/nav-menu/settings.js:723
 #: src/blocks/offcanvas/settings.js:445
 #: src/blocks/offcanvas/settings.js:1210
 #: src/blocks/page-list/settings.js:628
@@ -1594,9 +1594,9 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1062
 #: src/blocks/mail-chimp/settings.js:958
 #: src/blocks/mail-chimp/settings.js:1046
-#: src/blocks/nav-menu/settings.js:687
-#: src/blocks/nav-menu/settings.js:959
-#: src/blocks/nav-menu/settings.js:1222
+#: src/blocks/nav-menu/settings.js:694
+#: src/blocks/nav-menu/settings.js:966
+#: src/blocks/nav-menu/settings.js:1229
 #: src/blocks/offcanvas/settings.js:920
 #: src/blocks/offcanvas/settings.js:1154
 #: src/blocks/page-list/settings.js:898
@@ -1925,7 +1925,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:1103
 #: src/blocks/mail-chimp/settings.js:1167
 #: src/blocks/nav-menu-submenu/settings.js:171
-#: src/blocks/nav-menu/settings.js:497
+#: src/blocks/nav-menu/settings.js:504
 #: src/blocks/offcanvas/settings.js:498
 #: src/blocks/offcanvas/settings.js:670
 #: src/blocks/page-list/settings.js:1029
@@ -2095,9 +2095,9 @@ msgstr ""
 #: src/blocks/image-box/settings.js:794
 #: src/blocks/mail-chimp/settings.js:288
 #: src/blocks/mail-chimp/settings.js:1028
-#: src/blocks/nav-menu/settings.js:768
-#: src/blocks/nav-menu/settings.js:977
-#: src/blocks/nav-menu/settings.js:1146
+#: src/blocks/nav-menu/settings.js:775
+#: src/blocks/nav-menu/settings.js:984
+#: src/blocks/nav-menu/settings.js:1153
 #: src/blocks/offcanvas/settings.js:562
 #: src/blocks/offcanvas/settings.js:1233
 #: src/blocks/page-list/settings.js:405
@@ -2163,9 +2163,9 @@ msgstr ""
 #: src/blocks/icon-box/settings.js:675
 #: src/blocks/image-box/settings.js:275
 #: src/blocks/image-box/settings.js:831
-#: src/blocks/nav-menu/settings.js:802
-#: src/blocks/nav-menu/settings.js:1011
-#: src/blocks/nav-menu/settings.js:1180
+#: src/blocks/nav-menu/settings.js:809
+#: src/blocks/nav-menu/settings.js:1018
+#: src/blocks/nav-menu/settings.js:1187
 #: src/blocks/offcanvas/settings.js:585
 #: src/blocks/offcanvas/settings.js:1246
 #: src/blocks/post-grid/settings.js:125
@@ -2253,9 +2253,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:436
 #: src/blocks/mail-chimp/settings.js:872
 #: src/blocks/nav-menu-submenu/settings.js:180
-#: src/blocks/nav-menu/settings.js:505
-#: src/blocks/nav-menu/settings.js:857
-#: src/blocks/nav-menu/settings.js:1076
+#: src/blocks/nav-menu/settings.js:512
+#: src/blocks/nav-menu/settings.js:864
+#: src/blocks/nav-menu/settings.js:1083
 #: src/blocks/offcanvas/settings.js:734
 #: src/blocks/offcanvas/settings.js:966
 #: src/blocks/page-list/settings.js:547
@@ -2359,9 +2359,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:440
 #: src/blocks/mail-chimp/settings.js:876
 #: src/blocks/nav-menu-submenu/settings.js:184
-#: src/blocks/nav-menu/settings.js:509
-#: src/blocks/nav-menu/settings.js:861
-#: src/blocks/nav-menu/settings.js:1080
+#: src/blocks/nav-menu/settings.js:516
+#: src/blocks/nav-menu/settings.js:868
+#: src/blocks/nav-menu/settings.js:1087
 #: src/blocks/offcanvas/settings.js:738
 #: src/blocks/offcanvas/settings.js:970
 #: src/blocks/page-list/settings.js:554
@@ -2477,10 +2477,10 @@ msgstr ""
 #: src/blocks/nav-menu-submenu/settings.js:199
 #: src/blocks/nav-menu-submenu/settings.js:230
 #: src/blocks/nav-menu-submenu/settings.js:259
-#: src/blocks/nav-menu/settings.js:872
-#: src/blocks/nav-menu/settings.js:897
-#: src/blocks/nav-menu/settings.js:1091
-#: src/blocks/nav-menu/settings.js:1116
+#: src/blocks/nav-menu/settings.js:879
+#: src/blocks/nav-menu/settings.js:904
+#: src/blocks/nav-menu/settings.js:1098
+#: src/blocks/nav-menu/settings.js:1123
 #: src/blocks/offcanvas/settings.js:763
 #: src/blocks/offcanvas/settings.js:827
 #: src/blocks/offcanvas/settings.js:998
@@ -2625,9 +2625,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:951
 #: src/blocks/mail-chimp/settings.js:1055
 #: src/blocks/nav-menu-item/settings.js:213
-#: src/blocks/nav-menu/settings.js:444
-#: src/blocks/nav-menu/settings.js:826
-#: src/blocks/nav-menu/settings.js:1045
+#: src/blocks/nav-menu/settings.js:451
+#: src/blocks/nav-menu/settings.js:833
+#: src/blocks/nav-menu/settings.js:1052
 #: src/blocks/offcanvas/settings.js:874
 #: src/blocks/offcanvas/settings.js:1108
 #: src/blocks/page-list/settings.js:513
@@ -2855,9 +2855,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:1039
 #: src/blocks/nav-menu-item/settings.js:202
 #: src/blocks/nav-menu-submenu/settings.js:291
-#: src/blocks/nav-menu/settings.js:426
-#: src/blocks/nav-menu/settings.js:667
-#: src/blocks/nav-menu/settings.js:1204
+#: src/blocks/nav-menu/settings.js:433
+#: src/blocks/nav-menu/settings.js:674
+#: src/blocks/nav-menu/settings.js:1211
 #: src/blocks/offcanvas/settings.js:897
 #: src/blocks/offcanvas/settings.js:1131
 #: src/blocks/offcanvas/settings.js:1290
@@ -2918,8 +2918,8 @@ msgstr ""
 #: src/blocks/image-box/settings.js:1161
 #: src/blocks/image-comparison/settings.js:348
 #: src/blocks/mail-chimp/settings.js:972
-#: src/blocks/nav-menu/settings.js:734
-#: src/blocks/nav-menu/settings.js:925
+#: src/blocks/nav-menu/settings.js:741
+#: src/blocks/nav-menu/settings.js:932
 #: src/blocks/offcanvas/settings.js:508
 #: src/blocks/offcanvas/settings.js:680
 #: src/blocks/pricing-table/settings.js:2020
@@ -2989,9 +2989,9 @@ msgstr ""
 #: src/blocks/nav-menu-submenu/settings.js:208
 #: src/blocks/nav-menu-submenu/settings.js:239
 #: src/blocks/nav-menu-submenu/settings.js:268
-#: src/blocks/nav-menu/settings.js:528
-#: src/blocks/nav-menu/settings.js:574
-#: src/blocks/nav-menu/settings.js:621
+#: src/blocks/nav-menu/settings.js:535
+#: src/blocks/nav-menu/settings.js:581
+#: src/blocks/nav-menu/settings.js:628
 #: src/blocks/page-list/settings.js:297
 #: src/blocks/post-tab/settings.js:330
 #: src/blocks/post-tab/settings.js:372
@@ -3146,9 +3146,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:1015
 #: src/blocks/nav-menu-item/settings.js:190
 #: src/blocks/nav-menu-submenu/settings.js:218
-#: src/blocks/nav-menu/settings.js:538
-#: src/blocks/nav-menu/settings.js:886
-#: src/blocks/nav-menu/settings.js:1105
+#: src/blocks/nav-menu/settings.js:545
+#: src/blocks/nav-menu/settings.js:893
+#: src/blocks/nav-menu/settings.js:1112
 #: src/blocks/offcanvas/settings.js:784
 #: src/blocks/offcanvas/settings.js:848
 #: src/blocks/offcanvas/settings.js:1018
@@ -3483,7 +3483,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:654
 #: src/blocks/image-comparison/settings.js:139
 #: src/blocks/nav-menu-submenu/settings.js:188
-#: src/blocks/nav-menu/settings.js:513
+#: src/blocks/nav-menu/settings.js:520
 #: src/blocks/post-tab/settings.js:35
 #: src/blocks/post-tab/settings.js:52
 #: src/blocks/testimonial/settings.js:640
@@ -3514,10 +3514,10 @@ msgstr ""
 #: src/blocks/heading/settings.js:408
 #: src/blocks/nav-menu-submenu/settings.js:249
 #: src/blocks/nav-menu-submenu/settings.js:278
-#: src/blocks/nav-menu/settings.js:584
-#: src/blocks/nav-menu/settings.js:631
-#: src/blocks/nav-menu/settings.js:911
-#: src/blocks/nav-menu/settings.js:1130
+#: src/blocks/nav-menu/settings.js:591
+#: src/blocks/nav-menu/settings.js:638
+#: src/blocks/nav-menu/settings.js:918
+#: src/blocks/nav-menu/settings.js:1137
 #: src/blocks/social-icons/settings.js:187
 #: src/blocks/social-icons/settings.js:201
 #: src/blocks/social-share/settings.js:238
@@ -3844,9 +3844,9 @@ msgstr ""
 #: src/blocks/image-box/settings.js:934
 #: src/blocks/image-comparison/settings.js:545
 #: src/blocks/nav-menu-submenu/settings.js:309
-#: src/blocks/nav-menu/settings.js:544
-#: src/blocks/nav-menu/settings.js:591
-#: src/blocks/nav-menu/settings.js:638
+#: src/blocks/nav-menu/settings.js:551
+#: src/blocks/nav-menu/settings.js:598
+#: src/blocks/nav-menu/settings.js:645
 msgid "Border radius"
 msgstr ""
 
@@ -3943,7 +3943,7 @@ msgstr ""
 #: src/blocks/container/settings.js:839
 #: src/blocks/nav-menu/settings.js:216
 #: src/blocks/nav-menu/settings.js:268
-#: src/blocks/nav-menu/settings.js:394
+#: src/blocks/nav-menu/settings.js:401
 #: src/blocks/offcanvas/settings.js:1205
 #: src/blocks/social-icons/settings.js:145
 #: src/blocks/social-share/settings.js:158
@@ -3964,7 +3964,7 @@ msgstr ""
 #: src/blocks/container/settings.js:849
 #: src/blocks/nav-menu/settings.js:226
 #: src/blocks/nav-menu/settings.js:278
-#: src/blocks/nav-menu/settings.js:404
+#: src/blocks/nav-menu/settings.js:411
 #: src/blocks/offcanvas/settings.js:1215
 #: src/blocks/social-icons/settings.js:147
 #: src/blocks/social-share/settings.js:160
@@ -4754,7 +4754,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:1149
 #: src/blocks/nav-menu-submenu/settings.js:139
 #: src/blocks/nav-menu/settings.js:231
-#: src/blocks/nav-menu/settings.js:409
+#: src/blocks/nav-menu/settings.js:416
 #: src/blocks/social-icons/settings.js:98
 #: src/gkit-components/components/swiper/dot.js:181
 #: src/modules/class-manager/components/class-style-manager.js:744
@@ -5934,10 +5934,10 @@ msgstr ""
 #: src/blocks/image-box/settings.js:352
 #: src/blocks/mail-chimp/settings.js:896
 #: src/blocks/mail-chimp/settings.js:927
-#: src/blocks/nav-menu/settings.js:881
-#: src/blocks/nav-menu/settings.js:906
-#: src/blocks/nav-menu/settings.js:1100
-#: src/blocks/nav-menu/settings.js:1125
+#: src/blocks/nav-menu/settings.js:888
+#: src/blocks/nav-menu/settings.js:913
+#: src/blocks/nav-menu/settings.js:1107
+#: src/blocks/nav-menu/settings.js:1132
 #: src/blocks/page-list/settings.js:213
 #: src/blocks/page-list/settings.js:810
 #: src/blocks/page-list/settings.js:852
@@ -6283,13 +6283,13 @@ msgstr ""
 
 #: build/6543.js:1
 #: src/blocks/nav-menu/settings.js:320
-#: src/blocks/nav-menu/settings.js:1143
+#: src/blocks/nav-menu/settings.js:1150
 msgid "Mobile Menu Logo"
 msgstr ""
 
 #: build/6543.js:1
 #: src/blocks/nav-menu/settings.js:328
-msgid "Menu link"
+msgid "Mobile Logo link"
 msgstr ""
 
 #: build/6543.js:1
@@ -6300,60 +6300,65 @@ msgstr ""
 #: build/6543.js:1
 #: build/8389.js:1
 #: src/blocks/nav-menu/settings.js:335
-#: src/blocks/nav-menu/settings.js:348
+#: src/blocks/nav-menu/settings.js:349
 #: src/blocks/page-list/settings.js:263
 msgid "Custom Link"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:360
+#: src/blocks/nav-menu/settings.js:361
 msgid "Hamburger Icon (Optional)"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:370
+#: src/blocks/nav-menu/settings.js:367
+msgid "Mobile Menu Close Icon"
+msgstr ""
+
+#: build/6543.js:1
+#: src/blocks/nav-menu/settings.js:377
 msgid "Menu Wrapper"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:372
+#: src/blocks/nav-menu/settings.js:379
 msgid "Menu Background"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:378
+#: src/blocks/nav-menu/settings.js:385
 msgid "Sidebar Background"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:385
+#: src/blocks/nav-menu/settings.js:392
 msgid "Sidebar Menu Content Align"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:461
+#: src/blocks/nav-menu/settings.js:468
 msgid "Menu Items"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:464
+#: src/blocks/nav-menu/settings.js:471
 msgid "Menu Item Spacing"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:533
-#: src/blocks/nav-menu/settings.js:579
-#: src/blocks/nav-menu/settings.js:626
+#: src/blocks/nav-menu/settings.js:540
+#: src/blocks/nav-menu/settings.js:586
+#: src/blocks/nav-menu/settings.js:633
 msgid "Mobile Menu Color"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:706
+#: src/blocks/nav-menu/settings.js:713
 msgid "Hamburger Style"
 msgstr ""
 
 #: build/6543.js:1
-#: src/blocks/nav-menu/settings.js:922
+#: src/blocks/nav-menu/settings.js:929
 msgid "Close Button"
 msgstr ""
 
@@ -7852,7 +7857,7 @@ msgstr ""
 #: src/onboard/pages/PowerUp.js:27
 #: src/onboard/pages/PowerUp.js:45
 #: src/popup-builder/Popup.js:20
-#: src/popup-builder/Popup.js:48
+#: src/popup-builder/Popup.js:43
 msgid "Activated"
 msgstr ""
 
@@ -7863,7 +7868,7 @@ msgstr ""
 #: src/onboard/pages/PowerUp.js:27
 #: src/onboard/pages/PowerUp.js:49
 #: src/popup-builder/Popup.js:20
-#: src/popup-builder/Popup.js:54
+#: src/popup-builder/Popup.js:49
 msgid "Activate Now"
 msgstr ""
 
@@ -7872,7 +7877,7 @@ msgstr ""
 #: build/admin/popup-builder/index.js:1
 #: src/dashboard/components/List.js:58
 #: src/onboard/pages/PowerUp.js:36
-#: src/popup-builder/Popup.js:39
+#: src/popup-builder/Popup.js:34
 msgid "Activating..."
 msgstr ""
 
@@ -8305,7 +8310,7 @@ msgid "Next Step"
 msgstr ""
 
 #: build/admin/popup-builder/index.js:1
-#: src/popup-builder/Popup.js:94
+#: src/popup-builder/Popup.js:89
 msgid "Easily create and customize engaging popups to capture your audience's attention, increase conversions, and enhance user experience on your WordPress site. Intuitive and user-friendly, Popup Builder offers a wide range of design options and triggers to match your specific needs."
 msgstr ""
 
@@ -9161,7 +9166,7 @@ msgid "Enable"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/repeater/index.js:131
+#: src/gkit-components/components/repeater/index.js:145
 msgid "Add Item"
 msgstr ""
 

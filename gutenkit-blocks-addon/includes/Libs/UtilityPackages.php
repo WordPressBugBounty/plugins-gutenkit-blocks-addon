@@ -26,7 +26,7 @@ class UtilityPackages {
 		 * 
 		 * @return void
 		 */
-		if (Utils::get_settings('gutenkit_user_consent')) {
+		if (!Utils::get_settings('gutenkit_user_consent')) {
 			return;
 		}
 
@@ -83,7 +83,7 @@ class UtilityPackages {
 		UtilityPackage\Stories\Stories::instance( 'gutenkit-blocks-addon' )   # @plugin_slug
 		// ->is_test(true)                                                      # @check_interval
 		->set_filter( $filter_string )                                          # @active_plugins
-		->set_plugin( 'Gutenkit', 'https://wpmet.com/plugin/gutenkit/' )  # @plugin_name  @plugin_url
+		->set_plugin( 'Gutenkit', 'https://wpgutenkit.com/' )  # @plugin_name  @plugin_url
 		->set_api_url( 'https://api.wpmet.com/public/stories/' )                # @api_url_for_stories
 		->call();
 

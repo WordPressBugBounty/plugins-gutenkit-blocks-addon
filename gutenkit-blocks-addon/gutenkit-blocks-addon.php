@@ -4,9 +4,9 @@
  * Description: Faster loading blocks, patterns, and templates for Gutenberg, bringing the page builder experience to block editor.
  * Requires at least: 6.1
  * Requires PHP: 7.4
- * Plugin URI: https://wpmet.com/plugin/gutenkit/
+ * Plugin URI: https://wpgutenkit.com/
  * Author: Wpmet
- * Version: 2.4.0
+ * Version: 2.4.1
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.4.0';
+	const VERSION = '2.4.1';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -82,7 +82,7 @@ final class Gutenkit {
 		define( 'GUTENKIT_BLOKS_INC_DIR', GUTENKIT_PLUGIN_DIR . 'includes/' );
 		define( 'GUTENKIT_BLOKS_STYLE_DIR', GUTENKIT_PLUGIN_DIR . 'build/styles/' );
 		define( 'GUTENKIT_BLOCKS_DIR', GUTENKIT_PLUGIN_DIR . 'build/blocks/' );
-		define( 'GUTENKIT_API_URL', 'https://wpmet.com/plugin/gutenkit/' );
+		define( 'GUTENKIT_API_URL', 'https://wpgutenkit.com/' );
 	}
 
 	/**
@@ -144,7 +144,7 @@ final class Gutenkit {
 			$gkit_pro_text = esc_html__( 'Get GutenKit Pro', 'gutenkit-blocks-addon' );
 			$gkit_pro_link = sprintf(
 				'<a href="%1$s" target="_blank" style="font-weight: 700; color: #b32d2e;">%2$s</a>',
-				'https://wpmet.com/plugin/gutenkit/pricing/',
+				'https://wpgutenkit.com/pricing/',
 				$gkit_pro_text
 			);
 			$links['gutenkit-pro'] = $gkit_pro_link;
