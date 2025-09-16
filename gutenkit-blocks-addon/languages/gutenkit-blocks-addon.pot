@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.1\n"
+"Project-Id-Version: GutenKit Blocks 2.4.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-07T09:09:18+00:00\n"
+"POT-Creation-Date: 2025-09-15T08:34:59+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -393,7 +393,7 @@ msgstr ""
 #: src/blocks/back-to-top/settings.js:41
 #: src/blocks/blog-posts/settings.js:110
 #: src/blocks/blog-posts/settings.js:738
-#: src/blocks/blog-posts/settings.js:2094
+#: src/blocks/blog-posts/settings.js:2098
 #: src/blocks/button/settings.js:38
 #: src/blocks/button/settings.js:54
 #: src/blocks/countdown-timer/settings.js:45
@@ -430,7 +430,7 @@ msgstr ""
 #: src/blocks/social-share/settings.js:53
 #: src/blocks/team/settings.js:51
 #: src/blocks/team/settings.js:254
-#: src/blocks/testimonial/settings.js:51
+#: src/blocks/testimonial/settings.js:52
 #: src/blocks/video/settings.js:52
 #: src/gkit-components/components/suspense/index.js:31
 msgid "Content"
@@ -512,7 +512,7 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:52
 #: src/blocks/social-share/settings.js:57
 #: src/blocks/team/settings.js:55
-#: src/blocks/testimonial/settings.js:55
+#: src/blocks/testimonial/settings.js:56
 #: src/blocks/video/settings.js:56
 #: src/gkit-components/components/suspense/index.js:35
 #: src/modules/class-manager/components/class-style-manager.js:163
@@ -596,7 +596,7 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:56
 #: src/blocks/social-share/settings.js:61
 #: src/blocks/team/settings.js:59
-#: src/blocks/testimonial/settings.js:59
+#: src/blocks/testimonial/settings.js:60
 #: src/blocks/video/settings.js:60
 #: src/dashboard/assets/js/setting-list.js:12
 #: src/gkit-components/components/suspense/index.js:39
@@ -632,7 +632,7 @@ msgstr ""
 #: src/blocks/back-to-top/settings.js:72
 #: src/blocks/blog-posts/settings.js:320
 #: src/blocks/button/settings.js:78
-#: src/blocks/button/settings.js:418
+#: src/blocks/button/settings.js:419
 #: src/blocks/donut-progress-bar/settings.js:94
 #: src/blocks/donut-progress-bar/settings.js:120
 #: src/blocks/donut-progress-bar/settings.js:131
@@ -663,11 +663,11 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:71
 #: src/blocks/social-share/settings.js:75
 #: src/blocks/team/settings.js:210
-#: src/blocks/testimonial/settings.js:146
+#: src/blocks/testimonial/settings.js:147
 #: src/blocks/video/settings.js:205
 #: src/blocks/video/settings.js:221
-#: src/blocks/video/settings.js:873
-#: src/blocks/video/settings.js:975
+#: src/blocks/video/settings.js:874
+#: src/blocks/video/settings.js:976
 msgid "Icon"
 msgstr ""
 
@@ -694,7 +694,7 @@ msgstr ""
 #: build/9242.js:1
 #: build/9807.js:1
 #: build/blocks/mail-chimp/index.js:1
-#: src/blocks/blog-posts/settings.js:2390
+#: src/blocks/blog-posts/settings.js:2394
 #: src/blocks/button/settings.js:140
 #: src/blocks/icon-box/settings.js:94
 #: src/blocks/icon-box/settings.js:864
@@ -903,12 +903,12 @@ msgstr ""
 #: src/blocks/blog-posts/settings.js:91
 #: src/blocks/blog-posts/settings.js:99
 #: src/blocks/blog-posts/settings.js:1136
-#: src/blocks/blog-posts/settings.js:1444
-#: src/blocks/blog-posts/settings.js:1540
-#: src/blocks/blog-posts/settings.js:1784
-#: src/blocks/blog-posts/settings.js:1968
-#: src/blocks/blog-posts/settings.js:2118
-#: src/blocks/blog-posts/settings.js:2396
+#: src/blocks/blog-posts/settings.js:1446
+#: src/blocks/blog-posts/settings.js:1542
+#: src/blocks/blog-posts/settings.js:1786
+#: src/blocks/blog-posts/settings.js:1972
+#: src/blocks/blog-posts/settings.js:2122
+#: src/blocks/blog-posts/settings.js:2400
 #: src/blocks/button/settings.js:99
 #: src/blocks/donut-progress-bar/settings.js:194
 #: src/blocks/dual-button/settings.js:77
@@ -945,15 +945,15 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1774
 #: src/blocks/pricing-table/settings.js:2106
 #: src/blocks/team/settings.js:260
-#: src/blocks/testimonial/settings.js:188
-#: src/blocks/testimonial/settings.js:762
-#: src/blocks/testimonial/settings.js:1406
-#: src/blocks/testimonial/settings.js:1426
-#: src/blocks/testimonial/settings.js:1439
-#: src/blocks/testimonial/settings.js:1454
-#: src/blocks/testimonial/settings.js:1466
+#: src/blocks/testimonial/settings.js:189
+#: src/blocks/testimonial/settings.js:764
+#: src/blocks/testimonial/settings.js:1408
+#: src/blocks/testimonial/settings.js:1428
+#: src/blocks/testimonial/settings.js:1441
+#: src/blocks/testimonial/settings.js:1456
+#: src/blocks/testimonial/settings.js:1468
 #: src/blocks/video/settings.js:518
-#: src/blocks/video/settings.js:1073
+#: src/blocks/video/settings.js:1074
 #: src/modules/class-manager/components/class-style-manager.js:191
 #: src/modules/class-manager/components/class-style-manager.js:869
 msgid "Left"
@@ -997,9 +997,9 @@ msgstr ""
 #: src/blocks/back-to-top/settings.js:96
 #: src/blocks/blog-posts/settings.js:92
 #: src/blocks/blog-posts/settings.js:1146
-#: src/blocks/blog-posts/settings.js:1978
-#: src/blocks/blog-posts/settings.js:2128
-#: src/blocks/blog-posts/settings.js:2406
+#: src/blocks/blog-posts/settings.js:1982
+#: src/blocks/blog-posts/settings.js:2132
+#: src/blocks/blog-posts/settings.js:2410
 #: src/blocks/button/settings.js:101
 #: src/blocks/donut-progress-bar/settings.js:204
 #: src/blocks/dual-button/settings.js:87
@@ -1036,14 +1036,14 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1784
 #: src/blocks/pricing-table/settings.js:2116
 #: src/blocks/team/settings.js:270
-#: src/blocks/testimonial/settings.js:764
-#: src/blocks/testimonial/settings.js:1409
-#: src/blocks/testimonial/settings.js:1429
-#: src/blocks/testimonial/settings.js:1441
-#: src/blocks/testimonial/settings.js:1456
-#: src/blocks/testimonial/settings.js:1468
+#: src/blocks/testimonial/settings.js:766
+#: src/blocks/testimonial/settings.js:1411
+#: src/blocks/testimonial/settings.js:1431
+#: src/blocks/testimonial/settings.js:1443
+#: src/blocks/testimonial/settings.js:1458
+#: src/blocks/testimonial/settings.js:1470
 #: src/blocks/video/settings.js:520
-#: src/blocks/video/settings.js:1074
+#: src/blocks/video/settings.js:1075
 #: src/modules/class-manager/components/class-style-manager.js:201
 #: src/modules/class-manager/components/class-style-manager.js:874
 msgid "Right"
@@ -1071,8 +1071,8 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:566
 #: src/blocks/blog-posts/settings.js:98
 #: src/blocks/blog-posts/settings.js:677
-#: src/blocks/blog-posts/settings.js:1474
-#: src/blocks/blog-posts/settings.js:1754
+#: src/blocks/blog-posts/settings.js:1476
+#: src/blocks/blog-posts/settings.js:1756
 #: src/blocks/fun-fact/settings.js:313
 #: src/blocks/fun-fact/settings.js:1034
 #: src/blocks/heading/settings.js:256
@@ -1088,11 +1088,11 @@ msgstr ""
 #: src/blocks/post-tab/settings.js:215
 #: src/blocks/pricing-table/settings.js:1481
 #: src/blocks/pricing-table/settings.js:1553
-#: src/blocks/testimonial/settings.js:168
-#: src/blocks/testimonial/settings.js:209
-#: src/blocks/testimonial/settings.js:740
-#: src/blocks/testimonial/settings.js:1407
-#: src/blocks/testimonial/settings.js:1427
+#: src/blocks/testimonial/settings.js:169
+#: src/blocks/testimonial/settings.js:210
+#: src/blocks/testimonial/settings.js:742
+#: src/blocks/testimonial/settings.js:1409
+#: src/blocks/testimonial/settings.js:1429
 #: src/gkit-components/components/dual-slider/index.js:44
 #: src/modules/class-manager/components/class-style-manager.js:835
 msgid "Top"
@@ -1114,7 +1114,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:125
 #: src/blocks/advanced-tab/settings.js:576
 #: src/blocks/blog-posts/settings.js:687
-#: src/blocks/blog-posts/settings.js:1510
+#: src/blocks/blog-posts/settings.js:1512
 #: src/blocks/fun-fact/settings.js:323
 #: src/blocks/fun-fact/settings.js:1044
 #: src/blocks/heading/settings.js:259
@@ -1128,10 +1128,10 @@ msgstr ""
 #: src/blocks/post-tab/settings.js:217
 #: src/blocks/pricing-table/settings.js:1491
 #: src/blocks/pricing-table/settings.js:1563
-#: src/blocks/testimonial/settings.js:169
-#: src/blocks/testimonial/settings.js:742
-#: src/blocks/testimonial/settings.js:1408
-#: src/blocks/testimonial/settings.js:1428
+#: src/blocks/testimonial/settings.js:170
+#: src/blocks/testimonial/settings.js:744
+#: src/blocks/testimonial/settings.js:1410
+#: src/blocks/testimonial/settings.js:1430
 #: src/gkit-components/components/dual-slider/index.js:43
 #: src/modules/class-manager/components/class-style-manager.js:840
 msgid "Bottom"
@@ -1196,9 +1196,9 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:307
 #: src/blocks/back-to-top/settings.js:95
 #: src/blocks/blog-posts/settings.js:1141
-#: src/blocks/blog-posts/settings.js:1973
-#: src/blocks/blog-posts/settings.js:2123
-#: src/blocks/blog-posts/settings.js:2401
+#: src/blocks/blog-posts/settings.js:1977
+#: src/blocks/blog-posts/settings.js:2127
+#: src/blocks/blog-posts/settings.js:2405
 #: src/blocks/button/settings.js:100
 #: src/blocks/container/settings.js:286
 #: src/blocks/container/settings.js:344
@@ -1240,11 +1240,11 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:146
 #: src/blocks/social-share/settings.js:159
 #: src/blocks/team/settings.js:265
-#: src/blocks/testimonial/settings.js:741
-#: src/blocks/testimonial/settings.js:763
-#: src/blocks/testimonial/settings.js:1440
-#: src/blocks/testimonial/settings.js:1455
-#: src/blocks/testimonial/settings.js:1467
+#: src/blocks/testimonial/settings.js:743
+#: src/blocks/testimonial/settings.js:765
+#: src/blocks/testimonial/settings.js:1442
+#: src/blocks/testimonial/settings.js:1457
+#: src/blocks/testimonial/settings.js:1469
 #: src/blocks/video/settings.js:519
 #: src/modules/class-manager/components/class-style-manager.js:196
 #: src/modules/class-manager/components/class-style-manager.js:702
@@ -1450,9 +1450,9 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:103
 #: src/blocks/back-to-top/settings.js:92
 #: src/blocks/blog-posts/settings.js:1133
-#: src/blocks/blog-posts/settings.js:1965
-#: src/blocks/blog-posts/settings.js:2115
-#: src/blocks/blog-posts/settings.js:2393
+#: src/blocks/blog-posts/settings.js:1969
+#: src/blocks/blog-posts/settings.js:2119
+#: src/blocks/blog-posts/settings.js:2397
 #: src/blocks/button/settings.js:97
 #: src/blocks/dual-button/settings.js:74
 #: src/blocks/fun-fact/settings.js:655
@@ -1479,9 +1479,9 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:143
 #: src/blocks/social-share/settings.js:156
 #: src/blocks/team/settings.js:257
-#: src/blocks/testimonial/settings.js:1437
-#: src/blocks/testimonial/settings.js:1452
-#: src/blocks/testimonial/settings.js:1464
+#: src/blocks/testimonial/settings.js:1439
+#: src/blocks/testimonial/settings.js:1454
+#: src/blocks/testimonial/settings.js:1466
 #: src/blocks/video/settings.js:516
 #: src/gkit-components/components/swiper/dot.js:151
 msgid "Alignment"
@@ -1507,7 +1507,7 @@ msgstr ""
 #: src/blocks/advanced-tab/edit.js:190
 #: src/blocks/advanced-tab/settings.js:64
 #: src/blocks/blog-posts/settings.js:412
-#: src/blocks/blog-posts/settings.js:1901
+#: src/blocks/blog-posts/settings.js:1903
 #: src/blocks/donut-progress-bar/settings.js:226
 #: src/blocks/faq-item/deprecated.js:22
 #: src/blocks/faq-item/deprecated.js:32
@@ -1555,15 +1555,15 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: build/modules/page-settings/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:681
-#: src/blocks/advanced-paragraph/settings.js:474
+#: src/blocks/advanced-paragraph/settings.js:478
 #: src/blocks/advanced-tab/settings.js:533
 #: src/blocks/blog-posts/settings.js:719
 #: src/blocks/blog-posts/settings.js:1047
-#: src/blocks/blog-posts/settings.js:2005
-#: src/blocks/blog-posts/settings.js:2074
-#: src/blocks/blog-posts/settings.js:2156
-#: src/blocks/blog-posts/settings.js:2364
-#: src/blocks/blog-posts/settings.js:2567
+#: src/blocks/blog-posts/settings.js:2009
+#: src/blocks/blog-posts/settings.js:2078
+#: src/blocks/blog-posts/settings.js:2160
+#: src/blocks/blog-posts/settings.js:2368
+#: src/blocks/blog-posts/settings.js:2571
 #: src/blocks/business-hours/settings.js:99
 #: src/blocks/countdown-timer/settings.js:289
 #: src/blocks/countdown-timer/settings.js:387
@@ -1577,12 +1577,12 @@ msgstr ""
 #: src/blocks/faq/settings.js:202
 #: src/blocks/fun-fact/settings.js:364
 #: src/blocks/fun-fact/settings.js:693
-#: src/blocks/heading/settings.js:333
-#: src/blocks/heading/settings.js:574
-#: src/blocks/heading/settings.js:662
-#: src/blocks/heading/settings.js:710
-#: src/blocks/heading/settings.js:827
-#: src/blocks/heading/settings.js:906
+#: src/blocks/heading/settings.js:334
+#: src/blocks/heading/settings.js:576
+#: src/blocks/heading/settings.js:664
+#: src/blocks/heading/settings.js:712
+#: src/blocks/heading/settings.js:829
+#: src/blocks/heading/settings.js:908
 #: src/blocks/icon-box/settings.js:491
 #: src/blocks/icon-box/settings.js:552
 #: src/blocks/icon-box/settings.js:826
@@ -1614,13 +1614,13 @@ msgstr ""
 #: src/blocks/team/settings.js:441
 #: src/blocks/team/settings.js:527
 #: src/blocks/team/settings.js:662
-#: src/blocks/testimonial/settings.js:855
-#: src/blocks/testimonial/settings.js:885
-#: src/blocks/testimonial/settings.js:979
-#: src/blocks/testimonial/settings.js:1165
-#: src/blocks/testimonial/settings.js:1295
-#: src/blocks/testimonial/settings.js:1380
-#: src/blocks/testimonial/settings.js:1523
+#: src/blocks/testimonial/settings.js:857
+#: src/blocks/testimonial/settings.js:887
+#: src/blocks/testimonial/settings.js:981
+#: src/blocks/testimonial/settings.js:1167
+#: src/blocks/testimonial/settings.js:1297
+#: src/blocks/testimonial/settings.js:1382
+#: src/blocks/testimonial/settings.js:1525
 #: src/global/components/advanced-control.js:46
 #: src/modules/class-manager/components/class-style-manager.js:442
 #: src/modules/page-settings/editor.js:97
@@ -1668,29 +1668,29 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:625
 #: src/blocks/advanced-image/settings.js:934
 #: src/blocks/advanced-paragraph/settings.js:171
-#: src/blocks/advanced-paragraph/settings.js:190
-#: src/blocks/advanced-paragraph/settings.js:235
-#: src/blocks/advanced-paragraph/settings.js:251
-#: src/blocks/advanced-paragraph/settings.js:304
-#: src/blocks/advanced-paragraph/settings.js:405
+#: src/blocks/advanced-paragraph/settings.js:191
+#: src/blocks/advanced-paragraph/settings.js:237
+#: src/blocks/advanced-paragraph/settings.js:253
+#: src/blocks/advanced-paragraph/settings.js:306
+#: src/blocks/advanced-paragraph/settings.js:408
 #: src/blocks/back-to-top/settings.js:282
 #: src/blocks/back-to-top/settings.js:349
 #: src/blocks/blog-posts/settings.js:1241
-#: src/blocks/blog-posts/settings.js:1288
-#: src/blocks/blog-posts/settings.js:1579
-#: src/blocks/blog-posts/settings.js:1591
-#: src/blocks/blog-posts/settings.js:1818
-#: src/blocks/blog-posts/settings.js:1929
-#: src/blocks/blog-posts/settings.js:1945
-#: src/blocks/blog-posts/settings.js:2098
-#: src/blocks/blog-posts/settings.js:2278
-#: src/blocks/blog-posts/settings.js:2288
-#: src/blocks/blog-posts/settings.js:2456
-#: src/blocks/blog-posts/settings.js:2495
+#: src/blocks/blog-posts/settings.js:1289
+#: src/blocks/blog-posts/settings.js:1581
+#: src/blocks/blog-posts/settings.js:1593
+#: src/blocks/blog-posts/settings.js:1820
+#: src/blocks/blog-posts/settings.js:1931
+#: src/blocks/blog-posts/settings.js:1948
+#: src/blocks/blog-posts/settings.js:2102
+#: src/blocks/blog-posts/settings.js:2282
+#: src/blocks/blog-posts/settings.js:2292
+#: src/blocks/blog-posts/settings.js:2460
+#: src/blocks/blog-posts/settings.js:2499
 #: src/blocks/business-hours/settings.js:112
 #: src/blocks/business-hours/settings.js:151
-#: src/blocks/button/settings.js:224
-#: src/blocks/button/settings.js:240
+#: src/blocks/button/settings.js:225
+#: src/blocks/button/settings.js:241
 #: src/blocks/container/settings.js:792
 #: src/blocks/countdown-timer/settings.js:247
 #: src/blocks/countdown-timer/settings.js:260
@@ -1717,9 +1717,9 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:959
 #: src/blocks/fun-fact/settings.js:1057
 #: src/blocks/heading/settings.js:314
-#: src/blocks/heading/settings.js:427
-#: src/blocks/heading/settings.js:559
-#: src/blocks/heading/settings.js:816
+#: src/blocks/heading/settings.js:428
+#: src/blocks/heading/settings.js:561
+#: src/blocks/heading/settings.js:818
 #: src/blocks/icon-box/settings.js:508
 #: src/blocks/icon-box/settings.js:529
 #: src/blocks/icon-box/settings.js:573
@@ -1764,11 +1764,11 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:179
 #: src/blocks/social-icons/settings.js:193
 #: src/blocks/social-icons/settings.js:351
-#: src/blocks/social-icons/settings.js:409
+#: src/blocks/social-icons/settings.js:410
 #: src/blocks/social-share/settings.js:229
 #: src/blocks/social-share/settings.js:244
 #: src/blocks/social-share/settings.js:421
-#: src/blocks/social-share/settings.js:479
+#: src/blocks/social-share/settings.js:480
 #: src/blocks/team/settings.js:222
 #: src/blocks/team/settings.js:477
 #: src/blocks/team/settings.js:515
@@ -1779,18 +1779,18 @@ msgstr ""
 #: src/blocks/team/settings.js:782
 #: src/blocks/team/settings.js:826
 #: src/blocks/team/settings.js:839
-#: src/blocks/testimonial/settings.js:838
-#: src/blocks/testimonial/settings.js:868
-#: src/blocks/testimonial/settings.js:899
-#: src/blocks/testimonial/settings.js:1020
-#: src/blocks/testimonial/settings.js:1039
-#: src/blocks/testimonial/settings.js:1058
-#: src/blocks/testimonial/settings.js:1319
-#: src/blocks/testimonial/settings.js:1363
+#: src/blocks/testimonial/settings.js:840
+#: src/blocks/testimonial/settings.js:870
+#: src/blocks/testimonial/settings.js:901
+#: src/blocks/testimonial/settings.js:1022
+#: src/blocks/testimonial/settings.js:1041
+#: src/blocks/testimonial/settings.js:1060
+#: src/blocks/testimonial/settings.js:1321
+#: src/blocks/testimonial/settings.js:1365
 #: src/blocks/video/settings.js:725
 #: src/blocks/video/settings.js:742
 #: src/gkit-components/components/background/index.js:192
-#: src/gkit-components/components/blend-mode/index.js:47
+#: src/gkit-components/components/blend-mode/index.js:72
 #: src/gkit-components/components/color/index.js:17
 #: src/gkit-components/components/swiper/arrow.js:333
 #: src/gkit-components/components/swiper/arrow.js:360
@@ -1807,10 +1807,10 @@ msgstr ""
 #: build/7787.js:1
 #: build/8389.js:1
 #: build/blocks/advanced-paragraph/index.js:1
-#: src/blocks/advanced-paragraph/settings.js:311
-#: src/blocks/blog-posts/settings.js:2103
+#: src/blocks/advanced-paragraph/settings.js:313
+#: src/blocks/blog-posts/settings.js:2107
 #: src/blocks/heading/settings.js:319
-#: src/blocks/heading/settings.js:434
+#: src/blocks/heading/settings.js:435
 #: src/blocks/icon-box/settings.js:515
 #: src/blocks/icon-box/settings.js:536
 #: src/blocks/page-list/settings.js:963
@@ -1865,18 +1865,18 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:373
 #: src/blocks/advanced-image/settings.js:963
 #: src/blocks/advanced-paragraph/settings.js:126
-#: src/blocks/advanced-paragraph/settings.js:213
-#: src/blocks/advanced-paragraph/settings.js:318
-#: src/blocks/advanced-paragraph/settings.js:400
+#: src/blocks/advanced-paragraph/settings.js:215
+#: src/blocks/advanced-paragraph/settings.js:320
+#: src/blocks/advanced-paragraph/settings.js:403
 #: src/blocks/advanced-tab/settings.js:585
 #: src/blocks/back-to-top/settings.js:214
 #: src/blocks/blog-posts/settings.js:1127
-#: src/blocks/blog-posts/settings.js:1574
-#: src/blocks/blog-posts/settings.js:1586
-#: src/blocks/blog-posts/settings.js:1813
-#: src/blocks/blog-posts/settings.js:1905
-#: src/blocks/blog-posts/settings.js:2108
-#: src/blocks/blog-posts/settings.js:2427
+#: src/blocks/blog-posts/settings.js:1576
+#: src/blocks/blog-posts/settings.js:1588
+#: src/blocks/blog-posts/settings.js:1815
+#: src/blocks/blog-posts/settings.js:1907
+#: src/blocks/blog-posts/settings.js:2112
+#: src/blocks/blog-posts/settings.js:2431
 #: src/blocks/business-hours/settings.js:117
 #: src/blocks/business-hours/settings.js:156
 #: src/blocks/button/settings.js:193
@@ -1903,11 +1903,11 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:814
 #: src/blocks/fun-fact/settings.js:861
 #: src/blocks/header-info/settings.js:137
-#: src/blocks/heading/settings.js:343
-#: src/blocks/heading/settings.js:441
-#: src/blocks/heading/settings.js:566
-#: src/blocks/heading/settings.js:821
-#: src/blocks/heading/settings.js:954
+#: src/blocks/heading/settings.js:344
+#: src/blocks/heading/settings.js:442
+#: src/blocks/heading/settings.js:568
+#: src/blocks/heading/settings.js:823
+#: src/blocks/heading/settings.js:956
 #: src/blocks/icon-box/settings.js:522
 #: src/blocks/icon-box/settings.js:545
 #: src/blocks/icon-box/settings.js:866
@@ -1952,10 +1952,10 @@ msgstr ""
 #: src/blocks/team/settings.js:719
 #: src/blocks/team/settings.js:748
 #: src/blocks/team/settings.js:777
-#: src/blocks/testimonial/settings.js:848
-#: src/blocks/testimonial/settings.js:878
-#: src/blocks/testimonial/settings.js:1329
-#: src/blocks/testimonial/settings.js:1373
+#: src/blocks/testimonial/settings.js:850
+#: src/blocks/testimonial/settings.js:880
+#: src/blocks/testimonial/settings.js:1331
+#: src/blocks/testimonial/settings.js:1375
 #: src/blocks/video/settings.js:596
 #: src/gkit-components/components/typography/index.js:68
 #: src/modules/class-manager/components/class-style-manager.js:177
@@ -2022,8 +2022,8 @@ msgstr ""
 #: build/3576.js:1
 #: build/8001.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/heading/settings.js:367
-#: src/blocks/heading/settings.js:751
+#: src/blocks/heading/settings.js:368
+#: src/blocks/heading/settings.js:753
 #: src/blocks/icon-box/settings.js:634
 #: src/blocks/image-accordion/settings.js:285
 #: src/blocks/pricing-table/settings.js:670
@@ -2074,18 +2074,18 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:1061
 #: src/blocks/back-to-top/settings.js:151
 #: src/blocks/blog-posts/settings.js:939
-#: src/blocks/blog-posts/settings.js:1352
-#: src/blocks/blog-posts/settings.js:1419
-#: src/blocks/blog-posts/settings.js:2046
-#: src/blocks/blog-posts/settings.js:2202
+#: src/blocks/blog-posts/settings.js:1354
+#: src/blocks/blog-posts/settings.js:1421
+#: src/blocks/blog-posts/settings.js:2050
+#: src/blocks/blog-posts/settings.js:2206
 #: src/blocks/button/settings.js:143
 #: src/blocks/container/ShapeDividerSetting.js:38
 #: src/blocks/countdown-timer/settings.js:144
 #: src/blocks/dual-button/settings.js:787
 #: src/blocks/fun-fact/settings.js:1068
-#: src/blocks/heading/settings.js:640
-#: src/blocks/heading/settings.js:688
-#: src/blocks/heading/settings.js:855
+#: src/blocks/heading/settings.js:642
+#: src/blocks/heading/settings.js:690
+#: src/blocks/heading/settings.js:857
 #: src/blocks/icon-box/settings.js:656
 #: src/blocks/image-accordion/settings.js:410
 #: src/blocks/image-box/settings.js:435
@@ -2108,10 +2108,10 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:277
 #: src/blocks/social-share/settings.js:326
 #: src/blocks/team/settings.js:617
-#: src/blocks/testimonial/settings.js:1246
+#: src/blocks/testimonial/settings.js:1248
 #: src/blocks/video/settings.js:451
 #: src/blocks/video/settings.js:612
-#: src/blocks/video/settings.js:982
+#: src/blocks/video/settings.js:983
 #: src/gkit-components/components/swiper/arrow.js:281
 #: src/gkit-components/components/swiper/dot.js:241
 #: src/gkit-components/components/swiper/dot.js:377
@@ -2149,17 +2149,17 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:1092
 #: src/blocks/back-to-top/settings.js:183
 #: src/blocks/blog-posts/settings.js:969
-#: src/blocks/blog-posts/settings.js:1340
-#: src/blocks/blog-posts/settings.js:1394
-#: src/blocks/blog-posts/settings.js:2060
-#: src/blocks/blog-posts/settings.js:2183
+#: src/blocks/blog-posts/settings.js:1342
+#: src/blocks/blog-posts/settings.js:1396
+#: src/blocks/blog-posts/settings.js:2064
+#: src/blocks/blog-posts/settings.js:2187
 #: src/blocks/container/ShapeDividerSetting.js:26
 #: src/blocks/countdown-timer/settings.js:169
 #: src/blocks/dual-button/settings.js:812
 #: src/blocks/fun-fact/settings.js:970
 #: src/blocks/fun-fact/settings.js:1086
-#: src/blocks/heading/settings.js:729
-#: src/blocks/heading/settings.js:877
+#: src/blocks/heading/settings.js:731
+#: src/blocks/heading/settings.js:879
 #: src/blocks/icon-box/settings.js:675
 #: src/blocks/image-box/settings.js:275
 #: src/blocks/image-box/settings.js:831
@@ -2175,11 +2175,11 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:305
 #: src/blocks/social-share/settings.js:354
 #: src/blocks/team/settings.js:634
-#: src/blocks/testimonial/settings.js:808
-#: src/blocks/testimonial/settings.js:1272
+#: src/blocks/testimonial/settings.js:810
+#: src/blocks/testimonial/settings.js:1274
 #: src/blocks/video/settings.js:480
 #: src/blocks/video/settings.js:640
-#: src/blocks/video/settings.js:997
+#: src/blocks/video/settings.js:998
 #: src/gkit-components/components/swiper/arrow.js:263
 #: src/gkit-components/components/swiper/dot.js:262
 #: src/gkit-components/components/swiper/dot.js:398
@@ -2217,21 +2217,21 @@ msgstr ""
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-image/settings.js:585
-#: src/blocks/advanced-image/settings.js:1053
+#: src/blocks/advanced-image/settings.js:1054
 #: src/blocks/advanced-paragraph/settings.js:157
-#: src/blocks/advanced-paragraph/settings.js:221
+#: src/blocks/advanced-paragraph/settings.js:223
 #: src/blocks/advanced-tab/settings.js:646
 #: src/blocks/back-to-top/settings.js:268
 #: src/blocks/blog-posts/settings.js:580
 #: src/blocks/blog-posts/settings.js:744
 #: src/blocks/blog-posts/settings.js:1080
 #: src/blocks/blog-posts/settings.js:1226
-#: src/blocks/blog-posts/settings.js:1914
-#: src/blocks/blog-posts/settings.js:2264
-#: src/blocks/blog-posts/settings.js:2442
-#: src/blocks/button/settings.js:210
-#: src/blocks/button/settings.js:275
-#: src/blocks/button/settings.js:384
+#: src/blocks/blog-posts/settings.js:1916
+#: src/blocks/blog-posts/settings.js:2268
+#: src/blocks/blog-posts/settings.js:2446
+#: src/blocks/button/settings.js:211
+#: src/blocks/button/settings.js:276
+#: src/blocks/button/settings.js:385
 #: src/blocks/container/settings.js:535
 #: src/blocks/container/settings.js:593
 #: src/blocks/container/settings.js:648
@@ -2273,13 +2273,13 @@ msgstr ""
 #: src/blocks/social-share/settings.js:407
 #: src/blocks/team/settings.js:295
 #: src/blocks/team/settings.js:814
-#: src/blocks/testimonial/settings.js:632
-#: src/blocks/testimonial/settings.js:1002
-#: src/blocks/testimonial/settings.js:1206
+#: src/blocks/testimonial/settings.js:634
+#: src/blocks/testimonial/settings.js:1004
+#: src/blocks/testimonial/settings.js:1208
 #: src/blocks/video/settings.js:711
 #: src/blocks/video/settings.js:776
-#: src/blocks/video/settings.js:1144
-#: src/gkit-components/components/blend-mode/index.js:15
+#: src/blocks/video/settings.js:1145
+#: src/gkit-components/components/blend-mode/index.js:16
 #: src/gkit-components/components/swiper/arrow.js:321
 #: src/gkit-components/components/swiper/dot.js:216
 #: src/global/components/advanced-control.js:237
@@ -2320,9 +2320,9 @@ msgstr ""
 #: build/gutenkit/global.js:1
 #: src/blocks/advanced-accordion/settings.js:173
 #: src/blocks/advanced-image/settings.js:592
-#: src/blocks/advanced-image/settings.js:1057
+#: src/blocks/advanced-image/settings.js:1058
 #: src/blocks/advanced-paragraph/settings.js:161
-#: src/blocks/advanced-paragraph/settings.js:225
+#: src/blocks/advanced-paragraph/settings.js:227
 #: src/blocks/advanced-tab/settings.js:434
 #: src/blocks/advanced-tab/settings.js:650
 #: src/blocks/back-to-top/settings.js:272
@@ -2330,12 +2330,12 @@ msgstr ""
 #: src/blocks/blog-posts/settings.js:748
 #: src/blocks/blog-posts/settings.js:1084
 #: src/blocks/blog-posts/settings.js:1230
-#: src/blocks/blog-posts/settings.js:1918
-#: src/blocks/blog-posts/settings.js:2268
-#: src/blocks/blog-posts/settings.js:2446
-#: src/blocks/button/settings.js:214
-#: src/blocks/button/settings.js:279
-#: src/blocks/button/settings.js:388
+#: src/blocks/blog-posts/settings.js:1920
+#: src/blocks/blog-posts/settings.js:2272
+#: src/blocks/blog-posts/settings.js:2450
+#: src/blocks/button/settings.js:215
+#: src/blocks/button/settings.js:280
+#: src/blocks/button/settings.js:389
 #: src/blocks/container/settings.js:539
 #: src/blocks/container/settings.js:597
 #: src/blocks/container/settings.js:652
@@ -2379,12 +2379,12 @@ msgstr ""
 #: src/blocks/social-share/settings.js:411
 #: src/blocks/team/settings.js:299
 #: src/blocks/team/settings.js:818
-#: src/blocks/testimonial/settings.js:636
-#: src/blocks/testimonial/settings.js:1006
-#: src/blocks/testimonial/settings.js:1210
+#: src/blocks/testimonial/settings.js:638
+#: src/blocks/testimonial/settings.js:1008
+#: src/blocks/testimonial/settings.js:1212
 #: src/blocks/video/settings.js:715
 #: src/blocks/video/settings.js:780
-#: src/blocks/video/settings.js:1148
+#: src/blocks/video/settings.js:1149
 #: src/gkit-components/components/swiper/arrow.js:325
 #: src/gkit-components/components/swiper/dot.js:220
 #: src/global/components/advanced-control.js:241
@@ -2426,20 +2426,20 @@ msgstr ""
 #: build/modules/page-settings/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:189
 #: src/blocks/advanced-image/settings.js:948
-#: src/blocks/advanced-paragraph/settings.js:240
-#: src/blocks/advanced-paragraph/settings.js:256
-#: src/blocks/advanced-paragraph/settings.js:367
-#: src/blocks/advanced-paragraph/settings.js:389
-#: src/blocks/advanced-paragraph/settings.js:419
+#: src/blocks/advanced-paragraph/settings.js:242
+#: src/blocks/advanced-paragraph/settings.js:258
+#: src/blocks/advanced-paragraph/settings.js:370
+#: src/blocks/advanced-paragraph/settings.js:392
+#: src/blocks/advanced-paragraph/settings.js:423
 #: src/blocks/advanced-tab/settings.js:484
 #: src/blocks/back-to-top/settings.js:288
 #: src/blocks/back-to-top/settings.js:355
 #: src/blocks/blog-posts/settings.js:595
 #: src/blocks/blog-posts/settings.js:632
 #: src/blocks/blog-posts/settings.js:1251
-#: src/blocks/blog-posts/settings.js:1298
-#: src/blocks/blog-posts/settings.js:2463
-#: src/blocks/blog-posts/settings.js:2502
+#: src/blocks/blog-posts/settings.js:1299
+#: src/blocks/blog-posts/settings.js:2467
+#: src/blocks/blog-posts/settings.js:2506
 #: src/blocks/business-hours/settings.js:55
 #: src/blocks/container/settings.js:530
 #: src/blocks/countdown-timer/settings.js:720
@@ -2455,11 +2455,11 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:578
 #: src/blocks/header-info/settings.js:259
 #: src/blocks/header-info/settings.js:293
-#: src/blocks/heading/settings.js:494
-#: src/blocks/heading/settings.js:522
-#: src/blocks/heading/settings.js:620
-#: src/blocks/heading/settings.js:633
-#: src/blocks/heading/settings.js:681
+#: src/blocks/heading/settings.js:496
+#: src/blocks/heading/settings.js:524
+#: src/blocks/heading/settings.js:622
+#: src/blocks/heading/settings.js:635
+#: src/blocks/heading/settings.js:683
 #: src/blocks/icon-box/settings.js:723
 #: src/blocks/icon-box/settings.js:779
 #: src/blocks/icon-box/settings.js:959
@@ -2488,20 +2488,20 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:1275
 #: src/blocks/progress-bar/settings.js:176
 #: src/blocks/social-icons/settings.js:356
-#: src/blocks/social-icons/settings.js:414
+#: src/blocks/social-icons/settings.js:415
 #: src/blocks/social-share/settings.js:426
-#: src/blocks/social-share/settings.js:484
-#: src/blocks/testimonial/settings.js:505
-#: src/blocks/testimonial/settings.js:650
-#: src/blocks/testimonial/settings.js:685
-#: src/blocks/testimonial/settings.js:709
-#: src/blocks/testimonial/settings.js:1026
-#: src/blocks/testimonial/settings.js:1045
-#: src/blocks/testimonial/settings.js:1064
-#: src/blocks/testimonial/settings.js:1189
-#: src/blocks/testimonial/settings.js:1575
-#: src/blocks/video/settings.js:1158
-#: src/blocks/video/settings.js:1208
+#: src/blocks/social-share/settings.js:485
+#: src/blocks/testimonial/settings.js:507
+#: src/blocks/testimonial/settings.js:652
+#: src/blocks/testimonial/settings.js:687
+#: src/blocks/testimonial/settings.js:711
+#: src/blocks/testimonial/settings.js:1028
+#: src/blocks/testimonial/settings.js:1047
+#: src/blocks/testimonial/settings.js:1066
+#: src/blocks/testimonial/settings.js:1191
+#: src/blocks/testimonial/settings.js:1577
+#: src/blocks/video/settings.js:1159
+#: src/blocks/video/settings.js:1209
 #: src/gkit-components/components/swiper/arrow.js:338
 #: src/gkit-components/components/swiper/arrow.js:365
 #: src/gkit-components/components/swiper/dot.js:234
@@ -2560,9 +2560,9 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:658
 #: src/blocks/advanced-image/settings.js:688
 #: src/blocks/advanced-image/settings.js:844
-#: src/blocks/advanced-paragraph/settings.js:270
-#: src/blocks/advanced-paragraph/settings.js:373
-#: src/blocks/advanced-paragraph/settings.js:442
+#: src/blocks/advanced-paragraph/settings.js:272
+#: src/blocks/advanced-paragraph/settings.js:376
+#: src/blocks/advanced-paragraph/settings.js:446
 #: src/blocks/advanced-tab/settings.js:497
 #: src/blocks/advanced-tab/settings.js:691
 #: src/blocks/advanced-tab/settings.js:748
@@ -2572,16 +2572,16 @@ msgstr ""
 #: src/blocks/back-to-top/settings.js:391
 #: src/blocks/blog-posts/settings.js:1012
 #: src/blocks/blog-posts/settings.js:1266
-#: src/blocks/blog-posts/settings.js:1313
-#: src/blocks/blog-posts/settings.js:1637
-#: src/blocks/blog-posts/settings.js:1847
-#: src/blocks/blog-posts/settings.js:2371
-#: src/blocks/blog-posts/settings.js:2533
+#: src/blocks/blog-posts/settings.js:1314
+#: src/blocks/blog-posts/settings.js:1639
+#: src/blocks/blog-posts/settings.js:1849
+#: src/blocks/blog-posts/settings.js:2375
+#: src/blocks/blog-posts/settings.js:2537
 #: src/blocks/business-hours/settings.js:76
 #: src/blocks/business-hours/settings.js:128
 #: src/blocks/business-hours/settings.js:167
-#: src/blocks/button/settings.js:310
-#: src/blocks/button/settings.js:354
+#: src/blocks/button/settings.js:311
+#: src/blocks/button/settings.js:355
 #: src/blocks/container/settings.js:681
 #: src/blocks/container/settings.js:726
 #: src/blocks/countdown-timer/settings.js:281
@@ -2604,7 +2604,7 @@ msgstr ""
 #: src/blocks/faq/settings.js:166
 #: src/blocks/fun-fact/settings.js:532
 #: src/blocks/fun-fact/settings.js:618
-#: src/blocks/heading/settings.js:500
+#: src/blocks/heading/settings.js:502
 #: src/blocks/icon-box/settings.js:741
 #: src/blocks/icon-box/settings.js:797
 #: src/blocks/icon-box/settings.js:980
@@ -2647,22 +2647,22 @@ msgstr ""
 #: src/blocks/progress-bar/settings.js:214
 #: src/blocks/progress-bar/settings.js:256
 #: src/blocks/social-icons/settings.js:368
-#: src/blocks/social-icons/settings.js:426
+#: src/blocks/social-icons/settings.js:427
 #: src/blocks/social-share/settings.js:438
-#: src/blocks/social-share/settings.js:496
+#: src/blocks/social-share/settings.js:497
 #: src/blocks/team/settings.js:393
 #: src/blocks/team/settings.js:462
 #: src/blocks/team/settings.js:598
 #: src/blocks/team/settings.js:860
-#: src/blocks/testimonial/settings.js:580
-#: src/blocks/testimonial/settings.js:1102
-#: src/blocks/testimonial/settings.js:1130
-#: src/blocks/testimonial/settings.js:1546
+#: src/blocks/testimonial/settings.js:582
+#: src/blocks/testimonial/settings.js:1104
+#: src/blocks/testimonial/settings.js:1132
+#: src/blocks/testimonial/settings.js:1548
 #: src/blocks/video/settings.js:799
 #: src/blocks/video/settings.js:821
-#: src/blocks/video/settings.js:952
-#: src/blocks/video/settings.js:1177
-#: src/blocks/video/settings.js:1227
+#: src/blocks/video/settings.js:953
+#: src/blocks/video/settings.js:1178
+#: src/blocks/video/settings.js:1228
 #: src/gkit-components/components/swiper/arrow.js:307
 #: src/gkit-components/components/swiper/dot.js:288
 #: src/global/components/advanced-control.js:322
@@ -2707,11 +2707,11 @@ msgstr ""
 #: src/blocks/blog-posts/settings.js:829
 #: src/blocks/blog-posts/settings.js:1063
 #: src/blocks/blog-posts/settings.js:1272
-#: src/blocks/blog-posts/settings.js:1319
-#: src/blocks/blog-posts/settings.js:1654
-#: src/blocks/blog-posts/settings.js:2353
-#: src/blocks/blog-posts/settings.js:2479
-#: src/blocks/blog-posts/settings.js:2516
+#: src/blocks/blog-posts/settings.js:1320
+#: src/blocks/blog-posts/settings.js:1656
+#: src/blocks/blog-posts/settings.js:2357
+#: src/blocks/blog-posts/settings.js:2483
+#: src/blocks/blog-posts/settings.js:2520
 #: src/blocks/countdown-timer/settings.js:317
 #: src/blocks/countdown-timer/settings.js:416
 #: src/blocks/countdown-timer/settings.js:514
@@ -2748,22 +2748,21 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:1177
 #: src/blocks/offcanvas/settings.js:1310
 #: src/blocks/social-icons/settings.js:385
-#: src/blocks/social-icons/settings.js:443
+#: src/blocks/social-icons/settings.js:444
 #: src/blocks/social-share/settings.js:455
-#: src/blocks/social-share/settings.js:513
+#: src/blocks/social-share/settings.js:514
 #: src/blocks/team/settings.js:314
 #: src/blocks/team/settings.js:342
 #: src/blocks/team/settings.js:450
 #: src/blocks/team/settings.js:604
-#: src/blocks/testimonial/settings.js:674
-#: src/blocks/testimonial/settings.js:698
-#: src/blocks/testimonial/settings.js:722
-#: src/blocks/testimonial/settings.js:1493
+#: src/blocks/testimonial/settings.js:676
+#: src/blocks/testimonial/settings.js:700
+#: src/blocks/testimonial/settings.js:724
+#: src/blocks/testimonial/settings.js:1495
 #: src/blocks/video/settings.js:859
-#: src/blocks/video/settings.js:967
-#: src/blocks/video/settings.js:1198
-#: src/blocks/video/settings.js:1248
-#: src/gkit-components/components/box-shadow/index.js:36
+#: src/blocks/video/settings.js:968
+#: src/blocks/video/settings.js:1199
+#: src/blocks/video/settings.js:1249
 #: src/gkit-components/components/swiper/arrow.js:351
 #: src/gkit-components/components/swiper/arrow.js:376
 #: src/global/components/advanced-control.js:328
@@ -2810,18 +2809,18 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:342
 #: src/blocks/advanced-accordion/settings.js:393
 #: src/blocks/advanced-accordion/settings.js:666
-#: src/blocks/advanced-paragraph/settings.js:286
-#: src/blocks/advanced-paragraph/settings.js:342
-#: src/blocks/advanced-paragraph/settings.js:458
+#: src/blocks/advanced-paragraph/settings.js:288
+#: src/blocks/advanced-paragraph/settings.js:345
+#: src/blocks/advanced-paragraph/settings.js:462
 #: src/blocks/advanced-tab/settings.js:515
 #: src/blocks/advanced-tab/settings.js:600
 #: src/blocks/advanced-tab/settings.js:990
 #: src/blocks/blog-posts/settings.js:701
 #: src/blocks/blog-posts/settings.js:842
 #: src/blocks/blog-posts/settings.js:1030
-#: src/blocks/blog-posts/settings.js:1605
-#: src/blocks/blog-posts/settings.js:1829
-#: src/blocks/blog-posts/settings.js:2551
+#: src/blocks/blog-posts/settings.js:1607
+#: src/blocks/blog-posts/settings.js:1831
+#: src/blocks/blog-posts/settings.js:2555
 #: src/blocks/business-hours/settings.js:88
 #: src/blocks/business-hours/settings.js:139
 #: src/blocks/business-hours/settings.js:178
@@ -2835,8 +2834,8 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:386
 #: src/blocks/fun-fact/settings.js:828
 #: src/blocks/header-info/settings.js:313
-#: src/blocks/heading/settings.js:465
-#: src/blocks/heading/settings.js:594
+#: src/blocks/heading/settings.js:467
+#: src/blocks/heading/settings.js:596
 #: src/blocks/icon-box/settings.js:844
 #: src/blocks/icon-box/settings.js:1072
 #: src/blocks/icon-box/settings.js:1147
@@ -2872,20 +2871,20 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1995
 #: src/blocks/pricing-table/settings.js:2373
 #: src/blocks/progress-bar/settings.js:220
-#: src/blocks/social-icons/settings.js:471
-#: src/blocks/social-icons/settings.js:495
-#: src/blocks/social-share/settings.js:541
+#: src/blocks/social-icons/settings.js:473
+#: src/blocks/social-icons/settings.js:497
+#: src/blocks/social-share/settings.js:543
 #: src/blocks/team/settings.js:408
 #: src/blocks/team/settings.js:653
 #: src/blocks/team/settings.js:867
-#: src/blocks/testimonial/settings.js:613
-#: src/blocks/testimonial/settings.js:783
-#: src/blocks/testimonial/settings.js:963
-#: src/blocks/testimonial/settings.js:1147
+#: src/blocks/testimonial/settings.js:615
+#: src/blocks/testimonial/settings.js:785
+#: src/blocks/testimonial/settings.js:965
+#: src/blocks/testimonial/settings.js:1149
 #: src/blocks/video/settings.js:528
 #: src/blocks/video/settings.js:546
-#: src/blocks/video/settings.js:929
-#: src/blocks/video/settings.js:1046
+#: src/blocks/video/settings.js:930
+#: src/blocks/video/settings.js:1047
 #: src/global/components/advanced-control.js:53
 #: src/modules/class-manager/components/class-style-manager.js:433
 #: src/modules/page-settings/editor.js:104
@@ -2928,10 +2927,10 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:229
 #: src/blocks/social-share/settings.js:279
 #: src/blocks/team/settings.js:577
-#: src/blocks/testimonial/settings.js:910
-#: src/blocks/testimonial/settings.js:1079
+#: src/blocks/testimonial/settings.js:912
+#: src/blocks/testimonial/settings.js:1081
 #: src/blocks/video/settings.js:566
-#: src/blocks/video/settings.js:1022
+#: src/blocks/video/settings.js:1023
 #: src/gkit-components/components/swiper/arrow.js:244
 msgid "Icon Size"
 msgstr ""
@@ -2955,7 +2954,7 @@ msgstr ""
 
 #: build/84.js:1
 #: build/8789.js:1
-#: src/blocks/button/settings.js:484
+#: src/blocks/button/settings.js:485
 #: src/blocks/icon-box/settings.js:902
 msgid "Move icon Vertically"
 msgstr ""
@@ -2976,7 +2975,7 @@ msgstr ""
 #: src/blocks/dual-button/settings.js:729
 #: src/blocks/header-info/settings.js:241
 #: src/blocks/header-info/settings.js:275
-#: src/blocks/heading/settings.js:959
+#: src/blocks/heading/settings.js:961
 #: src/blocks/icon-box/settings.js:954
 #: src/blocks/icon-box/settings.js:1012
 #: src/blocks/image-box/settings.js:1237
@@ -3091,7 +3090,7 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:646
 #: src/blocks/advanced-image/settings.js:669
 #: src/blocks/advanced-image/settings.js:825
-#: src/blocks/advanced-paragraph/settings.js:426
+#: src/blocks/advanced-paragraph/settings.js:430
 #: src/blocks/advanced-tab/settings.js:1007
 #: src/blocks/back-to-top/settings.js:306
 #: src/blocks/back-to-top/settings.js:373
@@ -3101,12 +3100,12 @@ msgstr ""
 #: src/blocks/blog-posts/settings.js:804
 #: src/blocks/blog-posts/settings.js:1006
 #: src/blocks/blog-posts/settings.js:1260
-#: src/blocks/blog-posts/settings.js:1307
-#: src/blocks/blog-posts/settings.js:2359
+#: src/blocks/blog-posts/settings.js:1308
+#: src/blocks/blog-posts/settings.js:2363
 #: src/blocks/business-hours/settings.js:61
-#: src/blocks/button/settings.js:270
-#: src/blocks/button/settings.js:290
-#: src/blocks/button/settings.js:334
+#: src/blocks/button/settings.js:271
+#: src/blocks/button/settings.js:291
+#: src/blocks/button/settings.js:335
 #: src/blocks/container/settings.js:643
 #: src/blocks/container/settings.js:663
 #: src/blocks/container/settings.js:708
@@ -3125,7 +3124,7 @@ msgstr ""
 #: src/blocks/faq/settings.js:68
 #: src/blocks/faq/settings.js:156
 #: src/blocks/fun-fact/settings.js:514
-#: src/blocks/heading/settings.js:963
+#: src/blocks/heading/settings.js:965
 #: src/blocks/image-accordion/settings.js:215
 #: src/blocks/image-accordion/settings.js:343
 #: src/blocks/image-accordion/settings.js:372
@@ -3173,22 +3172,22 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:2252
 #: src/blocks/pricing-table/settings.js:2327
 #: src/blocks/social-icons/settings.js:362
-#: src/blocks/social-icons/settings.js:420
+#: src/blocks/social-icons/settings.js:421
 #: src/blocks/social-share/settings.js:432
-#: src/blocks/social-share/settings.js:490
+#: src/blocks/social-share/settings.js:491
 #: src/blocks/team/settings.js:319
 #: src/blocks/team/settings.js:347
 #: src/blocks/team/settings.js:456
 #: src/blocks/team/settings.js:593
 #: src/blocks/team/settings.js:855
-#: src/blocks/testimonial/settings.js:658
-#: src/blocks/testimonial/settings.js:1478
+#: src/blocks/testimonial/settings.js:660
+#: src/blocks/testimonial/settings.js:1480
 #: src/blocks/video/settings.js:771
 #: src/blocks/video/settings.js:791
 #: src/blocks/video/settings.js:813
-#: src/blocks/video/settings.js:945
-#: src/blocks/video/settings.js:1170
-#: src/blocks/video/settings.js:1220
+#: src/blocks/video/settings.js:946
+#: src/blocks/video/settings.js:1171
+#: src/blocks/video/settings.js:1221
 #: src/gkit-components/components/border-control/index.js:67
 #: src/gkit-components/components/swiper/arrow.js:346
 #: src/gkit-components/components/swiper/dot.js:282
@@ -3207,8 +3206,8 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/blog-posts/settings.js:128
 #: src/blocks/container/settings.js:58
-#: src/blocks/testimonial/settings.js:68
-#: src/blocks/testimonial/settings.js:555
+#: src/blocks/testimonial/settings.js:69
+#: src/blocks/testimonial/settings.js:557
 #: src/global/components/advanced-control.js:43
 #: src/modules/class-manager/components/class-style-manager.js:429
 msgid "Layout"
@@ -3242,113 +3241,113 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:67
 #: src/blocks/social-share/settings.js:71
 #: src/blocks/team/settings.js:70
-#: src/blocks/testimonial/settings.js:70
+#: src/blocks/testimonial/settings.js:71
 msgid "Select Style"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:74
+#: src/blocks/testimonial/settings.js:75
 msgid "Primary Style"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:81
+#: src/blocks/testimonial/settings.js:82
 msgid "Grid Style"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:82
+#: src/blocks/testimonial/settings.js:83
 msgid "Grid Style without image"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:89
+#: src/blocks/testimonial/settings.js:90
 msgid "With Rating"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:90
+#: src/blocks/testimonial/settings.js:91
 msgid "Image With Rating"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:97
+#: src/blocks/testimonial/settings.js:98
 msgid "With Avatar"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:98
+#: src/blocks/testimonial/settings.js:99
 msgid "Image With Avatar"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:105
+#: src/blocks/testimonial/settings.js:106
 msgid "With Quote"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:106
+#: src/blocks/testimonial/settings.js:107
 msgid "Image With Quote"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:113
+#: src/blocks/testimonial/settings.js:114
 msgid "Review Rating"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:114
+#: src/blocks/testimonial/settings.js:115
 msgid "Image With Review and Rating"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:121
+#: src/blocks/testimonial/settings.js:122
 msgid "Review, Rating and Avatar"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:123
+#: src/blocks/testimonial/settings.js:124
 msgid "Image With Review, Rating and Avatar"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:134
-#: src/blocks/testimonial/settings.js:264
+#: src/blocks/testimonial/settings.js:135
+#: src/blocks/testimonial/settings.js:265
 msgid "Testimonial"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:139
+#: src/blocks/testimonial/settings.js:140
 msgid "Enable Quote Icon"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:155
+#: src/blocks/testimonial/settings.js:156
 msgid "Show Quote Icon Badge"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:165
+#: src/blocks/testimonial/settings.js:166
 msgid "Quote Icon Position"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:180
+#: src/blocks/testimonial/settings.js:181
 msgid "Custom Position"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:237
+#: src/blocks/testimonial/settings.js:238
 msgid "Enable Rating"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:244
+#: src/blocks/testimonial/settings.js:245
 msgid "Active Rating Icon"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:249
+#: src/blocks/testimonial/settings.js:250
 msgid "Normal Rating Icon"
 msgstr ""
 
@@ -3356,19 +3355,19 @@ msgstr ""
 #: build/2311.js:1
 #: build/4986.js:1
 #: src/blocks/blog-posts/settings.js:479
-#: src/blocks/blog-posts/settings.js:2027
+#: src/blocks/blog-posts/settings.js:2031
 #: src/blocks/heading/settings.js:230
-#: src/blocks/testimonial/settings.js:259
+#: src/blocks/testimonial/settings.js:260
 msgid "Show Separator"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:274
-#: src/blocks/testimonial/settings.js:287
-#: src/blocks/testimonial/settings.js:300
-#: src/blocks/testimonial/settings.js:313
-#: src/blocks/testimonial/settings.js:326
-#: src/blocks/testimonial/settings.js:897
+#: src/blocks/testimonial/settings.js:276
+#: src/blocks/testimonial/settings.js:289
+#: src/blocks/testimonial/settings.js:302
+#: src/blocks/testimonial/settings.js:315
+#: src/blocks/testimonial/settings.js:328
+#: src/blocks/testimonial/settings.js:899
 msgid "Rating"
 msgstr ""
 
@@ -3384,7 +3383,7 @@ msgstr ""
 #: build/blocks/advanced-paragraph/index.js:1
 #: build/blocks/nav-menu-item/index.js:3
 #: src/blocks/advanced-image/settings.js:188
-#: src/blocks/advanced-paragraph/settings.js:211
+#: src/blocks/advanced-paragraph/settings.js:213
 #: src/blocks/dual-button/settings.js:175
 #: src/blocks/dual-button/settings.js:232
 #: src/blocks/header-info/settings.js:87
@@ -3393,7 +3392,7 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:248
 #: src/blocks/social-icons/settings.js:172
 #: src/blocks/team/settings.js:218
-#: src/blocks/testimonial/settings.js:339
+#: src/blocks/testimonial/settings.js:341
 #: src/blocks/video/settings.js:82
 #: src/blocks/video/settings.js:90
 #: src/blocks/video/settings.js:118
@@ -3401,54 +3400,54 @@ msgid "Link"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:347
-#: src/blocks/testimonial/settings.js:363
-#: src/blocks/testimonial/settings.js:379
-#: src/blocks/testimonial/settings.js:395
-#: src/blocks/testimonial/settings.js:411
-#: src/blocks/testimonial/settings.js:459
+#: src/blocks/testimonial/settings.js:349
+#: src/blocks/testimonial/settings.js:365
+#: src/blocks/testimonial/settings.js:381
+#: src/blocks/testimonial/settings.js:397
+#: src/blocks/testimonial/settings.js:413
+#: src/blocks/testimonial/settings.js:461
 msgid "Client Avatar"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:427
-#: src/blocks/testimonial/settings.js:443
-#: src/blocks/testimonial/settings.js:486
+#: src/blocks/testimonial/settings.js:429
+#: src/blocks/testimonial/settings.js:445
+#: src/blocks/testimonial/settings.js:488
 msgid "Logo"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:476
+#: src/blocks/testimonial/settings.js:478
 msgid "Logo on hover?"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:501
+#: src/blocks/testimonial/settings.js:503
 msgid "Active Testimonial"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:518
+#: src/blocks/testimonial/settings.js:520
 msgid "Slider Settings"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:525
+#: src/blocks/testimonial/settings.js:527
 msgid "Show Dots"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:531
+#: src/blocks/testimonial/settings.js:533
 msgid "Show Arrow"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:538
+#: src/blocks/testimonial/settings.js:540
 msgid "Left Arrow Icon"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:544
+#: src/blocks/testimonial/settings.js:546
 msgid "Right Arrow Icon"
 msgstr ""
 
@@ -3460,7 +3459,7 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:133
 #: src/blocks/countdown-timer/settings.js:213
 #: src/blocks/page-list/settings.js:456
-#: src/blocks/testimonial/settings.js:558
+#: src/blocks/testimonial/settings.js:560
 #: src/modules/class-manager/components/class-style-manager.js:630
 #: src/modules/class-manager/components/class-style-manager.js:762
 msgid "Column Gap"
@@ -3469,7 +3468,7 @@ msgstr ""
 #: build/384.js:1
 #: build/6616.js:1
 #: src/blocks/team/settings.js:671
-#: src/blocks/testimonial/settings.js:597
+#: src/blocks/testimonial/settings.js:599
 msgid "Wrapper Padding"
 msgstr ""
 
@@ -3486,8 +3485,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:520
 #: src/blocks/post-tab/settings.js:35
 #: src/blocks/post-tab/settings.js:52
-#: src/blocks/testimonial/settings.js:640
-#: src/blocks/testimonial/settings.js:1010
+#: src/blocks/testimonial/settings.js:642
+#: src/blocks/testimonial/settings.js:1012
 #: src/gkit-components/components/swiper/dot.js:224
 msgid "Active"
 msgstr ""
@@ -3511,7 +3510,7 @@ msgstr ""
 #: src/blocks/dual-button/settings.js:458
 #: src/blocks/dual-button/settings.js:674
 #: src/blocks/fun-fact/settings.js:598
-#: src/blocks/heading/settings.js:408
+#: src/blocks/heading/settings.js:409
 #: src/blocks/nav-menu-submenu/settings.js:249
 #: src/blocks/nav-menu-submenu/settings.js:278
 #: src/blocks/nav-menu/settings.js:591
@@ -3523,14 +3522,14 @@ msgstr ""
 #: src/blocks/social-share/settings.js:238
 #: src/blocks/social-share/settings.js:254
 #: src/blocks/team/settings.js:230
-#: src/blocks/testimonial/settings.js:692
-#: src/blocks/testimonial/settings.js:716
+#: src/blocks/testimonial/settings.js:694
+#: src/blocks/testimonial/settings.js:718
 #: src/gkit-components/components/swiper/arrow.js:371
 msgid "Border Color"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:734
+#: src/blocks/testimonial/settings.js:736
 msgid "Wrapper Content Style"
 msgstr ""
 
@@ -3538,71 +3537,71 @@ msgstr ""
 #: build/8389.js:1
 #: src/blocks/page-list/settings.js:731
 #: src/blocks/page-list/settings.js:1197
-#: src/blocks/testimonial/settings.js:738
+#: src/blocks/testimonial/settings.js:740
 msgid "Vertical Alignment"
 msgstr ""
 
 #: build/384.js:1
 #: build/8389.js:1
 #: src/blocks/page-list/settings.js:1170
-#: src/blocks/testimonial/settings.js:760
+#: src/blocks/testimonial/settings.js:762
 msgid "Horizontal Alignment"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:800
+#: src/blocks/testimonial/settings.js:802
 msgid "Use Fixed Height"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:836
+#: src/blocks/testimonial/settings.js:838
 msgid "Review Title"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:843
-#: src/blocks/testimonial/settings.js:873
-#: src/blocks/testimonial/settings.js:904
-#: src/blocks/testimonial/settings.js:1324
-#: src/blocks/testimonial/settings.js:1368
+#: src/blocks/testimonial/settings.js:845
+#: src/blocks/testimonial/settings.js:875
+#: src/blocks/testimonial/settings.js:906
+#: src/blocks/testimonial/settings.js:1326
+#: src/blocks/testimonial/settings.js:1370
 msgid "Hover & Active Color"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:866
+#: src/blocks/testimonial/settings.js:868
 msgid "Review Description"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:936
+#: src/blocks/testimonial/settings.js:938
 msgid "Items Spacing"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:997
+#: src/blocks/testimonial/settings.js:999
 msgid "Quote Icon"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1201
+#: src/blocks/testimonial/settings.js:1203
 msgid "Title Separator"
 msgstr ""
 
 #: build/384.js:1
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:2038
-#: src/blocks/testimonial/settings.js:1220
-#: src/blocks/testimonial/settings.js:1232
+#: src/blocks/blog-posts/settings.js:2042
+#: src/blocks/testimonial/settings.js:1222
+#: src/blocks/testimonial/settings.js:1234
 msgid "Separator Color"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1316
+#: src/blocks/testimonial/settings.js:1318
 msgid "Client"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1317
+#: src/blocks/testimonial/settings.js:1319
 msgid "Client Name"
 msgstr ""
 
@@ -3622,26 +3621,26 @@ msgstr ""
 #: src/blocks/team/settings.js:701
 #: src/blocks/team/settings.js:730
 #: src/blocks/team/settings.js:759
-#: src/blocks/testimonial/settings.js:1336
-#: src/blocks/testimonial/settings.js:1589
+#: src/blocks/testimonial/settings.js:1338
+#: src/blocks/testimonial/settings.js:1591
 msgid "Margin Bottom"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1361
+#: src/blocks/testimonial/settings.js:1363
 msgid "Client Designation"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1401
+#: src/blocks/testimonial/settings.js:1403
 msgid "Client Image"
 msgstr ""
 
 #: build/384.js:1
 #: build/4986.js:1
 #: src/blocks/blog-posts/settings.js:229
-#: src/blocks/testimonial/settings.js:1404
-#: src/blocks/testimonial/settings.js:1424
+#: src/blocks/testimonial/settings.js:1406
+#: src/blocks/testimonial/settings.js:1426
 msgid "Image Position"
 msgstr ""
 
@@ -3649,13 +3648,13 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/mail-chimp/settings.js:582
 #: src/blocks/mail-chimp/settings.js:722
-#: src/blocks/testimonial/settings.js:1418
+#: src/blocks/testimonial/settings.js:1420
 msgid "Use Position"
 msgstr ""
 
 #: build/384.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/testimonial/settings.js:1499
+#: src/blocks/testimonial/settings.js:1501
 #: src/gkit-components/components/background-overlay/index.js:236
 #: src/gkit-components/components/background/index.js:227
 #: src/gkit-components/components/media/index.js:129
@@ -3663,17 +3662,17 @@ msgid "Image Size"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1586
+#: src/blocks/testimonial/settings.js:1588
 msgid "Client Logo"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1618
+#: src/blocks/testimonial/settings.js:1620
 msgid "Dots"
 msgstr ""
 
 #: build/384.js:1
-#: src/blocks/testimonial/settings.js:1626
+#: src/blocks/testimonial/settings.js:1628
 msgid "Arrows"
 msgstr ""
 
@@ -4144,7 +4143,7 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:298
 #: src/blocks/blog-posts/settings.js:759
 #: src/blocks/blog-posts/settings.js:799
-#: src/blocks/blog-posts/settings.js:1823
+#: src/blocks/blog-posts/settings.js:1825
 #: src/blocks/business-hours-item/settings.js:44
 #: src/blocks/icon/settings.js:174
 #: src/blocks/icon/settings.js:224
@@ -4166,7 +4165,7 @@ msgstr ""
 #: src/blocks/team/settings.js:226
 #: src/blocks/team/settings.js:831
 #: src/blocks/team/settings.js:844
-#: src/blocks/video/settings.js:922
+#: src/blocks/video/settings.js:923
 msgid "Background Color"
 msgstr ""
 
@@ -4230,20 +4229,20 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-image/settings.js:978
 #: src/blocks/advanced-paragraph/settings.js:176
-#: src/blocks/advanced-paragraph/settings.js:195
-#: src/blocks/advanced-paragraph/settings.js:332
-#: src/blocks/advanced-paragraph/settings.js:410
+#: src/blocks/advanced-paragraph/settings.js:196
+#: src/blocks/advanced-paragraph/settings.js:334
+#: src/blocks/advanced-paragraph/settings.js:413
 #: src/blocks/blog-posts/settings.js:1277
-#: src/blocks/blog-posts/settings.js:1324
-#: src/blocks/blog-posts/settings.js:1934
-#: src/blocks/blog-posts/settings.js:1950
+#: src/blocks/blog-posts/settings.js:1325
+#: src/blocks/blog-posts/settings.js:1936
+#: src/blocks/blog-posts/settings.js:1953
 #: src/blocks/button/settings.js:199
 #: src/blocks/heading/settings.js:324
-#: src/blocks/heading/settings.js:455
+#: src/blocks/heading/settings.js:456
 #: src/blocks/social-icons/settings.js:392
-#: src/blocks/social-icons/settings.js:450
+#: src/blocks/social-icons/settings.js:451
 #: src/blocks/social-share/settings.js:462
-#: src/blocks/social-share/settings.js:520
+#: src/blocks/social-share/settings.js:521
 #: src/blocks/video/settings.js:865
 #: src/modules/class-manager/components/class-style-manager.js:217
 msgid "Text Shadow"
@@ -4274,7 +4273,7 @@ msgstr ""
 #: build/2311.js:1
 #: build/8389.js:1
 #: src/blocks/heading/settings.js:116
-#: src/blocks/heading/settings.js:557
+#: src/blocks/heading/settings.js:559
 #: src/blocks/page-list/settings.js:1041
 msgid "Subtitle"
 msgstr ""
@@ -4316,7 +4315,7 @@ msgstr ""
 
 #: build/2311.js:1
 #: src/blocks/heading/settings.js:171
-#: src/blocks/heading/settings.js:814
+#: src/blocks/heading/settings.js:816
 msgid "Title Description"
 msgstr ""
 
@@ -4340,7 +4339,7 @@ msgstr ""
 
 #: build/2311.js:1
 #: src/blocks/heading/settings.js:207
-#: src/blocks/heading/settings.js:928
+#: src/blocks/heading/settings.js:930
 msgid "Shadow Text"
 msgstr ""
 
@@ -4351,9 +4350,9 @@ msgstr ""
 
 #: build/2311.js:1
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1338
+#: src/blocks/blog-posts/settings.js:1340
 #: src/blocks/heading/settings.js:228
-#: src/blocks/heading/settings.js:849
+#: src/blocks/heading/settings.js:851
 msgid "Separator"
 msgstr ""
 
@@ -4395,6 +4394,7 @@ msgstr ""
 #: src/gkit-components/components/background/index.js:253
 #: src/gkit-components/components/background/index.js:350
 #: src/gkit-components/components/border-control/index.js:50
+#: src/gkit-components/components/box-shadow/index.js:178
 #: src/modules/class-manager/components/class-style-manager.js:459
 msgid "Custom"
 msgstr ""
@@ -4434,93 +4434,93 @@ msgid "General"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:351
+#: src/blocks/heading/settings.js:352
 msgid "Border Width"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:359
+#: src/blocks/heading/settings.js:360
 msgid "Border Height"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:380
+#: src/blocks/heading/settings.js:381
 msgid "Right Gap"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:395
+#: src/blocks/heading/settings.js:396
 msgid "Left Gap"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:425
+#: src/blocks/heading/settings.js:426
 msgid "Focused Title"
 msgstr ""
 
 #: build/2311.js:1
 #: build/blocks/advanced-paragraph/index.js:1
-#: src/blocks/advanced-paragraph/settings.js:325
-#: src/blocks/heading/settings.js:448
+#: src/blocks/advanced-paragraph/settings.js:327
+#: src/blocks/heading/settings.js:449
 msgid "Text Decoration Color"
 msgstr ""
 
 #: build/2311.js:1
 #: build/blocks/advanced-paragraph/index.js:1
-#: src/blocks/advanced-paragraph/settings.js:360
-#: src/blocks/heading/settings.js:484
+#: src/blocks/advanced-paragraph/settings.js:363
+#: src/blocks/heading/settings.js:486
 msgid "Use background on text"
 msgstr ""
 
 #: build/2311.js:1
 #: build/blocks/advanced-paragraph/index.js:1
-#: src/blocks/advanced-paragraph/settings.js:382
-#: src/blocks/heading/settings.js:512
-#: src/blocks/heading/settings.js:613
+#: src/blocks/advanced-paragraph/settings.js:385
+#: src/blocks/heading/settings.js:514
+#: src/blocks/heading/settings.js:615
 msgid "Use Text Fill"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:531
+#: src/blocks/heading/settings.js:533
 msgid "Use Stroke"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:538
-#: src/blocks/heading/settings.js:965
+#: src/blocks/heading/settings.js:540
+#: src/blocks/heading/settings.js:967
 msgid "Stroke Width"
 msgstr ""
 
 #: build/2311.js:1
 #: build/4672.js:1
 #: src/blocks/advanced-tab/settings.js:1130
-#: src/blocks/heading/settings.js:547
-#: src/blocks/heading/settings.js:973
+#: src/blocks/heading/settings.js:549
+#: src/blocks/heading/settings.js:975
 msgid "Stroke Color"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:631
+#: src/blocks/heading/settings.js:633
 msgid "Subtitle Border Left"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:679
+#: src/blocks/heading/settings.js:681
 msgid "Subtitle Border Right"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:780
+#: src/blocks/heading/settings.js:782
 msgid "Outline"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:788
+#: src/blocks/heading/settings.js:790
 msgid "Outline Radius"
 msgstr ""
 
 #: build/2311.js:1
-#: src/blocks/heading/settings.js:898
+#: src/blocks/heading/settings.js:900
 msgid "Separator color"
 msgstr ""
 
@@ -4532,7 +4532,7 @@ msgstr ""
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-tab/settings.js:557
-#: src/blocks/heading/settings.js:931
+#: src/blocks/heading/settings.js:933
 #: src/blocks/mail-chimp/settings.js:589
 #: src/blocks/mail-chimp/settings.js:758
 #: src/blocks/pricing-table/settings.js:1524
@@ -4655,12 +4655,10 @@ msgstr ""
 #: build/3576.js:1
 #: build/7787.js:1
 #: build/9807.js:1
-#: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/image-accordion/settings.js:129
 #: src/blocks/post-tab/settings.js:181
-#: src/blocks/video/settings.js:1110
-#: src/gkit-components/components/box-shadow/index.js:47
+#: src/blocks/video/settings.js:1111
 #: src/modules/class-manager/components/box-shadow-settings.js:41
 msgid "Horizontal"
 msgstr ""
@@ -4668,12 +4666,10 @@ msgstr ""
 #: build/3576.js:1
 #: build/7787.js:1
 #: build/9807.js:1
-#: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/image-accordion/settings.js:130
 #: src/blocks/post-tab/settings.js:186
-#: src/blocks/video/settings.js:1086
-#: src/gkit-components/components/box-shadow/index.js:58
+#: src/blocks/video/settings.js:1087
 #: src/modules/class-manager/components/box-shadow-settings.js:50
 msgid "Vertical"
 msgstr ""
@@ -4747,7 +4743,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/blog-posts/settings.js:256
-#: src/blocks/button/settings.js:458
+#: src/blocks/button/settings.js:459
 #: src/blocks/container/settings.js:296
 #: src/blocks/image-accordion/settings.js:422
 #: src/blocks/mail-chimp/settings.js:1085
@@ -5021,9 +5017,9 @@ msgstr ""
 #: build/8001.js:1
 #: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:998
+#: src/blocks/advanced-image/settings.js:999
 #: src/blocks/advanced-tab/settings.js:962
-#: src/blocks/blog-posts/settings.js:1369
+#: src/blocks/blog-posts/settings.js:1371
 #: src/blocks/mail-chimp/settings.js:397
 #: src/blocks/pricing-table/settings.js:2047
 #: src/gkit-components/components/swiper/setting.js:71
@@ -5035,15 +5031,15 @@ msgstr ""
 #: build/4986.js:1
 #: build/6616.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:1041
-#: src/blocks/advanced-image/settings.js:1067
-#: src/blocks/advanced-image/settings.js:1078
+#: src/blocks/advanced-image/settings.js:1042
+#: src/blocks/advanced-image/settings.js:1068
+#: src/blocks/advanced-image/settings.js:1079
 #: src/blocks/blog-posts/settings.js:1094
 #: src/blocks/blog-posts/settings.js:1103
 #: src/blocks/container/settings.js:607
 #: src/blocks/container/settings.js:618
 #: src/blocks/team/settings.js:81
-#: src/gkit-components/components/blend-mode/index.js:27
+#: src/gkit-components/components/blend-mode/index.js:28
 msgid "Overlay"
 msgstr ""
 
@@ -5051,7 +5047,7 @@ msgstr ""
 #: build/4783.js:1
 #: build/4986.js:1
 #: build/8606.js:1
-#: src/blocks/advanced-image/settings.js:1043
+#: src/blocks/advanced-image/settings.js:1044
 #: src/blocks/blog-posts/settings.js:1069
 #: src/blocks/container/settings.js:583
 #: src/blocks/offcanvas/settings.js:303
@@ -5063,7 +5059,7 @@ msgstr ""
 #: build/admin/dashboard/index.js:1
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
-#: src/blocks/advanced-image/settings.js:1084
+#: src/blocks/advanced-image/settings.js:1085
 #: src/blocks/container/settings.js:561
 #: src/blocks/container/settings.js:624
 #: src/blocks/container/settings.js:747
@@ -5885,7 +5881,7 @@ msgstr ""
 
 #: build/4986.js:1
 #: src/blocks/blog-posts/settings.js:870
-#: src/blocks/blog-posts/settings.js:2313
+#: src/blocks/blog-posts/settings.js:2317
 msgid "Image Width"
 msgstr ""
 
@@ -5926,7 +5922,7 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/advanced-accordion-item/settings.js:57
 #: src/blocks/blog-posts/settings.js:1246
-#: src/blocks/blog-posts/settings.js:1293
+#: src/blocks/blog-posts/settings.js:1294
 #: src/blocks/donut-progress-bar/settings.js:492
 #: src/blocks/header-info/settings.js:250
 #: src/blocks/header-info/settings.js:284
@@ -5942,77 +5938,77 @@ msgstr ""
 #: src/blocks/page-list/settings.js:810
 #: src/blocks/page-list/settings.js:852
 #: src/blocks/progress-bar/settings.js:317
-#: src/blocks/video/settings.js:1164
-#: src/blocks/video/settings.js:1214
+#: src/blocks/video/settings.js:1165
+#: src/blocks/video/settings.js:1215
 msgid "Icon Color"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1388
+#: src/blocks/blog-posts/settings.js:1390
 msgid "Floating Date"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1572
+#: src/blocks/blog-posts/settings.js:1574
 msgid "Date Typography"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1584
+#: src/blocks/blog-posts/settings.js:1586
 msgid "Month Typography"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1671
+#: src/blocks/blog-posts/settings.js:1673
 msgid "Triangle"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1673
+#: src/blocks/blog-posts/settings.js:1675
 msgid "Triangle Background"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1680
+#: src/blocks/blog-posts/settings.js:1682
 msgid "Triangle Size"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1688
+#: src/blocks/blog-posts/settings.js:1690
 msgid "Triangle Position Left"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1705
+#: src/blocks/blog-posts/settings.js:1707
 msgid "Triangle Position Top"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1722
+#: src/blocks/blog-posts/settings.js:1724
 msgid "Triangle Direction"
 msgstr ""
 
 #: build/4986.js:1
 #: build/7621.js:1
-#: src/blocks/blog-posts/settings.js:1725
+#: src/blocks/blog-posts/settings.js:1727
 #: src/blocks/fun-fact/settings.js:941
 msgid "From Left"
 msgstr ""
 
 #: build/4986.js:1
 #: build/7621.js:1
-#: src/blocks/blog-posts/settings.js:1730
+#: src/blocks/blog-posts/settings.js:1732
 #: src/blocks/fun-fact/settings.js:946
 msgid "From Right"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1751
+#: src/blocks/blog-posts/settings.js:1753
 msgid "Floating Category"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:1865
+#: src/blocks/blog-posts/settings.js:1867
 msgid "Space Between Categories"
 msgstr ""
 
@@ -6020,40 +6016,40 @@ msgstr ""
 #: build/blocks/advanced-paragraph/index.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-paragraph/settings.js:108
-#: src/blocks/blog-posts/settings.js:1983
-#: src/blocks/blog-posts/settings.js:2133
+#: src/blocks/blog-posts/settings.js:1987
+#: src/blocks/blog-posts/settings.js:2137
 #: src/modules/class-manager/components/class-style-manager.js:206
 #: src/modules/class-manager/components/class-style-manager.js:726
 msgid "Justify"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:2174
+#: src/blocks/blog-posts/settings.js:2178
 msgid "Show Highlight Border"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:2221
+#: src/blocks/blog-posts/settings.js:2225
 msgid "Top Bottom Position"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:2240
+#: src/blocks/blog-posts/settings.js:2244
 msgid "Left Right Position"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:2309
+#: src/blocks/blog-posts/settings.js:2313
 msgid "Author Image"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:2333
+#: src/blocks/blog-posts/settings.js:2337
 msgid "Image Height"
 msgstr ""
 
 #: build/4986.js:1
-#: src/blocks/blog-posts/settings.js:2432
+#: src/blocks/blog-posts/settings.js:2436
 msgid "Between Spacing"
 msgstr ""
 
@@ -7220,7 +7216,7 @@ msgstr ""
 #: build/8606.js:1
 #: build/9807.js:1
 #: src/blocks/offcanvas/settings.js:311
-#: src/blocks/video/settings.js:916
+#: src/blocks/video/settings.js:917
 msgid "Overlay Color"
 msgstr ""
 
@@ -7274,20 +7270,20 @@ msgid "Add Icon"
 msgstr ""
 
 #: build/8789.js:1
-#: src/blocks/button/settings.js:251
+#: src/blocks/button/settings.js:252
 msgid "Transform Y"
 msgstr ""
 
 #: build/8789.js:1
 #: build/9807.js:1
-#: src/blocks/button/settings.js:379
+#: src/blocks/button/settings.js:380
 #: src/blocks/video/settings.js:857
 msgid "Shadow"
 msgstr ""
 
 #: build/8789.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/button/settings.js:422
+#: src/blocks/button/settings.js:423
 #: src/modules/class-manager/components/typography-settings.js:106
 msgid "Font Size"
 msgstr ""
@@ -7456,7 +7452,9 @@ msgid "Switch Color"
 msgstr ""
 
 #: build/9634.js:1
+#: build/gutenkit/components.js:1
 #: src/blocks/countdown-timer/settings.js:61
+#: src/gkit-components/components/box-shadow/shadow-presets.js:53
 msgid "Presets"
 msgstr ""
 
@@ -7626,7 +7624,7 @@ msgstr ""
 
 #: build/9807.js:1
 #: src/blocks/video/settings.js:160
-#: src/blocks/video/settings.js:914
+#: src/blocks/video/settings.js:915
 msgid "Popup"
 msgstr ""
 
@@ -7799,22 +7797,22 @@ msgid "Radio Wave Size"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:876
+#: src/blocks/video/settings.js:877
 msgid "Padding Right"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:973
+#: src/blocks/video/settings.js:974
 msgid "Popup Close Button"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:1063
+#: src/blocks/video/settings.js:1064
 msgid "Icon Custom Position"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:1071
+#: src/blocks/video/settings.js:1072
 msgid "Close Button Position"
 msgstr ""
 
@@ -8315,7 +8313,7 @@ msgid "Easily create and customize engaging popups to capture your audience's at
 msgstr ""
 
 #: build/blocks/advanced-accordion-item/index.js:1
-#: src/blocks/advanced-accordion-item/edit.js:89
+#: src/blocks/advanced-accordion-item/edit.js:91
 msgid "How to Change my Photo from Admin Dashboard?"
 msgstr ""
 
@@ -8337,12 +8335,12 @@ msgid "Enable Drop Cap?"
 msgstr ""
 
 #: build/blocks/advanced-paragraph/index.js:1
-#: src/blocks/advanced-paragraph/settings.js:302
+#: src/blocks/advanced-paragraph/settings.js:304
 msgid "Focused Text"
 msgstr ""
 
 #: build/blocks/advanced-paragraph/index.js:1
-#: src/blocks/advanced-paragraph/settings.js:398
+#: src/blocks/advanced-paragraph/settings.js:401
 msgid "Drop Cap"
 msgstr ""
 
@@ -9028,65 +9026,80 @@ msgid "Add exclusive Video Scroller for Background Video with Gutenkit Pro."
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:10
+#: src/gkit-components/components/blend-mode/index.js:11
 msgid "Blend Mode"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:19
+#: src/gkit-components/components/blend-mode/index.js:20
 msgid "Multiply"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:23
+#: src/gkit-components/components/blend-mode/index.js:24
 msgid "Screen"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:31
+#: src/gkit-components/components/blend-mode/index.js:32
 msgid "Darken"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:35
+#: src/gkit-components/components/blend-mode/index.js:36
 msgid "Lighten"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:39
+#: src/gkit-components/components/blend-mode/index.js:40
 msgid "Color Dodge"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:43
-#: src/gkit-components/components/css-filters/index.js:101
-msgid "Saturation"
+#: src/gkit-components/components/blend-mode/index.js:44
+msgid "Color Burn"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:51
-msgid "Luminosity"
+#: src/gkit-components/components/blend-mode/index.js:48
+msgid "Hard Light"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:55
+#: src/gkit-components/components/blend-mode/index.js:52
+msgid "Soft Light"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/blend-mode/index.js:56
 msgid "Difference"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:59
+#: src/gkit-components/components/blend-mode/index.js:60
 msgid "Exclusion"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/blend-mode/index.js:63
+#: src/gkit-components/components/blend-mode/index.js:64
 #: src/gkit-components/components/css-filters/index.js:116
 msgid "Hue"
 msgstr ""
 
 #: build/gutenkit/components.js:1
+#: src/gkit-components/components/blend-mode/index.js:68
+#: src/gkit-components/components/css-filters/index.js:101
+msgid "Saturation"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/blend-mode/index.js:76
+msgid "Luminosity"
+msgstr ""
+
+#: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/gkit-components/components/box-shadow/index.js:69
+#: src/gkit-components/components/box-shadow/popover.js:97
 #: src/gkit-components/components/css-filters/index.js:39
 #: src/modules/class-manager/components/box-shadow-settings.js:59
 msgid "Blur"
@@ -9118,10 +9131,55 @@ msgid "Sepia"
 msgstr ""
 
 #: build/gutenkit/components.js:1
+#: src/gkit-components/components/box-shadow/popover.js:62
+msgid "Outset"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/box-shadow/popover.js:66
+msgid "Inset"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/box-shadow/popover.js:73
+msgid "X Position"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/box-shadow/popover.js:85
+msgid "Y Position"
+msgstr ""
+
+#: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/gkit-components/components/box-shadow/index.js:76
+#: src/gkit-components/components/box-shadow/popover.js:108
 #: src/modules/class-manager/components/box-shadow-settings.js:66
 msgid "Spread"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: build/modules/class-manager/editor.js:1
+#: src/gkit-components/components/box-shadow/shadow-presets.js:22
+#: src/modules/class-manager/components/class-style-manager.js:319
+#: src/modules/class-manager/components/class-style-manager.js:344
+#: src/modules/class-manager/components/class-style-manager.js:364
+#: src/modules/class-manager/components/class-style-manager.js:378
+msgid "Unset"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/box-shadow/shadow-presets.js:36
+msgid "No presets found"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/box-shadow/index.js:194
+msgid "Preset"
+msgstr ""
+
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/box-shadow/index.js:204
+msgid "Reset"
 msgstr ""
 
 #: build/gutenkit/components.js:1
@@ -9166,7 +9224,7 @@ msgid "Enable"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/repeater/index.js:145
+#: src/gkit-components/components/repeater/index.js:147
 msgid "Add Item"
 msgstr ""
 
@@ -9473,14 +9531,6 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/modules/class-manager/components/class-style-manager.js:303
 msgid "Linecap"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:319
-#: src/modules/class-manager/components/class-style-manager.js:344
-#: src/modules/class-manager/components/class-style-manager.js:364
-#: src/modules/class-manager/components/class-style-manager.js:378
-msgid "Unset"
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1

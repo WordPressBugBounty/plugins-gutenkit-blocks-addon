@@ -119,7 +119,8 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 			$typographies = array_filter(
 				$parsed_block['attrs'],
 				function ( $key ) {
-					return str_contains( strtolower( $key ), 'typography' );
+					$key = strtolower($key);
+        			return str_contains($key, 'typography') || str_contains($key, 'typo');
 				},
 				ARRAY_FILTER_USE_KEY
 			);

@@ -46,6 +46,7 @@
       "type": "array",
       "default": [
         {
+          "gkitTestimonialReviewLabel": "Very Professional",
           "gkitTestimonialClientName": "Testimonial #1",
           "gkitTestimonialClientDesignation": "Designation",
           "gkitTestimonialReviewText": "Review Text",
@@ -72,10 +73,10 @@
           "gkitActiveTestimonial": false,
           "gkitIndividualBackground": {
             "type": "object"
-          },
-          "gkitTestimonialReviewLabel": "Very Professional"
+          }
         },
         {
+          "gkitTestimonialReviewLabel": "Very Professional",
           "gkitTestimonialClientName": "Testimonial #2",
           "gkitTestimonialClientDesignation": "Designation",
           "gkitTestimonialReviewText": "Review Text",
@@ -102,10 +103,10 @@
           "gkitActiveTestimonial": false,
           "gkitIndividualBackground": {
             "type": "object"
-          },
-          "gkitTestimonialReviewLabel": "Very Professional"
+          }
         },
         {
+          "gkitTestimonialReviewLabel": "Very Professional",
           "gkitTestimonialClientName": "Testimonial #3",
           "gkitTestimonialClientDesignation": "Designation",
           "gkitTestimonialReviewText": "Review Text",
@@ -132,10 +133,10 @@
           "gkitActiveTestimonial": false,
           "gkitIndividualBackground": {
             "type": "object"
-          },
-          "gkitTestimonialReviewLabel": "Very Professional"
+          }
         },
         {
+          "gkitTestimonialReviewLabel": "Very Professional",
           "gkitTestimonialClientName": "Testimonial #4",
           "gkitTestimonialClientDesignation": "Designation",
           "gkitTestimonialReviewText": "Review Text",
@@ -162,8 +163,7 @@
           "gkitActiveTestimonial": false,
           "gkitIndividualBackground": {
             "type": "object"
-          },
-          "gkitTestimonialReviewLabel": "Very Professional"
+          }
         }
       ],
       "excludeCopy": true

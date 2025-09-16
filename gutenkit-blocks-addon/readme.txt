@@ -1,10 +1,10 @@
 === GutenKit – Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor ===
 Contributors: xpeedstudio, Ataurr, emranio
-Tags: block editor, gutenberg blocks, gutenberg, wordpress blocks, page builder
+Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.4.1
+Stable tag: 2.4.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,11 +15,11 @@ GutenKit – Ultimate no-code Gutenberg blocks to design stunning web pages and 
 
 No more struggling with complicated page builders or the need for coding expertise.
 
-[Introducing GutenKit for Gutenberg](https://wpgutenkit.com/?utm_source=org&utm_medium=readme), the best Gutenberg page builder experience right within the WordPress block editor.
+[Introducing GutenKit for Gutenberg](https://wpgutenkit.com/?utm_source=org&utm_medium=readme), the best Gutenberg page builder with ready blocks to experience the best website design experience right inside the WordPress block editor.
 
-This block editor plugin brings the familiar ease of drag-and-drop design to Gutenberg, making it feel just like using a page builder—but faster and more lightweight. With Gutenberg’s native drag-and-drop interface, **65+ page builder blocks**, **20+ versatile modules**, and **900+ pre-designed templates**, GutenKit finds itself among the best Gutenberg addons where you can create professional, responsive web content in minutes.
+Gutenkit block builder plugin brings the familiar ease of drag-and-drop design to Gutenberg, making it feel just like using a page builder—but faster and more lightweight. With Gutenberg’s native drag-and-drop interface, **65+ page builder blocks**, **20+ versatile modules**, and **900+ pre-designed templates**, GutenKit finds itself among the best Gutenberg addons where you can create professional, responsive web content in minutes.
 
-GutenKit with features like Gutenberg mega menu builder, query loop builder, dynamic content, flexible container, responsive breakpoints, and so on, is easily the best Gutenberg page builder for your WordPress website.
+With features like a Gutenberg mega menu, query loop builder, dynamic content, flexible containers, advanced parallax effect, and responsive breakpoints, GutenKit is easily the best Gutenberg page builder for your WordPress website.
 
 ⚓Explore **GutenKit capabilities** in action: [Check Live Demo](https://wordpress.org/plugins/gutenkit-blocks-addon/?preview=1)
 
@@ -64,10 +64,10 @@ With GutenKit’s **six additional custom breakpoints**, every block is a respon
 
 This ensures that your website design, content layouts, and every responsive block fits perfectly into any screen, providing a seamless user experience across all devices.
 
-## The Easiest Gutenberg Mega Menu Builder
+## Gutenberg Mega Menu Builder
 
 
-**GutenKit comes with the easiest way to build the mega menu in Gutenberg.** 
+**GutenKit comes with the easiest way to build the mega menu in Gutenberg.**
 With the [Gutenberg Mega Menu builder block](https://wpgutenkit.com/blocks/mega-menu-builder/?utm_source=org&utm_medium=readme) you can create multi-dimensional dropdown menus with submenus.
 
 Using this Gutenberg addon you can create an entire mega menu inside the block editor. You just need to add submenu items and link them to existing website pages. But with this Gutenberg mega menu builder for WordPress, you can even add new items in the menu that will be automatically saved as draft pages on your WordPress site.
@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=EztR8huF1oA
 
 Do all of the advanced filtering without even writing a single line of code. You can **visually query** the WordPress database and show your website post dynamically with the unmatched flexibility of this advanced Gutenberg blocks plugin.
 
-⭐ **Dynamic Content**
+⭐ **Gutenberg Dynamic Content**
 
 [GutenKit’s Dynamic Content](https://wpgutenkit.com/modules/dynamic-content/?utm_source=org&utm_medium=readme) feature turns Gutenberg into a dynamic block editor. This pro feature enables the dynamic insertion of elements like post tags, site titles, author names, and user information by selecting 'Dynamic Content' in the block's options.
 
@@ -140,6 +140,15 @@ Let GutenKit’s page builder blocks help you bring your website to life hassle-
 The [Gutenberg Container block](https://wpgutenkit.com/modules/container/?utm_source=org&utm_medium=readme) makes the block editor a true page builder. This allows you to create custom sections and group content within the Gutenberg editor. You can adjust container width simply by dragging the mouse cursor to right or left, much like the **inline editing experience** in page builders.
 
 Besides, this page builder block offers a range of layout options, enabling effortless customization including **full-width** and **boxed containers** with background, padding, and endless customizations.
+
+🔷 **Advanced Parallax Effect**
+
+Create [Advanced Parallax Effect](https://wpgutenkit.com/modules/parallax-effect/)
+Give an immersive experience to the site visitors with advanced parallax effect for Gutenberg. Choose from a wide range of styles include **transparency, classic, parallax rotate, lower bounce, horizontal scroll**, and more.
+
+🔷 **Advanced Video Gallery**
+
+Create A [Filterable Video Gallery](https://wpgutenkit.com/blocks/video-gallery/) using ready blocks. Showcase the best videos in your website with a few clicks. Let your visitors filter them based on their need.
 
 🔷 **Copy Paste Styles**
 
@@ -307,6 +316,14 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.4.2 (2025-09-15) =
+* Added: FSE box-shadow compatibility across blocks
+* Fixed: Border color handling in getColor helper for consistent styling
+* Fixed: Countdown timer flip color and gap updates
+* Fixed: RichText fields resetting data when switching tabs in the testimonials block
+* Fixed: Nested accordion toggle issue in the advanced accordion block
+* Fixed: Typography not working in some specific blocks
+
 = GutenKit Blocks Addon: 2.4.1 (2025-08-07) =
 * Fixed: Template library is not loading
 
@@ -346,34 +363,6 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 * Improved: Controls label in heading block
 * Improved: Mailchimp submit button loader style controls
 
-= GutenKit Blocks Addon: 2.2.2 (2025-03-10) =
-* Fixed: Fix advanced tab navigation logic and improve background slide initialization
-* Fixed: Refactor SCSS styles for template library buttons and editor layout
-* Fixed: Rephrase some label in the heading block
-* Fixed: Dual button background, color not working issue
-* Fixed: Block error issue in pricing table block
-* Fixed: Input field issue in mailchimp block
-
-= GutenKit Blocks Addon: 2.2.1 (2025-02-16) =
-* Added: Filter to load separate core block assets for non-block themes
-* Fixed: Page settings not working when no GutenKit blocks
-* Fixed: Sticky module warning issue
-* Fixed: Heading block deprecated issue
-* Fixed: Settings pannel tabs erros
-* Fixed: Template library button not working
-* Fixed: Container block z-index conflict with sticky
-* Fixed: Title hover color in advanced accordion block
-* Fixed: Update post type condition in page settings sidebar
-* Improved: Swiper arrow controls across the blocks
-* Improved: Entrance animation editor component for improved readability and performance
-
-= GutenKit Blocks Addon: 2.2.0 (2025-01-20) =
-* Added: Fill style to heartbeat animation in advanced tab block
-* Fixed: API integration dashboard popup close on outside click
-* Fixed: Mailchimp block text area styling issue
-* Improved: Nav submenu controls for mobile menu
-* Improved: Third-party compatibility
-
 [View changelog for all versions.](https://wpgutenkit.com/changelog/)
 
 == Screenshots ==
@@ -383,9 +372,9 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 **Prerequisite:** Must have Gutenberg Block Editor installed and enabled. For WordPress 5.0 or higher versions, Gutenberg is the default editor.
 
-**Installation Process 1:** 
+**Installation Process 1:**
 
-1. Go to the WordPress Dashboard 
+1. Go to the WordPress Dashboard
 2. Navigate to Plugins > Add New
 3. Search for “GutenKit”
 4. Install and Activate the plugin.

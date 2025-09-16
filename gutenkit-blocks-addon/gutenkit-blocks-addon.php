@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpgutenkit.com/
  * Author: Wpmet
- * Version: 2.4.1
+ * Version: 2.4.2
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.4.1';
+	const VERSION = '2.4.2';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -138,7 +138,7 @@ final class Gutenkit {
 			admin_url( 'admin.php?page=gutenkit#welcome' ),
 			esc_html__( 'Settings', 'gutenkit-blocks-addon' )
 		);
-	
+
 		// Only add "Go Pro" link if Pro version is NOT active
 		if ( ! class_exists( 'GutenkitPro' ) ) {
 			$gkit_pro_text = esc_html__( 'Get GutenKit Pro', 'gutenkit-blocks-addon' );
@@ -150,7 +150,7 @@ final class Gutenkit {
 			$links['gutenkit-pro'] = $gkit_pro_link;
 		}
 		array_unshift( $links, $settings_link );
-	
+
 		return $links;
 	}
 
@@ -169,10 +169,10 @@ final class Gutenkit {
 				'docs' => '<a href="https://wpmet.com/doc/gutenkit/" aria-label="' . esc_attr( esc_html__( 'View Gutenkit Documentation', 'gutenkit-blocks-addon' ) ) . '" target="_blank">' . esc_html__( 'Docs & FAQs', 'gutenkit-blocks-addon' ) . '</a>',
 				'ideo' => '<a href="https://tinyurl.com/yc3w3u7m" aria-label="' . esc_attr( esc_html__( 'View Gutenkit Video Tutorials', 'gutenkit-blocks-addon' ) ) . '" target="_blank">' . esc_html__( 'Video Tutorials', 'gutenkit-blocks-addon' ) . '</a>',
 			];
-	
+
 			$plugin_meta = array_merge( $plugin_meta, $row_meta );
 		}
-		
+
 		return $plugin_meta;
 	}
 
@@ -210,7 +210,7 @@ final class Gutenkit {
 
 		/**
 		 * Global Classes Post Type.
-		 * 
+		 *
 		 * @return void
 		 * @since 2.0.0
 		 */
@@ -234,7 +234,7 @@ final class Gutenkit {
 
 		/**
 		 * Register Post Meta.
-		 * 
+		 *
 		 * @return void
 		 * @since 1.0.0
 		 */
@@ -247,7 +247,7 @@ final class Gutenkit {
 		 * @since 1.0.0
 		 */
 		Gutenkit\Libs\AssetGenerator::instance();
-		
+
 		/**
 		 * Initializes the SvgSupport class instance.
 		 *
@@ -270,14 +270,14 @@ final class Gutenkit {
 		 *
 		 * This function creates an instance of the Gutenkit\Routes\MediaUploadFromUrl class
 		 * and initializes it, allowing users to upload media files from a URL.
-		 * 
+		 *
 		 * @since 1.0.0
 		 */
 		Gutenkit\Routes\MediaUploadFromUrl::instance();
 
 		/**
 		 * Initializes the Global Settings route.
-		 * 
+		 *
 		 * This function creates an instance of the Gutenkit\Routes\GlobalSettings class
 		 * and initializes it, allowing users to configure the Gutenkit plugin's global settings.
 		 */
@@ -285,10 +285,10 @@ final class Gutenkit {
 
 		/**
 		 * Initializes the MailChimp route.
-		 * 
+		 *
 		 * This function creates an instance of the Gutenkit\Routes\MailChimp class
 		 * and initializes it, allowing users to register the MailChimp route.
-		 * 
+		 *
 		 * @since 1.5.1
 		 */
 		Gutenkit\Routes\MailChimp::instance();
@@ -296,7 +296,7 @@ final class Gutenkit {
 		/**
 		 * Instantiate the UtilityPackage class.
 		 * This class provides wpmet/utility-package functions.
-		 * 
+		 *
 		 * @since 1.0.0
 		 */
 		if(is_admin()) {
@@ -305,22 +305,22 @@ final class Gutenkit {
 
 		/**
 		 * Adds a global CSS class to the body tag in the editor.
-		 * 
+		 *
 		 * This code snippet demonstrates the usage of shorthand function syntax and the spread operator in PHP.
 		 * The fn($classes) is shorthand for function ($classes), and the ...$classes is used to merge the existing classes with the new 'gutenkit' class.
-		 * 
+		 *
 		 * @param string $classes An array of CSS classes for the body tag.
 		 * @return string The modified list of CSS classes.
 		 * @since 1.0.0
 		 */
 		add_filter('admin_body_class', fn($classes) => $classes . ' gutenkit');
-		
+
 		/**
 		 * Add global CSS class in body frontend
-		 * 
+		 *
 		 * This code snippet demonstrates the usage of shorthand function syntax and the spread operator in PHP.
 		 * The fn($classes) is shorthand for function ($classes), and the ...$classes is used to merge the existing classes with the new 'gutenkit' class.
-		 * 
+		 *
 		 * @param array $classes An array of CSS classes for the body tag.
 		 * @return array The modified array of CSS classes.
 		 * @since 1.0.0
@@ -347,13 +347,13 @@ final class Gutenkit {
  * Kickoff the plugin
  *
  * @since 1.0.0
- *   
+ *
  * 'GutenkitScopedDependencies\Wpmet\UtilityPackage\Helper\Helper'
  * 'GutenkitScopedDependencies\Wpmet\UtilityPackage\Notice\Notice'
  * 'GutenkitScopedDependencies\Wpmet\UtilityPackage\Banner\Banner'
  * 'GutenkitScopedDependencies\Wpmet\UtilityPackage\Stories\Stories'
- *  
- *  Utility package added the path will be mentioned above 
+ *
+ *  Utility package added the path will be mentioned above
  *  for more info see: https://github.com/wpmetcom/utility-pacakge
  */
 new Gutenkit();
