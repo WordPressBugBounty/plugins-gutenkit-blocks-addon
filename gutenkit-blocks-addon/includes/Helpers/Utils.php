@@ -1060,4 +1060,37 @@ class Utils {
 
 		return !in_array($domain, $valid_domains);
 	}
+
+	/**
+	 * Check plugin status for onboard plugins
+	 *
+	 * @param string $plugin_path The plugin path relative to the plugins directory
+	 * @return string Plugin status: 'active', 'inactive', or 'notInstalled'
+	 */
+	private static function check_plugin_status($plugin_path) {
+		$validate_plugin = validate_plugin($plugin_path);
+		if (is_wp_error($validate_plugin)) {
+			return 'notInstalled';
+		}
+
+		return is_plugin_active($plugin_path) ? 'active' : 'inactive';
+	}
+
+	/**
+     * Get onboard plugins with their status and paths
+     *
+     * @return array Onboard plugins with their status
+     */
+	public static function onboard_plugins() {
+		return array(
+			'getgenie'              => self::check_plugin_status( 'getgenie/getgenie.php' ),
+			'elementskit-lite'      => self::check_plugin_status( 'elementskit-lite/elementskit-lite.php' ),
+			'blocks-for-shopengine' => self::check_plugin_status( 'blocks-for-shopengine/shopengine-gutenberg-addon.php' ),
+			'metform'               => self::check_plugin_status( 'metform/metform.php' ),
+			'emailkit'              => self::check_plugin_status( 'emailkit/EmailKit.php' ),
+			'popup-builder-block'   => self::check_plugin_status( 'popup-builder-block/popup-builder-block.php' ),
+			'wp-ultimate-review'    => self::check_plugin_status( 'wp-ultimate-review/wp-ultimate-review.php' ),
+			'wp-social'             => self::check_plugin_status( 'wp-social/wp-social.php' ),
+		);
+	}
 }

@@ -31,7 +31,7 @@
     },
     "date": {
       "type": "string",
-      "default": "2025-09-19T16:03:03"
+      "default": "2030-09-19T12:00:00"
     },
     "dayLabel": {
       "type": "string",

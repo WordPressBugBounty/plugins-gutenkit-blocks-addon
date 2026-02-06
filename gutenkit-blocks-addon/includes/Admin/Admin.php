@@ -27,9 +27,9 @@ class Admin {
 	 */
 	public function __construct() {
 		$this->menu_link_part = admin_url('admin.php?page=gutenkit');
+
 		// Check if a specific Popup Builder Block is active or not
-		$active_plugin = new \Gutenkit\Admin\Api\ActivePluginData;
-		if ( $active_plugin->is_plugin_active('popup-builder-block/popup-builder-block.php')) {
+		if(in_array('popup-builder-block/popup-builder-block.php', apply_filters('active_plugins', get_option('active_plugins')))) {
 			$this->is_popup_active = true;
 		}
 
@@ -60,9 +60,10 @@ class Admin {
 		// Register Onboard API
 		new Api\OnboardData();
 
-		add_action( 'admin_menu', [$this, 'add_admin_menu']);
+		add_action('admin_menu', [$this, 'add_admin_menu']);
 		add_action('admin_enqueue_scripts', [$this, 'enqueue_admin_scripts']);
 		add_action('admin_enqueue_scripts', [$this, 'enqueue_popup_scripts']);
+		add_action('admin_init', [$this, 'redirect_to_popupkit_page']);
 	}
 
 	public function get_onboard_status() {
@@ -110,17 +111,15 @@ class Admin {
 			3
 		);
 
-		if(!$this->is_popup_active) {
-			add_submenu_page(
-				$this->menu_slug,
-				esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
-				esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
-				'manage_options',
-				'popup-builder-block',
-				[$this, 'popup_callback'],
-				4
-			);
-		}
+		add_submenu_page(
+			$this->menu_slug,
+			esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
+			esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
+			'manage_options',
+			'popup-builder-block',
+			[$this, 'popup_callback'],
+			4
+		);
 
 		add_submenu_page(
 			$this->menu_slug,
@@ -155,6 +154,16 @@ class Admin {
 					$onboard_assets['version'],
 					true
 				);
+
+				// localization      
+                wp_localize_script(
+                    'gutenkit-onboard',
+                    'gutenkit_onboard_localize',
+                    array(
+                        'adminUrl' => esc_url(admin_url('/')),
+                        'plugin_status' => \Gutenkit\Helpers\Utils::onboard_plugins(),
+                    )
+                );
 
 				wp_enqueue_style(
 					'gutenkit-onboard',
@@ -235,6 +244,19 @@ class Admin {
 				array('wp-components'),
 				$popup_assets['version']
 			);
+		}
+	}
+
+	public function redirect_to_popupkit_page() {
+		if (!is_admin() || !$this->is_popup_active) {
+			return;
+		}
+
+		$screen_id = isset($_GET['page']) ? sanitize_text_field($_GET['page']) : '';
+
+		if ($screen_id === 'popup-builder-block') {
+			wp_safe_redirect(admin_url('admin.php?page=popupkit'));
+			exit;
 		}
 	}
 }

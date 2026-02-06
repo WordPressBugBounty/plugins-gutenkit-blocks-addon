@@ -611,6 +611,14 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				// 	'status'   => 'inactive',
 				// 	'badge'    => ['new', 'beta'],
 				// ),
+				'table-of-content' => array(
+					'slug'     => 'table-of-content',
+					'title'    => 'Table of Content',
+					'package'  => 'pro',
+					'category' => 'general',
+					'status'   => 'inactive',
+					'badge'    => ['new'],
+				),
 			)
 		);
 	}

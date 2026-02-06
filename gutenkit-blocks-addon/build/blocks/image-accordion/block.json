@@ -382,29 +382,37 @@
     "iconBorderRadiusWideScreen": {
       "type": "object"
     },
-    "popupIconBorder": {
-      "type": "object",
-      "default": {
-        "width": "1px",
-        "style": "solid",
-        "color": "#fff"
-      }
-    },
-    "linkIconBorder": {
-      "type": "object",
-      "default": {
-        "width": "1px",
-        "style": "solid",
-        "color": "#fff"
-      }
-    },
-    "iconBackground": {
+    "popupIconColor": {
       "type": "string"
     },
-    "pupUpIconColorHover": {
+    "popupIconBorderColor": {
+      "type": "string"
+    },
+    "popupIconBorderWidth": {
+      "type": "object"
+    },
+    "linkIconColor": {
+      "type": "string"
+    },
+    "linkIconBorderColor": {
+      "type": "string"
+    },
+    "linkIconBorderWidth": {
+      "type": "object"
+    },
+    "popupIconColorHover": {
+      "type": "string"
+    },
+    "popupIconBorderColorHover": {
       "type": "string"
     },
     "linkIconColorHover": {
+      "type": "string"
+    },
+    "linkIconBorderColorHover": {
+      "type": "string"
+    },
+    "iconBackground": {
       "type": "string"
     },
     "iconBackgroundHover": {

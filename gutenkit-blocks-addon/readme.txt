@@ -1,10 +1,10 @@
 === GutenKit – Page Builder Blocks, Patterns, and Templates for Gutenberg Block Editor ===
-Contributors: xpeedstudio, Ataurr, emranio
+Contributors: Roxnor, Ataurr, aion11
 Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.4.2
+Stable tag: 2.4.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,9 +13,9 @@ GutenKit – Ultimate no-code Gutenberg blocks to design stunning web pages and 
 == Description ==
 
 
-No more struggling with complicated page builders or the need for coding expertise.
+No more struggling with complicated page builders or the need for coding expertise in WordPress editor.
 
-[Introducing GutenKit for Gutenberg](https://wpgutenkit.com/?utm_source=org&utm_medium=readme), the best Gutenberg page builder with ready blocks to experience the best website design experience right inside the WordPress block editor.
+[Introducing GutenKit for Gutenberg](https://wpgutenkit.com/?utm_source=org&utm_medium=readme), the best Gutenberg page builder with ready custom blocks to experience the best website design experience right inside the WordPress block editor.
 
 Gutenkit block builder plugin brings the familiar ease of drag-and-drop design to Gutenberg, making it feel just like using a page builder—but faster and more lightweight. With Gutenberg’s native drag-and-drop interface, **65+ page builder blocks**, **20+ versatile modules**, and **900+ pre-designed templates**, GutenKit finds itself among the best Gutenberg addons where you can create professional, responsive web content in minutes.
 
@@ -23,11 +23,11 @@ With features like a Gutenberg mega menu, query loop builder, dynamic content, f
 
 ⚓Explore **GutenKit capabilities** in action: [Check Live Demo](https://wordpress.org/plugins/gutenkit-blocks-addon/?preview=1)
 
-Let’s experience the future of web design with **GutenKit for Gutenberg Blocks** – design without limits, effortlessly.
+Let’s experience the future of web design with **GutenKit for Gutenberg Blocks** – design without limits.
 
 https://www.youtube.com/watch?v=mCIO63p1wQM
 
-[GutenKit Home Page](https://wpgutenkit.com/?utm_source=org&utm_medium=readme) | [GutenKit Templates](https://wpgutenkit.com/templates/?utm_source=org&utm_medium=readme) | [Blog](https://wpmet.com/blog/?utm_source=org&utm_medium=readme) | [Documentation](https://wpmet.com/doc/gutenkit/?utm_source=org&utm_medium=readme) | [Need Support?](https://wpmet.com/support-ticket-form/?utm_source=org&utm_medium=readme) | [How to get started with GutenKit Pro](https://wpmet.com/doc/purchase-activate-gutenkit-pro/?utm_source=org&utm_medium=readme) |
+[GutenKit Home Page](https://wpgutenkit.com/?utm_source=org&utm_medium=readme) | [Custom Gutenberg Blocks](https://wpgutenkit.com/blocks/?utm_source=org&utm_medium=readme) | [GutenKit Templates](https://wpgutenkit.com/templates/?utm_source=org&utm_medium=readme) | [Blog](https://wpmet.com/blog/?utm_source=org&utm_medium=readme) | [Documentation](https://wpmet.com/doc/gutenkit/?utm_source=org&utm_medium=readme) | [Need Support?](https://wpmet.com/support-ticket-form/?utm_source=org&utm_medium=readme) | [How to get started with GutenKit Pro](https://wpmet.com/doc/purchase-activate-gutenkit-pro/?utm_source=org&utm_medium=readme) |
 
 
 ##  Key Features
@@ -46,19 +46,19 @@ https://www.youtube.com/watch?v=mCIO63p1wQM
 
 👉 Full-width flexible **CONTAINER** with inline editing
 
-👉 **MOTION ANIMATION** effects for blocks
+👉 **MOTION ANIMATION** effects for WordPress blocks
 
-👉 **COPY PASTE STYLES** across blocks
+👉 **COPY PASTE STYLES** across Gutenberg block builder
 
 👉 **65+ WordPress block** editor-supported blocks
 
 👉 Pre-designed **900+ TEMPLATES AND PATTERNS**
 
-👉 Faster loading assets, optimized for **PERFORMANCE**
+👉 A Gutenberg Website Builder with faster loading assets & optimized for **PERFORMANCE**
 
 ## Design Responsive Pages with Custom Breakpoints
 
-GutenKit’s [Breakpoints module](https://wpgutenkit.com/modules/breakpoints/?utm_source=org&utm_medium=readme)  revolutionizes how you design a responsive website in the block editor. Now you can adjust the responsive breakpoint settings right inside the editor where you design your pages.
+GutenKit’s [Breakpoints module](https://wpgutenkit.com/modules/breakpoints/?utm_source=org&utm_medium=readme)  revolutionizes how you design a responsive website in the block editor. Now you can adjust the responsive breakpoint settings right inside the Gutenberg editor where you design your pages.
 
 With GutenKit’s **six additional custom breakpoints**, every block is a responsive block in your Gutenberg editor. You can add breakpoints for **mobiles**, **desktops**, **laptops**, **tablets**, **wide screens**, and **landscape** mode.
 
@@ -77,7 +77,8 @@ GutenKit’s Gutenberg Mega Menu Builder lets you add any blocks as menu items i
 ## Build No-code Dynamic Websites in Gutenberg
 
 ⭐ **Query Loop Builder**
-https://www.youtube.com/watch?v=EztR8huF1oA
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EztR8huF1oA?si=dvkj1x-WaPmp4Hce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Query Loop Builder](https://wpgutenkit.com/blocks/query-builder/?utm_source=org&utm_medium=readme) block is a dynamic Gutenberg block that helps to show your website post dynamically. You can filter the content based on the **post type**, **taxonomy**, **meta query**, **date query**, **author**, **post status**, and more.
 
@@ -85,7 +86,7 @@ Do all of the advanced filtering without even writing a single line of code. You
 
 ⭐ **Gutenberg Dynamic Content**
 
-[GutenKit’s Dynamic Content](https://wpgutenkit.com/modules/dynamic-content/?utm_source=org&utm_medium=readme) feature turns Gutenberg into a dynamic block editor. This pro feature enables the dynamic insertion of elements like post tags, site titles, author names, and user information by selecting 'Dynamic Content' in the block's options.
+[GutenKit’s Dynamic Content](https://wpgutenkit.com/modules/dynamic-content/?utm_source=org&utm_medium=readme) for Gutenberg feature turns Gutenberg builder into a dynamic block editor. This pro feature enables the dynamic insertion of elements like post tags, site titles, author names, and user information by selecting 'Dynamic Content' in the block's options.
 
 Additionally, a fallback value can be set to display default content when specific data isn't available. This functionality enhances content personalization and adaptability on WordPress sites.
 
@@ -143,8 +144,7 @@ Besides, this page builder block offers a range of layout options, enabling effo
 
 🔷 **Advanced Parallax Effect**
 
-Create [Advanced Parallax Effect](https://wpgutenkit.com/modules/parallax-effect/)
-Give an immersive experience to the site visitors with advanced parallax effect for Gutenberg. Choose from a wide range of styles include **transparency, classic, parallax rotate, lower bounce, horizontal scroll**, and more.
+Create [Advanced Parallax Effect](https://wpgutenkit.com/modules/parallax-effect/) and give an immersive experience to the site visitors with advanced parallax effect for Gutenberg. Choose from a wide range of styles include **transparency, classic, parallax rotate, lower bounce, horizontal scroll**, and more.
 
 🔷 **Advanced Video Gallery**
 
@@ -160,7 +160,7 @@ With the [Gutenberg Advanced Tab Block](https://wpgutenkit.com/blocks/advanced-t
 
 🔷 **Present Content Smartly with Advanced Accordions**
 
-The [Gutenberg Accordion block](https://wpgutenkit.com/blocks/advanced-tab/?utm_source=org&utm_medium=readme) in GutenKit is your key to creating sleek and interactive content. This drag-and-drop feature allows you to create collapsible sections effortlessly. You can organize any content in a structured and tidy way with it.
+The [Gutenberg Accordion block](https://wpgutenkit.com/blocks/advanced-tab/?utm_source=org&utm_medium=readme) in GutenKit is your key to creating sleek and interactive content. This drag-and-drop WordPress accordion block allows you to create collapsible sections. You can organize any content in a structured and tidy way with this WordPress Gutenberg Plugin.
 
 
 🔷 **Craft Catchy Headings**
@@ -173,17 +173,17 @@ Now you can design and integrate space-saving off-canvas menus with our [Gutenbe
 
 🔷 **Global Color Scheme**
 
-Take control of your website’s color palette with our seamless Gutenberg block editor integration. Effortlessly design cohesive layouts by leveraging the [Global Color Scheme feature](https://wpmet.com/doc/gutenkit-global-color-palette-compatibility/?utm_source=org&utm_medium=readme).
+Take control of your website’s color palette with our seamless Gutenberg block editor integration. Design cohesive layouts by leveraging the [Global Color Scheme feature](https://wpmet.com/doc/gutenkit-global-color-palette-compatibility/?utm_source=org&utm_medium=readme).
 
 ## Create User-Friendly WordPress Menus
 
-Besides the mega menu, GutenKit helps you create menus in the WordPress block editor in the easiest way. You can effortlessly design different types of menus including Nav Menu, or Offcanvas menu that perfectly complements your website’s aesthetic, ensuring a smooth user experience.
+Besides the mega menu, GutenKit helps you create menus in the WordPress block editor in the easiest way. You can design different types of menus including Nav Menu, or Offcanvas menu that perfectly complements your website’s aesthetic, ensuring a smooth user experience.
 
 https://www.youtube.com/watch?v=E5m6RK6sjBQ
 
 ### 🔷 Make Beautiful Nav Menu
 
-With [GutenKit’s Nav Menu](https://wpgutenkit.com/blocks/nav-menu/?utm_source=org&utm_medium=readme), making stunning navigation menus becomes a breeze. You can effortlessly design WordPress navigation menus that perfectly ensure a site-wide smooth user experience and complement your website’s aesthetic.
+With [GutenKit’s Nav Menu](https://wpgutenkit.com/blocks/nav-menu/?utm_source=org&utm_medium=readme), making stunning navigation menus becomes a breeze. You can design WordPress navigation menus that perfectly ensure a site-wide smooth user experience and complement your website’s aesthetic.
 
 ### 🔷 Modernize Design with Offcanvas Menu
 
@@ -225,11 +225,11 @@ With the [Icon Box block in GutenKit](https://wpgutenkit.com/blocks/icon-box/?ut
 
 ### 🔷 Highlight with Image Boxes
 
-[GutenKit’s Image Box block](https://wpgutenkit.com/blocks/image-box/?utm_source=org&utm_medium=readme) is an awesome feature that effortlessly displays images in a beautifully designed box. Don’t worry about your images—crop, resize, adjust them on the fly, and style them accordingly to fit seamlessly within your design.
+[GutenKit’s Image Box block](https://wpgutenkit.com/blocks/image-box/?utm_source=org&utm_medium=readme) is an awesome feature that displays images in a beautifully designed box. Don’t worry about your images—crop, resize, adjust them on the fly, and style them accordingly to fit seamlessly within your design.
 
 ### 🔷 Dual Buttons for Versatility
 
-The [Dual Button block](https://wpgutenkit.com/blocks/dual-button/?utm_source=org&utm_medium=readme) of the GutenKit WordPress Block editor Plugin offers an intuitive way to integrate paired buttons with personalized styles into your content. With this block, you can create and customize two buttons, while also inserting text in the middle to provide context or information.
+The [Dual Button block](https://wpgutenkit.com/blocks/dual-button/?utm_source=org&utm_medium=readme) of the GutenKit WordPress Block editor Plugin offers an intuitive way to integrate paired buttons with personalized styles into your content. With this block, you can create & customize two buttons, while also inserting text in the middle to provide context or information.
 
 ### 🔷 Pricing Table
 
@@ -237,30 +237,25 @@ Showcase your product/service prices in style with our [Pricing Table block](htt
 
 ### 🔷 Showcase Before/After Image Comparison
 
-This [Image Comparison block](https://wpgutenkit.com/blocks/image-comparison/?utm_source=org&utm_medium=readme) of GutenKit is ideal for highlighting transformations, renovations, or any scenario where visual impact matters. With this drag-and-drop WordPress block, you can slide smoothly between the before and after comparison of an image.
+This [Image Comparison block](https://wpgutenkit.com/blocks/image-comparison/?utm_source=org&utm_medium=readme) of GutenKit is ideal for highlighting transformations, or any scenario where visual impact matters. With this drag-and-drop WordPress block, you can slide smoothly between the before and after comparison of an image.
 
 ### 🔷 Create Urgency with Countdown Timers
 
-The GutenKit’s [Countdown Timer block](https://wpgutenkit.com/blocks/countdown-timer/?utm_source=org&utm_medium=readme) can empower users to create visually appealing and highly customizable Countdown Timers within the WordPress Gutenberg editor. At the same time, it can effectively add a sense of urgency to promotions and prompt swift, time-sensitive actions from their audience.
+The GutenKit’s [Countdown Timer block](https://wpgutenkit.com/blocks/countdown-timer/?utm_source=org&utm_medium=readme) allow users to create visually appealing and highly customizable Countdown Timers within the WordPress Gutenberg editor. At the same time, it can effectively add a sense of urgency to promotions and prompt swift, time-sensitive actions from their audience.
 
 ### 🔷 Attractive Gallery Style
-Increase the visual appeal of your website using this Gutenberg Gallery plugin, which includes an intuitive grid and masonry-style image and video galleries. GutenKit displays your visual content in versatile and dynamic layouts for optimal visitor engagement.
+Increase the visual appeal of your website using this Gutenberg Gallery plugin, which includes an intuitive grid and masonry-style image and video galleries. Displays visual content in versatile & dynamic layouts for optimal visitor engagement.
 
 ##  Who will benefit from GutenKit?
+Here are the highlights of the diverse audience segments and professionals who can utilize GutenKit’s Gutenberg addons potential to achieve their goals and enhance their digital experiences.
 
-No matter your purpose, GutenKit stands out as one of the best Gutenberg addons. Here are the highlights of the diverse audience segments and professionals who can utilize GutenKit’s potential to achieve their goals and enhance their digital experiences.
+###  ➡️ Website owners, bloggers, and small business owners
 
-###  ➡️ Website Owners and Bloggers
-
-To create captivating, responsive web content without any coding expertise, GutenKit assists site owners and bloggers to streamline the content creation process.
-
-###  ➡️ Small Business Owners
-
-Small business owners can quickly build a professional online presence and showcase their offerings using GutenKit’s powerful WordPress blocks.
+GutenKit is a perfect solution with powerful blocks for creating captivating, responsive content and building a professional online presence, no coding required.
 
 ###  ➡️ Content Creators
 
-GutenKit helps content creators enhance visual appeal with top WordPress blocks and flexible design, making content more engaging and shareable.
+GutenKit helps content creators enhance visual appeal with top WordPress blocks and flexible design, making content more engaging & shareable.
 
 ###  ➡️ Marketers and SEO Professionals
 
@@ -274,17 +269,13 @@ GutenKit saves time and simplifies workflows for website designers and developer
 
 GutenKit helps e-commerce owners enhance product listings with responsive design, pricing tables, and icons for a better shopping experience.
 
-###  ➡️ Digital Agencies
+###  ➡️ Freelancers & Digital Agencies
 
-Digital agencies can wow clients with fast, professional sites using GutenKit’s templates and modules.
-
-###  ➡️ Freelancers
-
-Freelancers can offer high-quality website design services without extensive coding skills using GutenKit’s no-code approach.
+Digital agencies and freelancers can deliver fast, professional websites using GutenKit’s templates and no-code modules, impressing clients without needing advanced coding skills.
 
 ###  ➡️ Anyone Seeking a User-Friendly Solution
 
-GutenKit is designed for accessibility for all, ensuring that individuals with varying technical backgrounds can create visually stunning websites with ease.
+GutenKit Gutenberg plugin is designed for accessibility for all, ensuring that individuals with varying technical backgrounds can create visually stunning websites with ease.
 
 ###  ☂️ OUR OTHER PLUGINS
 
@@ -316,6 +307,18 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.4.4 (2025-12-02) =
+* Fixed: Height-related layout inconsistencies in the image accordion block
+* Fixed: HTML content rendering issues in the pricing table block
+* Fixed: Digit background not showing in countdown timer block
+* Fixed: Expiry notice is not showing after time has finished in countdown timer block
+* Improved: Clearer normal and hover states for popup and link icons in the image accordion block
+* Improved: Dashboard and onboard UI flow
+
+= GutenKit Blocks Addon: 2.4.3 (2025-10-05) =
+* Fixed: Heading block focus text background not working
+* Improved: Escape link HTML captions and titles for advanced image block
+
 = GutenKit Blocks Addon: 2.4.2 (2025-09-15) =
 * Added: FSE box-shadow compatibility across blocks
 * Fixed: Border color handling in getColor helper for consistent styling

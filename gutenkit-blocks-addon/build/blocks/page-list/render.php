@@ -46,7 +46,10 @@ $customClasses = isset($attributes['layOut']) && $attributes['layOut'] === 'inli
                     }
                 }
         
-				if (($item["listPageOrLink"] == "link" && $item["listText"]) || ($item["listPageOrLink"] == "page")) :
+				if (
+					($item["listPageOrLink"] == "link" && !empty($item["listText"])) 
+					|| $item["listPageOrLink"] == "page"
+				) :
 					$target = isset($link['target']) ? $link['target'] : 'self';
 					$rel = isset($link['rel']) ? 'rel="' . $link['rel'] . '"' : '';
 				?>
@@ -65,7 +68,7 @@ $customClasses = isset($attributes['layOut']) && $attributes['layOut'] === 'inli
 								<div class="gkit-page-list-text">
 									<span class="gkit-page-list-title">
 										<?php
-										if(!empty($item['listText'])) {
+										if(isset($item['listText']) && !empty($item['listText'])) {
 											echo esc_html($item['listText']);
 										} else {
 											echo esc_html($post->post_title);
