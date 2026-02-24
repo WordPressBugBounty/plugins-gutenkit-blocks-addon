@@ -32,7 +32,7 @@
     },
     "title": {
       "type": "string",
-      "default": "How to Change my Photo from Admin Dashboard?"
+      "default": "How do I update my profile information?"
     },
     "parentBlockAttributes": {
       "type": "object"

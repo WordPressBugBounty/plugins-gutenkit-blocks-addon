@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.4.4
+Stable tag: 2.4.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -307,6 +307,16 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon: 2.4.5 (2026-02-24) =
+* Added: Add keyboard shortcut for wrapping blocks in container
+* Added: Active tab `Keep this tab open?` control in the advanced tab block
+* Fixed: Mailchimp select field style issue
+* Fixed: Editor save button trigger issue for mailchimp block
+* Fixed: Mailchimp console errors and warnings
+* Fixed: Resolved button text overflow issues in button block
+* Fixed: Icon not updating in the editor when the advanced accordion block is updated
+* Improved: Optimized component and helpers scripts loading
+
 = GutenKit Blocks Addon: 2.4.4 (2025-12-02) =
 * Fixed: Height-related layout inconsistencies in the image accordion block
 * Fixed: HTML content rendering issues in the pricing table block

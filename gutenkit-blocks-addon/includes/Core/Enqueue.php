@@ -51,6 +51,7 @@ class Enqueue {
 				'has_pro'     => defined( 'GUTENKIT_PRO_PLUGIN_VERSION'),
 				'generalSettingsUrl'   => admin_url('options-general.php'),
 				'activeTheme' => wp_get_theme()->get('Name'),
+				'placeholderImage' => GUTENKIT_PLUGIN_URL . 'build/images/placeholder.e4997309.jpg'
 			)
 		);
 	}
@@ -127,10 +128,10 @@ class Enqueue {
 		];
 		
 		// Enqueue components script
-		$this->enqueue_assets($asset_files['components'], 'gutenkit-blocks-editor-components', 'components.js');
+		$this->enqueue_assets($asset_files['components'], 'gkit-components', 'components.js');
 
 		// Enqueue helpers script
-		$this->enqueue_assets($asset_files['helpers'], 'gutenkit-blocks-editor-helpers', 'helpers.js');
+		$this->enqueue_assets($asset_files['helpers'], 'gkit-helpers', 'helpers.js');
 
 		// Enqueue global script
 		$this->enqueue_assets($asset_files['global'], 'gutenkit-blocks-editor-global', 'global.js');

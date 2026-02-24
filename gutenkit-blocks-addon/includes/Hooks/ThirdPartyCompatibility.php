@@ -86,6 +86,11 @@ class ThirdPartyCompatibility {
 			$classes[] = 'gutenkit-bricks';
 		}
 
+		// check if bricks theme is active
+		if ( $current_theme->get('TextDomain') == 'blocksy' ) {
+			$classes[] = 'gutenkit-blocksy';
+		}
+
 		return $classes;
 	}
 

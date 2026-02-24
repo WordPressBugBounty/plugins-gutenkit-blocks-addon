@@ -36,7 +36,7 @@ class Blocks {
 		
 		$is_editor = $pagenow === 'post.php' || $pagenow === 'post-new.php' || $pagenow === 'site-editor.php' || $pagenow === 'widgets.php';
 		$args = array(
-			'handle' => 'gutenkit-blocks-editor-global',
+			'handle' => 'gkit-components',
 			'src'    => GUTENKIT_PLUGIN_URL . 'build/gutenkit/components.css',
 			'deps'   => array(),
 			'ver'    => GUTENKIT_PLUGIN_VERSION,

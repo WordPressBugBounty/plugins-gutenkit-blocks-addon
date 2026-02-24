@@ -32,7 +32,7 @@ class PageSettings {
 		if ($post_id) {
 			$page_settings_css = get_post_meta($post_id, 'postBodyCss', true);
 			if (!empty($page_settings_css)) {
-				$css .= $page_settings_css;
+				$css .= wp_strip_all_tags($page_settings_css);
 			}
 		}
 		return $css;

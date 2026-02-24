@@ -107,9 +107,10 @@ class PostMetaList
             "postBodyCss" => [ // post meta key
                 "post_type" => "", // post type name, empty for all
                 "args" => [ // pass arguments
-                    "type"         => "string", // specify the type as string
-                    "show_in_rest" => true, // enable REST API support
-                    "single"       => true, // single meta value
+                    "type"              => "string", // specify the type as string
+                    "show_in_rest"      => true, // enable REST API support
+                    "single"            => true, // single meta value
+                    "sanitize_callback" => 'wp_strip_all_tags', // sanitize input to prevent XSS
                 ]
             ],
             "postBodyMargin" => [ // post meta key

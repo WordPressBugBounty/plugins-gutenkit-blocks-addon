@@ -62,31 +62,26 @@ class MailChimp
 	}
 
 	public function gutenkit_mailchimp_get_interests_callback($param){
-		// error_log(print_r($param['list_id'], true));
 
 		// Retrieve form list id
 		$list_id = $param['list_id'];
 		if(empty($list_id)) {
 			return;
 		}
-		
+
 		$api_key = get_option('gutenkit_settings_list');
-		// error_log(print_r($api_key, true));
-		
+
 		$api_value = !empty($api_key) ? $api_key['mailchimp']['fields']['api_key']['value'] : '';
 		$server_parts = explode('-', $api_value);
-		// error_log(print_r($server_parts, true));
 
 		if(!isset($server_parts[1])) {
 			return;
 		}
 
 		$body = $param->get_body();
-		// error_log(print_r($body, true));
-		
+
 		$request = json_decode($body, true);
-		// error_log(print_r($request, true));
-		
+
 		$server_prefix = $server_parts[1];
 		//construct the API URL
 		$url = 'https://' . $server_prefix . '.api.mailchimp.com/3.0/lists/'.$list_id.'/interest-categories';
@@ -98,10 +93,9 @@ class MailChimp
 		]);
 		$resBody = json_decode($response['body'], true);
 		$categories = isset($resBody['categories']) ? $resBody['categories'] : [];
-		// error_log(print_r($categories, true));
+		$results = [];
 		if (!empty($categories)) {
 			foreach ($categories as $category) {
-				// error_log(print_r($category, true));
 
 				$categoryId = $category['id'];
 
@@ -113,11 +107,9 @@ class MailChimp
 						'Content-Type' => 'application/json; charset=utf-8',
 					],
 				]);
-				// error_log(print_r($response, true));
 				$interestResBody = json_decode($response['body'], true);
 				$interests = isset($interestResBody['interests']) ? $interestResBody['interests'] : [];
-				// error_log(print_r($interests, true));
-				
+
 
 
 				// Build trimmed category info with interests
@@ -135,16 +127,16 @@ class MailChimp
 						];
 					}, $interests) : []
 				];
-				
-				
-				
-				
+
+
+
+
 			}
 		}
 
 		return $results;
-		
-		
+
+
 	}
 
 
@@ -170,7 +162,7 @@ class MailChimp
 
 		if (is_array($response) && !is_wp_error($response)) {
 			$body = json_decode($response['body'], true);
-			
+
 			$listed = isset($body['lists']) ? $body['lists'] : [];
 
 			$list_id = $listed[0]['id'];
@@ -199,7 +191,6 @@ class MailChimp
 
 	public function gutenkit_mailchimp_post_callback($param)
 	{
-		// error_log(print_r($param, true));
 		$body = $param->get_body();
 		$request = json_decode($body, true);
 
@@ -214,13 +205,10 @@ class MailChimp
 			'merge_fields' => [],
 			'status' => 'subscribed'
 		];
-		// error_log(print_r($request, true));
-		
+
 
 		//prepare the data array
 		foreach ($request as $key => $value) {
-			// error_log(print_r($key, true));
-			
 
 			if ($key == 'EMAIL') {
 				$formData['email_address'] = !empty($request['EMAIL']) ? sanitize_email($request['EMAIL']) : '';
@@ -244,7 +232,7 @@ class MailChimp
 							$formatted_date = $date_parts[1] . '/' . $date_parts[2] . '/' . $date_parts[0]; // MM/DD/YYYY
 						} else if ($gkit_mailchimp_key_1 == 'gkit_mailchimp_birthday' && count($date_parts) >= 2) {
 							// Format as DD/MM
-							$formatted_date = $date_parts[2] . '/' . $date_parts[1]; 
+							$formatted_date = $date_parts[2] . '/' . $date_parts[1];
 						} else {
 							// Handle incorrect input format (optional: set to empty or some default value)
 							$formatted_date = '';
@@ -264,17 +252,15 @@ class MailChimp
 
 				$interestResult = [];
 				if (strpos(strtolower($key), 'interest') !== false) {
-					// error_log(print_r($value, true));
 					$parts = explode('-', $value, 2);
 					if (count($parts) === 2) {
 						$formData['interests'][$parts[0]] = filter_var($parts[1], FILTER_VALIDATE_BOOLEAN) ;
 					}
 				}
 			}
-			
+
 		}
-		error_log(print_r($formData, true));
-		
+
 
 		// Validate API key and server prefix
 		if (empty($token)) {
@@ -307,7 +293,7 @@ class MailChimp
 			],
 			'body'      => wp_json_encode($formData),
 		]);
-		
+
 
 		// Handle the response
 		if (is_wp_error($response)) {
@@ -347,8 +333,7 @@ class MailChimp
 		]);
 		$fieldListBody = isset($response['body']) ? json_decode($response['body'], true) : [];
 		$fieldListItems = isset($fieldListBody['merge_fields']) ? $fieldListBody['merge_fields'] : [];
-		// error_log(print_r($fieldListBody, true));
-		
+
 
 
 
