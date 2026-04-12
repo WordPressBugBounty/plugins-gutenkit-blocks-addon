@@ -2,9 +2,9 @@
 Contributors: Roxnor, Ataurr, aion11
 Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.4.5
+Stable tag: 2.4.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -307,6 +307,16 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+= GutenKit Blocks Addon 2.4.6 (2026-04-08) = 
+* Fixed: Border Color control — added support for Theme, Default, and Custom color palette in Advanced panel
+* Fixed: Video block Border Color control — Theme, Default, and Custom color options
+* Fixed: Heading block focus text background image size control issue
+* Fixed: Advanced Image block dynamic image support issue
+* Fixed: Social Icons block height control issue
+* Fixed: Page List block frontend markup issues
+* Fixed: Drop Cap block RichText issue
+* Improved: Added compatibility for WordPress 7.0
+
 = GutenKit Blocks Addon: 2.4.5 (2026-02-24) =
 * Added: Add keyboard shortcut for wrapping blocks in container
 * Added: Active tab `Keep this tab open?` control in the advanced tab block

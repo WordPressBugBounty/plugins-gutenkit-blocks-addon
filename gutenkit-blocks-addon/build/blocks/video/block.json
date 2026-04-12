@@ -537,12 +537,7 @@
       "type": "object"
     },
     "borderStyle": {
-      "type": "object",
-      "default": {
-        "color": "#da3175",
-        "style": "solid",
-        "width": "1px"
-      }
+      "type": "object"
     },
     "borderStyleHover": {
       "type": "object"

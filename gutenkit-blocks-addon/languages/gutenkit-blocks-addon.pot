@@ -2,16 +2,16 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.5\n"
+"Project-Id-Version: GutenKit Blocks 2.4.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-24T04:33:20+00:00\n"
+"POT-Creation-Date: 2026-04-08T10:22:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
 
 #. Plugin Name of the plugin
@@ -195,8 +195,8 @@ msgstr ""
 #: build/8001.js:1
 #: build/8606.js:1
 #: build/9807.js:1
-#: src/blocks/advanced-image/settings.js:138
-#: src/blocks/advanced-image/settings.js:195
+#: src/blocks/advanced-image/settings.js:139
+#: src/blocks/advanced-image/settings.js:196
 #: src/blocks/image-comparison/settings.js:147
 #: src/blocks/nav-menu/settings.js:302
 #: src/blocks/offcanvas/settings.js:276
@@ -332,6 +332,7 @@ msgstr ""
 
 #. translators: %s: error message
 #: includes/Routes/MailChimp.php:302
+#, php-format
 msgid "Something went wrong: %s"
 msgstr ""
 
@@ -666,8 +667,8 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:149
 #: src/blocks/video/settings.js:205
 #: src/blocks/video/settings.js:221
-#: src/blocks/video/settings.js:874
-#: src/blocks/video/settings.js:976
+#: src/blocks/video/settings.js:868
+#: src/blocks/video/settings.js:969
 msgid "Icon"
 msgstr ""
 
@@ -891,8 +892,8 @@ msgstr ""
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:100
-#: src/blocks/advanced-image/settings.js:97
-#: src/blocks/advanced-image/settings.js:904
+#: src/blocks/advanced-image/settings.js:98
+#: src/blocks/advanced-image/settings.js:905
 #: src/blocks/advanced-paragraph/settings.js:105
 #: src/blocks/advanced-tab/settings.js:115
 #: src/blocks/advanced-tab/settings.js:211
@@ -953,7 +954,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1458
 #: src/blocks/testimonial/settings.js:1470
 #: src/blocks/video/settings.js:518
-#: src/blocks/video/settings.js:1074
+#: src/blocks/video/settings.js:1067
 #: src/modules/class-manager/components/class-style-manager.js:191
 #: src/modules/class-manager/components/class-style-manager.js:869
 msgid "Left"
@@ -986,8 +987,8 @@ msgstr ""
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:99
-#: src/blocks/advanced-image/settings.js:107
-#: src/blocks/advanced-image/settings.js:914
+#: src/blocks/advanced-image/settings.js:108
+#: src/blocks/advanced-image/settings.js:915
 #: src/blocks/advanced-paragraph/settings.js:107
 #: src/blocks/advanced-tab/settings.js:125
 #: src/blocks/advanced-tab/settings.js:221
@@ -1043,7 +1044,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1460
 #: src/blocks/testimonial/settings.js:1472
 #: src/blocks/video/settings.js:520
-#: src/blocks/video/settings.js:1075
+#: src/blocks/video/settings.js:1068
 #: src/modules/class-manager/components/class-style-manager.js:201
 #: src/modules/class-manager/components/class-style-manager.js:874
 msgid "Right"
@@ -1186,8 +1187,8 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-image/settings.js:102
-#: src/blocks/advanced-image/settings.js:909
+#: src/blocks/advanced-image/settings.js:103
+#: src/blocks/advanced-image/settings.js:910
 #: src/blocks/advanced-paragraph/settings.js:106
 #: src/blocks/advanced-tab/settings.js:155
 #: src/blocks/advanced-tab/settings.js:216
@@ -1445,8 +1446,8 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:91
-#: src/blocks/advanced-image/settings.js:898
+#: src/blocks/advanced-image/settings.js:92
+#: src/blocks/advanced-image/settings.js:899
 #: src/blocks/advanced-paragraph/settings.js:103
 #: src/blocks/back-to-top/settings.js:92
 #: src/blocks/blog-posts/settings.js:1133
@@ -1666,7 +1667,7 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:518
 #: src/blocks/advanced-accordion/settings.js:575
 #: src/blocks/advanced-accordion/settings.js:625
-#: src/blocks/advanced-image/settings.js:934
+#: src/blocks/advanced-image/settings.js:935
 #: src/blocks/advanced-paragraph/settings.js:171
 #: src/blocks/advanced-paragraph/settings.js:191
 #: src/blocks/advanced-paragraph/settings.js:237
@@ -1763,8 +1764,8 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:2276
 #: src/blocks/social-icons/settings.js:179
 #: src/blocks/social-icons/settings.js:193
-#: src/blocks/social-icons/settings.js:351
-#: src/blocks/social-icons/settings.js:410
+#: src/blocks/social-icons/settings.js:353
+#: src/blocks/social-icons/settings.js:412
 #: src/blocks/social-share/settings.js:229
 #: src/blocks/social-share/settings.js:244
 #: src/blocks/social-share/settings.js:421
@@ -1863,7 +1864,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:156
 #: src/blocks/advanced-accordion/settings.js:373
-#: src/blocks/advanced-image/settings.js:963
+#: src/blocks/advanced-image/settings.js:964
 #: src/blocks/advanced-paragraph/settings.js:126
 #: src/blocks/advanced-paragraph/settings.js:215
 #: src/blocks/advanced-paragraph/settings.js:320
@@ -2069,7 +2070,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-image/settings.js:285
+#: src/blocks/advanced-image/settings.js:286
 #: src/blocks/advanced-tab/settings.js:183
 #: src/blocks/advanced-tab/settings.js:1066
 #: src/blocks/back-to-top/settings.js:151
@@ -2111,7 +2112,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1250
 #: src/blocks/video/settings.js:451
 #: src/blocks/video/settings.js:612
-#: src/blocks/video/settings.js:983
+#: src/blocks/video/settings.js:976
 #: src/gkit-components/components/swiper/arrow.js:281
 #: src/gkit-components/components/swiper/dot.js:241
 #: src/gkit-components/components/swiper/dot.js:377
@@ -2145,7 +2146,7 @@ msgstr ""
 #: build/9634.js:1
 #: build/9807.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:382
+#: src/blocks/advanced-image/settings.js:383
 #: src/blocks/advanced-tab/settings.js:1097
 #: src/blocks/back-to-top/settings.js:183
 #: src/blocks/blog-posts/settings.js:969
@@ -2179,7 +2180,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1276
 #: src/blocks/video/settings.js:480
 #: src/blocks/video/settings.js:640
-#: src/blocks/video/settings.js:998
+#: src/blocks/video/settings.js:991
 #: src/gkit-components/components/swiper/arrow.js:263
 #: src/gkit-components/components/swiper/dot.js:262
 #: src/gkit-components/components/swiper/dot.js:398
@@ -2216,8 +2217,8 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-image/settings.js:585
-#: src/blocks/advanced-image/settings.js:1054
+#: src/blocks/advanced-image/settings.js:586
+#: src/blocks/advanced-image/settings.js:1055
 #: src/blocks/advanced-paragraph/settings.js:157
 #: src/blocks/advanced-paragraph/settings.js:223
 #: src/blocks/advanced-tab/settings.js:651
@@ -2269,7 +2270,7 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1589
 #: src/blocks/pricing-table/settings.js:1819
 #: src/blocks/pricing-table/settings.js:2180
-#: src/blocks/social-icons/settings.js:337
+#: src/blocks/social-icons/settings.js:339
 #: src/blocks/social-share/settings.js:407
 #: src/blocks/team/settings.js:295
 #: src/blocks/team/settings.js:814
@@ -2278,7 +2279,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1210
 #: src/blocks/video/settings.js:711
 #: src/blocks/video/settings.js:776
-#: src/blocks/video/settings.js:1145
+#: src/blocks/video/settings.js:1138
 #: src/gkit-components/components/blend-mode/index.js:14
 #: src/gkit-components/components/swiper/arrow.js:321
 #: src/gkit-components/components/swiper/dot.js:216
@@ -2319,8 +2320,8 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: src/blocks/advanced-accordion/settings.js:173
-#: src/blocks/advanced-image/settings.js:592
-#: src/blocks/advanced-image/settings.js:1058
+#: src/blocks/advanced-image/settings.js:593
+#: src/blocks/advanced-image/settings.js:1059
 #: src/blocks/advanced-paragraph/settings.js:161
 #: src/blocks/advanced-paragraph/settings.js:227
 #: src/blocks/advanced-tab/settings.js:439
@@ -2375,7 +2376,7 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1596
 #: src/blocks/pricing-table/settings.js:1826
 #: src/blocks/pricing-table/settings.js:2187
-#: src/blocks/social-icons/settings.js:341
+#: src/blocks/social-icons/settings.js:343
 #: src/blocks/social-share/settings.js:411
 #: src/blocks/team/settings.js:299
 #: src/blocks/team/settings.js:818
@@ -2384,7 +2385,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1214
 #: src/blocks/video/settings.js:715
 #: src/blocks/video/settings.js:780
-#: src/blocks/video/settings.js:1149
+#: src/blocks/video/settings.js:1142
 #: src/gkit-components/components/swiper/arrow.js:325
 #: src/gkit-components/components/swiper/dot.js:220
 #: src/global/components/advanced-control.js:241
@@ -2425,7 +2426,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: build/modules/page-settings/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:189
-#: src/blocks/advanced-image/settings.js:948
+#: src/blocks/advanced-image/settings.js:949
 #: src/blocks/advanced-paragraph/settings.js:242
 #: src/blocks/advanced-paragraph/settings.js:258
 #: src/blocks/advanced-paragraph/settings.js:370
@@ -2487,8 +2488,8 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:1061
 #: src/blocks/offcanvas/settings.js:1275
 #: src/blocks/progress-bar/settings.js:176
-#: src/blocks/social-icons/settings.js:356
-#: src/blocks/social-icons/settings.js:415
+#: src/blocks/social-icons/settings.js:358
+#: src/blocks/social-icons/settings.js:417
 #: src/blocks/social-share/settings.js:426
 #: src/blocks/social-share/settings.js:485
 #: src/blocks/testimonial/settings.js:509
@@ -2500,8 +2501,8 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1068
 #: src/blocks/testimonial/settings.js:1193
 #: src/blocks/testimonial/settings.js:1579
-#: src/blocks/video/settings.js:1159
-#: src/blocks/video/settings.js:1209
+#: src/blocks/video/settings.js:1152
+#: src/blocks/video/settings.js:1201
 #: src/gkit-components/components/swiper/arrow.js:338
 #: src/gkit-components/components/swiper/arrow.js:364
 #: src/gkit-components/components/swiper/dot.js:234
@@ -2558,8 +2559,8 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:429
 #: src/blocks/advanced-accordion/settings.js:451
 #: src/blocks/advanced-accordion/settings.js:658
-#: src/blocks/advanced-image/settings.js:688
-#: src/blocks/advanced-image/settings.js:844
+#: src/blocks/advanced-image/settings.js:689
+#: src/blocks/advanced-image/settings.js:845
 #: src/blocks/advanced-paragraph/settings.js:272
 #: src/blocks/advanced-paragraph/settings.js:376
 #: src/blocks/advanced-paragraph/settings.js:446
@@ -2646,8 +2647,8 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:2351
 #: src/blocks/progress-bar/settings.js:214
 #: src/blocks/progress-bar/settings.js:256
-#: src/blocks/social-icons/settings.js:368
-#: src/blocks/social-icons/settings.js:427
+#: src/blocks/social-icons/settings.js:370
+#: src/blocks/social-icons/settings.js:429
 #: src/blocks/social-share/settings.js:438
 #: src/blocks/social-share/settings.js:497
 #: src/blocks/team/settings.js:393
@@ -2658,15 +2659,15 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1106
 #: src/blocks/testimonial/settings.js:1134
 #: src/blocks/testimonial/settings.js:1550
-#: src/blocks/video/settings.js:799
-#: src/blocks/video/settings.js:821
-#: src/blocks/video/settings.js:953
-#: src/blocks/video/settings.js:1178
-#: src/blocks/video/settings.js:1228
+#: src/blocks/video/settings.js:797
+#: src/blocks/video/settings.js:816
+#: src/blocks/video/settings.js:946
+#: src/blocks/video/settings.js:1170
+#: src/blocks/video/settings.js:1219
 #: src/gkit-components/components/swiper/arrow.js:307
 #: src/gkit-components/components/swiper/dot.js:288
-#: src/global/components/advanced-control.js:322
-#: src/global/components/advanced-control.js:346
+#: src/global/components/advanced-control.js:321
+#: src/global/components/advanced-control.js:345
 #: src/modules/class-manager/components/class-style-manager.js:408
 msgid "Border Radius"
 msgstr ""
@@ -2692,8 +2693,8 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-image/settings.js:710
-#: src/blocks/advanced-image/settings.js:866
+#: src/blocks/advanced-image/settings.js:711
+#: src/blocks/advanced-image/settings.js:867
 #: src/blocks/advanced-tab/settings.js:555
 #: src/blocks/advanced-tab/settings.js:713
 #: src/blocks/advanced-tab/settings.js:770
@@ -2747,8 +2748,8 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:943
 #: src/blocks/offcanvas/settings.js:1177
 #: src/blocks/offcanvas/settings.js:1310
-#: src/blocks/social-icons/settings.js:385
-#: src/blocks/social-icons/settings.js:444
+#: src/blocks/social-icons/settings.js:387
+#: src/blocks/social-icons/settings.js:446
 #: src/blocks/social-share/settings.js:455
 #: src/blocks/social-share/settings.js:514
 #: src/blocks/team/settings.js:314
@@ -2759,14 +2760,14 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:702
 #: src/blocks/testimonial/settings.js:726
 #: src/blocks/testimonial/settings.js:1497
-#: src/blocks/video/settings.js:859
-#: src/blocks/video/settings.js:968
-#: src/blocks/video/settings.js:1199
-#: src/blocks/video/settings.js:1249
+#: src/blocks/video/settings.js:853
+#: src/blocks/video/settings.js:961
+#: src/blocks/video/settings.js:1191
+#: src/blocks/video/settings.js:1240
 #: src/gkit-components/components/swiper/arrow.js:350
 #: src/gkit-components/components/swiper/arrow.js:375
-#: src/global/components/advanced-control.js:328
-#: src/global/components/advanced-control.js:352
+#: src/global/components/advanced-control.js:327
+#: src/global/components/advanced-control.js:351
 #: src/modules/class-manager/components/class-style-manager.js:416
 msgid "Box Shadow"
 msgstr ""
@@ -2871,8 +2872,8 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1995
 #: src/blocks/pricing-table/settings.js:2373
 #: src/blocks/progress-bar/settings.js:220
-#: src/blocks/social-icons/settings.js:473
-#: src/blocks/social-icons/settings.js:497
+#: src/blocks/social-icons/settings.js:475
+#: src/blocks/social-icons/settings.js:499
 #: src/blocks/social-share/settings.js:543
 #: src/blocks/team/settings.js:408
 #: src/blocks/team/settings.js:653
@@ -2883,8 +2884,8 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1151
 #: src/blocks/video/settings.js:528
 #: src/blocks/video/settings.js:546
-#: src/blocks/video/settings.js:930
-#: src/blocks/video/settings.js:1047
+#: src/blocks/video/settings.js:924
+#: src/blocks/video/settings.js:1040
 #: src/global/components/advanced-control.js:53
 #: src/modules/class-manager/components/class-style-manager.js:433
 #: src/modules/page-settings/editor.js:104
@@ -2930,7 +2931,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:914
 #: src/blocks/testimonial/settings.js:1083
 #: src/blocks/video/settings.js:566
-#: src/blocks/video/settings.js:1023
+#: src/blocks/video/settings.js:1016
 #: src/gkit-components/components/swiper/arrow.js:244
 msgid "Icon Size"
 msgstr ""
@@ -3088,8 +3089,8 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:539
 #: src/blocks/advanced-accordion/settings.js:596
 #: src/blocks/advanced-accordion/settings.js:646
-#: src/blocks/advanced-image/settings.js:669
-#: src/blocks/advanced-image/settings.js:825
+#: src/blocks/advanced-image/settings.js:670
+#: src/blocks/advanced-image/settings.js:826
 #: src/blocks/advanced-paragraph/settings.js:430
 #: src/blocks/advanced-tab/settings.js:1012
 #: src/blocks/back-to-top/settings.js:306
@@ -3171,8 +3172,8 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1902
 #: src/blocks/pricing-table/settings.js:2252
 #: src/blocks/pricing-table/settings.js:2327
-#: src/blocks/social-icons/settings.js:362
-#: src/blocks/social-icons/settings.js:421
+#: src/blocks/social-icons/settings.js:364
+#: src/blocks/social-icons/settings.js:423
 #: src/blocks/social-share/settings.js:432
 #: src/blocks/social-share/settings.js:491
 #: src/blocks/team/settings.js:319
@@ -3183,11 +3184,11 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:662
 #: src/blocks/testimonial/settings.js:1482
 #: src/blocks/video/settings.js:771
-#: src/blocks/video/settings.js:791
-#: src/blocks/video/settings.js:813
-#: src/blocks/video/settings.js:946
-#: src/blocks/video/settings.js:1171
-#: src/blocks/video/settings.js:1221
+#: src/blocks/video/settings.js:790
+#: src/blocks/video/settings.js:809
+#: src/blocks/video/settings.js:939
+#: src/blocks/video/settings.js:1163
+#: src/blocks/video/settings.js:1212
 #: src/gkit-components/components/border-control/index.js:67
 #: src/gkit-components/components/swiper/arrow.js:345
 #: src/gkit-components/components/swiper/dot.js:282
@@ -3382,7 +3383,7 @@ msgstr ""
 #: build/9807.js:1
 #: build/blocks/advanced-paragraph/index.js:1
 #: build/blocks/nav-menu-item/index.js:3
-#: src/blocks/advanced-image/settings.js:188
+#: src/blocks/advanced-image/settings.js:189
 #: src/blocks/advanced-paragraph/settings.js:213
 #: src/blocks/dual-button/settings.js:175
 #: src/blocks/dual-button/settings.js:232
@@ -4170,7 +4171,7 @@ msgstr ""
 #: src/blocks/team/settings.js:226
 #: src/blocks/team/settings.js:831
 #: src/blocks/team/settings.js:844
-#: src/blocks/video/settings.js:923
+#: src/blocks/video/settings.js:917
 msgid "Background Color"
 msgstr ""
 
@@ -4232,7 +4233,7 @@ msgstr ""
 #: build/9807.js:1
 #: build/blocks/advanced-paragraph/index.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-image/settings.js:978
+#: src/blocks/advanced-image/settings.js:979
 #: src/blocks/advanced-paragraph/settings.js:176
 #: src/blocks/advanced-paragraph/settings.js:196
 #: src/blocks/advanced-paragraph/settings.js:334
@@ -4244,11 +4245,11 @@ msgstr ""
 #: src/blocks/button/settings.js:199
 #: src/blocks/heading/settings.js:324
 #: src/blocks/heading/settings.js:456
-#: src/blocks/social-icons/settings.js:392
-#: src/blocks/social-icons/settings.js:451
+#: src/blocks/social-icons/settings.js:394
+#: src/blocks/social-icons/settings.js:453
 #: src/blocks/social-share/settings.js:462
 #: src/blocks/social-share/settings.js:521
-#: src/blocks/video/settings.js:865
+#: src/blocks/video/settings.js:859
 #: src/modules/class-manager/components/class-style-manager.js:217
 msgid "Text Shadow"
 msgstr ""
@@ -4335,7 +4336,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/4986.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-image/settings.js:333
+#: src/blocks/advanced-image/settings.js:334
 #: src/blocks/blog-posts/settings.js:909
 #: src/blocks/heading/settings.js:182
 #: src/modules/class-manager/components/class-style-manager.js:501
@@ -4668,7 +4669,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/image-accordion/settings.js:129
 #: src/blocks/post-tab/settings.js:181
-#: src/blocks/video/settings.js:1111
+#: src/blocks/video/settings.js:1104
 #: src/modules/class-manager/components/box-shadow-settings.js:41
 msgid "Horizontal"
 msgstr ""
@@ -4679,7 +4680,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/image-accordion/settings.js:130
 #: src/blocks/post-tab/settings.js:186
-#: src/blocks/video/settings.js:1087
+#: src/blocks/video/settings.js:1080
 #: src/modules/class-manager/components/box-shadow-settings.js:50
 msgid "Vertical"
 msgstr ""
@@ -4799,8 +4800,8 @@ msgstr ""
 #: src/blocks/page-list/settings.js:810
 #: src/blocks/page-list/settings.js:852
 #: src/blocks/progress-bar/settings.js:317
-#: src/blocks/video/settings.js:1165
-#: src/blocks/video/settings.js:1215
+#: src/blocks/video/settings.js:1158
+#: src/blocks/video/settings.js:1207
 msgid "Icon Color"
 msgstr ""
 
@@ -4828,7 +4829,7 @@ msgstr ""
 #: build/9242.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:71
-#: src/blocks/advanced-image/settings.js:281
+#: src/blocks/advanced-image/settings.js:282
 #: src/blocks/donut-progress-bar/settings.js:116
 #: src/blocks/image-box/settings.js:62
 #: src/blocks/image-box/settings.js:772
@@ -4843,42 +4844,42 @@ msgid "Image"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:128
-#: src/blocks/advanced-image/settings.js:892
+#: src/blocks/advanced-image/settings.js:129
+#: src/blocks/advanced-image/settings.js:893
 msgid "Caption"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:145
+#: src/blocks/advanced-image/settings.js:146
 msgid "Attachment Caption"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:152
-#: src/blocks/advanced-image/settings.js:172
+#: src/blocks/advanced-image/settings.js:153
+#: src/blocks/advanced-image/settings.js:173
 msgid "Custom Caption"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:202
+#: src/blocks/advanced-image/settings.js:203
 msgid "Media File"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:209
+#: src/blocks/advanced-image/settings.js:210
 msgid "Custom URL"
 msgstr ""
 
 #: build/3891.js:1
 #: build/9807.js:1
-#: src/blocks/advanced-image/settings.js:226
+#: src/blocks/advanced-image/settings.js:227
 #: src/blocks/video/settings.js:267
 msgid "Lightbox"
 msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:235
+#: src/blocks/advanced-image/settings.js:236
 #: src/gkit-components/components/background-overlay/index.js:316
 #: src/gkit-components/components/background/index.js:311
 msgid "Yes"
@@ -4886,14 +4887,14 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:242
+#: src/blocks/advanced-image/settings.js:243
 #: src/gkit-components/components/background-overlay/index.js:328
 #: src/gkit-components/components/background/index.js:323
 msgid "No"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:430
+#: src/blocks/advanced-image/settings.js:431
 msgid "Object Fit"
 msgstr ""
 
@@ -4906,7 +4907,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
 #: build/modules/entrance-animation/editor.js:1
-#: src/blocks/advanced-image/settings.js:441
+#: src/blocks/advanced-image/settings.js:442
 #: src/blocks/advanced-tab/settings.js:1045
 #: src/blocks/donut-progress-bar/settings.js:168
 #: src/blocks/page-list/settings.js:336
@@ -4924,39 +4925,39 @@ msgid "Default"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:448
+#: src/blocks/advanced-image/settings.js:449
 msgid "Fill"
 msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:455
+#: src/blocks/advanced-image/settings.js:456
 #: src/gkit-components/components/background-overlay/index.js:340
 #: src/gkit-components/components/background/index.js:335
 msgid "Cover"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:462
+#: src/blocks/advanced-image/settings.js:463
 msgid "Scale Down"
 msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:469
+#: src/blocks/advanced-image/settings.js:470
 #: src/gkit-components/components/background-overlay/index.js:344
 #: src/gkit-components/components/background/index.js:339
 msgid "Contain"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:490
+#: src/blocks/advanced-image/settings.js:491
 msgid "Object Position"
 msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:501
+#: src/blocks/advanced-image/settings.js:502
 #: src/gkit-components/components/background-overlay/index.js:248
 #: src/gkit-components/components/background/index.js:241
 msgid "Center Center"
@@ -4964,7 +4965,7 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:508
+#: src/blocks/advanced-image/settings.js:509
 #: src/gkit-components/components/background-overlay/index.js:249
 #: src/gkit-components/components/background/index.js:242
 msgid "Center Left"
@@ -4972,7 +4973,7 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:515
+#: src/blocks/advanced-image/settings.js:516
 #: src/gkit-components/components/background-overlay/index.js:250
 #: src/gkit-components/components/background/index.js:243
 msgid "Center Right"
@@ -4980,7 +4981,7 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:522
+#: src/blocks/advanced-image/settings.js:523
 #: src/gkit-components/components/background-overlay/index.js:252
 #: src/gkit-components/components/background/index.js:245
 msgid "Top Left"
@@ -4988,7 +4989,7 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:529
+#: src/blocks/advanced-image/settings.js:530
 #: src/gkit-components/components/background-overlay/index.js:251
 #: src/gkit-components/components/background/index.js:244
 msgid "Top Center"
@@ -4996,7 +4997,7 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:536
+#: src/blocks/advanced-image/settings.js:537
 #: src/gkit-components/components/background-overlay/index.js:253
 #: src/gkit-components/components/background/index.js:246
 msgid "Top Right"
@@ -5004,7 +5005,7 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:543
+#: src/blocks/advanced-image/settings.js:544
 #: src/gkit-components/components/background-overlay/index.js:255
 #: src/gkit-components/components/background/index.js:248
 msgid "Bottom Left"
@@ -5012,7 +5013,7 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:550
+#: src/blocks/advanced-image/settings.js:551
 #: src/gkit-components/components/background-overlay/index.js:254
 #: src/gkit-components/components/background/index.js:247
 msgid "Bottom Center"
@@ -5020,23 +5021,23 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:557
+#: src/blocks/advanced-image/settings.js:558
 #: src/gkit-components/components/background-overlay/index.js:256
 #: src/gkit-components/components/background/index.js:249
 msgid "Bottom Right"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:607
-#: src/blocks/advanced-image/settings.js:739
+#: src/blocks/advanced-image/settings.js:608
+#: src/blocks/advanced-image/settings.js:740
 msgid "Zoom"
 msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-image/settings.js:626
-#: src/blocks/advanced-image/settings.js:758
+#: src/blocks/advanced-image/settings.js:627
+#: src/blocks/advanced-image/settings.js:759
 #: src/gkit-components/components/background-overlay/index.js:399
 #: src/gkit-components/components/swiper/dot.js:300
 #: src/gkit-components/components/swiper/dot.js:349
@@ -5046,15 +5047,15 @@ msgstr ""
 
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:650
-#: src/blocks/advanced-image/settings.js:782
+#: src/blocks/advanced-image/settings.js:651
+#: src/blocks/advanced-image/settings.js:783
 #: src/gkit-components/components/background-overlay/index.js:411
 #: src/gkit-components/components/css-filters/index.js:30
 msgid "CSS Filters"
 msgstr ""
 
 #: build/3891.js:1
-#: src/blocks/advanced-image/settings.js:801
+#: src/blocks/advanced-image/settings.js:802
 msgid "Transition Duration (s)"
 msgstr ""
 
@@ -5064,7 +5065,7 @@ msgstr ""
 #: build/8001.js:1
 #: build/blocks/mail-chimp/index.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:999
+#: src/blocks/advanced-image/settings.js:1000
 #: src/blocks/advanced-tab/settings.js:967
 #: src/blocks/blog-posts/settings.js:1371
 #: src/blocks/mail-chimp/settings.js:429
@@ -5078,9 +5079,9 @@ msgstr ""
 #: build/4986.js:1
 #: build/6616.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/settings.js:1042
-#: src/blocks/advanced-image/settings.js:1068
-#: src/blocks/advanced-image/settings.js:1079
+#: src/blocks/advanced-image/settings.js:1043
+#: src/blocks/advanced-image/settings.js:1069
+#: src/blocks/advanced-image/settings.js:1080
 #: src/blocks/blog-posts/settings.js:1094
 #: src/blocks/blog-posts/settings.js:1103
 #: src/blocks/container/settings.js:607
@@ -5094,7 +5095,7 @@ msgstr ""
 #: build/4783.js:1
 #: build/4986.js:1
 #: build/8606.js:1
-#: src/blocks/advanced-image/settings.js:1044
+#: src/blocks/advanced-image/settings.js:1045
 #: src/blocks/blog-posts/settings.js:1069
 #: src/blocks/container/settings.js:583
 #: src/blocks/offcanvas/settings.js:303
@@ -5106,14 +5107,14 @@ msgstr ""
 #: build/admin/dashboard/index.js:1
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
-#: src/blocks/advanced-image/settings.js:1085
+#: src/blocks/advanced-image/settings.js:1086
 #: src/blocks/container/settings.js:561
 #: src/blocks/container/settings.js:624
 #: src/blocks/container/settings.js:747
 #: src/dashboard/components/settings.js:182
 #: src/gkit-components/components/swiper/arrow.js:389
 #: src/global/components/advanced-control.js:275
-#: src/global/components/advanced-control.js:357
+#: src/global/components/advanced-control.js:356
 msgid "Transition Duration"
 msgstr ""
 
@@ -7224,7 +7225,7 @@ msgstr ""
 #: build/8606.js:1
 #: build/9807.js:1
 #: src/blocks/offcanvas/settings.js:311
-#: src/blocks/video/settings.js:917
+#: src/blocks/video/settings.js:911
 msgid "Overlay Color"
 msgstr ""
 
@@ -7285,7 +7286,7 @@ msgstr ""
 #: build/8789.js:1
 #: build/9807.js:1
 #: src/blocks/button/settings.js:380
-#: src/blocks/video/settings.js:857
+#: src/blocks/video/settings.js:851
 msgid "Shadow"
 msgstr ""
 
@@ -7648,7 +7649,7 @@ msgstr ""
 
 #: build/9807.js:1
 #: src/blocks/video/settings.js:160
-#: src/blocks/video/settings.js:915
+#: src/blocks/video/settings.js:909
 msgid "Popup"
 msgstr ""
 
@@ -7816,27 +7817,27 @@ msgid "Scale"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:837
+#: src/blocks/video/settings.js:831
 msgid "Radio Wave Size"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:877
+#: src/blocks/video/settings.js:871
 msgid "Padding Right"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:974
+#: src/blocks/video/settings.js:967
 msgid "Popup Close Button"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:1064
+#: src/blocks/video/settings.js:1057
 msgid "Icon Custom Position"
 msgstr ""
 
 #: build/9807.js:1
-#: src/blocks/video/settings.js:1072
+#: src/blocks/video/settings.js:1065
 msgid "Close Button Position"
 msgstr ""
 
@@ -8064,7 +8065,7 @@ msgstr ""
 #: build/gutenkit/global.js:1
 #: src/dashboard/assets/js/welcome.js:22
 #: src/gkit-components/components/animation/index.js:43
-#: src/global/components/advanced-control.js:379
+#: src/global/components/advanced-control.js:378
 msgid "Motion Effects"
 msgstr ""
 
@@ -9138,7 +9139,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: src/gkit-components/components/background/index.js:376
-#: src/global/components/advanced-control.js:383
+#: src/global/components/advanced-control.js:382
 msgid "Scrolling Effects"
 msgstr ""
 
@@ -9550,27 +9551,27 @@ msgid "Z-Index"
 msgstr ""
 
 #: build/gutenkit/global.js:1
-#: src/global/components/advanced-control.js:384
+#: src/global/components/advanced-control.js:383
 msgid "Add exclusive Scrolling Effects with Gutenkit Pro."
 msgstr ""
 
 #: build/gutenkit/global.js:1
-#: src/global/components/advanced-control.js:388
+#: src/global/components/advanced-control.js:387
 msgid "Mouse Tilt Effect"
 msgstr ""
 
 #: build/gutenkit/global.js:1
-#: src/global/components/advanced-control.js:389
+#: src/global/components/advanced-control.js:388
 msgid "Add a Mouse 3d Tilt effect with Gutenkit Pro."
 msgstr ""
 
 #: build/gutenkit/global.js:1
-#: src/global/components/advanced-control.js:393
+#: src/global/components/advanced-control.js:392
 msgid "Mouse Track Effect"
 msgstr ""
 
 #: build/gutenkit/global.js:1
-#: src/global/components/advanced-control.js:394
+#: src/global/components/advanced-control.js:393
 msgid "Add a Mouse Track effect with Gutenkit Pro."
 msgstr ""
 

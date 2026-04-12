@@ -56,15 +56,20 @@ $customClasses = isset($attributes['layOut']) && $attributes['layOut'] === 'inli
 					<div class="gkit-page-list ">
 						<a class="gkit-page-link gkit-page-link-<?php echo esc_attr($index); ?>" href="<?php echo esc_url($link['href']) ?>" target="<?php echo esc_attr($target) ?>" <?php echo esc_attr($rel); ?>>
 							<div class="gkit-page-list-content">
-								<div class="gkit-page-list-icon">
-									<span>
-										<?php if (isset($item['listIconActive']) && $item['listIconActive'] == true) :
-											if (!empty($item['listIcon']['src'])) :
-												echo wp_kses(Gutenkit\Helpers\Utils::add_class_to_svg($item['listIcon']['src']), Gutenkit\Helpers\Utils::svg_allowed_html());
-											endif;
-										endif; ?>
-									</span>
-								</div>
+								<?php if (isset($item['listIconActive']) && $item['listIconActive'] == true) : ?>
+									<div class="gkit-page-list-icon">
+										<span>
+											<?php
+											if (!empty($item['listIcon']['src'])) {
+												echo wp_kses(
+													Gutenkit\Helpers\Utils::add_class_to_svg($item['listIcon']['src']),
+													Gutenkit\Helpers\Utils::svg_allowed_html()
+												);
+											}
+											?>
+										</span>
+									</div>
+								<?php endif; ?>
 								<div class="gkit-page-list-text">
 									<span class="gkit-page-list-title">
 										<?php
