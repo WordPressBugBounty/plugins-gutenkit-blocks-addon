@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.4.6
+Stable tag: 2.4.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -307,6 +307,18 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.4.7 (2026-06-07) = 
+* Fixed: Subtitle label of Page List
+* Fixed: CSS filter not working when removing a value of the control
+* Fixed: Duplicate parent menu item appearing in submenu list of admin menu
+* Fixed: Subtitle alignment issue in the Advanced Tab block
+* Fixed: WordPress components deprecation warnings
+* Fixed: Post Grid editor click now selects the block only (no link navigation)
+* Fixed: Default CSS values overriding Heading block control values
+* Improved: Added Tab icon alignment control in the Advanced Tab block
+* Improved: Added input fields for customizing the button label in the Blog Post block
+
 = GutenKit Blocks Addon 2.4.6 (2026-04-08) = 
 * Fixed: Border Color control — added support for Theme, Default, and Custom color palette in Advanced panel
 * Fixed: Video block Border Color control — Theme, Default, and Custom color options

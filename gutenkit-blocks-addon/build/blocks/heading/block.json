@@ -30,7 +30,7 @@
       "source": "html",
       "selector": ".gkit-heading-title",
       "default": "Grow your <strong>report</strong>",
-      "__experimentalRole": "content",
+      "role": "content",
       "excludeCopy": true
     },
     "linkSwitch": {

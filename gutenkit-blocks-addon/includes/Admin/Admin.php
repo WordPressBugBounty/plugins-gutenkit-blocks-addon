@@ -129,6 +129,8 @@ class Admin {
 			$this->menu_link_part . '#settings'
 		);
 
+		remove_submenu_page( $this->menu_slug, $this->menu_slug );
+
 		$this->add_license_page_menu();
 	}
 

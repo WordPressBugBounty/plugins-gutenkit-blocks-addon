@@ -237,6 +237,27 @@
     "navBoxShadow": {
       "type": "object"
     },
+    "navIconAlignDesktop": {
+      "type": "object"
+    },
+    "navIconAlignTablet": {
+      "type": "object"
+    },
+    "navIconAlignMobile": {
+      "type": "object"
+    },
+    "navIconAlignTabletLandscape": {
+      "type": "object"
+    },
+    "navIconAlignMobileLandscape": {
+      "type": "object"
+    },
+    "navIconAlignLaptop": {
+      "type": "object"
+    },
+    "navIconAlignWideScreen": {
+      "type": "object"
+    },
     "iconSizeDesktop": {
       "type": "object"
     },
