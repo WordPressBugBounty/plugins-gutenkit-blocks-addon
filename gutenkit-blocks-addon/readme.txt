@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.4.7
+Stable tag: 2.4.8
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -105,6 +105,19 @@ GutenKit blocks comes with-
 🚀 Higher SEO Scores
 
 🚀 Block API Version 3 Support
+
+### How GutenKit Keeps Your Site Fast:
+
+-   ✅ Loads only the CSS and JavaScript for blocks actually used on each page
+    
+-   ✅ 900+ inline SVG icons - load individual icons, never the full library
+    
+-   ✅ No external font-loading delays - Google Fonts load locally
+    
+-   ✅ Block API v3 support for maximum editor rendering performance
+    
+-   ✅ Zero jQuery dependency - pure, modern JavaScript
+
 
 ## Full Site Editing with GutenKit Page Builder
 
@@ -219,29 +232,23 @@ Give an exceptional interactive experience to every part of your website that vi
 
 In addition to the core features of a Gutenberg page builder, GutenKit offers a suite of advanced blocks to enhance your website’s functionality and visual appeal.
 
-### 🔷 Showcase with Icon Boxes
+🔷 [Icon Box:](https://wpgutenkit.com/blocks/icon-box/?utm_source=org&utm_medium=readme) Add an icon from the vast icon library without slowing down your site. GutenKit only loads the specific icons you choose.
 
-With the [Icon Box block in GutenKit](https://wpgutenkit.com/blocks/icon-box/?utm_source=org&utm_medium=readme), you can add icons from our vast library without slowing down your site. It’s super quick because it only loads the specific icons you choose.
+🔷 [Image Box](https://wpgutenkit.com/blocks/image-box/?utm_source=org&utm_medium=readme): displays images in a beautifully designed box. Crop, resize, and style them to fit seamlessly within your design.
 
-### 🔷 Highlight with Image Boxes
+🔷 [Dual Button](https://wpgutenkit.com/blocks/dual-button/?utm_source=org&utm_medium=readme): GutenKit WordPress Block editor Plugin offers an intuitive way to integrate paired buttons with personalized styles into your content.
 
-[GutenKit’s Image Box block](https://wpgutenkit.com/blocks/image-box/?utm_source=org&utm_medium=readme) is an awesome feature that displays images in a beautifully designed box. Don’t worry about your images—crop, resize, adjust them on the fly, and style them accordingly to fit seamlessly within your design.
+🔷 [Pricing Table](https://wpgutenkit.com/blocks/pricing-table/?utm_source=org&utm_medium=readme): Ccreate crystal-clear pricing tables that convert, and highlight key features, pricing structures, calls to action, etc.
 
-### 🔷 Dual Buttons for Versatility
+🔷 [Image Comparison](https://wpgutenkit.com/blocks/image-comparison/?utm_source=org&utm_medium=readme): Highlighting transformations or any scenario where visual impact matters. This drag-and-drop WordPress block slides smoothly between the before-and-after comparison of an image.
 
-The [Dual Button block](https://wpgutenkit.com/blocks/dual-button/?utm_source=org&utm_medium=readme) of the GutenKit WordPress Block editor Plugin offers an intuitive way to integrate paired buttons with personalized styles into your content. With this block, you can create & customize two buttons, while also inserting text in the middle to provide context or information.
+🔷[Countdown Timer](https://wpgutenkit.com/blocks/countdown-timer/?utm_source=org&utm_medium=readme): Create visually appealing and highly customizable Countdown Timers within the WordPress Gutenberg editor and add a sense of urgency to promotions.
 
-### 🔷 Pricing Table
+🔷 [Timeline Block](http://wpgutenkit.com/blocks/timeline/?utm_source=org&utm_medium=readme): Create captivating, chronological timelines to showcase history, project roadmaps, or step-by-step processes.
+ 
+🔷 [Testimonial Block](https://wpgutenkit.com/blocks/testimonial/?utm_source=org&utm_medium=readme): Build trust and credibility by showcasing customer reviews and social proof with beautifully styled cards and sliders.
 
-Showcase your product/service prices in style with our [Pricing Table block](https://wpgutenkit.com/blocks/pricing-table/?utm_source=org&utm_medium=readme). It lets you create crystal-clear pricing tables that convert, and highlight key features, pricing structures, calls to action, and many more.
-
-### 🔷 Showcase Before/After Image Comparison
-
-This [Image Comparison block](https://wpgutenkit.com/blocks/image-comparison/?utm_source=org&utm_medium=readme) of GutenKit is ideal for highlighting transformations, or any scenario where visual impact matters. With this drag-and-drop WordPress block, you can slide smoothly between the before and after comparison of an image.
-
-### 🔷 Create Urgency with Countdown Timers
-
-The GutenKit’s [Countdown Timer block](https://wpgutenkit.com/blocks/countdown-timer/?utm_source=org&utm_medium=readme) allow users to create visually appealing and highly customizable Countdown Timers within the WordPress Gutenberg editor. At the same time, it can effectively add a sense of urgency to promotions and prompt swift, time-sensitive actions from their audience.
+🔷 [Team Block](https://wpgutenkit.com/blocks/team/?utm_source=org&utm_medium=readme): Display team member profiles, complete with photos, biographies, and social links, in elegant grid layouts.
 
 ### 🔷 Attractive Gallery Style
 Increase the visual appeal of your website using this Gutenberg Gallery plugin, which includes an intuitive grid and masonry-style image and video galleries. Displays visual content in versatile & dynamic layouts for optimal visitor engagement.
@@ -307,6 +314,9 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.4.8 (2026-06-16) = 
+* Added: Translation support for dashboard and block controls
 
 = GutenKit Blocks Addon 2.4.7 (2026-06-07) = 
 * Fixed: Subtitle label of Page List

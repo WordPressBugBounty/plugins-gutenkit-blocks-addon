@@ -204,6 +204,9 @@ class Admin {
 						'pro_version' => defined('GUTENKIT_PRO_PLUGIN_VERSION') ? GUTENKIT_PRO_PLUGIN_VERSION : '',
 					)
 				);
+
+				// Set up script translations
+				wp_set_script_translations( 'gutenkit-dashboard', 'gutenkit-blocks-addon' );
 			}
 		}
 	}

@@ -158,6 +158,10 @@ class Enqueue {
 					$asset_data['version'],
 					false
 				);
+
+				// Set up script translations
+				wp_set_script_translations( $handle, 'gutenkit-blocks-addon' );
+
 				return true; // Successfully enqueued
 			}
 		}
