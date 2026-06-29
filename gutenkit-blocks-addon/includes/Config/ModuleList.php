@@ -240,6 +240,15 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'status'		=> 'inactive',
 					'badge'			=> ['new', 'beta']
 				),
+				'marquee' => array(
+					'slug'			=> 'marquee',
+					'title'			=> 'Marquee',
+					'package'		=> 'pro',
+					'auto_enqueue'	=> false,
+					'attributes'	=> array( 'new' ),
+					'status'		=> 'inactive',
+					'badge'			=> ['new'],
+				),
 			)
 		);
 	}

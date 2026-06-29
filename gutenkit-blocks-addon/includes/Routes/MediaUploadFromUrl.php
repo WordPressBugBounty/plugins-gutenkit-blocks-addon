@@ -5,7 +5,6 @@ namespace Gutenkit\Routes;
 defined('ABSPATH') || exit;
 
 class MediaUploadFromUrl {
-	use \Gutenkit\Traits\Singleton;
 
 	public function __construct() {
 		add_action( 'rest_api_init', array( $this, 'register_media_upload_from_url_route' ) );

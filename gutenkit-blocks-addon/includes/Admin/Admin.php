@@ -61,8 +61,7 @@ class Admin {
 		new Api\OnboardData();
 
 		add_action('admin_menu', [$this, 'add_admin_menu']);
-		add_action('admin_enqueue_scripts', [$this, 'enqueue_admin_scripts']);
-		add_action('admin_enqueue_scripts', [$this, 'enqueue_popup_scripts']);
+		add_action('admin_enqueue_scripts', [$this, 'enqueue_all_admin_scripts']);
 		add_action('admin_init', [$this, 'redirect_to_popupkit_page']);
 	}
 
@@ -141,6 +140,17 @@ class Admin {
 			<div class="gutenkit-admin-dashboard" data-admin="<?php echo esc_attr($data_admin); ?>"></div>
 		</div>
 		<?php
+	}
+
+	public function enqueue_all_admin_scripts( $hook ) {
+		// Dashboard / onboard scripts — only on the GutenKit admin page
+		$this->enqueue_admin_scripts( $hook );
+
+		// Popup builder scripts — only on the popup builder page
+		$this->enqueue_popup_scripts( $hook );
+
+		// Deactivation feedback popup — only on plugins.php
+		$this->enqueue_deactivation_popup_scripts( $hook );
 	}
 
 	public function enqueue_admin_scripts( $hook ) {
@@ -250,6 +260,42 @@ class Admin {
 				$popup_assets['version']
 			);
 		}
+	}
+
+	public function enqueue_deactivation_popup_scripts( $hook ) {
+		if ( 'plugins.php' !== $hook ) {
+			return;
+		}
+
+		$asset_file = GUTENKIT_PLUGIN_DIR . 'build/admin/deactivation-popup/index.asset.php';
+		if ( ! file_exists( $asset_file ) ) {
+			return;
+		}
+
+		$assets = include $asset_file;
+
+		wp_enqueue_script(
+			'gutenkit-deactivation-popup',
+			GUTENKIT_PLUGIN_URL . 'build/admin/deactivation-popup/index.js',
+			$assets['dependencies'],
+			$assets['version'],
+			true
+		);
+
+		wp_localize_script(
+			'gutenkit-deactivation-popup',
+			'gutenkitDeactivation',
+			array(
+				'pluginUrl' => GUTENKIT_PLUGIN_URL,
+			)
+		);
+
+		wp_enqueue_style(
+			'gutenkit-deactivation-popup',
+			GUTENKIT_PLUGIN_URL . 'build/admin/deactivation-popup/style-index.css',
+			array(),
+			$assets['version']
+		);
 	}
 
 	public function redirect_to_popupkit_page() {

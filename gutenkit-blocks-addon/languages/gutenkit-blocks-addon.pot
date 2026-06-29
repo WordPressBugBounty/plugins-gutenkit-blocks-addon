@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.8\n"
+"Project-Id-Version: GutenKit Blocks 2.4.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-16T05:10:38+00:00\n"
+"POT-Creation-Date: 2026-06-29T05:39:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -47,8 +47,8 @@ msgid "Blog Post Thumbnail Read More"
 msgstr ""
 
 #: gutenkit-blocks-addon.php:139
+#: includes/Admin/Admin.php:125
 #: includes/Admin/Admin.php:126
-#: includes/Admin/Admin.php:127
 #: build/84.js:1
 #: build/1715.js:1
 #: build/3060.js:1
@@ -95,28 +95,28 @@ msgstr ""
 msgid "Video Tutorials"
 msgstr ""
 
+#: includes/Admin/Admin.php:74
 #: includes/Admin/Admin.php:75
-#: includes/Admin/Admin.php:76
 msgid "Gutenkit"
 msgstr ""
 
+#: includes/Admin/Admin.php:85
 #: includes/Admin/Admin.php:86
-#: includes/Admin/Admin.php:87
 msgid "Welcome"
 msgstr ""
 
+#: includes/Admin/Admin.php:95
 #: includes/Admin/Admin.php:96
-#: includes/Admin/Admin.php:97
 msgid "Blocks"
 msgstr ""
 
+#: includes/Admin/Admin.php:105
 #: includes/Admin/Admin.php:106
-#: includes/Admin/Admin.php:107
 msgid "Modules"
 msgstr ""
 
-#: includes/Admin/Admin.php:221
-#: includes/Admin/Admin.php:222
+#: includes/Admin/Admin.php:231
+#: includes/Admin/Admin.php:232
 msgid "License"
 msgstr ""
 
@@ -314,41 +314,41 @@ msgstr ""
 msgid "AI-powered text-to-image generator for WordPress with OpenAI’s DALL-E 2 technology to generate high-quality images in one click."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:57
+#: includes/Routes/MailChimp.php:55
 msgid "The Mailchimp list ID"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:145
+#: includes/Routes/MailChimp.php:143
 msgid "Select a Form"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:267
+#: includes/Routes/MailChimp.php:265
 msgid "Please set API Key in Gutenkit -> Settings -> API Integration -> MailChimp and Create Campaign."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:273
+#: includes/Routes/MailChimp.php:271
 msgid "Invalid API key format."
 msgstr ""
 
 #. translators: %s: error message
-#: includes/Routes/MailChimp.php:302
+#: includes/Routes/MailChimp.php:300
 #, php-format
 msgid "Something went wrong: %s"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:314
+#: includes/Routes/MailChimp.php:312
 msgid "Please check your email to confirm your subscription."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:316
+#: includes/Routes/MailChimp.php:314
 msgid "Successfully subscribed to the mailing list."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:341
+#: includes/Routes/MailChimp.php:339
 msgid "Select Field Name ID"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:341
+#: includes/Routes/MailChimp.php:339
 msgid "EMAIL"
 msgstr ""
 

@@ -37,7 +37,7 @@ class Modules {
 	 * @since 1.0.0
 	 */
 	protected function module_keys() {
-		return ['entranceAnimation', 'mouseTiltEffects', 'mouseTrackEffects', 'isScrollingEffect', 'enableTooltip', 'isOnePageScrollSection', 'stickyPosition', 'interactions', 'enableParticleEffect', 'isScrollSpyEnabled', 'enableVideoScroller', 'enableLiquidGlass'];
+		return ['entranceAnimation', 'mouseTiltEffects', 'mouseTrackEffects', 'isScrollingEffect', 'enableTooltip', 'isOnePageScrollSection', 'stickyPosition', 'interactions', 'enableParticleEffect', 'isScrollSpyEnabled', 'enableVideoScroller', 'enableLiquidGlass', 'marqueeEnable'];
 	}
 
 	/**
@@ -129,6 +129,12 @@ class Modules {
 				if( $key == 'enableLiquidGlass' && isset($attrs[$key]) && !empty($attrs[$key]) ) {
 					$this->used_modules[] = $key; // to check only add the module if it's used
 					$this->used_modules_settings['liquid-glass'] = $modules_list['liquid-glass'] ?? array();
+				}
+					
+				// check if marquee is enabled
+				if( $key == 'marqueeEnable' && isset($attrs[$key]) && !empty($attrs[$key]) ) {
+					$this->used_modules[] = $key; // to check only add the module if it's used
+					$this->used_modules_settings['marquee'] = $modules_list['marquee'] ?? array();
 				}
 			}
 		}

@@ -6,8 +6,6 @@ defined('ABSPATH') || exit;
 
 class MailChimp
 {
-	use \Gutenkit\Traits\Singleton;
-
 	public function __construct()
 	{
 		add_action('rest_api_init', array($this, 'gutenkit_mailchimp_get_list_id'));

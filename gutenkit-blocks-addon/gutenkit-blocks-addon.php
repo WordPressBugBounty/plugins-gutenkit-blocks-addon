@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpgutenkit.com/
  * Author: Wpmet
- * Version: 2.4.8
+ * Version: 2.4.9
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.4.8';
+	const VERSION = '2.4.9';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -266,32 +266,16 @@ final class Gutenkit {
 		Gutenkit\Admin\Admin::instance();
 
 		/**
-		 * Initializes the MediaUploadFromUrl route.
+		 * Initializes the REST API routes.
 		 *
-		 * This function creates an instance of the Gutenkit\Routes\MediaUploadFromUrl class
-		 * and initializes it, allowing users to upload media files from a URL.
+		 * This creates an instance of the Gutenkit\Routes\Init class, which in turn
+		 * initializes all of the GutenKit route classes (MediaUploadFromUrl,
+		 * GlobalSettings, DeactivationFeedback, MailChimp).
 		 *
-		 * @since 1.0.0
+		 * @return void
+		 * @since 2.4.8
 		 */
-		Gutenkit\Routes\MediaUploadFromUrl::instance();
-
-		/**
-		 * Initializes the Global Settings route.
-		 *
-		 * This function creates an instance of the Gutenkit\Routes\GlobalSettings class
-		 * and initializes it, allowing users to configure the Gutenkit plugin's global settings.
-		 */
-		Gutenkit\Routes\GlobalSettings::instance();
-
-		/**
-		 * Initializes the MailChimp route.
-		 *
-		 * This function creates an instance of the Gutenkit\Routes\MailChimp class
-		 * and initializes it, allowing users to register the MailChimp route.
-		 *
-		 * @since 1.5.1
-		 */
-		Gutenkit\Routes\MailChimp::instance();
+		Gutenkit\Routes\Init::instance();
 
 		/**
 		 * Instantiate the UtilityPackage class.

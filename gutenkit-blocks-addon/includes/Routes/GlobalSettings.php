@@ -6,8 +6,6 @@ defined('ABSPATH') || exit;
 
 class GlobalSettings
 {
-    use \Gutenkit\Traits\Singleton;
-
     public function __construct()
     {
         add_action('rest_api_init', array($this, 'register_global_options_settings'));
