@@ -155,12 +155,33 @@ class UtilityPackages {
 						'desc' => esc_html__('All-in-one Elementor addon trusted by 1 Million+ users, makes your website builder process easier with ultimate freedom.', 'gutenkit-blocks-addon'),
 						'docs' => 'https://wpmet.com/docs/elementskit/',
 					],
-					'getgenie/getgenie.php' => [
-						'name' => esc_html__('GetGenie AI', 'gutenkit-blocks-addon'),
-						'url'  => 'https://wordpress.org/plugins/getgenie/',
-						'icon' => 'https://ps.w.org/getgenie/assets/icon-256x256.gif?rev=2798355',
-						'desc' => esc_html__('Your personal AI assistant for content and SEO. Write content that ranks on Google with NLP keywords and SERP analysis data.', 'gutenkit-blocks-addon'),
-						'docs' => 'https://getgenie.ai/docs/',
+					'gutenkit-blocks-addon/gutenkit-blocks-addon.php' => [
+						'name' => esc_html__('GutenKit', 'gutenkit-blocks-addon'),
+						'url'  => 'https://wordpress.org/plugins/gutenkit-blocks-addon/',
+						'icon' => 'https://ps.w.org/gutenkit-blocks-addon/assets/icon-256x256.gif',
+						'desc' => esc_html__('The most powerful Gutenberg blocks plugin to build stunning WordPress websites with full-site editing and advanced block controls.', 'gutenkit-blocks-addon'),
+						'docs' => 'https://wpmet.com/doc/gutenkit/',
+					],
+					'rox-dynamic-cpt-fields-engine/rox-dynamic-cpt-fields-engine.php' => [
+						'name' => esc_html__('Rox Dynamic CPT Fields Engine', 'gutenkit-blocks-addon'),
+						'url'  => 'https://wordpress.org/plugins/rox-dynamic-cpt-fields-engine/',
+						'icon' => 'https://ps.w.org/rox-dynamic-cpt-fields-engine/assets/icon-256x256.gif',
+						'desc' => esc_html__('Build custom post types, fields, taxonomies, and dynamic frontend layouts for WordPress, with zero coding and full AI-generated schema.', 'gutenkit-blocks-addon'),
+						'docs' => 'https://wpmet.com/doc/rox-dynamic-cpt-fields-engine/',
+					],
+					'rox-appointment-booking/rox-appointment-booking.php' => [
+						'name' => esc_html__('Rox Appointment Booking', 'gutenkit-blocks-addon'),
+						'url'  => 'https://wordpress.org/plugins/rox-appointment-booking/',
+						'icon' => 'https://ps.w.org/rox-appointment-booking/assets/icon-256x256.png',
+						'desc' => esc_html__('Manage bookings, agents, payments, and calendars from one dashboard! A complete appointment and scheduling solution for WordPress.', 'gutenkit-blocks-addon'),
+						'docs' => 'https://wpmet.com/doc/rox-appointment-booking/',
+					],
+					'metform/metform.php' => [
+						'name' => esc_html__('MetForm', 'gutenkit-blocks-addon'),
+						'url'  => 'https://wordpress.org/plugins/metform/',
+						'icon' => 'https://ps.w.org/metform/assets/icon-256x256.png?rev=2544152',
+						'desc' => esc_html__('Drag & drop form builder for Elementor to create contact forms, multi-step forms, and more — smoother, faster, and better!', 'gutenkit-blocks-addon'),
+						'docs' => 'https://wpmet.com/doc/metform/',
 					],
 					'shopengine/shopengine.php' => [
 						'name' => esc_html__('ShopEngine', 'gutenkit-blocks-addon'),
@@ -169,16 +190,30 @@ class UtilityPackages {
 						'desc' => esc_html__('Complete WooCommerce solution for Elementor to fully customize any pages including cart, checkout, shop page, and so on.', 'gutenkit-blocks-addon'),
 						'docs' => 'https://wpmet.com/doc/shopengine/',
 					],
-					'metform/metform.php' => [
-						'name' => esc_html__('MetForm', 'gutenkit-blocks-addon'),
-						'url'  => 'https://wordpress.org/plugins/genie-image-ai/',
-						'icon' => 'https://ps.w.org/metform/assets/icon-256x256.png?rev=2544152',
-						'desc' => esc_html__('Drag & drop form builder for Elementor to create contact forms, multi-step forms, and more — smoother, faster, and better!', 'gutenkit-blocks-addon'),
-						'docs' => 'https://wpmet.com/doc/metform/',
+					'popup-builder-block/popup-builder-block.php' => [
+						'name' => esc_html__('PopupKit', 'gutenkit-blocks-addon'),
+						'url'  => 'https://wordpress.org/plugins/popup-builder-block/',
+						'icon' => 'https://ps.w.org/popup-builder-block/assets/icon-256x256.png',
+						'desc' => esc_html__('Create stunning popups for WordPress with advanced targeting, triggers, and display conditions — no coding required.', 'gutenkit-blocks-addon'),
+						'docs' => 'https://wpmet.com/doc/popupkit/',
+					],
+					'table-builder-block/table-builder-block.php' => [
+						'name' => esc_html__('TableKit', 'gutenkit-blocks-addon'),
+						'url'  => 'https://wordpress.org/plugins/table-builder-block/',
+						'icon' => 'https://ps.w.org/table-builder-block/assets/icon-256x256.png',
+						'desc' => esc_html__('Build beautiful, responsive tables for WordPress with sorting, filtering, and pagination — no coding needed.', 'gutenkit-blocks-addon'),
+						'docs' => 'https://wpmet.com/doc/tablekit/',
+					],
+					'getgenie/getgenie.php' => [
+						'name' => esc_html__('GetGenie AI', 'gutenkit-blocks-addon'),
+						'url'  => 'https://wordpress.org/plugins/getgenie/',
+						'icon' => 'https://ps.w.org/getgenie/assets/icon-256x256.gif?rev=2798355',
+						'desc' => esc_html__('Your personal AI assistant for content and SEO. Write content that ranks on Google with NLP keywords and SERP analysis data.', 'gutenkit-blocks-addon'),
+						'docs' => 'https://getgenie.ai/docs/',
 					],
 					'emailkit/EmailKit.php' => [
 						'name' => esc_html__('EmailKit', 'gutenkit-blocks-addon'),
-						'url'  => 'https://wordpress.org/plugins/genie-image-ai/',
+						'url'  => 'https://wordpress.org/plugins/emailkit/',
 						'icon' => 'https://ps.w.org/emailkit/assets/icon-256x256.png?rev=3003571',
 						'desc' => esc_html__('Advanced email customizer for WooCommerce and WordPress. Build, customize, and send emails from WordPress to boost your sales!', 'gutenkit-blocks-addon'),
 						'docs' => 'https://wpmet.com/doc/emailkit/',
@@ -190,20 +225,6 @@ class UtilityPackages {
 						'desc' => esc_html__('Add social share, login, and engagement counter — unified solution for all social media with tons of different styles for your website.', 'gutenkit-blocks-addon'),
 						'docs' => 'https://wpmet.com/doc/wp-social/',
 					],
-					'wp-ultimate-review/wp-ultimate-review.php' => [
-						'name' => esc_html__('WP Ultimate Review', 'gutenkit-blocks-addon'),
-						'url'  => 'https://wordpress.org/plugins/wp-ultimate-review/',
-						'icon' => 'https://ps.w.org/wp-ultimate-review/assets/icon-256x256.png?rev=2544187',
-						'desc' => esc_html__('Collect and showcase reviews on your website to build brand credibility and social proof with the easiest solution.', 'gutenkit-blocks-addon'),
-						'docs' => 'https://wpmet.com/doc/wp-ultimate-review/',
-					],
-					'wp-fundraising-donation/wp-fundraising.php' => [
-						'name' => esc_html__('FundEngine', 'gutenkit-blocks-addon'),
-						'url'  => 'https://wordpress.org/plugins/wp-fundraising-donation/',
-						'icon' => 'https://ps.w.org/wp-fundraising-donation/assets/icon-256x256.png?rev=2544150',
-						'desc' => esc_html__('Create fundraising, crowdfunding, and donation websites with PayPal and Stripe payment gateway integration.', 'gutenkit-blocks-addon'),
-						'docs' => 'https://wpmet.com/doc/fundengine/',
-					],
 					'blocks-for-shopengine/shopengine-gutenberg-addon.php' => [
 						'name' => esc_html__('Blocks for ShopEngine', 'gutenkit-blocks-addon'),
 						'url'  => 'https://wordpress.org/plugins/blocks-for-shopengine/',
@@ -211,13 +232,7 @@ class UtilityPackages {
 						'desc' => esc_html__('All in one WooCommerce solution for Gutenberg! Build your WooCommerce pages in a block editor with full customization.', 'gutenkit-blocks-addon'),
 						'docs' => 'https://wpmet.com/doc/shopengine/shopengine-gutenberg/',
 					],
-					'genie-image-ai/genie-image-ai.php' => [
-						'name' => esc_html__('Genie Image', 'gutenkit-blocks-addon'),
-						'url'  => 'https://wordpress.org/plugins/genie-image-ai/',
-						'icon' => 'https://ps.w.org/genie-image-ai/assets/icon-256x256.png?rev=2977297',
-						'desc' => esc_html__('AI-powered text-to-image generator for WordPress with OpenAI’s DALL-E 2 technology to generate high-quality images in one click.', 'gutenkit-blocks-addon'),
-						'docs' => 'https://getgenie.ai/docs/',
-					],
+					// here add more plugins if needed
 				]
 			) # @plugins
 			->call();

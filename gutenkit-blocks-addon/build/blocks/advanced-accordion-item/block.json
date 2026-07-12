@@ -32,7 +32,8 @@
     },
     "title": {
       "type": "string",
-      "default": "How do I update my profile information?"
+      "default": "How do I update my profile information?",
+      "excludeCopy": true
     },
     "parentBlockAttributes": {
       "type": "object"

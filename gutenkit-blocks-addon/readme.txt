@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.4.9
+Stable tag: 2.4.10
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -314,6 +314,12 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.4.10 (2026-07-09) = 
+* Fixed: Inner styles were not copied and pasted correctly in the Advanced Accordion
+* Fixed: GutenKit page setting failed to load
+* Improved: Updated the our plugins list in the dashboard
+* Improved: Updated the website powerUp list in the onboarding flow
 
 = GutenKit Blocks Addon 2.4.9 (2026-06-29) = 
 * Added: Deactivation feedback modal
