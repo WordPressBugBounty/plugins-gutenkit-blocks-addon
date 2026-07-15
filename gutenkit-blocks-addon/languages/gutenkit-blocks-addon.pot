@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.10\n"
+"Project-Id-Version: GutenKit Blocks 2.4.11\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-09T12:03:34+00:00\n"
+"POT-Creation-Date: 2026-07-15T09:54:01+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -8387,7 +8387,7 @@ msgstr ""
 #: build/admin/onboard/index.js:1
 #: build/template-library/template-library.js:1
 #: src/onboard/components/Pagination.js:70
-#: src/template-library/components/template/SinglePage.js:137
+#: src/template-library/components/template/SinglePage.js:142
 msgid "Back"
 msgstr ""
 
@@ -8863,10 +8863,8 @@ msgstr ""
 #: src/blocks/nav-menu/nav-template-picker.js:110
 #: src/template-library/components/page/Page.js:53
 #: src/template-library/components/page/Page.js:74
-#: src/template-library/components/pattern/Pattern.js:60
-#: src/template-library/components/pattern/Pattern.js:81
-#: src/template-library/components/template/SinglePage.js:217
-#: src/template-library/components/template/SinglePage.js:234
+#: src/template-library/components/pattern/Pattern.js:70
+#: src/template-library/components/template/SinglePage.js:207
 msgid "Importing"
 msgstr ""
 
@@ -8875,10 +8873,8 @@ msgstr ""
 #: src/blocks/nav-menu/nav-template-picker.js:110
 #: src/template-library/components/page/Page.js:53
 #: src/template-library/components/page/Page.js:74
-#: src/template-library/components/pattern/Pattern.js:60
-#: src/template-library/components/pattern/Pattern.js:81
-#: src/template-library/components/template/SinglePage.js:217
-#: src/template-library/components/template/SinglePage.js:234
+#: src/template-library/components/pattern/Pattern.js:70
+#: src/template-library/components/template/SinglePage.js:207
 msgid "Import"
 msgstr ""
 
@@ -9001,6 +8997,11 @@ msgstr ""
 msgid "Play Video"
 msgstr ""
 
+#: build/blocks/video/index.js:1
+#: src/blocks/video/edit.js:230
+msgid "YouTube video"
+msgstr ""
+
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/advanced-url/index.js:128
 msgid "URL"
@@ -9046,7 +9047,9 @@ msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
+#: build/template-library/template-library.js:1
 #: src/gkit-components/components/pro-switcher-notice/notice-popup.js:25
+#: src/template-library/components/template/SinglePage.js:211
 msgid "Upgrade Now"
 msgstr ""
 
@@ -9428,7 +9431,9 @@ msgid "the editor once after clicking the \"Enable\" button to finish the proces
 msgstr ""
 
 #: build/gutenkit/components.js:1
+#: build/template-library/template-library.js:1
 #: src/gkit-components/components/icon-picker/index.js:243
+#: src/template-library/components/pattern/MissingPluginsModal.js:172
 msgid "Cancel"
 msgstr ""
 
@@ -9932,7 +9937,7 @@ msgstr ""
 
 #: build/template-library/template-library.js:1
 #: src/template-library/components/page/Page.js:59
-#: src/template-library/components/pattern/Pattern.js:66
+#: src/template-library/components/pattern/Pattern.js:83
 msgid "Requires GutenKit Blocks PRO"
 msgstr ""
 
@@ -9947,23 +9952,78 @@ msgid "Please ensure that your search is accurately spelled or attempt using dif
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/template/SinglePage.js:184
+#: src/template-library/components/pattern/MissingPluginsModal.js:136
+msgid "Required Plugins"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:145
+msgid "Checking plugin status..."
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:146
+msgid "This pattern requires the following plugins to be installed and activated:"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:124
+msgid "Installed"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:128
+msgid "Not Installed"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:99
+msgid "Failed to install the required plugin."
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:181
+msgid "Checking..."
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:113
+msgid "Activating & Importing..."
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:114
+msgid "Installing & Importing..."
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:118
+msgid "Activate & Import"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/MissingPluginsModal.js:119
+msgid "Install & Import"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/pattern/Pattern.js:69
+msgid "Click to see required plugins"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/template/SinglePage.js:189
 msgid "Premium Template"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/template/SinglePage.js:186
+#: src/template-library/components/template/SinglePage.js:191
 msgid "Unlock access to this template, along with a vast array of others, for as little as $49. Start creating effortlessly today!"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/template/SinglePage.js:196
+#: src/template-library/components/template/SinglePage.js:198
 msgid "Live Preview"
-msgstr ""
-
-#: build/template-library/template-library.js:1
-#: src/template-library/components/template/SinglePage.js:201
-msgid "Upgrade Now!"
 msgstr ""
 
 #: build/template-library/template-library.js:1
