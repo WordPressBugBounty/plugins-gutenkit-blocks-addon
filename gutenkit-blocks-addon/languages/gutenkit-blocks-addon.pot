@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.11\n"
+"Project-Id-Version: GutenKit Blocks 2.4.12\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-15T09:54:01+00:00\n"
+"POT-Creation-Date: 2026-07-19T09:03:22+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -327,41 +327,62 @@ msgstr ""
 msgid "All in one WooCommerce solution for Gutenberg! Build your WooCommerce pages in a block editor with full customization."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:55
+#: includes/Routes/MailChimp.php:49
 msgid "The Mailchimp list ID"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:143
+#: includes/Routes/MailChimp.php:146
 msgid "Select a Form"
 msgstr ""
 
+#: includes/Routes/MailChimp.php:234
+#: includes/Routes/MailChimp.php:407
+msgid "There was an error. Please try again."
+msgstr ""
+
 #: includes/Routes/MailChimp.php:265
-msgid "Please set API Key in Gutenkit -> Settings -> API Integration -> MailChimp and Create Campaign."
+msgid "Too many requests. Please try again later."
 msgstr ""
 
 #: includes/Routes/MailChimp.php:271
+msgid "Invalid request."
+msgstr ""
+
+#: includes/Routes/MailChimp.php:277
+msgid "Please provide a valid email address."
+msgstr ""
+
+#: includes/Routes/MailChimp.php:284
+msgid "Invalid list ID."
+msgstr ""
+
+#: includes/Routes/MailChimp.php:362
+msgid "Please set API Key in Gutenkit -> Settings -> API Integration -> MailChimp and Create Campaign."
+msgstr ""
+
+#: includes/Routes/MailChimp.php:368
 msgid "Invalid API key format."
 msgstr ""
 
 #. translators: %s: error message
-#: includes/Routes/MailChimp.php:300
+#: includes/Routes/MailChimp.php:396
 #, php-format
 msgid "Something went wrong: %s"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:312
+#: includes/Routes/MailChimp.php:411
 msgid "Please check your email to confirm your subscription."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:314
+#: includes/Routes/MailChimp.php:413
 msgid "Successfully subscribed to the mailing list."
 msgstr ""
 
-#: includes/Routes/MailChimp.php:339
+#: includes/Routes/MailChimp.php:438
 msgid "Select Field Name ID"
 msgstr ""
 
-#: includes/Routes/MailChimp.php:339
+#: includes/Routes/MailChimp.php:438
 msgid "EMAIL"
 msgstr ""
 

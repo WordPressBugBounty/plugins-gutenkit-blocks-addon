@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.4.11
+Stable tag: 2.4.12
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -314,6 +314,9 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.4.12 (2026-07-190) = 
+* Improved: Mailchimp REST routes, rate-limiting & validation
 
 = GutenKit Blocks Addon 2.4.11 (2026-07-15) = 
 * Added: Tablekit installation notice for table builder templates

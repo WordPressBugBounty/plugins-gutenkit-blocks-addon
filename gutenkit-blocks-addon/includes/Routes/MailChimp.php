@@ -8,13 +8,10 @@ class MailChimp
 {
 	public function __construct()
 	{
-		add_action('rest_api_init', array($this, 'gutenkit_mailchimp_get_list_id'));
-		add_action('rest_api_init', array($this, 'gutenkit_mailchimp_post_data'));
-		add_action('rest_api_init', array($this, 'gutenkit_mailchimp_get_interest_data'));
-		// add_action('rest_api_init', array($this, 'gutenkit_mailchimp_form_field_list'));
+		add_action('rest_api_init', array($this, 'register_routes'));
 	}
 
-	public function gutenkit_mailchimp_get_list_id()
+	public function register_routes()
 	{
 		register_rest_route(
 			'gutenkit/v1',
@@ -22,41 +19,47 @@ class MailChimp
 			array(
 				'methods' => 'GET',
 				'callback' => array($this, 'gutenkit_mailchimp_callback'),
-				'permission_callback' => '__return_true',
+				'permission_callback' => array($this, 'editor_permission_check'),
 			)
 		);
-	}
 
-	public function gutenkit_mailchimp_post_data()
-	{
 		register_rest_route(
 			'gutenkit/v1',
 			'/mailchimp/post/form',
 			array(
 				'methods' => 'POST',
 				'callback' => array($this, 'gutenkit_mailchimp_post_callback'),
+				// Public: this is the frontend subscription form submission.
 				'permission_callback' => '__return_true',
 			)
 		);
-	}
 
-	public function gutenkit_mailchimp_get_interest_data(){
 		register_rest_route(
 			'gutenkit/v1',
 			'/mailchimp/get/interests',
 			array(
 				'methods' => 'GET',
 				'callback' => array($this, 'gutenkit_mailchimp_get_interests_callback'),
-				'permission_callback' => '__return_true',
+				'permission_callback' => array($this, 'editor_permission_check'),
 				'args' => array(
 					'list_id' => array(
 						'required' => true,
 						'type' => 'string',
+						'sanitize_callback' => 'sanitize_text_field',
 						'description' => __('The Mailchimp list ID', 'gutenkit-blocks-addon'),
 					),
 				),
 			)
 		);
+	}
+
+	/**
+	 * Audience metadata is fetched with the site's stored Mailchimp API key,
+	 * so it is only exposed to users who can edit content with the block.
+	 */
+	public function editor_permission_check()
+	{
+		return current_user_can('edit_posts');
 	}
 
 	public function gutenkit_mailchimp_get_interests_callback($param){
@@ -187,12 +190,100 @@ class MailChimp
 	}
 
 
+	/**
+	 * Throttle submissions per IP. This route is intentionally public, so this is
+	 * the main thing standing between the site's Mailchimp account and a bot that
+	 * wants to pump arbitrary addresses into the audience.
+	 *
+	 * Uses REMOTE_ADDR only: X-Forwarded-For is caller-controlled and would let an
+	 * attacker sidestep the limit by rotating the header.
+	 */
+	protected function is_rate_limited()
+	{
+		$limit  = (int) apply_filters('gutenkit_mailchimp_submission_limit', 10);
+		$window = (int) apply_filters('gutenkit_mailchimp_submission_window', 10 * MINUTE_IN_SECONDS);
+
+		if ($limit <= 0) {
+			return false; // Filtered to 0 disables throttling.
+		}
+
+		$ip = isset($_SERVER['REMOTE_ADDR']) ? sanitize_text_field(wp_unslash($_SERVER['REMOTE_ADDR'])) : '';
+		if (empty($ip)) {
+			return false;
+		}
+
+		$key   = 'gkit_mc_rl_' . md5($ip);
+		$count = (int) get_transient($key);
+
+		if ($count >= $limit) {
+			return true;
+		}
+
+		set_transient($key, $count + 1, $window);
+		return false;
+	}
+
+	/**
+	 * Mailchimp error responses are echoed back to the browser so the form can show
+	 * "already a list member" and per-field messages. Pass through only the keys the
+	 * frontend actually reads, so nothing else from the API surfaces publicly.
+	 */
+	protected function safe_error_response($response_data)
+	{
+		if (!is_array($response_data)) {
+			return esc_html__('There was an error. Please try again.', 'gutenkit-blocks-addon');
+		}
+
+		$safe = array();
+		foreach (array('title', 'detail', 'status') as $key) {
+			if (isset($response_data[$key]) && is_scalar($response_data[$key])) {
+				$safe[$key] = $response_data[$key];
+			}
+		}
+
+		if (!empty($response_data['errors']) && is_array($response_data['errors'])) {
+			$safe['errors'] = array();
+			foreach ($response_data['errors'] as $error) {
+				if (isset($error['message']) && is_scalar($error['message'])) {
+					$safe['errors'][] = array(
+						'field'   => isset($error['field']) && is_scalar($error['field']) ? $error['field'] : '',
+						'message' => $error['message'],
+					);
+				}
+			}
+		}
+
+		return $safe;
+	}
+
 	public function gutenkit_mailchimp_post_callback($param)
 	{
-		$body = $param->get_body();
-		$request = json_decode($body, true);
-
 		$return = ['success' => [], 'error' => []];
+
+		// Throttle first, before touching the option or calling out to Mailchimp.
+		if ($this->is_rate_limited()) {
+			$return['error'] = esc_html__('Too many requests. Please try again later.', 'gutenkit-blocks-addon');
+			return new \WP_REST_Response($return, 429);
+		}
+
+		$request = $param->get_json_params();
+		if (!is_array($request)) {
+			$return['error'] = esc_html__('Invalid request.', 'gutenkit-blocks-addon');
+			return new \WP_REST_Response($return, 400);
+		}
+
+		$email = isset($request['EMAIL']) && is_scalar($request['EMAIL']) ? sanitize_email($request['EMAIL']) : '';
+		if (!is_email($email)) {
+			$return['error'] = esc_html__('Please provide a valid email address.', 'gutenkit-blocks-addon');
+			return new \WP_REST_Response($return, 400);
+		}
+
+		// Mailchimp list IDs are alphanumeric; this value is interpolated into the API URL.
+		$list_id = isset($request['list_id']) && is_scalar($request['list_id']) ? sanitize_text_field($request['list_id']) : '';
+		if (!preg_match('/^[a-zA-Z0-9]+$/', $list_id)) {
+			$return['error'] = esc_html__('Invalid list ID.', 'gutenkit-blocks-addon');
+			return new \WP_REST_Response($return, 400);
+		}
 
 		// Retrieve API key from options
 		$api_key = get_option('gutenkit_settings_list');
@@ -201,15 +292,21 @@ class MailChimp
 		$formData = [
 			'status_if_new' => 'subscribed',
 			'merge_fields' => [],
-			'status' => 'subscribed'
+			'status' => 'subscribed',
+			'email_address' => $email,
 		];
 
 
 		//prepare the data array
 		foreach ($request as $key => $value) {
 
+			// Ignore nested/array values: every field below expects a scalar.
+			if (!is_scalar($value)) {
+				continue;
+			}
+
 			if ($key == 'EMAIL') {
-				$formData['email_address'] = !empty($request['EMAIL']) ? sanitize_email($request['EMAIL']) : '';
+				continue; // Already validated and set above.
 			} else {
 				$gkit_mailchimp_key_1 = explode("-", $key)[0];
 
@@ -276,9 +373,8 @@ class MailChimp
 		$subscription_status = !empty($request['double_opt_in']) && $request['double_opt_in'] === 'yes' ? 'pending' : 'subscribed';
 		$data['status'] = $subscription_status;
 
-		// Construct the API URL
+		// Construct the API URL ($list_id validated as alphanumeric above).
 		$server_prefix = $server_parts[1];
-		$list_id = isset($request['list_id']) ? $request['list_id'] : '';
 		$url = 'https://' . $server_prefix . '.api.mailchimp.com/3.0/lists/' . $list_id . '/members/';
 
 		// Make the API request
@@ -304,8 +400,11 @@ class MailChimp
 
 			// Check if there are errors returned from Mailchimp
 			if (isset($response_data['status']) && !in_array($response_data['status'], ['subscribed', 'pending'])) {
-				$return['error'] = $response_data;
+				$return['error'] = $this->safe_error_response($response_data);
 
+			} else if (!isset($response_data['status'])) {
+				// Unparseable/unexpected response: don't echo it back.
+				$return['error'] = esc_html__('There was an error. Please try again.', 'gutenkit-blocks-addon');
 			} else {
 				$return['status'] = $response_data['status'];
 				if ($response_data['status'] === 'pending') {

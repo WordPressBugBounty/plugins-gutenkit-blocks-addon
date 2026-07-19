@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpgutenkit.com/
  * Author: Wpmet
- * Version: 2.4.11
+ * Version: 2.4.12
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.4.11';
+	const VERSION = '2.4.12';
 
 	/**
 	 * \Gutenkit class constructor.
