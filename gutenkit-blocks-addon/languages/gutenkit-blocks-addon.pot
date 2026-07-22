@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.12\n"
+"Project-Id-Version: GutenKit Blocks 2.4.13\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-19T09:03:22+00:00\n"
+"POT-Creation-Date: 2026-07-21T09:49:42+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -8408,7 +8408,7 @@ msgstr ""
 #: build/admin/onboard/index.js:1
 #: build/template-library/template-library.js:1
 #: src/onboard/components/Pagination.js:70
-#: src/template-library/components/template/SinglePage.js:142
+#: src/template-library/components/template/SinglePage.js:143
 msgid "Back"
 msgstr ""
 
@@ -8885,7 +8885,7 @@ msgstr ""
 #: src/template-library/components/page/Page.js:53
 #: src/template-library/components/page/Page.js:74
 #: src/template-library/components/pattern/Pattern.js:70
-#: src/template-library/components/template/SinglePage.js:207
+#: src/template-library/components/template/SinglePage.js:208
 msgid "Importing"
 msgstr ""
 
@@ -8895,7 +8895,7 @@ msgstr ""
 #: src/template-library/components/page/Page.js:53
 #: src/template-library/components/page/Page.js:74
 #: src/template-library/components/pattern/Pattern.js:70
-#: src/template-library/components/template/SinglePage.js:207
+#: src/template-library/components/template/SinglePage.js:208
 msgid "Import"
 msgstr ""
 
@@ -9070,7 +9070,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: build/template-library/template-library.js:1
 #: src/gkit-components/components/pro-switcher-notice/notice-popup.js:25
-#: src/template-library/components/template/SinglePage.js:211
+#: src/template-library/components/template/SinglePage.js:212
 msgid "Upgrade Now"
 msgstr ""
 
@@ -10033,17 +10033,17 @@ msgid "Click to see required plugins"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/template/SinglePage.js:189
+#: src/template-library/components/template/SinglePage.js:190
 msgid "Premium Template"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/template/SinglePage.js:191
+#: src/template-library/components/template/SinglePage.js:192
 msgid "Unlock access to this template, along with a vast array of others, for as little as $49. Start creating effortlessly today!"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/template/SinglePage.js:198
+#: src/template-library/components/template/SinglePage.js:199
 msgid "Live Preview"
 msgstr ""
 
