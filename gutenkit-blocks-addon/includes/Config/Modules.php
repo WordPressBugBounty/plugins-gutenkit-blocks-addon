@@ -206,6 +206,13 @@ class Modules {
 				$asset_data['version'],
 				true
 			);
+
+			// Set up script translations. Pro module scripts ship their strings in
+			// the pro plugin's own text domain, so derive it from the package.
+			wp_set_script_translations(
+				"gutenkit-{$key}-{$type}-scripts",
+				$package === 'pro' ? 'gutenkit-blocks-addon-pro' : 'gutenkit-blocks-addon'
+			);
 		}
 
 		if( file_exists( self::get_asset($key, $package, "{$type}.css", 'path') ) ) {

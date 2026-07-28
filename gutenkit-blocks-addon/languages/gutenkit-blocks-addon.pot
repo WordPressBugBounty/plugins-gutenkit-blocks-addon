@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.4.13\n"
+"Project-Id-Version: GutenKit Blocks 2.4.15\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-21T09:49:42+00:00\n"
+"POT-Creation-Date: 2026-07-27T10:46:04+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -115,8 +115,13 @@ msgstr ""
 msgid "Modules"
 msgstr ""
 
-#: includes/Admin/Admin.php:231
-#: includes/Admin/Admin.php:232
+#: includes/Admin/Admin.php:115
+#: includes/Admin/Admin.php:116
+msgid "Popups"
+msgstr ""
+
+#: includes/Admin/Admin.php:234
+#: includes/Admin/Admin.php:235
 msgid "License"
 msgstr ""
 
@@ -128,7 +133,7 @@ msgstr ""
 msgid "Onboard data saved successfully."
 msgstr ""
 
-#: includes/Config/Blocks.php:96
+#: includes/Config/Blocks.php:98
 #: includes/Libs/UtilityPackages.php:159
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/Footer.js:7
@@ -386,6 +391,44 @@ msgstr ""
 msgid "EMAIL"
 msgstr ""
 
+#: scoped/vendor/wpmet/utility-package/src/Emailkit/Emailkit.php:179
+#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:303
+#: build/admin/dashboard/index.js:1
+#: build/admin/onboard/index.js:1
+#: build/admin/popup-builder/index.js:1
+#: src/dashboard/components/List.js:32
+#: src/dashboard/components/List.js:69
+#: src/onboard/pages/PowerUp.js:22
+#: src/popup-builder/Popup.js:21
+#: src/popup-builder/Popup.js:44
+msgid "Activated"
+msgstr ""
+
+#: scoped/vendor/wpmet/utility-package/src/Emailkit/Emailkit.php:182
+#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:306
+#: build/admin/dashboard/index.js:1
+#: build/admin/popup-builder/index.js:1
+#: src/dashboard/components/List.js:32
+#: src/popup-builder/Popup.js:21
+#: src/popup-builder/Popup.js:50
+msgid "Activate Now"
+msgstr ""
+
+#: scoped/vendor/wpmet/utility-package/src/Emailkit/Emailkit.php:187
+#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:311
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/Popup.js:25
+msgid "Install Now"
+msgstr ""
+
+#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:367
+msgid "Activate"
+msgstr ""
+
+#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:373
+msgid "Read Docs"
+msgstr ""
+
 #: build/84.js:1
 #: build/120.js:1
 #: build/384.js:1
@@ -477,6 +520,7 @@ msgstr ""
 #: build/1715.js:1
 #: build/1935.js:1
 #: build/2311.js:1
+#: build/2859.js:1
 #: build/3060.js:1
 #: build/3576.js:1
 #: build/3834.js:1
@@ -510,6 +554,7 @@ msgstr ""
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
+#: build/modules/page-settings/editor.js:1
 #: src/blocks/advanced-accordion-item/settings.js:18
 #: src/blocks/advanced-accordion/settings.js:38
 #: src/blocks/advanced-image/settings.js:57
@@ -517,6 +562,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:49
 #: src/blocks/back-to-top/settings.js:45
 #: src/blocks/blog-posts/settings.js:114
+#: src/blocks/business-hours-item/settings.js:17
 #: src/blocks/business-hours/settings.js:39
 #: src/blocks/button/settings.js:42
 #: src/blocks/container/settings.js:62
@@ -551,6 +597,7 @@ msgstr ""
 #: src/blocks/video/settings.js:56
 #: src/gkit-components/components/suspense/index.js:14
 #: src/modules/class-manager/components/class-style-manager.js:163
+#: src/modules/page-settings/editor.js:86
 msgid "Style"
 msgstr ""
 
@@ -595,6 +642,7 @@ msgstr ""
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
+#: build/modules/page-settings/editor.js:1
 #: src/blocks/advanced-accordion/settings.js:42
 #: src/blocks/advanced-image/settings.js:61
 #: src/blocks/advanced-paragraph/settings.js:50
@@ -636,6 +684,7 @@ msgstr ""
 #: src/dashboard/assets/js/setting-list.js:12
 #: src/gkit-components/components/suspense/index.js:15
 #: src/modules/class-manager/components/class-style-manager.js:167
+#: src/modules/page-settings/editor.js:90
 msgid "Advanced"
 msgstr ""
 
@@ -673,6 +722,7 @@ msgstr ""
 #: src/blocks/donut-progress-bar/settings.js:131
 #: src/blocks/dual-button/settings.js:188
 #: src/blocks/dual-button/settings.js:245
+#: src/blocks/dual-button/settings.js:839
 #: src/blocks/fun-fact/settings.js:75
 #: src/blocks/fun-fact/settings.js:92
 #: src/blocks/fun-fact/settings.js:298
@@ -1831,6 +1881,7 @@ msgstr ""
 #: src/gkit-components/components/color/index.js:17
 #: src/gkit-components/components/swiper/arrow.js:333
 #: src/gkit-components/components/swiper/arrow.js:359
+#: src/gkit-components/components/text-stroke/index.js:44
 #: src/modules/class-manager/components/class-style-manager.js:226
 #: src/modules/class-manager/components/class-style-manager.js:255
 msgid "Color"
@@ -2152,6 +2203,7 @@ msgstr ""
 #: src/gkit-components/components/swiper/arrow.js:281
 #: src/gkit-components/components/swiper/dot.js:241
 #: src/gkit-components/components/swiper/dot.js:377
+#: src/gkit-components/components/text-stroke/index.js:29
 #: src/global/components/advanced-control.js:62
 #: src/modules/class-manager/components/class-style-manager.js:269
 #: src/modules/class-manager/components/class-style-manager.js:453
@@ -2550,6 +2602,178 @@ msgstr ""
 #: src/modules/class-manager/components/class-style-manager.js:243
 #: src/modules/page-settings/editor.js:115
 msgid "Background"
+msgstr ""
+
+#: build/84.js:1
+#: build/120.js:1
+#: build/384.js:1
+#: build/943.js:1
+#: build/1715.js:1
+#: build/1935.js:1
+#: build/2311.js:1
+#: build/3576.js:1
+#: build/3834.js:1
+#: build/3891.js:1
+#: build/4200.js:1
+#: build/4672.js:1
+#: build/4783.js:1
+#: build/4986.js:1
+#: build/5771.js:1
+#: build/6036.js:1
+#: build/6543.js:1
+#: build/6616.js:1
+#: build/7156.js:1
+#: build/7593.js:1
+#: build/7621.js:1
+#: build/7787.js:1
+#: build/8001.js:1
+#: build/8024.js:1
+#: build/8606.js:1
+#: build/8789.js:1
+#: build/9031.js:1
+#: build/9242.js:1
+#: build/9634.js:1
+#: build/9807.js:1
+#: build/blocks/advanced-paragraph/index.js:1
+#: build/blocks/mail-chimp/index.js:1
+#: build/blocks/nav-menu-submenu/index.js:1
+#: build/gutenkit/components.js:1
+#: build/gutenkit/global.js:1
+#: build/modules/class-manager/editor.js:1
+#: src/blocks/advanced-accordion/settings.js:262
+#: src/blocks/advanced-accordion/settings.js:404
+#: src/blocks/advanced-accordion/settings.js:423
+#: src/blocks/advanced-accordion/settings.js:445
+#: src/blocks/advanced-accordion/settings.js:539
+#: src/blocks/advanced-accordion/settings.js:596
+#: src/blocks/advanced-accordion/settings.js:646
+#: src/blocks/advanced-image/settings.js:670
+#: src/blocks/advanced-image/settings.js:826
+#: src/blocks/advanced-paragraph/settings.js:430
+#: src/blocks/advanced-tab/settings.js:496
+#: src/blocks/advanced-tab/settings.js:690
+#: src/blocks/advanced-tab/settings.js:746
+#: src/blocks/advanced-tab/settings.js:802
+#: src/blocks/advanced-tab/settings.js:1014
+#: src/blocks/back-to-top/settings.js:306
+#: src/blocks/back-to-top/settings.js:373
+#: src/blocks/blog-posts/settings.js:606
+#: src/blocks/blog-posts/settings.js:643
+#: src/blocks/blog-posts/settings.js:769
+#: src/blocks/blog-posts/settings.js:809
+#: src/blocks/blog-posts/settings.js:1011
+#: src/blocks/blog-posts/settings.js:1265
+#: src/blocks/blog-posts/settings.js:1313
+#: src/blocks/blog-posts/settings.js:1634
+#: src/blocks/blog-posts/settings.js:2368
+#: src/blocks/blog-posts/settings.js:2479
+#: src/blocks/blog-posts/settings.js:2518
+#: src/blocks/business-hours/settings.js:61
+#: src/blocks/button/settings.js:271
+#: src/blocks/button/settings.js:291
+#: src/blocks/button/settings.js:335
+#: src/blocks/container/settings.js:643
+#: src/blocks/container/settings.js:663
+#: src/blocks/container/settings.js:708
+#: src/blocks/countdown-timer/settings.js:276
+#: src/blocks/countdown-timer/settings.js:305
+#: src/blocks/countdown-timer/settings.js:374
+#: src/blocks/countdown-timer/settings.js:404
+#: src/blocks/countdown-timer/settings.js:472
+#: src/blocks/countdown-timer/settings.js:502
+#: src/blocks/countdown-timer/settings.js:571
+#: src/blocks/countdown-timer/settings.js:601
+#: src/blocks/countdown-timer/settings.js:670
+#: src/blocks/countdown-timer/settings.js:700
+#: src/blocks/drop-cap/settings.js:92
+#: src/blocks/dual-button/settings.js:325
+#: src/blocks/dual-button/settings.js:541
+#: src/blocks/dual-button/settings.js:739
+#: src/blocks/faq/settings.js:68
+#: src/blocks/faq/settings.js:156
+#: src/blocks/fun-fact/settings.js:514
+#: src/blocks/heading/settings.js:965
+#: src/blocks/icon-box/settings.js:731
+#: src/blocks/icon-box/settings.js:787
+#: src/blocks/icon-box/settings.js:970
+#: src/blocks/icon-box/settings.js:1028
+#: src/blocks/icon-box/settings.js:1110
+#: src/blocks/icon/settings.js:181
+#: src/blocks/icon/settings.js:231
+#: src/blocks/image-accordion/settings.js:219
+#: src/blocks/image-accordion/settings.js:347
+#: src/blocks/image-accordion/settings.js:376
+#: src/blocks/image-box/settings.js:643
+#: src/blocks/image-box/settings.js:656
+#: src/blocks/image-box/settings.js:869
+#: src/blocks/image-box/settings.js:927
+#: src/blocks/image-box/settings.js:1249
+#: src/blocks/image-box/settings.js:1299
+#: src/blocks/image-comparison/settings.js:225
+#: src/blocks/image-comparison/settings.js:289
+#: src/blocks/mail-chimp/settings.js:501
+#: src/blocks/mail-chimp/settings.js:539
+#: src/blocks/mail-chimp/settings.js:577
+#: src/blocks/mail-chimp/settings.js:933
+#: src/blocks/mail-chimp/settings.js:964
+#: src/blocks/mail-chimp/settings.js:1030
+#: src/blocks/mail-chimp/settings.js:1047
+#: src/blocks/nav-menu-item/settings.js:190
+#: src/blocks/nav-menu-submenu/settings.js:218
+#: src/blocks/nav-menu/settings.js:546
+#: src/blocks/nav-menu/settings.js:894
+#: src/blocks/nav-menu/settings.js:1113
+#: src/blocks/offcanvas/settings.js:784
+#: src/blocks/offcanvas/settings.js:848
+#: src/blocks/offcanvas/settings.js:1018
+#: src/blocks/offcanvas/settings.js:1082
+#: src/blocks/page-list/settings.js:503
+#: src/blocks/post-tab/settings.js:232
+#: src/blocks/post-tab/settings.js:340
+#: src/blocks/post-tab/settings.js:382
+#: src/blocks/post-tab/settings.js:424
+#: src/blocks/pricing-table/settings.js:540
+#: src/blocks/pricing-table/settings.js:616
+#: src/blocks/pricing-table/settings.js:771
+#: src/blocks/pricing-table/settings.js:820
+#: src/blocks/pricing-table/settings.js:994
+#: src/blocks/pricing-table/settings.js:1036
+#: src/blocks/pricing-table/settings.js:1219
+#: src/blocks/pricing-table/settings.js:1261
+#: src/blocks/pricing-table/settings.js:1647
+#: src/blocks/pricing-table/settings.js:1707
+#: src/blocks/pricing-table/settings.js:1859
+#: src/blocks/pricing-table/settings.js:1902
+#: src/blocks/pricing-table/settings.js:2252
+#: src/blocks/pricing-table/settings.js:2327
+#: src/blocks/social-icons/settings.js:364
+#: src/blocks/social-icons/settings.js:423
+#: src/blocks/social-share/settings.js:432
+#: src/blocks/social-share/settings.js:491
+#: src/blocks/team/settings.js:319
+#: src/blocks/team/settings.js:347
+#: src/blocks/team/settings.js:456
+#: src/blocks/team/settings.js:593
+#: src/blocks/team/settings.js:855
+#: src/blocks/testimonial/settings.js:662
+#: src/blocks/testimonial/settings.js:1482
+#: src/blocks/video/settings.js:771
+#: src/blocks/video/settings.js:790
+#: src/blocks/video/settings.js:809
+#: src/blocks/video/settings.js:939
+#: src/blocks/video/settings.js:1163
+#: src/blocks/video/settings.js:1212
+#: src/gkit-components/components/border-control/index.js:67
+#: src/gkit-components/components/swiper/arrow.js:345
+#: src/gkit-components/components/swiper/dot.js:282
+#: src/gkit-components/components/swiper/dot.js:327
+#: src/gkit-components/components/swiper/dot.js:418
+#: src/global/components/advanced-control.js:297
+#: src/global/components/advanced-control.js:316
+#: src/global/components/advanced-control.js:340
+#: src/modules/class-manager/components/class-style-manager.js:396
+#: src/modules/class-manager/components/class-style-manager.js:399
+msgid "Border"
 msgstr ""
 
 #: build/84.js:1
@@ -3084,158 +3308,6 @@ msgstr ""
 msgid "Indicator Left Space"
 msgstr ""
 
-#: build/120.js:1
-#: build/384.js:1
-#: build/943.js:1
-#: build/1715.js:1
-#: build/1935.js:1
-#: build/2311.js:1
-#: build/3576.js:1
-#: build/3834.js:1
-#: build/3891.js:1
-#: build/4672.js:1
-#: build/4783.js:1
-#: build/4986.js:1
-#: build/5771.js:1
-#: build/6036.js:1
-#: build/6543.js:1
-#: build/6616.js:1
-#: build/7156.js:1
-#: build/7593.js:1
-#: build/7621.js:1
-#: build/7787.js:1
-#: build/8001.js:1
-#: build/8024.js:1
-#: build/8606.js:1
-#: build/8789.js:1
-#: build/9031.js:1
-#: build/9242.js:1
-#: build/9634.js:1
-#: build/9807.js:1
-#: build/blocks/advanced-paragraph/index.js:1
-#: build/blocks/mail-chimp/index.js:1
-#: build/blocks/nav-menu-submenu/index.js:1
-#: build/gutenkit/components.js:1
-#: build/gutenkit/global.js:1
-#: build/modules/class-manager/editor.js:1
-#: src/blocks/advanced-accordion/settings.js:262
-#: src/blocks/advanced-accordion/settings.js:404
-#: src/blocks/advanced-accordion/settings.js:423
-#: src/blocks/advanced-accordion/settings.js:445
-#: src/blocks/advanced-accordion/settings.js:539
-#: src/blocks/advanced-accordion/settings.js:596
-#: src/blocks/advanced-accordion/settings.js:646
-#: src/blocks/advanced-image/settings.js:670
-#: src/blocks/advanced-image/settings.js:826
-#: src/blocks/advanced-paragraph/settings.js:430
-#: src/blocks/advanced-tab/settings.js:1014
-#: src/blocks/back-to-top/settings.js:306
-#: src/blocks/back-to-top/settings.js:373
-#: src/blocks/blog-posts/settings.js:606
-#: src/blocks/blog-posts/settings.js:643
-#: src/blocks/blog-posts/settings.js:769
-#: src/blocks/blog-posts/settings.js:809
-#: src/blocks/blog-posts/settings.js:1011
-#: src/blocks/blog-posts/settings.js:1265
-#: src/blocks/blog-posts/settings.js:1313
-#: src/blocks/blog-posts/settings.js:2368
-#: src/blocks/business-hours/settings.js:61
-#: src/blocks/button/settings.js:271
-#: src/blocks/button/settings.js:291
-#: src/blocks/button/settings.js:335
-#: src/blocks/container/settings.js:643
-#: src/blocks/container/settings.js:663
-#: src/blocks/container/settings.js:708
-#: src/blocks/countdown-timer/settings.js:276
-#: src/blocks/countdown-timer/settings.js:305
-#: src/blocks/countdown-timer/settings.js:374
-#: src/blocks/countdown-timer/settings.js:404
-#: src/blocks/countdown-timer/settings.js:472
-#: src/blocks/countdown-timer/settings.js:502
-#: src/blocks/countdown-timer/settings.js:571
-#: src/blocks/countdown-timer/settings.js:601
-#: src/blocks/countdown-timer/settings.js:670
-#: src/blocks/countdown-timer/settings.js:700
-#: src/blocks/drop-cap/settings.js:92
-#: src/blocks/dual-button/settings.js:739
-#: src/blocks/faq/settings.js:68
-#: src/blocks/faq/settings.js:156
-#: src/blocks/fun-fact/settings.js:514
-#: src/blocks/heading/settings.js:965
-#: src/blocks/image-accordion/settings.js:219
-#: src/blocks/image-accordion/settings.js:347
-#: src/blocks/image-accordion/settings.js:376
-#: src/blocks/image-box/settings.js:643
-#: src/blocks/image-box/settings.js:656
-#: src/blocks/image-box/settings.js:869
-#: src/blocks/image-box/settings.js:927
-#: src/blocks/image-box/settings.js:1249
-#: src/blocks/image-box/settings.js:1299
-#: src/blocks/image-comparison/settings.js:225
-#: src/blocks/image-comparison/settings.js:289
-#: src/blocks/mail-chimp/settings.js:501
-#: src/blocks/mail-chimp/settings.js:539
-#: src/blocks/mail-chimp/settings.js:577
-#: src/blocks/mail-chimp/settings.js:933
-#: src/blocks/mail-chimp/settings.js:964
-#: src/blocks/mail-chimp/settings.js:1030
-#: src/blocks/mail-chimp/settings.js:1047
-#: src/blocks/nav-menu-item/settings.js:190
-#: src/blocks/nav-menu-submenu/settings.js:218
-#: src/blocks/nav-menu/settings.js:546
-#: src/blocks/nav-menu/settings.js:894
-#: src/blocks/nav-menu/settings.js:1113
-#: src/blocks/offcanvas/settings.js:784
-#: src/blocks/offcanvas/settings.js:848
-#: src/blocks/offcanvas/settings.js:1018
-#: src/blocks/offcanvas/settings.js:1082
-#: src/blocks/page-list/settings.js:503
-#: src/blocks/post-tab/settings.js:232
-#: src/blocks/post-tab/settings.js:340
-#: src/blocks/post-tab/settings.js:382
-#: src/blocks/post-tab/settings.js:424
-#: src/blocks/pricing-table/settings.js:540
-#: src/blocks/pricing-table/settings.js:616
-#: src/blocks/pricing-table/settings.js:771
-#: src/blocks/pricing-table/settings.js:820
-#: src/blocks/pricing-table/settings.js:994
-#: src/blocks/pricing-table/settings.js:1036
-#: src/blocks/pricing-table/settings.js:1219
-#: src/blocks/pricing-table/settings.js:1261
-#: src/blocks/pricing-table/settings.js:1647
-#: src/blocks/pricing-table/settings.js:1707
-#: src/blocks/pricing-table/settings.js:1859
-#: src/blocks/pricing-table/settings.js:1902
-#: src/blocks/pricing-table/settings.js:2252
-#: src/blocks/pricing-table/settings.js:2327
-#: src/blocks/social-icons/settings.js:364
-#: src/blocks/social-icons/settings.js:423
-#: src/blocks/social-share/settings.js:432
-#: src/blocks/social-share/settings.js:491
-#: src/blocks/team/settings.js:319
-#: src/blocks/team/settings.js:347
-#: src/blocks/team/settings.js:456
-#: src/blocks/team/settings.js:593
-#: src/blocks/team/settings.js:855
-#: src/blocks/testimonial/settings.js:662
-#: src/blocks/testimonial/settings.js:1482
-#: src/blocks/video/settings.js:771
-#: src/blocks/video/settings.js:790
-#: src/blocks/video/settings.js:809
-#: src/blocks/video/settings.js:939
-#: src/blocks/video/settings.js:1163
-#: src/blocks/video/settings.js:1212
-#: src/gkit-components/components/border-control/index.js:67
-#: src/gkit-components/components/swiper/arrow.js:345
-#: src/gkit-components/components/swiper/dot.js:282
-#: src/gkit-components/components/swiper/dot.js:327
-#: src/gkit-components/components/swiper/dot.js:418
-#: src/global/components/advanced-control.js:297
-#: src/modules/class-manager/components/class-style-manager.js:396
-#: src/modules/class-manager/components/class-style-manager.js:399
-msgid "Border"
-msgstr ""
-
 #: build/384.js:1
 #: build/4783.js:1
 #: build/4986.js:1
@@ -3411,6 +3483,7 @@ msgstr ""
 #: build/384.js:1
 #: build/3834.js:1
 #: build/3891.js:1
+#: build/4783.js:1
 #: build/6616.js:1
 #: build/7156.js:1
 #: build/7593.js:1
@@ -3421,6 +3494,7 @@ msgstr ""
 #: build/blocks/nav-menu-item/index.js:3
 #: src/blocks/advanced-image/settings.js:189
 #: src/blocks/advanced-paragraph/settings.js:213
+#: src/blocks/container/settings.js:517
 #: src/blocks/dual-button/settings.js:175
 #: src/blocks/dual-button/settings.js:232
 #: src/blocks/header-info/settings.js:87
@@ -4432,6 +4506,7 @@ msgstr ""
 #: build/4783.js:1
 #: build/6543.js:1
 #: build/gutenkit/components.js:1
+#: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/container/settings.js:88
 #: src/blocks/heading/settings.js:245
@@ -4442,6 +4517,7 @@ msgstr ""
 #: src/gkit-components/components/background/index.js:347
 #: src/gkit-components/components/border-control/index.js:50
 #: src/gkit-components/components/box-shadow/index.js:179
+#: src/global/components/advanced-control.js:68
 #: src/modules/class-manager/components/class-style-manager.js:459
 msgid "Custom"
 msgstr ""
@@ -4560,7 +4636,9 @@ msgid "Subtitle Border Right"
 msgstr ""
 
 #: build/2311.js:1
+#: build/modules/class-manager/editor.js:1
 #: src/blocks/heading/settings.js:782
+#: src/modules/class-manager/components/box-shadow-settings.js:79
 msgid "Outline"
 msgstr ""
 
@@ -4590,9 +4668,15 @@ msgstr ""
 #: src/gkit-components/components/background/index.js:237
 #: src/global/components/advanced-control.js:125
 #: src/global/components/advanced-control.js:127
+#: src/modules/class-manager/components/box-shadow-settings.js:76
 #: src/modules/class-manager/components/class-style-manager.js:812
 #: src/modules/class-manager/components/class-style-manager.js:815
 msgid "Position"
+msgstr ""
+
+#: build/2859.js:1
+#: src/blocks/business-hours-item/settings.js:24
+msgid "Item Style"
 msgstr ""
 
 #: build/2859.js:1
@@ -4946,6 +5030,7 @@ msgstr ""
 #: build/7593.js:1
 #: build/9250.js:1
 #: build/gutenkit/components.js:1
+#: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
 #: build/modules/entrance-animation/editor.js:1
 #: src/blocks/advanced-image/settings.js:442
@@ -4959,6 +5044,8 @@ msgstr ""
 #: src/gkit-components/components/border-control/index.js:49
 #: src/gkit-components/components/font-family/index.js:50
 #: src/gkit-components/components/typography/font-weights.js:4
+#: src/global/components/advanced-control.js:65
+#: src/global/components/advanced-control.js:130
 #: src/modules/class-manager/components/class-style-manager.js:456
 #: src/modules/class-manager/components/class-style-manager.js:818
 #: src/modules/entrance-animation/settings.js:43
@@ -4989,6 +5076,11 @@ msgstr ""
 #: src/gkit-components/components/background-overlay/index.js:345
 #: src/gkit-components/components/background/index.js:339
 msgid "Contain"
+msgstr ""
+
+#: build/3891.js:1
+#: src/blocks/advanced-image/settings.js:485
+msgid "It will applicable when given any width & height."
 msgstr ""
 
 #: build/3891.js:1
@@ -5488,9 +5580,11 @@ msgid "Container Width"
 msgstr ""
 
 #: build/4783.js:1
+#: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/container/settings.js:80
 #: src/blocks/container/settings.js:145
+#: src/global/components/advanced-control.js:66
 #: src/modules/class-manager/components/class-style-manager.js:457
 msgid "Full Width"
 msgstr ""
@@ -5607,6 +5701,11 @@ msgid "Additional Options"
 msgstr ""
 
 #: build/4783.js:1
+#: src/blocks/container/settings.js:508
+msgid "Don’t add links to elements nested in this container - it will break the layout."
+msgstr ""
+
+#: build/4783.js:1
 #: src/blocks/container/settings.js:581
 msgid "Background Overlay"
 msgstr ""
@@ -5624,6 +5723,11 @@ msgstr ""
 #: build/4783.js:1
 #: src/blocks/container/settings.js:777
 msgid "Shape"
+msgstr ""
+
+#: build/4783.js:1
+#: src/blocks/container/settings.js:783
+msgid "Upload Svg"
 msgstr ""
 
 #: build/4783.js:1
@@ -5647,7 +5751,9 @@ msgid "Horizontal Align"
 msgstr ""
 
 #: build/4783.js:1
+#: build/7156.js:1
 #: src/blocks/container/settings.js:834
+#: src/blocks/dual-button/settings.js:878
 msgid "Vertical Align"
 msgstr ""
 
@@ -6255,7 +6361,9 @@ msgid "Custom Breakpoint(Max Width)"
 msgstr ""
 
 #: build/6543.js:1
+#: build/modules/breakpoints/editor.js:1
 #: src/blocks/nav-menu/settings.js:178
+#: src/modules/breakpoints/store/base-breakpopint.js:4
 msgid "Desktop"
 msgstr ""
 
@@ -6753,6 +6861,15 @@ msgstr ""
 msgid "Text Alignment"
 msgstr ""
 
+#: build/7156.js:1
+#: build/8789.js:1
+#: build/modules/class-manager/editor.js:1
+#: src/blocks/button/settings.js:423
+#: src/blocks/dual-button/settings.js:842
+#: src/modules/class-manager/components/typography-settings.js:106
+msgid "Font Size"
+msgstr ""
+
 #: build/7593.js:1
 #: build/8001.js:1
 #: src/blocks/page-list/settings.js:129
@@ -7014,8 +7131,10 @@ msgid "Header Icon or Image?"
 msgstr ""
 
 #: build/8001.js:1
+#: build/admin/popup-builder/index.js:1
 #: src/blocks/pricing-table/settings.js:179
 #: src/blocks/pricing-table/settings.js:1764
+#: src/popup-builder/popupkit-markup.js:162
 msgid "Features"
 msgstr ""
 
@@ -7269,6 +7388,11 @@ msgid "Disable Scroll"
 msgstr ""
 
 #: build/8606.js:1
+#: src/blocks/offcanvas/settings.js:324
+msgid "Disable body scrolling only work for frontend"
+msgstr ""
+
+#: build/8606.js:1
 #: src/blocks/offcanvas/settings.js:329
 #: src/blocks/offcanvas/settings.js:362
 msgid "Sidebar Position"
@@ -7322,13 +7446,6 @@ msgstr ""
 #: src/blocks/button/settings.js:380
 #: src/blocks/video/settings.js:851
 msgid "Shadow"
-msgstr ""
-
-#: build/8789.js:1
-#: build/modules/class-manager/editor.js:1
-#: src/blocks/button/settings.js:423
-#: src/modules/class-manager/components/typography-settings.js:106
-msgid "Font Size"
 msgstr ""
 
 #: build/9031.js:1
@@ -7907,28 +8024,10 @@ msgid "Install"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: build/admin/onboard/index.js:1
-#: build/admin/popup-builder/index.js:1
-#: src/dashboard/components/List.js:32
-#: src/dashboard/components/List.js:69
-#: src/onboard/pages/PowerUp.js:22
-#: src/popup-builder/Popup.js:21
-#: src/popup-builder/Popup.js:44
-msgid "Activated"
-msgstr ""
-
-#: build/admin/dashboard/index.js:1
-#: build/admin/popup-builder/index.js:1
-#: src/dashboard/components/List.js:32
-#: src/popup-builder/Popup.js:21
-#: src/popup-builder/Popup.js:50
-msgid "Activate Now"
-msgstr ""
-
-#: build/admin/dashboard/index.js:1
 #: build/admin/popup-builder/index.js:1
 #: src/dashboard/components/List.js:58
 #: src/popup-builder/Popup.js:35
+#: src/popup-builder/popupkit-markup.js:24
 msgid "Activating..."
 msgstr ""
 
@@ -7966,6 +8065,11 @@ msgstr ""
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/pages/Modules.js:18
 msgid "GutenKit Modules"
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/components/ApiList.js:93
+msgid "UPCOMING"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
@@ -8060,17 +8164,57 @@ msgid "Remove license from this domain"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/pages/License.js:214
+#: src/dashboard/pages/License.js:203
+msgid "See The Documentation <a>Here</a>"
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:212
+msgid "If you have the license key, paste the code below and activate your subscription."
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:213
+msgid "Or, follow the steps below to activate the GutenKit plugin:"
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:215
+msgid "Log in to your Wpmet account to get the license key."
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:217
+msgid "If you don’t yet buy this product, get <a>GutenKit Pro</a> now."
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:220
+msgid "Copy the GutenKit Pro license key from your account and paste it below."
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:222
 msgid "Your License Key Here"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/pages/License.js:218
+#: src/dashboard/pages/License.js:224
+msgid "Please insert your license key"
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:226
 msgid "Active Now"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/pages/License.js:228
+#: src/dashboard/pages/License.js:231
+msgid "Still can’t find your license key? <a>Knock us here!</a>"
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/License.js:239
 msgid "Please enter valid license."
 msgstr ""
 
@@ -8224,6 +8368,11 @@ msgid "We promise, zero spamming, ever!"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
+#: src/dashboard/pages/Welcome.js:99
+msgid "Enter your email"
+msgstr ""
+
+#: build/admin/dashboard/index.js:1
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/mail-chimp/deprecatedComponents/Markup_2_2_0.js:247
 #: src/blocks/mail-chimp/markup.js:399
@@ -8253,6 +8402,143 @@ msgstr ""
 msgid "Thank you for creating with "
 msgstr ""
 
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:17
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:17
+msgid "Tell us more..."
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:18
+msgid "I found a better plugin"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:18
+msgid "Which plugin are you using instead?"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:19
+msgid "I couldn't get the plugin to work"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:19
+msgid "What specific issue did you face?"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:20
+msgid "It's missing a specific feature"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:20
+msgid "What feature do you need?"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:21
+msgid "The plugin affects site performance"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:21
+msgid "Please share details about the performance issues you experienced."
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:22
+msgid "It's a temporary deactivation"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:23
+msgid "Other"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:23
+msgid "Please tell us why..."
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:82
+msgid "Quick Feedback"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: build/modules/class-manager/editor.js:1
+#: src/deactivation-popup/DeactivationPopup.js:84
+#: src/modules/class-manager/components/sub-selector.js:115
+msgid "Close"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:91
+msgid "Please select a reason first."
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:94
+msgid "Before you go, what made you deactivate GutenKit?"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:125
+msgid "Need help before deactivating?"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:127
+msgid "Contact Support Team"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:141
+msgid "Skip & Deactivate"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:148
+msgid "Submitting…"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:148
+msgid "Submit & Deactivate"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:149
+msgid "Submitted"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/StepsBar.js:12
+msgid "Sign Up"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/StepsBar.js:16
+msgid "Website Powerup"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/StepsBar.js:20
+msgid "Tutorial"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/StepsBar.js:24
+msgid "Finalizing"
+msgstr ""
+
 #: build/admin/onboard/index.js:1
 #: src/onboard/pages/SignUp.js:40
 msgid "Welcome to"
@@ -8266,6 +8552,11 @@ msgstr ""
 #: build/admin/onboard/index.js:1
 #: src/onboard/pages/SignUp.js:41
 msgid "Signup to join over 3,20,000+ founders, marketers and developers in learning the best uses of WordPress"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/SignUp.js:45
+msgid "Enter your email address"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
@@ -8430,8 +8721,162 @@ msgid "Unlock All & Continue"
 msgstr ""
 
 #: build/admin/popup-builder/index.js:1
-#: src/popup-builder/Popup.js:25
-msgid "Install Now"
+#: src/popup-builder/popupkit-markup.js:23
+msgid "Installing..."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:34
+msgid "NEW"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:37
+msgid "Your All-in-One Popup Builder For Gutenberg"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:39
+msgid "Install & activate PopupKit to convert more leads into customers with engaging popups, built exclusively for your WordPress website."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:52
+msgid "Get Started"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:63
+msgid "YouTube video player"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:77
+msgid "Build Popups that Convert"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:86
+msgid "Increase conversions with catchy popups!"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:95
+msgid "Design popups with any Gutenberg block."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:104
+msgid "Use pre-designed templates for popups."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:113
+msgid "Customize to match your brand styles."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:121
+msgid "Holiday Sale"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:130
+msgid "Use Smart Display Conditions"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:132
+msgid "Show popups on the entire websites"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:133
+msgid "Or, display them on specific pages or posts."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:134
+msgid "Exclude popups from specific pages or posts."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:135
+msgid "Display popup on Archive pages as well."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:139
+msgid "Decide When To Trigger Pop-ups"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:141
+msgid "Display popups on the page load or exit intent."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:142
+msgid "Trigger popups on user interaction or page scroll."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:143
+msgid "Define a Selector Class for 'Custom Selector Click'."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:144
+msgid "Pick a time and date to schedule a campaign launch."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:154
+msgid "PopupKit Free vs Pro"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:155
+msgid "Want full freedom while designing popups? Turn to PRO! Here is what you will be getting PopupKit Pro."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: build/template-library/template-library.js:1
+#: src/popup-builder/popupkit-markup.js:163
+#: src/template-library/components/template/Templates.js:17
+msgid "Free"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: build/gutenkit/components.js:1
+#: build/modules/class-manager/editor.js:1
+#: build/template-library/template-library.js:1
+#: src/gkit-components/components/pro-switcher-notice/notice-popup.js:14
+#: src/popup-builder/popupkit-markup.js:164
+#: src/template-library/components/template/Templates.js:18
+msgid "Pro"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:169
+msgid "Popup Template"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:174
+msgid "Gutenberg Blocks"
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/popupkit-markup.js:187
+msgid "Switch to PopupKit Pro and Start Building Your Website Popups with <highlight>Limitless Options</highlight>."
+msgstr ""
+
+#: build/admin/popup-builder/index.js:1
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/pro-upgrade-notice/index.js:56
+#: src/popup-builder/popupkit-markup.js:191
+msgid "Go Premium"
 msgstr ""
 
 #: build/blocks/advanced-accordion-item/index.js:1
@@ -8442,6 +8887,13 @@ msgstr ""
 #: build/blocks/advanced-accordion/index.js:1
 #: src/blocks/advanced-accordion/appender-button.js:7
 msgid "Add Accordion Item"
+msgstr ""
+
+#: build/blocks/advanced-image/index.js:1
+#: build/gutenkit/components.js:1
+#: src/blocks/advanced-image/edit.js:193
+#: src/gkit-components/components/box-shadow/index.js:205
+msgid "Reset"
 msgstr ""
 
 #: build/blocks/advanced-paragraph/index.js:1
@@ -8469,6 +8921,16 @@ msgstr ""
 #: build/blocks/advanced-paragraph/index.js:1
 #: src/blocks/advanced-paragraph/edit.js:52
 msgid "Enter your text here..."
+msgstr ""
+
+#: build/blocks/advanced-tab/index.js:1
+#: src/blocks/advanced-tab/edit.js:205
+msgid "Sub Title"
+msgstr ""
+
+#: build/blocks/business-hours/index.js:1
+#: src/blocks/business-hours/appender-button.js:6
+msgid "Add Business Hours Item"
 msgstr ""
 
 #: build/blocks/donut-progress-bar/index.js:1
@@ -8503,6 +8965,11 @@ msgstr ""
 #: build/blocks/faq-item/index.js:1
 #: src/blocks/faq-item/edit.js:48
 msgid "Write Your Answer Here..."
+msgstr ""
+
+#: build/blocks/faq/index.js:1
+#: src/blocks/faq/appender-button.js:6
+msgid "Add FAQ Item"
 msgstr ""
 
 #: build/blocks/fun-fact/index.js:1
@@ -8880,6 +9347,21 @@ msgid "Add Submenu Item"
 msgstr ""
 
 #: build/blocks/nav-menu/index.js:1
+#: src/blocks/nav-menu/nav-template-picker.js:54
+msgid "Choose a pattern"
+msgstr ""
+
+#: build/blocks/nav-menu/index.js:1
+#: src/blocks/nav-menu/nav-template-picker.js:69
+msgid "Search for patterns"
+msgstr ""
+
+#: build/blocks/nav-menu/index.js:1
+#: src/blocks/nav-menu/nav-template-picker.js:70
+msgid "Search"
+msgstr ""
+
+#: build/blocks/nav-menu/index.js:1
 #: build/template-library/template-library.js:1
 #: src/blocks/nav-menu/nav-template-picker.js:110
 #: src/template-library/components/page/Page.js:53
@@ -8900,6 +9382,26 @@ msgid "Import"
 msgstr ""
 
 #: build/blocks/nav-menu/index.js:1
+#: src/blocks/nav-menu/placeholder.js:50
+msgid "Nav Menu Builder"
+msgstr ""
+
+#: build/blocks/nav-menu/index.js:1
+#: src/blocks/nav-menu/placeholder.js:51
+msgid "Choose a pattern for the nav menu or start blank"
+msgstr ""
+
+#: build/blocks/nav-menu/index.js:1
+#: src/blocks/nav-menu/placeholder.js:64
+msgid "Choose From Patterns"
+msgstr ""
+
+#: build/blocks/nav-menu/index.js:1
+#: src/blocks/nav-menu/placeholder.js:77
+msgid "Start Blank"
+msgstr ""
+
+#: build/blocks/nav-menu/index.js:1
 #: src/blocks/nav-menu/deprecated.js:40
 #: src/blocks/nav-menu/save.js:37
 msgid "Website Navigation"
@@ -8913,6 +9415,11 @@ msgstr ""
 #: src/blocks/offcanvas/edit.js:117
 #: src/blocks/offcanvas/save.js:24
 msgid "OffCanvas"
+msgstr ""
+
+#: build/blocks/page-list/index.js:1
+#: src/blocks/page-list/markup.js:79
+msgid "Your Title..."
 msgstr ""
 
 #: build/blocks/pricing-table/index.js:1
@@ -8953,6 +9460,13 @@ msgstr ""
 #: build/blocks/progress-bar/index.js:1
 #: src/blocks/progress-bar/markup.js:14
 msgid "Enter your title..."
+msgstr ""
+
+#: build/blocks/social-icons/index.js:1
+#: build/blocks/social-share/index.js:1
+#: src/blocks/social-icons/markup.js:54
+#: src/blocks/social-share/markup.js:39
+msgid "Enter Label.."
 msgstr ""
 
 #: build/blocks/team/index.js:1
@@ -9062,12 +9576,6 @@ msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/gkit-components/components/pro-switcher-notice/notice-popup.js:14
-msgid "Pro"
-msgstr ""
-
-#: build/gutenkit/components.js:1
-#: build/modules/class-manager/editor.js:1
 #: build/template-library/template-library.js:1
 #: src/gkit-components/components/pro-switcher-notice/notice-popup.js:25
 #: src/template-library/components/template/SinglePage.js:212
@@ -9116,9 +9624,11 @@ msgid "Scroll"
 msgstr ""
 
 #: build/gutenkit/components.js:1
+#: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/gkit-components/components/background-overlay/index.js:305
 #: src/gkit-components/components/background/index.js:299
+#: src/global/components/advanced-control.js:132
 #: src/modules/class-manager/components/class-style-manager.js:820
 msgid "Fixed"
 msgstr ""
@@ -9291,7 +9801,9 @@ msgid "Outset"
 msgstr ""
 
 #: build/gutenkit/components.js:1
+#: build/modules/class-manager/editor.js:1
 #: src/gkit-components/components/box-shadow/popover.js:67
+#: src/modules/class-manager/components/box-shadow-settings.js:80
 msgid "Inset"
 msgstr ""
 
@@ -9330,11 +9842,6 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/box-shadow/index.js:195
 msgid "Preset"
-msgstr ""
-
-#: build/gutenkit/components.js:1
-#: src/gkit-components/components/box-shadow/index.js:205
-msgid "Reset"
 msgstr ""
 
 #: build/gutenkit/components.js:1
@@ -9416,6 +9923,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/gkit-components/components/font-family/index.js:201
+#: src/gkit-components/components/typography/index.js:72
 #: src/modules/class-manager/components/typography-settings.js:79
 msgid "Font Family"
 msgstr ""
@@ -9490,11 +9998,6 @@ msgid "Activate License"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/pro-upgrade-notice/index.js:56
-msgid "Go Premium"
-msgstr ""
-
-#: build/gutenkit/components.js:1
 #: src/gkit-components/components/range-unit/index.js:86
 msgid "Gkit Range Unit"
 msgstr ""
@@ -9564,9 +10067,26 @@ msgstr ""
 msgid "Loop is disabled in editor for better user experience."
 msgstr ""
 
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/text-stroke/index.js:23
+msgid "Text Stroke"
+msgstr ""
+
+#: build/gutenkit/global.js:1
+#: src/global/components/advanced-control.js:67
+msgid "Inline(auto)"
+msgstr ""
+
 #: build/gutenkit/global.js:1
 #: src/global/components/advanced-control.js:109
 msgid "Z-Index"
+msgstr ""
+
+#: build/gutenkit/global.js:1
+#: build/modules/class-manager/editor.js:1
+#: src/global/components/advanced-control.js:131
+#: src/modules/class-manager/components/class-style-manager.js:819
+msgid "Absolute"
 msgstr ""
 
 #: build/gutenkit/global.js:1
@@ -9800,11 +10320,6 @@ msgid "Flex Wrap"
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:819
-msgid "Absolute"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
 #: src/modules/class-manager/components/class-style-manager.js:821
 msgid "Sticky"
 msgstr ""
@@ -9816,13 +10331,18 @@ msgstr ""
 
 #: build/modules/class-manager/editor.js:1
 #: src/modules/class-manager/components/class-style-manager.js:915
-#: src/modules/class-manager/components/class-style-manager.js:927
-#: src/modules/class-manager/components/class-style-manager.js:931
+#: src/modules/class-manager/components/class-style-manager.js:930
+#: src/modules/class-manager/components/class-style-manager.js:934
 msgid "Custom CSS"
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:932
+#: src/modules/class-manager/components/class-style-manager.js:923
+msgid "To target the current block only, use the <code>selector</code> keyword."
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:935
 msgid "The Custom CSS is only available in GutenKit pro version."
 msgstr ""
 
@@ -9847,13 +10367,18 @@ msgid "Press enter to create"
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/sub-selector.js:115
-msgid "Close"
+#: src/modules/class-manager/components/sub-selector.js:131
+msgid "Sub Selector"
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/sub-selector.js:131
-msgid "Sub Selector"
+#: src/modules/class-manager/components/popup-box.js:166
+msgid "Edit"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/popup-box.js:169
+msgid "Delete"
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
@@ -9865,6 +10390,11 @@ msgstr ""
 #: src/modules/class-manager/components/dropdown.js:50
 #: src/modules/class-manager/components/dropdown.js:123
 msgid "Classes"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/dropdown.js:107
+msgid "Add class..."
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
@@ -9884,6 +10414,7 @@ msgstr ""
 
 #: build/modules/copy-paste-style/editor.js:1
 #: src/modules/copy-paste-style/components/copy-item.js:39
+#: src/modules/copy-paste-style/components/copy-item.js:43
 msgid "Gutenkit Copy Style"
 msgstr ""
 
@@ -9957,6 +10488,21 @@ msgid "The changes will only become active on the live page and not during the e
 msgstr ""
 
 #: build/template-library/template-library.js:1
+#: src/template-library/components/library/LibraryHeader.js:51
+msgid "Patterns"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/library/LibraryHeader.js:55
+msgid "Templates"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/library/LibraryHeader.js:59
+msgid "Pages"
+msgstr ""
+
+#: build/template-library/template-library.js:1
 #: src/template-library/components/page/Page.js:59
 #: src/template-library/components/pattern/Pattern.js:83
 msgid "Requires GutenKit Blocks PRO"
@@ -9970,6 +10516,12 @@ msgstr ""
 #: build/template-library/template-library.js:1
 #: src/template-library/components/common/Empty.js:41
 msgid "Please ensure that your search is accurately spelled or attempt using different word"
+msgstr ""
+
+#: build/template-library/template-library.js:1
+#: src/template-library/components/template/Templates.js:16
+#: src/template-library/hooks/useCategoryQuery.js:24
+msgid "All"
 msgstr ""
 
 #: build/template-library/template-library.js:1
@@ -10076,6 +10628,7 @@ msgstr ""
 #: build/blocks/countdown-timer/block.json
 #: build/blocks/donut-progress-bar/block.json
 #: build/blocks/drop-cap/block.json
+#: build/blocks/faq-item/block.json
 #: build/blocks/faq/block.json
 #: build/blocks/fun-fact/block.json
 #: build/blocks/header-info/block.json
@@ -10109,6 +10662,7 @@ msgstr ""
 #: src/blocks/countdown-timer/block.json
 #: src/blocks/donut-progress-bar/block.json
 #: src/blocks/drop-cap/block.json
+#: src/blocks/faq-item/block.json
 #: src/blocks/faq/block.json
 #: src/blocks/fun-fact/block.json
 #: src/blocks/header-info/block.json
@@ -10147,10 +10701,12 @@ msgstr ""
 
 #: build/blocks/advanced-accordion-item/block.json
 #: build/blocks/advanced-accordion/block.json
+#: build/blocks/faq-item/block.json
 #: build/blocks/faq/block.json
 #: build/blocks/image-accordion/block.json
 #: src/blocks/advanced-accordion-item/block.json
 #: src/blocks/advanced-accordion/block.json
+#: src/blocks/faq-item/block.json
 #: src/blocks/faq/block.json
 #: src/blocks/image-accordion/block.json
 msgctxt "block keyword"
@@ -10159,9 +10715,11 @@ msgstr ""
 
 #: build/blocks/advanced-accordion-item/block.json
 #: build/blocks/advanced-accordion/block.json
+#: build/blocks/faq-item/block.json
 #: build/blocks/faq/block.json
 #: src/blocks/advanced-accordion-item/block.json
 #: src/blocks/advanced-accordion/block.json
+#: src/blocks/faq-item/block.json
 #: src/blocks/faq/block.json
 msgctxt "block keyword"
 msgid "faq schema"
@@ -10737,6 +11295,18 @@ msgstr ""
 #: src/blocks/dual-button/block.json
 msgctxt "block description"
 msgid "Dual button block for gutenberg."
+msgstr ""
+
+#: build/blocks/faq-item/block.json
+#: src/blocks/faq-item/block.json
+msgctxt "block title"
+msgid "Faq Item"
+msgstr ""
+
+#: build/blocks/faq-item/block.json
+#: src/blocks/faq-item/block.json
+msgctxt "block description"
+msgid "Faq Item for gutenkit."
 msgstr ""
 
 #: build/blocks/faq/block.json

@@ -78,7 +78,9 @@ class Blocks {
 
 				register_block_type( $blocks_dir );
 
-				wp_set_script_translations( "{$plugin_slug}-{$key}-editor-script", $plugin_slug, $plugin_dir . 'languages' );
+				// $plugin_dir is only trailing-slashed on the 'free' branch above, so
+				// normalise it here rather than producing e.g. "...-prolanguages".
+				wp_set_script_translations( "{$plugin_slug}-{$key}-editor-script", $plugin_slug, trailingslashit( $plugin_dir ) . 'languages' );
 
 				if ( $is_editor ) {
 					wp_enqueue_block_style( "{$plugin_slug}/{$key}", $args );
@@ -113,6 +115,9 @@ class Blocks {
 				$editor_template_library['version'],
 				true
 			);
+
+			// Set up script translations
+			wp_set_script_translations( 'gutenkit-editor-template-library', 'gutenkit-blocks-addon' );
 
 			// Conditionally enqueue the RTL stylesheet
 			if ( is_rtl() ) {

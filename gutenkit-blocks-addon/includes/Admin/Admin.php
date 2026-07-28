@@ -112,8 +112,8 @@ class Admin {
 
 		add_submenu_page(
 			$this->menu_slug,
-			esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
-			esc_html__('Popups', 'gutenkit-blocks-addon-pro'),
+			esc_html__('Popups', 'gutenkit-blocks-addon'),
+			esc_html__('Popups', 'gutenkit-blocks-addon'),
 			'manage_options',
 			'popup-builder-block',
 			[$this, 'popup_callback'],
@@ -176,6 +176,9 @@ class Admin {
                         'plugin_status' => \Gutenkit\Helpers\Utils::onboard_plugins(),
                     )
                 );
+
+				// Set up script translations
+				wp_set_script_translations( 'gutenkit-onboard', 'gutenkit-blocks-addon' );
 
 				wp_enqueue_style(
 					'gutenkit-onboard',
@@ -253,6 +256,9 @@ class Admin {
 				true
 			);
 
+			// Set up script translations
+			wp_set_script_translations( 'gutenkit-admin-popup-builder', 'gutenkit-blocks-addon' );
+
 			wp_enqueue_style(
 				'gutenkit-admin-popup-builder',
 				GUTENKIT_PLUGIN_URL . 'build/admin/popup-builder/index.css',
@@ -289,6 +295,9 @@ class Admin {
 				'pluginUrl' => GUTENKIT_PLUGIN_URL,
 			)
 		);
+
+		// Set up script translations
+		wp_set_script_translations( 'gutenkit-deactivation-popup', 'gutenkit-blocks-addon' );
 
 		wp_enqueue_style(
 			'gutenkit-deactivation-popup',
