@@ -110,7 +110,7 @@ class PostMetaList
                     "type"              => "string", // specify the type as string
                     "show_in_rest"      => true, // enable REST API support
                     "single"            => true, // single meta value
-                    "sanitize_callback" => 'wp_strip_all_tags', // sanitize input to prevent XSS
+                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css'), // the value is printed as css, so sanitize it as css
                 ]
             ],
             "postBodyMargin" => [ // post meta key
@@ -503,15 +503,16 @@ class PostMetaList
             // Global Class Manager Styles
             "globalClassManagerStyle" => [
                 "post_type" => "class-manager",
-                "args" => [ 
+                "args" => [
                     "type"         => "object",
-                    "show_in_rest" => [ 
-                        "schema" => [ 
+                    "show_in_rest" => [
+                        "schema" => [
                             "type" => "object",
                             "additionalProperties" => true
                         ]
                     ],
                     "single" => true,
+                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css_map'), // every value is printed as css on the front end
                 ]
             ],
             "globalClassManagerTypography" => [

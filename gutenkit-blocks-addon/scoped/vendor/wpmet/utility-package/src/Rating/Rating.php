@@ -2,7 +2,7 @@
 
 namespace GutenkitScopedDependencies\Wpmet\UtilityPackage\Rating;
 
-\defined('ABSPATH') || exit;
+defined('ABSPATH') || exit;
 use DateTime;
 use GutenkitScopedDependencies\Wpmet\UtilityPackage\Notice\Notice as LibsNotice;
 use GutenkitScopedDependencies\Wpmet\UtilityPackage\Helper\Helper as UtilsHelper;
@@ -47,7 +47,7 @@ class Rating
             return \false;
         }
         self::$instance = new self();
-        self::$instance->config($text_domain, \is_null($unique_id) ? \uniqid() : $unique_id);
+        self::$instance->config($text_domain, is_null($unique_id) ? uniqid() : $unique_id);
         return self::$instance;
     }
     /**
@@ -121,7 +121,7 @@ class Rating
     }
     public function set_condition($result)
     {
-        switch (\gettype($result)) {
+        switch (gettype($result)) {
             case 'boolean':
                 $this->condition_status = $result;
                 break;
@@ -140,7 +140,7 @@ class Rating
     }
     protected function is_current_screen_allowed($current_screen_id)
     {
-        if (\in_array($current_screen_id, \array_merge($this->plugin_screens, array('dashboard', 'plugins')))) {
+        if (in_array($current_screen_id, array_merge($this->plugin_screens, array('dashboard', 'plugins')))) {
             return \true;
         }
         return \false;
@@ -196,7 +196,7 @@ class Rating
     }
     public function set_installation_date()
     {
-        add_option($this->text_domain . '_install_date', \date('Y-m-d h:i:s'));
+        add_option($this->text_domain . '_install_date', date('Y-m-d h:i:s'));
     }
     public function is_installation_date_exists()
     {
@@ -208,21 +208,21 @@ class Rating
     }
     public function set_first_action_date()
     {
-        add_option($this->text_domain . '_first_action_Date', \date('Y-m-d h:i:s'));
+        add_option($this->text_domain . '_first_action_Date', date('Y-m-d h:i:s'));
         add_option($this->text_domain . '_first_action', 'yes');
     }
     public function get_days($from_date, $to_date)
     {
-        return \round(($to_date->format('U') - $from_date->format('U')) / (60 * 60 * 24));
+        return round(($to_date->format('U') - $from_date->format('U')) / (60 * 60 * 24));
     }
     public function is_first_use($in_days)
     {
         $install_date = get_option($this->text_domain . '_install_date');
-        $display_date = \date('Y-m-d h:i:s');
+        $display_date = date('Y-m-d h:i:s');
         $datetime1 = new DateTime($install_date);
         $datetime2 = new DateTime($display_date);
         $diff_interval = $this->get_days($datetime1, $datetime2);
-        if (\abs($diff_interval) >= $in_days && get_option($this->text_domain . '_first_action_Date') == 'yes') {
+        if (abs($diff_interval) >= $in_days && get_option($this->text_domain . '_first_action_Date') == 'yes') {
             // action implementation here
         }
     }
@@ -235,9 +235,15 @@ class Rating
     public static function never_show_message()
     {
         if (empty($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'wpmet_rating')) {
-            //return false;
+            return \false;
         }
-        $plugin_name = isset($_POST['plugin_name']) ? sanitize_key($_POST['plugin_name']) : '';
+        if (!current_user_can('manage_options')) {
+            return \false;
+        }
+        $plugin_name = isset($_POST['plugin_name']) ? sanitize_key(wp_unslash($_POST['plugin_name'])) : '';
+        if ('' === $plugin_name) {
+            return \false;
+        }
         add_option($plugin_name . '_never_show', 'yes');
     }
     /**
@@ -251,11 +257,11 @@ class Rating
     public function get_remaining_days()
     {
         $install_date = get_option($this->text_domain . '_install_date');
-        $display_date = \date('Y-m-d h:i:s');
+        $display_date = date('Y-m-d h:i:s');
         $datetime1 = new DateTime($install_date);
         $datetime2 = new DateTime($display_date);
         $diff_interval = $this->get_days($datetime1, $datetime2);
-        return \abs($diff_interval);
+        return abs($diff_interval);
     }
     /**
      *----------------------------------
@@ -272,11 +278,11 @@ class Rating
         }
         $wpmet_libs_execution_container['rating'] = __FILE__;
         $install_date = get_option($this->text_domain . '_install_date');
-        $display_date = \date('Y-m-d h:i:s');
+        $display_date = date('Y-m-d h:i:s');
         $datetime1 = new DateTime($install_date);
         $datetime2 = new DateTime($display_date);
         $diff_interval = $this->get_days($datetime1, $datetime2);
-        if (\abs($diff_interval) >= $this->days) {
+        if (abs($diff_interval) >= $this->days) {
             $not_good_enough_btn_id = $this->never_show_triggered ? '_btn_never_show' : '_btn_not_good';
             $message = "Hello! Seems like you have used {$this->plugin_name} to build this website — Thanks a lot! <br>\n\t\t\t\t\t\tCould you please do us a <b>big favor</b> and give it a <b>5-star</b> rating on WordPress? \n\t\t\t\t\t\tThis would boost our motivation and help other users make a comfortable decision while choosing the {$this->plugin_name}";
             LibsNotice::instance($this->text_domain, '_plugin_rating_msg_used_in_day')->set_message($message)->set_logo($this->plugin_logo, 'max-height: 100px !important')->set_button(array('url' => $this->rating_url, 'text' => 'Ok, you deserved it', 'class' => 'button-primary', 'id' => $this->text_domain . '_btn_deserved'))->set_button(array('url' => get_current_screen()->id == 'toplevel_page_getgenie' ? '#write-for-me' : '#', 'text' => 'I already did', 'class' => 'button-default', 'id' => $this->text_domain . '_btn_already_did', 'icon' => 'dashicons-before dashicons-smiley'))->set_button(array('url' => $this->support_url, 'text' => 'I need support', 'class' => 'button-default', 'id' => '#', 'icon' => 'dashicons-before dashicons-sos'))->set_button(['url' => '#', 'text' => 'Never ask again', 'class' => 'button-default', 'id' => $this->text_domain . '_btn_never_show', 'icon' => 'dashicons-before dashicons-welcome-comments'])->set_button(array('url' => get_current_screen()->id == 'toplevel_page_getgenie' ? '#write-for-me' : '#', 'text' => 'No, not good enough', 'class' => 'button-default', 'id' => $this->text_domain . $not_good_enough_btn_id, 'icon' => 'dashicons-before dashicons-thumbs-down'))->call();
@@ -294,7 +300,13 @@ class Rating
         if (empty($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'wpmet_rating')) {
             return \false;
         }
-        $plugin_name = isset($_POST['plugin_name']) ? sanitize_key($_POST['plugin_name']) : '';
+        if (!current_user_can('manage_options')) {
+            return \false;
+        }
+        $plugin_name = isset($_POST['plugin_name']) ? sanitize_key(wp_unslash($_POST['plugin_name'])) : '';
+        if ('' === $plugin_name) {
+            return \false;
+        }
         if (get_option($plugin_name . '_ask_me_later') == \false) {
             add_option($plugin_name . '_ask_me_later', 'yes');
         } else {

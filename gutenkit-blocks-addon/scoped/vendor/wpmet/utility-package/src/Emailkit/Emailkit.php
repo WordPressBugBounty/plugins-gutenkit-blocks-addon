@@ -3,8 +3,8 @@
 namespace GutenkitScopedDependencies\Wpmet\UtilityPackage\Emailkit;
 
 use GutenkitScopedDependencies\WP_Query;
-\defined('ABSPATH') || exit;
-if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\\Emailkit')) {
+defined('ABSPATH') || exit;
+if (!class_exists('GutenkitScopedDependencies\Wpmet\UtilityPackage\Emailkit\Emailkit')) {
     class Emailkit
     {
         private $installed_plugins = [];
@@ -19,11 +19,11 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
         {
             do_action('edit_with_emailkit_loaded');
             add_action('wp_ajax_emailkit_get_builder_url', [$this, 'emailkit_get_builder_url']);
-            if (!\function_exists('is_plugin_active')) {
+            if (!function_exists('is_plugin_active')) {
                 // Include necessary WordPress files
                 require_once ABSPATH . 'wp-admin/includes/plugin.php';
             }
-            if (\is_plugin_active('woocommerce/woocommerce.php') && !\is_plugin_active('emailkit/EmailKit.php')) {
+            if (is_plugin_active('woocommerce/woocommerce.php') && !is_plugin_active('emailkit/EmailKit.php')) {
                 add_filter('woocommerce_email_setting_columns', [$this, 'emailkit_email_setting_columns']);
                 add_action('woocommerce_email_setting_column_template', array($this, 'emailkit_column_template'));
                 add_action('admin_enqueue_scripts', [$this, 'enqueue_script']);
@@ -42,6 +42,12 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
         {
             if (!isset($_POST['emailkit_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['emailkit_nonce'])), 'wp_rest')) {
                 return ['status' => 'fail', 'message' => ['Nonce mismatch.']];
+            }
+            // This builds/returns an edit-post URL for the matching emailkit template,
+            // so require the same capability the WooCommerce > Settings > Emails page
+            // (where this is called from) is itself gated behind.
+            if (!current_user_can('manage_woocommerce')) {
+                return ['status' => 'fail', 'message' => ['Permission denied.']];
             }
             $wc_template_type = isset($_POST['emailkit_template_type']) ? sanitize_text_field(wp_unslash($_POST['emailkit_template_type'])) : '';
             $post_id = $this->get_emailkit_post_id($wc_template_type);
@@ -69,7 +75,7 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
         {
             if (isset($array['actions'])) {
                 unset($array['actions']);
-                return \array_merge($array, array('template' => 'EmailKit', 'actions' => ''));
+                return array_merge($array, array('template' => 'EmailKit', 'actions' => ''));
             }
             return $array;
         }
@@ -98,10 +104,10 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
 					style="width: 160px"
 					target="_blank"
 					href="<?php 
-            echo \esc_url($installation_url);
+            echo esc_url($installation_url);
             ?>"
 					data-activation_url="<?php 
-            echo \esc_url($activation_url);
+            echo esc_url($activation_url);
             ?>"
 					data-plugin_status="<?php 
             echo esc_attr($plugin_status);
@@ -123,11 +129,11 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
          */
         public function collect_installed_plugins()
         {
-            if (!\function_exists('get_plugins')) {
+            if (!function_exists('get_plugins')) {
                 include_once ABSPATH . 'wp-admin/includes/plugin.php';
             }
-            foreach (\get_plugins() as $key => $plugin) {
-                \array_push($this->installed_plugins, $key);
+            foreach (get_plugins() as $key => $plugin) {
+                array_push($this->installed_plugins, $key);
             }
         }
         /**
@@ -138,8 +144,8 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
          */
         public function collect_activated_plugins()
         {
-            foreach (\apply_filters('active_plugins', get_option('active_plugins')) as $plugin) {
-                \array_push($this->activated_plugins, $plugin);
+            foreach (apply_filters('active_plugins', get_option('active_plugins')) as $plugin) {
+                array_push($this->activated_plugins, $plugin);
             }
         }
         /**
@@ -151,7 +157,7 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
          */
         public function check_installed_plugin($name)
         {
-            return \in_array($name, $this->installed_plugins);
+            return in_array($name, $this->installed_plugins);
         }
         /**
          * Check if plugin is activated
@@ -162,7 +168,7 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
          */
         public function check_activated_plugin($name)
         {
-            return \in_array($name, $this->activated_plugins);
+            return in_array($name, $this->activated_plugins);
         }
         /**
          * Get plugin status
@@ -200,7 +206,7 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
          */
         public function get_plugin_slug($name)
         {
-            $split = \explode('/', $name);
+            $split = explode('/', $name);
             return isset($split[0]) ? $split[0] : null;
         }
         /**
@@ -264,13 +270,13 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
 			<script>
 				var emailkit_woocommerce = {
 					ajaxurl: "<?php 
-            echo \esc_url(admin_url('admin-ajax.php'));
+            echo esc_url(admin_url('admin-ajax.php'));
             ?>",
 					nonce: "<?php 
             echo esc_attr(wp_create_nonce('emailkit_nonce'));
             ?>",
 					rest_url: "<?php 
-            echo \esc_url(get_rest_url(null, 'emailkit/v1/'));
+            echo esc_url(get_rest_url(null, 'emailkit/v1/'));
             ?>",
 					rest_nonce: "<?php 
             echo esc_attr(wp_create_nonce('wp_rest'));
@@ -288,7 +294,7 @@ if (!\class_exists('GutenkitScopedDependencies\\Wpmet\\UtilityPackage\\Emailkit\
          */
         function find_emailkit_template($wc_template_type)
         {
-            if (\class_exists('GutenkitScopedDependencies\\EmailKit\\Admin\\TemplateList') && \class_exists('GutenkitScopedDependencies\\EmailKit\\Admin\\Emails\\EmailLists') && \method_exists('GutenkitScopedDependencies\\EmailKit\\Admin\\TemplateList', 'get_templates') && \method_exists('GutenkitScopedDependencies\\EmailKit\\Admin\\Emails\\EmailLists', 'woocommerce_email')) {
+            if (class_exists('GutenkitScopedDependencies\EmailKit\Admin\TemplateList') && class_exists('GutenkitScopedDependencies\EmailKit\Admin\Emails\EmailLists') && method_exists('GutenkitScopedDependencies\EmailKit\Admin\TemplateList', 'get_templates') && method_exists('GutenkitScopedDependencies\EmailKit\Admin\Emails\EmailLists', 'woocommerce_email')) {
                 $templates = \GutenkitScopedDependencies\EmailKit\Admin\TemplateList::get_templates();
                 $template_title = \GutenkitScopedDependencies\Emailkit\Admin\Emails\EmailLists::woocommerce_email($wc_template_type);
                 foreach ($templates as $key => $value) {

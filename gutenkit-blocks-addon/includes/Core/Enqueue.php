@@ -144,6 +144,91 @@ class Enqueue {
 		// Enqueue breakpoint scripts and styles
 		wp_enqueue_script('gutenkit-breakpoints-editor-scripts');
 		wp_enqueue_style('gutenkit-breakpoints-editor-styles');
+
+		// Inspector panel strings live in lazily imported chunks that
+		// wp_set_script_translations() cannot reach, so seed wp.i18n directly.
+		$this->preload_editor_translations();
+	}
+
+	/**
+	 * Load the whole text domain into wp.i18n for the block editor.
+	 *
+	 * Every block pulls its inspector panel in through lazy( () => import( './settings.js' ) ),
+	 * so those strings compile into chunks that webpack fetches on demand and WordPress never
+	 * registers as script handles. wp_set_script_translations() resolves one JSON per registered
+	 * handle, so it can never reach them. setLocaleData() merges into a single per-domain
+	 * registry shared by every script on the page, so loading the domain once here covers all of
+	 * them without changing how any chunk loads.
+	 *
+	 * Attached to wp-i18n rather than a plugin handle: it is always registered in the editor and
+	 * every other script depending on it prints later, which guarantees the data is in place
+	 * before any chunk can ask for it.
+	 *
+	 * @return void
+	 * @since 1.0.0
+	 */
+	private function preload_editor_translations()
+	{
+		$domain = 'gutenkit-blocks-addon';
+		$locale = determine_locale();
+
+		// English already reads from the source strings.
+		if ( 'en_US' === $locale ) {
+			return;
+		}
+
+		$translations = get_translations_for_domain( $domain );
+
+		/*
+		 * WP_Translations (6.5+) exposes entries and headers through __get() but declares no
+		 * __isset(), so empty()/isset() on them always report "missing" no matter what is
+		 * loaded. Both have to be read into variables before they can be tested.
+		 */
+		$entries = $translations->entries;
+		$headers = $translations->headers;
+
+		// NOOP_Translations, or a locale with nothing translated yet.
+		if ( ! is_array( $entries ) || array() === $entries ) {
+			return;
+		}
+
+		$data = array(
+			'' => array(
+				'domain' => $domain,
+				'lang'   => $locale,
+			),
+		);
+
+		// Required for _n() to pick the correct form.
+		if ( is_array( $headers ) && ! empty( $headers['Plural-Forms'] ) ) {
+			$data['']['plural_forms'] = $headers['Plural-Forms'];
+		}
+
+		/*
+		 * WP_Translations returns a numerically indexed list while the older MO class keys by
+		 * msgid, so the msgid is rebuilt from each entry instead of trusting the array key.
+		 * wp.i18n expects context-qualified strings in "context\4msgid" form.
+		 */
+		foreach ( $entries as $entry ) {
+			if ( ! $entry instanceof \Translation_Entry || '' === (string) $entry->singular ) {
+				continue;
+			}
+
+			$msgid = '' !== (string) $entry->context
+				? $entry->context . "\4" . $entry->singular
+				: $entry->singular;
+
+			$data[ $msgid ] = $entry->translations;
+		}
+
+		$script = sprintf(
+			'wp.i18n.setLocaleData( %s, "%s" ); window.gutenkitI18nLoaded = %d;',
+			wp_json_encode( $data ),
+			$domain,
+			count( $data ) - 1
+		);
+
+		wp_add_inline_script( 'wp-i18n', $script, 'after' );
 	}
 
 	private function enqueue_assets($asset_file, $handle, $script_file)

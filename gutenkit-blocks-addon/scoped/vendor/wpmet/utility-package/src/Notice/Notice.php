@@ -2,7 +2,7 @@
 
 namespace GutenkitScopedDependencies\Wpmet\UtilityPackage\Notice;
 
-\defined('ABSPATH') || exit;
+defined('ABSPATH') || exit;
 use GutenkitScopedDependencies\Wpmet\UtilityPackage\Helper\Helper as UtilsHelper;
 /**
  * Showing Notice
@@ -175,7 +175,7 @@ class Notice
     }
     public function set_button($button = array())
     {
-        $button = \array_merge($this->button, $button);
+        $button = array_merge($this->button, $button);
         $this->buttons[] = $button;
         return $this;
     }
@@ -272,7 +272,7 @@ class Notice
 			<img class="notice-logo" style="<?php 
             echo esc_attr($this->logo_style);
             ?>" src="<?php 
-            echo \esc_url($this->logo);
+            echo esc_url($this->logo);
             ?>" />
 		<?php 
         }
@@ -286,12 +286,12 @@ class Notice
         if (empty($this->html)) {
             ?>
 				<?php 
-            echo empty($this->title) ? '' : \sprintf('<div class="notice-main-title notice-vert-space">%s</div>', \esc_html($this->title));
+            echo empty($this->title) ? '' : sprintf('<div class="notice-main-title notice-vert-space">%s</div>', esc_html($this->title));
             ?>
 
 				<div class="notice-message notice-vert-space">
 				<?php 
-            echo \wp_kses($this->message, UtilsHelper::get_kses_array());
+            echo wp_kses($this->message, UtilsHelper::get_kses_array());
             ?>
 				</div>
 
@@ -305,7 +305,7 @@ class Notice
 							<a id="<?php 
                     echo !isset($button['id']) ? '' : esc_attr($button['id']);
                     ?>" href="<?php 
-                    echo \esc_url($button['url']);
+                    echo esc_url($button['url']);
                     ?>" class="wpmet-notice-button <?php 
                     echo esc_attr($button['class']);
                     ?>">
@@ -319,7 +319,7 @@ class Notice
                     }
                     ?>
 								<?php 
-                    echo \esc_html($button['text']);
+                    echo esc_html($button['text']);
                     ?>
 							</a>
 							&nbsp;
@@ -335,7 +335,7 @@ class Notice
         } else {
             ?>
 				<?php 
-            echo \wp_kses($this->html, UtilsHelper::get_kses_array());
+            echo wp_kses($this->html, UtilsHelper::get_kses_array());
             ?>
 			<?php 
         }
@@ -368,6 +368,9 @@ class Notice
         if (empty($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'wpmet-notices')) {
             return \false;
         }
+        if (!current_user_can('manage_options')) {
+            wp_send_json_error();
+        }
         $notice_id = isset($_POST['notice_id']) ? sanitize_text_field(wp_unslash($_POST['notice_id'])) : '';
         $dismissible = isset($_POST['dismissible']) ? sanitize_text_field(wp_unslash($_POST['dismissible'])) : '';
         $expired_time = isset($_POST['expired_time']) ? sanitize_text_field(wp_unslash($_POST['expired_time'])) : '';
@@ -399,6 +402,6 @@ class Notice
             return \false;
         }
         self::$instance = new self();
-        return self::$instance->config($text_domain, \is_null($unique_id) ? \uniqid() : $unique_id);
+        return self::$instance->config($text_domain, is_null($unique_id) ? uniqid() : $unique_id);
     }
 }

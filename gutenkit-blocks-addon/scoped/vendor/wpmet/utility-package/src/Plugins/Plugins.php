@@ -2,7 +2,7 @@
 
 namespace GutenkitScopedDependencies\Wpmet\UtilityPackage\Plugins;
 
-\defined('ABSPATH') || exit;
+defined('ABSPATH') || exit;
 /**
  * Description: Wpmet Apps class. This class is used to display the wpmet other plugins
  * 
@@ -225,7 +225,7 @@ class Plugins
      */
     public function get_plugin_slug($name)
     {
-        $split = \explode('/', $name);
+        $split = explode('/', $name);
         return isset($split[0]) ? $split[0] : null;
     }
     /**
@@ -247,11 +247,11 @@ class Plugins
      */
     private function collect_installed_plugins()
     {
-        if (!\function_exists('get_plugins')) {
+        if (!function_exists('get_plugins')) {
             include_once ABSPATH . 'wp-admin/includes/plugin.php';
         }
-        foreach (\get_plugins() as $key => $plugin) {
-            \array_push($this->installed_plugins, $key);
+        foreach (get_plugins() as $key => $plugin) {
+            array_push($this->installed_plugins, $key);
         }
     }
     /**
@@ -262,8 +262,8 @@ class Plugins
      */
     private function collect_activated_plugins()
     {
-        foreach (\apply_filters('active_plugins', get_option('active_plugins')) as $plugin) {
-            \array_push($this->activated_plugins, $plugin);
+        foreach (apply_filters('active_plugins', get_option('active_plugins')) as $plugin) {
+            array_push($this->activated_plugins, $plugin);
         }
     }
     /**
@@ -275,7 +275,7 @@ class Plugins
      */
     public function check_installed_plugin($name)
     {
-        return \in_array($name, $this->installed_plugins);
+        return in_array($name, $this->installed_plugins);
     }
     /**
      * Check activated plugin
@@ -286,7 +286,7 @@ class Plugins
      */
     public function check_activated_plugin($name)
     {
-        return \in_array($name, $this->activated_plugins);
+        return in_array($name, $this->activated_plugins);
     }
     /**
      * Get plugin status
@@ -328,10 +328,10 @@ class Plugins
 		<div class="wpmet-onboard-dashboard">
 			<div class="wpmet-onboard-main-header">
 				<h1 class="wpmet-onboard-main-header--title"><strong><?php 
-        echo \esc_html($this->section_title);
+        echo esc_html($this->section_title);
         ?></strong></h1>
 				<p class="wpmet-onboard-main-header--description"><?php 
-        echo \esc_html($this->section_description);
+        echo esc_html($this->section_description);
         ?></p>
 			</div>
 
@@ -348,15 +348,15 @@ class Plugins
 						<div class="wpmet-onboard-single-plugin">
 							<label>
 								<img class="wpmet-onboard-single-plugin--logo" src="<?php 
-            echo \esc_url($img_url);
+            echo esc_url($img_url);
             ?>" alt="<?php 
             echo esc_attr($plugin_name);
             ?>">
 								<h4 class="wpmet-single-plugin--name"><?php 
-            echo \esc_html($plugin_name);
+            echo esc_html($plugin_name);
             ?></h4>
 								<p class="wpmet-onboard-single-plugin--description"><?php 
-            echo \esc_html($plugin_desc);
+            echo esc_html($plugin_desc);
             ?></p>
 								<?php 
             $plugin_data = $this->get_plugin_status($key);
@@ -364,13 +364,13 @@ class Plugins
             $plugin_activation_url = isset($plugin_data['activation_url']) ? $plugin_data['activation_url'] : '';
             $plugin_installation_url = isset($plugin_data['installation_url']) ? $plugin_data['installation_url'] : '';
             $plugin_status_label = isset($plugin_data['status']) ? $plugin_data['status'] == 'activated' ? 'activated' : '' : '';
-            $plugin_status_title = isset($plugin_data['title']) ? $plugin_data['title'] : \esc_html__('Activate', 'gutenkit-blocks-addon');
+            $plugin_status_title = isset($plugin_data['title']) ? $plugin_data['title'] : esc_html__('Activate', 'gutenkit-blocks-addon');
             ?>
 								<div class="wpmet-apps-footer">
 									<?php 
-            echo \sprintf('<a data-plugin_status="%1$s" data-activation_url="%2$s" href="%3$s" class="wpmet-pro-btn wpmet-onboard-single-plugin--install_plugin %4$s">%5$s</a>', esc_attr($plugin_status), \esc_url($plugin_activation_url), \esc_url($plugin_installation_url), esc_attr($plugin_status_label), \esc_html($plugin_status_title));
+            echo sprintf('<a data-plugin_status="%1$s" data-activation_url="%2$s" href="%3$s" class="wpmet-pro-btn wpmet-onboard-single-plugin--install_plugin %4$s">%5$s</a>', esc_attr($plugin_status), esc_url($plugin_activation_url), esc_url($plugin_installation_url), esc_attr($plugin_status_label), esc_html($plugin_status_title));
             if (!empty($plugin_docs)) {
-                echo \sprintf('<a target="_blank" href="%1$s" class="wpmet-onboard-tut-term--help">%2$s</a>', \esc_url($plugin_docs), \esc_html__('Read Docs', 'gutenkit-blocks-addon'));
+                echo sprintf('<a target="_blank" rel="noopener noreferrer" href="%1$s" class="wpmet-onboard-tut-term--help">%2$s</a>', esc_url($plugin_docs), esc_html__('Read Docs', 'gutenkit-blocks-addon'));
             }
             ?>
 								</div>

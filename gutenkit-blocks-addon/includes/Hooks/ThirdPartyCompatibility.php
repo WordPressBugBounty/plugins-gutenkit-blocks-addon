@@ -20,9 +20,16 @@ class ThirdPartyCompatibility {
 	private $css_vars = array();
 
 	public function __construct() {
-		// Otter blocks plugin compatibility
-		add_action( 'wp_head', array( $this, 'otter_blocks_compatibility' ) );
-		add_action( 'admin_head', array( $this, 'otter_blocks_compatibility' ) );
+		/*
+		 * Otter blocks plugin compatibility.
+		 *
+		 * `enqueue_block_assets` fires on the front end, in the admin, and again while
+		 * core assembles the iframed editor canvas's asset payload, so this single hook
+		 * replaces the previous `wp_head` + `admin_head` pair and additionally reaches
+		 * the canvas. From WordPress 7.1 the canvas is always an iframe, and `admin_head`
+		 * output lands outside it.
+		 */
+		add_action( 'enqueue_block_assets', array( $this, 'otter_blocks_compatibility' ) );
 
 		// Return if block theme
 		if( wp_is_block_theme() ) {
@@ -34,7 +41,7 @@ class ThirdPartyCompatibility {
 
 		// Kadence theme compatibility
 		add_action( 'wp_enqueue_scripts', array( $this, 'blocks_compatibility' ) );
-		add_action('enqueue_block_editor_assets', array( $this, 'blocks_editor_compatibility' ) );
+		add_action( 'enqueue_block_assets', array( $this, 'blocks_editor_compatibility' ) );
 
 		// WPForms plugin compatibility
 		add_filter( 'wpforms_frontend_css_vars_init_vars', array( $this, 'wpforms_frontend_css_vars_init_vars' ) );
@@ -47,15 +54,39 @@ class ThirdPartyCompatibility {
 	 * This function checks if the Otter Blocks plugin is active. If it is active,
 	 * it adds custom CSS to ensure compatibility with the GutenKit blocks.
 	 *
+	 * The rule targets `.gkit-block__inner`, which is block markup — so it has to reach
+	 * the editor canvas, not just the admin document.
+	 *
 	 * @return void
 	 */
 	public function otter_blocks_compatibility() {
 		// check if otter blocks plugin is active
-		$is_plugin_active = in_array('otter-blocks/otter-blocks.php', apply_filters('active_plugins', get_option('active_plugins')));
-		if ($is_plugin_active) {
-			$custom_css = '.gkit-block__inner [class^="wp-block-themeisle-blocks-"]{flex-basis: 100%;}';
-			echo '<style>' . $custom_css . '</style>';
+		$is_plugin_active = in_array( 'otter-blocks/otter-blocks.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ), true );
+
+		if ( ! $is_plugin_active ) {
+			return;
 		}
+
+		$handle = 'gutenkit-otter-blocks-compatibility';
+
+		/*
+		 * Registered with no `src`; the handle exists purely to carry inline CSS. Going
+		 * through the styles API rather than echoing a raw <style> matters for two
+		 * reasons: it is what puts this in the iframe payload at all, and it gives the
+		 * printed tag an `id`. Gutenberg's compatibility scanner skips any stylesheet
+		 * whose owner node has no id, so the previous `echo '<style>'` could not even be
+		 * cloned into the canvas as a fallback — it was simply absent.
+		 *
+		 * Guarded because this callback runs once per pass (front end / admin / iframe)
+		 * and `registered` is shared across those passes, so an unguarded
+		 * wp_add_inline_style() would append the same CSS repeatedly.
+		 */
+		if ( ! wp_style_is( $handle, 'registered' ) ) {
+			wp_register_style( $handle, false, array(), GUTENKIT_PLUGIN_VERSION );
+			wp_add_inline_style( $handle, '.gkit-block__inner [class^="wp-block-themeisle-blocks-"]{flex-basis: 100%;}' );
+		}
+
+		wp_enqueue_style( $handle );
 	}
 
 	/**
@@ -121,11 +152,26 @@ class ThirdPartyCompatibility {
 	/**
 	 * Checks the compatibility of the blocks editor with the current theme.
 	 *
+	 * Hooked to `enqueue_block_assets` rather than `enqueue_block_editor_assets`: the
+	 * stylesheet's only rule is `.editor-styles-wrapper .wp-block { … }`, which targets
+	 * canvas content, and `enqueue_block_editor_assets` loads into the admin document.
+	 * Since WordPress 7.1 that document is outside the iframe, so the rule never applied
+	 * except by way of Gutenberg's deprecated compatibility-clone fallback.
+	 *
 	 * @since 2.0.1
 	 * @TODO: This should be removed in future
 	 * @return void
 	 */
 	public function blocks_editor_compatibility() {
+		/*
+		 * `enqueue_block_assets` also fires on the front end, where an
+		 * `.editor-styles-wrapper` rule is dead weight. `is_admin()` is true during the
+		 * iframe pass, so the canvas still receives it.
+		 */
+		if ( ! is_admin() ) {
+			return;
+		}
+
 		$current_theme = wp_get_theme();
 
 		// check specific theme is active or not

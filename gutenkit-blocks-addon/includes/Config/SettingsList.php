@@ -18,12 +18,12 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 			array(
 				'google_map'   => array(
 					'slug'    => 'google_map',
-					'title'   => 'Google Map',
-					'description'   => "Integrate Google Maps services to enable location-based features into your website. Use the Google Map API.",
+					'title'   => __( 'Google Map', 'gutenkit-blocks-addon' ),
+					'description'   => __( "Integrate Google Maps services to enable location-based features into your website. Use the Google Map API.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'token_link' => 'https://developers.google.com/maps/documentation/javascript/get-api-key',
 					'fields'   => array(
-						'api_key' => array('label' => 'API key', 'value' => ''),
+						'api_key' => array('label' => __( 'API key', 'gutenkit-blocks-addon' ), 'value' => ''),
 					),
 					'status'          => 'active',
 					'clear_cache' => true,
@@ -31,24 +31,24 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'mailchimp' => array(
 					'slug'           => 'mailchimp',
-					'title'          => 'Mailchimp',
-					'description'    => 'Use MailChimp API key to securely integrate your MailChimp account with our services.',
+					'title'          => __( 'Mailchimp', 'gutenkit-blocks-addon' ),
+					'description'    => __( 'Use MailChimp API key to securely integrate your MailChimp account with our services.', 'gutenkit-blocks-addon' ),
 					'package'        => 'free',
 					'fields'            => array(
-						'api_key' => array('label' => 'API Key', 'value' => '')
+						'api_key' => array('label' => __( 'API Key', 'gutenkit-blocks-addon' ), 'value' => '')
 					),
 					'status'          => 'active',
 					'category' => 'api-integration',
 				),
 				'facebook_feed'   => array(
 					'slug'    => 'facebook_feed',
-					'title'   => 'Facebook Page Feed',
-					'description'   => "To show Facebook page feed on your website, enter your unique Page ID and Page Access Token to connect your page.",
+					'title'   => __( 'Facebook Page Feed', 'gutenkit-blocks-addon' ),
+					'description'   => __( "To show Facebook page feed on your website, enter your unique Page ID and Page Access Token to connect your page.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
-						'page_id' => array('label' => 'Page ID', 'value' => ''),
-						'aceess_token' => array('label' => 'Page Access Token', 'value' => ''),
-						'expiration_time' => array('label' => 'Expiration Time In Hours', 'value' => '', 'type' => 'number')
+						'page_id' => array('label' => __( 'Page ID', 'gutenkit-blocks-addon' ), 'value' => ''),
+						'aceess_token' => array('label' => __( 'Page Access Token', 'gutenkit-blocks-addon' ), 'value' => ''),
+						'expiration_time' => array('label' => __( 'Expiration Time In Hours', 'gutenkit-blocks-addon' ), 'value' => '', 'type' => 'number')
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
@@ -59,13 +59,13 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'instagram'   => array(
 					'slug'    => 'instagram',
-					'title'   => 'Instagram',
-					'description'   => "To Showcase Instagram Feed on your website, enter User ID, Access Token, Expiry Date, & Generation Date of the access token.",
+					'title'   => __( 'Instagram', 'gutenkit-blocks-addon' ),
+					'description'   => __( "To Showcase Instagram Feed on your website, enter User ID, Access Token, Expiry Date, & Generation Date of the access token.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
-						'user_id' => array('label' => 'User ID', 'value' => ''),
-						'token' => array('label' => 'Access Token', 'value' => ''),
-						'token_expiry_time' => array('label' => 'Token Expiry Time', 'value' => '', 'type' => 'number' ),
+						'user_id' => array('label' => __( 'User ID', 'gutenkit-blocks-addon' ), 'value' => ''),
+						'token' => array('label' => __( 'Access Token', 'gutenkit-blocks-addon' ), 'value' => ''),
+						'token_expiry_time' => array('label' => __( 'Token Expiry Time', 'gutenkit-blocks-addon' ), 'value' => '', 'type' => 'number' ),
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
@@ -75,12 +75,12 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'facebook_review'   => array(
 					'slug'    => 'facebook_review',
-					'title'   => 'Facebook Page Review',
-					'description'   => "To showcase reviews from your Facebook page, enter your unique Page ID and Page Access Token to connect your page.",
+					'title'   => __( 'Facebook Page Review', 'gutenkit-blocks-addon' ),
+					'description'   => __( "To showcase reviews from your Facebook page, enter your unique Page ID and Page Access Token to connect your page.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
-						'page_id' => array('label' => 'Page ID', 'value' => ''),
-						'aceess_token' => array('label' => 'Page Access Token', 'value' => '')
+						'page_id' => array('label' => __( 'Page ID', 'gutenkit-blocks-addon' ), 'value' => ''),
+						'aceess_token' => array('label' => __( 'Page Access Token', 'gutenkit-blocks-addon' ), 'value' => '')
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
@@ -90,22 +90,22 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'yelp'   => array(
 					'slug'    => 'yelp',
-					'title'   => 'Yelp',
-					'description'   => "Use your Yelp Business Page ID to manage your online reputation such as reviews, ratings, and business details.",
+					'title'   => __( 'Yelp', 'gutenkit-blocks-addon' ),
+					'description'   => __( "Use your Yelp Business Page ID to manage your online reputation such as reviews, ratings, and business details.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
-						'page' => array('label' => 'Yelp Page', 'value' => '')
+						'page' => array('label' => __( 'Yelp Page', 'gutenkit-blocks-addon' ), 'value' => '')
 					),
 					'status'          => 'inactive',
 					'category' => 'api-integration',
 				),
 				'dribble'   => array(
 					'slug'    => 'dribble',
-					'title'   => 'Dribble User Data',
-					'description'   => "Enter Access Token to enable Dribbble services like viewing and interacting with your design work.",
+					'title'   => __( 'Dribble User Data', 'gutenkit-blocks-addon' ),
+					'description'   => __( "Enter Access Token to enable Dribbble services like viewing and interacting with your design work.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
-						'token' => array('label' => 'Access Token', 'value' => '')
+						'token' => array('label' => __( 'Access Token', 'gutenkit-blocks-addon' ), 'value' => '')
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
@@ -115,12 +115,12 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'twitter'   => array(
 					'slug'    => 'twitter',
-					'title'   => 'Twitter',
-					'description'   => "Connect your Twitter handle and show your tweets on your website. Use your Twitter username and Access Token.",
+					'title'   => __( 'Twitter', 'gutenkit-blocks-addon' ),
+					'description'   => __( "Connect your Twitter handle and show your tweets on your website. Use your Twitter username and Access Token.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
-						'username' => array('label' => 'Username', 'value' => ''),
-						'token' => array('label' => 'Access Token', 'value' => '')
+						'username' => array('label' => __( 'Username', 'gutenkit-blocks-addon' ), 'value' => ''),
+						'token' => array('label' => __( 'Access Token', 'gutenkit-blocks-addon' ), 'value' => '')
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
@@ -130,12 +130,12 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'zoom'   => array(
 					'slug'    => 'zoom',
-					'title'   => 'Zoom',
-					'description'   => "Use your Zoom API Key and Secret Key to facilitate scheduling, managing, and hosting Zoom meetings.",
+					'title'   => __( 'Zoom', 'gutenkit-blocks-addon' ),
+					'description'   => __( "Use your Zoom API Key and Secret Key to facilitate scheduling, managing, and hosting Zoom meetings.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
-						'api_key' => array('label' => 'Api key', 'value' => ''),
-						'secret_key' => array('label' => 'Secret Key', 'value' => ''),
+						'api_key' => array('label' => __( 'Api key', 'gutenkit-blocks-addon' ), 'value' => ''),
+						'secret_key' => array('label' => __( 'Secret Key', 'gutenkit-blocks-addon' ), 'value' => ''),
 					),
 					'access_token_generator' => true,
 					'status'          => 'inactive',
@@ -144,42 +144,42 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'asset_generation' => array(
 					'slug'    => 'asset_generation',
-					'title'   => 'Asset Generation',
+					'title'   => __( 'Asset Generation', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'status'  => 'active',
 					'category' => 'asset-generation',
 				),
 				'unfiltered_upload' => array(
 					'slug'    => 'unfiltered_upload',
-					'title'   => 'Unfiltered Upload',
+					'title'   => __( 'Unfiltered Upload', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'status'  => 'active',
 					'category' => 'advanced',
 				),
 				'remote_image' => array(
 					'slug'    => 'remote_image',
-					'title'   => 'Remote Image',
+					'title'   => __( 'Remote Image', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'status'  => 'inactive',
 					'category' => 'advanced',
 				),
 				'load_google_fonts' => array(
 					'slug'    => 'load_google_fonts',
-					'title'   => 'Load Google Fonts locally',
+					'title'   => __( 'Load Google Fonts locally', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'status'  => 'inactive',
 					'category' => 'advanced',
 				),
 				'gutenkit_user_consent' => array(
 					'slug'    => 'gutenkit_user_consent',
-					'title'   => 'User Consent',
+					'title'   => __( 'User Consent', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'status'  => 'active',
 					'category' => 'advanced',
 				),
 				'version_control' => array(
 					'slug'    => 'version_control',
-					'title'   => 'Version Control',
+					'title'   => __( 'Version Control', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'value'   => '1.0.0',
 					'status'  => 'active',
@@ -187,7 +187,7 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'transition' => array(
 					'slug'    => 'transition',
-					'title'   => 'Transition',
+					'title'   => __( 'Transition', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'value'   => array(
 						'transition_duration' => '0.4s',
@@ -198,7 +198,7 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'image_lazy_loading' => array(
 					'slug'    => 'image_lazy_loading',
-					'title'   => 'Image Lazy Loading',
+					'title'   => __( 'Image Lazy Loading', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'status'  => 'active',
 					'category' => 'performance',

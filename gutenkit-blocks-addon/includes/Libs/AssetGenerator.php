@@ -29,7 +29,7 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 		add_action( 'save_post', array( $this, 'save_fonts' ), 10, 3 );
 		add_filter( 'render_block_data', array( $this, 'set_blocks_css' ), 10 );
 		add_filter( 'wp_resource_hints', array( $this, 'fonts_resource_hints' ), 10, 2 );
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 10 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), PHP_INT_MAX );
 		add_action( 'enqueue_block_assets', array($this, 'enqueue_block_fonts'), 10 );
 		add_action( 'enqueue_block_assets', array($this, 'load_fse_font'), 10 );
 	}
@@ -225,16 +225,38 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 	public function enqueue_scripts() {
 		global $post;
 
-		// If the theme is not a block theme, parse the blocks and set the CSS.
-		if( ! wp_is_block_theme() && ! empty($post->post_content) ) {
+		/*
+		 * A block theme renders the whole template before wp_head() (see template-canvas.php), so
+		 * render_block_data has already collected everything by the time this runs. A classic theme
+		 * renders the content after wp_head(), so the post has to be parsed up front to have any CSS
+		 * at all. \Gutenkit\Config\Modules::block_assets() does the same parse on enqueue_block_assets
+		 * to work out which modules are in use, so skip it here when that already filled $this->css —
+		 * parsing twice appends every rule to the output a second time.
+		 */
+		if( ! wp_is_block_theme() && empty( $this->css ) && ! empty($post->post_content) ) {
 			do_blocks($post->post_content);
 		}
 
 		// This checks if the $css property is not empty and adds it as inline styles to the 'gutenkit-frontend-common' stylesheet.
-		$generated_css = apply_filters( 'gutenkit/generated_css', $this->css );
+		// Everything reaching this filter is stored by post authors, so it is sanitized as css before being printed inline.
+		$generated_css = Utils::sanitize_css( apply_filters( 'gutenkit/generated_css', $this->css ) );
 		if(!empty($generated_css)) {
 			wp_add_inline_style( 'gutenkit-frontend-common', Utils::cssminifier( $generated_css ) );
 		}
+
+		/*
+		 * The generated CSS ties on specificity with the defaults in each block's own style.css
+		 * (both are plain class chains, e.g. `.gkitfc587b .gkit-nav-link` against
+		 * `.wp-block-gutenkit-advanced-tab .gkit-nav-link`), so whichever prints last wins. On a
+		 * classic theme 'gutenkit-frontend-common' is enqueued from enqueue_block_assets before the
+		 * block stylesheets and the theme stylesheet, so attaching the CSS there loses those ties and
+		 * the front end stops matching the editor — the editor injects the same rules behind a
+		 * high-specificity .editor-styles-wrapper prefix, so they always win there. Its own handle,
+		 * enqueued at the tail of the queue, prints last on every theme type.
+		 */
+		wp_register_style( 'gutenkit-dynamic-styles', false, array( 'gutenkit-frontend-common' ), GUTENKIT_PLUGIN_VERSION );
+		wp_add_inline_style( 'gutenkit-dynamic-styles', Utils::cssminifier( $generated_css ) );
+		wp_enqueue_style( 'gutenkit-dynamic-styles' );
 	}
 
 	/**

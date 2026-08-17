@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "bamarni\/composer-bin-plugin",
-            "version": "1.8.2",
-            "version_normalized": "1.8.2.0",
+            "version": "1.9.1",
+            "version_normalized": "1.9.1.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/bamarni\/composer-bin-plugin.git",
-                "reference": "92fd7b1e6e9cdae19b0d57369d8ad31a37b6a880"
+                "reference": "641d0663f5ac270b1aeec4337b7856f76204df47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/bamarni\/composer-bin-plugin\/zipball\/92fd7b1e6e9cdae19b0d57369d8ad31a37b6a880",
-                "reference": "92fd7b1e6e9cdae19b0d57369d8ad31a37b6a880",
+                "url": "https:\/\/api.github.com\/repos\/bamarni\/composer-bin-plugin\/zipball\/641d0663f5ac270b1aeec4337b7856f76204df47",
+                "reference": "641d0663f5ac270b1aeec4337b7856f76204df47",
                 "shasum": ""
             },
             "require": {
@@ -20,17 +20,17 @@
                 "php": "^7.2.5 || ^8.0"
             },
             "require-dev": {
-                "composer\/composer": "^2.0",
+                "composer\/composer": "^2.2.26",
                 "ext-json": "*",
                 "phpstan\/extension-installer": "^1.1",
-                "phpstan\/phpstan": "^1.8",
-                "phpstan\/phpstan-phpunit": "^1.1",
-                "phpunit\/phpunit": "^8.5 || ^9.5",
+                "phpstan\/phpstan": "^1.8 || ^2.0",
+                "phpstan\/phpstan-phpunit": "^1.1 || ^2.0",
+                "phpunit\/phpunit": "^8.5 || ^9.6 || ^10.0",
                 "symfony\/console": "^2.8.52 || ^3.4.35 || ^4.4 || ^5.0 || ^6.0",
                 "symfony\/finder": "^2.8.52 || ^3.4.35 || ^4.4 || ^5.0 || ^6.0",
                 "symfony\/process": "^2.8.52 || ^3.4.35 || ^4.4 || ^5.0 || ^6.0"
             },
-            "time": "2022-10-31T08:38:03+00:00",
+            "time": "2026-02-04T10:18:12+00:00",
             "type": "composer-plugin",
             "extra": {
                 "class": "Bamarni\\Composer\\Bin\\BamarniBinPlugin"
@@ -56,39 +56,39 @@
             ],
             "support": {
                 "issues": "https:\/\/github.com\/bamarni\/composer-bin-plugin\/issues",
-                "source": "https:\/\/github.com\/bamarni\/composer-bin-plugin\/tree\/1.8.2"
+                "source": "https:\/\/github.com\/bamarni\/composer-bin-plugin\/tree\/1.9.1"
             },
             "install-path": "..\/bamarni\/composer-bin-plugin"
         },
         {
             "name": "dealerdirect\/phpcodesniffer-composer-installer",
-            "version": "v1.0.0",
-            "version_normalized": "1.0.0.0",
+            "version": "v1.2.1",
+            "version_normalized": "1.2.1.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/PHPCSStandards\/composer-installer.git",
-                "reference": "4be43904336affa5c2f70744a348312336afd0da"
+                "reference": "963f0c67bffde0eac41b56be71ac0e8ba132f0bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/composer-installer\/zipball\/4be43904336affa5c2f70744a348312336afd0da",
-                "reference": "4be43904336affa5c2f70744a348312336afd0da",
+                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/composer-installer\/zipball\/963f0c67bffde0eac41b56be71ac0e8ba132f0bd",
+                "reference": "963f0c67bffde0eac41b56be71ac0e8ba132f0bd",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0",
+                "composer-plugin-api": "^2.2",
                 "php": ">=5.4",
-                "squizlabs\/php_codesniffer": "^2.0 || ^3.1.0 || ^4.0"
+                "squizlabs\/php_codesniffer": "^3.1.0 || ^4.0"
             },
             "require-dev": {
-                "composer\/composer": "*",
+                "composer\/composer": "^2.2",
                 "ext-json": "*",
                 "ext-zip": "*",
-                "php-parallel-lint\/php-parallel-lint": "^1.3.1",
-                "phpcompatibility\/php-compatibility": "^9.0",
+                "php-parallel-lint\/php-parallel-lint": "^1.4.0",
+                "phpcompatibility\/php-compatibility": "^9.0 || ^10.0.0@dev",
                 "yoast\/phpunit-polyfills": "^1.0"
             },
-            "time": "2023-01-05T11:28:13+00:00",
+            "time": "2026-05-06T08:26:05+00:00",
             "type": "composer-plugin",
             "extra": {
                 "class": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
@@ -106,9 +106,9 @@
             "authors": [
                 {
                     "name": "Franck Nijhof",
-                    "email": "franck.nijhof@dealerdirect.com",
-                    "homepage": "http:\/\/www.frenck.nl",
-                    "role": "Developer \/ IT Manager"
+                    "email": "opensource@frenck.dev",
+                    "homepage": "https:\/\/frenck.dev",
+                    "role": "Open source developer"
                 },
                 {
                     "name": "Contributors",
@@ -116,7 +116,6 @@
                 }
             ],
             "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
-            "homepage": "http:\/\/www.dealerdirect.com",
             "keywords": [
                 "PHPCodeSniffer",
                 "PHP_CodeSniffer",
@@ -137,38 +136,57 @@
             ],
             "support": {
                 "issues": "https:\/\/github.com\/PHPCSStandards\/composer-installer\/issues",
+                "security": "https:\/\/github.com\/PHPCSStandards\/composer-installer\/security\/policy",
                 "source": "https:\/\/github.com\/PHPCSStandards\/composer-installer"
             },
+            "funding": [
+                {
+                    "url": "https:\/\/github.com\/PHPCSStandards",
+                    "type": "github"
+                },
+                {
+                    "url": "https:\/\/github.com\/jrfnl",
+                    "type": "github"
+                },
+                {
+                    "url": "https:\/\/opencollective.com\/php_codesniffer",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https:\/\/thanks.dev\/u\/gh\/phpcsstandards",
+                    "type": "thanks_dev"
+                }
+            ],
             "install-path": "..\/dealerdirect\/phpcodesniffer-composer-installer"
         },
         {
             "name": "phpcsstandards\/phpcsextra",
-            "version": "1.2.1",
-            "version_normalized": "1.2.1.0",
+            "version": "1.5.1",
+            "version_normalized": "1.5.1.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/PHPCSStandards\/PHPCSExtra.git",
-                "reference": "11d387c6642b6e4acaf0bd9bf5203b8cca1ec489"
+                "reference": "39467533fdb742446d68c1d10ac33d625ee0311c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/PHPCSExtra\/zipball\/11d387c6642b6e4acaf0bd9bf5203b8cca1ec489",
-                "reference": "11d387c6642b6e4acaf0bd9bf5203b8cca1ec489",
+                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/PHPCSExtra\/zipball\/39467533fdb742446d68c1d10ac33d625ee0311c",
+                "reference": "39467533fdb742446d68c1d10ac33d625ee0311c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4",
-                "phpcsstandards\/phpcsutils": "^1.0.9",
-                "squizlabs\/php_codesniffer": "^3.8.0"
+                "phpcsstandards\/phpcsutils": "^1.2.3",
+                "squizlabs\/php_codesniffer": "^3.13.5 || ^4.0.1"
             },
             "require-dev": {
                 "php-parallel-lint\/php-console-highlighter": "^1.0",
-                "php-parallel-lint\/php-parallel-lint": "^1.3.2",
-                "phpcsstandards\/phpcsdevcs": "^1.1.6",
+                "php-parallel-lint\/php-parallel-lint": "^1.4.0",
+                "phpcsstandards\/phpcsdevcs": "^1.2.0",
                 "phpcsstandards\/phpcsdevtools": "^1.2.1",
-                "phpunit\/phpunit": "^4.5 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+                "phpunit\/phpunit": "^4.5 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.3.4"
             },
-            "time": "2023-12-08T16:49:07+00:00",
+            "time": "2026-07-27T11:13:17+00:00",
             "type": "phpcodesniffer-standard",
             "extra": {
                 "branch-alias": {
@@ -218,38 +236,42 @@
                 {
                     "url": "https:\/\/opencollective.com\/php_codesniffer",
                     "type": "open_collective"
+                },
+                {
+                    "url": "https:\/\/thanks.dev\/u\/gh\/phpcsstandards",
+                    "type": "thanks_dev"
                 }
             ],
             "install-path": "..\/phpcsstandards\/phpcsextra"
         },
         {
             "name": "phpcsstandards\/phpcsutils",
-            "version": "1.0.11",
-            "version_normalized": "1.0.11.0",
+            "version": "1.2.3",
+            "version_normalized": "1.2.3.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/PHPCSStandards\/PHPCSUtils.git",
-                "reference": "c457da9dabb60eb7106dd5e3c05132b1a6539c6a"
+                "reference": "5f35d9408c54d7b529501f3c688b6eae562aea1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/PHPCSUtils\/zipball\/c457da9dabb60eb7106dd5e3c05132b1a6539c6a",
-                "reference": "c457da9dabb60eb7106dd5e3c05132b1a6539c6a",
+                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/PHPCSUtils\/zipball\/5f35d9408c54d7b529501f3c688b6eae562aea1f",
+                "reference": "5f35d9408c54d7b529501f3c688b6eae562aea1f",
                 "shasum": ""
             },
             "require": {
                 "dealerdirect\/phpcodesniffer-composer-installer": "^0.4.1 || ^0.5 || ^0.6.2 || ^0.7 || ^1.0",
                 "php": ">=5.4",
-                "squizlabs\/php_codesniffer": "^3.9.0 || 4.0.x-dev@dev"
+                "squizlabs\/php_codesniffer": "^3.13.5 || ^4.0.1"
             },
             "require-dev": {
                 "ext-filter": "*",
                 "php-parallel-lint\/php-console-highlighter": "^1.0",
-                "php-parallel-lint\/php-parallel-lint": "^1.3.2",
-                "phpcsstandards\/phpcsdevcs": "^1.1.6",
-                "yoast\/phpunit-polyfills": "^1.1.0 || ^2.0.0"
+                "php-parallel-lint\/php-parallel-lint": "^1.4.0",
+                "phpcsstandards\/phpcsdevcs": "^1.2.0",
+                "yoast\/phpunit-polyfills": "^1.1.0 || ^2.0.0 || ^3.0.0"
             },
-            "time": "2024-04-24T11:47:18+00:00",
+            "time": "2026-07-27T10:28:41+00:00",
             "type": "phpcodesniffer-standard",
             "extra": {
                 "branch-alias": {
@@ -286,6 +308,7 @@
                 "phpcodesniffer-standard",
                 "phpcs",
                 "phpcs3",
+                "phpcs4",
                 "standards",
                 "static analysis",
                 "tokens",
@@ -309,23 +332,27 @@
                 {
                     "url": "https:\/\/opencollective.com\/php_codesniffer",
                     "type": "open_collective"
+                },
+                {
+                    "url": "https:\/\/thanks.dev\/u\/gh\/phpcsstandards",
+                    "type": "thanks_dev"
                 }
             ],
             "install-path": "..\/phpcsstandards\/phpcsutils"
         },
         {
             "name": "squizlabs\/php_codesniffer",
-            "version": "3.9.2",
-            "version_normalized": "3.9.2.0",
+            "version": "3.13.6",
+            "version_normalized": "3.13.6.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/PHPCSStandards\/PHP_CodeSniffer.git",
-                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480"
+                "reference": "4c378e1a528ea066890fc2397cbdd2f94eb2fc91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/PHP_CodeSniffer\/zipball\/aac1f6f347a5c5ac6bc98ad395007df00990f480",
-                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480",
+                "url": "https:\/\/api.github.com\/repos\/PHPCSStandards\/PHP_CodeSniffer\/zipball\/4c378e1a528ea066890fc2397cbdd2f94eb2fc91",
+                "reference": "4c378e1a528ea066890fc2397cbdd2f94eb2fc91",
                 "shasum": ""
             },
             "require": {
@@ -337,17 +364,12 @@
             "require-dev": {
                 "phpunit\/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.3.4"
             },
-            "time": "2024-04-23T20:25:34+00:00",
+            "time": "2026-08-06T00:17:32+00:00",
             "bin": [
                 "bin\/phpcbf",
                 "bin\/phpcs"
             ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
             "installation-source": "dist",
             "notification-url": "https:\/\/packagist.org\/downloads\/",
             "license": [
@@ -392,23 +414,27 @@
                 {
                     "url": "https:\/\/opencollective.com\/php_codesniffer",
                     "type": "open_collective"
+                },
+                {
+                    "url": "https:\/\/thanks.dev\/u\/gh\/phpcsstandards",
+                    "type": "thanks_dev"
                 }
             ],
             "install-path": "..\/squizlabs\/php_codesniffer"
         },
         {
             "name": "wp-coding-standards\/wpcs",
-            "version": "3.1.0",
-            "version_normalized": "3.1.0.0",
+            "version": "3.4.1",
+            "version_normalized": "3.4.1.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/WordPress\/WordPress-Coding-Standards.git",
-                "reference": "9333efcbff231f10dfd9c56bb7b65818b4733ca7"
+                "reference": "ec2ff942335f33683a5957a85d138753876a05cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/WordPress\/WordPress-Coding-Standards\/zipball\/9333efcbff231f10dfd9c56bb7b65818b4733ca7",
-                "reference": "9333efcbff231f10dfd9c56bb7b65818b4733ca7",
+                "url": "https:\/\/api.github.com\/repos\/WordPress\/WordPress-Coding-Standards\/zipball\/ec2ff942335f33683a5957a85d138753876a05cf",
+                "reference": "ec2ff942335f33683a5957a85d138753876a05cf",
                 "shasum": ""
             },
             "require": {
@@ -416,23 +442,23 @@
                 "ext-libxml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlreader": "*",
-                "php": ">=5.4",
-                "phpcsstandards\/phpcsextra": "^1.2.1",
-                "phpcsstandards\/phpcsutils": "^1.0.10",
-                "squizlabs\/php_codesniffer": "^3.9.0"
+                "php": ">=7.2",
+                "phpcsstandards\/phpcsextra": "^1.5.1",
+                "phpcsstandards\/phpcsutils": "^1.2.3",
+                "squizlabs\/php_codesniffer": "^3.13.5"
             },
             "require-dev": {
                 "php-parallel-lint\/php-console-highlighter": "^1.0.0",
-                "php-parallel-lint\/php-parallel-lint": "^1.3.2",
-                "phpcompatibility\/php-compatibility": "^9.0",
+                "php-parallel-lint\/php-parallel-lint": "^1.4.0",
+                "phpcompatibility\/php-compatibility": "^10.0.0@dev",
                 "phpcsstandards\/phpcsdevtools": "^1.2.0",
-                "phpunit\/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+                "phpunit\/phpunit": "^8.0 || ^9.0"
             },
             "suggest": {
                 "ext-iconv": "For improved results",
                 "ext-mbstring": "For improved results"
             },
-            "time": "2024-03-25T16:39:00+00:00",
+            "time": "2026-07-27T11:53:23+00:00",
             "type": "phpcodesniffer-standard",
             "installation-source": "dist",
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -467,20 +493,20 @@
         },
         {
             "name": "wpmet\/utility-package",
-            "version": "1.0.7",
-            "version_normalized": "1.0.7.0",
+            "version": "1.0.8",
+            "version_normalized": "1.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/wpmetcom\/utility-pacakge.git",
-                "reference": "1d8afafd86b3f0136e930b8e97dd79806ddbd20c"
+                "reference": "25c340ce8d12f6aecd658a80f6493c66c3196e85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/wpmetcom\/utility-pacakge\/zipball\/1d8afafd86b3f0136e930b8e97dd79806ddbd20c",
-                "reference": "1d8afafd86b3f0136e930b8e97dd79806ddbd20c",
+                "url": "https:\/\/api.github.com\/repos\/wpmetcom\/utility-pacakge\/zipball\/25c340ce8d12f6aecd658a80f6493c66c3196e85",
+                "reference": "25c340ce8d12f6aecd658a80f6493c66c3196e85",
                 "shasum": ""
             },
-            "time": "2024-04-21T11:07:55+00:00",
+            "time": "2026-08-12T10:53:17+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -505,7 +531,7 @@
             "description": "Utility packages for Wpmet plugin, It will be used to serve Stories, Notice , Banner and Ratings",
             "support": {
                 "issues": "https:\/\/github.com\/wpmetcom\/utility-pacakge\/issues",
-                "source": "https:\/\/github.com\/wpmetcom\/utility-pacakge\/tree\/1.0.7"
+                "source": "https:\/\/github.com\/wpmetcom\/utility-pacakge\/tree\/v1.0.8"
             },
             "install-path": "..\/wpmet\/utility-package"
         }

@@ -54,12 +54,18 @@ class MailChimp
 	}
 
 	/**
-	 * Audience metadata is fetched with the site's stored Mailchimp API key,
-	 * so it is only exposed to users who can edit content with the block.
+	 * Audience metadata is fetched with the site's stored Mailchimp API key, so it is
+	 * exposed only to users trusted to configure site-wide content.
+	 *
+	 * 'edit_others_posts' (Editor and above) rather than 'edit_posts': the latter
+	 * includes Contributors, a role commonly granted to guest authors who have no
+	 * business enumerating the site owner's Mailchimp audiences. 'manage_options'
+	 * would be tighter still, but would break this block's inspector for the
+	 * Editors who actually build pages with it.
 	 */
 	public function editor_permission_check()
 	{
-		return current_user_can('edit_posts');
+		return current_user_can('edit_others_posts');
 	}
 
 	public function gutenkit_mailchimp_get_interests_callback($param){
@@ -120,11 +126,13 @@ class MailChimp
 					'title'         => $category['title'],
 					'display_order' => $category['display_order'],
 					'type'          => $category['type'],
+					// Only the keys the inspector actually renders. subscriber_count is
+					// audience data the editor never reads, and it would otherwise be
+					// persisted into saved post content via the block attribute.
 					'interests'     => !empty($interests) ? array_map(function ($i) {
 						return [
 							'id'    => $i['id'],
 							'name'  => $i['name'],
-							'subscriber_count' => $i['subscriber_count']
 						];
 					}, $interests) : []
 				];
@@ -144,6 +152,7 @@ class MailChimp
 	public function gutenkit_mailchimp_callback()
 	{
 		$options = [['value' => '', 'label' => __('Select a Form', 'gutenkit-blocks-addon')]];
+		$form_fields = [];
 		$api_key = get_option('gutenkit_settings_list');
 		$api_value = !empty($api_key) ? $api_key['mailchimp']['fields']['api_key']['value'] : '';
 		$server_parts = explode('-', $api_value);
@@ -164,12 +173,11 @@ class MailChimp
 		if (is_array($response) && !is_wp_error($response)) {
 			$body = json_decode($response['body'], true);
 
-			$listed = isset($body['lists']) ? $body['lists'] : [];
+			$listed = isset($body['lists']) && is_array($body['lists']) ? $body['lists'] : [];
 
-			$list_id = $listed[0]['id'];
-			$form_fields = [];
-			if (isset($list_id)) {
-				$form_fields = $this->gutenkit_mailchimp_get_form_fields($list_id, $server_prefix, $api_value);
+			// An account with no audiences returns an empty list; don't index into it.
+			if (!empty($listed[0]['id'])) {
+				$form_fields = $this->gutenkit_mailchimp_get_form_fields($listed[0]['id'], $server_prefix, $api_value);
 			}
 
 			if (is_array($listed) && sizeof($listed) > 0) {

@@ -8,6 +8,15 @@ use Gutenkit\Helpers\Utils;
 class UnfilteredFileSupport {
 
 	use \Gutenkit\Traits\Singleton;
+
+	/**
+	 * Whether the prefilter already sanitized the file currently being uploaded,
+	 * so the post-write gate does not repeat the work.
+	 *
+	 * @var bool
+	 */
+	private $already_sanitized = false;
+
 	/**
 	 * SvgSupport class constructor.
 	 * private for singleton
@@ -21,7 +30,24 @@ class UnfilteredFileSupport {
 		}
 
 		add_filter( 'upload_mimes', [$this, 'allowed_mime_types'] );
+
+		/*
+		 * _wp_handle_upload() fires "{$action}_prefilter", so hooking a single one
+		 * only covers a single upload path. wp_handle_upload() is what the media
+		 * library form uses; wp_handle_sideload() is what the REST media route uses
+		 * for raw body uploads and what anything built on download_url() uses,
+		 * including our own gutenkit/v1/media-upload-from-url route.
+		 */
 		add_filter( 'wp_handle_upload_prefilter', [$this, 'check_files_formate'] );
+		add_filter( 'wp_handle_sideload_prefilter', [$this, 'check_files_formate'] );
+
+		/*
+		 * Final gate. Unlike the prefilters this runs on every _wp_handle_upload()
+		 * call whatever action it was given, so an upload path with a custom action
+		 * still cannot leave an unsanitized file on disk.
+		 */
+		add_filter( 'wp_handle_upload', [$this, 'check_stored_file'] );
+
 		add_filter( 'wp_check_filetype_and_ext', [ $this, 'fix_mime_types' ], 90, 4 );
 	}
 
@@ -56,44 +82,140 @@ class UnfilteredFileSupport {
 	}
 
 	/**
-	 * Checks the SVG files before processing.
+	 * Checks the SVG and JSON files before they are written to the uploads folder.
 	 *
 	 * @param array $file The file to be checked.
 	 * @return array The checked file.
 	 */
 	public function check_files_formate( $file ) {
+		$this->already_sanitized = false;
+
 		// check file path before processing
 		if ( ! isset( $file['tmp_name'] ) ) {
 			return $file;
 		}
 
-		$file_name   = isset( $file['name'] ) ? $file['name'] : '';
-		$wp_filetype = wp_check_filetype_and_ext( $file['tmp_name'], $file_name );
-		$type        = ! empty( $wp_filetype['type'] ) ? $wp_filetype['type'] : '';
-
-		if ( 'image/svg+xml' === $file['type'] ) {
-			if( ! current_user_can( 'upload_files' ) ) {
-				$file['error'] = esc_html__( 'Sorry, you are not allowed to upload SVG files.', 'gutenkit-blocks-addon' );
-				return $file;
-			}
-
-			if ( ! $this->sanitize_svg( $file['tmp_name'] ) ) {
-				$file['error'] = esc_html__( 'Sorry, this file could not be sanitized so for security reasons was not uploaded.', 'gutenkit-blocks-addon' );
-			}
+		// Another prefilter already rejected this file.
+		if ( ! empty( $file['error'] ) ) {
+			return $file;
 		}
 
-		if ( 'application/json' === $file['type'] ) {
-			if( ! current_user_can( 'upload_files' ) ) {
-				$file['error'] = esc_html__( 'Sorry, you are not allowed to upload JSON files.', 'gutenkit-blocks-addon' );
-				return $file;
-			}
+		$sanitizer = $this->sanitizer_for_file(
+			isset( $file['name'] ) ? $file['name'] : '',
+			isset( $file['type'] ) ? $file['type'] : ''
+		);
 
-			if ( ! $this->sanitize_json( $file['tmp_name'] ) ) {
-				$file['error'] = esc_html__( 'Sorry, this file could not be sanitized so for security reasons was not uploaded.', 'gutenkit-blocks-addon' );
-			}
+		if ( '' === $sanitizer ) {
+			return $file;
 		}
+
+		if ( ! current_user_can( 'upload_files' ) ) {
+			$file['error'] = 'svg' === $sanitizer
+				? esc_html__( 'Sorry, you are not allowed to upload SVG files.', 'gutenkit-blocks-addon' )
+				: esc_html__( 'Sorry, you are not allowed to upload JSON files.', 'gutenkit-blocks-addon' );
+			return $file;
+		}
+
+		if ( ! $this->sanitize_file( $file['tmp_name'], $sanitizer ) ) {
+			$file['error'] = esc_html__( 'Sorry, this file could not be sanitized so for security reasons was not uploaded.', 'gutenkit-blocks-addon' );
+			return $file;
+		}
+
+		$this->already_sanitized = true;
 
 		return $file;
+	}
+
+	/**
+	 * Last line of defence for upload paths that never reached a prefilter we hook.
+	 *
+	 * Runs on the `wp_handle_upload` filter, which _wp_handle_upload() applies to
+	 * every successful upload regardless of the action it was called with. The file
+	 * has already been moved into the uploads folder at this point, so anything that
+	 * cannot be sanitized is deleted and the upload turned into an error.
+	 *
+	 * @param array $upload Upload data with `file`, `url` and `type` keys.
+	 * @return array The upload data, or an error array when sanitizing failed.
+	 */
+	public function check_stored_file( $upload ) {
+		if ( $this->already_sanitized ) {
+			$this->already_sanitized = false;
+			return $upload;
+		}
+
+		if ( empty( $upload['file'] ) || ! empty( $upload['error'] ) ) {
+			return $upload;
+		}
+
+		$sanitizer = $this->sanitizer_for_file(
+			$upload['file'],
+			isset( $upload['type'] ) ? $upload['type'] : ''
+		);
+
+		if ( '' === $sanitizer ) {
+			return $upload;
+		}
+
+		if ( ! $this->sanitize_file( $upload['file'], $sanitizer ) ) {
+			wp_delete_file( $upload['file'] );
+
+			return array(
+				'error' => esc_html__( 'Sorry, this file could not be sanitized so for security reasons was not uploaded.', 'gutenkit-blocks-addon' ),
+			);
+		}
+
+		return $upload;
+	}
+
+	/**
+	 * Works out which sanitizer, if any, a file needs.
+	 *
+	 * The mime type reported on an upload comes from the client -- the multipart
+	 * part header, or the `Content-Type` header on a raw body upload to the REST
+	 * media route -- so it cannot be trusted to decide this. fix_mime_types() maps
+	 * svg, svgz and json from the extension anyway, and the extension is what the
+	 * file ends up being served as, so match on that and only fall back to the
+	 * reported type when the filename carries no extension at all.
+	 *
+	 * @param string $file_name     The name or path the file will be stored under.
+	 * @param string $reported_type The mime type the client claimed.
+	 * @return string 'svg', 'json', or an empty string when no sanitizing is needed.
+	 */
+	private function sanitizer_for_file( $file_name, $reported_type = '' ) {
+		$ext = strtolower( pathinfo( $file_name, PATHINFO_EXTENSION ) );
+
+		if ( '' === $ext ) {
+			if ( 'image/svg+xml' === $reported_type ) {
+				return 'svg';
+			}
+
+			return 'application/json' === $reported_type ? 'json' : '';
+		}
+
+		if ( 'svg' === $ext || 'svgz' === $ext ) {
+			return 'svg';
+		}
+
+		return 'json' === $ext ? 'json' : '';
+	}
+
+	/**
+	 * Runs the requested sanitizer over a file.
+	 *
+	 * @param string $file      Path to the file.
+	 * @param string $sanitizer Either 'svg' or 'json'.
+	 * @return bool True when the file was sanitized, false otherwise.
+	 */
+	private function sanitize_file( $file, $sanitizer ) {
+		if ( 'svg' === $sanitizer ) {
+			return $this->sanitize_svg( $file );
+		}
+
+		if ( 'json' === $sanitizer ) {
+			return $this->sanitize_json( $file );
+		}
+
+		return false;
 	}
 
 	/**

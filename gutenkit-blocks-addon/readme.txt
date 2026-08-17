@@ -2,9 +2,9 @@
 Contributors: Roxnor, Ataurr, aion11
 Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.4.15
+Stable tag: 2.5.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -314,6 +314,21 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.5.0 (2026-08-16) = 
+* Added: Wordpress 7.1 compatibility
+* Added: Translation support for block inspector controls
+* Added: Translation support for responsive breakpoint names
+* Added: Translation support for API integration, advanced and performance settings
+* Added: Translation support for icon picker and template library search
+* Fixed: Strings built by concatenation that could never be translated
+* Fixed: Install button not appearing when the admin language was not English
+* Fixed: Hard-coded plugin version in the popup builder page footer
+* Fixed: Stored CSS injection in page settings, block styles and global classes (reported by Haitam Lazaar)
+* Fixed: Stored XSS via SVG uploads that bypassed sanitization on the REST media and sideload upload paths (reported by Yaswanth Reddy Sunkara)
+* Fixed: Mailchimp audience metadata exposed to Contributor-level users via the list and interests REST routes (reported by Shikhali Jamalzade)
+* Fixed: Dynamic CSS generation issue with classic theme
+* Improved: Sanitized input handling and output escaping for banner, notice and stories
 
 = GutenKit Blocks Addon 2.4.15 (2026-07-27) = 
 * Added: Translation support for onboard

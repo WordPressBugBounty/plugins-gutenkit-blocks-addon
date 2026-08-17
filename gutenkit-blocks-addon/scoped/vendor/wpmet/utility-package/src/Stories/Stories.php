@@ -2,7 +2,7 @@
 
 namespace GutenkitScopedDependencies\Wpmet\UtilityPackage\Stories;
 
-\defined('ABSPATH') || exit;
+defined('ABSPATH') || exit;
 use GutenkitScopedDependencies\Wpmet\UtilityPackage\Helper\Helper as UtilsHelper;
 /**
  * Showing Stories 
@@ -46,7 +46,7 @@ class Stories
     public function set_plugin($link_title, $weblink = 'https://wpmet.com/')
     {
         $plugin = [$link_title, $weblink];
-        add_filter("wpmet/stories/plugin_links", function ($plugin_links) use($plugin) {
+        add_filter("wpmet/stories/plugin_links", function ($plugin_links) use ($plugin) {
             $plugin_links[] = $plugin;
             return $plugin_links;
         });
@@ -58,13 +58,16 @@ class Stories
     }
     private function in_whitelist($conf, $list)
     {
-        $match = $conf->data->whitelist;
+        // The remote API is expected to always send a (possibly empty)
+        // "whitelist" field, but don't throw a PHP warning if a response
+        // ever omits it.
+        $match = $conf->data->whitelist ?? '';
         if (empty($match)) {
             return \true;
         }
-        $match_arr = \explode(',', $match);
+        $match_arr = explode(',', $match);
         foreach ($list as $word) {
-            if (\in_array($word, $match_arr)) {
+            if (in_array($word, $match_arr)) {
                 return \true;
             }
         }
@@ -72,16 +75,17 @@ class Stories
     }
     private function in_blacklist($conf, $list)
     {
-        $match = $conf->data->blacklist;
+        // Same defensive fallback as in_whitelist() above.
+        $match = $conf->data->blacklist ?? '';
         if (empty($match)) {
             return \false;
         }
-        $match_arr = \explode(',', $match);
+        $match_arr = explode(',', $match);
         foreach ($match_arr as $idx => $item) {
-            $match_arr[$idx] = \trim($item);
+            $match_arr[$idx] = trim($item);
         }
         foreach ($list as $word) {
-            if (\in_array($word, $match_arr)) {
+            if (in_array($word, $match_arr)) {
                 return \true;
             }
         }
@@ -123,22 +127,22 @@ class Stories
     {
         $filter = array($this->text_domain);
         foreach (get_option('active_plugins') as $plugin) {
-            $temp = \pathinfo($plugin);
+            $temp = pathinfo($plugin);
             if (!empty($temp)) {
-                $filter[] = \trim($temp['filename']);
+                $filter[] = trim($temp['filename']);
             }
         }
         if (isset($this->stories[$story->id])) {
             return;
         }
         // if start and endtime is set, check current time is inside the timeframe
-        if (!empty($story->start) && !empty($story->end) && (\intval($story->start) > \time() || \intval($story->end) < \time())) {
+        if (!empty($story->start) && !empty($story->end) && (intval($story->start) > time() || intval($story->end) < time())) {
             return;
         }
-        if (empty(\array_intersect($filter, $story->plugins))) {
+        if (empty(array_intersect($filter, $story->plugins))) {
             return;
         }
-        $this->stories[$story->id] = array('id' => $story->id, 'title' => $story->title, 'description' => $story->description, 'type' => $story->type, 'priority' => $story->priority, 'story_link' => $story->data->story_link, 'story_image' => $story->data->story_image);
+        $this->stories[$story->id] = array('id' => $story->id, 'title' => sanitize_text_field($story->title), 'description' => sanitize_text_field($story->description), 'type' => $story->type, 'priority' => $story->priority, 'story_link' => esc_url_raw($story->data->story_link), 'story_image' => esc_url_raw($story->data->story_image));
     }
     private function get_stories()
     {
@@ -146,17 +150,25 @@ class Stories
         $this->data = $this->data == '' ? array() : $this->data;
         $this->last_check = get_option($this->text_domain . '__stories_last_check');
         $this->last_check = empty($this->last_check) ? 0 : $this->last_check;
-        if ($this->check_interval + $this->last_check < \time()) {
-            $response = wp_remote_get($this->api_url . 'cache/stories.json?nocache=' . \time(), array('timeout' => 10, 'httpversion' => '1.1'));
-            if (!is_wp_error($response) && isset($response['body']) && $response['body'] != '') {
-                $response = \json_decode($response['body']);
-                if (!empty($response)) {
-                    $this->data = $response;
-                    update_option($this->text_domain . '__stories_last_check', \time());
-                    update_option($this->text_domain . '__stories_data', $this->data);
-                }
+        if ($this->check_interval + $this->last_check < time()) {
+            $response = wp_remote_get($this->api_url . 'cache/stories.json?nocache=' . time(), array('timeout' => 10, 'httpversion' => '1.1', 'limit_response_size' => MB_IN_BYTES));
+            // Bail on a transport error or a non-200 response before touching the body.
+            if (is_wp_error($response) || 200 !== (int) wp_remote_retrieve_response_code($response)) {
                 return;
             }
+            $body = wp_remote_retrieve_body($response);
+            // Bail on an empty or implausibly large body (defense in depth alongside limit_response_size).
+            if ('' === $body || strlen($body) > MB_IN_BYTES) {
+                return;
+            }
+            $decoded = json_decode($body);
+            // Bail on malformed JSON so a poisoned/garbled API response never gets cached or rendered.
+            if (\JSON_ERROR_NONE !== json_last_error() || empty($decoded)) {
+                return;
+            }
+            $this->data = $decoded;
+            update_option($this->text_domain . '__stories_last_check', time());
+            update_option($this->text_domain . '__stories_data', $this->data);
         }
     }
     public function show_story_widget()
@@ -170,11 +182,11 @@ class Stories
         }
         $list = array();
         if (!empty($this->filter_string)) {
-            $list = \explode(',', $this->filter_string);
+            $list = explode(',', $this->filter_string);
             foreach ($list as $idx => $item) {
-                $list[$idx] = \trim($item);
+                $list[$idx] = trim($item);
             }
-            $list = \array_filter($list);
+            $list = array_filter($list);
         }
         foreach ($this->data as $story) {
             if (!empty($list) && $this->in_blacklist($story, $list)) {
@@ -191,11 +203,11 @@ class Stories
         global $wp_meta_boxes;
         $dashboard = $wp_meta_boxes['dashboard']['normal']['high'];
         $ours = array('wpmet-stories' => $dashboard['wpmet-stories']);
-        $wp_meta_boxes['dashboard']['normal']['high'] = \array_merge($ours, $dashboard);
+        $wp_meta_boxes['dashboard']['normal']['high'] = array_merge($ours, $dashboard);
     }
     public function show()
     {
-        \usort($this->stories, function ($a, $b) {
+        usort($this->stories, function ($a, $b) {
             if ($a['priority'] == $b['priority']) {
                 return 0;
             }
@@ -213,11 +225,11 @@ class Stories
      */
     public function is_correct_screen_to_show($b_screen, $screen_id)
     {
-        if (\in_array($b_screen, array($screen_id, 'all_page'))) {
+        if (in_array($b_screen, array($screen_id, 'all_page'))) {
             return \true;
         }
         if ($b_screen == 'plugin_page') {
-            return \in_array($screen_id, $this->plugin_screens);
+            return in_array($screen_id, $this->plugin_screens);
         }
         return \false;
     }

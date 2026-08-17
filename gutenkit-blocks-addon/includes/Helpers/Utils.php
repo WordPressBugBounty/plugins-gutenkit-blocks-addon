@@ -890,8 +890,67 @@ class Utils {
 	}
 
 	/**
+	 * Sanitize css before it is printed inside an inline <style> block.
+	 *
+	 * Style values are stored by anyone able to edit a post, Contributors
+	 * included, so they are treated as untrusted css. Stripping html tags is not
+	 * enough here: css has its own set of constructs that break out of the style
+	 * block or reach the network, and those are what get removed.
+	 *
+	 * @param string $raw_css
+	 * @return string sanitized css
+	 */
+	public static function sanitize_css($raw_css) {
+		if ( ! is_string( $raw_css ) || trim( $raw_css ) === '' ) {
+			return '';
+		}
+
+		// Remove control characters, tabs and new lines aside, so no parser sees
+		// something different from what is matched below.
+		$css = preg_replace( '#[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]#', '', $raw_css );
+
+		// Remove comment(s), leaving quoted strings alone, so they can not be
+		// used to split any of the keywords matched below.
+		$css = preg_replace( '#("(?:[^"\\\]++|\\\.)*+"|\'(?:[^\'\\\\]++|\\\.)*+\')|\/\*(?>.*?\*\/)#s', '$1', $css );
+
+		$css = preg_replace(
+			array(
+				// A closing tag is the only thing that ends the inline <style>
+				// block, so dropping `</` keeps markup from escaping into html.
+				'#<\s*\/+#',
+				// Loading a remote stylesheet on every visitor's page view.
+				'#@\s*import\b[^;}]*;?#i',
+				// Legacy script execution vectors.
+				'#\bexpression\s*\(#i',
+				'#(-moz-binding|behavior)\s*:#i',
+				// Script bearing urls and documents.
+				'#(javascript|vbscript|livescript|mocha)\s*:#i',
+				'#data\s*:\s*(text\/html|application\/xhtml)#i',
+			),
+			'',
+			$css
+		);
+
+		return null === $css ? '' : $css;
+	}
+
+	/**
+	 * Sanitize css stored as a map of device => css string.
+	 *
+	 * @param mixed $value
+	 * @return mixed value with every css string sanitized
+	 */
+	public static function sanitize_css_map($value) {
+		if ( is_array( $value ) ) {
+			return array_map( array( __CLASS__, 'sanitize_css_map' ), $value );
+		}
+
+		return is_string( $value ) ? self::sanitize_css( $value ) : $value;
+	}
+
+	/**
 	 * Check if the block is a GutenKit block.
-	 * 
+	 *
 	 * @param string $attrs
 	 * @return bool
 	 */

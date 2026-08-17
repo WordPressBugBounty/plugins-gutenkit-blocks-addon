@@ -39,8 +39,12 @@ class Admin {
 		// Register Default Modules
 		new \Gutenkit\Core\BuildModules();
 
-		// Register Default Settings
-		new \Gutenkit\Core\BuildSettings();
+		// Register Default Settings. Deferred to init because the settings titles, descriptions
+		// and field labels are translated, and this class is constructed on plugins_loaded --
+		// calling __() before init makes WordPress refuse to load the text domain.
+		add_action( 'init', function () {
+			new \Gutenkit\Core\BuildSettings();
+		} );
 
 		// Register Modules API
 		new Api\ModulesData();
@@ -254,6 +258,14 @@ class Admin {
 				$popup_assets['dependencies'],
 				$popup_assets['version'],
 				true
+			);
+
+			wp_localize_script(
+				'gutenkit-admin-popup-builder',
+				'gutenkit_popup_builder_localize',
+				array(
+					'version' => GUTENKIT_PLUGIN_VERSION,
+				)
 			);
 
 			// Set up script translations

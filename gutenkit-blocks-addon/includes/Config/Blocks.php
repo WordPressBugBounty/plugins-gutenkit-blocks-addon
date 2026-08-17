@@ -16,6 +16,14 @@ class Blocks {
 
 	use \Gutenkit\Traits\Singleton;
 
+	/**
+	 * Blocks directories whose metadata collection has already been registered.
+	 *
+	 * @since 1.0.2
+	 * @var array
+	 */
+	private $metadata_collections = array();
+
 	// class initilizer method
 	public function __construct() {
 		add_action( 'init', array( $this, 'register_blocks' ) );
@@ -49,29 +57,38 @@ class Blocks {
 		if ( ! empty( $blocks_list ) ) {
 			foreach ( $blocks_list as $key => $block ) {
 				$package = isset($block['package']) ? $block['package'] : '';
-				$blocks_dir = '';
+				$blocks_root = '';
 				$plugin_dir = '';
 				$plugin_slug = '';
 
 				if ( !empty( $package ) &&  $package === 'free') {
 					$plugin_dir = GUTENKIT_PLUGIN_DIR;
-					$blocks_dir = GUTENKIT_BLOCKS_DIR . $key;
+					$blocks_root = GUTENKIT_BLOCKS_DIR;
 					$plugin_slug = 'gutenkit-blocks-addon';
 				}
-				
+
 				if ( !empty( $package ) &&  $package === 'pro' && defined( 'GUTENKIT_PRO_BLOCKS_DIR' ) && $is_register ) {
 					$plugin_dir = rtrim( GUTENKIT_PLUGIN_DIR, '/' ) . '-pro';
-					$blocks_dir = $plugin_dir . '/build/blocks/' . $key;
+					$blocks_root = $plugin_dir . '/build/blocks/';
 					$plugin_slug = 'gutenkit-blocks-addon-pro';
 				}
 
 				if(isset($block['source']['blocks_dir'], $block['source']['plugin_dir'], $block['source']['plugin_slug'])) {
 					extract($block['source'], EXTR_PREFIX_ALL, 'source');
 					$plugin_dir = $source_plugin_dir;
-					$blocks_dir = $source_blocks_dir . $key;
+					$blocks_root = $source_blocks_dir;
 					$plugin_slug = $source_plugin_slug;
 				}
-				
+
+				if ( empty( $blocks_root ) ) {
+					continue;
+				}
+
+				// Index the whole blocks folder once, so each block.json is read from the manifest instead of the disk.
+				$this->register_metadata_collection( $blocks_root );
+
+				$blocks_dir = trailingslashit( $blocks_root ) . $key;
+
 				if ( ! file_exists( $blocks_dir ) ) {
 					continue;
 				}
@@ -85,6 +102,46 @@ class Blocks {
 				if ( $is_editor ) {
 					wp_enqueue_block_style( "{$plugin_slug}/{$key}", $args );
 				}
+			}
+		}
+	}
+
+	/**
+	 * Register the block metadata collection of a blocks folder.
+	 *
+	 * `wp-scripts build --blocks-manifest` compiles every `block.json` of the build folder into a
+	 * single `blocks-manifest.php`. Registering that manifest lets WordPress 6.7+ resolve the
+	 * metadata of all blocks from one opcache-friendly file instead of reading, and JSON decoding,
+	 * one `block.json` per block. Without a manifest, `register_block_type()` silently falls back
+	 * to reading the individual files.
+	 *
+	 * @since 1.0.2
+	 * @param string $blocks_root Absolute path of the folder holding the block folders.
+	 * @return void
+	 */
+	private function register_metadata_collection( $blocks_root ) {
+		if ( ! function_exists( 'wp_register_block_metadata_collection' ) ) {
+			return;
+		}
+
+		$blocks_root = trailingslashit( wp_normalize_path( $blocks_root ) );
+
+		if ( isset( $this->metadata_collections[ $blocks_root ] ) ) {
+			return;
+		}
+
+		$this->metadata_collections[ $blocks_root ] = true;
+
+		// Blocks live in `build/blocks/`, so the manifest of the `build/` folder sits one level up.
+		$manifests = array(
+			dirname( untrailingslashit( $blocks_root ) ) . '/blocks-manifest.php',
+			$blocks_root . 'blocks-manifest.php',
+		);
+
+		foreach ( $manifests as $manifest ) {
+			if ( file_exists( $manifest ) ) {
+				wp_register_block_metadata_collection( $blocks_root, $manifest );
+				break;
 			}
 		}
 	}
