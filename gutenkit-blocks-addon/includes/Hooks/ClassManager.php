@@ -45,6 +45,12 @@ class ClassManager
         if (!empty($this->classes)) {
             $device_list = Utils::get_device_list();
             foreach ($this->classes as $index => $class) {
+                // A global class renders on every page, so it needs the same
+                // review as any other stored style before it is emitted.
+                if (!Utils::is_css_trusted($class)) {
+                    continue;
+                }
+
                 // 🛠 Fetch Global Class Styles
                 $class_styles = get_post_meta($class->ID, 'globalClassManagerStyle', true);
 

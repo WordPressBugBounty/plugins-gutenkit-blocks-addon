@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.5.0\n"
+"Project-Id-Version: GutenKit Blocks 2.5.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-17T05:03:01+00:00\n"
+"POT-Creation-Date: 2026-08-30T10:42:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -392,48 +392,6 @@ msgstr ""
 msgid "All Parent Classes"
 msgstr ""
 
-#: includes/i18n-vendor-strings.php:53
-#: scoped/vendor/wpmet/utility-package/src/Emailkit/Emailkit.php:185
-#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:303
-#: build/admin/dashboard/index.js:1
-#: build/admin/onboard/index.js:1
-#: build/admin/popup-builder/index.js:1
-#: src/dashboard/components/List.js:31
-#: src/onboard/pages/PowerUp.js:22
-#: src/popup-builder/Popup.js:21
-#: src/popup-builder/Popup.js:44
-msgid "Activated"
-msgstr ""
-
-#: includes/i18n-vendor-strings.php:54
-#: scoped/vendor/wpmet/utility-package/src/Emailkit/Emailkit.php:188
-#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:306
-#: build/admin/dashboard/index.js:1
-#: build/admin/popup-builder/index.js:1
-#: src/dashboard/components/List.js:29
-#: src/popup-builder/Popup.js:21
-#: src/popup-builder/Popup.js:50
-msgid "Activate Now"
-msgstr ""
-
-#: includes/i18n-vendor-strings.php:55
-#: scoped/vendor/wpmet/utility-package/src/Emailkit/Emailkit.php:193
-#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:311
-#: build/admin/popup-builder/index.js:1
-#: src/popup-builder/Popup.js:25
-msgid "Install Now"
-msgstr ""
-
-#: includes/i18n-vendor-strings.php:56
-#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:367
-msgid "Activate"
-msgstr ""
-
-#: includes/i18n-vendor-strings.php:57
-#: scoped/vendor/wpmet/utility-package/src/Plugins/Plugins.php:373
-msgid "Read Docs"
-msgstr ""
-
 #: includes/Libs/UnfilteredFileSupport.php:114
 msgid "Sorry, you are not allowed to upload SVG files."
 msgstr ""
@@ -608,6 +566,55 @@ msgstr ""
 
 #: includes/Routes/MailChimp.php:446
 msgid "EMAIL"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Emailkit/Emailkit.php:185
+#: scoped/packages/wpmet/utility-package/src/Plugins/Plugins.php:303
+#: build/admin/dashboard/index.js:1
+#: build/admin/onboard/index.js:1
+#: build/admin/popup-builder/index.js:1
+#: src/dashboard/components/List.js:31
+#: src/onboard/pages/PowerUp.js:22
+#: src/popup-builder/Popup.js:21
+#: src/popup-builder/Popup.js:44
+msgid "Activated"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Emailkit/Emailkit.php:188
+#: scoped/packages/wpmet/utility-package/src/Plugins/Plugins.php:306
+#: build/admin/dashboard/index.js:1
+#: build/admin/popup-builder/index.js:1
+#: src/dashboard/components/List.js:29
+#: src/popup-builder/Popup.js:21
+#: src/popup-builder/Popup.js:50
+msgid "Activate Now"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Emailkit/Emailkit.php:193
+#: scoped/packages/wpmet/utility-package/src/Plugins/Plugins.php:311
+#: build/admin/popup-builder/index.js:1
+#: src/popup-builder/Popup.js:25
+msgid "Install Now"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Plugins/Plugins.php:367
+msgid "Activate"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Plugins/Plugins.php:373
+msgid "Read Docs"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Stories/Stories.php:233
+msgid "Need Help?"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Stories/Stories.php:233
+msgid "Blog"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Stories/Stories.php:233
+msgid "Facebook Community"
 msgstr ""
 
 #: build/84.js:1
@@ -8244,12 +8251,12 @@ msgstr ""
 
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/List.js:162
-msgid "As a core Gutenkit module, it cannot be turned off."
+msgid "As a core Gutenkit block, it cannot be turned off."
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/List.js:163
-msgid "As a core Gutenkit block, it cannot be turned off."
+msgid "As a core Gutenkit module, it cannot be turned off."
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
@@ -8644,7 +8651,7 @@ msgstr ""
 #: build/admin/dashboard/index.js:2
 #: build/blocks/mail-chimp/index.js:1
 #: src/blocks/mail-chimp/deprecatedComponents/Markup_2_2_0.js:247
-#: src/blocks/mail-chimp/markup.js:399
+#: src/blocks/mail-chimp/markup.js:403
 #: src/dashboard/pages/Welcome.js:100
 msgid "Subscribe"
 msgstr ""
@@ -8750,8 +8757,10 @@ msgstr ""
 
 #: build/admin/deactivation-popup/index.js:1
 #: build/modules/class-manager/editor.js:1
+#: build/template-library/template-library.js:2
 #: src/deactivation-popup/DeactivationPopup.js:84
 #: src/modules/class-manager/components/sub-selector.js:115
+#: src/template-library/components/library/LibraryHeader.js:235
 msgid "Close"
 msgstr ""
 
@@ -9585,6 +9594,19 @@ msgid "Enter Label..."
 msgstr ""
 
 #. translators: %s: search term.
+#: build/blocks/nav-menu-item/index.js:3
+#: src/blocks/nav-menu-item/link-url-popover/index.js:110
+#, js-format
+msgid "Create draft post: <mark>%s</mark>"
+msgstr ""
+
+#. translators: %s: search term.
+#: build/blocks/nav-menu-item/index.js:3
+#: src/blocks/nav-menu-item/link-url-popover/index.js:116
+#, js-format
+msgid "Create draft page: <mark>%s</mark>"
+msgstr ""
+
 #: build/blocks/nav-menu-item/index.js:3
 #: src/blocks/nav-menu-item/nav-link.js:43
 msgid "Add Link"
@@ -10801,25 +10823,30 @@ msgid "Gutenkit Paste Style"
 msgstr ""
 
 #: build/modules/copy-paste-style/editor.js:1
-#: src/modules/copy-paste-style/utils/handle-paste.js:22
-#: src/modules/copy-paste-style/utils/handle-paste.js:32
-#: src/modules/copy-paste-style/utils/handle-paste.js:49
-#: src/modules/copy-paste-style/utils/handle-paste.js:62
+#: src/modules/copy-paste-style/utils/handle-paste.js:11
+msgid "Unable to paste styles. This feature is only available on secure (https) sites in supporting browsers."
+msgstr ""
+
+#: build/modules/copy-paste-style/editor.js:1
+#: src/modules/copy-paste-style/utils/handle-paste.js:23
+#: src/modules/copy-paste-style/utils/handle-paste.js:33
+#: src/modules/copy-paste-style/utils/handle-paste.js:50
+#: src/modules/copy-paste-style/utils/handle-paste.js:63
 msgid "Unable to paste styles. Block styles couldn't be found within the copied content."
 msgstr ""
 
 #: build/modules/copy-paste-style/editor.js:1
-#: src/modules/copy-paste-style/utils/handle-paste.js:70
+#: src/modules/copy-paste-style/utils/handle-paste.js:71
 msgid "Unable to paste styles. You can't paste styles from the same block."
 msgstr ""
 
 #: build/modules/copy-paste-style/editor.js:1
-#: src/modules/copy-paste-style/utils/handle-paste.js:80
+#: src/modules/copy-paste-style/utils/handle-paste.js:81
 msgid "Style Pasted Successfully"
 msgstr ""
 
 #: build/modules/copy-paste-style/editor.js:1
-#: src/modules/copy-paste-style/utils/handle-paste.js:86
+#: src/modules/copy-paste-style/utils/handle-paste.js:87
 msgid "Unable to paste styles. Please allow browser clipboard permissions before continuing."
 msgstr ""
 
@@ -10871,25 +10898,30 @@ msgid "The changes will only become active on the live page and not during the e
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/library/LibraryHeader.js:51
+#: src/template-library/components/library/LibraryHeader.js:50
 msgid "Patterns"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/library/LibraryHeader.js:55
+#: src/template-library/components/library/LibraryHeader.js:54
 msgid "Templates"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/library/LibraryHeader.js:59
+#: src/template-library/components/library/LibraryHeader.js:58
 msgid "Pages"
 msgstr ""
 
 #. translators: %s: template type name, e.g. "Patterns", "Templates", "Pages".
 #: build/template-library/template-library.js:2
-#: src/template-library/components/library/LibraryHeader.js:211
+#: src/template-library/components/library/LibraryHeader.js:210
 #, js-format
 msgid "Search %s..."
+msgstr ""
+
+#: build/template-library/template-library.js:2
+#: src/template-library/components/library/LibraryHeader.js:225
+msgid "Sync library"
 msgstr ""
 
 #: build/template-library/template-library.js:2

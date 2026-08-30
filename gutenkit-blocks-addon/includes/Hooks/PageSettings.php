@@ -29,7 +29,7 @@ class PageSettings {
 	public function add_page_settings_frontend_css($css)
 	{
 		$post_id = get_the_ID();
-		if ($post_id) {
+		if ($post_id && Utils::is_css_trusted($post_id)) {
 			$page_settings_css = get_post_meta($post_id, 'postBodyCss', true);
 			if (!empty($page_settings_css)) {
 				$css .= Utils::sanitize_css($page_settings_css);

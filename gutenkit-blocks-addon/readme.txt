@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.0
+Stable tag: 2.5.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,7 +32,7 @@ https://www.youtube.com/watch?v=mCIO63p1wQM
 
 ##  Key Features
 
-👉 Complete **page building functionalities** for Gutenberg
+👉 Complete **WordPress Gutenberg page builder** functionality
 
 👉 Easiest way to build **COMPLEX LAYOUTS**
 
@@ -40,7 +40,7 @@ https://www.youtube.com/watch?v=mCIO63p1wQM
 
 👉 **RESPONSIVE BREAKPOINTS** for mobile, desktop & tab
 
-👉 **MEGA MENU BUILDER** for Gutenberg
+👉 **MEGA MENU** Builder for Gutenberg
 
 👉 **QUERY LOOP BUILDER** for dynamic websites
 
@@ -67,7 +67,7 @@ This ensures that your website design, content layouts, and every responsive blo
 ## Gutenberg Mega Menu Builder
 
 
-**GutenKit comes with the easiest way to build the mega menu in Gutenberg.**
+**GutenKit comes with the easiest way to build a mega menu for Gutenberg.**
 With the [Gutenberg Mega Menu builder block](https://wpgutenkit.com/blocks/mega-menu-builder/?utm_source=org&utm_medium=readme) you can create multi-dimensional dropdown menus with submenus.
 
 Using this Gutenberg addon you can create an entire mega menu inside the block editor. You just need to add submenu items and link them to existing website pages. But with this Gutenberg mega menu builder for WordPress, you can even add new items in the menu that will be automatically saved as draft pages on your WordPress site.
@@ -81,6 +81,8 @@ GutenKit’s Gutenberg Mega Menu Builder lets you add any blocks as menu items i
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EztR8huF1oA?si=dvkj1x-WaPmp4Hce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Query Loop Builder](https://wpgutenkit.com/blocks/query-builder/?utm_source=org&utm_medium=readme) block is a dynamic Gutenberg block that helps to show your website post dynamically. You can filter the content based on the **post type**, **taxonomy**, **meta query**, **date query**, **author**, **post status**, and more.
+
+https://youtu.be/EztR8huF1oA?si=XeVzH6CCnNGZWp3c
 
 Do all of the advanced filtering without even writing a single line of code. You can **visually query** the WordPress database and show your website post dynamically with the unmatched flexibility of this advanced Gutenberg blocks plugin.
 
@@ -124,6 +126,8 @@ GutenKit blocks comes with-
 
 Create pages layouts, header footer and block patterns for the entire website in the site  editor with GutenKit page builder blokcs.
 
+https://youtu.be/Zw1vrrsCDYQ?si=u2_Qg7sKMLVKMbfv
+
 All GutenKit blocks, block patterns, and templates seamlessly work in WordPress's **Full Site Editor (FSE)** to help you make a unique design for your website.
 
 Overall, this WordPress full site editor compatible Gutenberg addon ensures a user-friendly and dynamic touch to your content creation.
@@ -150,20 +154,21 @@ Let GutenKit’s page builder blocks help you bring your website to life hassle-
 
 🔷 **Use Containers with page-builder-like controls**
 
-
 The [Gutenberg Container block](https://wpgutenkit.com/modules/container/?utm_source=org&utm_medium=readme) makes the block editor a true page builder. This allows you to create custom sections and group content within the Gutenberg editor. You can adjust container width simply by dragging the mouse cursor to right or left, much like the **inline editing experience** in page builders.
 
 Besides, this page builder block offers a range of layout options, enabling effortless customization including **full-width** and **boxed containers** with background, padding, and endless customizations.
 
-🔷 **Advanced Parallax Effect**
+🔷 **Advanced Parallax for Gutenberg**
 
-Create [Advanced Parallax Effect](https://wpgutenkit.com/modules/parallax-effect/) and give an immersive experience to the site visitors with advanced parallax effect for Gutenberg. Choose from a wide range of styles include **transparency, classic, parallax rotate, lower bounce, horizontal scroll**, and more.
+Create an [Advanced Parallax Effect](https://wpgutenkit.com/modules/parallax-effect/) and give visitors an immersive parallax experience. This WordPress parallax block includes **transparency, classic, rotate, lower bounce, horizontal scroll**, and more styles.
 
 🔷 **Advanced Video Gallery**
 
 Create A [Filterable Video Gallery](https://wpgutenkit.com/blocks/video-gallery/) using ready blocks. Showcase the best videos in your website with a few clicks. Let your visitors filter them based on their need.
 
 🔷 **Copy Paste Styles**
+
+https://youtu.be/BaV1j6b8j50?si=Eqobe8SwZwBMLjmj
 
 The [Gutenberg copy-and-paste styles](https://wpgutenkit.com/modules/copy-paste-styles/?utm_source=org&utm_medium=readme) across blocks let you apply a stunning design you’ve crafted to other elements in seconds. So, it ensures a consistent and professional look for your website without repetitive adjustments.
 
@@ -178,7 +183,7 @@ The [Gutenberg Accordion block](https://wpgutenkit.com/blocks/advanced-tab/?utm_
 
 🔷 **Craft Catchy Headings**
 
-Create eye-catching headers effortlessly with the [GutenKit Header block](https://wpgutenkit.com/blocks/heading/?utm_source=org&utm_medium=readme) in the WordPress block editor. You can craft stunning H1, H2, and H3 headers with a wide range of customization options. One great convenience is the ability to add URLs to your headings which makes it easier for users to navigate.
+Create eye-catching headers effortlessly with the [GutenKit Header block](https://wpgutenkit.com/blocks/heading/?utm_source=org&utm_medium=readme) in the WordPress block editor. Craft stunning H1, H2, and H3 headers with a wide range of customization options. One great convenience is the ability to add URLs to your headings which makes it easier for users to navigate.
 
 🔷 **Off-canvas menu**
 
@@ -315,8 +320,24 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 == Changelog ==
 
+= GutenKit Blocks Addon 2.5.1 (2026-08-30) = 
+* Fixed: Invalid CSS in existing pages is now cleaned up automatically, without needing to re-save the page
+* Fixed: Block styles could override theme styles with values that were never set
+* Fixed: Some style settings were ignored, including unitless line height, opacity and z-index
+* Fixed: Content alignment was not applied in the Icon Box block
+* Fixed: Palette colours were not applied as background colour in Social Icons and Social Share
+* Fixed: Background overlay image was not applied when using Dynamic Content
+* Fixed: Google fonts are not loading properly on frontend
+* Fixed: Page list block rendered its stored CSS attribute in the editor instead of the styles generated from its settings
+* Fixed: Missing text domain that left nav menu item and copy-paste style notices untranslatable
+* Fixed: Wrong text domain on the links in the Wpmet dashboard widget, which left them untranslatable
+* Fixed: Stored CSS injection by contributor in page settings, block styles and global classes (reported by Haitam Lazaar)
+* Improved: Bundled dependencies now live in scoped/packages instead of scoped/vendor, so their translatable strings are exposed to translators on WordPress.org
+* Improved: CSS validation, removed invalid CSS generation from block styles
+* Tweaked: Replaced SVG tooltip with text-based tooltip in template library for translation support
+
 = GutenKit Blocks Addon 2.5.0 (2026-08-16) = 
-* Added: Wordpress 7.1 compatibility
+* Added: Wordpress 7.1 compatibility support
 * Added: Translation support for block inspector controls
 * Added: Translation support for responsive breakpoint names
 * Added: Translation support for API integration, advanced and performance settings
@@ -324,7 +345,6 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 * Fixed: Strings built by concatenation that could never be translated
 * Fixed: Install button not appearing when the admin language was not English
 * Fixed: Hard-coded plugin version in the popup builder page footer
-* Fixed: Stored CSS injection in page settings, block styles and global classes (reported by Haitam Lazaar)
 * Fixed: Stored XSS via SVG uploads that bypassed sanitization on the REST media and sideload upload paths (reported by Yaswanth Reddy Sunkara)
 * Fixed: Mailchimp audience metadata exposed to Contributor-level users via the list and interests REST routes (reported by Shikhali Jamalzade)
 * Fixed: Dynamic CSS generation issue with classic theme

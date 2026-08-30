@@ -110,7 +110,7 @@ class PostMetaList
                     "type"              => "string", // specify the type as string
                     "show_in_rest"      => true, // enable REST API support
                     "single"            => true, // single meta value
-                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css'), // the value is printed as css, so sanitize it as css
+                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css_on_save'), // dropped when the saving user cannot publish
                 ]
             ],
             "postBodyMargin" => [ // post meta key
@@ -512,7 +512,7 @@ class PostMetaList
                         ]
                     ],
                     "single" => true,
-                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css_map'), // every value is printed as css on the front end
+                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css_on_save'), // dropped when the saving user cannot publish
                 ]
             ],
             "globalClassManagerTypography" => [
@@ -2582,8 +2582,11 @@ class PostMetaList
                     "type"          => "string",
                     "single"        => true,
                     "show_in_rest"  => true,
+                    // Was declared outside "args", so register_post_meta never
+                    // received it and nothing sanitized this at all. Free form css,
+                    // so it is dropped when the saving user cannot publish.
+                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css_on_save'),
                 ],
-                "sanitize_callback" => "sanitize_textarea_field",
             ],
 
             // Sub Class Manager

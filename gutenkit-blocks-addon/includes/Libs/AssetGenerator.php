@@ -19,6 +19,18 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 	protected $fonts = array();
 
 	/**
+	 * Whether the last content strip actually removed anything, so untouched
+	 * content is never re-serialized.
+	 */
+	protected $stripped_block_css = false;
+
+	/**
+	 * Set when css was found in content that could not be rewritten safely, so
+	 * the save that follows must not mark the post trusted.
+	 */
+	protected $content_css_left_in_place = false;
+
+	/**
 	 * AssetGenerator class constructor.
 	 * private for singleton
 	 *
@@ -26,6 +38,8 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
+		add_filter( 'wp_insert_post_data', array( $this, 'strip_untrusted_block_css' ), 10, 2 );
+		add_action( 'save_post', array( $this, 'stamp_css_trust' ), 10, 2 );
 		add_action( 'save_post', array( $this, 'save_fonts' ), 10, 3 );
 		add_filter( 'render_block_data', array( $this, 'set_blocks_css' ), 10 );
 		add_filter( 'wp_resource_hints', array( $this, 'fonts_resource_hints' ), 10, 2 );
@@ -44,7 +58,7 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 		// combine blocks assets
 		$blocks_css = [];
 
-		if( isset($parsed_block['blockName']) && strpos($parsed_block['blockName'], 'gutenkit') !== false ) {
+		if( Utils::is_gutenkit_block_name( isset($parsed_block['blockName']) ? $parsed_block['blockName'] : '' ) ) {
 			// block css
 			$active_modules = \Gutenkit\Config\Modules::get_active_modules_list();
 			$has_dynamic_background = false;
@@ -129,11 +143,185 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 				foreach ( $typographies as $typography ) {
 					$font_weight = ! empty( $typography['fontWeight']['value'] ) ? $typography['fontWeight']['value'] : 400;
 					if( ! empty( $typography['fontFamily']['value'] ) ) {
-						$this->fonts[$typography['fontFamily']['value']][] = $font_weight;
+						// The attribute holds the whole CSS stack, e.g. `"Inter", sans-serif`; both the
+						// Google Fonts URL and the local font cache are keyed by the bare family name.
+						$font_family = $this->normalize_font_family( $typography['fontFamily']['value'] );
+						if ( '' !== $font_family ) {
+							$this->fonts[$font_family][] = $font_weight;
+						}
 					}
 				}
 			}
 		}
+	}
+
+	/**
+	 * Drop css carrying block attributes when the saving user cannot publish.
+	 *
+	 * The meta routes are handled by their sanitize_callback, but block styles
+	 * live inside post content, so they are stripped here on the way in. What is
+	 * removed is only ever generated output: every one of these is rebuilt from
+	 * the block's own structured attributes, which stay untouched, so reopening
+	 * the block in the editor restores the styling.
+	 *
+	 * Deliberately narrow. Content without a GutenKit block, or saved by someone
+	 * who can publish, is returned byte for byte without being parsed, so the
+	 * round trip through parse_blocks()/serialize_blocks() only ever touches the
+	 * case it is meant to.
+	 *
+	 * @param array $data    Slashed post data about to be written.
+	 * @param array $postarr Raw post array.
+	 * @return array
+	 */
+	public function strip_untrusted_block_css( $data, $postarr = array() ) {
+		$this->content_css_left_in_place = false;
+
+		if ( ! get_current_user_id() || empty( $data['post_content'] ) ) {
+			return $data;
+		}
+
+		$post_type = isset( $data['post_type'] ) ? $data['post_type'] : 'post';
+		$post_id   = ! empty( $postarr['ID'] ) ? (int) $postarr['ID'] : 0;
+
+		// Two reasons to strip. The saver cannot publish, so they may not author a
+		// stylesheet at all; or the css already on this post was never vouched for
+		// by anyone who can publish, in which case this save must not be what turns
+		// it into trusted content. The second case is what covers rows that were
+		// already in the database before any of this existed.
+		$saver_may_author = Utils::user_can_publish( 0, $post_type );
+		$stored_vouched   = $post_id ? Utils::is_stored_css_vouched( $post_id ) : true;
+
+		if ( $saver_may_author && $stored_vouched ) {
+			return $data;
+		}
+
+		// Cheap pre-filter only. It has to be a superset of what
+		// is_gutenkit_block_name() matches, or content would be skipped here and
+		// still collected by the renderer - which is exactly how `mygutenkit/…`
+		// used to slip past a `wp:gutenkit/` test.
+		if ( false === strpos( $data['post_content'], 'gutenkit' ) ) {
+			return $data;
+		}
+
+		$content = wp_unslash( $data['post_content'] );
+		$blocks  = parse_blocks( $content );
+
+		$this->stripped_block_css = false;
+		$stripped = $this->strip_block_css_attrs( $blocks );
+
+		if ( ! $this->stripped_block_css ) {
+			return $data;
+		}
+
+		// Rewriting somebody's content is only safe if the serializer reproduces
+		// what the parser was given, so content it does not reproduce exactly is
+		// left alone. That must not become a way through: the css is still in
+		// there, so this save is barred from marking the post trusted and the
+		// renderer keeps refusing it. Fail closed, not open - an earlier version
+		// of this guard just returned, and since WordPress serializes block
+		// attributes with unescaped slashes, any payload containing a url failed
+		// the comparison and sailed past.
+		if ( serialize_blocks( $blocks ) !== $content ) {
+			$this->content_css_left_in_place = true;
+			return $data;
+		}
+
+		$data['post_content'] = wp_slash( serialize_blocks( $stripped ) );
+
+		return $data;
+	}
+
+	/**
+	 * Remove the css bearing attributes from a parsed block tree.
+	 *
+	 * @param array $blocks
+	 * @return array
+	 */
+	protected function strip_block_css_attrs( $blocks ) {
+		$css_attributes = array( 'blocksCSS', 'commonStyle', 'gutenkitBlockCustomCSS' );
+
+		foreach ( $blocks as $index => $block ) {
+			if ( Utils::is_gutenkit_block_name( isset( $block['blockName'] ) ? $block['blockName'] : '' ) ) {
+				foreach ( $css_attributes as $attribute ) {
+					if ( isset( $block['attrs'][ $attribute ] ) ) {
+						unset( $blocks[ $index ]['attrs'][ $attribute ] );
+						$this->stripped_block_css = true;
+					}
+				}
+			}
+
+			if ( ! empty( $block['innerBlocks'] ) ) {
+				$blocks[ $index ]['innerBlocks'] = $this->strip_block_css_attrs( $block['innerBlocks'] );
+			}
+		}
+
+		return $blocks;
+	}
+
+	/**
+	 * Empty every stored css value on a post.
+	 *
+	 * Used when css that nobody vouched for is about to become part of a trusted
+	 * post. Only generated output is removed: the structured settings each value
+	 * was built from are left alone, so the styling comes back the next time the
+	 * block or the page settings are edited.
+	 *
+	 * @param int $post_id
+	 * @return void
+	 */
+	protected function purge_stored_css( $post_id ) {
+		foreach ( Utils::css_meta_keys() as $meta_key ) {
+			// Not a string cast: globalClassManagerStyle holds an array.
+			if ( ! empty( get_post_meta( $post_id, $meta_key, true ) ) ) {
+				delete_post_meta( $post_id, $meta_key );
+			}
+		}
+	}
+
+	/**
+	 * Record whether the user saving this post may publish it.
+	 *
+	 * Block styles live inside post content and page settings live in post meta,
+	 * so there is no single value to sanitize at save time. What is recorded
+	 * instead is who stood behind the save, and is_css_trusted() reads it back
+	 * when deciding whether the styles may render for anybody else. An editor
+	 * publishing a Contributor's draft re-stamps it, which is the review step.
+	 *
+	 * @param int      $post_id
+	 * @param \WP_Post $post
+	 * @return void
+	 */
+	public function stamp_css_trust($post_id, $post = null) {
+		$post = get_post( $post ? $post : $post_id );
+
+		if ( ! $post || wp_is_post_revision( $post_id ) || wp_is_post_autosave( $post_id ) ) {
+			return;
+		}
+
+		if ( 'auto-draft' === $post->post_status ) {
+			return;
+		}
+
+		// Cron, WP-CLI and importers run without a user. Leave whatever the last
+		// real save decided rather than downgrading the post to untrusted.
+		if ( ! get_current_user_id() ) {
+			return;
+		}
+
+		// Css that could not be removed from the content keeps the post untrusted,
+		// however senior the person saving it is.
+		$may_author = Utils::user_can_publish( 0, $post->post_type ) && ! $this->content_css_left_in_place;
+
+		// The css sitting on this post right now was never vouched for. Saving as
+		// somebody who can publish would mark the post trusted, so the old value
+		// goes first - otherwise editing a title would be enough to serve css that
+		// a Contributor stored months ago, which is what happens to everything
+		// already in the database when this plugin is updated.
+		if ( ! Utils::is_stored_css_vouched( $post ) ) {
+			$this->purge_stored_css( $post_id );
+		}
+
+		update_post_meta( $post_id, Utils::CSS_TRUST_META, $may_author ? '1' : '0' );
 	}
 
 	/**
@@ -193,7 +381,15 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 	public function set_blocks_css( $parsed_block ) {
 		$parsed_block = apply_filters( 'gutenkit/collected_css', $parsed_block );
 		$css_content = $this->combine_blocks_asstes( $parsed_block );
-		if(!empty($css_content)) {
+
+		// blocksCSS is an attribute in post content, so it is whatever the last
+		// person to save the post put there. Fonts are still collected above,
+		// only the stylesheet is held back.
+		//
+		// The post is passed explicitly rather than left to the global fallback,
+		// so which post is being judged is never a question of what happens to be
+		// set at the time.
+		if(!empty($css_content) && Utils::is_css_trusted( get_the_ID() )) {
 			$this->css .= $css_content;
 		}
 
@@ -270,63 +466,20 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 			return false;
 		}
 
-		$fonts = $this->check_existing_fonts($this->fonts);
+		/*
+		 * Theme-registered families are deliberately NOT skipped here. A preset in theme.json is
+		 * only a promise that something else serves the font, and that promise is regularly broken:
+		 * the fontFace src can point at another plugin's assets, or the theme can register the
+		 * family without emitting any @font-face at all. Since this plugin ships to every theme,
+		 * requesting the font is the safe default. Site owners who know their theme serves its own
+		 * fonts can opt back into the old behaviour with the filter below, and anyone worried about
+		 * the external request has the "load Google fonts locally" setting.
+		 */
+		$fonts = apply_filters( 'gutenkit/skip_theme_registered_fonts', false, $this->fonts )
+			? $this->check_existing_fonts( $this->fonts )
+			: $this->fonts;
 
-		$font_families = array();
-		$font_url      = 'https://fonts.googleapis.com/css2?family=';
-
-		// Remove duplicates and sort weights for each font
-		$all_fonts = array_map(function($weights) {
-			$weights = array_unique($weights);
-			sort($weights);
-			return $weights;
-		}, $fonts);
-
-		foreach ( $all_fonts as $font => $weights ) {
-			$regular_weights = [];
-			$italic_weights  = [];
-
-			foreach ( $weights as $weight ) {
-				// Sanitize weight
-				if ( in_array( $weight, ['normal', 'inherit', 'initial'], true ) ) {
-					$weight = '400';
-				}
-
-				if ( strpos( $weight, 'italic' ) !== false ) {
-					$weight = str_replace( 'italic', '', $weight );
-					$weight = $weight === '' ? '400' : $weight;
-					$italic_weights[] = '1,' . $weight;
-				} else {
-					$regular_weights[] = '0,' . $weight;
-				}
-			}
-
-			// Combine and sort
-			$combined_weights = array_merge( $regular_weights, $italic_weights );
-			$combined_weights = array_unique( $combined_weights );
-			sort( $combined_weights );
-
-			// Build font family string
-			$font_param = str_replace( ' ', '+', $font );
-
-			if ( ! empty( $italic_weights ) ) {
-				$font_param .= ':ital,wght@' . implode( ';', $combined_weights );
-			} else {
-				// Only regular
-				$only_weights = array_map( function( $w ) {
-					return explode( ',', $w )[1]; // extract weight part
-				}, $regular_weights );
-
-				$font_param .= ':wght@' . implode( ';', array_unique( $only_weights ) );
-			}
-
-			$font_families[] = $font_param;
-		}
-
-		$font_url .= implode( '&family=', $font_families );
-		$font_url .= '&display=swap';
-
-		return $font_url;
+		return $this->build_google_fonts_url( $fonts );
 	}
 
 	/**

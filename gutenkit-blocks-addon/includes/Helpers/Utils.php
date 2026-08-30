@@ -674,17 +674,19 @@ class Utils {
 
 	public static function fill_background_generator($background, $device = "Desktop") {
 		
-		$fillBackground = [
-			'background-image' => '',
-		];
+		$fillBackground = [];
 
 		if (isset($background['backgroundType']) && $background['backgroundType'] === 'classic') {
-			$fillBackground['background-color'] =  isset($background['backgroundColor']) ? self::get_color('color', $background['backgroundColor']) : '';
+			if (!empty($background['backgroundColor'])) {
+				$fillBackground['background-color'] = self::get_color('color', $background['backgroundColor']);
+			}
 		}
 
 		if (isset($background['backgroundType']) && $background['backgroundType'] === 'gradient' && !empty($background['gradient'])) {
-			
-			$fillBackground['background-image'] =  isset($background['gradient']) ? (self::get_color('gradient',$background['gradient']) ?? '') : '';
+			$gradient = self::get_color('gradient', $background['gradient']);
+			if (!empty($gradient)) {
+				$fillBackground['background-image'] = $gradient;
+			}
 		}
 
 		if (isset($background['backgroundType']) && $background['backgroundType'] === 'image' && !empty($background['backgroundImage'])) {
@@ -814,8 +816,40 @@ class Utils {
 				}
 
 				$selector = $style['selector'];
+				// PHP twin of helper/is-valid-css-value.js — keep the two in sync.
 				$cssValues = array_filter($style, function ($value, $key) {
-					return $key !== 'selector' && $value !== null && $value !== '' && !is_numeric($value) && !in_array($value, ['px', 'em', 'rem', '%', 'vh', 'vw']) && strpos($value, 'undefined') === false;
+					if ($key === 'selector' || $value === null || $value === '' || is_bool($value) || is_array($value)) {
+						return false;
+					}
+
+					// Numbers are valid CSS values: opacity, z-index, order, flex-shrink,
+					// unitless line-height. The previous `!is_numeric()` check dropped all of them.
+					if (is_int($value) || is_float($value)) {
+						return !is_nan((float) $value);
+					}
+
+					$str = trim((string) $value);
+
+					if ($str === '' || in_array($str, ['false', 'true', 'undefined', 'null', 'NaN'], true)) {
+						return false;
+					}
+
+					// "undefinedpx", "NaNem", "background undefineds" ...
+					if (strpos($str, 'undefined') !== false || strpos($str, 'NaN') !== false) {
+						return false;
+					}
+
+					// A size that arrived without a number.
+					if (in_array($str, ['px', 'em', 'rem', '%', 'vh', 'vw'], true)) {
+						return false;
+					}
+
+					// Empty functional notation: url(), rotateZ(), translateY( ), blur() ...
+					if (preg_match('/(?:^|[\s,])[a-zA-Z-]+\(\s*\)/', $str)) {
+						return false;
+					}
+
+					return true;
 				}, ARRAY_FILTER_USE_BOTH);
 
 				if (empty($cssValues)) {
@@ -843,12 +877,89 @@ class Utils {
 	 * @param string $css
 	 * @return string minified css
 	 */
+	/**
+	 * Repair declarations that the style generators should never have produced.
+	 *
+	 * Generated block styles are persisted into post content, so a declaration written by an
+	 * older version of the generators keeps being served long after the generator itself was
+	 * fixed — it is only rewritten when that individual block is next edited. Sanitising here
+	 * means existing content stops emitting invalid CSS without anyone having to re-save a page.
+	 *
+	 * Three classes of defect are handled:
+	 *
+	 *  1. Empty values — `transform: ;`. A parse error, and browsers that tolerate it can still
+	 *     let the empty declaration override whatever the stylesheet already set.
+	 *  2. Leaked JS literals — `max-width: false`, `display: true`. Produced by `cond && value`
+	 *     expressions where the condition was false. No CSS property accepts these.
+	 *  3. Box-alignment values borrowed from `text-align` — `align-items: left`. `left`/`right`
+	 *     are only valid on the `justify-*` properties; on `align-*` they are a parse error.
+	 *     These carry real intent, so they are mapped rather than dropped.
+	 *
+	 * Custom properties are exempt throughout: `--foo: ;` is a valid, meaningful declaration
+	 * (the "space toggle" pattern), and a custom property may legitimately hold any token.
+	 *
+	 * @param string $css
+	 * @return string
+	 */
+	protected static function sanitize_generated_declarations( $css ) {
+		// A property name, excluding custom properties.
+		$prop = '(?!--)[a-zA-Z-][\w-]*';
+
+		$patterns = array(
+			// 1a. One or more consecutive empty declarations: "{transform: ; color: ; }".
+			//     The `+` collapses runs in a single pass instead of one per iteration.
+			'/([{;])(?:\s*' . $prop . '\s*:\s*;)+/',
+			// 1b. An empty declaration closing a block: "{color:red; transform: }".
+			'/([{;])\s*' . $prop . '\s*:\s*(?=\})/',
+			// 2.  A JS literal that reached the stylesheet as a value.
+			'/([{;])\s*' . $prop . '\s*:\s*(?:false|true|undefined|null|NaN)\s*(?=[;}])/i',
+			// 3a. `none` is not a <length-percentage>, so it is invalid on any radius.
+			'/([{;])\s*border[\w-]*radius\s*:\s*none\s*(?=[;}])/i',
+		);
+
+		// Bounded loop: the patterns above are single-pass, but stripping one declaration can
+		// expose another that was anchored to the delimiter it consumed.
+		for ( $i = 0; $i < 5; $i++ ) {
+			$next = preg_replace( $patterns, '$1', $css );
+
+			if ( null === $next || $next === $css ) {
+				break;
+			}
+
+			$css = $next;
+		}
+
+		// Removing a declaration leaves behind the separator that followed it, so tidy up the
+		// runs of empty separators that produces: "{;color:red}" and "a:b;;c:d".
+		$css = preg_replace( array( '/\{\s*;+/', '/;\s*;+/' ), array( '{', ';' ), $css );
+
+		// 3b. Map inline-axis keywords onto their block-axis equivalents.
+		$aligned = preg_replace_callback(
+			'/([{;]\s*align-(?:items|content|self)\s*:\s*)(left|right|top|bottom)(\s*(?=[;}]))/i',
+			function ( $m ) {
+				$map = array(
+					'left'   => 'flex-start',
+					'top'    => 'flex-start',
+					'right'  => 'flex-end',
+					'bottom' => 'flex-end',
+				);
+
+				return $m[1] . $map[ strtolower( $m[2] ) ] . $m[3];
+			},
+			$css
+		);
+
+		return null === $aligned ? $css : $aligned;
+	}
+
 	public static function cssminifier($raw_css) {
 		if ( trim( $raw_css ) === '' ) {
 			return $raw_css;
 		}
 
-		return preg_replace(
+		$raw_css = self::sanitize_generated_declarations( $raw_css );
+
+		$css = preg_replace(
 			array(
 				// Remove comment(s)
 				'#("(?:[^"\\\]++|\\\.)*+"|\'(?:[^\'\\\\]++|\\\.)*+\')|\/\*(?!\!)(?>.*?\*\/)|^\s*|\s*$#s',
@@ -881,21 +992,40 @@ class Utils {
 				'.$1',
 				'$1$3',
 				'$1$2$4$5',
-				'$1$2$3',
+				// NOTE: the HEX-colour pattern above is commented out. Its replacement ('$1$2$3')
+				// used to be left here, which shifted every replacement below it by one — so
+				// `border:none` minified to `border` and an empty rule minified to `:0`.
+				// Keep this array exactly the same length as the pattern array.
 				'$1:0',
 				'$1$2',
 			),
 			$raw_css
 		);
+
+		// Drop any rule left with an empty body. The "Remove empty selector(s)" pattern above
+		// only matches selectors containing no whitespace, and generated selectors always have
+		// descendant combinators. Nested rules need more than one pass, so loop until stable.
+		for ( $i = 0; $i < 5; $i++ ) {
+			$next = preg_replace( '/[^{}]+\{\s*\}/', '', $css );
+
+			if ( null === $next || $next === $css ) {
+				break;
+			}
+
+			$css = $next;
+		}
+
+		return $css;
 	}
 
 	/**
-	 * Sanitize css before it is printed inside an inline <style> block.
+	 * Clean up css before it is printed inside an inline <style> block.
 	 *
-	 * Style values are stored by anyone able to edit a post, Contributors
-	 * included, so they are treated as untrusted css. Stripping html tags is not
-	 * enough here: css has its own set of constructs that break out of the style
-	 * block or reach the network, and those are what get removed.
+	 * This is output hygiene, not the trust boundary. Whether a stored style may
+	 * render for other people at all is decided by is_css_trusted(). Removing
+	 * keywords can not make arbitrary css safe: a viewport covering overlay or
+	 * an attribute selector that fetches a remote url is built out of ordinary
+	 * properties, and any keyword rule is evadable with a css escape anyway.
 	 *
 	 * @param string $raw_css
 	 * @return string sanitized css
@@ -918,11 +1048,12 @@ class Utils {
 				// A closing tag is the only thing that ends the inline <style>
 				// block, so dropping `</` keeps markup from escaping into html.
 				'#<\s*\/+#',
-				// Loading a remote stylesheet on every visitor's page view.
-				'#@\s*import\b[^;}]*;?#i',
 				// Legacy script execution vectors.
 				'#\bexpression\s*\(#i',
-				'#(-moz-binding|behavior)\s*:#i',
+				// Anchored: without it this ate the `behavior:` inside
+				// `scroll-behavior:` and `overscroll-behavior:`, leaving a broken
+				// declaration behind.
+				'#(?<![-\w])(-moz-binding|behavior)\s*:#i',
 				// Script bearing urls and documents.
 				'#(javascript|vbscript|livescript|mocha)\s*:#i',
 				'#data\s*:\s*(text\/html|application\/xhtml)#i',
@@ -932,6 +1063,159 @@ class Utils {
 		);
 
 		return null === $css ? '' : $css;
+	}
+
+	/**
+	 * Meta key holding whether a post's stored css was last saved by someone
+	 * allowed to publish it. Protected, so it is not writable over REST.
+	 */
+	const CSS_TRUST_META = '_gutenkit_css_trusted';
+
+	/**
+	 * Whether a user may publish the given post type.
+	 *
+	 * This is the line that matters for stored css. Publishing is what makes
+	 * content visible to other people without review, so a user who holds it can
+	 * already put whatever they like on the front end. A user who does not, a
+	 * Contributor most of all, is meant to have their work reviewed first.
+	 *
+	 * @param int    $user_id   0 for the current user.
+	 * @param string $post_type
+	 * @return bool
+	 */
+	public static function user_can_publish($user_id = 0, $post_type = 'post') {
+		$post_type_object = get_post_type_object( $post_type );
+		$capability       = isset( $post_type_object->cap->publish_posts ) ? $post_type_object->cap->publish_posts : 'publish_posts';
+
+		if ( ! $user_id ) {
+			return current_user_can( $capability );
+		}
+
+		return user_can( $user_id, $capability );
+	}
+
+	/**
+	 * Whether a block name belongs to GutenKit, for css collection purposes.
+	 *
+	 * One predicate, deliberately. This used to be decided in three places with
+	 * three different tests, and a name that satisfied one but not another - say
+	 * `mygutenkit/heading`, which the renderer collected css from but the save
+	 * time strip skipped - fell straight through the gap between them. Anything
+	 * that reads or removes block css has to agree on this, so it lives here.
+	 *
+	 * Matches the loose test the renderer has always used rather than tightening
+	 * to the `gutenkit/` namespace: tightening would silently stop collecting css
+	 * for names that are being styled today.
+	 *
+	 * @param string $block_name
+	 * @return bool
+	 */
+	public static function is_gutenkit_block_name($block_name) {
+		return ! empty( $block_name ) && false !== strpos( (string) $block_name, 'gutenkit' );
+	}
+
+	/**
+	 * Post meta keys whose value is emitted as css.
+	 *
+	 * Filterable so the pro plugin can register its own without this list having
+	 * to know about them.
+	 *
+	 * @return array
+	 */
+	public static function css_meta_keys() {
+		return apply_filters( 'gutenkit/css_meta_keys', array(
+			'postBodyCss',
+			'globalClassManagerStyle',
+			'classManagerCustomCSS',
+		) );
+	}
+
+	/**
+	 * Whether the css currently stored against a post was written by somebody
+	 * who could publish it.
+	 *
+	 * Distinct from is_css_trusted(): this one asks only about the stored value
+	 * and ignores who is looking, so it can be asked during a save, about the
+	 * state that existed before that save.
+	 *
+	 * @param int|\WP_Post|null $post
+	 * @return bool
+	 */
+	public static function is_stored_css_vouched($post = null) {
+		$post = get_post( $post );
+
+		if ( ! $post ) {
+			return true;
+		}
+
+		$stamp = get_post_meta( $post->ID, self::CSS_TRUST_META, true );
+		if ( '' !== $stamp ) {
+			return '1' === (string) $stamp;
+		}
+
+		// Stored before the stamp existed, so fall back to what its author may do.
+		return self::user_can_publish( (int) $post->post_author, $post->post_type );
+	}
+
+	/**
+	 * Whether a post's stored css may be rendered for the current viewer.
+	 *
+	 * Css stored against a post is arbitrary: it can cover the viewport, restyle
+	 * anything on the page, or make the browser fetch a remote url. So it is
+	 * rendered only when someone who can publish stood behind it, which is the
+	 * same review step the rest of a Contributor's content goes through.
+	 *
+	 * @param int|\WP_Post|null $post 0 or null for the post in hand.
+	 * @return bool
+	 */
+	public static function is_css_trusted($post = null) {
+		$post = get_post( $post );
+
+		// No post in context means the css came from a template or from code,
+		// not from something a user stored.
+		if ( ! $post ) {
+			return true;
+		}
+
+		$author_id = (int) $post->post_author;
+
+		// Authors always see their own styling, so editing and previewing their
+		// own draft still works.
+		if ( $author_id && get_current_user_id() === $author_id ) {
+			return true;
+		}
+
+		return self::is_stored_css_vouched( $post );
+	}
+
+	/**
+	 * Sanitize a stored css value at save time, by what the saving user may do.
+	 *
+	 * This is the same rule WordPress applies to post content with kses: what is
+	 * kept is decided by the capability of whoever is saving, once, and nothing
+	 * later un-decides it. A user who cannot publish is not able to author a
+	 * stylesheet, so their value is dropped here rather than stored and guarded
+	 * at every place that reads it — publishing the post afterwards cannot bring
+	 * it back, because there is nothing left to bring back.
+	 *
+	 * Every value this guards is either regenerated from the structured controls
+	 * next time the post is edited, or is a free form css box, which is the very
+	 * thing being withheld. Nothing that cannot be rebuilt is lost.
+	 *
+	 * @param mixed  $value
+	 * @param string $meta_key
+	 * @param string $object_type
+	 * @param string $object_subtype Post type, when the meta was registered for one.
+	 * @return mixed
+	 */
+	public static function sanitize_css_on_save($value, $meta_key = '', $object_type = 'post', $object_subtype = '') {
+		// No user means cron, WP-CLI or an importer, which are not the case this
+		// guards. Leave those alone rather than silently emptying their writes.
+		if ( get_current_user_id() && ! self::user_can_publish( 0, $object_subtype ? $object_subtype : 'post' ) ) {
+			return is_array( $value ) ? array() : '';
+		}
+
+		return self::sanitize_css_map( $value );
 	}
 
 	/**

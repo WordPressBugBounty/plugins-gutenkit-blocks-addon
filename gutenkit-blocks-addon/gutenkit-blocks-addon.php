@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpgutenkit.com/
  * Author: Wpmet
- * Version: 2.5.0
+ * Version: 2.5.1
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.5.0';
+	const VERSION = '2.5.1';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -52,8 +52,8 @@ final class Gutenkit {
 		// Redirect to the settings page after activation
 		add_action( 'admin_init', array( $this, 'admin_redirect' ) );
 
-		// Make sure ADD AUTOLOAD is scoped/vendor/scoper-autoload.php file
-		require_once GUTENKIT_PLUGIN_DIR . 'scoped/vendor/scoper-autoload.php';
+		// Make sure ADD AUTOLOAD is scoped/packages/scoper-autoload.php file
+		require_once GUTENKIT_PLUGIN_DIR . 'scoped/packages/scoper-autoload.php';
 
 		// Plugin actions
 		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
