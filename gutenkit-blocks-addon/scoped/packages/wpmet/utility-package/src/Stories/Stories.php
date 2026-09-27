@@ -197,8 +197,8 @@ class Stories
         if (empty($this->stories)) {
             return;
         }
-        $this->title = (isset($this->title) && !empty($this->title) ? $this->title . ' ' : '') . 'Stories';
-        wp_add_dashboard_widget('wpmet-stories', $this->title ?? __('Wpmet Stories'), array($this, 'show'), null, null, 'normal', 'high');
+        $this->title = (isset($this->title) && !empty($this->title) ? $this->title . ' ' : '') . __('Stories', 'gutenkit-blocks-addon');
+        wp_add_dashboard_widget('wpmet-stories', $this->title ?? __('Wpmet Stories', 'gutenkit-blocks-addon'), array($this, 'show'), null, null, 'normal', 'high');
         // Move our widget to top.
         global $wp_meta_boxes;
         $dashboard = $wp_meta_boxes['dashboard']['normal']['high'];

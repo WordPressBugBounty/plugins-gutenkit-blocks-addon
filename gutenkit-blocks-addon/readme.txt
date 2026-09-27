@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.1
+Stable tag: 2.5.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -320,7 +320,24 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 == Changelog ==
 
-= GutenKit Blocks Addon 2.5.1 (2026-08-30) = 
+= GutenKit Blocks Addon 2.5.2 (2026-09-27) =
+* Added: Custom post type support for Post Tab block
+* Fixed: Background Overlay is not supporting AVIF image format
+* Fixed: Testimonial image flash issue
+* Fixed: Icon Picker fetched the plugin settings every time a panel, tab or block was reopened; it is now one shared request per page load
+* Fixed: Icon Picker added a keydown listener on every mount and never removed it, so listeners accumulated over a session
+* Fixed: Enabling SVG upload could save an incomplete settings object, and changed state shared with other pickers in place
+* Fixed: Icons whose title contained punctuation produced a class name the picker could not match
+* Fixed: Border control now treats empty object values as unset, so reset clears the selected border state correctly
+* Tweaked: Border color from box-control reset button
+* Improved: Editor loads about 91% less data (1.47 MB to 0.13 MB compressed)
+* Improved: Icon Pack module no longer ships a duplicate copy of the icon set that was never used
+* Improved: Block settings panels open without waiting for a download, as each block loads its controls in the background once it renders
+* Improved: Editing a block no longer re-renders its whole settings panel, so controls respond faster
+* Improved: Icon data (3.15 MB) is loaded on demand when the icon library opens, shared by every picker on the page, instead of being bundled into the components entry
+* Improved: Icon Picker applies the gutenkit.icon-picker.icons and gutenkit.icon-picker.category-lists filters, so extensions can add icons and categories
+
+= GutenKit Blocks Addon 2.5.1 (2026-08-30) =
 * Fixed: Invalid CSS in existing pages is now cleaned up automatically, without needing to re-save the page
 * Fixed: Block styles could override theme styles with values that were never set
 * Fixed: Some style settings were ignored, including unitless line height, opacity and z-index

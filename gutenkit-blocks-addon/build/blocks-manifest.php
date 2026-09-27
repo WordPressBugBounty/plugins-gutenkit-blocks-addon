@@ -14800,8 +14800,26 @@ return array(
 			'selectedCatagories' => array(
 				'type' => 'array',
 				'default' => array(
-					
+					array(
+						'label' => 'All',
+						'value' => 'all'
+					)
 				)
+			),
+			'selectedPostType' => array(
+				'type' => 'string',
+				'default' => 'post'
+			),
+			'selectedTaxonomy' => array(
+				'type' => array(
+					'string',
+					'array'
+				),
+				'default' => 'category'
+			),
+			'selectedPostTypeRestBase' => array(
+				'type' => 'string',
+				'default' => 'posts'
 			),
 			'postCount' => array(
 				'type' => 'number',

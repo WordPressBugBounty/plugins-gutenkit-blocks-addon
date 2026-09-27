@@ -1426,14 +1426,12 @@ class Utils {
      */
 	public static function onboard_plugins() {
 		return array(
-			'getgenie'              => self::check_plugin_status( 'getgenie/getgenie.php' ),
-			'elementskit-lite'      => self::check_plugin_status( 'elementskit-lite/elementskit-lite.php' ),
-			'blocks-for-shopengine' => self::check_plugin_status( 'blocks-for-shopengine/shopengine-gutenberg-addon.php' ),
-			'metform'               => self::check_plugin_status( 'metform/metform.php' ),
-			'emailkit'              => self::check_plugin_status( 'emailkit/EmailKit.php' ),
 			'popup-builder-block'   => self::check_plugin_status( 'popup-builder-block/popup-builder-block.php' ),
-			'wp-ultimate-review'    => self::check_plugin_status( 'wp-ultimate-review/wp-ultimate-review.php' ),
-			'wp-social'             => self::check_plugin_status( 'wp-social/wp-social.php' ),
+			'emailkit'              => self::check_plugin_status( 'emailkit/EmailKit.php' ),
+			'elementskit-lite'      => self::check_plugin_status( 'elementskit-lite/elementskit-lite.php' ),
+			'metform'               => self::check_plugin_status( 'metform/metform.php' ),
+			'getgenie'              => self::check_plugin_status( 'getgenie/getgenie.php' ),
+			'blocks-for-shopengine' => self::check_plugin_status( 'blocks-for-shopengine/shopengine-gutenberg-addon.php' ),
 		);
 	}
 }

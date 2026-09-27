@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.5.1\n"
+"Project-Id-Version: GutenKit Blocks 2.5.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-30T10:42:30+00:00\n"
+"POT-Creation-Date: 2026-09-27T08:51:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -46,9 +46,36 @@ msgstr ""
 msgid "Blog Post Thumbnail Read More"
 msgstr ""
 
+#: build/blocks/post-tab/render.php:87
+#: build/blocks/post-tab/render.php:88
+#: build/blocks/post-tab/render.php:90
+#: src/blocks/post-tab/render.php:87
+#: src/blocks/post-tab/render.php:88
+#: src/blocks/post-tab/render.php:90
+#: build/7787.js:1
+#: build/template-library/template-library.js:2
+#: src/blocks/post-tab/settings.js:91
+#: src/blocks/post-tab/settings.js:134
+#: src/blocks/post-tab/settings.js:147
+#: src/blocks/post-tab/settings.js:159
+#: src/blocks/post-tab/settings.js:173
+#: src/template-library/components/template/Templates.js:16
+#: src/template-library/hooks/useCategoryQuery.js:24
+msgid "All"
+msgstr ""
+
+#: build/blocks/post-tab/render.php:202
+#: build/blocks/post-tab/render.php:233
+#: src/blocks/post-tab/render.php:202
+#: src/blocks/post-tab/render.php:233
+#: build/blocks/post-tab/index.js:1
+#: src/blocks/post-tab/parts/body.js:11
+msgid "No data found."
+msgstr ""
+
 #: gutenkit-blocks-addon.php:139
-#: includes/Admin/Admin.php:129
-#: includes/Admin/Admin.php:130
+#: includes/Admin/Admin.php:143
+#: includes/Admin/Admin.php:144
 #: build/84.js:1
 #: build/1715.js:1
 #: build/3060.js:1
@@ -71,7 +98,7 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:301
 #: src/blocks/page-list/settings.js:330
 #: src/blocks/post-grid/settings.js:72
-#: src/blocks/post-tab/settings.js:101
+#: src/blocks/post-tab/settings.js:123
 #: src/dashboard/components/Header.js:14
 #: src/dashboard/pages/Settings.js:35
 msgid "Settings"
@@ -97,39 +124,39 @@ msgstr ""
 msgid "Video Tutorials"
 msgstr ""
 
-#: includes/Admin/Admin.php:78
-#: includes/Admin/Admin.php:79
+#: includes/Admin/Admin.php:92
+#: includes/Admin/Admin.php:93
 msgid "Gutenkit"
 msgstr ""
 
-#: includes/Admin/Admin.php:89
-#: includes/Admin/Admin.php:90
+#: includes/Admin/Admin.php:103
+#: includes/Admin/Admin.php:104
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/Header.js:11
 msgid "Welcome"
 msgstr ""
 
-#: includes/Admin/Admin.php:99
-#: includes/Admin/Admin.php:100
+#: includes/Admin/Admin.php:113
+#: includes/Admin/Admin.php:114
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/Header.js:12
 msgid "Blocks"
 msgstr ""
 
-#: includes/Admin/Admin.php:109
-#: includes/Admin/Admin.php:110
+#: includes/Admin/Admin.php:123
+#: includes/Admin/Admin.php:124
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/Header.js:13
 msgid "Modules"
 msgstr ""
 
-#: includes/Admin/Admin.php:119
-#: includes/Admin/Admin.php:120
+#: includes/Admin/Admin.php:133
+#: includes/Admin/Admin.php:134
 msgid "Popups"
 msgstr ""
 
-#: includes/Admin/Admin.php:238
-#: includes/Admin/Admin.php:239
+#: includes/Admin/Admin.php:253
+#: includes/Admin/Admin.php:254
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/Header.js:18
 msgid "License"
@@ -139,8 +166,32 @@ msgstr ""
 msgid "Something went wrong."
 msgstr ""
 
-#: includes/Admin/Onboard/Onboard.php:34
+#: includes/Admin/Api/OnboardData.php:60
+msgid "Nonce mismatch."
+msgstr ""
+
+#: includes/Admin/Api/OnboardData.php:68
+msgid "Access denied."
+msgstr ""
+
+#: includes/Admin/Onboard/Onboard.php:32
+#: includes/Admin/Onboard/Onboard.php:52
+#: includes/Admin/Onboard/Onboard.php:72
+#: includes/Admin/Onboard/Onboard.php:122
 msgid "Onboard data saved successfully."
+msgstr ""
+
+#: includes/Admin/Onboard/Onboard.php:62
+#: includes/Admin/Onboard/Onboard.php:112
+msgid "Failed to send onboard data."
+msgstr ""
+
+#: includes/Admin/Onboard/Onboard.php:93
+msgid "Onboard notice dismissed."
+msgstr ""
+
+#: includes/Admin/Onboard/Onboard.php:103
+msgid "No email address available to subscribe."
 msgstr ""
 
 #: includes/Config/Blocks.php:155
@@ -605,6 +656,14 @@ msgstr ""
 msgid "Read Docs"
 msgstr ""
 
+#: scoped/packages/wpmet/utility-package/src/Stories/Stories.php:200
+msgid "Stories"
+msgstr ""
+
+#: scoped/packages/wpmet/utility-package/src/Stories/Stories.php:201
+msgid "Wpmet Stories"
+msgstr ""
+
 #: scoped/packages/wpmet/utility-package/src/Stories/Stories.php:233
 msgid "Need Help?"
 msgstr ""
@@ -689,7 +748,7 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:64
 #: src/blocks/page-list/settings.js:112
 #: src/blocks/post-grid/settings.js:55
-#: src/blocks/post-tab/settings.js:86
+#: src/blocks/post-tab/settings.js:108
 #: src/blocks/pricing-table/settings.js:63
 #: src/blocks/progress-bar/settings.js:39
 #: src/blocks/social-icons/settings.js:48
@@ -775,7 +834,7 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:68
 #: src/blocks/page-list/settings.js:116
 #: src/blocks/post-grid/settings.js:59
-#: src/blocks/post-tab/settings.js:90
+#: src/blocks/post-tab/settings.js:112
 #: src/blocks/pricing-table/settings.js:67
 #: src/blocks/progress-bar/settings.js:43
 #: src/blocks/social-icons/settings.js:52
@@ -861,7 +920,7 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:72
 #: src/blocks/page-list/settings.js:120
 #: src/blocks/post-grid/settings.js:63
-#: src/blocks/post-tab/settings.js:94
+#: src/blocks/post-tab/settings.js:116
 #: src/blocks/pricing-table/settings.js:71
 #: src/blocks/progress-bar/settings.js:47
 #: src/blocks/social-icons/settings.js:56
@@ -1210,8 +1269,8 @@ msgstr ""
 #: src/blocks/page-list/settings.js:623
 #: src/blocks/page-list/settings.js:707
 #: src/blocks/page-list/settings.js:1179
-#: src/blocks/post-tab/settings.js:201
-#: src/blocks/post-tab/settings.js:464
+#: src/blocks/post-tab/settings.js:277
+#: src/blocks/post-tab/settings.js:544
 #: src/blocks/pricing-table/settings.js:401
 #: src/blocks/pricing-table/settings.js:910
 #: src/blocks/pricing-table/settings.js:1134
@@ -1301,8 +1360,8 @@ msgstr ""
 #: src/blocks/page-list/settings.js:633
 #: src/blocks/page-list/settings.js:717
 #: src/blocks/page-list/settings.js:1184
-#: src/blocks/post-tab/settings.js:203
-#: src/blocks/post-tab/settings.js:466
+#: src/blocks/post-tab/settings.js:279
+#: src/blocks/post-tab/settings.js:546
 #: src/blocks/pricing-table/settings.js:411
 #: src/blocks/pricing-table/settings.js:920
 #: src/blocks/pricing-table/settings.js:1144
@@ -1358,7 +1417,7 @@ msgstr ""
 #: src/blocks/page-list/settings.js:712
 #: src/blocks/page-list/settings.js:737
 #: src/blocks/page-list/settings.js:1203
-#: src/blocks/post-tab/settings.js:215
+#: src/blocks/post-tab/settings.js:291
 #: src/blocks/pricing-table/settings.js:1481
 #: src/blocks/pricing-table/settings.js:1553
 #: src/blocks/testimonial/settings.js:171
@@ -1398,7 +1457,7 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:342
 #: src/blocks/page-list/settings.js:747
 #: src/blocks/page-list/settings.js:1213
-#: src/blocks/post-tab/settings.js:217
+#: src/blocks/post-tab/settings.js:293
 #: src/blocks/pricing-table/settings.js:1491
 #: src/blocks/pricing-table/settings.js:1563
 #: src/blocks/testimonial/settings.js:172
@@ -1502,9 +1561,9 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:1210
 #: src/blocks/page-list/settings.js:628
 #: src/blocks/page-list/settings.js:1208
-#: src/blocks/post-tab/settings.js:202
-#: src/blocks/post-tab/settings.js:216
-#: src/blocks/post-tab/settings.js:465
+#: src/blocks/post-tab/settings.js:278
+#: src/blocks/post-tab/settings.js:292
+#: src/blocks/post-tab/settings.js:545
 #: src/blocks/pricing-table/settings.js:406
 #: src/blocks/pricing-table/settings.js:915
 #: src/blocks/pricing-table/settings.js:1139
@@ -1743,9 +1802,9 @@ msgstr ""
 #: src/blocks/page-list/settings.js:333
 #: src/blocks/page-list/settings.js:617
 #: src/blocks/page-list/settings.js:700
-#: src/blocks/post-tab/settings.js:199
-#: src/blocks/post-tab/settings.js:213
-#: src/blocks/post-tab/settings.js:462
+#: src/blocks/post-tab/settings.js:275
+#: src/blocks/post-tab/settings.js:289
+#: src/blocks/post-tab/settings.js:542
 #: src/blocks/pricing-table/settings.js:395
 #: src/blocks/pricing-table/settings.js:904
 #: src/blocks/pricing-table/settings.js:1128
@@ -1779,7 +1838,7 @@ msgstr ""
 #: build/blocks/advanced-tab/index.js:1
 #: build/blocks/faq-item/index.js:1
 #: src/blocks/advanced-accordion/settings.js:154
-#: src/blocks/advanced-tab/edit.js:196
+#: src/blocks/advanced-tab/edit.js:203
 #: src/blocks/advanced-tab/settings.js:64
 #: src/blocks/blog-posts/settings.js:417
 #: src/blocks/blog-posts/settings.js:1908
@@ -1797,7 +1856,7 @@ msgstr ""
 #: src/blocks/image-box/settings.js:988
 #: src/blocks/page-list/settings.js:951
 #: src/blocks/post-grid/settings.js:173
-#: src/blocks/post-tab/settings.js:572
+#: src/blocks/post-tab/settings.js:652
 #: src/blocks/progress-bar/settings.js:262
 msgid "Title"
 msgstr ""
@@ -1879,9 +1938,9 @@ msgstr ""
 #: src/blocks/page-list/settings.js:1077
 #: src/blocks/page-list/settings.js:1111
 #: src/blocks/post-grid/settings.js:193
-#: src/blocks/post-tab/settings.js:262
-#: src/blocks/post-tab/settings.js:307
-#: src/blocks/post-tab/settings.js:591
+#: src/blocks/post-tab/settings.js:340
+#: src/blocks/post-tab/settings.js:387
+#: src/blocks/post-tab/settings.js:671
 #: src/blocks/pricing-table/settings.js:869
 #: src/blocks/pricing-table/settings.js:1104
 #: src/blocks/pricing-table/settings.js:1415
@@ -2023,7 +2082,7 @@ msgstr ""
 #: src/blocks/page-list/settings.js:954
 #: src/blocks/page-list/settings.js:1054
 #: src/blocks/post-grid/settings.js:181
-#: src/blocks/post-tab/settings.js:580
+#: src/blocks/post-tab/settings.js:660
 #: src/blocks/pricing-table/settings.js:220
 #: src/blocks/pricing-table/settings.js:505
 #: src/blocks/pricing-table/settings.js:581
@@ -2093,7 +2152,7 @@ msgstr ""
 #: src/blocks/page-list/settings.js:963
 #: src/blocks/page-list/settings.js:1063
 #: src/blocks/post-grid/settings.js:187
-#: src/blocks/post-tab/settings.js:585
+#: src/blocks/post-tab/settings.js:665
 #: src/blocks/team/settings.js:234
 #: src/blocks/team/settings.js:482
 #: src/blocks/team/settings.js:520
@@ -2209,8 +2268,8 @@ msgstr ""
 #: src/blocks/page-list/settings.js:1044
 #: src/blocks/page-list/settings.js:1100
 #: src/blocks/post-grid/settings.js:175
-#: src/blocks/post-tab/settings.js:282
-#: src/blocks/post-tab/settings.js:574
+#: src/blocks/post-tab/settings.js:360
+#: src/blocks/post-tab/settings.js:654
 #: src/blocks/pricing-table/settings.js:941
 #: src/blocks/pricing-table/settings.js:1165
 #: src/blocks/pricing-table/settings.js:1432
@@ -2378,7 +2437,7 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:562
 #: src/blocks/offcanvas/settings.js:1233
 #: src/blocks/page-list/settings.js:405
-#: src/blocks/post-tab/settings.js:494
+#: src/blocks/post-tab/settings.js:574
 #: src/blocks/pricing-table/settings.js:690
 #: src/blocks/pricing-table/settings.js:879
 #: src/blocks/pricing-table/settings.js:1366
@@ -2447,7 +2506,7 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:585
 #: src/blocks/offcanvas/settings.js:1246
 #: src/blocks/post-grid/settings.js:125
-#: src/blocks/post-tab/settings.js:533
+#: src/blocks/post-tab/settings.js:613
 #: src/blocks/pricing-table/settings.js:705
 #: src/blocks/progress-bar/settings.js:191
 #: src/blocks/social-icons/settings.js:305
@@ -2539,8 +2598,8 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:966
 #: src/blocks/page-list/settings.js:547
 #: src/blocks/page-list/settings.js:773
-#: src/blocks/post-tab/settings.js:31
-#: src/blocks/post-tab/settings.js:44
+#: src/blocks/post-tab/settings.js:39
+#: src/blocks/post-tab/settings.js:52
 #: src/blocks/pricing-table/settings.js:484
 #: src/blocks/pricing-table/settings.js:750
 #: src/blocks/pricing-table/settings.js:955
@@ -2645,8 +2704,8 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:970
 #: src/blocks/page-list/settings.js:554
 #: src/blocks/page-list/settings.js:780
-#: src/blocks/post-tab/settings.js:48
-#: src/blocks/post-tab/settings.js:158
+#: src/blocks/post-tab/settings.js:56
+#: src/blocks/post-tab/settings.js:234
 #: src/blocks/pricing-table/settings.js:491
 #: src/blocks/pricing-table/settings.js:757
 #: src/blocks/pricing-table/settings.js:962
@@ -2919,10 +2978,10 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:1018
 #: src/blocks/offcanvas/settings.js:1082
 #: src/blocks/page-list/settings.js:503
-#: src/blocks/post-tab/settings.js:232
-#: src/blocks/post-tab/settings.js:340
-#: src/blocks/post-tab/settings.js:382
-#: src/blocks/post-tab/settings.js:424
+#: src/blocks/post-tab/settings.js:308
+#: src/blocks/post-tab/settings.js:420
+#: src/blocks/post-tab/settings.js:462
+#: src/blocks/post-tab/settings.js:504
 #: src/blocks/pricing-table/settings.js:540
 #: src/blocks/pricing-table/settings.js:616
 #: src/blocks/pricing-table/settings.js:771
@@ -3084,9 +3143,9 @@ msgstr ""
 #: src/blocks/offcanvas/settings.js:1108
 #: src/blocks/page-list/settings.js:513
 #: src/blocks/page-list/settings.js:1150
-#: src/blocks/post-tab/settings.js:347
-#: src/blocks/post-tab/settings.js:389
-#: src/blocks/post-tab/settings.js:431
+#: src/blocks/post-tab/settings.js:427
+#: src/blocks/post-tab/settings.js:469
+#: src/blocks/post-tab/settings.js:511
 #: src/blocks/pricing-table/settings.js:557
 #: src/blocks/pricing-table/settings.js:633
 #: src/blocks/pricing-table/settings.js:788
@@ -3315,8 +3374,8 @@ msgstr ""
 #: src/blocks/page-list/settings.js:483
 #: src/blocks/page-list/settings.js:876
 #: src/blocks/page-list/settings.js:1129
-#: src/blocks/post-tab/settings.js:244
-#: src/blocks/post-tab/settings.js:289
+#: src/blocks/post-tab/settings.js:320
+#: src/blocks/post-tab/settings.js:367
 #: src/blocks/pricing-table/settings.js:1083
 #: src/blocks/pricing-table/settings.js:1308
 #: src/blocks/pricing-table/settings.js:1394
@@ -3444,9 +3503,9 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:582
 #: src/blocks/nav-menu/settings.js:629
 #: src/blocks/page-list/settings.js:297
-#: src/blocks/post-tab/settings.js:330
-#: src/blocks/post-tab/settings.js:372
-#: src/blocks/post-tab/settings.js:414
+#: src/blocks/post-tab/settings.js:410
+#: src/blocks/post-tab/settings.js:452
+#: src/blocks/post-tab/settings.js:494
 #: src/blocks/pricing-table/settings.js:1443
 #: src/blocks/progress-bar/settings.js:264
 #: src/blocks/progress-bar/settings.js:295
@@ -3689,7 +3748,7 @@ msgstr ""
 #: src/blocks/dual-button/settings.js:175
 #: src/blocks/dual-button/settings.js:232
 #: src/blocks/header-info/settings.js:87
-#: src/blocks/nav-menu-item/edit.js:140
+#: src/blocks/nav-menu-item/edit.js:147
 #: src/blocks/page-list/settings.js:236
 #: src/blocks/pricing-table/settings.js:248
 #: src/blocks/social-icons/settings.js:172
@@ -3785,8 +3844,8 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:139
 #: src/blocks/nav-menu-submenu/settings.js:188
 #: src/blocks/nav-menu/settings.js:521
-#: src/blocks/post-tab/settings.js:35
-#: src/blocks/post-tab/settings.js:52
+#: src/blocks/post-tab/settings.js:43
+#: src/blocks/post-tab/settings.js:60
 #: src/blocks/testimonial/settings.js:644
 #: src/blocks/testimonial/settings.js:1014
 #: src/gkit-components/components/swiper/dot.js:224
@@ -3962,7 +4021,7 @@ msgstr ""
 #: build/384.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/testimonial/settings.js:1503
-#: src/gkit-components/components/background-overlay/index.js:235
+#: src/gkit-components/components/background-overlay/index.js:230
 #: src/gkit-components/components/background/index.js:226
 #: src/gkit-components/components/media/index.js:128
 msgid "Image Size"
@@ -4709,8 +4768,8 @@ msgstr ""
 #: src/blocks/container/settings.js:88
 #: src/blocks/heading/settings.js:245
 #: src/blocks/nav-menu/settings.js:103
-#: src/gkit-components/components/background-overlay/index.js:258
-#: src/gkit-components/components/background-overlay/index.js:353
+#: src/gkit-components/components/background-overlay/index.js:253
+#: src/gkit-components/components/background-overlay/index.js:348
 #: src/gkit-components/components/background/index.js:250
 #: src/gkit-components/components/background/index.js:347
 #: src/gkit-components/components/border-control/index.js:50
@@ -4862,7 +4921,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:621
 #: src/blocks/mail-chimp/settings.js:790
 #: src/blocks/pricing-table/settings.js:1524
-#: src/gkit-components/components/background-overlay/index.js:245
+#: src/gkit-components/components/background-overlay/index.js:240
 #: src/gkit-components/components/background/index.js:237
 #: src/global/components/advanced-control.js:125
 #: src/global/components/advanced-control.js:127
@@ -4902,28 +4961,28 @@ msgstr ""
 #: build/3060.js:1
 #: build/7787.js:1
 #: src/blocks/post-grid/settings.js:83
-#: src/blocks/post-tab/settings.js:112
+#: src/blocks/post-tab/settings.js:188
 msgid "Post Count"
 msgstr ""
 
 #: build/3060.js:1
 #: build/7787.js:1
 #: src/blocks/post-grid/settings.js:92
-#: src/blocks/post-tab/settings.js:121
+#: src/blocks/post-tab/settings.js:197
 msgid "Crop Title by Words"
 msgstr ""
 
 #: build/3060.js:1
 #: build/7787.js:1
 #: src/blocks/post-grid/settings.js:98
-#: src/blocks/post-tab/settings.js:127
+#: src/blocks/post-tab/settings.js:203
 msgid "Number of Words"
 msgstr ""
 
 #: build/3060.js:1
 #: build/7787.js:1
 #: src/blocks/post-grid/settings.js:109
-#: src/blocks/post-tab/settings.js:138
+#: src/blocks/post-tab/settings.js:214
 msgid "Select Column"
 msgstr ""
 
@@ -4991,7 +5050,7 @@ msgstr ""
 #: build/9807.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/image-accordion/settings.js:129
-#: src/blocks/post-tab/settings.js:181
+#: src/blocks/post-tab/settings.js:257
 #: src/blocks/video/settings.js:1104
 #: src/modules/class-manager/components/box-shadow-settings.js:41
 msgid "Horizontal"
@@ -5002,7 +5061,7 @@ msgstr ""
 #: build/9807.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/image-accordion/settings.js:130
-#: src/blocks/post-tab/settings.js:186
+#: src/blocks/post-tab/settings.js:262
 #: src/blocks/video/settings.js:1080
 #: src/modules/class-manager/components/box-shadow-settings.js:50
 msgid "Vertical"
@@ -5018,7 +5077,7 @@ msgstr ""
 #: build/7787.js:1
 #: src/blocks/advanced-tab/settings.js:435
 #: src/blocks/image-accordion/settings.js:139
-#: src/blocks/post-tab/settings.js:162
+#: src/blocks/post-tab/settings.js:238
 msgid "Click"
 msgstr ""
 
@@ -5156,7 +5215,7 @@ msgstr ""
 #: src/blocks/donut-progress-bar/settings.js:116
 #: src/blocks/image-box/settings.js:62
 #: src/blocks/image-box/settings.js:772
-#: src/blocks/post-tab/settings.js:485
+#: src/blocks/post-tab/settings.js:565
 #: src/blocks/pricing-table/settings.js:123
 #: src/blocks/pricing-table/settings.js:158
 #: src/blocks/team/settings.js:416
@@ -5203,7 +5262,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:236
-#: src/gkit-components/components/background-overlay/index.js:317
+#: src/gkit-components/components/background-overlay/index.js:312
 #: src/gkit-components/components/background/index.js:311
 msgid "Yes"
 msgstr ""
@@ -5211,7 +5270,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:243
-#: src/gkit-components/components/background-overlay/index.js:329
+#: src/gkit-components/components/background-overlay/index.js:324
 #: src/gkit-components/components/background/index.js:323
 msgid "No"
 msgstr ""
@@ -5238,7 +5297,7 @@ msgstr ""
 #: src/blocks/page-list/settings.js:336
 #: src/blocks/progress-bar/settings.js:62
 #: src/blocks/team/settings.js:74
-#: src/gkit-components/components/background-overlay/index.js:248
+#: src/gkit-components/components/background-overlay/index.js:243
 #: src/gkit-components/components/background/index.js:240
 #: src/gkit-components/components/border-control/index.js:49
 #: src/gkit-components/components/font-family/index.js:50
@@ -5259,7 +5318,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:456
-#: src/gkit-components/components/background-overlay/index.js:341
+#: src/gkit-components/components/background-overlay/index.js:336
 #: src/gkit-components/components/background/index.js:335
 msgid "Cover"
 msgstr ""
@@ -5272,7 +5331,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:470
-#: src/gkit-components/components/background-overlay/index.js:345
+#: src/gkit-components/components/background-overlay/index.js:340
 #: src/gkit-components/components/background/index.js:339
 msgid "Contain"
 msgstr ""
@@ -5290,7 +5349,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:502
-#: src/gkit-components/components/background-overlay/index.js:249
+#: src/gkit-components/components/background-overlay/index.js:244
 #: src/gkit-components/components/background/index.js:241
 msgid "Center Center"
 msgstr ""
@@ -5298,7 +5357,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:509
-#: src/gkit-components/components/background-overlay/index.js:250
+#: src/gkit-components/components/background-overlay/index.js:245
 #: src/gkit-components/components/background/index.js:242
 msgid "Center Left"
 msgstr ""
@@ -5306,7 +5365,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:516
-#: src/gkit-components/components/background-overlay/index.js:251
+#: src/gkit-components/components/background-overlay/index.js:246
 #: src/gkit-components/components/background/index.js:243
 msgid "Center Right"
 msgstr ""
@@ -5314,7 +5373,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:523
-#: src/gkit-components/components/background-overlay/index.js:253
+#: src/gkit-components/components/background-overlay/index.js:248
 #: src/gkit-components/components/background/index.js:245
 msgid "Top Left"
 msgstr ""
@@ -5322,7 +5381,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:530
-#: src/gkit-components/components/background-overlay/index.js:252
+#: src/gkit-components/components/background-overlay/index.js:247
 #: src/gkit-components/components/background/index.js:244
 msgid "Top Center"
 msgstr ""
@@ -5330,7 +5389,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:537
-#: src/gkit-components/components/background-overlay/index.js:254
+#: src/gkit-components/components/background-overlay/index.js:249
 #: src/gkit-components/components/background/index.js:246
 msgid "Top Right"
 msgstr ""
@@ -5338,7 +5397,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:544
-#: src/gkit-components/components/background-overlay/index.js:256
+#: src/gkit-components/components/background-overlay/index.js:251
 #: src/gkit-components/components/background/index.js:248
 msgid "Bottom Left"
 msgstr ""
@@ -5346,7 +5405,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:551
-#: src/gkit-components/components/background-overlay/index.js:255
+#: src/gkit-components/components/background-overlay/index.js:250
 #: src/gkit-components/components/background/index.js:247
 msgid "Bottom Center"
 msgstr ""
@@ -5354,7 +5413,7 @@ msgstr ""
 #: build/3891.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:558
-#: src/gkit-components/components/background-overlay/index.js:257
+#: src/gkit-components/components/background-overlay/index.js:252
 #: src/gkit-components/components/background/index.js:249
 msgid "Bottom Right"
 msgstr ""
@@ -5365,7 +5424,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-image/settings.js:627
 #: src/blocks/advanced-image/settings.js:759
-#: src/gkit-components/components/background-overlay/index.js:400
+#: src/gkit-components/components/background-overlay/index.js:395
 #: src/gkit-components/components/swiper/dot.js:300
 #: src/gkit-components/components/swiper/dot.js:349
 #: src/modules/class-manager/components/class-style-manager.js:356
@@ -5376,7 +5435,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:651
 #: src/blocks/advanced-image/settings.js:783
-#: src/gkit-components/components/background-overlay/index.js:412
+#: src/gkit-components/components/background-overlay/index.js:407
 #: src/gkit-components/components/css-filters/index.js:30
 msgid "CSS Filters"
 msgstr ""
@@ -5594,7 +5653,7 @@ msgstr ""
 #: build/4672.js:1
 #: build/7787.js:1
 #: src/blocks/advanced-tab/settings.js:431
-#: src/blocks/post-tab/settings.js:154
+#: src/blocks/post-tab/settings.js:230
 msgid "Mouse Event"
 msgstr ""
 
@@ -5711,7 +5770,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-tab/settings.js:1055
 #: src/blocks/video/settings.js:357
-#: src/gkit-components/components/background-overlay/index.js:349
+#: src/gkit-components/components/background-overlay/index.js:344
 #: src/gkit-components/components/background/index.js:343
 #: src/modules/class-manager/components/class-style-manager.js:424
 #: src/modules/class-manager/components/class-style-manager.js:438
@@ -6422,7 +6481,7 @@ msgstr ""
 #: build/5771.js:1
 #: build/blocks/business-hours-item/index.js:1
 #: build/blocks/countdown-timer/index.js:1
-#: src/blocks/business-hours-item/edit.js:38
+#: src/blocks/business-hours-item/edit.js:45
 #: src/blocks/business-hours/settings.js:110
 #: src/blocks/countdown-timer/markup.js:36
 msgid "Day"
@@ -6430,7 +6489,7 @@ msgstr ""
 
 #: build/5771.js:1
 #: build/blocks/business-hours-item/index.js:1
-#: src/blocks/business-hours-item/edit.js:46
+#: src/blocks/business-hours-item/edit.js:53
 #: src/blocks/business-hours/settings.js:149
 msgid "Time"
 msgstr ""
@@ -7258,67 +7317,77 @@ msgid "Vertical Border"
 msgstr ""
 
 #: build/7787.js:1
-#: src/blocks/post-tab/settings.js:103
-msgid "Select Catagories"
-msgstr ""
-
-#: build/7787.js:1
-#: src/blocks/post-tab/settings.js:140
-msgid "2 Column"
+#: src/blocks/post-tab/settings.js:125
+msgid "Select Post Type"
 msgstr ""
 
 #: build/7787.js:1
 #: src/blocks/post-tab/settings.js:141
-msgid "3 Column"
-msgstr ""
-
-#: build/7787.js:1
-#: src/blocks/post-tab/settings.js:142
-msgid "4 Column"
-msgstr ""
-
-#: build/7787.js:1
-#: src/blocks/post-tab/settings.js:143
-msgid "5 Column"
-msgstr ""
-
-#: build/7787.js:1
-#: src/blocks/post-tab/settings.js:144
-msgid "6 Column"
+msgid "Select Taxonomy"
 msgstr ""
 
 #: build/7787.js:1
 #: src/blocks/post-tab/settings.js:152
+msgid "Select Category"
+msgstr ""
+
+#: build/7787.js:1
+#: src/blocks/post-tab/settings.js:216
+msgid "2 Column"
+msgstr ""
+
+#: build/7787.js:1
+#: src/blocks/post-tab/settings.js:217
+msgid "3 Column"
+msgstr ""
+
+#: build/7787.js:1
+#: src/blocks/post-tab/settings.js:218
+msgid "4 Column"
+msgstr ""
+
+#: build/7787.js:1
+#: src/blocks/post-tab/settings.js:219
+msgid "5 Column"
+msgstr ""
+
+#: build/7787.js:1
+#: src/blocks/post-tab/settings.js:220
+msgid "6 Column"
+msgstr ""
+
+#: build/7787.js:1
+#: src/blocks/post-tab/settings.js:228
 msgid "Nav"
 msgstr ""
 
 #: build/7787.js:1
-#: src/blocks/post-tab/settings.js:171
+#: src/blocks/post-tab/settings.js:247
 msgid "Link Archive?"
 msgstr ""
 
 #: build/7787.js:1
-#: src/blocks/post-tab/settings.js:178
+#: src/blocks/post-tab/settings.js:254
 msgid "Tab Position"
 msgstr ""
 
 #: build/7787.js:1
-#: src/blocks/post-tab/settings.js:230
+#: src/blocks/post-tab/settings.js:306
 msgid "Tab Item Container"
 msgstr ""
 
 #: build/7787.js:1
-#: src/blocks/post-tab/settings.js:280
+#: src/blocks/post-tab/settings.js:358
 msgid "Tab Item"
 msgstr ""
 
 #: build/7787.js:1
-#: src/blocks/post-tab/settings.js:459
+#: src/blocks/post-tab/settings.js:539
 msgid "Tab Content"
 msgstr ""
 
 #: build/7787.js:1
-#: src/blocks/post-tab/settings.js:487
+#: src/blocks/post-tab/settings.js:567
 msgid "Disable Hover Effect"
 msgstr ""
 
@@ -8685,6 +8754,42 @@ msgstr ""
 msgid "Thank you for creating with "
 msgstr ""
 
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:44
+#: src/dashboard/components/NoticeOnboard.js:56
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:52
+msgid "Thanks! Your setup is complete."
+msgstr ""
+
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:70
+msgid "Get more from your new plugins"
+msgstr ""
+
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:73
+msgid "Allow us to use non-sensitive data from your site to improve our products and get personalized performance tips."
+msgstr ""
+
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:79
+msgid "No, Thanks"
+msgstr ""
+
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:82
+msgid "Please wait…"
+msgstr ""
+
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:82
+msgid "Yes, Complete Setup"
+msgstr ""
+
 #: build/admin/deactivation-popup/index.js:1
 #: src/deactivation-popup/DeactivationPopup.js:17
 msgid "I no longer need the plugin"
@@ -9173,7 +9278,7 @@ msgid "Version %s"
 msgstr ""
 
 #: build/blocks/advanced-accordion-item/index.js:1
-#: src/blocks/advanced-accordion-item/edit.js:118
+#: src/blocks/advanced-accordion-item/edit.js:125
 msgid "How do I get started?"
 msgstr ""
 
@@ -9184,7 +9289,7 @@ msgstr ""
 
 #: build/blocks/advanced-image/index.js:1
 #: build/gutenkit/components.js:1
-#: src/blocks/advanced-image/edit.js:193
+#: src/blocks/advanced-image/edit.js:200
 #: src/gkit-components/components/box-shadow/index.js:205
 msgid "Reset"
 msgstr ""
@@ -9217,7 +9322,7 @@ msgid "Enter your text here..."
 msgstr ""
 
 #: build/blocks/advanced-tab/index.js:1
-#: src/blocks/advanced-tab/edit.js:205
+#: src/blocks/advanced-tab/edit.js:212
 msgid "Sub Title"
 msgstr ""
 
@@ -9242,19 +9347,19 @@ msgid "Second"
 msgstr ""
 
 #: build/blocks/donut-progress-bar/index.js:1
-#: src/blocks/donut-progress-bar/edit.js:152
+#: src/blocks/donut-progress-bar/edit.js:159
 msgid "Add Title..."
 msgstr ""
 
 #: build/blocks/donut-progress-bar/index.js:1
-#: src/blocks/donut-progress-bar/edit.js:159
+#: src/blocks/donut-progress-bar/edit.js:166
 msgid "Add Description..."
 msgstr ""
 
 #: build/blocks/drop-cap/index.js:1
 #: build/blocks/icon-box/index.js:1
-#: src/blocks/drop-cap/edit.js:40
-#: src/blocks/icon-box/edit.js:62
+#: src/blocks/drop-cap/edit.js:47
+#: src/blocks/icon-box/edit.js:69
 msgid "Enter your title here..."
 msgstr ""
 
@@ -9266,12 +9371,12 @@ msgid "Enter text"
 msgstr ""
 
 #: build/blocks/faq-item/index.js:1
-#: src/blocks/faq-item/edit.js:38
+#: src/blocks/faq-item/edit.js:45
 msgid "Write Your Question Here..."
 msgstr ""
 
 #: build/blocks/faq-item/index.js:1
-#: src/blocks/faq-item/edit.js:48
+#: src/blocks/faq-item/edit.js:55
 msgid "Write Your Answer Here..."
 msgstr ""
 
@@ -9283,8 +9388,8 @@ msgstr ""
 #: build/blocks/fun-fact/index.js:1
 #: build/blocks/pricing-table/index.js:1
 #: src/blocks/fun-fact/markup.js:33
-#: src/blocks/pricing-table/edit.js:93
-#: src/blocks/pricing-table/edit.js:116
+#: src/blocks/pricing-table/edit.js:100
+#: src/blocks/pricing-table/edit.js:123
 msgid "$"
 msgstr ""
 
@@ -9306,7 +9411,7 @@ msgstr ""
 #: build/blocks/header-info/index.js:1
 #: build/blocks/image-accordion/index.js:1
 #: src/blocks/header-info/markup.js:36
-#: src/blocks/image-accordion/edit.js:81
+#: src/blocks/image-accordion/edit.js:88
 msgid "Write your title here.."
 msgstr ""
 
@@ -9321,43 +9426,43 @@ msgid "Write description here..."
 msgstr ""
 
 #: build/blocks/heading/index.js:1
-#: src/blocks/heading/edit.js:66
-#: src/blocks/heading/edit.js:81
+#: src/blocks/heading/edit.js:73
+#: src/blocks/heading/edit.js:88
 msgid "Enter your heading here..."
 msgstr ""
 
 #: build/blocks/icon-box/index.js:1
-#: src/blocks/icon-box/edit.js:73
+#: src/blocks/icon-box/edit.js:80
 msgid "Enter your description here..."
 msgstr ""
 
 #: build/blocks/icon-box/index.js:1
-#: src/blocks/icon-box/edit.js:94
+#: src/blocks/icon-box/edit.js:101
 msgid "Enter your button text here..."
 msgstr ""
 
 #: build/blocks/icon-box/index.js:1
-#: src/blocks/icon-box/edit.js:121
+#: src/blocks/icon-box/edit.js:128
 msgid "Enter Text"
 msgstr ""
 
 #: build/blocks/image-accordion/index.js:1
-#: src/blocks/image-accordion/edit.js:92
+#: src/blocks/image-accordion/edit.js:99
 msgid "Enter button text"
 msgstr ""
 
 #: build/blocks/image-box/index.js:1
-#: src/blocks/image-box/edit.js:83
+#: src/blocks/image-box/edit.js:90
 msgid "Enter your heading..."
 msgstr ""
 
 #: build/blocks/image-box/index.js:1
-#: src/blocks/image-box/edit.js:98
+#: src/blocks/image-box/edit.js:105
 msgid "Enter Your Description..."
 msgstr ""
 
 #: build/blocks/image-box/index.js:1
-#: src/blocks/image-box/edit.js:116
+#: src/blocks/image-box/edit.js:123
 msgid "Enter Button Label..."
 msgstr ""
 
@@ -9628,22 +9733,22 @@ msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
 #: src/blocks/nav-menu-item/appender-button.js:7
-#: src/blocks/nav-menu-item/edit.js:90
+#: src/blocks/nav-menu-item/edit.js:97
 msgid "Add Submenu"
 msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
-#: src/blocks/nav-menu-item/edit.js:126
+#: src/blocks/nav-menu-item/edit.js:133
 msgid "Remove Mega Menu"
 msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
-#: src/blocks/nav-menu-item/edit.js:127
+#: src/blocks/nav-menu-item/edit.js:134
 msgid "Remove Submenu"
 msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
-#: src/blocks/nav-menu-item/edit.js:104
+#: src/blocks/nav-menu-item/edit.js:111
 msgid "Add Mega Menu"
 msgstr ""
 
@@ -9745,7 +9850,7 @@ msgstr ""
 #: src/blocks/offcanvas/deprecated.js:71
 #: src/blocks/offcanvas/deprecated.js:123
 #: src/blocks/offcanvas/deprecated.js:176
-#: src/blocks/offcanvas/edit.js:134
+#: src/blocks/offcanvas/edit.js:141
 #: src/blocks/offcanvas/save.js:24
 msgid "OffCanvas"
 msgstr ""
@@ -9753,6 +9858,11 @@ msgstr ""
 #: build/blocks/page-list/index.js:1
 #: src/blocks/page-list/markup.js:79
 msgid "Your Title..."
+msgstr ""
+
+#: build/blocks/post-tab/index.js:1
+#: src/blocks/post-tab/parts/post.js:44
+msgid "(No title)"
 msgstr ""
 
 #: build/blocks/pricing-table/index.js:1
@@ -9766,27 +9876,27 @@ msgid "Enter Button Label.."
 msgstr ""
 
 #: build/blocks/pricing-table/index.js:1
-#: src/blocks/pricing-table/edit.js:71
+#: src/blocks/pricing-table/edit.js:78
 msgid "Enter your title here…"
 msgstr ""
 
 #: build/blocks/pricing-table/index.js:1
-#: src/blocks/pricing-table/edit.js:82
+#: src/blocks/pricing-table/edit.js:89
 msgid "Enter your subtitle here…"
 msgstr ""
 
 #: build/blocks/pricing-table/index.js:1
-#: src/blocks/pricing-table/edit.js:105
+#: src/blocks/pricing-table/edit.js:112
 msgid "5.99"
 msgstr ""
 
 #: build/blocks/pricing-table/index.js:1
-#: src/blocks/pricing-table/edit.js:127
+#: src/blocks/pricing-table/edit.js:134
 msgid "month"
 msgstr ""
 
 #: build/blocks/pricing-table/index.js:1
-#: src/blocks/pricing-table/edit.js:143
+#: src/blocks/pricing-table/edit.js:150
 msgid "Enter your content here…"
 msgstr ""
 
@@ -9866,7 +9976,7 @@ msgid "Play Video"
 msgstr ""
 
 #: build/blocks/video/index.js:1
-#: src/blocks/video/edit.js:253
+#: src/blocks/video/edit.js:259
 msgid "YouTube video"
 msgstr ""
 
@@ -9928,33 +10038,33 @@ msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:204
-#: src/gkit-components/components/background-overlay/index.js:388
+#: src/gkit-components/components/background-overlay/index.js:383
 #: src/gkit-components/components/background/index.js:163
 #: src/gkit-components/components/background/index.js:203
 msgid "Gradient"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:270
+#: src/gkit-components/components/background-overlay/index.js:265
 #: src/gkit-components/components/background/index.js:262
 msgid "Position X"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:283
+#: src/gkit-components/components/background-overlay/index.js:278
 #: src/gkit-components/components/background/index.js:276
 msgid "Position Y"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:298
+#: src/gkit-components/components/background-overlay/index.js:293
 #: src/gkit-components/components/background/index.js:292
 msgid "Attachment"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/gkit-components/components/background-overlay/index.js:301
+#: src/gkit-components/components/background-overlay/index.js:296
 #: src/gkit-components/components/background/index.js:295
 #: src/modules/class-manager/components/class-style-manager.js:426
 #: src/modules/class-manager/components/class-style-manager.js:440
@@ -9964,7 +10074,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
 #: build/modules/class-manager/editor.js:1
-#: src/gkit-components/components/background-overlay/index.js:305
+#: src/gkit-components/components/background-overlay/index.js:300
 #: src/gkit-components/components/background/index.js:299
 #: src/global/components/advanced-control.js:132
 #: src/modules/class-manager/components/class-style-manager.js:885
@@ -9972,31 +10082,31 @@ msgid "Fixed"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:314
+#: src/gkit-components/components/background-overlay/index.js:309
 #: src/gkit-components/components/background/index.js:308
 msgid "Repeat"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:321
+#: src/gkit-components/components/background-overlay/index.js:316
 #: src/gkit-components/components/background/index.js:315
 msgid "X"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:325
+#: src/gkit-components/components/background-overlay/index.js:320
 #: src/gkit-components/components/background/index.js:319
 msgid "Y"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:338
+#: src/gkit-components/components/background-overlay/index.js:333
 #: src/gkit-components/components/background/index.js:332
 msgid "Display Size"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background-overlay/index.js:365
+#: src/gkit-components/components/background-overlay/index.js:360
 #: src/gkit-components/components/background/index.js:359
 msgid "Custom Size"
 msgstr ""
@@ -10284,45 +10394,45 @@ msgid "Search Icon"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/icon-picker/index.js:223
+#: src/gkit-components/components/icon-picker/index.js:273
 msgid "Icon Library"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/icon-picker/index.js:235
-#: src/gkit-components/components/icon-picker/index.js:256
+#: src/gkit-components/components/icon-picker/index.js:285
+#: src/gkit-components/components/icon-picker/index.js:306
 msgid "Upload SVG"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/icon-picker/index.js:240
+#: src/gkit-components/components/icon-picker/index.js:290
 msgid "Enable SVG File Upload"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/icon-picker/index.js:241
+#: src/gkit-components/components/icon-picker/index.js:291
 msgid "Before you enable SVG file upload, be aware that such files include a security vulnerability."
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/icon-picker/index.js:241
+#: src/gkit-components/components/icon-picker/index.js:291
 msgid "Reload"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/icon-picker/index.js:241
+#: src/gkit-components/components/icon-picker/index.js:291
 msgid "the editor once after clicking the \"Enable\" button to finish the process"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/template-library/template-library.js:2
-#: src/gkit-components/components/icon-picker/index.js:243
+#: src/gkit-components/components/icon-picker/index.js:293
 #: src/template-library/components/pattern/MissingPluginsModal.js:172
 msgid "Cancel"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/icon-picker/index.js:244
+#: src/gkit-components/components/icon-picker/index.js:294
 msgid "Enable"
 msgstr ""
 
@@ -10938,12 +11048,6 @@ msgstr ""
 #: build/template-library/template-library.js:2
 #: src/template-library/components/common/Empty.js:41
 msgid "Please ensure that your search is accurately spelled or attempt using different word"
-msgstr ""
-
-#: build/template-library/template-library.js:2
-#: src/template-library/components/template/Templates.js:16
-#: src/template-library/hooks/useCategoryQuery.js:24
-msgid "All"
 msgstr ""
 
 #: build/template-library/template-library.js:2

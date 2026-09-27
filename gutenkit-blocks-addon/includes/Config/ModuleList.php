@@ -116,7 +116,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
 					'status'		=> 'inactive',
-					'badge'			=> ['new', 'beta'],
 				),
 				'sticky' => array(
 					'slug'			=> 'sticky',
@@ -166,7 +165,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
 					'status'		=> 'active',
-					'badge'			=> ['new'],
 				),
 				'display-conditions' => array(
 					'slug'			=> 'display-conditions',
@@ -175,7 +173,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'auto_enqueue'	=> true,
 					'attributes'	=> array( 'new' ),
 					'status'		=> 'active',
-					'badge'			=> ['new'],
 				),
 				'smooth-scroll' => array(
 					'slug'			=> 'smooth-scroll',
@@ -202,7 +199,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'auto_enqueue'	=> false,
 					'attributes'	=> array( 'new' ),
 					'status'		=> 'inactive',
-					'badge'			=> ['new', 'beta'],
 				),
 				'particle' => array(
 					'slug'			=> 'particle',
@@ -247,6 +243,15 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 					'auto_enqueue'	=> false,
 					'attributes'	=> array( 'new' ),
 					'status'		=> 'inactive',
+					'badge'			=> ['new'],
+				),
+				'liquid-glass' => array(
+					'slug'			=> 'liquid-glass',
+					'title'			=> 'Liquid Glass',
+					'package'		=> 'pro',
+					'auto_enqueue'	=> true,
+					'attributes'	=> array( 'new' ),
+					'status'		=> 'active',
 					'badge'			=> ['new'],
 				),
 			)

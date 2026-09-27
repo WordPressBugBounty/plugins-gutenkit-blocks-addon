@@ -28,7 +28,27 @@
     },
     "selectedCatagories": {
       "type": "array",
-      "default": []
+      "default": [
+        {
+          "label": "All",
+          "value": "all"
+        }
+      ]
+    },
+    "selectedPostType": {
+      "type": "string",
+      "default": "post"
+    },
+    "selectedTaxonomy": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "default": "category"
+    },
+    "selectedPostTypeRestBase": {
+      "type": "string",
+      "default": "posts"
     },
     "postCount": {
       "type": "number",

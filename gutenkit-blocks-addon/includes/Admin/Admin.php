@@ -73,6 +73,20 @@ class Admin {
 		return get_option('gutenkit_onboard_status') && get_option('gutenkit_onboard_status') == 'onboarded';
 	}
 
+	/**
+	 * Whether the onboarding notice should be rendered on the dashboard.
+	 *
+	 * The notice asks for the email that onboarding did not collect, so it is
+	 * shown only while no onboarding email was submitted and the
+	 * `gutenkit_onboard_notice` option is missing or false.
+	 *
+	 * @since 2.5.2
+	 * @return bool True when the notice should be shown.
+	 */
+	public function get_onboard_notice_status() {
+		return empty( get_option( \Gutenkit\Admin\Onboard\Onboard::EMAIL ) ) && empty( get_option( \Gutenkit\Admin\Onboard\Onboard::NOTICE ) );
+	}
+
 	public function add_admin_menu() {
 		add_menu_page(
 			esc_html__( 'Gutenkit', 'gutenkit-blocks-addon' ),
@@ -211,7 +225,7 @@ class Admin {
 
 				wp_localize_script(
 					'gutenkit-dashboard',
-					'gutenkit_admin_localize',
+					'gkitDashboard',
 					array(
 						'version' => GUTENKIT_PLUGIN_VERSION,
 						'api_url' => GUTENKIT_API_URL,
@@ -219,6 +233,7 @@ class Admin {
 						'is_block_theme' => wp_is_block_theme() ? true : false,
 						'is_pro_active' => self::is_plugin_active('gutenkit-blocks-addon-pro/gutenkit-blocks-addon-pro.php'),
 						'pro_version' => defined('GUTENKIT_PRO_PLUGIN_VERSION') ? GUTENKIT_PRO_PLUGIN_VERSION : '',
+						'showOnboardNotice' => $this->get_onboard_notice_status(),
 					)
 				);
 
