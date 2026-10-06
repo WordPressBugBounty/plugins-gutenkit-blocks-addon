@@ -9,8 +9,6 @@ use \Gutenkit\Helpers\Utils;
 class FontLoadLocally
 {
 	const FONTS_FOLDER = 'gkit-fonts';
-	const GOOGLE_FONTS_API_URL = 'https://www.googleapis.com/webfonts/v1/webfonts';
-	const GOOGLE_FONTS_API_KEY = 'AIzaSyAdhJh9b4BpR0cQqIt1uBBeaq2f58Ztd7E';
 
 	/**
 	 * Recursively filters blocks for only those with 'gutenkit' in the block name.
@@ -68,8 +66,8 @@ class FontLoadLocally
 	 * Builds the @font-face CSS that points at locally stored copies of the fonts.
 	 *
 	 * The stylesheet is derived from the css2 endpoint rather than the Webfonts Developer API.
-	 * That API needs a key, and the key shipped with this plugin is shared by every install, so
-	 * it starts returning HTTP 429 once the daily quota is spent -- which silently dropped
+	 * That API needs a key, and a key shipped in a distributed plugin is both public and shared by
+	 * every install, so it returns HTTP 429 once the daily quota is spent -- which silently dropped
 	 * whichever weights happened to be requested after the quota ran out. css2 needs no key, and
 	 * it also reports the real font-style, font-weight and unicode-range for every file instead
 	 * of leaving them to be guessed from a file name.
@@ -315,105 +313,6 @@ class FontLoadLocally
 			wp_register_style($handle, false);
 			wp_add_inline_style($handle, Utils::cssminifier($fonts_css));
 			wp_enqueue_style($handle);
-		}
-	}
-
-	/**
-	 * Retrieves and stores a font from Google Fonts API.
-	 *
-	 * @param string $font
-	 * @param array $weights
-	 */
-	public function prepare_font($font, $weights)
-	{
-		$upload_dir = wp_upload_dir();
-		$font_dir = trailingslashit($upload_dir['basedir']) . 'gkit-fonts';
-
-		if (!is_dir($font_dir)) {
-			wp_mkdir_p($font_dir);
-		}
-
-		$font_list = [];
-
-		$font_family_dir = trailingslashit($font_dir) . str_replace(' ', '-', strtolower($font));
-		if (!is_dir($font_family_dir)) {
-			wp_mkdir_p($font_family_dir);
-		}
-
-		$api_url = add_query_arg([
-			'key'       => self::GOOGLE_FONTS_API_KEY,
-			'capability' => 'WOFF2',
-			'family'    => urlencode($font),
-		], self::GOOGLE_FONTS_API_URL);
-
-		$response = wp_remote_get($api_url, ['timeout' => 15]);
-
-		if (is_wp_error($response)) {
-			error_log('Font API request failed: ' . $response->get_error_message());
-			return;
-		}
-
-		$body = wp_remote_retrieve_body($response);
-		$body = json_decode($body, true);
-
-		if (!empty($body['items'][0])) {
-			$font_list[] = $body['items'][0];
-		}
-
-		$this->save_font(array_shift($font_list), $weights, $font_dir);
-	}
-
-	/**
-	 * Saves specific font files to local directory.
-	 *
-	 * @param array $font
-	 * @param array $weights
-	 * @param string $font_dir
-	 */
-	public function save_font($font, $weights, $font_dir)
-	{
-		global $wp_filesystem;
-
-		if (empty($wp_filesystem)) {
-			require_once ABSPATH . 'wp-admin/includes/file.php';
-			WP_Filesystem();
-		}
-
-		$font_family = isset($font['family']) ? sanitize_text_field($font['family']) : '';
-		$font_files = $font['files'] ?? [];
-		$font_family_dir = trailingslashit($font_dir) . str_replace(' ', '-', strtolower($font_family));
-
-		if (!$wp_filesystem->is_dir($font_family_dir)) {
-			wp_mkdir_p($font_family_dir);
-		}
-
-		foreach ($weights as $weight) {
-			$font_weight = in_array($weight, ['normal', '400']) ? 'regular' : $weight;
-
-			if (!isset($font_files[$font_weight])) {
-				continue; // Skip if no file for this weight
-			}
-
-			$font_file_url = esc_url_raw($font_files[$font_weight]);
-			$font_filename = sanitize_file_name($font_weight . '-' . basename($font_file_url));
-			$font_file_path = trailingslashit($font_family_dir) . $font_filename;
-
-			// Skip if the font file already exists
-			if ($wp_filesystem->exists($font_file_path)) {
-				continue; // not "return": the remaining weights still need downloading
-			}
-
-			$response = wp_remote_get($font_file_url, ['timeout' => 10]);
-
-			if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
-				error_log('Failed to download font: ' . $font_file_url);
-				continue;
-			}
-
-			$font_content = wp_remote_retrieve_body($response);
-
-			// Save the font file
-			$wp_filesystem->put_contents($font_file_path, $font_content, FS_CHMOD_FILE);
 		}
 	}
 

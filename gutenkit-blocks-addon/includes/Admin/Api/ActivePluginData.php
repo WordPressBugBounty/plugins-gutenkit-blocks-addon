@@ -3,6 +3,8 @@
 namespace Gutenkit\Admin\Api;
 
 class ActivePluginData {
+	use \Gutenkit\Traits\Auth;
+
 	public $request = null;
 
 	public function __construct() {
@@ -11,7 +13,7 @@ class ActivePluginData {
 				array(
 					'methods'             => \WP_REST_Server::READABLE,
 					'callback'            => [$this, 'action_get_active_plugin'],
-					'permission_callback' => '__return_true',
+					'permission_callback' => [$this, 'check_request'],
 				),
 			);
 		});
@@ -21,30 +23,20 @@ class ActivePluginData {
 				array(
 					'methods'             => \WP_REST_Server::EDITABLE,
 					'callback'            => [$this, 'install_and_activate_plugin_from_external'],
-					'permission_callback' => '__return_true',
+					'permission_callback' => [$this, 'check_install_permission'],
+					'args'                => array(
+						'slug' => array(
+							'type'              => 'string',
+							'required'          => true,
+							'sanitize_callback' => 'sanitize_key',
+						),
+					),
 				),
 			);
 		});
 	}
 
 	public function action_get_active_plugin($request) {
-		/**
-		* turn on this section when fully functional from frontend and need Nonce check Permission check 
-		*/
-		if (!wp_verify_nonce($request->get_header('X-WP-Nonce'), 'wp_rest')) {
-			return [
-				'status'  => 'fail',
-				'message' => 'Nonce mismatch.',
-			];
-		}
-
-		if (!is_user_logged_in() || !current_user_can('manage_options')) {
-			return [
-				'status'  => 'fail',
-				'message' => 'Access denied.',
-			];
-		}
-
 		$plugin_name = $request->get_param('plugin');
 		
 		$result_data = $this->is_plugin_active($plugin_name.'/'.$plugin_name.'.php');
@@ -73,51 +65,76 @@ class ActivePluginData {
 		return false;
 	}
 
-	public function install_and_activate_plugin_from_external($request) {
-		// Check if the user has the required capability
-		if (!current_user_can('install_plugins')) {
-			wp_send_json_error('You do not have permission to install plugins.');
-			return;
+	/**
+	 * Permission callback for the install route.
+	 *
+	 * @param \WP_REST_Request $request The current request.
+	 * @return true|\WP_Error True when the request is allowed, the error otherwise.
+	 */
+	public function check_install_permission( $request ) {
+		return $this->authorize_request( $request, 'install_plugins' );
+	}
+
+	/**
+	 * Installs a plugin that a GutenKit block declares as its dependency.
+	 *
+	 * Only the slug comes from the request. The package URL is read from the block list, so a
+	 * caller cannot point the download at an arbitrary host or have an arbitrary ZIP unpacked
+	 * into the plugins directory.
+	 *
+	 * @param \WP_REST_Request $request The current request.
+	 * @return array|\WP_Error
+	 */
+	public function install_and_activate_plugin_from_external( $request ) {
+		$package = $this->get_dependency_package( $request->get_param( 'slug' ) );
+
+		if ( ! $package ) {
+			return new \WP_Error(
+				'gutenkit_unknown_dependency',
+				esc_html__( 'This plugin is not a GutenKit block dependency.', 'gutenkit-blocks-addon' ),
+				array( 'status' => 400 )
+			);
 		}
-	
-		// The external plugin URL
-		$plugin_url = esc_url_raw($request->get_param('plugin'));
-		$slug = sanitize_text_field($request->get_param('slug'));
-		$plugin_slug = "$slug/$slug.php";
-		$plugin_dir = WP_PLUGIN_DIR;  // This points to wp-content/plugins
 
 		require_once ABSPATH . 'wp-admin/includes/file.php';
 		require_once ABSPATH . 'wp-admin/includes/plugin.php';
 		require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
-	
-		WP_Filesystem();
-	
-		// Download the plugin ZIP file
-		$temp_file = download_url($plugin_url);
-		if (is_wp_error($temp_file)) {
-			wp_send_json_error('Failed to download plugin. Error: ' . $temp_file->get_error_message());
-			return;
+
+		// The same upgrader core's own plugin installer uses: it refuses to overwrite an existing
+		// plugin folder and cleans up the download, which a bare download_url() + unzip_file() did not.
+		$upgrader = new \Plugin_Upgrader( new \WP_Ajax_Upgrader_Skin() );
+		$result   = $upgrader->install( $package );
+
+		if ( true !== $result ) {
+			// The upgrader's error text can include remote response details, so it is logged
+			// rather than returned.
+			if ( is_wp_error( $result ) ) {
+				error_log( 'Gutenkit: dependency install failed: ' . $result->get_error_message() );
+			}
+
+			return new \WP_Error(
+				'gutenkit_install_failed',
+				esc_html__( 'The plugin could not be installed.', 'gutenkit-blocks-addon' ),
+				array( 'status' => 500 )
+			);
 		}
 
-		// Unzip the plugin into the wp-content/plugins directory
-		$unzip_result = unzip_file($temp_file, $plugin_dir);
-	
-		// Delete the temporary file after unzipping
-		wp_delete_file($temp_file);
-	
-		if (is_wp_error($unzip_result)) {
-			wp_send_json_error('Failed to unzip plugin. Error: ' . $unzip_result->get_error_message());
-			return;
+		return array( 'success' => true );
+	}
+
+	/**
+	 * Finds the package URL a block declares for a dependency slug.
+	 *
+	 * @param string $slug Plugin slug.
+	 * @return string|false Package URL, or false when no block declares that slug.
+	 */
+	private function get_dependency_package( $slug ) {
+		foreach ( \Gutenkit\Config\BlockList::instance()->get_list() as $block ) {
+			if ( isset( $block['dependency']['slug'], $block['dependency']['url'] ) && $block['dependency']['slug'] === $slug ) {
+				return $block['dependency']['url'];
+			}
 		}
-	
-		// Check if the plugin directory exists
-		$plugin_path = $plugin_dir . '/' . $plugin_slug;
-	
-		if (!file_exists($plugin_path)) {
-			wp_send_json_error('The plugin directory does not exist after unzipping.');
-			return;
-		} else {
-			wp_send_json_success('Plugin installed successfully!');
-		}
+
+		return false;
 	}
 }

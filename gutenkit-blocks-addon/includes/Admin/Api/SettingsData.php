@@ -4,7 +4,12 @@ namespace Gutenkit\Admin\Api;
 
 defined( 'ABSPATH' ) || exit;
 
+use Gutenkit\Config\SettingsList;
+use Gutenkit\Helpers\Utils;
+
 class SettingsData {
+	use \Gutenkit\Traits\Auth;
+
 	public $prefix  = '';
 	public $param   = '';
 	public $request = null;
@@ -15,7 +20,7 @@ class SettingsData {
 				array(
 					'methods'             => \WP_REST_Server::READABLE,
 					'callback'            => array( $this, 'action_get_settings' ),
-					'permission_callback' => '__return_true',
+					'permission_callback' => array( $this, 'check_request' ),
 					),
 				);
 			}
@@ -26,7 +31,13 @@ class SettingsData {
 				array(
 					'methods'             => \WP_REST_Server::EDITABLE,
 					'callback'            => array( $this, 'action_edit_settings' ),
-					'permission_callback' => '__return_true',
+					'permission_callback' => array( $this, 'check_request' ),
+					'args'                => array(
+						'settings' => array(
+							'type'     => 'object',
+							'required' => true,
+						),
+					),
 					),
 				);
 			}
@@ -37,29 +48,19 @@ class SettingsData {
 			register_rest_route('gutenkit/v1', 'clear-cache', array(
 				'methods'             => \WP_REST_Server::EDITABLE,
 				'callback'            => array($this, 'action_clear_cache'),
-				'permission_callback' => '__return_true',
+				'permission_callback' => array( $this, 'check_request' ),
+				'args'                => array(
+					'transientKey' => array(
+						'type'              => 'string',
+						'required'          => true,
+						'sanitize_callback' => 'sanitize_key',
+					),
+				),
 			));
 		});
 	}
 
 	public function action_get_settings( $request ) {
-		/**
-		* turn on this section when fully functional from frontend and need Nonce check Permission check 
-		*/
-		if ( ! wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Nonce mismatch.' ),
-			);
-		}
-
-		if ( ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Access denied.' ),
-			);
-		}
-
 		$result_data = get_option( 'gutenkit_settings_list' );
 
 		return array(
@@ -71,71 +72,41 @@ class SettingsData {
 		);
 	}
 	public function action_edit_settings( $request ) {
-		/**
-		* turn on this section when fully functional from frontend and need Nonce check Permission check 
-		*/
-		if ( ! wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Nonce mismatch.' ),
-			);
-		}
+		$data      = Utils::apply_list_update( get_option( 'gutenkit_settings_list', array() ), $request->get_param( 'settings' ) );
+		$array_get = update_option( 'gutenkit_settings_list', $data );
 
-		if ( ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Access denied.' ),
-			);
-		}
-
-		$req_data = $request->get_params();
-
-		if ( array_key_exists( 'settings', $req_data ) ) {
-			$data      = $req_data['settings'];
-			$array_get = update_option( 'gutenkit_settings_list', $data );
-
-			return array(
-				'status'  => 'success',
-				'settings' => $array_get,
-				'message' => array(
-					'Settings list has been Updated successfully.',
-				),
-			);
-		} else {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Something went wrong.' ),
-			);
-		}
+		return array(
+			'status'   => 'success',
+			'settings' => $array_get,
+			'message'  => array(
+				'Settings list has been Updated successfully.',
+			),
+		);
 	}
 
-	public function action_clear_cache($request) {
-		if (!wp_verify_nonce($request->get_header('X-WP-Nonce'), 'wp_rest')) {
-			return array(
-				'status'  => 'fail',
-				'message' => array('Nonce mismatch.'),
-			);
-		}
-	
-		if (!is_user_logged_in() || !current_user_can('manage_options')) {
-			return array(
-				'status'  => 'fail',
-				'message' => array('Access denied.'),
-			);
-		}
-	
-		$req_data = $request->get_params();
+	/**
+	 * Clears the cache of an API integration setting.
+	 *
+	 * Only transients that a setting declares as its `transient_key` can be deleted, so the route
+	 * cannot be used to clear arbitrary transients belonging to other plugins.
+	 *
+	 * @param \WP_REST_Request $request The current request.
+	 * @return array|\WP_Error
+	 */
+	public function action_clear_cache( $request ) {
+		$transient_key = $request->get_param( 'transientKey' );
+		$allowed_keys  = array_column( SettingsList::instance()->get_list(), 'transient_key' );
 
-		if (!empty($req_data['clearCache'])) {
-			if(isset($req_data['transientKey'])) {
-				delete_transient($req_data['transientKey']);
-
-                return array(
-                    'status'  => 'success',
-                    'message' => array('Cache cleared for transient key '. $req_data['transientKey']. '.'),
-                );
-			}
+		if ( ! in_array( $transient_key, $allowed_keys, true ) ) {
+			return new \WP_Error( 'gutenkit_invalid_transient', esc_html__( 'Unknown cache key.', 'gutenkit-blocks-addon' ), array( 'status' => 400 ) );
 		}
+
+		delete_transient( $transient_key );
+
+		return array(
+			'status'  => 'success',
+			'message' => array( 'Cache cleared.' ),
+		);
 	}
 	
 }

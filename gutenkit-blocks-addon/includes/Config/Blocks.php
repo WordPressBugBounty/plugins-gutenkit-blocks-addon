@@ -73,11 +73,16 @@ class Blocks {
 					$plugin_slug = 'gutenkit-blocks-addon-pro';
 				}
 
-				if(isset($block['source']['blocks_dir'], $block['source']['plugin_dir'], $block['source']['plugin_slug'])) {
-					extract($block['source'], EXTR_PREFIX_ALL, 'source');
-					$plugin_dir = $source_plugin_dir;
-					$blocks_root = $source_blocks_dir;
-					$plugin_slug = $source_plugin_slug;
+				// A third-party plugin can register blocks from its own folder through the
+				// gutenkit/blocks/list filter. Only folders inside the plugins directory are accepted.
+				if ( isset( $block['source']['blocks_dir'], $block['source']['plugin_dir'], $block['source']['plugin_slug'] ) ) {
+					if ( ! $this->is_inside_plugins_dir( $block['source']['blocks_dir'] ) ) {
+						continue;
+					}
+
+					$plugin_dir  = $block['source']['plugin_dir'];
+					$blocks_root = $block['source']['blocks_dir'];
+					$plugin_slug = $block['source']['plugin_slug'];
 				}
 
 				if ( empty( $blocks_root ) ) {
@@ -104,6 +109,24 @@ class Blocks {
 				}
 			}
 		}
+	}
+
+	/**
+	 * Whether a path resolves to somewhere inside the plugins directory.
+	 *
+	 * @param mixed $path Path to check.
+	 * @return bool
+	 */
+	private function is_inside_plugins_dir( $path ) {
+		$real_path = is_string( $path ) ? realpath( $path ) : false;
+
+		if ( false === $real_path ) {
+			return false;
+		}
+
+		$plugins_dir = trailingslashit( wp_normalize_path( realpath( WP_PLUGIN_DIR ) ) );
+
+		return 0 === strpos( trailingslashit( wp_normalize_path( $real_path ) ), $plugins_dir );
 	}
 
 	/**

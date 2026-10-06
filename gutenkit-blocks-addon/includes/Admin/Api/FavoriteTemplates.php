@@ -10,6 +10,8 @@ defined( 'ABSPATH' ) || exit;
  * @since 1.0.2
  */
 class FavoriteTemplates {
+	use \Gutenkit\Traits\Auth;
+
 	public $prefix  = '';
 	public $param   = '';
 	public $request = null;
@@ -26,7 +28,7 @@ class FavoriteTemplates {
 				array(
 					'methods'             => \WP_REST_Server::READABLE,
 					'callback'            => array( $this, 'action_get_favorite_templates' ),
-					'permission_callback' => '__return_true',
+					'permission_callback' => array( $this, 'check_request' ),
 					),
 				);
 			}
@@ -37,7 +39,24 @@ class FavoriteTemplates {
 				array(
 					'methods'             => \WP_REST_Server::EDITABLE,
 					'callback'            => array( $this, 'action_edit_favorite_templates' ),
-					'permission_callback' => '__return_true',
+					'permission_callback' => array( $this, 'check_request' ),
+					'args'                => array(
+						'template_list' => array(
+							'type'                 => 'object',
+							'required'             => true,
+							'properties'           => array(
+								'id'         => array(
+									'type'      => array( 'integer', 'string' ),
+									'required'  => true,
+									'minLength' => 1,
+								),
+								'isFavorite' => array(
+									'type' => 'boolean',
+								),
+							),
+							'additionalProperties' => false,
+						),
+					),
 					),
 				);
 			}
@@ -53,20 +72,6 @@ class FavoriteTemplates {
      */
 	public function action_get_favorite_templates( $request ) {
 
-		if ( ! wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Nonce mismatch.' ),
-			);
-		}
-
-		if ( ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Access denied.' ),
-			);
-		}
-
 		$result_data = get_option( 'gutenkit_favorite_templates' );
 
 		return array(
@@ -81,50 +86,32 @@ class FavoriteTemplates {
     /**
      * Edit Favorite Templates
      * 
-     * @param array $request
+     * @param \WP_REST_Request $request
      * @access public
      * @return array
      */
 	public function action_edit_favorite_templates( $request ) {
 
-		if ( ! wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Nonce mismatch.' ),
-			);
+		$data        = $request->get_param( 'template_list' );
+		$favorite_id = sanitize_key( (string) $data['id'] );
+
+		if ( '' === $favorite_id ) {
+			return new \WP_Error( 'gutenkit_invalid_template_id', esc_html__( 'Invalid template ID.', 'gutenkit-blocks-addon' ), array( 'status' => 400 ) );
 		}
 
-		if ( ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Access denied.' ),
-			);
-		}
+		$saved_data = get_option( 'gutenkit_favorite_templates' );
+		$saved_data = is_array( $saved_data ) ? $saved_data : array();
 
-		$req_data = $request->get_params();
-        $saved_data= get_option('gutenkit_favorite_templates') ? get_option('gutenkit_favorite_templates') : [];
+		$saved_data[ $favorite_id ]['isFavorite'] = ! empty( $data['isFavorite'] );
 
+		$array_get = update_option( 'gutenkit_favorite_templates', $saved_data );
 
-		if ( array_key_exists( 'template_list', $req_data ) ) {
-			$data      = $req_data['template_list'];
-            $favorite_id = isset($data['id']) ? $data['id'] : '';
-            $is_favorite = isset($data['isFavorite']) ? $data['isFavorite'] : false;
-            $saved_data[$favorite_id]['isFavorite'] = $is_favorite;
-   
-			$array_get = update_option( 'gutenkit_favorite_templates', $saved_data );            
-
-			return array(
-				'status'  => 'success',
-				'data' => $array_get,
-				'message' => array(
-					'Favorite templates has been Updated successfully.',
-				),
-			);
-		} else {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Something went wrong.' ),
-			);
-		}
+		return array(
+			'status'  => 'success',
+			'data'    => $array_get,
+			'message' => array(
+				'Favorite templates has been Updated successfully.',
+			),
+		);
 	}
 }

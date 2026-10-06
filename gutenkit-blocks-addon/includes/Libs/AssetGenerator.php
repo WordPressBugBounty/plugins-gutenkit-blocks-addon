@@ -49,12 +49,12 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 	}
 
 	/**
-	 * recursively combine blocks assets based on used blocks
+	 * Recursively combine block assets based on used blocks.
 	 *
-	 * @param array $blocks
-	 * @return $result array | $blocks_data
+	 * @param array $parsed_block Parsed block data.
+	 * @return string The combined CSS for the block tree.
 	 */
-	protected function combine_blocks_asstes( $parsed_block = array() ) {
+	protected function combine_blocks_asstes( $parsed_block = array() ): string {
 		// combine blocks assets
 		$blocks_css = [];
 
@@ -429,15 +429,14 @@ class AssetGenerator extends \Gutenkit\Libs\FontLoadLocally {
 		 * to work out which modules are in use, so skip it here when that already filled $this->css —
 		 * parsing twice appends every rule to the output a second time.
 		 */
-		if( ! wp_is_block_theme() && empty( $this->css ) && ! empty($post->post_content) ) {
-			do_blocks($post->post_content);
+		if( ! wp_is_block_theme() && empty( $this->css ) && is_object( $post ) && ! empty( $post->post_content ) ) {
+			do_blocks( $post->post_content );
 		}
 
-		// This checks if the $css property is not empty and adds it as inline styles to the 'gutenkit-frontend-common' stylesheet.
 		// Everything reaching this filter is stored by post authors, so it is sanitized as css before being printed inline.
 		$generated_css = Utils::sanitize_css( apply_filters( 'gutenkit/generated_css', $this->css ) );
-		if(!empty($generated_css)) {
-			wp_add_inline_style( 'gutenkit-frontend-common', Utils::cssminifier( $generated_css ) );
+		if ( empty( $generated_css ) ) {
+			return;
 		}
 
 		/*

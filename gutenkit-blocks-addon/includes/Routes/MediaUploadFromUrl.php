@@ -53,9 +53,14 @@ class MediaUploadFromUrl {
 
 	public function upload_image( $image ) {
 		if ( isset( $image['url'] ) && ! empty( $image['id'] ) && ! empty( $image['filename'] ) ) {
-			$attachment_id = $this->get_attachment_id_by_origin( $image['url'] );
+			$source_url = $this->get_allowed_source_url( $image['url'] );
+			if ( ! $source_url ) {
+				return false;
+			}
+
+			$attachment_id = $this->get_attachment_id_by_origin( $source_url );
 			if ( empty( $attachment_id ) ) {
-				$downloaded_file = \download_url( $image['url'] );
+				$downloaded_file = \download_url( $source_url );
 				if ( ! is_wp_error( $downloaded_file ) ) {
 					$file_array = array(
 						'name'     => basename( $image['filename'] ),
@@ -76,7 +81,7 @@ class MediaUploadFromUrl {
 							),
 							$attachment['file']
 						);
-						update_post_meta( $uploaded_attachment_id, 'origin_from', $image['url'] );
+						update_post_meta( $uploaded_attachment_id, 'origin_from', $source_url );
 						wp_update_attachment_metadata(
 							$uploaded_attachment_id,
 							wp_generate_attachment_metadata( $uploaded_attachment_id, $attachment['file'] )
@@ -92,6 +97,32 @@ class MediaUploadFromUrl {
 				return $uploaded_attachment;
 			}
 		}
+	}
+
+	/**
+	 * Restricts imports to the hosts the template library actually serves media from.
+	 *
+	 * download_url() already refuses private and loopback addresses, but it will still fetch any
+	 * public URL -- and the site's own host -- on behalf of anyone with upload_files, which makes
+	 * the route a general-purpose fetch proxy. Template content only ever references these hosts.
+	 *
+	 * @param mixed $url URL from the request body.
+	 * @return string|false The sanitized URL, or false when it is not an allowed source.
+	 */
+	private function get_allowed_source_url( $url ) {
+		if ( ! is_string( $url ) ) {
+			return false;
+		}
+
+		$url  = esc_url_raw( $url, array( 'https' ) );
+		$host = strtolower( (string) wp_parse_url( $url, PHP_URL_HOST ) );
+
+		$allowed_hosts = apply_filters(
+			'gutenkit/media_upload_from_url/allowed_hosts',
+			array( 'wpgutenkit.com', 'wpmet.com' )
+		);
+
+		return in_array( $host, $allowed_hosts, true ) ? $url : false;
 	}
 
 	private function get_attachment_id_by_origin( $origin_url ) {

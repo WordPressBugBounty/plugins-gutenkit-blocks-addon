@@ -4,7 +4,11 @@ namespace Gutenkit\Admin\Api;
 
 defined( 'ABSPATH' ) || exit;
 
+use Gutenkit\Helpers\Utils;
+
 class BlocksData {
+	use \Gutenkit\Traits\Auth;
+
 	public $prefix  = '';
 	public $param   = '';
 	public $request = null;
@@ -19,7 +23,7 @@ class BlocksData {
 					array(
 					'methods'             => \WP_REST_Server::READABLE,
 					'callback'            => array( $this, 'action_get_blocks' ),
-					'permission_callback' => '__return_true',
+					'permission_callback' => array( $this, 'check_request' ),
 					),
 				);
 			}
@@ -30,7 +34,13 @@ class BlocksData {
 				array(
 					'methods'             => \WP_REST_Server::EDITABLE,
 					'callback'            => array( $this, 'action_edit_blocks' ),
-					'permission_callback' => '__return_true',
+					'permission_callback' => array( $this, 'check_request' ),
+					'args'                => array(
+						'blocks' => array(
+							'type'     => 'object',
+							'required' => true,
+						),
+					),
 					),
 				);
 			}
@@ -38,23 +48,6 @@ class BlocksData {
 	}
 
 	public function action_get_blocks( $request ) {
-		/**
-		* turn on this section when fully functional from frontend and need Nonce check Permission check 
-		*/
-		if ( ! wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Nonce mismatch.' ),
-			);
-		}
-
-		if ( ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Access denied.' ),
-			);
-		}
-
 		$result_data = get_option( 'gutenkit_blocks_list' );
 
 		return array(
@@ -67,39 +60,16 @@ class BlocksData {
 	}
 
 	public function action_edit_blocks( $request ) {
-		/**
-		* turn on this section when fully functional from frontend and need Nonce check Permission check 
-		*/
-		if ( ! wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Nonce mismatch.' ),
-			);
-		}
+		$data = Utils::apply_list_update( get_option( 'gutenkit_blocks_list', array() ), $request->get_param( 'blocks' ) );
 
-		if ( ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
-			return array(
-				'status'  => 'fail',
-				'message' => array( 'Access denied.' ),
-			);
-		}
+		update_option( 'gutenkit_blocks_list', $data );
 
-		$req_data = $request->get_params();
-		
-		if (array_key_exists('blocks', $req_data)) {
-			$data = $req_data['blocks'];
-
-			update_option('gutenkit_blocks_list', $data);
-
-			return array(
-				'status'  => 'success',
-				'blocks' => $data,
-				'message' => [
-					'Blocks list has been updated successfully',
-				]
-			);
-		} else {
-			wp_send_json_error( esc_html__( 'Something went wrong.', 'gutenkit-blocks-addon' ), 500 );
-		}
+		return array(
+			'status'  => 'success',
+			'blocks'  => $data,
+			'message' => array(
+				'Blocks list has been updated successfully',
+			),
+		);
 	}
 }

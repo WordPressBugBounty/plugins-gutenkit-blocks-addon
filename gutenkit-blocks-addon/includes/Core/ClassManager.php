@@ -138,12 +138,13 @@ class ClassManager {
             ]);
 
             if ($parents) {
+                $current_parent = $this->get_parent_filter();
+
                 echo '<select name="parent_post_filter">';
                 echo '<option value="">' . __('All Parent Classes', 'gutenkit-blocks-addon') . '</option>';
-                
+
                 foreach ($parents as $parent) {
-                    $selected = (isset($_GET['parent_post_filter']) && $_GET['parent_post_filter'] == $parent->ID) ? 'selected' : '';
-                    echo '<option value="' . esc_attr($parent->ID) . '" ' . $selected . '>' . esc_html($parent->post_title) . '</option>';
+                    echo '<option value="' . esc_attr($parent->ID) . '" ' . selected($current_parent, $parent->ID, false) . '>' . esc_html($parent->post_title) . '</option>';
                 }
 
                 echo '</select>';
@@ -156,10 +157,22 @@ class ClassManager {
      */
     public function apply_parent_class_filter($query) {
         global $pagenow, $typenow;
-        
-        if ($pagenow === 'edit.php' && $typenow === 'class-manager' && isset($_GET['parent_post_filter']) && $_GET['parent_post_filter'] != '') {
-            $query->query_vars['post_parent'] = $_GET['parent_post_filter'];
+
+        $parent_id = $this->get_parent_filter();
+
+        if ($pagenow === 'edit.php' && $typenow === 'class-manager' && $parent_id) {
+            $query->query_vars['post_parent'] = $parent_id;
         }
+    }
+
+    /**
+     * Reads the parent class ID selected in the list table filter.
+     *
+     * @return int The parent post ID, or 0 when no filter is applied.
+     */
+    private function get_parent_filter() {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only list table filter.
+        return isset($_GET['parent_post_filter']) && is_scalar($_GET['parent_post_filter']) ? absint(wp_unslash($_GET['parent_post_filter'])) : 0;
     }
 
     /**

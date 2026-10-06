@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.2
+Stable tag: 2.5.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,7 +19,7 @@ No more struggling with complicated page builders or the need for coding experti
 
 Gutenkit block builder plugin brings the familiar ease of drag-and-drop design to Gutenberg, making it feel just like using a page builder—but faster and more lightweight. With Gutenberg’s native drag-and-drop interface, **65+ page builder blocks**, **20+ versatile modules**, and **900+ pre-designed templates**, GutenKit finds itself among the best Gutenberg addons where you can create professional, responsive web content in minutes.
 
-With features like a Gutenberg mega menu, query loop builder, dynamic content, flexible containers, advanced parallax effect, and responsive breakpoints, GutenKit is easily the best Gutenberg page builder for your WordPress website.
+With features like a Gutenberg mega menu, query loop builder, dynamic content, flexible containers, advanced parallax, and responsive breakpoints, GutenKit is the best addons for Gutenberg - a complete WordPress Gutenberg page builder.
 
 ⚓Explore **GutenKit capabilities** in action: [Check Live Demo](https://wordpress.org/plugins/gutenkit-blocks-addon/?preview=1)
 
@@ -46,13 +46,13 @@ https://www.youtube.com/watch?v=mCIO63p1wQM
 
 👉 Full-width flexible **CONTAINER** with inline editing
 
-👉 **MOTION ANIMATION** effects for WordPress blocks
+👉 **Parallax** and **motion animation** effects for WordPress blocks
 
 👉 **COPY PASTE STYLES** across Gutenberg block builder
 
 👉 **65+ WordPress block** editor-supported blocks
 
-👉 Pre-designed **900+ TEMPLATES AND PATTERNS**
+👉 **1000+ GUTENBERG TEMPLATES** and pre-designed block patterns
 
 👉 A Gutenberg Website Builder with faster loading assets & optimized for **PERFORMANCE**
 
@@ -86,9 +86,9 @@ https://youtu.be/EztR8huF1oA?si=XeVzH6CCnNGZWp3c
 
 Do all of the advanced filtering without even writing a single line of code. You can **visually query** the WordPress database and show your website post dynamically with the unmatched flexibility of this advanced Gutenberg blocks plugin.
 
-⭐ **Gutenberg Dynamic Content**
+⭐ **Dynamic Block Content for Gutenberg** 
 
-[GutenKit’s Dynamic Content](https://wpgutenkit.com/modules/dynamic-content/?utm_source=org&utm_medium=readme) for Gutenberg feature turns Gutenberg builder into a dynamic block editor. This pro feature enables the dynamic insertion of elements like post tags, site titles, author names, and user information by selecting 'Dynamic Content' in the block's options.
+The [GutenKit dynamic block](https://wpgutenkit.com/modules/dynamic-content/?utm_source=org&utm_medium=readme) feature turns the Gutenberg builder into a true dynamic block editor. Insert post tags, site titles, author names, and user data into any dynamic block by selecting 'Dynamic Content' in the block settings.
 
 Additionally, a fallback value can be set to display default content when specific data isn't available. This functionality enhances content personalization and adaptability on WordPress sites.
 
@@ -110,15 +110,15 @@ GutenKit blocks comes with-
 
 ### How GutenKit Keeps Your Site Fast:
 
--   ✅ Loads only the CSS and JavaScript for blocks actually used on each page
+✅ Loads only the CSS and JavaScript for blocks actually used on each page
     
--   ✅ 900+ inline SVG icons - load individual icons, never the full library
+✅ 900+ inline SVG icons - load individual icons, never the full library
     
--   ✅ No external font-loading delays - Google Fonts load locally
+✅ No external font-loading delays - Google Fonts load locally
     
--   ✅ Block API v3 support for maximum editor rendering performance
+✅ Block API v3 support for maximum editor rendering performance
     
--   ✅ Zero jQuery dependency - pure, modern JavaScript
+✅ Zero jQuery dependency - pure, modern JavaScript
 
 
 ## Full Site Editing with GutenKit Page Builder
@@ -138,9 +138,9 @@ This WordPress page builder block editor empowers you to create visually stunnin
 
 ## Design Stunning Websites (NO CODE) with GutenKit’s Templates Library and Icons
 
-🔥 **900+ Pre-designed Patterns & Templates**
+🔥 **1000+ Pre-designed Patterns & Templates**
 
-GutenKit is packed with over **900 ready-made block patterns and templates**. These exclusive block patterns and templates simplify the design process and provide a quick start for building beautiful and functional layouts within the WordPress Gutenberg editor.
+GutenKit ships **1000+ Gutenberg templates** and ready-made block patterns. Every Gutenberg template simplifies the design process, giving a quick start to build beautiful, functional layouts in the WordPress Gutenberg editor.
 
 **➡️**Get access to this WordPress Gutenberg page builder's library of  [**professionally designed pre-made templates & Patterns**](https://wpgutenkit.com/templates/).
 
@@ -160,7 +160,7 @@ Besides, this page builder block offers a range of layout options, enabling effo
 
 🔷 **Advanced Parallax for Gutenberg**
 
-Create an [Advanced Parallax Effect](https://wpgutenkit.com/modules/parallax-effect/) and give visitors an immersive parallax experience. This WordPress parallax block includes **transparency, classic, rotate, lower bounce, horizontal scroll**, and more styles.
+Add a stunning [parallax](https://wpgutenkit.com/modules/parallax-effect/) effect to any block. Choose from **transparency, classic, rotate, lower bounce, horizontal scroll** parallax styles - the most versatile WordPress parallax block available.
 
 🔷 **Advanced Video Gallery**
 
@@ -181,9 +181,9 @@ With the [Gutenberg Advanced Tab Block](https://wpgutenkit.com/blocks/advanced-t
 The [Gutenberg Accordion block](https://wpgutenkit.com/blocks/advanced-tab/?utm_source=org&utm_medium=readme) in GutenKit is your key to creating sleek and interactive content. This drag-and-drop WordPress accordion block allows you to create collapsible sections. You can organize any content in a structured and tidy way with this WordPress Gutenberg Plugin.
 
 
-🔷 **Craft Catchy Headings**
+🔷 **WordPress Heading Block – Craft Catchy Headings**
 
-Create eye-catching headers effortlessly with the [GutenKit Header block](https://wpgutenkit.com/blocks/heading/?utm_source=org&utm_medium=readme) in the WordPress block editor. Craft stunning H1, H2, and H3 headers with a wide range of customization options. One great convenience is the ability to add URLs to your headings which makes it easier for users to navigate.
+Craft stunning H1, H2, H3 headings using the [GutenKit WordPress heading block](https://wpgutenkit.com/blocks/heading/?utm_source=org&utm_medium=readme) — the most customizable WordPress heading block available in any Gutenberg addon. 
 
 🔷 **Off-canvas menu**
 
@@ -287,7 +287,7 @@ Digital agencies and freelancers can deliver fast, professional websites using G
 
 ###  ➡️ Anyone Seeking a User-Friendly Solution
 
-GutenKit Gutenberg plugin is designed for accessibility for all, ensuring that individuals with varying technical backgrounds can create visually stunning websites with ease.
+GutenKit Gutenberg plugin is designed for everyone - ensuring individuals with varying technical backgrounds can create visually stunning websites with ease 
 
 ###  ☂️ OUR OTHER PLUGINS
 
@@ -319,6 +319,22 @@ Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of Wor
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.5.3 (2026-10-06) =
+* Fixed: Template image import could make the server fetch any URL
+* Fixed: Global transition settings could inject markup into the front-end stylesheet
+* Fixed: Clear cache in API settings could delete cached data belonging to other plugins
+* Fixed: Favorite templates could be saved without a template ID
+* Fixed: Block styles were printed twice on every front-end page, adding redundant render-blocking CSS to the page size
+* Fixed: Nav Menu link popover opened on its own when adding a submenu or mega menu, and closing it without a link deleted the menu item along with its submenu
+* Fixed: Custom breakpoint of Nav Menu is not working
+* Fixed: Enable slider marks and custom tooltips in Slider component
+* Fixed: Background and Background Overlay passed a dynamic value to __() with no text domain, so the "Background Type" label could not be translated
+* Improved: Saving blocks, modules and settings from the dashboard stored whatever data was sent; only the on/off status and setting values are now saved, and the values are sanitized
+* Improved: Dashboard API routes now check permissions before running and return a proper 401/403 error instead of a success response
+* Improved: Sanitized the parent class filter in the Class Manager list
+* Improved: Blocks registered by other plugins through the gutenkit/blocks/list filter must be located inside the plugins directory
+* Improved: Hard-coded UI strings are now translatable across blocks and components
 
 = GutenKit Blocks Addon 2.5.2 (2026-09-27) =
 * Added: Custom post type support for Post Tab block

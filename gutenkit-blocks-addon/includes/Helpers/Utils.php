@@ -487,6 +487,82 @@ class Utils {
 	}
 
 	/**
+	 * Applies a dashboard update to a stored config list (blocks, modules or settings).
+	 *
+	 * Only the user-editable parts are read from the request: each item's status, the value of
+	 * each field it declares, and its own value. Which items and fields exist comes from the
+	 * stored list, which BuildBlocks / BuildModules / BuildSettings rebuild from the config on
+	 * every load, so a request can change values but never add keys or reshape the option.
+	 *
+	 * @param array $saved     The stored list.
+	 * @param array $requested The list sent by the dashboard.
+	 * @return array The stored list with the requested values applied.
+	 */
+	public static function apply_list_update( $saved, $requested ) {
+		if ( ! is_array( $saved ) || ! is_array( $requested ) ) {
+			return $saved;
+		}
+
+		foreach ( $saved as $key => $item ) {
+			$update = isset( $requested[ $key ] ) ? $requested[ $key ] : null;
+
+			if ( ! is_array( $item ) || ! is_array( $update ) ) {
+				continue;
+			}
+
+			if ( isset( $update['status'] ) && in_array( $update['status'], array( 'active', 'inactive' ), true ) ) {
+				$saved[ $key ]['status'] = $update['status'];
+			}
+
+			if ( isset( $item['fields'] ) && is_array( $item['fields'] ) ) {
+				foreach ( array_keys( $item['fields'] ) as $field_key ) {
+					if ( isset( $update['fields'][ $field_key ]['value'] ) && is_scalar( $update['fields'][ $field_key ]['value'] ) ) {
+						$saved[ $key ]['fields'][ $field_key ]['value'] = sanitize_text_field( (string) $update['fields'][ $field_key ]['value'] );
+					}
+				}
+			}
+
+			if ( isset( $item['value'], $update['value'] ) ) {
+				$saved[ $key ]['value'] = self::sanitize_list_value( $item['value'], $update['value'] );
+			}
+		}
+
+		return $saved;
+	}
+
+	/**
+	 * Sanitizes a setting's `value`, keeping the shape of the stored one.
+	 *
+	 * These values are printed into inline CSS (see Enqueue::convert_custom_properties()), so
+	 * anything that could close the declaration or the rule is stripped.
+	 *
+	 * @param mixed $stored    The stored value; decides which keys are accepted.
+	 * @param mixed $requested The requested value.
+	 * @return mixed
+	 */
+	private static function sanitize_list_value( $stored, $requested ) {
+		if ( is_array( $stored ) ) {
+			if ( ! is_array( $requested ) ) {
+				return $stored;
+			}
+
+			foreach ( array_keys( $stored ) as $value_key ) {
+				if ( isset( $requested[ $value_key ] ) ) {
+					$stored[ $value_key ] = self::sanitize_list_value( $stored[ $value_key ], $requested[ $value_key ] );
+				}
+			}
+
+			return $stored;
+		}
+
+		if ( ! is_scalar( $requested ) ) {
+			return $stored;
+		}
+
+		return trim( preg_replace( '/[{}<>;\\\\]/', '', sanitize_text_field( (string) $requested ) ) );
+	}
+
+	/**
 	 * Retrieves the settings from the specified key in the options table.
 	 *
 	 * @param string $key The key of the settings in the options table.

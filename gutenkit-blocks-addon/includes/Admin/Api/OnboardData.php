@@ -6,6 +6,8 @@ use Gutenkit\Admin\Onboard\Onboard;
 defined( 'ABSPATH' ) || exit;
 
 class OnboardData {
+	use \Gutenkit\Traits\Auth;
+
 	public $prefix  = '';
 	public $param   = '';
 	public $request = null;
@@ -45,32 +47,6 @@ class OnboardData {
 				);
 			}
 		);
-	}
-
-	/**
-	 * Permission callback shared by every onboard route.
-	 *
-	 * @param \WP_REST_Request $request The current request.
-	 * @return true|\WP_Error True when the request is allowed, the error otherwise.
-	 */
-	public function check_request( $request ) {
-		if ( ! wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
-			return new \WP_Error(
-				'gutenkit_rest_nonce_mismatch',
-				esc_html__( 'Nonce mismatch.', 'gutenkit-blocks-addon' ),
-				array( 'status' => rest_authorization_required_code() )
-			);
-		}
-
-		if ( ! is_user_logged_in() || ! current_user_can( 'manage_options' ) ) {
-			return new \WP_Error(
-				'gutenkit_rest_forbidden',
-				esc_html__( 'Access denied.', 'gutenkit-blocks-addon' ),
-				array( 'status' => rest_authorization_required_code() )
-			);
-		}
-
-		return true;
 	}
 
 	public function action_get_onboard( $request ) {
