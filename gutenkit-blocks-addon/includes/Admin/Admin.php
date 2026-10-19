@@ -192,6 +192,7 @@ class Admin {
                     array(
                         'adminUrl' => esc_url(admin_url('/')),
                         'plugin_status' => \Gutenkit\Helpers\Utils::onboard_plugins(),
+                        'isSurpriseShown' => ( time() - (int) get_option( 'gutenkit_installed_time', 0 ) ) < DAY_IN_SECONDS,
                     )
                 );
 
@@ -329,7 +330,7 @@ class Admin {
 		wp_enqueue_style(
 			'gutenkit-deactivation-popup',
 			GUTENKIT_PLUGIN_URL . 'build/admin/deactivation-popup/style-index.css',
-			array(),
+			array( 'wp-components' ),
 			$assets['version']
 		);
 	}

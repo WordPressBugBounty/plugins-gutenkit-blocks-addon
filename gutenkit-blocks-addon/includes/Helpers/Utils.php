@@ -1202,7 +1202,6 @@ class Utils {
 		return apply_filters( 'gutenkit/css_meta_keys', array(
 			'postBodyCss',
 			'globalClassManagerStyle',
-			'classManagerCustomCSS',
 		) );
 	}
 
@@ -1502,12 +1501,14 @@ class Utils {
      */
 	public static function onboard_plugins() {
 		return array(
-			'popup-builder-block'   => self::check_plugin_status( 'popup-builder-block/popup-builder-block.php' ),
-			'emailkit'              => self::check_plugin_status( 'emailkit/EmailKit.php' ),
-			'elementskit-lite'      => self::check_plugin_status( 'elementskit-lite/elementskit-lite.php' ),
-			'metform'               => self::check_plugin_status( 'metform/metform.php' ),
-			'getgenie'              => self::check_plugin_status( 'getgenie/getgenie.php' ),
-			'blocks-for-shopengine' => self::check_plugin_status( 'blocks-for-shopengine/shopengine-gutenberg-addon.php' ),
+			'rox-dynamic-cpt-fields-engine' => self::check_plugin_status( 'rox-dynamic-cpt-fields-engine/rox-dynamic-cpt-fields-engine.php' ),
+			'rox-appointment-booking'       => self::check_plugin_status( 'rox-appointment-booking/rox-appointment-booking.php' ),
+			'popup-builder-block'           => self::check_plugin_status( 'popup-builder-block/popup-builder-block.php' ),
+			'emailkit'                      => self::check_plugin_status( 'emailkit/EmailKit.php' ),
+			'elementskit-lite'              => self::check_plugin_status( 'elementskit-lite/elementskit-lite.php' ),
+			'metform'                       => self::check_plugin_status( 'metform/metform.php' ),
+			'getgenie'                      => self::check_plugin_status( 'getgenie/getgenie.php' ),
+			'blocks-for-shopengine'         => self::check_plugin_status( 'blocks-for-shopengine/shopengine-gutenberg-addon.php' ),
 		);
 	}
 }

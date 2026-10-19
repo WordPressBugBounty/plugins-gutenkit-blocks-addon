@@ -371,5 +371,8 @@
     "goodshare"
   ],
   "style": "file:./style-index.css",
-  "viewScript": "goodshare"
+  "viewScript": [
+    "file:./frontend.js",
+    "goodshare"
+  ]
 }

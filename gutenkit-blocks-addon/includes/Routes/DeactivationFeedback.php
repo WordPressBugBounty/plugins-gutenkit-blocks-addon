@@ -41,19 +41,21 @@ class DeactivationFeedback {
 	}
 
 	public function handle_feedback( $request ) {
-		$params = $request->get_json_params();
+		$plugin_version = defined( 'GUTENKIT_PLUGIN_VERSION' ) ? GUTENKIT_PLUGIN_VERSION : '';
 
+		// Only reached through "Submit & Deactivate", whose notice tells the user this data is
+		// shared; "Skip & Deactivate" never calls this route.
 		$data = array(
 			'plugin_slug'    => 'gutenkit-blocks-addon',
 			'plugin_name'    => 'GutenKit',
-			'plugin_version' => defined( 'GUTENKIT_PLUGIN_VERSION' ) ? GUTENKIT_PLUGIN_VERSION : '',
+			'plugin_version' => $plugin_version,
+			'feedback'       => array(
+				'reason_key'   => $request->get_param( 'reason_key' ),
+				'reason_label' => $request->get_param( 'reason_label' ),
+				'message'      => (string) $request->get_param( 'message' ),
+			),
 			'user'           => array(
 				'email' => get_option( 'gutenkit_onboard_email_id' ),
-			),
-			'feedback'       => array(
-				'reason_key'   => $params['reason_key'],
-				'reason_label' => $params['reason_label'],
-				'message'      => isset( $params['message'] ) ? $params['message'] : '',
 			),
 			'usage'          => array(
 				'active_widgets' => $this->get_active_widgets(),
@@ -70,16 +72,15 @@ class DeactivationFeedback {
 			),
 		);
 
-		wp_remote_post(
-			'https://api.wpmet.com/public/plugin-unsubscribe/',
-			array(
-				'method'    => 'POST',
-				'timeout'   => 20,
-				'blocking'  => false,
-				'headers'   => array( 'Content-Type' => 'application/json' ),
-				'body'      => wp_json_encode( $data ),
-			)
+		$args = array(
+			'method'    => 'POST',
+			'timeout'   => 20,
+			'blocking'  => false,
+			'headers'   => array( 'Content-Type' => 'application/json' ),
+			'body'      => wp_json_encode( $data ),
 		);
+
+		wp_remote_post( 'https://api.wpmet.com/public/plugin-unsubscribe/', $args );
 
 		return new \WP_REST_Response( array( 'success' => true ), 200 );
 	}

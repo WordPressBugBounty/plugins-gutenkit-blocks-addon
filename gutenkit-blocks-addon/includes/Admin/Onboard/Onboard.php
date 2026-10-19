@@ -35,6 +35,8 @@ class Onboard
 
 		update_option(Onboard::STATUS, 'onboarded');
 
+		$this->save_user_consent(!empty($data['dataSharePermission']) && rest_sanitize_boolean($data['dataSharePermission']));
+
 		$email = !empty($data['userMail']) && is_email($data['userMail'])
 			? sanitize_email(wp_unslash($data['userMail']))
 			: '';
@@ -152,6 +154,27 @@ class Onboard
 		}
 
 		return $tracked;
+	}
+
+	/**
+	 * Saves the User Consent setting chosen on the onboarding Tutorial step.
+	 *
+	 * It follows the diagnostic data checkbox; the dashboard's Advanced
+	 * settings read the same `gutenkit_user_consent` entry.
+	 *
+	 * @param bool $granted Whether the checkbox was ticked.
+	 * @return void
+	 */
+	private function save_user_consent($granted)
+	{
+		$settings = get_option('gutenkit_settings_list', []);
+
+		if (!isset($settings['gutenkit_user_consent'])) {
+			return;
+		}
+
+		$settings['gutenkit_user_consent']['status'] = $granted ? 'active' : 'inactive';
+		update_option('gutenkit_settings_list', $settings);
 	}
 
 	/**

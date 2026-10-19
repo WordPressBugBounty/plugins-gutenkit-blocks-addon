@@ -81,9 +81,6 @@ class Enqueue {
 		wp_register_style('swiper', GUTENKIT_PLUGIN_URL . 'assets/css/swiper.css', array(), GUTENKIT_PLUGIN_VERSION, 'all');
 		wp_register_script('img-comparison', GUTENKIT_PLUGIN_URL . 'assets/js/img-comparison.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
 		wp_register_style('img-comparison', GUTENKIT_PLUGIN_URL . 'assets/css/img-comparison.css', array(), GUTENKIT_PLUGIN_VERSION, 'all');
-		wp_register_script('scrolly-video', GUTENKIT_PLUGIN_URL . 'assets/js/scrolly-video.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
-		wp_register_script('vanilla-tilt', GUTENKIT_PLUGIN_URL . 'assets/js/vanilla-tilt.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
-		wp_register_script('lenis', GUTENKIT_PLUGIN_URL . 'assets/js/lenis.js', array(), GUTENKIT_PLUGIN_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ]);
 
 		// frontend common css
 		$common_styles_dir = GUTENKIT_PLUGIN_DIR . 'build/gutenkit/frontend-common.asset.php';

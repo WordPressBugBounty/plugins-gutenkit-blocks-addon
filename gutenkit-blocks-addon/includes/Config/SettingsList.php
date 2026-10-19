@@ -21,7 +21,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'title'   => __( 'Google Map', 'gutenkit-blocks-addon' ),
 					'description'   => __( "Integrate Google Maps services to enable location-based features into your website. Use the Google Map API.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
-					'token_link' => 'https://developers.google.com/maps/documentation/javascript/get-api-key',
 					'fields'   => array(
 						'api_key' => array('label' => __( 'API key', 'gutenkit-blocks-addon' ), 'value' => ''),
 					),
@@ -55,7 +54,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'status'          => 'active',
 					'transient_key' => 'gutenkit_facebook_feed',
 					'category' => 'api-integration',
-					'token_link' => 'https://token.wpmet.com/social_token.php?provider=facebook&_for=page&app=2577123062406162&sec=a4656a1cae5e33ff0c18ee38efaa47ac&scope=pages_show_list,pages_read_engagement,pages_manage_engagement,pages_read_user_content'
 				),
 				'instagram'   => array(
 					'slug'    => 'instagram',
@@ -71,7 +69,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'access_token_generator' => true,
 					'status'          => 'active',
 					'category' => 'api-integration',
-					'token_link' => 'https://token.wpmet.com/social_token.php?provider=instagram'
 				),
 				'facebook_review'   => array(
 					'slug'    => 'facebook_review',
@@ -86,7 +83,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'access_token_generator' => true,
 					'status'          => 'inactive',
 					'category' => 'api-integration',
-					'token_link' => 'https://token.wpmet.com/social_token.php?provider=facebook&_for=page'
 				),
 				'yelp'   => array(
 					'slug'    => 'yelp',
@@ -111,7 +107,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'access_token_generator' => true,
 					'status'          => 'inactive',
 					'category' => 'api-integration',
-					'token_link' => 'https://token.wpmet.com/social_token.php?provider=dribbble'
 				),
 				'twitter'   => array(
 					'slug'    => 'twitter',
@@ -126,7 +121,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'access_token_generator' => true,
 					'status'          => 'inactive',
 					'category' => 'api-integration',
-					'token_link' => 'https://token.wpmet.com/index.php?provider=twitter'
 				),
 				'zoom'   => array(
 					'slug'    => 'zoom',
@@ -140,7 +134,6 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'access_token_generator' => true,
 					'status'          => 'inactive',
 					'category' => 'api-integration',
-					'token_link' => 'https://token.wpmet.com/index.php?provider=zoom'
 				),
 				'asset_generation' => array(
 					'slug'    => 'asset_generation',
@@ -174,7 +167,7 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'slug'    => 'gutenkit_user_consent',
 					'title'   => __( 'User Consent', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
-					'status'  => 'active',
+					'status'  => 'inactive',
 					'category' => 'advanced',
 				),
 				'version_control' => array(

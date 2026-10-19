@@ -2566,28 +2566,6 @@ class PostMetaList
                     ],
                 ]
             ],
-            "classManagerCustomCSSSwitch" => [
-                "post_type" => "class-manager",
-                "args" => [
-                    "type"          => "boolean",
-                    "default"       => false,
-                    "single"        => true,
-                    "show_in_rest"  => true,
-                ],
-                "sanitize_callback" => "sanitize_textarea_field",
-            ],
-            "classManagerCustomCSS" => [
-                "post_type" => "class-manager",
-                "args" => [
-                    "type"          => "string",
-                    "single"        => true,
-                    "show_in_rest"  => true,
-                    // Was declared outside "args", so register_post_meta never
-                    // received it and nothing sanitized this at all. Free form css,
-                    // so it is dropped when the saving user cannot publish.
-                    "sanitize_callback" => array('\Gutenkit\Helpers\Utils', 'sanitize_css_on_save'),
-                ],
-            ],
 
             // Sub Class Manager
             "subClassManagerTextColor" => [

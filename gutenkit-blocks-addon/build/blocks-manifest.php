@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 // This file is generated. Do not modify it manually.
 return array(
 	'advanced-accordion' => array(
@@ -17319,7 +17323,10 @@ return array(
 			'goodshare'
 		),
 		'style' => 'file:./style-index.css',
-		'viewScript' => 'goodshare'
+		'viewScript' => array(
+			'file:./frontend.js',
+			'goodshare'
+		)
 	),
 	'team' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',

@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.5.3\n"
+"Project-Id-Version: GutenKit Blocks 2.5.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-06T11:28:33+00:00\n"
+"POT-Creation-Date: 2026-10-19T08:51:05+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -110,7 +110,7 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:117
 #: src/blocks/nav-menu-submenu/settings.js:55
 #: src/blocks/nav-menu-submenu/settings.js:73
-#: src/blocks/offcanvas/settings.js:301
+#: src/blocks/offcanvas/settings.js:289
 #: src/blocks/page-list/settings.js:330
 #: src/blocks/post-grid/settings.js:72
 #: src/blocks/post-tab/settings.js:123
@@ -170,8 +170,8 @@ msgstr ""
 msgid "Popups"
 msgstr ""
 
-#: includes/Admin/Admin.php:253
 #: includes/Admin/Admin.php:254
+#: includes/Admin/Admin.php:255
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/components/Header.js:18
 msgid "License"
@@ -194,22 +194,22 @@ msgid "Unknown cache key."
 msgstr ""
 
 #: includes/Admin/Onboard/Onboard.php:32
-#: includes/Admin/Onboard/Onboard.php:52
-#: includes/Admin/Onboard/Onboard.php:72
-#: includes/Admin/Onboard/Onboard.php:122
+#: includes/Admin/Onboard/Onboard.php:54
+#: includes/Admin/Onboard/Onboard.php:74
+#: includes/Admin/Onboard/Onboard.php:124
 msgid "Onboard data saved successfully."
 msgstr ""
 
-#: includes/Admin/Onboard/Onboard.php:62
-#: includes/Admin/Onboard/Onboard.php:112
+#: includes/Admin/Onboard/Onboard.php:64
+#: includes/Admin/Onboard/Onboard.php:114
 msgid "Failed to send onboard data."
 msgstr ""
 
-#: includes/Admin/Onboard/Onboard.php:93
+#: includes/Admin/Onboard/Onboard.php:95
 msgid "Onboard notice dismissed."
 msgstr ""
 
-#: includes/Admin/Onboard/Onboard.php:103
+#: includes/Admin/Onboard/Onboard.php:105
 msgid "No email address available to subscribe."
 msgstr ""
 
@@ -228,160 +228,160 @@ msgstr ""
 msgid "Integrate Google Maps services to enable location-based features into your website. Use the Google Map API."
 msgstr ""
 
-#: includes/Config/SettingsList.php:26
+#: includes/Config/SettingsList.php:25
 msgid "API key"
 msgstr ""
 
-#: includes/Config/SettingsList.php:34
+#: includes/Config/SettingsList.php:33
 msgid "Mailchimp"
 msgstr ""
 
-#: includes/Config/SettingsList.php:35
+#: includes/Config/SettingsList.php:34
 msgid "Use MailChimp API key to securely integrate your MailChimp account with our services."
 msgstr ""
 
-#: includes/Config/SettingsList.php:38
+#: includes/Config/SettingsList.php:37
 msgid "API Key"
 msgstr ""
 
-#: includes/Config/SettingsList.php:45
+#: includes/Config/SettingsList.php:44
 msgid "Facebook Page Feed"
 msgstr ""
 
-#: includes/Config/SettingsList.php:46
+#: includes/Config/SettingsList.php:45
 msgid "To show Facebook page feed on your website, enter your unique Page ID and Page Access Token to connect your page."
 msgstr ""
 
-#: includes/Config/SettingsList.php:49
-#: includes/Config/SettingsList.php:82
+#: includes/Config/SettingsList.php:48
+#: includes/Config/SettingsList.php:79
 msgid "Page ID"
 msgstr ""
 
-#: includes/Config/SettingsList.php:50
-#: includes/Config/SettingsList.php:83
+#: includes/Config/SettingsList.php:49
+#: includes/Config/SettingsList.php:80
 msgid "Page Access Token"
 msgstr ""
 
-#: includes/Config/SettingsList.php:51
+#: includes/Config/SettingsList.php:50
 msgid "Expiration Time In Hours"
 msgstr ""
 
-#: includes/Config/SettingsList.php:62
+#: includes/Config/SettingsList.php:60
 msgid "Instagram"
 msgstr ""
 
-#: includes/Config/SettingsList.php:63
+#: includes/Config/SettingsList.php:61
 msgid "To Showcase Instagram Feed on your website, enter User ID, Access Token, Expiry Date, & Generation Date of the access token."
 msgstr ""
 
-#: includes/Config/SettingsList.php:66
+#: includes/Config/SettingsList.php:64
 msgid "User ID"
 msgstr ""
 
-#: includes/Config/SettingsList.php:67
-#: includes/Config/SettingsList.php:108
-#: includes/Config/SettingsList.php:123
+#: includes/Config/SettingsList.php:65
+#: includes/Config/SettingsList.php:104
+#: includes/Config/SettingsList.php:118
 msgid "Access Token"
 msgstr ""
 
-#: includes/Config/SettingsList.php:68
+#: includes/Config/SettingsList.php:66
 msgid "Token Expiry Time"
 msgstr ""
 
-#: includes/Config/SettingsList.php:78
+#: includes/Config/SettingsList.php:75
 msgid "Facebook Page Review"
 msgstr ""
 
-#: includes/Config/SettingsList.php:79
+#: includes/Config/SettingsList.php:76
 msgid "To showcase reviews from your Facebook page, enter your unique Page ID and Page Access Token to connect your page."
 msgstr ""
 
-#: includes/Config/SettingsList.php:93
+#: includes/Config/SettingsList.php:89
 msgid "Yelp"
 msgstr ""
 
-#: includes/Config/SettingsList.php:94
+#: includes/Config/SettingsList.php:90
 msgid "Use your Yelp Business Page ID to manage your online reputation such as reviews, ratings, and business details."
 msgstr ""
 
-#: includes/Config/SettingsList.php:97
+#: includes/Config/SettingsList.php:93
 msgid "Yelp Page"
 msgstr ""
 
-#: includes/Config/SettingsList.php:104
+#: includes/Config/SettingsList.php:100
 msgid "Dribble User Data"
 msgstr ""
 
-#: includes/Config/SettingsList.php:105
+#: includes/Config/SettingsList.php:101
 msgid "Enter Access Token to enable Dribbble services like viewing and interacting with your design work."
 msgstr ""
 
-#: includes/Config/SettingsList.php:118
+#: includes/Config/SettingsList.php:113
 #: build/1935.js:1
 #: src/blocks/social-share/settings.js:190
 msgid "Twitter"
 msgstr ""
 
-#: includes/Config/SettingsList.php:119
+#: includes/Config/SettingsList.php:114
 msgid "Connect your Twitter handle and show your tweets on your website. Use your Twitter username and Access Token."
 msgstr ""
 
-#: includes/Config/SettingsList.php:122
+#: includes/Config/SettingsList.php:117
 msgid "Username"
 msgstr ""
 
-#: includes/Config/SettingsList.php:133
+#: includes/Config/SettingsList.php:127
 #: build/3891.js:1
 #: src/blocks/advanced-image/settings.js:608
 #: src/blocks/advanced-image/settings.js:740
 msgid "Zoom"
 msgstr ""
 
-#: includes/Config/SettingsList.php:134
+#: includes/Config/SettingsList.php:128
 msgid "Use your Zoom API Key and Secret Key to facilitate scheduling, managing, and hosting Zoom meetings."
 msgstr ""
 
-#: includes/Config/SettingsList.php:137
+#: includes/Config/SettingsList.php:131
 msgid "Api key"
 msgstr ""
 
-#: includes/Config/SettingsList.php:138
+#: includes/Config/SettingsList.php:132
 msgid "Secret Key"
 msgstr ""
 
-#: includes/Config/SettingsList.php:147
+#: includes/Config/SettingsList.php:140
 msgid "Asset Generation"
 msgstr ""
 
-#: includes/Config/SettingsList.php:154
+#: includes/Config/SettingsList.php:147
 msgid "Unfiltered Upload"
 msgstr ""
 
-#: includes/Config/SettingsList.php:161
+#: includes/Config/SettingsList.php:154
 msgid "Remote Image"
 msgstr ""
 
-#: includes/Config/SettingsList.php:168
+#: includes/Config/SettingsList.php:161
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/assets/js/advanced-list.js:18
 msgid "Load Google Fonts locally"
 msgstr ""
 
-#: includes/Config/SettingsList.php:175
+#: includes/Config/SettingsList.php:168
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/assets/js/advanced-list.js:23
 msgid "User Consent"
 msgstr ""
 
-#: includes/Config/SettingsList.php:182
+#: includes/Config/SettingsList.php:175
 msgid "Version Control"
 msgstr ""
 
-#: includes/Config/SettingsList.php:190
+#: includes/Config/SettingsList.php:183
 msgid "Transition"
 msgstr ""
 
-#: includes/Config/SettingsList.php:201
+#: includes/Config/SettingsList.php:194
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/assets/js/performance-list.js:8
 msgid "Image Lazy Loading"
@@ -453,7 +453,7 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:196
 #: src/blocks/image-comparison/settings.js:147
 #: src/blocks/nav-menu/settings.js:265
-#: src/blocks/offcanvas/settings.js:276
+#: src/blocks/offcanvas/settings.js:84
 #: src/blocks/pricing-table/settings.js:113
 #: src/blocks/video/settings.js:358
 #: src/gkit-components/helper/control-options.js:53
@@ -776,7 +776,7 @@ msgstr ""
 #: src/blocks/nav-menu-item/settings.js:45
 #: src/blocks/nav-menu-item/settings.js:59
 #: src/blocks/nav-menu/settings.js:70
-#: src/blocks/offcanvas/settings.js:64
+#: src/blocks/offcanvas/settings.js:100
 #: src/blocks/page-list/settings.js:112
 #: src/blocks/page-list/settings.js:133
 #: src/blocks/post-grid/settings.js:55
@@ -864,7 +864,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:98
 #: src/blocks/nav-menu-submenu/settings.js:59
 #: src/blocks/nav-menu/settings.js:74
-#: src/blocks/offcanvas/settings.js:68
+#: src/blocks/offcanvas/settings.js:104
 #: src/blocks/page-list/settings.js:116
 #: src/blocks/post-grid/settings.js:59
 #: src/blocks/post-tab/settings.js:112
@@ -877,7 +877,7 @@ msgstr ""
 #: src/blocks/video/settings.js:56
 #: src/gkit-components/components/suspense/index.js:14
 #: src/gkit-components/components/typography/index.js:229
-#: src/modules/class-manager/components/class-style-manager.js:228
+#: src/modules/class-manager/components/class-style-manager.js:232
 #: src/modules/page-settings/editor.js:105
 msgid "Style"
 msgstr ""
@@ -951,7 +951,7 @@ msgstr ""
 #: src/blocks/nav-menu-item/settings.js:49
 #: src/blocks/nav-menu-submenu/settings.js:63
 #: src/blocks/nav-menu/settings.js:78
-#: src/blocks/offcanvas/settings.js:72
+#: src/blocks/offcanvas/settings.js:108
 #: src/blocks/page-list/settings.js:120
 #: src/blocks/post-grid/settings.js:63
 #: src/blocks/post-tab/settings.js:116
@@ -964,7 +964,7 @@ msgstr ""
 #: src/blocks/video/settings.js:60
 #: src/dashboard/assets/js/setting-list.js:12
 #: src/gkit-components/components/suspense/index.js:15
-#: src/modules/class-manager/components/class-style-manager.js:232
+#: src/modules/class-manager/components/class-style-manager.js:236
 #: src/modules/page-settings/editor.js:109
 msgid "Advanced"
 msgstr ""
@@ -1017,8 +1017,8 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:270
 #: src/blocks/mail-chimp/settings.js:337
 #: src/blocks/mail-chimp/settings.js:611
-#: src/blocks/offcanvas/settings.js:109
-#: src/blocks/offcanvas/settings.js:176
+#: src/blocks/offcanvas/settings.js:145
+#: src/blocks/offcanvas/settings.js:212
 #: src/blocks/page-list/settings.js:201
 #: src/blocks/page-list/settings.js:696
 #: src/blocks/pricing-table/settings.js:118
@@ -1103,8 +1103,8 @@ msgstr ""
 #: build/8606.js:1
 #: src/blocks/advanced-tab/settings.js:90
 #: src/blocks/icon-box/settings.js:127
-#: src/blocks/offcanvas/settings.js:129
-#: src/blocks/offcanvas/settings.js:201
+#: src/blocks/offcanvas/settings.js:165
+#: src/blocks/offcanvas/settings.js:237
 #: src/blocks/social-icons/settings.js:164
 #: src/blocks/social-share/settings.js:178
 msgid "Choose Icon"
@@ -1132,9 +1132,9 @@ msgstr ""
 #: src/blocks/icon-box/settings.js:134
 #: src/blocks/image-box/settings.js:235
 #: src/blocks/nav-menu/settings.js:678
-#: src/blocks/offcanvas/settings.js:151
-#: src/blocks/offcanvas/settings.js:221
-#: src/blocks/offcanvas/settings.js:608
+#: src/blocks/offcanvas/settings.js:187
+#: src/blocks/offcanvas/settings.js:257
+#: src/blocks/offcanvas/settings.js:596
 #: src/blocks/pricing-table/settings.js:282
 #: src/blocks/social-icons/settings.js:113
 #: src/blocks/social-share/settings.js:123
@@ -1166,8 +1166,8 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:98
 #: src/blocks/image-comparison/settings.js:202
 #: src/blocks/mail-chimp/settings.js:347
-#: src/blocks/offcanvas/settings.js:158
-#: src/blocks/offcanvas/settings.js:228
+#: src/blocks/offcanvas/settings.js:194
+#: src/blocks/offcanvas/settings.js:264
 #: src/blocks/pricing-table/settings.js:295
 #: src/blocks/pricing-table/settings.js:1532
 #: src/blocks/social-icons/settings.js:117
@@ -1200,8 +1200,8 @@ msgstr ""
 #: src/blocks/image-comparison/settings.js:80
 #: src/blocks/image-comparison/settings.js:198
 #: src/blocks/mail-chimp/settings.js:346
-#: src/blocks/offcanvas/settings.js:154
-#: src/blocks/offcanvas/settings.js:224
+#: src/blocks/offcanvas/settings.js:190
+#: src/blocks/offcanvas/settings.js:260
 #: src/blocks/pricing-table/settings.js:291
 #: src/blocks/pricing-table/settings.js:1527
 #: src/blocks/social-icons/settings.js:116
@@ -1309,9 +1309,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:808
 #: src/blocks/nav-menu-submenu/settings.js:124
 #: src/blocks/nav-menu/settings.js:681
-#: src/blocks/offcanvas/settings.js:332
-#: src/blocks/offcanvas/settings.js:365
-#: src/blocks/offcanvas/settings.js:440
+#: src/blocks/offcanvas/settings.js:320
+#: src/blocks/offcanvas/settings.js:353
+#: src/blocks/offcanvas/settings.js:428
 #: src/blocks/page-list/settings.js:623
 #: src/blocks/page-list/settings.js:707
 #: src/blocks/page-list/settings.js:1179
@@ -1333,8 +1333,8 @@ msgstr ""
 #: src/blocks/video/settings.js:518
 #: src/blocks/video/settings.js:1067
 #: src/gkit-components/components/swiper/dot.js:154
-#: src/modules/class-manager/components/class-style-manager.js:256
-#: src/modules/class-manager/components/class-style-manager.js:934
+#: src/modules/class-manager/components/class-style-manager.js:260
+#: src/modules/class-manager/components/class-style-manager.js:938
 msgid "Left"
 msgstr ""
 
@@ -1407,9 +1407,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:813
 #: src/blocks/nav-menu-submenu/settings.js:134
 #: src/blocks/nav-menu/settings.js:691
-#: src/blocks/offcanvas/settings.js:348
-#: src/blocks/offcanvas/settings.js:370
-#: src/blocks/offcanvas/settings.js:450
+#: src/blocks/offcanvas/settings.js:336
+#: src/blocks/offcanvas/settings.js:358
+#: src/blocks/offcanvas/settings.js:438
 #: src/blocks/page-list/settings.js:633
 #: src/blocks/page-list/settings.js:717
 #: src/blocks/page-list/settings.js:1184
@@ -1430,8 +1430,8 @@ msgstr ""
 #: src/blocks/video/settings.js:520
 #: src/blocks/video/settings.js:1068
 #: src/gkit-components/components/swiper/dot.js:164
-#: src/modules/class-manager/components/class-style-manager.js:266
-#: src/modules/class-manager/components/class-style-manager.js:939
+#: src/modules/class-manager/components/class-style-manager.js:270
+#: src/modules/class-manager/components/class-style-manager.js:943
 msgid "Right"
 msgstr ""
 
@@ -1473,7 +1473,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:291
 #: src/blocks/mail-chimp/settings.js:683
 #: src/blocks/mail-chimp/settings.js:852
-#: src/blocks/offcanvas/settings.js:337
+#: src/blocks/offcanvas/settings.js:325
 #: src/blocks/page-list/settings.js:712
 #: src/blocks/page-list/settings.js:737
 #: src/blocks/page-list/settings.js:1203
@@ -1486,7 +1486,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1411
 #: src/blocks/testimonial/settings.js:1431
 #: src/gkit-components/components/dual-slider/index.js:44
-#: src/modules/class-manager/components/class-style-manager.js:900
+#: src/modules/class-manager/components/class-style-manager.js:904
 msgid "Top"
 msgstr ""
 
@@ -1520,7 +1520,7 @@ msgstr ""
 #: src/blocks/image-accordion/settings.js:293
 #: src/blocks/mail-chimp/settings.js:688
 #: src/blocks/mail-chimp/settings.js:857
-#: src/blocks/offcanvas/settings.js:342
+#: src/blocks/offcanvas/settings.js:330
 #: src/blocks/page-list/settings.js:747
 #: src/blocks/page-list/settings.js:1213
 #: src/blocks/post-tab/settings.js:293
@@ -1531,7 +1531,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1412
 #: src/blocks/testimonial/settings.js:1432
 #: src/gkit-components/components/dual-slider/index.js:43
-#: src/modules/class-manager/components/class-style-manager.js:905
+#: src/modules/class-manager/components/class-style-manager.js:909
 msgid "Bottom"
 msgstr ""
 
@@ -1626,8 +1626,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:236
 #: src/blocks/nav-menu/settings.js:369
 #: src/blocks/nav-menu/settings.js:686
-#: src/blocks/offcanvas/settings.js:445
-#: src/blocks/offcanvas/settings.js:1210
+#: src/blocks/offcanvas/settings.js:433
+#: src/blocks/offcanvas/settings.js:1198
 #: src/blocks/page-list/settings.js:628
 #: src/blocks/page-list/settings.js:1208
 #: src/blocks/post-tab/settings.js:278
@@ -1648,9 +1648,9 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1471
 #: src/blocks/video/settings.js:519
 #: src/gkit-components/components/swiper/dot.js:159
-#: src/modules/class-manager/components/class-style-manager.js:261
-#: src/modules/class-manager/components/class-style-manager.js:767
-#: src/modules/class-manager/components/class-style-manager.js:799
+#: src/modules/class-manager/components/class-style-manager.js:265
+#: src/modules/class-manager/components/class-style-manager.js:771
+#: src/modules/class-manager/components/class-style-manager.js:803
 msgid "Center"
 msgstr ""
 
@@ -1868,7 +1868,7 @@ msgstr ""
 #: src/blocks/image-box/settings.js:182
 #: src/blocks/mail-chimp/settings.js:762
 #: src/blocks/nav-menu-submenu/settings.js:121
-#: src/blocks/offcanvas/settings.js:437
+#: src/blocks/offcanvas/settings.js:425
 #: src/blocks/page-list/settings.js:333
 #: src/blocks/page-list/settings.js:617
 #: src/blocks/page-list/settings.js:700
@@ -2001,8 +2001,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:657
 #: src/blocks/nav-menu/settings.js:929
 #: src/blocks/nav-menu/settings.js:1192
-#: src/blocks/offcanvas/settings.js:920
-#: src/blocks/offcanvas/settings.js:1154
+#: src/blocks/offcanvas/settings.js:908
+#: src/blocks/offcanvas/settings.js:1142
 #: src/blocks/page-list/settings.js:898
 #: src/blocks/page-list/settings.js:976
 #: src/blocks/page-list/settings.js:1077
@@ -2026,7 +2026,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1384
 #: src/blocks/testimonial/settings.js:1527
 #: src/global/components/advanced-control.js:45
-#: src/modules/class-manager/components/class-style-manager.js:507
+#: src/modules/class-manager/components/class-style-manager.js:511
 #: src/modules/page-settings/editor.js:120
 msgid "Margin"
 msgstr ""
@@ -2145,10 +2145,10 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:726
 #: src/blocks/mail-chimp/settings.js:1020
 #: src/blocks/mail-chimp/settings.js:1037
-#: src/blocks/offcanvas/settings.js:747
-#: src/blocks/offcanvas/settings.js:808
-#: src/blocks/offcanvas/settings.js:979
-#: src/blocks/offcanvas/settings.js:1042
+#: src/blocks/offcanvas/settings.js:735
+#: src/blocks/offcanvas/settings.js:796
+#: src/blocks/offcanvas/settings.js:967
+#: src/blocks/offcanvas/settings.js:1030
 #: src/blocks/page-list/settings.js:954
 #: src/blocks/page-list/settings.js:1054
 #: src/blocks/post-grid/settings.js:181
@@ -2201,8 +2201,8 @@ msgstr ""
 #: src/gkit-components/components/swiper/arrow.js:333
 #: src/gkit-components/components/swiper/arrow.js:359
 #: src/gkit-components/components/text-stroke/index.js:44
-#: src/modules/class-manager/components/class-style-manager.js:291
-#: src/modules/class-manager/components/class-style-manager.js:320
+#: src/modules/class-manager/components/class-style-manager.js:295
+#: src/modules/class-manager/components/class-style-manager.js:324
 msgid "Color"
 msgstr ""
 
@@ -2333,8 +2333,8 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:1199
 #: src/blocks/nav-menu-submenu/settings.js:171
 #: src/blocks/nav-menu/settings.js:467
-#: src/blocks/offcanvas/settings.js:498
-#: src/blocks/offcanvas/settings.js:670
+#: src/blocks/offcanvas/settings.js:486
+#: src/blocks/offcanvas/settings.js:658
 #: src/blocks/page-list/settings.js:1029
 #: src/blocks/page-list/settings.js:1044
 #: src/blocks/page-list/settings.js:1100
@@ -2365,7 +2365,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:1377
 #: src/blocks/video/settings.js:596
 #: src/gkit-components/components/typography/index.js:68
-#: src/modules/class-manager/components/class-style-manager.js:242
+#: src/modules/class-manager/components/class-style-manager.js:246
 msgid "Typography"
 msgstr ""
 
@@ -2438,7 +2438,7 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:670
 #: src/blocks/pricing-table/settings.js:1475
 #: src/blocks/pricing-table/settings.js:1547
-#: src/modules/class-manager/components/class-style-manager.js:896
+#: src/modules/class-manager/components/class-style-manager.js:900
 msgid "Vertical Position"
 msgstr ""
 
@@ -2507,8 +2507,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:738
 #: src/blocks/nav-menu/settings.js:947
 #: src/blocks/nav-menu/settings.js:1116
-#: src/blocks/offcanvas/settings.js:562
-#: src/blocks/offcanvas/settings.js:1233
+#: src/blocks/offcanvas/settings.js:550
+#: src/blocks/offcanvas/settings.js:1221
 #: src/blocks/page-list/settings.js:405
 #: src/blocks/post-tab/settings.js:574
 #: src/blocks/pricing-table/settings.js:690
@@ -2526,9 +2526,9 @@ msgstr ""
 #: src/gkit-components/components/swiper/dot.js:377
 #: src/gkit-components/components/text-stroke/index.js:29
 #: src/global/components/advanced-control.js:62
-#: src/modules/class-manager/components/class-style-manager.js:334
-#: src/modules/class-manager/components/class-style-manager.js:518
-#: src/modules/class-manager/components/class-style-manager.js:536
+#: src/modules/class-manager/components/class-style-manager.js:338
+#: src/modules/class-manager/components/class-style-manager.js:522
+#: src/modules/class-manager/components/class-style-manager.js:540
 msgid "Width"
 msgstr ""
 
@@ -2576,8 +2576,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:772
 #: src/blocks/nav-menu/settings.js:981
 #: src/blocks/nav-menu/settings.js:1150
-#: src/blocks/offcanvas/settings.js:585
-#: src/blocks/offcanvas/settings.js:1246
+#: src/blocks/offcanvas/settings.js:573
+#: src/blocks/offcanvas/settings.js:1234
 #: src/blocks/post-grid/settings.js:125
 #: src/blocks/post-tab/settings.js:613
 #: src/blocks/pricing-table/settings.js:705
@@ -2667,8 +2667,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:475
 #: src/blocks/nav-menu/settings.js:827
 #: src/blocks/nav-menu/settings.js:1046
-#: src/blocks/offcanvas/settings.js:734
-#: src/blocks/offcanvas/settings.js:966
+#: src/blocks/offcanvas/settings.js:722
+#: src/blocks/offcanvas/settings.js:954
 #: src/blocks/page-list/settings.js:547
 #: src/blocks/page-list/settings.js:773
 #: src/blocks/post-tab/settings.js:39
@@ -2698,7 +2698,7 @@ msgstr ""
 #: src/gkit-components/components/typography/index.js:257
 #: src/global/components/advanced-control.js:238
 #: src/global/components/advanced-control.js:303
-#: src/modules/class-manager/components/class-style-manager.js:452
+#: src/modules/class-manager/components/class-style-manager.js:456
 msgid "Normal"
 msgstr ""
 
@@ -2777,8 +2777,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:479
 #: src/blocks/nav-menu/settings.js:831
 #: src/blocks/nav-menu/settings.js:1050
-#: src/blocks/offcanvas/settings.js:738
-#: src/blocks/offcanvas/settings.js:970
+#: src/blocks/offcanvas/settings.js:726
+#: src/blocks/offcanvas/settings.js:958
 #: src/blocks/page-list/settings.js:554
 #: src/blocks/page-list/settings.js:780
 #: src/blocks/post-tab/settings.js:56
@@ -2896,11 +2896,11 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:867
 #: src/blocks/nav-menu/settings.js:1061
 #: src/blocks/nav-menu/settings.js:1086
-#: src/blocks/offcanvas/settings.js:763
-#: src/blocks/offcanvas/settings.js:827
-#: src/blocks/offcanvas/settings.js:998
-#: src/blocks/offcanvas/settings.js:1061
-#: src/blocks/offcanvas/settings.js:1275
+#: src/blocks/offcanvas/settings.js:751
+#: src/blocks/offcanvas/settings.js:815
+#: src/blocks/offcanvas/settings.js:986
+#: src/blocks/offcanvas/settings.js:1049
+#: src/blocks/offcanvas/settings.js:1263
 #: src/blocks/progress-bar/settings.js:176
 #: src/blocks/social-icons/settings.js:358
 #: src/blocks/social-icons/settings.js:417
@@ -2925,7 +2925,7 @@ msgstr ""
 #: src/global/components/advanced-control.js:232
 #: src/global/components/advanced-control.js:250
 #: src/global/components/advanced-control.js:266
-#: src/modules/class-manager/components/class-style-manager.js:308
+#: src/modules/class-manager/components/class-style-manager.js:312
 #: src/modules/page-settings/editor.js:134
 msgid "Background"
 msgstr ""
@@ -3050,10 +3050,10 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:508
 #: src/blocks/nav-menu/settings.js:856
 #: src/blocks/nav-menu/settings.js:1075
-#: src/blocks/offcanvas/settings.js:784
-#: src/blocks/offcanvas/settings.js:848
-#: src/blocks/offcanvas/settings.js:1018
-#: src/blocks/offcanvas/settings.js:1082
+#: src/blocks/offcanvas/settings.js:772
+#: src/blocks/offcanvas/settings.js:836
+#: src/blocks/offcanvas/settings.js:1006
+#: src/blocks/offcanvas/settings.js:1070
 #: src/blocks/page-list/settings.js:503
 #: src/blocks/post-tab/settings.js:308
 #: src/blocks/post-tab/settings.js:420
@@ -3098,8 +3098,8 @@ msgstr ""
 #: src/global/components/advanced-control.js:297
 #: src/global/components/advanced-control.js:316
 #: src/global/components/advanced-control.js:340
-#: src/modules/class-manager/components/class-style-manager.js:461
-#: src/modules/class-manager/components/class-style-manager.js:464
+#: src/modules/class-manager/components/class-style-manager.js:465
+#: src/modules/class-manager/components/class-style-manager.js:468
 msgid "Border"
 msgstr ""
 
@@ -3216,8 +3216,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:414
 #: src/blocks/nav-menu/settings.js:796
 #: src/blocks/nav-menu/settings.js:1015
-#: src/blocks/offcanvas/settings.js:874
-#: src/blocks/offcanvas/settings.js:1108
+#: src/blocks/offcanvas/settings.js:862
+#: src/blocks/offcanvas/settings.js:1096
 #: src/blocks/page-list/settings.js:513
 #: src/blocks/page-list/settings.js:1150
 #: src/blocks/post-tab/settings.js:427
@@ -3255,7 +3255,7 @@ msgstr ""
 #: src/gkit-components/components/swiper/dot.js:288
 #: src/global/components/advanced-control.js:322
 #: src/global/components/advanced-control.js:346
-#: src/modules/class-manager/components/class-style-manager.js:473
+#: src/modules/class-manager/components/class-style-manager.js:477
 msgid "Border Radius"
 msgstr ""
 
@@ -3332,9 +3332,9 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:589
 #: src/blocks/mail-chimp/settings.js:938
 #: src/blocks/mail-chimp/settings.js:969
-#: src/blocks/offcanvas/settings.js:943
-#: src/blocks/offcanvas/settings.js:1177
-#: src/blocks/offcanvas/settings.js:1310
+#: src/blocks/offcanvas/settings.js:931
+#: src/blocks/offcanvas/settings.js:1165
+#: src/blocks/offcanvas/settings.js:1298
 #: src/blocks/social-icons/settings.js:387
 #: src/blocks/social-icons/settings.js:446
 #: src/blocks/social-share/settings.js:455
@@ -3355,7 +3355,7 @@ msgstr ""
 #: src/gkit-components/components/swiper/arrow.js:375
 #: src/global/components/advanced-control.js:328
 #: src/global/components/advanced-control.js:352
-#: src/modules/class-manager/components/class-style-manager.js:481
+#: src/modules/class-manager/components/class-style-manager.js:485
 msgid "Box Shadow"
 msgstr ""
 
@@ -3445,9 +3445,9 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:396
 #: src/blocks/nav-menu/settings.js:637
 #: src/blocks/nav-menu/settings.js:1174
-#: src/blocks/offcanvas/settings.js:897
-#: src/blocks/offcanvas/settings.js:1131
-#: src/blocks/offcanvas/settings.js:1290
+#: src/blocks/offcanvas/settings.js:885
+#: src/blocks/offcanvas/settings.js:1119
+#: src/blocks/offcanvas/settings.js:1278
 #: src/blocks/page-list/settings.js:483
 #: src/blocks/page-list/settings.js:876
 #: src/blocks/page-list/settings.js:1129
@@ -3474,7 +3474,7 @@ msgstr ""
 #: src/blocks/video/settings.js:924
 #: src/blocks/video/settings.js:1040
 #: src/global/components/advanced-control.js:52
-#: src/modules/class-manager/components/class-style-manager.js:498
+#: src/modules/class-manager/components/class-style-manager.js:502
 #: src/modules/page-settings/editor.js:127
 msgid "Padding"
 msgstr ""
@@ -3507,8 +3507,8 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:1004
 #: src/blocks/nav-menu/settings.js:704
 #: src/blocks/nav-menu/settings.js:895
-#: src/blocks/offcanvas/settings.js:508
-#: src/blocks/offcanvas/settings.js:680
+#: src/blocks/offcanvas/settings.js:496
+#: src/blocks/offcanvas/settings.js:668
 #: src/blocks/pricing-table/settings.js:2020
 #: src/blocks/pricing-table/settings.js:2149
 #: src/blocks/progress-bar/settings.js:323
@@ -3534,8 +3534,8 @@ msgstr ""
 #: src/blocks/header-info/settings.js:176
 #: src/blocks/icon-box/settings.js:889
 #: src/blocks/image-box/settings.js:1196
-#: src/blocks/offcanvas/settings.js:531
-#: src/blocks/offcanvas/settings.js:703
+#: src/blocks/offcanvas/settings.js:519
+#: src/blocks/offcanvas/settings.js:691
 #: src/blocks/pricing-table/settings.js:308
 msgid "Icon Spacing"
 msgstr ""
@@ -3586,7 +3586,7 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:1443
 #: src/blocks/progress-bar/settings.js:264
 #: src/blocks/progress-bar/settings.js:295
-#: src/modules/class-manager/components/class-style-manager.js:294
+#: src/modules/class-manager/components/class-style-manager.js:298
 msgid "Text Color"
 msgstr ""
 
@@ -3647,7 +3647,7 @@ msgstr ""
 #: src/blocks/testimonial/settings.js:71
 #: src/blocks/testimonial/settings.js:559
 #: src/global/components/advanced-control.js:42
-#: src/modules/class-manager/components/class-style-manager.js:494
+#: src/modules/class-manager/components/class-style-manager.js:498
 msgid "Layout"
 msgstr ""
 
@@ -3674,7 +3674,7 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:226
 #: src/blocks/image-box/settings.js:72
 #: src/blocks/image-comparison/settings.js:59
-#: src/blocks/offcanvas/settings.js:242
+#: src/blocks/offcanvas/settings.js:278
 #: src/blocks/progress-bar/settings.js:58
 #: src/blocks/social-icons/settings.js:67
 #: src/blocks/social-share/settings.js:71
@@ -3828,7 +3828,7 @@ msgstr ""
 #: src/blocks/dual-button/settings.js:175
 #: src/blocks/dual-button/settings.js:232
 #: src/blocks/header-info/settings.js:87
-#: src/blocks/nav-menu-item/edit.js:144
+#: src/blocks/nav-menu-item/edit.js:146
 #: src/blocks/page-list/settings.js:236
 #: src/blocks/pricing-table/settings.js:248
 #: src/blocks/social-icons/settings.js:172
@@ -3901,8 +3901,8 @@ msgstr ""
 #: src/blocks/countdown-timer/settings.js:214
 #: src/blocks/page-list/settings.js:456
 #: src/blocks/testimonial/settings.js:562
-#: src/modules/class-manager/components/class-style-manager.js:695
-#: src/modules/class-manager/components/class-style-manager.js:827
+#: src/modules/class-manager/components/class-style-manager.js:699
+#: src/modules/class-manager/components/class-style-manager.js:831
 msgid "Column Gap"
 msgstr ""
 
@@ -4230,11 +4230,11 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:699
 #: src/blocks/mail-chimp/settings.js:824
 #: src/blocks/mail-chimp/settings.js:868
-#: src/blocks/offcanvas/settings.js:385
+#: src/blocks/offcanvas/settings.js:373
 #: src/global/components/advanced-control.js:161
 #: src/global/components/advanced-control.js:204
-#: src/modules/class-manager/components/class-style-manager.js:917
-#: src/modules/class-manager/components/class-style-manager.js:949
+#: src/modules/class-manager/components/class-style-manager.js:921
+#: src/modules/class-manager/components/class-style-manager.js:953
 msgid "Offset"
 msgstr ""
 
@@ -4367,10 +4367,10 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:60
 #: src/blocks/advanced-paragraph/settings.js:97
 #: src/blocks/mail-chimp/settings.js:142
-#: src/blocks/offcanvas/settings.js:113
-#: src/blocks/offcanvas/settings.js:141
-#: src/blocks/offcanvas/settings.js:180
-#: src/blocks/offcanvas/settings.js:211
+#: src/blocks/offcanvas/settings.js:149
+#: src/blocks/offcanvas/settings.js:177
+#: src/blocks/offcanvas/settings.js:216
+#: src/blocks/offcanvas/settings.js:247
 #: src/blocks/social-icons/settings.js:78
 #: src/blocks/social-share/settings.js:83
 #: src/blocks/video/settings.js:204
@@ -4427,7 +4427,7 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:179
 #: src/blocks/nav-menu/settings.js:231
 #: src/blocks/nav-menu/settings.js:364
-#: src/blocks/offcanvas/settings.js:1205
+#: src/blocks/offcanvas/settings.js:1193
 #: src/blocks/social-icons/settings.js:145
 #: src/blocks/social-share/settings.js:158
 msgid "Start"
@@ -4450,7 +4450,7 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:189
 #: src/blocks/nav-menu/settings.js:241
 #: src/blocks/nav-menu/settings.js:374
-#: src/blocks/offcanvas/settings.js:1215
+#: src/blocks/offcanvas/settings.js:1203
 #: src/blocks/social-icons/settings.js:147
 #: src/blocks/social-share/settings.js:160
 msgid "End"
@@ -4662,7 +4662,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/social-icons/settings.js:215
 #: src/blocks/social-share/settings.js:266
-#: src/modules/class-manager/components/class-style-manager.js:583
+#: src/modules/class-manager/components/class-style-manager.js:587
 msgid "Display"
 msgstr ""
 
@@ -4677,7 +4677,7 @@ msgstr ""
 #: src/blocks/social-icons/settings.js:218
 #: src/blocks/social-share/settings.js:268
 #: src/blocks/video/settings.js:156
-#: src/modules/class-manager/components/class-style-manager.js:592
+#: src/modules/class-manager/components/class-style-manager.js:596
 msgid "Inline"
 msgstr ""
 
@@ -4688,7 +4688,7 @@ msgstr ""
 #: src/blocks/header-info/settings.js:111
 #: src/blocks/social-icons/settings.js:219
 #: src/blocks/social-share/settings.js:269
-#: src/modules/class-manager/components/class-style-manager.js:588
+#: src/modules/class-manager/components/class-style-manager.js:592
 msgid "Block"
 msgstr ""
 
@@ -4725,7 +4725,7 @@ msgstr ""
 #: src/blocks/social-share/settings.js:462
 #: src/blocks/social-share/settings.js:521
 #: src/blocks/video/settings.js:859
-#: src/modules/class-manager/components/class-style-manager.js:282
+#: src/modules/class-manager/components/class-style-manager.js:286
 msgid "Text Shadow"
 msgstr ""
 
@@ -4734,7 +4734,7 @@ msgstr ""
 #: build/8606.js:1
 #: src/blocks/container/settings.js:500
 #: src/blocks/heading/settings.js:69
-#: src/blocks/offcanvas/settings.js:418
+#: src/blocks/offcanvas/settings.js:406
 msgid "HTML Tag"
 msgstr ""
 
@@ -4821,7 +4821,7 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:334
 #: src/blocks/blog-posts/settings.js:914
 #: src/blocks/heading/settings.js:182
-#: src/modules/class-manager/components/class-style-manager.js:566
+#: src/modules/class-manager/components/class-style-manager.js:570
 msgid "Max Width"
 msgstr ""
 
@@ -4887,7 +4887,7 @@ msgstr ""
 #: src/gkit-components/components/box-shadow/index.js:179
 #: src/gkit-components/helper/control-options.js:54
 #: src/global/components/advanced-control.js:68
-#: src/modules/class-manager/components/class-style-manager.js:524
+#: src/modules/class-manager/components/class-style-manager.js:528
 msgid "Custom"
 msgstr ""
 
@@ -5038,8 +5038,8 @@ msgstr ""
 #: src/global/components/advanced-control.js:125
 #: src/global/components/advanced-control.js:127
 #: src/modules/class-manager/components/box-shadow-settings.js:76
-#: src/modules/class-manager/components/class-style-manager.js:877
-#: src/modules/class-manager/components/class-style-manager.js:880
+#: src/modules/class-manager/components/class-style-manager.js:881
+#: src/modules/class-manager/components/class-style-manager.js:884
 msgid "Position"
 msgstr ""
 
@@ -5101,7 +5101,7 @@ msgstr ""
 #: build/3060.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/post-grid/settings.js:122
-#: src/modules/class-manager/components/class-style-manager.js:600
+#: src/modules/class-manager/components/class-style-manager.js:604
 msgid "Grid"
 msgstr ""
 
@@ -5256,7 +5256,7 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:379
 #: src/blocks/social-icons/settings.js:98
 #: src/gkit-components/components/swiper/dot.js:181
-#: src/modules/class-manager/components/class-style-manager.js:809
+#: src/modules/class-manager/components/class-style-manager.js:813
 msgid "Space Between"
 msgstr ""
 
@@ -5427,8 +5427,8 @@ msgstr ""
 #: src/gkit-components/helper/control-options.js:20
 #: src/global/components/advanced-control.js:65
 #: src/global/components/advanced-control.js:130
-#: src/modules/class-manager/components/class-style-manager.js:521
-#: src/modules/class-manager/components/class-style-manager.js:883
+#: src/modules/class-manager/components/class-style-manager.js:525
+#: src/modules/class-manager/components/class-style-manager.js:887
 #: src/modules/entrance-animation/settings.js:43
 msgid "Default"
 msgstr ""
@@ -5550,7 +5550,7 @@ msgstr ""
 #: src/gkit-components/components/background-overlay/index.js:395
 #: src/gkit-components/components/swiper/dot.js:300
 #: src/gkit-components/components/swiper/dot.js:349
-#: src/modules/class-manager/components/class-style-manager.js:356
+#: src/modules/class-manager/components/class-style-manager.js:360
 msgid "Opacity"
 msgstr ""
 
@@ -5607,7 +5607,7 @@ msgstr ""
 #: src/blocks/advanced-image/settings.js:1045
 #: src/blocks/blog-posts/settings.js:1074
 #: src/blocks/container/settings.js:583
-#: src/blocks/offcanvas/settings.js:303
+#: src/blocks/offcanvas/settings.js:291
 msgid "Show Overlay"
 msgstr ""
 
@@ -5677,7 +5677,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:471
 #: src/blocks/container/settings.js:354
 #: src/blocks/nav-menu/settings.js:246
-#: src/modules/class-manager/components/class-style-manager.js:777
+#: src/modules/class-manager/components/class-style-manager.js:781
 msgid "Stretch"
 msgstr ""
 
@@ -5696,7 +5696,7 @@ msgstr ""
 #: build/8606.js:1
 #: src/blocks/advanced-tab/settings.js:271
 #: src/blocks/donut-progress-bar/settings.js:191
-#: src/blocks/offcanvas/settings.js:1197
+#: src/blocks/offcanvas/settings.js:1185
 msgid "Content Alignment"
 msgstr ""
 
@@ -5750,7 +5750,7 @@ msgstr ""
 #: build/8606.js:1
 #: src/blocks/advanced-tab/settings.js:381
 #: src/blocks/donut-progress-bar/settings.js:172
-#: src/blocks/offcanvas/settings.js:246
+#: src/blocks/offcanvas/settings.js:60
 msgid "Slide"
 msgstr ""
 
@@ -5877,7 +5877,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:1043
 #: src/blocks/container/settings.js:493
 #: src/blocks/container/settings.js:809
-#: src/modules/class-manager/components/class-style-manager.js:419
+#: src/modules/class-manager/components/class-style-manager.js:423
 msgid "Overflow"
 msgstr ""
 
@@ -5886,8 +5886,8 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-tab/settings.js:1051
 #: src/gkit-components/helper/control-options.js:21
-#: src/modules/class-manager/components/class-style-manager.js:425
-#: src/modules/class-manager/components/class-style-manager.js:439
+#: src/modules/class-manager/components/class-style-manager.js:429
+#: src/modules/class-manager/components/class-style-manager.js:443
 msgid "Hidden"
 msgstr ""
 
@@ -5901,9 +5901,9 @@ msgstr ""
 #: src/gkit-components/components/background-overlay/index.js:344
 #: src/gkit-components/components/background/index.js:343
 #: src/gkit-components/helper/control-options.js:22
-#: src/modules/class-manager/components/class-style-manager.js:424
-#: src/modules/class-manager/components/class-style-manager.js:438
-#: src/modules/class-manager/components/class-style-manager.js:616
+#: src/modules/class-manager/components/class-style-manager.js:428
+#: src/modules/class-manager/components/class-style-manager.js:442
+#: src/modules/class-manager/components/class-style-manager.js:620
 msgid "Auto"
 msgstr ""
 
@@ -5915,7 +5915,7 @@ msgstr ""
 #: build/4672.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/advanced-tab/settings.js:1142
-#: src/modules/class-manager/components/class-style-manager.js:327
+#: src/modules/class-manager/components/class-style-manager.js:331
 msgid "Fill Color"
 msgstr ""
 
@@ -5967,7 +5967,7 @@ msgstr ""
 #: src/blocks/container/settings.js:80
 #: src/blocks/container/settings.js:145
 #: src/global/components/advanced-control.js:66
-#: src/modules/class-manager/components/class-style-manager.js:522
+#: src/modules/class-manager/components/class-style-manager.js:526
 msgid "Full Width"
 msgstr ""
 
@@ -6009,7 +6009,7 @@ msgstr ""
 #: src/blocks/fun-fact/settings.js:998
 #: src/blocks/mail-chimp/settings.js:1098
 #: src/blocks/mail-chimp/settings.js:1162
-#: src/modules/class-manager/components/class-style-manager.js:728
+#: src/modules/class-manager/components/class-style-manager.js:732
 msgid "Direction"
 msgstr ""
 
@@ -6026,14 +6026,14 @@ msgstr ""
 #: build/4783.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/container/settings.js:243
-#: src/modules/class-manager/components/class-style-manager.js:741
+#: src/modules/class-manager/components/class-style-manager.js:745
 msgid "Row Reverse"
 msgstr ""
 
 #: build/4783.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/container/settings.js:248
-#: src/modules/class-manager/components/class-style-manager.js:746
+#: src/modules/class-manager/components/class-style-manager.js:750
 msgid "Column Reverse"
 msgstr ""
 
@@ -6042,7 +6042,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/container/settings.js:301
 #: src/blocks/nav-menu/settings.js:199
-#: src/modules/class-manager/components/class-style-manager.js:814
+#: src/modules/class-manager/components/class-style-manager.js:818
 msgid "Space Around"
 msgstr ""
 
@@ -6065,15 +6065,15 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/container/settings.js:461
 #: src/blocks/container/settings.js:474
-#: src/modules/class-manager/components/class-style-manager.js:867
+#: src/modules/class-manager/components/class-style-manager.js:871
 msgid "Wrap"
 msgstr ""
 
 #: build/4783.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/container/settings.js:469
-#: src/modules/class-manager/components/class-style-manager.js:453
-#: src/modules/class-manager/components/class-style-manager.js:862
+#: src/modules/class-manager/components/class-style-manager.js:457
+#: src/modules/class-manager/components/class-style-manager.js:866
 msgid "No Wrap"
 msgstr ""
 
@@ -6562,8 +6562,8 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:108
 #: src/blocks/blog-posts/settings.js:1992
 #: src/blocks/blog-posts/settings.js:2142
-#: src/modules/class-manager/components/class-style-manager.js:271
-#: src/modules/class-manager/components/class-style-manager.js:791
+#: src/modules/class-manager/components/class-style-manager.js:275
+#: src/modules/class-manager/components/class-style-manager.js:795
 msgid "Justify"
 msgstr ""
 
@@ -6692,8 +6692,8 @@ msgstr ""
 #: src/blocks/advanced-accordion/settings.js:165
 #: src/blocks/advanced-accordion/settings.js:409
 #: src/blocks/advanced-accordion/settings.js:481
-#: src/blocks/offcanvas/settings.js:92
-#: src/blocks/offcanvas/settings.js:478
+#: src/blocks/offcanvas/settings.js:128
+#: src/blocks/offcanvas/settings.js:466
 msgid "Closed"
 msgstr ""
 
@@ -7139,7 +7139,7 @@ msgstr ""
 #: build/6949.js:1
 #: build/8606.js:1
 #: src/blocks/donut-progress-bar/settings.js:290
-#: src/blocks/offcanvas/settings.js:247
+#: src/blocks/offcanvas/settings.js:61
 msgid "Slide Style"
 msgstr ""
 
@@ -7166,22 +7166,22 @@ msgstr ""
 #: build/6949.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/donut-progress-bar/settings.js:387
-#: src/modules/class-manager/components/class-style-manager.js:372
+#: src/modules/class-manager/components/class-style-manager.js:376
 msgid "Butt"
 msgstr ""
 
 #: build/6949.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/donut-progress-bar/settings.js:391
-#: src/modules/class-manager/components/class-style-manager.js:376
-#: src/modules/class-manager/components/class-style-manager.js:401
+#: src/modules/class-manager/components/class-style-manager.js:380
+#: src/modules/class-manager/components/class-style-manager.js:405
 msgid "Round"
 msgstr ""
 
 #: build/6949.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/donut-progress-bar/settings.js:395
-#: src/modules/class-manager/components/class-style-manager.js:380
+#: src/modules/class-manager/components/class-style-manager.js:384
 msgid "Square"
 msgstr ""
 
@@ -7333,8 +7333,8 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/countdown-timer/settings.js:228
 #: src/blocks/page-list/settings.js:429
-#: src/modules/class-manager/components/class-style-manager.js:709
-#: src/modules/class-manager/components/class-style-manager.js:841
+#: src/modules/class-manager/components/class-style-manager.js:713
+#: src/modules/class-manager/components/class-style-manager.js:845
 msgid "Row Gap"
 msgstr ""
 
@@ -7382,7 +7382,7 @@ msgstr ""
 #: build/7621.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/fun-fact/settings.js:230
-#: src/modules/class-manager/components/class-style-manager.js:887
+#: src/modules/class-manager/components/class-style-manager.js:891
 msgid "Static"
 msgstr ""
 
@@ -7434,7 +7434,7 @@ msgstr ""
 #: build/7621.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/fun-fact/settings.js:901
-#: src/modules/class-manager/components/class-style-manager.js:930
+#: src/modules/class-manager/components/class-style-manager.js:934
 msgid "Horizontal Position"
 msgstr ""
 
@@ -7742,110 +7742,110 @@ msgid "Enable Default Open"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:82
-#: src/blocks/offcanvas/settings.js:430
-msgid "Offcanvas"
-msgstr ""
-
-#: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:88
-#: src/blocks/offcanvas/settings.js:471
-msgid "Hamburger"
-msgstr ""
-
-#: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:106
-#: src/blocks/offcanvas/settings.js:173
-msgid "Menu Type"
-msgstr ""
-
-#: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:117
-#: src/blocks/offcanvas/settings.js:184
-msgid "Icon With Text"
-msgstr ""
-
-#: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:188
-msgid "Animated Icon"
-msgstr ""
-
-#: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:252
+#: src/blocks/offcanvas/settings.js:66
 msgid "Reveal"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:253
+#: src/blocks/offcanvas/settings.js:67
 msgid "Reveal Style"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:258
+#: src/blocks/offcanvas/settings.js:72
 msgid "The Reveal style is only available in GutenKit pro version."
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:264
+#: src/blocks/offcanvas/settings.js:75
 msgid "Push"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:265
+#: src/blocks/offcanvas/settings.js:76
 msgid "Push Style"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:270
+#: src/blocks/offcanvas/settings.js:81
 msgid "The Push style is only available in GutenKit pro version"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:277
+#: src/blocks/offcanvas/settings.js:85
 msgid "None Style"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:282
+#: src/blocks/offcanvas/settings.js:90
 msgid "The None style is only available in GutenKit pro version"
 msgstr ""
 
 #: build/8606.js:1
+#: src/blocks/offcanvas/settings.js:118
+#: src/blocks/offcanvas/settings.js:418
+msgid "Offcanvas"
+msgstr ""
+
+#: build/8606.js:1
+#: src/blocks/offcanvas/settings.js:124
+#: src/blocks/offcanvas/settings.js:459
+msgid "Hamburger"
+msgstr ""
+
+#: build/8606.js:1
+#: src/blocks/offcanvas/settings.js:142
+#: src/blocks/offcanvas/settings.js:209
+msgid "Menu Type"
+msgstr ""
+
+#: build/8606.js:1
+#: src/blocks/offcanvas/settings.js:153
+#: src/blocks/offcanvas/settings.js:220
+msgid "Icon With Text"
+msgstr ""
+
+#: build/8606.js:1
+#: src/blocks/offcanvas/settings.js:224
+msgid "Animated Icon"
+msgstr ""
+
+#: build/8606.js:1
 #: build/9807.js:1
-#: src/blocks/offcanvas/settings.js:311
+#: src/blocks/offcanvas/settings.js:299
 #: src/blocks/video/settings.js:911
 msgid "Overlay Color"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:319
+#: src/blocks/offcanvas/settings.js:307
 msgid "Disable Scroll"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:324
+#: src/blocks/offcanvas/settings.js:312
 msgid "Disable body scrolling only work for frontend"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:329
-#: src/blocks/offcanvas/settings.js:362
+#: src/blocks/offcanvas/settings.js:317
+#: src/blocks/offcanvas/settings.js:350
 msgid "Sidebar Position"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:406
+#: src/blocks/offcanvas/settings.js:394
 msgid "Sidebar Transition (s)"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:552
+#: src/blocks/offcanvas/settings.js:540
 msgid "Custom Height Width"
 msgstr ""
 
 #: build/8606.js:1
 #: build/gutenkit/components.js:2
-#: src/blocks/offcanvas/settings.js:618
+#: src/blocks/offcanvas/settings.js:606
 #: src/gkit-components/components/swiper/arrow.js:80
 #: src/gkit-components/components/swiper/arrow.js:126
 msgid "position (X)"
@@ -7853,14 +7853,14 @@ msgstr ""
 
 #: build/8606.js:1
 #: build/gutenkit/components.js:2
-#: src/blocks/offcanvas/settings.js:641
+#: src/blocks/offcanvas/settings.js:629
 #: src/gkit-components/components/swiper/arrow.js:102
 #: src/gkit-components/components/swiper/arrow.js:148
 msgid "position (Y)"
 msgstr ""
 
 #: build/8606.js:1
-#: src/blocks/offcanvas/settings.js:1194
+#: src/blocks/offcanvas/settings.js:1182
 msgid "Offcanvas Panel"
 msgstr ""
 
@@ -8438,18 +8438,13 @@ msgid "Activate All"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/ProModalNotice.js:9
+#: src/dashboard/components/ProModalNotice.js:10
 msgid "Upgrade To Pro"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/ProModalNotice.js:11
-msgid "Get access to this premium feature with "
-msgstr ""
-
-#: build/admin/dashboard/index.js:1
 #: src/dashboard/components/ProModalNotice.js:13
-msgid "GutenKit PRO version!"
+msgid "Get access to this premium feature with <a>GutenKit PRO version!</a>"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
@@ -8728,7 +8723,9 @@ msgid "Mega Menu Builder"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
+#: build/admin/onboard/index.js:1
 #: src/dashboard/assets/js/welcome.js:10
+#: src/onboard/pages/Surprise.js:15
 msgid "Query Loop Builder"
 msgstr ""
 
@@ -8931,21 +8928,26 @@ msgstr ""
 
 #: build/admin/dashboard/index.js:3
 #: src/dashboard/components/NoticeOnboard.js:73
-msgid "Allow us to use non-sensitive data from your site to improve our products and get personalized performance tips."
+msgid "Allow us to use non-sensitive data and basic info from your site to improve our products and send you personalized performance tips."
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:79
+#: src/dashboard/components/NoticeOnboard.js:76
+msgid "Read Privacy Policy."
+msgstr ""
+
+#: build/admin/dashboard/index.js:3
+#: src/dashboard/components/NoticeOnboard.js:83
 msgid "No, Thanks"
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:82
+#: src/dashboard/components/NoticeOnboard.js:86
 msgid "Please wait…"
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:82
+#: src/dashboard/components/NoticeOnboard.js:86
 msgid "Yes, Complete Setup"
 msgstr ""
 
@@ -9049,82 +9051,82 @@ msgid "Contact Support Team"
 msgstr ""
 
 #: build/admin/deactivation-popup/index.js:1
-#: src/deactivation-popup/DeactivationPopup.js:141
-msgid "Skip & Deactivate"
-msgstr ""
-
-#: build/admin/deactivation-popup/index.js:1
-#: src/deactivation-popup/DeactivationPopup.js:148
-msgid "Submitting…"
-msgstr ""
-
-#: build/admin/deactivation-popup/index.js:1
-#: src/deactivation-popup/DeactivationPopup.js:148
-msgid "Submit & Deactivate"
+#: src/deactivation-popup/DeactivationPopup.js:138
+msgid "Clicking “Submit & Deactivate” will help us improve GutenKit by sharing your feedback and usage insights. Choose “Skip & Deactivate” to deactivate the plugin without sharing any data. <a>Privacy Policy.</a>"
 msgstr ""
 
 #: build/admin/deactivation-popup/index.js:1
 #: src/deactivation-popup/DeactivationPopup.js:149
+msgid "Skip & Deactivate"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:156
+msgid "Submitting…"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:156
+msgid "Submit & Deactivate"
+msgstr ""
+
+#: build/admin/deactivation-popup/index.js:1
+#: src/deactivation-popup/DeactivationPopup.js:157
 msgid "Submitted"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/components/StepsBar.js:12
+#: src/onboard/components/StepsBar.js:14
 msgid "Sign Up"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/components/StepsBar.js:16
+#: src/onboard/components/StepsBar.js:18
 msgid "Website Powerup"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/components/StepsBar.js:20
+#: src/onboard/components/StepsBar.js:22
 msgid "Tutorial"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/components/StepsBar.js:24
+#: src/onboard/components/StepsBar.js:26
+msgid "Surprise"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/StepsBar.js:30
 msgid "Finalizing"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/pages/SignUp.js:40
-msgid "Welcome to"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/pages/SignUp.js:40
-msgid "the world of GutenKit."
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/pages/SignUp.js:41
-msgid "Signup to join over 3,20,000+ founders, marketers and developers in learning the best uses of WordPress"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/pages/SignUp.js:45
-msgid "Enter your email address"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/pages/SignUp.js:48
-msgid "We never spam."
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/pages/SignUp.js:48
-msgid "Promise!"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
 #: src/onboard/assets/js/pluginList.js:7
-msgid "Page Builder Elements"
+msgid "Dynamic CPT Fields"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
 #: src/onboard/assets/js/pluginList.js:8
+msgid "Build and manage custom CPT fields for WordPress with AI and zero coding."
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/assets/js/pluginList.js:13
+msgid "Appointment Booking"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/assets/js/pluginList.js:14
+msgid "Manage schedules, agents, and payments, all from one dashboard in WordPress."
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/assets/js/pluginList.js:19
+msgid "Page Builder Elements"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/assets/js/pluginList.js:20
 msgid "Best companion for Elementor with top widgets and templates."
 msgstr ""
 
@@ -9179,6 +9181,88 @@ msgid "Find top keywords, create winning content & track SEO results with AI."
 msgstr ""
 
 #: build/admin/onboard/index.js:1
+#: build/template-library/template-library.js:3
+#: src/onboard/components/Pagination.js:75
+#: src/template-library/components/template/SinglePage.js:143
+msgid "Back"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/Pagination.js:82
+#: src/onboard/components/Pagination.js:88
+#: src/onboard/components/Pagination.js:128
+#: src/onboard/components/Pagination.js:131
+msgid "Continue"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/Pagination.js:88
+msgid "Skip & Continue"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/Pagination.js:93
+msgid "Unlock All & Continue"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/Pagination.js:95
+msgid "Installs and activates all listed plugins that aren't already active on your site. Existing active plugins remain unchanged."
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: build/gutenkit/components.js:1
+#: src/gkit-components/components/container-placeholder/index.js:20
+#: src/onboard/components/Pagination.js:104
+msgid "Skip"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/Pagination.js:107
+msgid "Agree & Continue"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/Pagination.js:109
+msgid "Agree to share the diagnostic data and plugin usage details."
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/components/Pagination.js:126
+msgid "Explore PRO"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/SignUp.js:40
+msgid "Welcome to"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/SignUp.js:40
+msgid "the world of GutenKit."
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/SignUp.js:41
+msgid "Signup to join over 3,20,000+ founders, marketers and developers in learning the best uses of WordPress"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/SignUp.js:45
+msgid "Enter your email address"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/SignUp.js:48
+msgid "We never spam."
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/SignUp.js:48
+msgid "Promise!"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
 #: src/onboard/pages/PowerUp.js:55
 msgid "Take your website to the next level"
 msgstr ""
@@ -9194,23 +9278,113 @@ msgid "These are absolute FREE to use."
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/pages/Tutorial.js:42
+#: src/onboard/pages/Tutorial.js:24
 msgid "Watch how to use our top widgets. Save 1 hour of your learning time."
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/pages/Tutorial.js:62
-msgid "Share non-sensitive diagnostic data and details about plugin usage."
+#: src/onboard/pages/Tutorial.js:49
+msgid "Share diagnostic data and plugin usage details."
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/pages/Tutorial.js:65
-msgid "We gather non-sensitive diagnostic data as well as information about plugin use. Your site's URL, WordPress and PHP versions, plugins and themes, as well as your email address, will be used to give you a discount coupon. This information enables us to ensure that this plugin remains consistent with the most common plugins and themes at all times. We pledge not to give you any spam, for sure."
+#: src/onboard/pages/Tutorial.js:51
+msgid "We collect limited non-sensitive diagnostic data and plugin usage information to improve GutenKit’s compatibility with popular plugins and themes. By sharing this information, you may also receive special discounts as a thank-you gesture."
 msgstr ""
 
 #: build/admin/onboard/index.js:1
-#: src/onboard/pages/Tutorial.js:66
-msgid "What types of information do we gather?"
+#: src/onboard/pages/Tutorial.js:52
+msgid "We respect your privacy and won’t send unsolicited promotional emails."
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Tutorial.js:59
+msgid "What information is collected?"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:11
+msgid "Global Header & Footer"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:12
+msgid "Multi-level Mega Menu Builder"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:13
+msgid "Advanced Tab & Accordion"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:14
+msgid "Parallax & Motion Effects"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:16
+msgid "Custom Breakpoints"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:17
+msgid "Copy & Paste Block Styles"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:18
+msgid "Conditional & Protected Content"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:22
+msgid "<b>65+</b> Blocks"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:23
+msgid "<b>20+</b> Modules"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:24
+msgid "<b>800+</b> Block Sections"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:25
+msgid "<b>30+</b> Footer Templates"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:26
+msgid "<b>900+</b> SVG Icons"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:34
+msgid "Upgrade within the next<br/><strong>2 hours and get a 30% Discount.</strong>"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:41
+msgid "Trusted by 80000+ Users"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:45
+msgid "Built for Full Site Editing (FSE)"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:49
+msgid "24/7 Customer Support"
+msgstr ""
+
+#: build/admin/onboard/index.js:1
+#: src/onboard/pages/Surprise.js:57
+msgid "GutenKit <pro>PRO</pro>"
 msgstr ""
 
 #: build/admin/onboard/index.js:1
@@ -9243,30 +9417,6 @@ msgstr ""
 #: build/admin/onboard/index.js:1
 #: src/onboard/pages/Finalize.js:166
 msgid "Go to WP Dashboard"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: build/template-library/template-library.js:3
-#: src/onboard/components/Pagination.js:70
-#: src/template-library/components/template/SinglePage.js:143
-msgid "Back"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/components/Pagination.js:77
-#: src/onboard/components/Pagination.js:83
-#: src/onboard/components/Pagination.js:94
-msgid "Continue"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/components/Pagination.js:83
-msgid "Skip & Continue"
-msgstr ""
-
-#: build/admin/onboard/index.js:1
-#: src/onboard/components/Pagination.js:88
-msgid "Unlock All & Continue"
 msgstr ""
 
 #: build/admin/popup-builder/index.js:1
@@ -9437,7 +9587,7 @@ msgid "Version %s"
 msgstr ""
 
 #: build/blocks/advanced-accordion-item/index.js:1
-#: src/blocks/advanced-accordion-item/edit.js:125
+#: src/blocks/advanced-accordion-item/edit.js:119
 msgid "How do I get started?"
 msgstr ""
 
@@ -9464,7 +9614,7 @@ msgstr ""
 #: src/blocks/advanced-paragraph/settings.js:65
 #: src/blocks/mail-chimp/settings.js:1107
 #: src/blocks/mail-chimp/settings.js:1171
-#: src/modules/class-manager/components/class-style-manager.js:736
+#: src/modules/class-manager/components/class-style-manager.js:740
 msgid "Column"
 msgstr ""
 
@@ -9735,7 +9885,7 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/mail-chimp/settings.js:162
-#: src/modules/class-manager/components/class-style-manager.js:682
+#: src/modules/class-manager/components/class-style-manager.js:686
 msgid "Rows"
 msgstr ""
 
@@ -9879,7 +10029,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:625
 #: src/blocks/mail-chimp/settings.js:794
 #: src/global/components/advanced-control.js:131
-#: src/modules/class-manager/components/class-style-manager.js:884
+#: src/modules/class-manager/components/class-style-manager.js:888
 msgid "Absolute"
 msgstr ""
 
@@ -9892,7 +10042,7 @@ msgstr ""
 #: src/gkit-components/components/background-overlay/index.js:300
 #: src/gkit-components/components/background/index.js:299
 #: src/global/components/advanced-control.js:132
-#: src/modules/class-manager/components/class-style-manager.js:885
+#: src/modules/class-manager/components/class-style-manager.js:889
 msgid "Fixed"
 msgstr ""
 
@@ -9910,7 +10060,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/mail-chimp/settings.js:1102
 #: src/blocks/mail-chimp/settings.js:1166
-#: src/modules/class-manager/components/class-style-manager.js:731
+#: src/modules/class-manager/components/class-style-manager.js:735
 msgid "Row"
 msgstr ""
 
@@ -9929,7 +10079,7 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/blocks/mail-chimp/settings.js:1227
-#: src/modules/class-manager/components/class-style-manager.js:301
+#: src/modules/class-manager/components/class-style-manager.js:305
 msgid "Link Color"
 msgstr ""
 
@@ -9981,22 +10131,22 @@ msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
 #: src/blocks/nav-menu-item/appender-button.js:7
-#: src/blocks/nav-menu-item/edit.js:94
+#: src/blocks/nav-menu-item/edit.js:96
 msgid "Add Submenu"
 msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
-#: src/blocks/nav-menu-item/edit.js:130
+#: src/blocks/nav-menu-item/edit.js:132
 msgid "Remove Mega Menu"
 msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
-#: src/blocks/nav-menu-item/edit.js:131
+#: src/blocks/nav-menu-item/edit.js:133
 msgid "Remove Submenu"
 msgstr ""
 
 #: build/blocks/nav-menu-item/index.js:3
-#: src/blocks/nav-menu-item/edit.js:108
+#: src/blocks/nav-menu-item/edit.js:110
 msgid "Add Mega Menu"
 msgstr ""
 
@@ -10345,8 +10495,8 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: src/gkit-components/components/background-overlay/index.js:296
 #: src/gkit-components/components/background/index.js:295
-#: src/modules/class-manager/components/class-style-manager.js:426
-#: src/modules/class-manager/components/class-style-manager.js:440
+#: src/modules/class-manager/components/class-style-manager.js:430
+#: src/modules/class-manager/components/class-style-manager.js:444
 msgid "Scroll"
 msgstr ""
 
@@ -10549,10 +10699,10 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/gkit-components/components/box-shadow/shadow-presets.js:28
-#: src/modules/class-manager/components/class-style-manager.js:384
-#: src/modules/class-manager/components/class-style-manager.js:409
-#: src/modules/class-manager/components/class-style-manager.js:429
-#: src/modules/class-manager/components/class-style-manager.js:443
+#: src/modules/class-manager/components/class-style-manager.js:388
+#: src/modules/class-manager/components/class-style-manager.js:413
+#: src/modules/class-manager/components/class-style-manager.js:433
+#: src/modules/class-manager/components/class-style-manager.js:447
 msgid "Unset"
 msgstr ""
 
@@ -10564,11 +10714,6 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/box-shadow/index.js:195
 msgid "Preset"
-msgstr ""
-
-#: build/gutenkit/components.js:1
-#: src/gkit-components/components/container-placeholder/index.js:20
-msgid "Skip"
 msgstr ""
 
 #: build/gutenkit/components.js:1
@@ -11070,173 +11215,173 @@ msgid "Text Decoration"
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:252
-msgid "Text Align"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:317
-msgid "Stroke"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:346
-msgid "Dasharray"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:368
-msgid "Linecap"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:393
-msgid "Linejoin"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:397
-msgid "Miter"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:405
-msgid "Bevel"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:421
-msgid "Overflow-X"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:427
-#: src/modules/class-manager/components/class-style-manager.js:441
-msgid "Visible"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:428
-#: src/modules/class-manager/components/class-style-manager.js:442
-msgid "Clip"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:435
-msgid "Overflow-Y"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:449
-msgid "White Space"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:454
-msgid "Pre"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:455
-msgid "Pre Line"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:523
-msgid "Inline (auto)"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:551
-msgid "Min Width"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:585
-msgid "Layout Type"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:596
-msgid "Flex"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:613
-msgid "Grid Layout Type"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:620
-msgid "Manual"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:624
-msgid "Masonry"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:638
-msgid "Minimum Column Width"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:652
-msgid "Minimum Column Height"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:669
-msgid "Columns"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:759
-msgid "Align"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:762
-#: src/modules/class-manager/components/class-style-manager.js:794
-msgid "Flex Start"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:772
-#: src/modules/class-manager/components/class-style-manager.js:804
-msgid "Flex End"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:855
-msgid "Flex Wrap"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:886
-msgid "Sticky"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:966
-msgid "Z-index"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:980
-#: src/modules/class-manager/components/class-style-manager.js:995
-#: src/modules/class-manager/components/class-style-manager.js:999
-msgid "Custom CSS"
-msgstr ""
-
-#: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:988
+#: src/modules/class-manager/components/class-style-manager.js:214
 msgid "To target the current block only, use the <code>selector</code> keyword."
 msgstr ""
 
 #: build/modules/class-manager/editor.js:1
-#: src/modules/class-manager/components/class-style-manager.js:1000
+#: src/modules/class-manager/components/class-style-manager.js:256
+msgid "Text Align"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:321
+msgid "Stroke"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:350
+msgid "Dasharray"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:372
+msgid "Linecap"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:397
+msgid "Linejoin"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:401
+msgid "Miter"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:409
+msgid "Bevel"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:425
+msgid "Overflow-X"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:431
+#: src/modules/class-manager/components/class-style-manager.js:445
+msgid "Visible"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:432
+#: src/modules/class-manager/components/class-style-manager.js:446
+msgid "Clip"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:439
+msgid "Overflow-Y"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:453
+msgid "White Space"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:458
+msgid "Pre"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:459
+msgid "Pre Line"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:527
+msgid "Inline (auto)"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:555
+msgid "Min Width"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:589
+msgid "Layout Type"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:600
+msgid "Flex"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:617
+msgid "Grid Layout Type"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:624
+msgid "Manual"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:628
+msgid "Masonry"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:642
+msgid "Minimum Column Width"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:656
+msgid "Minimum Column Height"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:673
+msgid "Columns"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:763
+msgid "Align"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:766
+#: src/modules/class-manager/components/class-style-manager.js:798
+msgid "Flex Start"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:776
+#: src/modules/class-manager/components/class-style-manager.js:808
+msgid "Flex End"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:859
+msgid "Flex Wrap"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:890
+msgid "Sticky"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:970
+msgid "Z-index"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:984
+#: src/modules/class-manager/components/class-style-manager.js:989
+#: src/modules/class-manager/components/class-style-manager.js:992
+msgid "Custom CSS"
+msgstr ""
+
+#: build/modules/class-manager/editor.js:1
+#: src/modules/class-manager/components/class-style-manager.js:993
 msgid "The Custom CSS is only available in GutenKit pro version."
 msgstr ""
 
@@ -11521,7 +11666,7 @@ msgstr ""
 
 #: build/template-library/template-library.js:4
 #: src/template-library/components/template/SinglePage.js:198
-msgid "Unlock access to this template, along with a vast array of others, for as little as $49. Start creating effortlessly today!"
+msgid "Unlock this template and our full library of premium designs for just $49. Start creating limitlessly today!"
 msgstr ""
 
 #: build/template-library/template-library.js:4

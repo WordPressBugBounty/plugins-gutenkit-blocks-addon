@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.3
+Stable tag: 2.5.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -317,8 +317,24 @@ Check out our other plugins:
 
 Visit [Wpmet](https://wpmet.com/) to learn more about how to get the best of WordPress with [Tutorial, Tips & Tricks](https://wpmet.com/blog)!
 
+== External services ==
+
+GutenKit integrates with the following 3rd party services. Please review each service's terms before use:
+
+* Mailchimp – used by the Mailchimp block to add subscribers to your audience. [Terms of Use](https://mailchimp.com/legal/terms/) | [Privacy Policy](https://www.intuit.com/privacy/statement/)
+* Google Fonts – used to load the fonts chosen in typography settings. [Terms of Service](https://developers.google.com/terms) | [Privacy Policy](https://policies.google.com/privacy)
+* GutenKit (by Wpmet) – used for the template library, newsletter subscription, deactivation feedback, Google Fonts list, changelog, and dashboard stories and notices. [Privacy Policy](https://wpmet.com/privacy-policy/)
+
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.5.4 (2026-10-19) =
+* Added: License headers for the bundled Easy Pie Chart, Image Comparison Slider and Odometer libraries
+* Improved: Plugin Security
+* Improved: Reduced plugin size by ~195KB of JavaScript by removing unused libraries
+* Improved: Reduced block CSS by ~3KB by removing unused styles
+* Improved: Social Share uses the original GoodShare library, with GutenKit's custom share links for Tumblr, Delicious and Renren handled by the block itself
+* Removed: Generate Access Token links from API settings, which no longer worked
 
 = GutenKit Blocks Addon 2.5.3 (2026-10-06) =
 * Fixed: Template image import could make the server fetch any URL
