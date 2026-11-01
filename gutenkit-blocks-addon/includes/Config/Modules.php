@@ -1,7 +1,6 @@
 <?php
 
 namespace Gutenkit\Config;
-use Gutenkit\Helpers\Utils;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -167,16 +166,10 @@ class Modules {
 	 * @since 1.0.0
 	 */
 	protected function register_modules( $modules = [], $is_editor = false ) {
-		$is_register = Utils::is_local() ? Utils::is_local() : Utils::status() === 'valid';
-
 		foreach( $modules as $key => $module ) {
 			$package = isset($module['package']) ? $module['package'] : 'free';
 			$editor_asset_path = self::get_asset($key, $package, 'editor.asset.php', 'path');
 			$common_asset_path = self::get_asset($key, $package, 'common.asset.php', 'path');
-
-			if($package == 'pro' && !$is_register) {
-				continue;
-			}
 
 			if( $is_editor && file_exists( $editor_asset_path ) ) {
 				$this->register_asset($key, $package, 'editor', include $editor_asset_path);

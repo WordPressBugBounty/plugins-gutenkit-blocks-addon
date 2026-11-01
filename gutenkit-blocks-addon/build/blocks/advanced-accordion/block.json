@@ -55,6 +55,14 @@
       "default": false,
       "excludeCopy": true
     },
+    "counterStyle": {
+      "type": "string",
+      "default": "decimal-leading-zero"
+    },
+    "counterSuffix": {
+      "type": "string",
+      "default": "."
+    },
     "leftIcons": {
       "type": "object",
       "default": {

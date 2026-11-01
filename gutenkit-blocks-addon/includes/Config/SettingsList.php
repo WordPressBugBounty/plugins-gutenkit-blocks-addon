@@ -165,7 +165,7 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 				),
 				'gutenkit_user_consent' => array(
 					'slug'    => 'gutenkit_user_consent',
-					'title'   => __( 'User Consent', 'gutenkit-blocks-addon' ),
+					'title'   => __( 'Plugin Tips & Announcements', 'gutenkit-blocks-addon' ),
 					'package' => 'free',
 					'status'  => 'inactive',
 					'category' => 'advanced',

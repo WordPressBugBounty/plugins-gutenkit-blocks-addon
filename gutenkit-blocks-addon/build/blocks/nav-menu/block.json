@@ -723,6 +723,17 @@
     "gkitMobileMenuLogoMarginWideScreen": {
       "type": "object"
     },
+    "gkitMobileOverlayColor": {
+      "type": "string",
+      "default": "rgba(51, 51, 51, 0.5)"
+    },
+    "gkitMenuOverlayAnimation": {
+      "type": "string",
+      "default": "slide"
+    },
+    "gkitMobileOverlayTransition": {
+      "type": "object"
+    },
     "gkitMenuScrollLockOnOffCanvas": {
       "type": "boolean",
       "default": false

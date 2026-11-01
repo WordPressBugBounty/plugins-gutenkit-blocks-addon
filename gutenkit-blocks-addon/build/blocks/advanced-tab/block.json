@@ -122,6 +122,10 @@
       "type": "boolean",
       "default": false
     },
+    "enableSubtitleToggle": {
+      "type": "boolean",
+      "default": false
+    },
     "navDirectionDesktop": {
       "type": "string",
       "default": "column"

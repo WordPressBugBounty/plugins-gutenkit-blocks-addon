@@ -116,34 +116,12 @@ class DeactivationFeedback {
 	}
 
 	/**
-	 * Determine the user type based on the pro plugin and license status.
+	 * Get the user type. Defaults to `free`; the Pro plugin filters it to `pro` or `pro_valid`.
 	 *
-	 * @return string One of 'pro_valid', 'pro' or 'free'.
+	 * @return string user type.
 	 */
 	public function get_user_type() {
-		// First check whether the Pro plugin is installed at all.
-		// A user without Pro installed is always 'free'.
-		if ( ! $this->is_pro_installed() ) {
-			return 'free';
-		}
-
-		$is_licensed = class_exists( '\Gutenkit\Helpers\Utils' )
-			&& \Gutenkit\Helpers\Utils::status() === 'valid';
-
-		return $is_licensed ? 'pro_valid' : 'pro';
-	}
-
-	/**
-	 * Check whether the GutenKit Pro plugin is installed (regardless of active state).
-	 *
-	 * @return bool True if the Pro plugin file exists in the plugins directory.
-	 */
-	protected function is_pro_installed() {
-		if ( ! function_exists( 'get_plugins' ) ) {
-			require_once ABSPATH . 'wp-admin/includes/plugin.php';
-		}
-
-		return array_key_exists( 'gutenkit-blocks-addon-pro/gutenkit-blocks-addon-pro.php', get_plugins() );
+		return apply_filters( 'gutenkit/deactivation_feedback/user_type', 'free' );
 	}
 
 	/**

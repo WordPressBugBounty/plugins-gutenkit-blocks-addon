@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.4
+Stable tag: 2.5.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -328,6 +328,20 @@ GutenKit integrates with the following 3rd party services. Please review each se
 
 == Changelog ==
 
+= GutenKit Blocks Addon 2.5.5 (2026-11-01) =
+* Added: Advanced tab collapsible subtitle toggle
+* Added: New animation features for Nav Menu block overlays
+* Fixed: Stored XSS through nested payloads in page settings, block and global class CSS on WordPress below 7.0 (reported by Karthik)
+* Fixed: Our Plugins submenu was missing from the GutenKit menu
+* Fixed: Nav Menu close icon is not changing
+* Fixed: Parent class column and filter in the Class Manager list printed post titles and links without escaping
+* Fixed: Rating notice install dates now use gmdate() so they are not affected by runtime timezone changes
+* Improved: Our Plugins page and the rating notice now show plugin icons bundled with GutenKit instead of loading them from WordPress.org
+* Improved: Modules registration process
+* Improved: Font file names in Load Fonts Locally are parsed with wp_parse_url()
+* Improved: Blocks registration process
+* Improved: Bundled Composer autoloader no longer contains unescaped output or dead PHP 5.6 code, and these fixes are re-applied each time the scoped packages are rebuilt
+
 = GutenKit Blocks Addon 2.5.4 (2026-10-19) =
 * Added: License headers for the bundled Easy Pie Chart, Image Comparison Slider and Odometer libraries
 * Improved: Plugin Security
@@ -460,65 +474,6 @@ GutenKit integrates with the following 3rd party services. Please review each se
 * Fixed: Resolved button text overflow issues in button block
 * Fixed: Icon not updating in the editor when the advanced accordion block is updated
 * Improved: Optimized component and helpers scripts loading
-
-= GutenKit Blocks Addon: 2.4.4 (2025-12-02) =
-* Fixed: Height-related layout inconsistencies in the image accordion block
-* Fixed: HTML content rendering issues in the pricing table block
-* Fixed: Digit background not showing in countdown timer block
-* Fixed: Expiry notice is not showing after time has finished in countdown timer block
-* Improved: Clearer normal and hover states for popup and link icons in the image accordion block
-* Improved: Dashboard and onboard UI flow
-
-= GutenKit Blocks Addon: 2.4.3 (2025-10-05) =
-* Fixed: Heading block focus text background not working
-* Improved: Escape link HTML captions and titles for advanced image block
-
-= GutenKit Blocks Addon: 2.4.2 (2025-09-15) =
-* Added: FSE box-shadow compatibility across blocks
-* Fixed: Border color handling in getColor helper for consistent styling
-* Fixed: Countdown timer flip color and gap updates
-* Fixed: RichText fields resetting data when switching tabs in the testimonials block
-* Fixed: Nested accordion toggle issue in the advanced accordion block
-* Fixed: Typography not working in some specific blocks
-
-= GutenKit Blocks Addon: 2.4.1 (2025-08-07) =
-* Fixed: Template library is not loading
-
-= GutenKit Blocks Addon: 2.4.0 (2025-07-14) =
-* Added: Load Google fonts locally
-* Added: Modal popup block
-* Fixed: Font not working in site editor
-* Fixed: Advanced tab sorting not working
-* Fixed: Description link not set in editor for heading block
-* Fixed: Title is not changing after adding item in advanced tab block
-* Improved: Font loading in editor and frontend
-* Improved: Mailchimp block icon and direction
-
-= GutenKit Blocks Addon: 2.3.1 (2025-05-27) =
-* Fixed: Showing warning for title filter in class manager
-* Fixed: Responsive breakpoints not updating correctly when switching devices
-* Improved: Page settings css generation method
-
-= GutenKit Blocks Addon: 2.3.0 (2025-05-13) =
-* Added: Shape divider in container block
-* Added: Beta version of the class manager module
-* Added: Checkbox, select, radio and agree terms support in mailchimp block
-* Fixed: Hover scale effect on inline button wasn't working in the video block
-* Fixed: Transition is not working in icon block
-* Fixed: Mailchimp input field border issue
-* Improved: Controls compatibility with WP 6.8
-
-= GutenKit Blocks Addon: 2.2.3 (2025-04-15) =
-* Added: Link tag support in container block
-* Fixed: Dual button background color is not changing with classic themes
-* Fixed: Add URL validation and sanitization in image accordion event handling
-* Fixed: Image component is not defined console error in heading block
-* Fixed: Hover error on save draft button in draft post
-* Fixed: Item gap issue in nav menu block
-* Fixed: Block error in advanced tab block
-* Fixed: Button link color not working in advanced accordion block
-* Improved: Controls label in heading block
-* Improved: Mailchimp submit button loader style controls
 
 [View changelog for all versions.](https://wpgutenkit.com/changelog/)
 

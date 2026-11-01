@@ -79,7 +79,8 @@ class Onboard
 	 * Handles the onboarding notice shown on the dashboard.
 	 *
 	 * Accepting subscribes the address collected by any Wpmet onboarding, or
-	 * the site admin address when none was collected. Dismissing only records
+	 * the site admin address when none was collected, and enables the User
+	 * Consent setting once the subscription succeeds. Dismissing only records
 	 * that the notice was answered so it stays hidden.
 	 *
 	 * @param bool $accepted Whether the user accepted the notice.
@@ -116,6 +117,7 @@ class Onboard
 		}
 
 		$this->store_subscription($email);
+		$this->save_user_consent(true);
 		update_option(Onboard::NOTICE, 'accepted', false);
 
 		return [
@@ -157,12 +159,13 @@ class Onboard
 	}
 
 	/**
-	 * Saves the User Consent setting chosen on the onboarding Tutorial step.
+	 * Saves the User Consent setting.
 	 *
-	 * It follows the diagnostic data checkbox; the dashboard's Advanced
+	 * It follows the diagnostic data checkbox on the onboarding Tutorial step,
+	 * or is granted by accepting the dashboard notice; the dashboard's Advanced
 	 * settings read the same `gutenkit_user_consent` entry.
 	 *
-	 * @param bool $granted Whether the checkbox was ticked.
+	 * @param bool $granted Whether consent was given.
 	 * @return void
 	 */
 	private function save_user_consent($granted)

@@ -1119,26 +1119,31 @@ class Utils {
 		// used to split any of the keywords matched below.
 		$css = preg_replace( '#("(?:[^"\\\]++|\\\.)*+"|\'(?:[^\'\\\\]++|\\\.)*+\')|\/\*(?>.*?\*\/)#s', '$1', $css );
 
-		$css = preg_replace(
-			array(
-				// A closing tag is the only thing that ends the inline <style>
-				// block, so dropping `</` keeps markup from escaping into html.
-				'#<\s*\/+#',
-				// Legacy script execution vectors.
-				'#\bexpression\s*\(#i',
-				// Anchored: without it this ate the `behavior:` inside
-				// `scroll-behavior:` and `overscroll-behavior:`, leaving a broken
-				// declaration behind.
-				'#(?<![-\w])(-moz-binding|behavior)\s*:#i',
-				// Script bearing urls and documents.
-				'#(javascript|vbscript|livescript|mocha)\s*:#i',
-				'#data\s*:\s*(text\/html|application\/xhtml)#i',
-			),
-			'',
-			$css
-		);
+		// Removing a keyword can reassemble another out of what surrounds it
+		// (`javasjavascript:cript:`), so repeat until nothing changes.
+		do {
+			$previous = $css;
+			$css      = preg_replace(
+				array(
+					// Legacy script execution vectors.
+					'#\bexpression\s*\(#i',
+					// Anchored: without it this ate the `behavior:` inside
+					// `scroll-behavior:` and `overscroll-behavior:`, leaving a broken
+					// declaration behind.
+					'#(?<![-\w])(-moz-binding|behavior)\s*:#i',
+					// Script bearing urls and documents.
+					'#(javascript|vbscript|livescript|mocha)\s*:#i',
+					'#data\s*:\s*(text\/html|application\/xhtml)#i',
+				),
+				'',
+				$css
+			);
+		} while ( null !== $css && $css !== $previous );
 
-		return null === $css ? '' : $css;
+		// A closing tag is the only thing that ends the inline <style> block. Done
+		// last and unconditionally, so no earlier step can reassemble one; `\/` is
+		// still `/` to css, but the html parser no longer sees `</`.
+		return null === $css ? '' : str_replace( '</', '<\/', $css );
 	}
 
 	/**
@@ -1392,27 +1397,6 @@ class Utils {
 
 	public static function get_placeholder_image() {
 		return GUTENKIT_PLUGIN_URL . 'assets/images/placeholder.jpg';
-	}
-
-	public static function status() {
-
-		$cached = wp_cache_get('gutenkit__license_status');
-
-		if(false !== $cached) {
-			return $cached;
-		}
-
-		$oppai  = get_option('__gutenkit_oppai__', '');
-		$key    = get_option('__gutenkit_license_key__', '');
-		$status = 'invalid';
-
-		if($oppai != '' && $key != '') {
-			$status = 'valid';
-		}
-
-		wp_cache_set('gutenkit__license_status', $status);
-
-		return $status;
 	}
 
 	public static function is_local() {

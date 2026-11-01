@@ -16,14 +16,6 @@ class Blocks {
 
 	use \Gutenkit\Traits\Singleton;
 
-	/**
-	 * Blocks directories whose metadata collection has already been registered.
-	 *
-	 * @since 1.0.2
-	 * @var array
-	 */
-	private $metadata_collections = array();
-
 	// class initilizer method
 	public function __construct() {
 		add_action( 'init', array( $this, 'register_blocks' ) );
@@ -38,7 +30,10 @@ class Blocks {
 		}
 	}
 
-	// register blocks
+	/**
+	 * Register the free blocks.
+	 * @return void
+	 */
 	public function register_blocks() {
 		global $pagenow;
 		
@@ -51,86 +46,39 @@ class Blocks {
 			'media'  => 'all',
 		);
 
-		$blocks_list = \Gutenkit\Config\BlockList::instance()->get_list( 'active' );
-		$is_register = Utils::is_local() ? Utils::is_local() : Utils::status() === 'valid';
+		$this->register_metadata_collection();
 
-		if ( ! empty( $blocks_list ) ) {
-			foreach ( $blocks_list as $key => $block ) {
-				$package = isset($block['package']) ? $block['package'] : '';
-				$blocks_root = '';
-				$plugin_dir = '';
-				$plugin_slug = '';
+		foreach ( \Gutenkit\Config\BlockList::instance()->get_list( 'active' ) as $key => $block ) {
+			if ( ( $block['package'] ?? '' ) !== 'free' ) {
+				continue;
+			}
 
-				if ( !empty( $package ) &&  $package === 'free') {
-					$plugin_dir = GUTENKIT_PLUGIN_DIR;
-					$blocks_root = GUTENKIT_BLOCKS_DIR;
-					$plugin_slug = 'gutenkit-blocks-addon';
-				}
+			$blocks_dir = GUTENKIT_BLOCKS_DIR . $key;
 
-				if ( !empty( $package ) &&  $package === 'pro' && defined( 'GUTENKIT_PRO_BLOCKS_DIR' ) && $is_register ) {
-					$plugin_dir = rtrim( GUTENKIT_PLUGIN_DIR, '/' ) . '-pro';
-					$blocks_root = $plugin_dir . '/build/blocks/';
-					$plugin_slug = 'gutenkit-blocks-addon-pro';
-				}
+			if ( ! file_exists( $blocks_dir ) ) {
+				continue;
+			}
 
-				// A third-party plugin can register blocks from its own folder through the
-				// gutenkit/blocks/list filter. Only folders inside the plugins directory are accepted.
-				if ( isset( $block['source']['blocks_dir'], $block['source']['plugin_dir'], $block['source']['plugin_slug'] ) ) {
-					if ( ! $this->is_inside_plugins_dir( $block['source']['blocks_dir'] ) ) {
-						continue;
-					}
+			$block_type = register_block_type( $blocks_dir );
 
-					$plugin_dir  = $block['source']['plugin_dir'];
-					$blocks_root = $block['source']['blocks_dir'];
-					$plugin_slug = $block['source']['plugin_slug'];
-				}
+			if ( ! $block_type ) {
+				continue;
+			}
 
-				if ( empty( $blocks_root ) ) {
-					continue;
-				}
+			// WordPress names the editor script after the block (e.g. `gutenkit-heading-editor-script`)
+			// and points its translations at the global languages folder; point them at ours instead.
+			foreach ( $block_type->editor_script_handles as $handle ) {
+				wp_set_script_translations( $handle, 'gutenkit-blocks-addon', GUTENKIT_PLUGIN_DIR . 'languages' );
+			}
 
-				// Index the whole blocks folder once, so each block.json is read from the manifest instead of the disk.
-				$this->register_metadata_collection( $blocks_root );
-
-				$blocks_dir = trailingslashit( $blocks_root ) . $key;
-
-				if ( ! file_exists( $blocks_dir ) ) {
-					continue;
-				}
-
-				register_block_type( $blocks_dir );
-
-				// $plugin_dir is only trailing-slashed on the 'free' branch above, so
-				// normalise it here rather than producing e.g. "...-prolanguages".
-				wp_set_script_translations( "{$plugin_slug}-{$key}-editor-script", $plugin_slug, trailingslashit( $plugin_dir ) . 'languages' );
-
-				if ( $is_editor ) {
-					wp_enqueue_block_style( "{$plugin_slug}/{$key}", $args );
-				}
+			if ( $is_editor ) {
+				wp_enqueue_block_style( $block_type->name, $args );
 			}
 		}
 	}
 
 	/**
-	 * Whether a path resolves to somewhere inside the plugins directory.
-	 *
-	 * @param mixed $path Path to check.
-	 * @return bool
-	 */
-	private function is_inside_plugins_dir( $path ) {
-		$real_path = is_string( $path ) ? realpath( $path ) : false;
-
-		if ( false === $real_path ) {
-			return false;
-		}
-
-		$plugins_dir = trailingslashit( wp_normalize_path( realpath( WP_PLUGIN_DIR ) ) );
-
-		return 0 === strpos( trailingslashit( wp_normalize_path( $real_path ) ), $plugins_dir );
-	}
-
-	/**
-	 * Register the block metadata collection of a blocks folder.
+	 * Register the block metadata collection of the blocks folder.
 	 *
 	 * `wp-scripts build --blocks-manifest` compiles every `block.json` of the build folder into a
 	 * single `blocks-manifest.php`. Registering that manifest lets WordPress 6.7+ resolve the
@@ -139,33 +87,13 @@ class Blocks {
 	 * to reading the individual files.
 	 *
 	 * @since 1.0.2
-	 * @param string $blocks_root Absolute path of the folder holding the block folders.
 	 * @return void
 	 */
-	private function register_metadata_collection( $blocks_root ) {
-		if ( ! function_exists( 'wp_register_block_metadata_collection' ) ) {
-			return;
-		}
+	private function register_metadata_collection() {
+		$manifest = GUTENKIT_PLUGIN_DIR . 'build/blocks-manifest.php';
 
-		$blocks_root = trailingslashit( wp_normalize_path( $blocks_root ) );
-
-		if ( isset( $this->metadata_collections[ $blocks_root ] ) ) {
-			return;
-		}
-
-		$this->metadata_collections[ $blocks_root ] = true;
-
-		// Blocks live in `build/blocks/`, so the manifest of the `build/` folder sits one level up.
-		$manifests = array(
-			dirname( untrailingslashit( $blocks_root ) ) . '/blocks-manifest.php',
-			$blocks_root . 'blocks-manifest.php',
-		);
-
-		foreach ( $manifests as $manifest ) {
-			if ( file_exists( $manifest ) ) {
-				wp_register_block_metadata_collection( $blocks_root, $manifest );
-				break;
-			}
+		if ( function_exists( 'wp_register_block_metadata_collection' ) && file_exists( $manifest ) ) {
+			wp_register_block_metadata_collection( GUTENKIT_BLOCKS_DIR, $manifest );
 		}
 	}
 

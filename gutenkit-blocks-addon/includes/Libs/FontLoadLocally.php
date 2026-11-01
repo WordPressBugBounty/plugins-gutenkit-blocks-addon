@@ -210,7 +210,7 @@ class FontLoadLocally
 		$family_slug = sanitize_file_name(str_replace(' ', '-', strtolower($family)));
 		$family_dir  = trailingslashit($fonts_dir) . $family_slug;
 
-		$filename = sanitize_file_name($weight . ($is_italic ? 'italic' : '') . '-' . basename(parse_url($remote_url, PHP_URL_PATH)));
+		$filename = sanitize_file_name($weight . ($is_italic ? 'italic' : '') . '-' . basename(wp_parse_url($remote_url, PHP_URL_PATH)));
 		$path     = trailingslashit($family_dir) . $filename;
 
 		if (!file_exists($path) && !$this->download_font_file($remote_url, $family_dir, $path)) {

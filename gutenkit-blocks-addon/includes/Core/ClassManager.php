@@ -120,7 +120,7 @@ class ClassManager {
     public function show_parent_column($column, $post_id) {
         if ($column === 'parent_class') {
             $parent_id = get_post_field('post_parent', $post_id);
-            echo ($parent_id) ? '<a href="' . get_edit_post_link($parent_id) . '">' . get_the_title($parent_id) . '</a>' : __('None', 'gutenkit-blocks-addon');
+            echo ($parent_id) ? '<a href="' . esc_url(get_edit_post_link($parent_id)) . '">' . esc_html(get_the_title($parent_id)) . '</a>' : esc_html__('None', 'gutenkit-blocks-addon');
         }
     }
 
@@ -141,7 +141,7 @@ class ClassManager {
                 $current_parent = $this->get_parent_filter();
 
                 echo '<select name="parent_post_filter">';
-                echo '<option value="">' . __('All Parent Classes', 'gutenkit-blocks-addon') . '</option>';
+                echo '<option value="">' . esc_html__('All Parent Classes', 'gutenkit-blocks-addon') . '</option>';
 
                 foreach ($parents as $parent) {
                     echo '<option value="' . esc_attr($parent->ID) . '" ' . selected($current_parent, $parent->ID, false) . '>' . esc_html($parent->post_title) . '</option>';

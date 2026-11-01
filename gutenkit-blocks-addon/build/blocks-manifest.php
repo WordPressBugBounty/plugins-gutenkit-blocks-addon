@@ -68,6 +68,14 @@ return array(
 				'default' => false,
 				'excludeCopy' => true
 			),
+			'counterStyle' => array(
+				'type' => 'string',
+				'default' => 'decimal-leading-zero'
+			),
+			'counterSuffix' => array(
+				'type' => 'string',
+				'default' => '.'
+			),
 			'leftIcons' => array(
 				'type' => 'object',
 				'default' => array(
@@ -1405,6 +1413,10 @@ return array(
 				'default' => false
 			),
 			'enableURLHash' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'enableSubtitleToggle' => array(
 				'type' => 'boolean',
 				'default' => false
 			),
@@ -13008,6 +13020,17 @@ return array(
 				'type' => 'object'
 			),
 			'gkitMobileMenuLogoMarginWideScreen' => array(
+				'type' => 'object'
+			),
+			'gkitMobileOverlayColor' => array(
+				'type' => 'string',
+				'default' => 'rgba(51, 51, 51, 0.5)'
+			),
+			'gkitMenuOverlayAnimation' => array(
+				'type' => 'string',
+				'default' => 'slide'
+			),
+			'gkitMobileOverlayTransition' => array(
 				'type' => 'object'
 			),
 			'gkitMenuScrollLockOnOffCanvas' => array(
