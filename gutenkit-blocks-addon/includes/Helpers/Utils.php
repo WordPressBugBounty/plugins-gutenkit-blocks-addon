@@ -970,6 +970,9 @@ class Utils {
 	 *  3. Box-alignment values borrowed from `text-align` — `align-items: left`. `left`/`right`
 	 *     are only valid on the `justify-*` properties; on `align-*` they are a parse error.
 	 *     These carry real intent, so they are mapped rather than dropped.
+	 *  4. Combined font variants — `font-weight: 600italic`. Google's variant name reached the
+	 *     stylesheet as a weight, so it is split into `font-weight` and `font-style`. A
+	 *     `font-style` the user chose explicitly is printed just before it, and takes precedence.
 	 *
 	 * Custom properties are exempt throughout: `--foo: ;` is a valid, meaningful declaration
 	 * (the "space toggle" pattern), and a custom property may legitimately hold any token.
@@ -1025,7 +1028,18 @@ class Utils {
 			$css
 		);
 
-		return null === $aligned ? $css : $aligned;
+		$css = null === $aligned ? $css : $aligned;
+
+		// 4. Split combined font variants into the two properties they stand for.
+		$split = preg_replace_callback(
+			'/(?<![\w-])(font-style\s*:[^;}]*;\s*)?font-weight\s*:\s*(\d+)italic\b/i',
+			function ( $m ) {
+				return ( $m[1] ?: 'font-style:italic;' ) . 'font-weight:' . $m[2];
+			},
+			$css
+		);
+
+		return null === $split ? $css : $split;
 	}
 
 	public static function cssminifier($raw_css) {
@@ -1312,6 +1326,94 @@ class Utils {
 		return is_string( $value ) ? self::sanitize_css( $value ) : $value;
 	}
 
+	// TODO: Remove this function after 2.5.10 or later version
+	public static function status() {
+
+		$cached = wp_cache_get('gutenkit__license_status');
+
+		if(false !== $cached) {
+			return $cached;
+		}
+
+		$oppai  = get_option('__gutenkit_oppai__', '');
+		$key    = get_option('__gutenkit_license_key__', '');
+		$status = 'invalid';
+
+		if($oppai != '' && $key != '') {
+			$status = 'valid';
+		}
+
+		wp_cache_set('gutenkit__license_status', $status);
+
+		return $status;
+	}
+
+	// TODO: Remove this function after 2.5.10 or later version
+	public static function is_local() {
+		$valid_domains = [
+			".academy", ".accountant", ".accountants", ".actor", ".adult", ".africa", ".agency", ".airforce",
+			".apartments", ".app", ".army", ".art", ".asia", ".associates", ".attorney", ".auction", ".audio",
+			".auto", ".baby", ".band", ".bar", ".bargains", ".beer", ".berlin", ".best", ".bid", ".bike",
+			".bingo", ".bio", ".biz", ".black", ".blackfriday", ".blog", ".blue", ".boston", ".boutique",
+			".build", ".builders", ".business", ".buzz", ".cab", ".cafe", ".cam", ".camera", ".camp",
+			".capital", ".car", ".cards", ".care", ".careers", ".cars", ".casa", ".cash", ".casino",
+			".catering", ".center", ".ceo", ".chat", ".cheap", ".christmas", ".church", ".city", ".claims",
+			".cleaning", ".click", ".clinic", ".clothing", ".cloud", ".club", ".coach", ".codes", ".coffee",
+			".college", ".com", ".community", ".company", ".computer", ".condos", ".construction",
+			".consulting", ".contact", ".contractors", ".cooking", ".cool", ".country", ".coupons",
+			".courses", ".credit", ".creditcard", ".cricket", ".cruises", ".cymru", ".cyou", ".dance",
+			".date", ".dating", ".day", ".deals", ".degree", ".delivery", ".democrat", ".dental",
+			".dentist", ".desi", ".design", ".dev", ".diamonds", ".diet", ".digital", ".direct", ".directory",
+			".discount", ".doctor", ".dog", ".domains", ".download", ".earth", ".eco", ".education",
+			".email", ".energy", ".engineer", ".engineering", ".enterprises", ".equipment", ".estate",
+			".events", ".exchange", ".expert", ".exposed", ".express", ".fail", ".faith", ".family",
+			".fans", ".farm", ".fashion", ".feedback", ".film", ".finance", ".financial", ".fish",
+			".fishing", ".fit", ".fitness", ".flights", ".florist", ".flowers", ".football", ".forsale",
+			".foundation", ".fun", ".fund", ".furniture", ".futbol", ".fyi", ".gallery", ".game", ".games",
+			".garden", ".gay", ".gdn", ".gift", ".gifts", ".gives", ".glass", ".global", ".gmbh", ".gold",
+			".golf", ".graphics", ".gratis", ".green", ".gripe", ".group", ".guide", ".guitars", ".guru",
+			".hamburg", ".haus", ".health", ".healthcare", ".help", ".hiphop", ".hockey", ".holdings",
+			".holiday", ".horse", ".host", ".hosting", ".house", ".how", ".icu", ".immo", ".immobilien",
+			".inc", ".industries", ".info", ".ink", ".institute", ".insure", ".international", ".investments",
+			".irish", ".jetzt", ".jewelry", ".juegos", ".kaufen", ".kim", ".kitchen", ".kiwi", ".krd",
+			".kyoto", ".land", ".lat", ".lawyer", ".lease", ".legal", ".lgbt", ".life", ".lighting",
+			".limited", ".limo", ".link", ".live", ".llc", ".loan", ".loans", ".lol", ".london", ".love",
+			".ltd", ".ltda", ".luxury", ".maison", ".management", ".market", ".marketing", ".mba", ".media",
+			".melbourne", ".memorial", ".men", ".menu", ".miami", ".mobi", ".moda", ".moe", ".mom", ".money",
+			".monster", ".mortgage", ".movie", ".nagoya", ".name", ".navy", ".net", ".network", ".new",
+			".news", ".ninja", ".nyc", ".observer", ".okinawa", ".one", ".onl", ".online", ".org", ".osaka",
+			".page", ".paris", ".partners", ".parts", ".party", ".photo", ".photography", ".photos", ".pics",
+			".pictures", ".pink", ".pizza", ".place", ".plumbing", ".plus", ".poker", ".porn", ".press",
+			".pro", ".productions", ".properties", ".property", ".protection", ".pub", ".racing", ".realty",
+			".recipes", ".red", ".rehab", ".reise", ".reisen", ".rent", ".rentals", ".repair", ".report",
+			".republican", ".rest", ".restaurant", ".review", ".reviews", ".rip", ".rocks", ".rodeo",
+			".run", ".ryukyu", ".sale", ".sarl", ".school", ".schule", ".science", ".security", ".services",
+			".sex", ".sexy", ".shiksha", ".shoes", ".shop", ".shopping", ".show", ".singles", ".site",
+			".ski", ".soccer", ".social", ".software", ".solar", ".solutions", ".soy", ".space", ".storage",
+			".store", ".stream", ".studio", ".study", ".style", ".sucks", ".supplies", ".supply", ".support",
+			".surf", ".surgery", ".sydney", ".systems", ".tattoo", ".tax", ".taxi", ".team", ".tech",
+			".technology", ".tel", ".tennis", ".theater", ".theatre", ".tienda", ".tips", ".tires", ".today",
+			".tokyo", ".tools", ".top", ".tours", ".town", ".toys", ".trade", ".training", ".travel",
+			".tube", ".university", ".uno", ".vacations", ".vegas", ".ventures", ".vet", ".viajes", ".video",
+			".villas", ".vin", ".vip", ".vision", ".vodka", ".vote", ".voting", ".voto", ".voyage", ".wales",
+			".watch", ".webcam", ".website", ".wedding", ".wiki", ".win", ".wine", ".work", ".works",
+			".world", ".wtf", ".xn--3ds443g", ".xn--6frz82g", ".xxx", ".xyz", ".yoga", ".yokohama", ".zone"
+		];
+
+		$host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST'])) : '';
+
+		// get the domain
+		$domain = explode('.', $host);
+		if(count($domain) >= 2) {
+			$domain = '.' . $domain[count($domain) - 1];
+		} else {
+			$domain = null;
+		}
+
+		return !in_array($domain, $valid_domains);
+	}
+
+
 	/**
 	 * Check if the block is a GutenKit block.
 	 *
@@ -1397,70 +1499,6 @@ class Utils {
 
 	public static function get_placeholder_image() {
 		return GUTENKIT_PLUGIN_URL . 'assets/images/placeholder.jpg';
-	}
-
-	public static function is_local() {
-		$valid_domains = [
-			".academy", ".accountant", ".accountants", ".actor", ".adult", ".africa", ".agency", ".airforce",
-			".apartments", ".app", ".army", ".art", ".asia", ".associates", ".attorney", ".auction", ".audio",
-			".auto", ".baby", ".band", ".bar", ".bargains", ".beer", ".berlin", ".best", ".bid", ".bike",
-			".bingo", ".bio", ".biz", ".black", ".blackfriday", ".blog", ".blue", ".boston", ".boutique",
-			".build", ".builders", ".business", ".buzz", ".cab", ".cafe", ".cam", ".camera", ".camp",
-			".capital", ".car", ".cards", ".care", ".careers", ".cars", ".casa", ".cash", ".casino",
-			".catering", ".center", ".ceo", ".chat", ".cheap", ".christmas", ".church", ".city", ".claims",
-			".cleaning", ".click", ".clinic", ".clothing", ".cloud", ".club", ".coach", ".codes", ".coffee",
-			".college", ".com", ".community", ".company", ".computer", ".condos", ".construction",
-			".consulting", ".contact", ".contractors", ".cooking", ".cool", ".country", ".coupons",
-			".courses", ".credit", ".creditcard", ".cricket", ".cruises", ".cymru", ".cyou", ".dance",
-			".date", ".dating", ".day", ".deals", ".degree", ".delivery", ".democrat", ".dental",
-			".dentist", ".desi", ".design", ".dev", ".diamonds", ".diet", ".digital", ".direct", ".directory",
-			".discount", ".doctor", ".dog", ".domains", ".download", ".earth", ".eco", ".education",
-			".email", ".energy", ".engineer", ".engineering", ".enterprises", ".equipment", ".estate",
-			".events", ".exchange", ".expert", ".exposed", ".express", ".fail", ".faith", ".family",
-			".fans", ".farm", ".fashion", ".feedback", ".film", ".finance", ".financial", ".fish",
-			".fishing", ".fit", ".fitness", ".flights", ".florist", ".flowers", ".football", ".forsale",
-			".foundation", ".fun", ".fund", ".furniture", ".futbol", ".fyi", ".gallery", ".game", ".games",
-			".garden", ".gay", ".gdn", ".gift", ".gifts", ".gives", ".glass", ".global", ".gmbh", ".gold",
-			".golf", ".graphics", ".gratis", ".green", ".gripe", ".group", ".guide", ".guitars", ".guru",
-			".hamburg", ".haus", ".health", ".healthcare", ".help", ".hiphop", ".hockey", ".holdings",
-			".holiday", ".horse", ".host", ".hosting", ".house", ".how", ".icu", ".immo", ".immobilien",
-			".inc", ".industries", ".info", ".ink", ".institute", ".insure", ".international", ".investments",
-			".irish", ".jetzt", ".jewelry", ".juegos", ".kaufen", ".kim", ".kitchen", ".kiwi", ".krd",
-			".kyoto", ".land", ".lat", ".lawyer", ".lease", ".legal", ".lgbt", ".life", ".lighting",
-			".limited", ".limo", ".link", ".live", ".llc", ".loan", ".loans", ".lol", ".london", ".love",
-			".ltd", ".ltda", ".luxury", ".maison", ".management", ".market", ".marketing", ".mba", ".media",
-			".melbourne", ".memorial", ".men", ".menu", ".miami", ".mobi", ".moda", ".moe", ".mom", ".money",
-			".monster", ".mortgage", ".movie", ".nagoya", ".name", ".navy", ".net", ".network", ".new",
-			".news", ".ninja", ".nyc", ".observer", ".okinawa", ".one", ".onl", ".online", ".org", ".osaka",
-			".page", ".paris", ".partners", ".parts", ".party", ".photo", ".photography", ".photos", ".pics",
-			".pictures", ".pink", ".pizza", ".place", ".plumbing", ".plus", ".poker", ".porn", ".press",
-			".pro", ".productions", ".properties", ".property", ".protection", ".pub", ".racing", ".realty",
-			".recipes", ".red", ".rehab", ".reise", ".reisen", ".rent", ".rentals", ".repair", ".report",
-			".republican", ".rest", ".restaurant", ".review", ".reviews", ".rip", ".rocks", ".rodeo",
-			".run", ".ryukyu", ".sale", ".sarl", ".school", ".schule", ".science", ".security", ".services",
-			".sex", ".sexy", ".shiksha", ".shoes", ".shop", ".shopping", ".show", ".singles", ".site",
-			".ski", ".soccer", ".social", ".software", ".solar", ".solutions", ".soy", ".space", ".storage",
-			".store", ".stream", ".studio", ".study", ".style", ".sucks", ".supplies", ".supply", ".support",
-			".surf", ".surgery", ".sydney", ".systems", ".tattoo", ".tax", ".taxi", ".team", ".tech",
-			".technology", ".tel", ".tennis", ".theater", ".theatre", ".tienda", ".tips", ".tires", ".today",
-			".tokyo", ".tools", ".top", ".tours", ".town", ".toys", ".trade", ".training", ".travel",
-			".tube", ".university", ".uno", ".vacations", ".vegas", ".ventures", ".vet", ".viajes", ".video",
-			".villas", ".vin", ".vip", ".vision", ".vodka", ".vote", ".voting", ".voto", ".voyage", ".wales",
-			".watch", ".webcam", ".website", ".wedding", ".wiki", ".win", ".wine", ".work", ".works",
-			".world", ".wtf", ".xn--3ds443g", ".xn--6frz82g", ".xxx", ".xyz", ".yoga", ".yokohama", ".zone"
-		];
-
-		$host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST'])) : '';
-
-		// get the domain
-		$domain = explode('.', $host);
-		if(count($domain) >= 2) {
-			$domain = '.' . $domain[count($domain) - 1];
-		} else {
-			$domain = null;
-		}
-
-		return !in_array($domain, $valid_domains);
 	}
 
 	/**

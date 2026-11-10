@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.5
+Stable tag: 2.5.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -327,6 +327,12 @@ GutenKit integrates with the following 3rd party services. Please review each se
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.5.6 (2026-11-10) =
+* Added: Advanced tab collapsible subtitle toggle
+* Added: Introduced new animation features for Nav Menu block overlays
+* Fixed: Banner is not showing on GutenKit dashboard.
+* Fixed: Mobile menu close icon is not changing in Nav Menu block
 
 = GutenKit Blocks Addon 2.5.5 (2026-11-01) =
 * Added: Advanced tab collapsible subtitle toggle

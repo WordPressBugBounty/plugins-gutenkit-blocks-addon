@@ -283,7 +283,9 @@ class FontLoadLocally
 			$font_name     = dirname($relative_path);
 			$file_name     = basename($file_path);
 			$font_weight   = strtok($file_name, '-');
-			$font_weight   = in_array($font_weight, ['regular', 'normal', '400']) ? 'normal' : $font_weight;
+			$font_style    = stripos($font_weight, 'italic') !== false ? 'italic' : 'normal';
+			$font_weight   = str_ireplace('italic', '', $font_weight);
+			$font_weight   = in_array($font_weight, ['', 'regular', 'normal', '400']) ? 'normal' : $font_weight;
 			$ext           = pathinfo($file_path, PATHINFO_EXTENSION);
 			$font_url      = $fonts_url . $font_name . '/' . $file_name;
 			$font_family   = ucwords(str_replace('-', ' ', strtolower($font_name)));
@@ -303,7 +305,7 @@ class FontLoadLocally
 				font-family: '{$font_family}';
 				src: url('{$font_url}') format('{$format}');
 				font-weight: {$font_weight};
-				font-style: normal;
+				font-style: {$font_style};
 				font-display: swap;
 			}\n";
 		}

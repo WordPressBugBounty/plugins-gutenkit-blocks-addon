@@ -6,7 +6,7 @@
  * Requires PHP: 7.4
  * Plugin URI: https://wpgutenkit.com/
  * Author: Wpmet
- * Version: 2.5.5
+ * Version: 2.5.6
  * Author URI: https://wpmet.com/
  * License: GPL-3.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,7 +33,7 @@ final class Gutenkit {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.5.5';
+	const VERSION = '2.5.6';
 
 	/**
 	 * \Gutenkit class constructor.
@@ -264,6 +264,15 @@ final class Gutenkit {
 		 * @since 1.0.0
 		 */
 		Gutenkit\Admin\Admin::instance();
+
+		/**
+		 * Initializes the PluginUpdateNotice class instance.
+		 *
+		 * This function creates an instance of the Gutenkit\Admin\PluginUpdateNotice class and initializes the plugin update notice functionality for the Gutenkit plugin.
+		 *
+		 * @since 2.5.6
+		 */
+		Gutenkit\Admin\PluginUpdateNotice::instance();
 
 		/**
 		 * Initializes the REST API routes.
