@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.6
+Stable tag: 2.5.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -328,18 +328,26 @@ GutenKit integrates with the following 3rd party services. Please review each se
 
 == Changelog ==
 
-= GutenKit Blocks Addon 2.5.6 (2026-11-10) =
-* Added: Advanced tab collapsible subtitle toggle
-* Added: Introduced new animation features for Nav Menu block overlays
+= GutenKit Blocks Addon 2.5.7 (2026-11-16) =
+* Fixed: Importing patterns, templates and pages from the template library shows the Attempt Recovery notice on some blocks
+* Fixed: Settings page notices always read "Saved Successfully!" regardless of the action
+* Fixed: Clear Cache in the Instagram settings did not clear the Instagram Feed cache
+* Fixed: Meta Boxes bar is not showing on gutenberg editor when Gutenkit is active
+* Improved: Clear Cache button in API settings now matches the Save Changes button, shows a loader while clearing and a success notice when done
+* Improved: Clear Cache button stays disabled until the API data is saved, and while there are unsaved changes
+* Removed: Expiration Time In Hours field from the Facebook Page Feed settings; the feed is now kept until the cache is cleared
+* Removed: Token Expiry Time field from the Instagram settings, which was not used; the feed is now kept until the cache is cleared
+
+= GutenKit Blocks Addon 2.5.6 (2026-11-09) =
 * Fixed: Banner is not showing on GutenKit dashboard.
-* Fixed: Mobile menu close icon is not changing in Nav Menu block
+* Fixed: Font style italic with font weight is not rendering on frontend
 
 = GutenKit Blocks Addon 2.5.5 (2026-11-01) =
 * Added: Advanced tab collapsible subtitle toggle
 * Added: New animation features for Nav Menu block overlays
 * Fixed: Stored XSS through nested payloads in page settings, block and global class CSS on WordPress below 7.0 (reported by Karthik)
 * Fixed: Our Plugins submenu was missing from the GutenKit menu
-* Fixed: Nav Menu close icon is not changing
+* Fixed: Mobile menu close icon is not changing in Nav Menu block
 * Fixed: Parent class column and filter in the Class Manager list printed post titles and links without escaping
 * Fixed: Rating notice install dates now use gmdate() so they are not affected by runtime timezone changes
 * Improved: Our Plugins page and the rating notice now show plugin icons bundled with GutenKit instead of loading them from WordPress.org

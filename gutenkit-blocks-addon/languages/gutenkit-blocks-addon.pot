@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.5.6\n"
+"Project-Id-Version: GutenKit Blocks 2.5.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-10T06:11:57+00:00\n"
+"POT-Creation-Date: 2026-11-16T05:56:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -115,7 +115,7 @@ msgstr ""
 #: src/blocks/post-grid/settings.js:72
 #: src/blocks/post-tab/settings.js:123
 #: src/dashboard/components/Header.js:14
-#: src/dashboard/pages/Settings.js:35
+#: src/dashboard/pages/Settings.js:36
 msgid "Settings"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Invalid template ID."
 msgstr ""
 
-#: includes/Admin/Api/SettingsData.php:101
+#: includes/Admin/Api/SettingsData.php:104
 msgid "Unknown cache key."
 msgstr ""
 
@@ -266,135 +266,127 @@ msgid "To show Facebook page feed on your website, enter your unique Page ID and
 msgstr ""
 
 #: includes/Config/SettingsList.php:48
-#: includes/Config/SettingsList.php:79
+#: includes/Config/SettingsList.php:78
 msgid "Page ID"
 msgstr ""
 
 #: includes/Config/SettingsList.php:49
-#: includes/Config/SettingsList.php:80
+#: includes/Config/SettingsList.php:79
 msgid "Page Access Token"
 msgstr ""
 
-#: includes/Config/SettingsList.php:50
-msgid "Expiration Time In Hours"
-msgstr ""
-
-#: includes/Config/SettingsList.php:60
+#: includes/Config/SettingsList.php:59
 msgid "Instagram"
 msgstr ""
 
-#: includes/Config/SettingsList.php:61
-msgid "To Showcase Instagram Feed on your website, enter User ID, Access Token, Expiry Date, & Generation Date of the access token."
+#: includes/Config/SettingsList.php:60
+msgid "To Showcase Instagram Feed on your website, enter your User ID and Access Token."
 msgstr ""
 
-#: includes/Config/SettingsList.php:64
+#: includes/Config/SettingsList.php:63
 msgid "User ID"
 msgstr ""
 
-#: includes/Config/SettingsList.php:65
-#: includes/Config/SettingsList.php:104
-#: includes/Config/SettingsList.php:118
+#: includes/Config/SettingsList.php:64
+#: includes/Config/SettingsList.php:103
+#: includes/Config/SettingsList.php:117
 msgid "Access Token"
 msgstr ""
 
-#: includes/Config/SettingsList.php:66
-msgid "Token Expiry Time"
-msgstr ""
-
-#: includes/Config/SettingsList.php:75
+#: includes/Config/SettingsList.php:74
 msgid "Facebook Page Review"
 msgstr ""
 
-#: includes/Config/SettingsList.php:76
+#: includes/Config/SettingsList.php:75
 msgid "To showcase reviews from your Facebook page, enter your unique Page ID and Page Access Token to connect your page."
 msgstr ""
 
-#: includes/Config/SettingsList.php:89
+#: includes/Config/SettingsList.php:88
 msgid "Yelp"
 msgstr ""
 
-#: includes/Config/SettingsList.php:90
+#: includes/Config/SettingsList.php:89
 msgid "Use your Yelp Business Page ID to manage your online reputation such as reviews, ratings, and business details."
 msgstr ""
 
-#: includes/Config/SettingsList.php:93
+#: includes/Config/SettingsList.php:92
 msgid "Yelp Page"
 msgstr ""
 
-#: includes/Config/SettingsList.php:100
+#: includes/Config/SettingsList.php:99
 msgid "Dribble User Data"
 msgstr ""
 
-#: includes/Config/SettingsList.php:101
+#: includes/Config/SettingsList.php:100
 msgid "Enter Access Token to enable Dribbble services like viewing and interacting with your design work."
 msgstr ""
 
-#: includes/Config/SettingsList.php:113
+#: includes/Config/SettingsList.php:112
 #: build/1935.js:1
 #: src/blocks/social-share/settings.js:190
 msgid "Twitter"
 msgstr ""
 
-#: includes/Config/SettingsList.php:114
+#: includes/Config/SettingsList.php:113
 msgid "Connect your Twitter handle and show your tweets on your website. Use your Twitter username and Access Token."
 msgstr ""
 
-#: includes/Config/SettingsList.php:117
+#: includes/Config/SettingsList.php:116
 msgid "Username"
 msgstr ""
 
-#: includes/Config/SettingsList.php:127
+#: includes/Config/SettingsList.php:126
 #: build/3891.js:1
 #: src/blocks/advanced-image/settings.js:608
 #: src/blocks/advanced-image/settings.js:740
 msgid "Zoom"
 msgstr ""
 
-#: includes/Config/SettingsList.php:128
+#: includes/Config/SettingsList.php:127
 msgid "Use your Zoom API Key and Secret Key to facilitate scheduling, managing, and hosting Zoom meetings."
 msgstr ""
 
-#: includes/Config/SettingsList.php:131
+#: includes/Config/SettingsList.php:130
 msgid "Api key"
 msgstr ""
 
-#: includes/Config/SettingsList.php:132
+#: includes/Config/SettingsList.php:131
 msgid "Secret Key"
 msgstr ""
 
-#: includes/Config/SettingsList.php:140
+#: includes/Config/SettingsList.php:139
 msgid "Asset Generation"
 msgstr ""
 
-#: includes/Config/SettingsList.php:147
+#: includes/Config/SettingsList.php:146
 msgid "Unfiltered Upload"
 msgstr ""
 
-#: includes/Config/SettingsList.php:154
+#: includes/Config/SettingsList.php:153
 msgid "Remote Image"
 msgstr ""
 
-#: includes/Config/SettingsList.php:161
+#: includes/Config/SettingsList.php:160
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/assets/js/advanced-list.js:18
 msgid "Load Google Fonts locally"
 msgstr ""
 
-#: includes/Config/SettingsList.php:168
+#: includes/Config/SettingsList.php:167
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/assets/js/advanced-list.js:23
 msgid "Plugin Tips & Announcements"
 msgstr ""
 
-#: includes/Config/SettingsList.php:175
+#: includes/Config/SettingsList.php:174
 msgid "Version Control"
 msgstr ""
 
-#: includes/Config/SettingsList.php:183
+#: includes/Config/SettingsList.php:182
 msgid "Transition"
 msgstr ""
 
-#: includes/Config/SettingsList.php:194
+#: includes/Config/SettingsList.php:193
 #: build/admin/dashboard/index.js:1
 #: src/dashboard/assets/js/performance-list.js:8
 msgid "Image Lazy Loading"
@@ -8575,13 +8567,13 @@ msgstr ""
 
 #: build/admin/dashboard/index.js:1
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:101
+#: src/dashboard/components/ApiList.js:121
 #: src/dashboard/components/List.js:175
 msgid "PRO"
 msgstr ""
 
 #: build/admin/dashboard/index.js:1
-#: src/dashboard/components/Notice.js:6
+#: src/dashboard/components/Notice.js:7
 msgid "Saved Successfully!"
 msgstr ""
 
@@ -8647,39 +8639,49 @@ msgstr ""
 
 #. translators: %s: API field name, e.g. "API Key".
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:30
+#: src/dashboard/components/ApiList.js:32
 #, js-format
 msgid "Enter %s"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:97
+#: src/dashboard/components/ApiList.js:117
 msgid "UPCOMING"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:109
+#: src/dashboard/components/ApiList.js:129
 msgid "Add Key"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:128
+#: src/dashboard/components/ApiList.js:148
 msgid "API Documentation"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:152
+#: src/dashboard/components/ApiList.js:172
 #: src/dashboard/components/settings.js:171
 msgid "Save Changes"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:155
+#: src/dashboard/components/ApiList.js:175
 msgid "Generate Access Token"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/components/ApiList.js:158
+#: src/dashboard/components/ApiList.js:107
+msgid "Cache cleared successfully!"
+msgstr ""
+
+#: build/admin/dashboard/index.js:2
+#: src/dashboard/components/ApiList.js:109
+msgid "Could not clear the cache."
+msgstr ""
+
+#: build/admin/dashboard/index.js:2
+#: src/dashboard/components/ApiList.js:184
 msgid "Clear Cache"
 msgstr ""
 
@@ -8729,57 +8731,57 @@ msgid "Ease In Out"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:187
+#: src/dashboard/pages/License.js:152
 msgid "License Settings"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:198
+#: src/dashboard/pages/License.js:163
 msgid "Your License Is Activated"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:121
+#: src/dashboard/pages/License.js:100
 msgid "License key deactivated"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:199
+#: src/dashboard/pages/License.js:164
 msgid "Remove license from this domain"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:203
+#: src/dashboard/pages/License.js:168
 msgid "See The Documentation <a>Here</a>"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:212
+#: src/dashboard/pages/License.js:177
 msgid "If you have the license key, paste the code below and activate your subscription."
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:213
+#: src/dashboard/pages/License.js:178
 msgid "Or, follow the steps below to activate the GutenKit plugin:"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:215
+#: src/dashboard/pages/License.js:180
 msgid "Log in to your Wpmet account to get the license key."
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:217
+#: src/dashboard/pages/License.js:182
 msgid "If you don’t yet buy this product, get <a>GutenKit Pro</a> now."
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:220
+#: src/dashboard/pages/License.js:185
 msgid "Copy the GutenKit Pro license key from your account and paste it below."
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:222
+#: src/dashboard/pages/License.js:187
 msgid "Your License Key Here"
 msgstr ""
 
@@ -8789,22 +8791,22 @@ msgid "Enter a valid license key"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:224
+#: src/dashboard/pages/License.js:189
 msgid "Please insert your license key"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:226
+#: src/dashboard/pages/License.js:191
 msgid "Active Now"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:231
+#: src/dashboard/pages/License.js:196
 msgid "Still can’t find your license key? <a>Knock us here!</a>"
 msgstr ""
 
 #: build/admin/dashboard/index.js:2
-#: src/dashboard/pages/License.js:239
+#: src/dashboard/pages/License.js:204
 msgid "Please enter valid license."
 msgstr ""
 
@@ -9002,43 +9004,43 @@ msgid "Thank you for creating with "
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:44
-#: src/dashboard/components/NoticeOnboard.js:67
+#: src/dashboard/components/NoticeOnboard.js:37
+#: src/dashboard/components/NoticeOnboard.js:60
 msgid "Something went wrong. Please try again."
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:63
+#: src/dashboard/components/NoticeOnboard.js:56
 msgid "Thanks! Your setup is complete."
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:81
+#: src/dashboard/components/NoticeOnboard.js:74
 msgid "Get more from your new plugins"
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:84
+#: src/dashboard/components/NoticeOnboard.js:77
 msgid "Allow us to use non-sensitive data and basic info from your site to improve our products and send you personalized performance tips."
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:87
+#: src/dashboard/components/NoticeOnboard.js:80
 msgid "Read Privacy Policy."
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:94
+#: src/dashboard/components/NoticeOnboard.js:87
 msgid "No, Thanks"
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:97
+#: src/dashboard/components/NoticeOnboard.js:90
 msgid "Please wait…"
 msgstr ""
 
 #: build/admin/dashboard/index.js:3
-#: src/dashboard/components/NoticeOnboard.js:97
+#: src/dashboard/components/NoticeOnboard.js:90
 msgid "Yes, Complete Setup"
 msgstr ""
 
@@ -9274,7 +9276,7 @@ msgstr ""
 #: build/admin/onboard/index.js:1
 #: build/template-library/template-library.js:3
 #: src/onboard/components/Pagination.js:75
-#: src/template-library/components/template/SinglePage.js:166
+#: src/template-library/components/template/SinglePage.js:165
 msgid "Back"
 msgstr ""
 
@@ -10292,7 +10294,7 @@ msgstr ""
 #: src/blocks/nav-menu/nav-template-picker.js:110
 #: src/template-library/components/page/Page.js:81
 #: src/template-library/components/pattern/Pattern.js:90
-#: src/template-library/components/template/SinglePage.js:238
+#: src/template-library/components/template/SinglePage.js:237
 msgid "Importing"
 msgstr ""
 
@@ -10302,7 +10304,7 @@ msgstr ""
 #: src/blocks/nav-menu/nav-template-picker.js:110
 #: src/template-library/components/page/Page.js:81
 #: src/template-library/components/pattern/Pattern.js:90
-#: src/template-library/components/template/SinglePage.js:238
+#: src/template-library/components/template/SinglePage.js:237
 msgid "Import"
 msgstr ""
 
@@ -10539,7 +10541,7 @@ msgstr ""
 #: build/modules/class-manager/editor.js:1
 #: build/template-library/template-library.js:4
 #: src/gkit-components/components/pro-switcher-notice/notice-popup.js:25
-#: src/template-library/components/template/SinglePage.js:242
+#: src/template-library/components/template/SinglePage.js:241
 msgid "Upgrade Now"
 msgstr ""
 
@@ -11734,7 +11736,7 @@ msgstr ""
 #: build/template-library/template-library.js:4
 #: src/template-library/components/page/Page.js:80
 #: src/template-library/components/pattern/Pattern.js:89
-#: src/template-library/components/template/SinglePage.js:237
+#: src/template-library/components/template/SinglePage.js:236
 msgid "Click to see required plugins"
 msgstr ""
 
@@ -11765,7 +11767,7 @@ msgstr[1] ""
 
 #. translators: %s: number of pages in the template.
 #: build/template-library/template-library.js:4
-#: src/template-library/components/template/SinglePage.js:182
+#: src/template-library/components/template/SinglePage.js:181
 #, js-format
 msgid "Page (%s)"
 msgid_plural "Pages (%s)"
@@ -11773,17 +11775,17 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: build/template-library/template-library.js:4
-#: src/template-library/components/template/SinglePage.js:219
+#: src/template-library/components/template/SinglePage.js:218
 msgid "Premium Template"
 msgstr ""
 
 #: build/template-library/template-library.js:4
-#: src/template-library/components/template/SinglePage.js:221
+#: src/template-library/components/template/SinglePage.js:220
 msgid "Unlock this template and our full library of premium designs for just $49. Start creating limitlessly today!"
 msgstr ""
 
 #: build/template-library/template-library.js:4
-#: src/template-library/components/template/SinglePage.js:228
+#: src/template-library/components/template/SinglePage.js:227
 msgid "Live Preview"
 msgstr ""
 

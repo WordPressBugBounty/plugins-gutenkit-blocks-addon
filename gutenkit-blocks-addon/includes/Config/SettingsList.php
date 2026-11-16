@@ -46,28 +46,27 @@ class SettingsList extends \Gutenkit\Core\ConfigList {
 					'package' => 'pro',
 					'fields'   => array(
 						'page_id' => array('label' => __( 'Page ID', 'gutenkit-blocks-addon' ), 'value' => ''),
-						'aceess_token' => array('label' => __( 'Page Access Token', 'gutenkit-blocks-addon' ), 'value' => ''),
-						'expiration_time' => array('label' => __( 'Expiration Time In Hours', 'gutenkit-blocks-addon' ), 'value' => '', 'type' => 'number')
+						'aceess_token' => array('label' => __( 'Page Access Token', 'gutenkit-blocks-addon' ), 'value' => '')
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
 					'status'          => 'active',
-					'transient_key' => 'gutenkit_facebook_feed',
+					'cache_key' => 'gutenkit_facebook_feed',
 					'category' => 'api-integration',
 				),
 				'instagram'   => array(
 					'slug'    => 'instagram',
 					'title'   => __( 'Instagram', 'gutenkit-blocks-addon' ),
-					'description'   => __( "To Showcase Instagram Feed on your website, enter User ID, Access Token, Expiry Date, & Generation Date of the access token.", 'gutenkit-blocks-addon' ),
+					'description'   => __( "To Showcase Instagram Feed on your website, enter your User ID and Access Token.", 'gutenkit-blocks-addon' ),
 					'package' => 'pro',
 					'fields'   => array(
 						'user_id' => array('label' => __( 'User ID', 'gutenkit-blocks-addon' ), 'value' => ''),
 						'token' => array('label' => __( 'Access Token', 'gutenkit-blocks-addon' ), 'value' => ''),
-						'token_expiry_time' => array('label' => __( 'Token Expiry Time', 'gutenkit-blocks-addon' ), 'value' => '', 'type' => 'number' ),
 					),
 					'clear_cache' => true,
 					'access_token_generator' => true,
 					'status'          => 'active',
+					'cache_key' => 'gutenkit_instagram_feed',
 					'category' => 'api-integration',
 				),
 				'facebook_review'   => array(

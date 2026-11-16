@@ -50,7 +50,7 @@ class SettingsData {
 				'callback'            => array($this, 'action_clear_cache'),
 				'permission_callback' => array( $this, 'check_request' ),
 				'args'                => array(
-					'transientKey' => array(
+					'cacheKey' => array(
 						'type'              => 'string',
 						'required'          => true,
 						'sanitize_callback' => 'sanitize_key',
@@ -87,21 +87,31 @@ class SettingsData {
 	/**
 	 * Clears the cache of an API integration setting.
 	 *
-	 * Only transients that a setting declares as its `transient_key` can be deleted, so the route
-	 * cannot be used to clear arbitrary transients belonging to other plugins.
+	 * The cache is the option a setting declares as its `cache_key`. Only those options can be
+	 * deleted, so the route cannot be used to remove options belonging to anything else.
+	 *
+	 * Whatever the cache was built from, such as media stored in the uploads folder, is cleaned up
+	 * by its owner on the `gutenkit/settings/clear_cache` action.
 	 *
 	 * @param \WP_REST_Request $request The current request.
 	 * @return array|\WP_Error
 	 */
 	public function action_clear_cache( $request ) {
-		$transient_key = $request->get_param( 'transientKey' );
-		$allowed_keys  = array_column( SettingsList::instance()->get_list(), 'transient_key' );
+		$cache_key    = $request->get_param( 'cacheKey' );
+		$allowed_keys = array_column( SettingsList::instance()->get_list(), 'cache_key' );
 
-		if ( ! in_array( $transient_key, $allowed_keys, true ) ) {
-			return new \WP_Error( 'gutenkit_invalid_transient', esc_html__( 'Unknown cache key.', 'gutenkit-blocks-addon' ), array( 'status' => 400 ) );
+		if ( ! in_array( $cache_key, $allowed_keys, true ) ) {
+			return new \WP_Error( 'gutenkit_invalid_cache_key', esc_html__( 'Unknown cache key.', 'gutenkit-blocks-addon' ), array( 'status' => 400 ) );
 		}
 
-		delete_transient( $transient_key );
+		delete_option( $cache_key );
+
+		/**
+		 * Fires after the cache of an API integration setting is cleared.
+		 *
+		 * @param string $cache_key The `cache_key` of the setting.
+		 */
+		do_action( 'gutenkit/settings/clear_cache', $cache_key );
 
 		return array(
 			'status'  => 'success',

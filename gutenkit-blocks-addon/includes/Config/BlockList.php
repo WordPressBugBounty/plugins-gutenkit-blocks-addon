@@ -631,6 +631,7 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'pro',
 				'category' => 'general',
 				'status'   => 'active',
+				'badge'           => ['new'],
 			),
 			'registration-form' => array(
 				'slug'            => 'registration-form',
