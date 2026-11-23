@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GutenKit Blocks 2.5.7\n"
+"Project-Id-Version: GutenKit Blocks 2.5.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenkit-blocks-addon\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-16T05:56:23+00:00\n"
+"POT-Creation-Date: 2026-11-23T08:47:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gutenkit-blocks-addon\n"
@@ -74,7 +74,7 @@ msgstr ""
 #: src/blocks/post-tab/settings.js:159
 #: src/blocks/post-tab/settings.js:173
 #: src/gkit-components/components/icon-picker/index.js:63
-#: src/template-library/components/template/Templates.js:16
+#: src/template-library/components/template/Templates.js:20
 #: src/template-library/hooks/useCategoryQuery.js:24
 msgid "All"
 msgstr ""
@@ -2198,7 +2198,7 @@ msgstr ""
 #: src/blocks/video/settings.js:725
 #: src/blocks/video/settings.js:742
 #: src/gkit-components/components/background-overlay/index.js:214
-#: src/gkit-components/components/background/index.js:192
+#: src/gkit-components/components/background/index.js:191
 #: src/gkit-components/components/blend-mode/index.js:70
 #: src/gkit-components/components/color/index.js:17
 #: src/gkit-components/components/swiper/arrow.js:333
@@ -4107,7 +4107,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/testimonial/settings.js:1503
 #: src/gkit-components/components/background-overlay/index.js:230
-#: src/gkit-components/components/background/index.js:226
+#: src/gkit-components/components/background/index.js:225
 #: src/gkit-components/components/media/index.js:128
 msgid "Image Size"
 msgstr ""
@@ -4886,8 +4886,8 @@ msgstr ""
 #: src/blocks/nav-menu/settings.js:103
 #: src/gkit-components/components/background-overlay/index.js:253
 #: src/gkit-components/components/background-overlay/index.js:348
-#: src/gkit-components/components/background/index.js:250
-#: src/gkit-components/components/background/index.js:347
+#: src/gkit-components/components/background/index.js:249
+#: src/gkit-components/components/background/index.js:346
 #: src/gkit-components/components/border-control/index.js:50
 #: src/gkit-components/components/box-shadow/index.js:179
 #: src/gkit-components/helper/control-options.js:54
@@ -5039,7 +5039,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:790
 #: src/blocks/pricing-table/settings.js:1524
 #: src/gkit-components/components/background-overlay/index.js:240
-#: src/gkit-components/components/background/index.js:237
+#: src/gkit-components/components/background/index.js:236
 #: src/global/components/advanced-control.js:125
 #: src/global/components/advanced-control.js:127
 #: src/modules/class-manager/components/box-shadow-settings.js:76
@@ -5342,8 +5342,8 @@ msgstr ""
 #: src/blocks/pricing-table/settings.js:158
 #: src/blocks/team/settings.js:416
 #: src/gkit-components/components/background-overlay/index.js:220
-#: src/gkit-components/components/background/index.js:172
-#: src/gkit-components/components/background/index.js:215
+#: src/gkit-components/components/background/index.js:171
+#: src/gkit-components/components/background/index.js:214
 msgid "Image"
 msgstr ""
 
@@ -5385,7 +5385,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:236
 #: src/gkit-components/components/background-overlay/index.js:312
-#: src/gkit-components/components/background/index.js:311
+#: src/gkit-components/components/background/index.js:310
 msgid "Yes"
 msgstr ""
 
@@ -5393,7 +5393,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:243
 #: src/gkit-components/components/background-overlay/index.js:324
-#: src/gkit-components/components/background/index.js:323
+#: src/gkit-components/components/background/index.js:322
 msgid "No"
 msgstr ""
 
@@ -5424,7 +5424,7 @@ msgstr ""
 #: src/blocks/progress-bar/settings.js:62
 #: src/blocks/team/settings.js:74
 #: src/gkit-components/components/background-overlay/index.js:243
-#: src/gkit-components/components/background/index.js:240
+#: src/gkit-components/components/background/index.js:239
 #: src/gkit-components/components/border-control/index.js:49
 #: src/gkit-components/components/font-family/index.js:50
 #: src/gkit-components/components/typography/font-weights.js:4
@@ -5447,7 +5447,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:456
 #: src/gkit-components/components/background-overlay/index.js:336
-#: src/gkit-components/components/background/index.js:335
+#: src/gkit-components/components/background/index.js:334
 msgid "Cover"
 msgstr ""
 
@@ -5460,7 +5460,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:470
 #: src/gkit-components/components/background-overlay/index.js:340
-#: src/gkit-components/components/background/index.js:339
+#: src/gkit-components/components/background/index.js:338
 msgid "Contain"
 msgstr ""
 
@@ -5478,7 +5478,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:502
 #: src/gkit-components/components/background-overlay/index.js:244
-#: src/gkit-components/components/background/index.js:241
+#: src/gkit-components/components/background/index.js:240
 msgid "Center Center"
 msgstr ""
 
@@ -5486,7 +5486,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:509
 #: src/gkit-components/components/background-overlay/index.js:245
-#: src/gkit-components/components/background/index.js:242
+#: src/gkit-components/components/background/index.js:241
 msgid "Center Left"
 msgstr ""
 
@@ -5494,7 +5494,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:516
 #: src/gkit-components/components/background-overlay/index.js:246
-#: src/gkit-components/components/background/index.js:243
+#: src/gkit-components/components/background/index.js:242
 msgid "Center Right"
 msgstr ""
 
@@ -5502,7 +5502,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:523
 #: src/gkit-components/components/background-overlay/index.js:248
-#: src/gkit-components/components/background/index.js:245
+#: src/gkit-components/components/background/index.js:244
 msgid "Top Left"
 msgstr ""
 
@@ -5510,7 +5510,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:530
 #: src/gkit-components/components/background-overlay/index.js:247
-#: src/gkit-components/components/background/index.js:244
+#: src/gkit-components/components/background/index.js:243
 msgid "Top Center"
 msgstr ""
 
@@ -5518,7 +5518,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:537
 #: src/gkit-components/components/background-overlay/index.js:249
-#: src/gkit-components/components/background/index.js:246
+#: src/gkit-components/components/background/index.js:245
 msgid "Top Right"
 msgstr ""
 
@@ -5526,7 +5526,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:544
 #: src/gkit-components/components/background-overlay/index.js:251
-#: src/gkit-components/components/background/index.js:248
+#: src/gkit-components/components/background/index.js:247
 msgid "Bottom Left"
 msgstr ""
 
@@ -5534,7 +5534,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:551
 #: src/gkit-components/components/background-overlay/index.js:250
-#: src/gkit-components/components/background/index.js:247
+#: src/gkit-components/components/background/index.js:246
 msgid "Bottom Center"
 msgstr ""
 
@@ -5542,7 +5542,7 @@ msgstr ""
 #: build/gutenkit/components.js:1
 #: src/blocks/advanced-image/settings.js:558
 #: src/gkit-components/components/background-overlay/index.js:252
-#: src/gkit-components/components/background/index.js:249
+#: src/gkit-components/components/background/index.js:248
 msgid "Bottom Right"
 msgstr ""
 
@@ -5915,7 +5915,7 @@ msgstr ""
 #: src/blocks/advanced-tab/settings.js:1060
 #: src/blocks/video/settings.js:357
 #: src/gkit-components/components/background-overlay/index.js:344
-#: src/gkit-components/components/background/index.js:343
+#: src/gkit-components/components/background/index.js:342
 #: src/gkit-components/helper/control-options.js:22
 #: src/modules/class-manager/components/class-style-manager.js:428
 #: src/modules/class-manager/components/class-style-manager.js:442
@@ -6410,8 +6410,8 @@ msgstr ""
 #: build/4986.js:1
 #: build/template-library/template-library.js:2
 #: src/blocks/blog-posts/settings.js:511
-#: src/template-library/components/pattern/Filter.js:43
-#: src/template-library/components/template/Templates.js:63
+#: src/template-library/components/pattern/Filter.js:52
+#: src/template-library/components/template/Templates.js:67
 msgid "Category"
 msgstr ""
 
@@ -8256,8 +8256,8 @@ msgstr ""
 #: build/9807.js:1
 #: build/gutenkit/components.js:1
 #: src/blocks/video/settings.js:68
-#: src/gkit-components/components/background/index.js:181
-#: src/gkit-components/components/background/index.js:392
+#: src/gkit-components/components/background/index.js:180
+#: src/gkit-components/components/background/index.js:391
 msgid "Video"
 msgstr ""
 
@@ -9119,7 +9119,7 @@ msgstr ""
 #: build/template-library/template-library.js:2
 #: src/deactivation-popup/DeactivationPopup.js:84
 #: src/modules/class-manager/components/sub-selector.js:115
-#: src/template-library/components/library/LibraryHeader.js:235
+#: src/template-library/components/library/LibraryHeader.js:326
 msgid "Close"
 msgstr ""
 
@@ -9630,7 +9630,7 @@ msgstr ""
 #: build/admin/popup-builder/index.js:1
 #: build/template-library/template-library.js:2
 #: src/popup-builder/popupkit-markup.js:163
-#: src/template-library/components/template/Templates.js:17
+#: src/template-library/components/template/Templates.js:21
 msgid "Free"
 msgstr ""
 
@@ -9640,7 +9640,7 @@ msgstr ""
 #: build/template-library/template-library.js:2
 #: src/gkit-components/components/pro-switcher-notice/notice-popup.js:14
 #: src/popup-builder/popupkit-markup.js:164
-#: src/template-library/components/template/Templates.js:18
+#: src/template-library/components/template/Templates.js:22
 msgid "Pro"
 msgstr ""
 
@@ -9911,7 +9911,7 @@ msgstr ""
 #: build/blocks/mail-chimp/index.js:1
 #: build/template-library/template-library.js:2
 #: src/blocks/mail-chimp/settings.js:138
-#: src/template-library/components/template/Templates.js:43
+#: src/template-library/components/template/Templates.js:47
 msgid "Type"
 msgstr ""
 
@@ -10133,7 +10133,7 @@ msgstr ""
 #: src/blocks/mail-chimp/settings.js:626
 #: src/blocks/mail-chimp/settings.js:795
 #: src/gkit-components/components/background-overlay/index.js:300
-#: src/gkit-components/components/background/index.js:299
+#: src/gkit-components/components/background/index.js:298
 #: src/global/components/advanced-control.js:132
 #: src/modules/class-manager/components/class-style-manager.js:889
 msgid "Fixed"
@@ -10263,13 +10263,13 @@ msgstr ""
 #: build/blocks/nav-menu-submenu/index.js:1
 #: build/blocks/nav-menu/index.js:1
 #: src/blocks/nav-menu-submenu/edit.js:60
-#: src/blocks/nav-menu/appender-button.js:12
+#: src/blocks/nav-menu/appender-button.js:15
 msgid "Add Menu Item"
 msgstr ""
 
 #: build/blocks/nav-menu/index.js:1
 #: src/blocks/nav-menu-submenu/appender-button.js:6
-#: src/blocks/nav-menu/appender-button.js:12
+#: src/blocks/nav-menu/appender-button.js:15
 msgid "Add Submenu Item"
 msgstr ""
 
@@ -10284,7 +10284,9 @@ msgid "Search for patterns"
 msgstr ""
 
 #: build/blocks/nav-menu/index.js:1
+#: build/template-library/template-library.js:2
 #: src/blocks/nav-menu/nav-template-picker.js:70
+#: src/template-library/components/library/LibraryHeader.js:295
 msgid "Search"
 msgstr ""
 
@@ -10547,46 +10549,46 @@ msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:186
-#: src/gkit-components/components/background/index.js:144
+#: src/gkit-components/components/background/index.js:143
 msgid "Background Type"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:197
-#: src/gkit-components/components/background/index.js:154
+#: src/gkit-components/components/background/index.js:153
 msgid "Classic"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:204
 #: src/gkit-components/components/background-overlay/index.js:383
-#: src/gkit-components/components/background/index.js:163
-#: src/gkit-components/components/background/index.js:203
+#: src/gkit-components/components/background/index.js:162
+#: src/gkit-components/components/background/index.js:202
 msgid "Gradient"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:265
-#: src/gkit-components/components/background/index.js:262
+#: src/gkit-components/components/background/index.js:261
 msgid "Position X"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:278
-#: src/gkit-components/components/background/index.js:276
+#: src/gkit-components/components/background/index.js:275
 msgid "Position Y"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:293
-#: src/gkit-components/components/background/index.js:292
+#: src/gkit-components/components/background/index.js:291
 msgid "Attachment"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/modules/class-manager/editor.js:1
 #: src/gkit-components/components/background-overlay/index.js:296
-#: src/gkit-components/components/background/index.js:295
+#: src/gkit-components/components/background/index.js:294
 #: src/modules/class-manager/components/class-style-manager.js:430
 #: src/modules/class-manager/components/class-style-manager.js:444
 msgid "Scroll"
@@ -10594,53 +10596,53 @@ msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:309
-#: src/gkit-components/components/background/index.js:308
+#: src/gkit-components/components/background/index.js:307
 msgid "Repeat"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:316
-#: src/gkit-components/components/background/index.js:315
+#: src/gkit-components/components/background/index.js:314
 msgid "X"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:320
-#: src/gkit-components/components/background/index.js:319
+#: src/gkit-components/components/background/index.js:318
 msgid "Y"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:333
-#: src/gkit-components/components/background/index.js:332
+#: src/gkit-components/components/background/index.js:331
 msgid "Display Size"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: src/gkit-components/components/background-overlay/index.js:360
-#: src/gkit-components/components/background/index.js:359
+#: src/gkit-components/components/background/index.js:358
 msgid "Custom Size"
 msgstr ""
 
 #: build/gutenkit/components.js:1
 #: build/gutenkit/global.js:1
-#: src/gkit-components/components/background/index.js:376
+#: src/gkit-components/components/background/index.js:375
 #: src/global/components/advanced-control.js:383
 msgid "Scrolling Effects"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background/index.js:377
+#: src/gkit-components/components/background/index.js:376
 msgid "Add exclusive Scrolling Effects for Background Image with Gutenkit Pro."
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background/index.js:403
+#: src/gkit-components/components/background/index.js:402
 msgid "Video Scroller"
 msgstr ""
 
 #: build/gutenkit/components.js:1
-#: src/gkit-components/components/background/index.js:404
+#: src/gkit-components/components/background/index.js:403
 msgid "Add exclusive Video Scroller for Background Video with Gutenkit Pro."
 msgstr ""
 
@@ -11631,29 +11633,39 @@ msgid "The changes will only become active on the live page and not during the e
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/library/LibraryHeader.js:50
+#: src/template-library/components/library/LibraryHeader.js:81
 msgid "Patterns"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/library/LibraryHeader.js:54
+#: src/template-library/components/library/LibraryHeader.js:85
 msgid "Templates"
 msgstr ""
 
 #: build/template-library/template-library.js:1
-#: src/template-library/components/library/LibraryHeader.js:58
+#: src/template-library/components/library/LibraryHeader.js:89
 msgid "Pages"
 msgstr ""
 
 #. translators: %s: template type name, e.g. "Patterns", "Templates", "Pages".
 #: build/template-library/template-library.js:2
-#: src/template-library/components/library/LibraryHeader.js:210
+#: src/template-library/components/library/LibraryHeader.js:218
 #, js-format
 msgid "Search %s..."
 msgstr ""
 
 #: build/template-library/template-library.js:2
-#: src/template-library/components/library/LibraryHeader.js:225
+#: src/template-library/components/library/LibraryHeader.js:235
+msgid "Close search"
+msgstr ""
+
+#: build/template-library/template-library.js:2
+#: src/template-library/components/library/LibraryHeader.js:262
+msgid "Library section"
+msgstr ""
+
+#: build/template-library/template-library.js:2
+#: src/template-library/components/library/LibraryHeader.js:316
 msgid "Sync library"
 msgstr ""
 
@@ -11754,6 +11766,22 @@ msgstr ""
 #: build/template-library/template-library.js:2
 #: src/template-library/components/common/Empty.js:41
 msgid "Please ensure that your search is accurately spelled or attempt using different word"
+msgstr ""
+
+#: build/template-library/template-library.js:2
+#: src/template-library/components/common/FilterDrawer.js:20
+#: src/template-library/components/common/FilterDrawer.js:54
+msgid "Filters"
+msgstr ""
+
+#: build/template-library/template-library.js:2
+#: src/template-library/components/common/FilterDrawer.js:61
+msgid "Close filters"
+msgstr ""
+
+#: build/template-library/template-library.js:2
+#: src/template-library/components/template/Templates.js:88
+msgid "Show results"
 msgstr ""
 
 #. translators: %s: number of favorited templates.

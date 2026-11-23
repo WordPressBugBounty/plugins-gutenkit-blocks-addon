@@ -163,7 +163,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'	=> 'free',
 				'category'  => 'general',
 				'status' 	=> 'active',
-				'badge' 	=> ['new'],
 			),
 			'team' => array(
 				'slug'		=> 'team',
@@ -171,7 +170,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'	=> 'free',
 				'category'  => 'general',
 				'status' 	=> 'active',
-				'badge' 	=> ['new'],
 			),
 			'countdown-timer' => array(
 				'slug'		=> 'countdown-timer',
@@ -179,7 +177,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'	=> 'free',
 				'category'  => 'general',
 				'status' 	=> 'active',
-				'badge' 	=> ['new'],
 			),
 			'video' => array(
 				'slug'            => 'video',
@@ -555,7 +552,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'free',
 				'category' => 'general',
 				'status'   => 'inactive',
-				'badge'    => ['new'],
 				'dependency' => array(
 					'slug' => 'table-builder-block',
 					'url' => 'https://downloads.wordpress.org/plugin/table-builder-block.zip',
@@ -567,7 +563,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'free',
 				'category' => 'general',
 				'status'   => 'inactive',
-				'badge'    => ['new'],
 			),
 			'advanced-search' => array(
 				'slug'     => 'advanced-search',
@@ -575,23 +570,21 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'pro',
 				'category' => 'general',
 				'status'   => 'inactive',
+			),
+			'content-ticker' => array(
+				'slug'     => 'content-ticker',
+				'title'    => 'Content Ticker',
+				'package'  => 'pro',
+				'category' => 'general',
+				'status'   => 'inactive',
 				'badge'    => ['new'],
 			),
-			// 'content-ticker' => array(
-			// 	'slug'     => 'content-ticker',
-			// 	'title'    => 'Content Ticker',
-			// 	'package'  => 'pro',
-			// 	'category' => 'general',
-			// 	'status'   => 'inactive',
-			// 	'badge'    => ['new', 'beta'],
-			// ),
 			'facebook-feed' => array(
 				'slug'     => 'facebook-feed',
 				'title'    => 'Facebook Feed',
 				'package'  => 'pro',
 				'category' => 'feed',
 				'status'   => 'inactive',
-				'badge'    => ['new'],
 			),
 			'hotspot' => array(
 				'slug'     => 'hotspot',
@@ -599,7 +592,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'pro',
 				'category' => 'general',
 				'status'   => 'inactive',
-				'badge'    => ['new'],
 			),
 			'modal-popup' => array(
 				'slug'     => 'modal-popup',
@@ -607,7 +599,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'pro',
 				'category' => 'general',
 				'status'   => 'inactive',
-				'badge'    => ['new'],
 			),
 			'instagram-feed' => array(
 				'slug'     => 'instagram-feed',
@@ -615,7 +606,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'pro',
 				'category' => 'feed',
 				'status'   => 'inactive',
-				'badge'    => ['new'],
 			),
 			'table-of-content' => array(
 				'slug'     => 'table-of-content',
@@ -623,7 +613,6 @@ class BlockList extends \Gutenkit\Core\ConfigList
 				'package'  => 'pro',
 				'category' => 'general',
 				'status'   => 'active',
-				'badge'    => ['new'],
 			),
 			'login-form' => array(
 				'slug'     => 'login-form',

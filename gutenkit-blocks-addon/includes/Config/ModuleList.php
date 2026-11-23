@@ -154,7 +154,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				'auto_enqueue'	=> true,
 				'attributes'	=> array( 'new' ),
 				'status'		=> 'active',
-				'badge'			=> ['new'],
 			),
 			'custom-css' => array(
 				'slug'			=> 'custom-css',
@@ -179,7 +178,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				'auto_enqueue'	=> false,
 				'attributes'	=> array( 'new' ),
 				'status'		=> 'active',
-				'badge'			=> ['new'],
 			),
 			'interactions' => array(
 				'slug'			=> 'interactions',
@@ -188,7 +186,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				'auto_enqueue'	=> false,
 				'attributes'	=> array( 'new' ),
 				'status'		=> 'inactive',
-				'badge'			=> ['new'],
 			),
 			'breakpoints' => array(
 				'slug'			=> 'breakpoints',
@@ -205,7 +202,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				'auto_enqueue'	=> true,
 				'attributes'	=> array( 'new' ),
 				'status'		=> 'inactive',
-				'badge'			=> ['new'],
 			),
 			'scroll-spy' => array(
 				'slug'			=> 'scroll-spy',
@@ -214,7 +210,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				'auto_enqueue'	=> true,
 				'attributes'	=> array( 'new' ),
 				'status'		=> 'inactive',
-				'badge'			=> ['new']
 			),
 			'video-scroller' => array(
 				'slug'			=> 'video-scroller',
@@ -223,7 +218,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				'auto_enqueue'	=> false,
 				'attributes'	=> array( 'new' ),
 				'status'		=> 'inactive',
-				'badge'			=> ['new']
 			),
 			'class-manager' => array(
 				'slug'			=> 'class-manager',
@@ -232,7 +226,6 @@ class ModuleList extends \Gutenkit\Core\ConfigList {
 				'auto_enqueue'	=> true,
 				'attributes'	=> array( 'new' ),
 				'status'		=> 'inactive',
-				'badge'			=> ['new', 'beta']
 			),
 			'marquee' => array(
 				'slug'			=> 'marquee',

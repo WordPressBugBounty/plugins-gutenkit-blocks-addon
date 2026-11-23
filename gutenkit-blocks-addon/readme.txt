@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.7
+Stable tag: 2.5.8
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -323,10 +323,21 @@ GutenKit integrates with the following 3rd party services. Please review each se
 
 * Mailchimp – used by the Mailchimp block to add subscribers to your audience. [Terms of Use](https://mailchimp.com/legal/terms/) | [Privacy Policy](https://www.intuit.com/privacy/statement/)
 * Google Fonts – used to load the fonts chosen in typography settings. [Terms of Service](https://developers.google.com/terms) | [Privacy Policy](https://policies.google.com/privacy)
-* GutenKit (by Wpmet) – used for the template library, newsletter subscription, deactivation feedback, Google Fonts list, changelog, and dashboard stories and notices. [Privacy Policy](https://wpmet.com/privacy-policy/)
+* GutenKit (by Wpmet) – used for the template library, newsletter subscription, deactivation feedback, Google Fonts list, changelog, and dashboard stories and notices. [Terms of Service](https://wpmet.com/terms-of-service) | [Privacy Policy](https://wpmet.com/privacy-policy)
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.5.8 (2026-11-23) =
+* Added: Filters button in the Template Library on tablets and phones that opens the Patterns and Templates filters in a slide-in panel; previously the filters were hidden on these screens
+* Fixed: Template Library Sync library button did not visibly rotate when clicked
+* Improved: Template Library template cards are now keep the thumbnail's proportions, so there is no empty space under the image on smaller screens
+* Improved: Template Library pages now use a masonry layout, with each card following its screenshot's height
+* Improved: Template Library loading skeletons and placeholder images now match the new card heights
+* Improved: Template Library templates show 3 columns on tablets, 2 on small tablets and 1 on phones
+* Improved: Narrower Template Library filter sidebar on laptop-sized screens, leaving more room for the cards
+* Improved: Template Library header on small screens: the Patterns / Templates / Pages tabs become a dropdown, the logo is smaller and the header has more breathing room
+* Improved: Replace deprecated select('core/block-editor') from select('core/block-editor') with useSelect hook
 
 = GutenKit Blocks Addon 2.5.7 (2026-11-16) =
 * Fixed: Importing patterns, templates and pages from the template library shows the Attempt Recovery notice on some blocks
