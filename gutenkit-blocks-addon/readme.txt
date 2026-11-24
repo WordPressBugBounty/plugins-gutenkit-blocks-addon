@@ -4,7 +4,7 @@ Tags: block editor, gutenberg blocks, mega menu, wordpress blocks, page builder
 Requires at least: 6.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.5.8
+Stable tag: 2.5.9
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -327,6 +327,9 @@ GutenKit integrates with the following 3rd party services. Please review each se
 
 
 == Changelog ==
+
+= GutenKit Blocks Addon 2.5.9 (2026-11-24) =
+* Fixed: Kadence theme compatibility PHP warnings in the editor
 
 = GutenKit Blocks Addon 2.5.8 (2026-11-23) =
 * Added: Filters button in the Template Library on tablets and phones that opens the Patterns and Templates filters in a slide-in panel; previously the filters were hidden on these screens

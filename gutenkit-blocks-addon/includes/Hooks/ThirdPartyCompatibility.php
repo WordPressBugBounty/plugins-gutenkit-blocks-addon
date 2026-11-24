@@ -139,7 +139,7 @@ class ThirdPartyCompatibility {
 
 		// check specific theme is active or not
 		if ( in_array( $current_theme->get('TextDomain'), $this->third_party_themes ) ) {
-			$compatibility_assets = include_once GUTENKIT_PLUGIN_DIR . 'build/compatibility/frontend.asset.php';
+			$compatibility_assets = include GUTENKIT_PLUGIN_DIR . 'build/compatibility/frontend.asset.php';
 			wp_enqueue_style(
 				'gutenkit-third-party-compatibility',
 				GUTENKIT_PLUGIN_URL . 'build/compatibility/frontend.css',
@@ -176,7 +176,9 @@ class ThirdPartyCompatibility {
 
 		// check specific theme is active or not
 		if ($current_theme->get('TextDomain') == 'kadence') {
-			$compatibility_editor_assets = include_once GUTENKIT_PLUGIN_DIR . 'build/compatibility/editor.asset.php';
+			// `include`, not `include_once`: this callback runs once per enqueue_block_assets
+			// pass, and include_once returns `true` instead of the asset array on repeat calls.
+			$compatibility_editor_assets = include GUTENKIT_PLUGIN_DIR . 'build/compatibility/editor.asset.php';
 			wp_enqueue_style(
 				'gutenkit-third-party-editor-compatibility',
 				GUTENKIT_PLUGIN_URL . 'build/compatibility/editor.css',
